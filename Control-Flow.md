@@ -7,6 +7,7 @@ Conditional statement  are used for executing the statements by giving the condi
 There are various types of conditional statements - 
 ### if 
  This statement is use for giving a single condition and   inside it executing the multiple statements or single statement . This is generally use for comparison of a number or two numbers .
+
 **Syntax** - 
               if(condition)begin
              statements;
