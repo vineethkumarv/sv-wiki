@@ -22,8 +22,22 @@ By inverting each bit of a number, we can obtain the 1's complement of a number.
 3. ****2's Complement****
 By inverting each bit of a number and adding plus 1 to its least significant bit, we can obtain the 2's complement of a number. The negative numbers can also be represented in the form of 2's complement. In this form, the binary number also has an extra bit for sign representation as a sign-magnitude form.
 
+---
 
-## New Variables in System Verilog
+## Four state data type
+
+The below tabular column represent the 4 different state.  
+
+ | **State**         | **Description**                                                                   | 
+|:------------------------------------------ | :-------------------------------------------------------------------------------------|
+|0 |    Logic state 0 |       
+|1|Logic state 1 | 
+|x or X | Logic state unknown|
+| z or Z|Logic state high impedance |
+
+
+
+
 ### 1) Logic
 
 
