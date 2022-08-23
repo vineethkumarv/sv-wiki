@@ -7,15 +7,21 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 ---
 
 
-## 2 and 4 state data type  
+## 2 and 4 state data type cheat sheet  
 
- | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
-|:---------------------- | :-------------|:-----------------|:-----------------------|
-|logic |   4 | >=1 | unsigned  | 
-|integer | 4 | 32  | signed   |
-|time | 4 | 64 | unsigned  |
-| real | 4 | 64 | unsigned |
+sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
+|:--|:---------------------- | :-------------|:-----------------|:-----------------------|
+|1.|logic |   4 | >=1 | unsigned  | 
+|2.|integer | 4 | 32  | signed   |
+|3.|time | 4 | 64 | unsigned  |
+|4.| real | 4 | 64 | unsigned |
+|5.|bit |   2 | >=1 | unsigned  | 
+|6.|byte | 2 | 8  | signed   |
+|7.|shortint | 2 | 16 | signed  |
+|8.| int | 2 | 32 | signed |
+|9.| longint | 2 | 64 | signed |
 
+---
 
 ****Signed and Unsigned numbers****
 
