@@ -2,7 +2,7 @@
 
 In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X and Z. However, in the case of test benches, these 4-state variables were not required. For example, to count the number of packets, we would require a 2-state variable. Thus, System Verilog introduces a new class of variables of 2-states, i.e., 0 and 1. 
 
-![datatype_new](https://user-images.githubusercontent.com/110448382/186143169-035d75cf-ac64-414f-b5ce-03dcfa40b3be.png)
+![new_data_types](https://user-images.githubusercontent.com/110448382/186157987-25bc0cd1-655e-4576-b156-3b40b7350253.png)
 
 ---
 
