@@ -42,4 +42,10 @@ The below tabular column represent the 4 different state.
 
 ### 1) Logic
 
+The logic data type is a 4 state type that can take values 0,1,x and z. logic data type which can be used in place of both the wire and reg data types because wire data type does not have multiple drivers.
+By default logic data type unsigned and its initial value is x. logic data type can be driven in both procedural block and continuous assign statements.
+
+### syntax:
+logic variable_name;
+
 
