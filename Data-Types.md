@@ -13,8 +13,8 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 |:---------------------- | :-------------|:-----------------|:-----------------------|
 |logic |   4 | >=1 | unsigned  | 
 |integer | 4 | 32  | signed   |
-|time | 4 | 
-| bit | 2 |
+|time | 4 | 64 | unsigned  |
+| real | 4 | 64 | unsigned |
 
 
 ****Signed and Unsigned numbers****
