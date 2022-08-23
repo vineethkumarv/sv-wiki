@@ -9,7 +9,8 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 ****Unsigned number****:The unsigned numbers do not use any flag for the sign, i.e., only positive numbers can be stored by the unsigned numbers.  
 The range of the unsigned binary numbers starts from 0 to (2^n-1), n represents number of bits.
 
-****Signed numbers****:The positive and negative values are differentiated by using the sign flag in signed numbers. Signed bit makes two possible representations of zero (positive (0) and negative (1)).The range of the signed binary numbers starts from  -2^(n-1)+1 to 2^(n-1)-1, n represents number of bits.  
+****Signed numbers****:The positive and negative values are differentiated by using the sign flag in signed numbers. Signed bit makes two possible representations of zero (positive (0) and negative (1)).  
+The range of the signed binary numbers starts from  -2^(n-1)+1 to 2^(n-1)-1, n represents number of bits.  
 There are the following types of representation of signed binary numbers:
 
 1. ****Sign-Magnitude form****
