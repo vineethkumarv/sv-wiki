@@ -6,6 +6,17 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 
 ---
 
+
+## 2 and 4 state data type  
+
+ | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
+|:---------------------- | :-------------|:-----------------|:-----------------------|
+|logic |   4 | >=1 | unsigned  | 
+|integer | 4 | 32  | signed   |
+|time | 4 | 
+| bit | 2 |
+
+
 ****Signed and Unsigned numbers****
 
 ****Unsigned number****:The unsigned numbers do not use any flag for the sign, i.e., only positive numbers can be stored by the unsigned numbers.  
