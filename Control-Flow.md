@@ -84,7 +84,18 @@ c. modifier - means in this part , the increment or decrement done .
 **lab link**
 
 
-***
+***  
+### 2. forever loop
+As the name says forever loop will execute the statements inside the loop forever.  
+It can be said as indefinite iteration.
+
+**Syntax** - forever  
+            begin  
+            multiple statements;  
+            end  
+  
+
+
 
              
 
