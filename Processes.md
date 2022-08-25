@@ -3,7 +3,13 @@ A Processes or Thread is any piece of code that gets executed as a separate enti
 
 ![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/110509375/186194367-81333f7f-a4f1-486c-800c-79606be624c3.png)
 ## Cheat sheet links
-
+| **Processes**         | **Description** |
+|:---------------------- | :-------------|
+|[fork_join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1fork-join)|Finishes when all child threads are over|
+|fork_join_any|Finishes when any child thread gets over|
+|fork_join_none|Finishes soon after child threads are spawned|
+|wait_fork|It allows the main process to wait until all the forked process is over|
+|disable_fork||
 
 
 ## Processes or Threads
