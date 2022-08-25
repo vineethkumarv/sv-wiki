@@ -1,6 +1,3 @@
-# Control flow
-
-In this topic , we will learn about the conditional statements and loops .
 
 ## Conditional Statement 
 Conditional statement  are used for executing the statements by giving the conditions. These statements until the condition become false . 
