@@ -299,7 +299,52 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 
 ***
-### class
+## class  
+The case statement allows us to execute the code for the particular case expression . 
+This will give the proper structure for a long code and decrease the complexity of the code also .  
+There are three updates for the case statement in system verilog and these are -  
+1. unique case  
+2. unique0 case  
+3. priority case  
+
+***
+### unique case 
+
+In this , if all the case condition is false , it will display a warning (not match is found for the case statement )with no error .
+If all the conditions are true or more than one is true , it will read the first right or matched case condition and will display the output with one warning and no error.
+
+**Syntax**-  
+`            unique case(condition)  `  
+            `condition_1: Statements ;  `  
+            `.......`  
+            `conditon_N:  Statements ;  `  
+            `endcase  `  
+
+**lab link** 
+
+
+***
+
+### unique0 case 
+
+
+     
+
+***
+### priority case 
+
+In this type of case statement, if more than one case condition is true , it will display the output without giving any error with no warning .
+
+**Syntax**-  
+`             priority case (condition)  `  
+             `case_1: statement;  `  
+             `----  `  
+             `case_N: statement ;  `  
+             `endcase `  
+   
+**lab link** - 
+
+
 
 
 
@@ -308,11 +353,26 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ## Function and task 
 
+S.No.|Function | Task |
+:-----|:--------|:------|
+1.|Not have timing control statents| have timing control statements|
+2.|  Can return some value | Cannot return any value|
+3.| Can call only other functions , not tasks .|Can call other task and function both.|
+4.| only return input arguments | Can return input , output and inout arguments |
+
+
+
+
+***
+
 ### Function 
 
 The function is the subroutine that contain procedural code.
 The purpose of the function is to return the value that can be used in the expression .
-The function cannot have time control statements like # , @ or fork join( The function must execute in zero time .)
+The function cannot have time control statements like # , @ or fork join( The function must execute in zero time .)  
+A function can call other functions not other tasks .
+A function can have atleast one argument but not have any inout or out argument .
+
 
 **Syntax** -  
   `function data_type function_name(arguments )`  
@@ -354,12 +414,41 @@ Below example will show the clear idea .
 
 ***
 
+ ## task 
+
+The task is use to split the code in into small parts same as function but there are some differences in between them .  
+In task , we can provide time delays like # , @ .etc.  
+Task can call other tasks and functions also .
+Task cannot return anu value .
+We can assign input ,output and inout argument in task , which is not possible in functions.
  
+**Syntax** -  
+`task task_name(arguments)`  
+`Statements;  `  
+`endtask  `  
+
+There are generally two type to task we use -  
+1. Static task   
+2. Automatic task  
 
 
+***
+
+### Static task 
+
+Static tasks share the same storage space for all task calls.
+
+**lab link** -
 
 
+***
 
+### Automatic task 
+
+Automatic tasks allocate unique, stacked storage for each task call.
+
+
+***
 
 
 
@@ -370,4 +459,3 @@ Below example will show the clear idea .
 
 
              
-
