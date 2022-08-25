@@ -34,4 +34,10 @@ It does not mean that the rest of the child threads will be automatically discar
   // Thread 2 \
  // Thread 3
 #### join_none
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Process control**
+SystemVerilog provides constructs that allow one process to terminate or wait for the completion of other processes. 
+* wait fork
+* disable fork
+## wait fork
+The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution.
