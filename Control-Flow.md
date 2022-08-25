@@ -193,6 +193,11 @@ When the condition is true , the statements of the loop execute until the condit
 
 Below example will give the working idea of foreach loop .
 
+**lab link** -
+
+
+**lab output link** -
+
 
 ***
  
