@@ -20,7 +20,9 @@ SystemVerilog provides support for parallel threads through fork-join construct.
  // Thread 3
 #### join
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.sv
+
 Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
+
 ## 2.fork-join_any
 The parent thread blocks will be execute when  any one of the child threads is finish the execution. It means if you have 2 or more thread in your fork..join_any block and each thread need different time to finish. In this case, whichever thread finished first, fork..join_any will comes out of the block and will start executing the next parent thread/statement in simulation. It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.
 ### syntax
@@ -28,9 +30,12 @@ The parent thread blocks will be execute when  any one of the child threads is f
    // Thread 1 \
   // Thread 2 \
  // Thread 3
-Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
 #### join_any
+
+Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
+
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
+
 ## 3. fork-join_none
 The parent thread is executed parallel with the child thread. This means the thread which is outside the fork-join_none, does not wait for the completion of any  threads which is inside the fork-join_none, it just execute parallel.  
 It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.  
@@ -40,8 +45,11 @@ It does not mean that the rest of the child threads will be automatically discar
   // Thread 2 \
  // Thread 3
 #### join_none
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
+
 Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.log
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 # **Process control**
 SystemVerilog provides constructs that allow one process to terminate or wait for the completion of other processes. 
@@ -50,7 +58,9 @@ SystemVerilog provides constructs that allow one process to terminate or wait fo
 ## wait fork
 The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution.
 it wait untill all the fork procersses complete the execution .  
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
+
 github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log
 ## disable fork
 Terminate all child thread below the current contest level.
