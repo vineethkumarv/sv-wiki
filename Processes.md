@@ -10,7 +10,7 @@ We have 3 types of Threads/Processes
 1.  fork-join_any
 1.  fork-join_none
 ## 1.fork-join
-SystemVerilog provides support for parallel threads through fork-join construct. Fork-join will start all the processes inside it parallely and wait for the completion of all the processes.
+SystemVerilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute when all the child thread is finish the execution .
 ### syntax
 #### fork 
    // Thread 1 \
@@ -18,6 +18,20 @@ SystemVerilog provides support for parallel threads through fork-join construct.
  // Thread 3
 #### join
 ## 2.fork-join_any
-The parent thread blocks will be execute when  any one of the child threads is finish the execution. It means if you have 2 or more process in your fork..join_any block and each thread need different time to finish. In this case, whichever thread finished first, fork..join_any will comes out of the block and will start executing the next parent thread/statement in simulation. It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background
-
+The parent thread blocks will be execute when  any one of the child threads is finish the execution. It means if you have 2 or more thread in your fork..join_any block and each thread need different time to finish. In this case, whichever thread finished first, fork..join_any will comes out of the block and will start executing the next parent thread/statement in simulation. It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.
+### syntax
+#### fork 
+   // Thread 1 \
+  // Thread 2 \
+ // Thread 3
+#### join_any
+## 3. fork-join_none
+The parent thread is executed parallel with the child thread. This means the thread which is outside the fork-join_none, does not wait for the completion of any  threads which is inside the fork-join_none, it just execute parallel.  
+It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.  
+### syntax
+#### fork 
+   // Thread 1 \
+  // Thread 2 \
+ // Thread 3
+#### join_none
 
