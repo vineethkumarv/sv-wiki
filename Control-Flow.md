@@ -6,7 +6,7 @@ There are various types of conditional statements -
  This statement is use for giving a single condition and   inside it executing the multiple statements or single statement . This is generally use for comparison of a number or two numbers .
 
 **Syntax** - 
-`              if(condition)begin`
+              `if(condition)begin`
 
              `statements;`
 
