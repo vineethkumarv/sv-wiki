@@ -2,6 +2,8 @@
 A Processes or Thread is any piece of code that gets executed as a separate entity. A fork-join block creates the different threads that run in parallel.
 
 ![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/110509375/186194367-81333f7f-a4f1-486c-800c-79606be624c3.png)
+## Cheat sheet links
+
 
 
 ## Processes or Threads
