@@ -5,12 +5,10 @@ There are various types of conditional statements -
 ### if 
  This statement is use for giving a single condition and   inside it executing the multiple statements or single statement . This is generally use for comparison of a number or two numbers .
 
-**Syntax** - 
-              `if(condition)begin
-
-             statements;
-
-             end`
+**Syntax**   
+              if(condition)begin  
+               statements;  
+               end
 
 **log file link**  
 
@@ -20,18 +18,13 @@ There are various types of conditional statements -
 
 This statement , first the compiler goes to the if condition and checks the condition and execute it if it is true  or if "if" condition is not true , the compiler will go to the "else" statement and checks the condition either it is true or not . If the "if" or "else" any one of them is not true , then the compiler show the error .
 
-**Syntax** - 
-             `if(condition)begin`
-
-              `statements;`
-
-              `end `
-
-             `else begin `
-
-             `Statements;`
-
-             `end `
+**Syntax** -     
+               if(condition)begin  
+               statements;  
+               end   
+               else begin    
+               Statements;  
+               end
 
 **Lab link**
 
@@ -44,34 +37,21 @@ This statement , first the compiler goes to the if condition and checks the cond
 
 This statement is use by giving the multiple conditional statements . These statements are 'if elseif elseif .... else' . First the compiler checks the 'if 'condition and execute it if it is true  or if it is false, it will jump to the elseif condition and execute and soo on , at last it will come to else condition . 
 
-**Syntax** - `if(condition)begin`
-
-              `Statements;`
-
-              `end `
-
-              `elseif (condition)begin`
-
-              `Statements;`
-
-              `end`
-
-              `elseif(condition)begin`
-
-              `Statements;`
-
-              `end `
-
-               `...`
-
-               `...`
-
-              `else begin `
-
-
-              `Statements;`
-
-               `end `
+**Syntax** -   
+              if(condition)begin  
+              Statements;  
+              end   
+              elseif (condition)begin  
+              Statements;   
+              end  
+              elseif(condition)begin  
+              Statements;  
+              end   
+               ...  
+               ...  
+              else begin  
+              Statements;  
+              end  
 
 **lab link**  
 
@@ -93,17 +73,13 @@ If all the statements are false ,it will not display any error but will display 
 
 Below lab example will show how unique if is different from the traditional if else statement .
 
-  **Syntax** - `unique if(condition)begin`
-
-               `Statements;`
-
-               `end `
-
-              `if else(condition)begin`
-
-               `Statements;`
-
-               `end`
+  **Syntax** -  
+               unique if(condition)begin  
+               Statements;  
+               end  
+               if else(condition)begin  
+               Statements;  
+               end  
 
 
 
@@ -112,7 +88,7 @@ Below lab example will show how unique if is different from the traditional if e
 
 
 ***
-unique0 if 
+###  unique0 if 
 
 This statement is same as the if condition statement when only one condition is true in the whole code . 
 
@@ -121,24 +97,20 @@ If more than one condition is false , it will not display any output , not even 
 
 Below examples will show the difference between the unique0 if and traditional if else condition .
 
-  **Syntax** - `unique0 if(condition)begin`
-
-               `Statements;`
-
-               `end `
-
-              `if else(condition)begin`
-
-               `Statements;`
-
-               `end`
+  **Syntax** -    
+               unique0 if(condition)begin  
+               Statements;  
+               end  
+               if else(condition)begin  
+               Statements;  
+               end  
   
 
 **lab links**
 
 
 ***
-priority if 
+###  priority if 
 
 This is again a update version of if else condition statement .When only one condition is true , it will work same as the if else condition . 
 
@@ -148,17 +120,13 @@ When all the conditions are false it will display only a warning .
 
 Below example will properly show the working idea of the priority if condition .
 
-**Syntax** - `priority if(condition)begin`
-
-               `Statements;`
-
-               `end `
-
-              `if else(condition)begin`
-
-               `Statements;`
-
-               `end`
+**Syntax** -    
+               priority if(condition)begin  
+               Statements;  
+               end  
+               if else(condition)begin  
+               Statements;  
+               end  
               
               
   
@@ -200,26 +168,24 @@ a. Initialization - It will firstly initialize the variable .
 b. condition -  give condition to the loops . It will decide the purpose of the loop.
 c. modifier - means in this part , the increment or decrement done .
 
-**Syntax** - `for (initialization; condition; modifier) begin`
-
-             `Statements;`
-
-            `end `
+**Syntax** -   
+              for (initialization; condition; modifier) begin  
+              Statements;  
+              end   
 
 **lab link**
 
 
 *** 
-2. foreach
+### 2. foreach
 
 This loop is the update version of for loop in system verilog . As compare to for loop , foreach loop syntax is less complicated .
 When the condition is true , the statements of the loop execute until the condition become false same as for loop .
 
-**Syntax** - ` foreach(variable[iterator])begin `
-
-              `Statements;`
-
-              `end `
+**Syntax** -    
+               foreach(variable[iterator])begin  
+               Statements;  
+               end   
 
 Below example will give the working idea of foreach loop .
 
@@ -232,13 +198,10 @@ Below example will give the working idea of foreach loop .
 As the name says forever loop will execute the statements inside the loop forever.  
 It can be said as indefinite iteration.
 
-**Syntax** - `forever  `
-
-            `begin  `
-
-            `multiple statements;  `
-
-            `end  `
+**Syntax** -   
+           forever begin  
+           multiple statements;  
+           end  
   
 Below example gives the idea of the working of foreach loop .
 
@@ -247,52 +210,46 @@ Below example gives the idea of the working of foreach loop .
 
 ***
 
-4. while
+### 4. while
 
 In this loop , first condition is checked , if it is true and the statements inside the while loop will execute until the condition become false .
 
-**Syntax** - `while(condition)begin`
-            
-             `Statements;`
-
-              `end `
+**Syntax** - 
+               while(condition)begin              
+               Statements;  
+               end  
 Below example will give the idea about the working of the while loop.
 
 **lab link** -
 
 
 ***
- 5. do while 
+ ### 5. do while 
 
 This loop will execute the condition first and then checks the condition . Then if the condition is true , the statement inside the while loop will execute until the condition become false .
 
 do while loop execute the statements atleast once if the condition is false .
 
-**Syntax** -
-                `do begin`
-               
-                 `Statements;`
-         
-                 `end `
-                
-               `while(condition)begin`
-   
-                `Statements;`
-
-               `end `
+**Syntax** -  
+                 do begin                 
+                 Statements;           
+                 end                  
+                while(condition)begin     
+                Statements;  
+                end  
 
 **lab link** -
 
 
 ***
 
-6. break 
+### 6. break 
  
 Break is use to terminate the any loop . Generally, we use break after giving the condition in code using the if statement.
 
 We can use break statement in any loop(for , while , do-while), for terminating the execution of loop . It is always use inside the loop.
 
-**Syntax** - `break;`
+**Syntax** - break;
 
 Below example will show ,how to terminate the loop using the break statement .
 
@@ -301,7 +258,7 @@ Below example will show ,how to terminate the loop using the break statement .
 
 ***
 
-7. continue 
+### 7. continue 
 
 This statement is generally use for skipping the statements in the loop . It is also use inside the loops .
 
@@ -312,15 +269,13 @@ Below example will show how the continue  statement work .
 
 ***
 
-8. repeat 
+### 8. repeat 
 
 This loop is use for the repeating of statements or operation for fix number of times .
 
-**Syntax** - `repeat(no. of times)begin `
-
-             `Statements;`
-
-             `end `
+**Syntax** - repeat(no. of times)begin  
+             statements;  
+             end  
 
 **lab link** - 
 
