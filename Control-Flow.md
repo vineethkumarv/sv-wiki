@@ -173,7 +173,11 @@ c. modifier - means in this part , the increment or decrement done .
               Statements;  
               end   
 
-**lab link**
+**lab link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_code.sv  
+
+**lab output link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_loop_output.log  
 
 
 *** 
