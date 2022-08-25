@@ -6,9 +6,9 @@ There are various types of conditional statements -
  This statement is use for giving a single condition and   inside it executing the multiple statements or single statement . This is generally use for comparison of a number or two numbers .
 
 **Syntax**   
-              if(condition)begin  
-               statements;  
-               end
+              `if(condition)begin  `  
+               `statements;  `  
+               `end`  
 
 **log file link**  
 
@@ -19,12 +19,12 @@ There are various types of conditional statements -
 This statement , first the compiler goes to the if condition and checks the condition and execute it if it is true  or if "if" condition is not true , the compiler will go to the "else" statement and checks the condition either it is true or not . If the "if" or "else" any one of them is not true , then the compiler show the error .
 
 **Syntax** -     
-               if(condition)begin  
-               statements;  
-               end   
-               else begin    
-               Statements;  
-               end
+               `if(condition)begin  `    
+               `statements;  `   
+               `end   `  
+               `else begin    `  
+               `Statements;  `  
+               `end`  
 
 **Lab link**
 
@@ -38,20 +38,20 @@ This statement , first the compiler goes to the if condition and checks the cond
 This statement is use by giving the multiple conditional statements . These statements are 'if elseif elseif .... else' . First the compiler checks the 'if 'condition and execute it if it is true  or if it is false, it will jump to the elseif condition and execute and soo on , at last it will come to else condition . 
 
 **Syntax** -   
-              if(condition)begin  
-              Statements;  
-              end   
-              elseif (condition)begin  
-              Statements;   
-              end  
-              elseif(condition)begin  
-              Statements;  
-              end   
-               ...  
-               ...  
-              else begin  
-              Statements;  
-              end  
+`              if(condition)begin  `  
+              `Statements;  `  
+              `end   `
+              `elseif (condition)begin  `  
+              `Statements;   `  
+              `end  `
+              `elseif(condition)begin  `  
+              `Statements;  `  
+              `end   `  
+               `...  `  
+               `...  `  
+              `else begin  `  
+              `Statements;  `  
+              `end  `  
 
 **lab link**  
 
@@ -74,12 +74,12 @@ If all the statements are false ,it will not display any error but will display 
 Below lab example will show how unique if is different from the traditional if else statement .
 
   **Syntax** -  
-               unique if(condition)begin  
-               Statements;  
-               end  
-               if else(condition)begin  
-               Statements;  
-               end  
+`               unique if(condition)begin  `  
+               `Statements;  `  
+               `end  `  
+               `if else(condition)begin  `  
+               `Statements;  `  
+               `end  `  
 
 
 
@@ -98,12 +98,12 @@ If more than one condition is false , it will not display any output , not even 
 Below examples will show the difference between the unique0 if and traditional if else condition .
 
   **Syntax** -    
-               unique0 if(condition)begin  
-               Statements;  
-               end  
-               if else(condition)begin  
-               Statements;  
-               end  
+`               unique0 if(condition)begin  `  
+               `Statements;  `  
+               `end  `  
+               `if else(condition)begin  `  
+               `Statements;  `  
+               `end  `  
   
 
 **lab links**
@@ -121,12 +121,12 @@ When all the conditions are false it will display only a warning .
 Below example will properly show the working idea of the priority if condition .
 
 **Syntax** -    
-               priority if(condition)begin  
-               Statements;  
-               end  
-               if else(condition)begin  
-               Statements;  
-               end  
+`               priority if(condition)begin  `  
+               `Statements;  `  
+               `end  `  
+               `if else(condition)begin  `  
+               `Statements;  `  
+               `end  `  
               
               
   
@@ -153,7 +153,8 @@ Below example will properly show the working idea of the priority if condition .
 ## Loops 
 
 The loops has a sequence of instructions , it will execute when the instruction is true and execute until the condition of loops will not false . When the condition become false , the loops will terminate . 
-There are various kinds of loops  - 
+There are various kinds of loops  -
+ 
 **Pictures of loops**
 
 
@@ -169,9 +170,9 @@ b. condition -  give condition to the loops . It will decide the purpose of the 
 c. modifier - means in this part , the increment or decrement done .
 
 **Syntax** -   
-              for (initialization; condition; modifier) begin  
-              Statements;  
-              end   
+`              for (initialization; condition; modifier) begin  `    
+              `Statements;  `    
+              `end   `  ##   
 
 **lab link**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_code.sv  
@@ -187,9 +188,9 @@ This loop is the update version of for loop in system verilog . As compare to fo
 When the condition is true , the statements of the loop execute until the condition become false same as for loop .
 
 **Syntax** -    
-               foreach(variable[iterator])begin  
-               Statements;  
-               end   
+`               foreach(variable[iterator])begin  `  
+               `Statements;  `  
+               `end   `  
 
 Below example will give the working idea of foreach loop .
 
@@ -206,9 +207,9 @@ As the name says forever loop will execute the statements inside the loop foreve
 It can be said as indefinite iteration.
 
 **Syntax** -   
-           forever begin  
-           multiple statements;  
-           end  
+`           forever begin  `  
+           `multiple statements;  `  
+           `end  `  
   
 Below example gives the idea of the working of forever loop .
 
@@ -226,10 +227,10 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 In this loop , first condition is checked , if it is true and the statements inside the while loop will execute until the condition become false .
 
-**Syntax** - 
-               while(condition)begin              
-               Statements;  
-               end  
+**Syntax** -   
+`               while(condition)begin              `  
+               `Statements;  `  
+               `end  `  
 Below example will give the idea about the working of the while loop.
 
 **lab link** -
@@ -243,12 +244,12 @@ This loop will execute the condition first and then checks the condition . Then 
 do while loop execute the statements atleast once if the condition is false .
 
 **Syntax** -  
-                 do begin                 
-                 Statements;           
-                 end                  
-                while(condition)begin     
-                Statements;  
-                end  
+`                 do begin                 `  
+                 `Statements;           `  
+                 `end                  `  
+                `while(condition)begin     `  
+                `Statements;  `  
+                `end  `  
 
 **lab link** -
 
@@ -261,7 +262,7 @@ Break is use to terminate the any loop . Generally, we use break after giving th
 
 We can use break statement in any loop(for , while , do-while), for terminating the execution of loop . It is always use inside the loop.
 
-**Syntax** - break;
+**Syntax** - `break;`  
 
 Below example will show ,how to terminate the loop using the break statement .
 
@@ -274,7 +275,7 @@ Below example will show ,how to terminate the loop using the break statement .
 
 This statement is generally use for skipping the statements in the loop . It is also use inside the loops .
 
-**Syntax** - `continue;` 
+**Syntax** - `continue;`   
 
 Below example will show how the continue  statement work . 
 
@@ -285,9 +286,10 @@ Below example will show how the continue  statement work .
 
 This loop is use for the repeating of statements or operation for fix number of times .
 
-**Syntax** - repeat(no. of times)begin  
-             statements;  
-             end  
+**Syntax** -  
+             `repeat(no. of times)begin  `  
+             `statements;  `  
+             `end  `  
 
 **lab link** - 
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat_loop/repeat_code.sv  
@@ -297,7 +299,73 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 
 ***
+### class
 
+
+
+***
+
+
+## Function and task 
+
+### Function 
+
+The function is the subroutine that contain procedural code.
+The purpose of the function is to return the value that can be used in the expression .
+The function cannot have time control statements like # , @ or fork join( The function must execute in zero time .)
+
+**Syntax** -  
+  `function data_type function_name(arguments )`  
+`    <Statements>;  `  
+    `endfunction  `  
+
+Arguments are of two types - 
+1. formal argument - declare in the routine header.
+
+2. actual argument - value and function passed to and from the routine.
+
+We can call the function mainly by two ways -
+1. call by value   
+2. call by reference  
+
+### call by value 
+
+In argument pass by value, the argument passing mechanism works by copying each argument into the subroutine area.
+
+If any changes to arguments within the subroutine, those changes will not be visible outside the subroutine.
+
+Below example will show the clear overview of working of call by value function .
+
+**lab link**
+
+
+***
+
+### call by reference 
+
+In this , the reference to the original argument is passes to the subroutine .As the argument within a subroutine is pointing to an original argument, any changes to the argument within subroutine will be visible outside.
+
+Below example will show the clear idea .
+
+**lab link**
+
+ 
+
+
+***
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
