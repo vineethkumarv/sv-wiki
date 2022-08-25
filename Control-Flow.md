@@ -174,10 +174,6 @@ c. modifier - means in this part , the increment or decrement done .
               end   
 
 **lab link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_code.sv  
-
-**lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_loop_output.log  
 
 
 *** 
@@ -193,7 +189,11 @@ When the condition is true , the statements of the loop execute until the condit
 
 Below example will give the working idea of foreach loop .
 
-**lab link** -
+**lab link** - 
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_code.sv    
+
+**lab output link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_loop_output.log  
 
 
 ***
