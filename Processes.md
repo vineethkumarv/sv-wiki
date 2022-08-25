@@ -41,4 +41,6 @@ SystemVerilog provides constructs that allow one process to terminate or wait fo
 * disable fork
 ## wait fork
 The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution.
-it wait untill all the fork procersses complete the execution
+it wait untill all the fork procersses complete the execution .  
+## disable fork
+Terminate all child thread below the current contest level.
