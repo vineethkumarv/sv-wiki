@@ -18,5 +18,6 @@ SystemVerilog provides support for parallel threads through fork-join construct.
  // Thread 3
 #### join
 ## 2.fork-join_any
+The parent thread blocks will be execute when  any one of the child threads is finish the execution. It means if you have 2 or more process in your fork..join_any block and each thread need different time to finish. In this case, whichever thread finished first, fork..join_any will comes out of the block and will start executing the next parent thread/statement in simulation. It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background
 
 
