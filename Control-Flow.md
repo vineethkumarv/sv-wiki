@@ -189,12 +189,6 @@ When the condition is true , the statements of the loop execute until the condit
 
 Below example will give the working idea of foreach loop .
 
-**lab link** - 
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_code.sv    
-
-**lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_loop_output.log  
-
 
 ***
  
@@ -209,7 +203,6 @@ It can be said as indefinite iteration.
   
 Below example gives the idea of the working of foreach loop .
 
-**lab link** -
 
 
 ***
