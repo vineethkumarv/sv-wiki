@@ -17,7 +17,7 @@ sr. no. | **data type**         |
 |5.|Enumerated | 
 |6.|User defined |
 
-                                          Tabular column. indexing data type
+        Tabular column. data types
 
 ---
 
@@ -36,7 +36,7 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 |8.| int | 2 | 32 | signed |
 |9.| longint | 2 | 64 | signed |
 
-                                          Tabular column.1. 2-state and 4-state data type
+         Tabular column.1. 2-state and 4-state data type
 
 ---
 
@@ -270,7 +270,7 @@ sl.no|Method | Description
 
 ---
 
-### enumerated types data type typedef
+### typedef enumerated data type
 
 In typedef a type name can be given so that the same type can be used in many places.  
 
