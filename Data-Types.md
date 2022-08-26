@@ -10,12 +10,12 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 
 sr. no. | **data type**         |
 |:--|:---------------------- |
-|1.|2-stage and 4-stage |
-|2.|Arrays | 
-|3.|Strings |
-|4.|Structures |
-|5.|Enumerated | 
-|6.|User defined |
+|1.|[2-stage and 4-stage](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-state-and-4-state-data-type-cheat-sheet) |
+|2.|[Arrays]() | 
+|3.|[Strings](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#string) |
+|4.|[Structures](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure) |
+|5.|[Enumerated](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#enum) | 
+|6.|[User defined](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Typedef) |
 
         Tabular column. data types
 
@@ -90,9 +90,9 @@ The below figure shows the output of logic data type.
 
                                        Figure.1. logic output 
 
-Github lab link: 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/logic/logic_file.sv
 
-Github lab output link: 
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/logic/logic_file.log
 
 ---
 
@@ -109,6 +109,10 @@ The below figure shows the output of integer data type.
 ![integer](https://user-images.githubusercontent.com/110448382/186824975-f4a0493d-fe8d-4da9-8c6d-f9eaf43de032.png)
 
                                        Figure.2. integer output 
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/integer_data_type/data_type_integer.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/integer_data_type/data_type_integer.log
 
 ---
 
@@ -127,6 +131,10 @@ The below figure shows the output of time data type.
 
                                      Figure.3. time output
 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/time_data_type/data_type_time.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/time_data_type/data_type_time.log
+
 ---
 
 ## 4. real
@@ -143,6 +151,10 @@ The below figure shows the output of real data type.
 ![real](https://user-images.githubusercontent.com/110448382/186825049-8e139a76-5e2d-43f1-af75-f8e886d79ef3.png)
 
                                         Figure.4. real output
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/real_data_type/data_type_real.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/real_data_type/data_type_real.log
 
 ---
 
@@ -161,6 +173,10 @@ The below figure shows the output of bit data type.
 
                                          Figure.5. bit output
 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/bit_data_type/data_type_bit.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/bit_data_type/data_type_bit.log
+
 ---
 
 ## 6. byte
@@ -176,6 +192,10 @@ The below figure shows the output of byte data type.
 ![byte](https://user-images.githubusercontent.com/110448382/186825136-81275ffc-0942-43fe-b7bf-5aa42ba24ca9.png)
 
                                   Figure.6. byte output
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/byte_data_type/data_type_byte.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/byte_data_type/data_type_byte.log
 
 ---
 
@@ -193,6 +213,10 @@ The below figure shows the output of shortint data type.
 
                                        Figure.7. shortint output
 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/shortint_data_type/data_type_shortint.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/shortint_data_type/data_type_shortint.log
+
 ---
 
 ## 8. int 
@@ -209,6 +233,10 @@ The below figure shows the output of int data type.
 
                                       Figure.8.int output
 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/int_data_type/data_type_int.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/int_data_type/data_type_int.log
+
 ---
 
 ## 9. longint 
@@ -224,6 +252,10 @@ The below figure shows the output of longint data type.
 ![longint](https://user-images.githubusercontent.com/110448382/186825249-c7470eb9-2738-4218-8d16-ce9634cd5c31.png)
 
                                         Figure.9. longint output
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/longint_data_type/data_type_longint.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/longint_data_type/data_type_longint.log
 
 ---
 
@@ -246,11 +278,21 @@ In the below figure output of default value of enum.
 
                                    Figure.1. Output of enum default value
 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/default_value_enum/default_value_enum.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/default_value_enum/default_value_enum.log
+
+
 In the below figure output of set value of enum.  
 
 ![set_enum](https://user-images.githubusercontent.com/110448382/186869460-cf12764a-49ec-4379-a174-7b3870a0c6e0.png)
 
                                    Figure.2. Output of set enum value
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/set_value_enum/set_value_enum.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/set_value_enum/set_value_enum.log
+
 
 ---
 
@@ -284,6 +326,11 @@ In below figure declare typedef type and output using enum methods.
 ![typedef_enum](https://user-images.githubusercontent.com/110448382/186874037-c29e2317-5854-4fd9-a859-df544365b10a.png)
 
                                    Figure.3. Output of typedef enum using enum method
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/typedef_enum/typedef_enum.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/typedef_enum/typedef_enum.log
+
 
 ---
 
@@ -346,6 +393,10 @@ The below figure.1 illustrates the output for string operators
 
                                    Figure.1. Output of string operators
 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_op/string_op.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_op/string_op.log
+
 
 ---
 
@@ -391,4 +442,10 @@ The below figure.2. shows the output of string methods.
 ![string_method2](https://user-images.githubusercontent.com/110443214/186822759-93e298e7-88c9-4c73-b300-54e0bf76a383.png)
 
                                           Figure.2. Output of string methods
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_me/string_method.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_me/string_method.log
+
+---
 
