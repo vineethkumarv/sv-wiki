@@ -413,7 +413,10 @@ The below output shows that output of packed structure
 
                                             Fig 3: Packed structure  
 
-The above output illustrates the output of packed structure. It contains the different datatypes like bit , logic . We can assign values and  display as output. Here we cannot  use string dataype inside the packed structure because string cannot be treated as single vector. It will show compile error. 
+The above output illustrates the output of packed structure. It contains the different datatypes like bit , logic . We can assign values and  display as output. Here we cannot  use string dataype inside the packed structure because string cannot be treated as single vector. It will show compile error.   
+
+
+----
 
 
 # **Typedef**    
