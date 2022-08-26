@@ -8,7 +8,7 @@ There are various types of conditional statements -
 
 ![Untitled Diagram-Page-1 drawio (2)](https://user-images.githubusercontent.com/110447788/186898999-9060d1d8-ba85-4dde-9b51-20218e709e0c.png)
 
-                          Figure.2. Conditional Statements
+                             Figure.2. Conditional Statements
 
 ### if 
  This statement is use for giving a single condition and   inside it executing the multiple statements or single statement . This is generally use for comparison of a number or two numbers .
@@ -219,7 +219,7 @@ There are various kinds of loops  -
 
 ![Loops](https://user-images.githubusercontent.com/110447788/186894792-61b4d18d-35b4-4f25-897b-f556f88acd0f.png)
 
-                       Figure.3. Loops
+                           Figure.3. Loops
 
 ***
 
