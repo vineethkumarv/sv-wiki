@@ -3,7 +3,8 @@
 Conditional statement  are used for executing the statements by giving the conditions. These statements until the condition become false . 
 There are various types of conditional statements - 
 
-![Untitled Diagram drawio (20)](https://user-images.githubusercontent.com/110447788/186894698-e040de62-4bc9-4666-a53a-ebc790b2bca6.png)
+![Untitled Diagram-Page-1 drawio (2)](https://user-images.githubusercontent.com/110447788/186898999-9060d1d8-ba85-4dde-9b51-20218e709e0c.png)
+
 
 
 ### if 
