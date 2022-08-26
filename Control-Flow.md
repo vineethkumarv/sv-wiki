@@ -240,7 +240,7 @@ c. modifier - means in this part , the increment or decrement done .
 **lab link**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_code.sv  
 
-**lab output link**
+**lab output link**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_loop_output.log  
 
 
@@ -277,10 +277,9 @@ It can be said as indefinite iteration.
 Below example gives the idea of the working of forever loop .
 
 **lab link** -   
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_code.sv      
 
 **lab output link**    
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_loop_output.log    
+    
 
 
 
