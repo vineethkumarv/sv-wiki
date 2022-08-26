@@ -82,3 +82,7 @@ github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blo
 ## disable fork  
 
 On execution of the disable fork, all the active process will get terminated.
+
+Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
+
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.log
