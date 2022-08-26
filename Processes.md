@@ -68,6 +68,7 @@ It does not mean that the rest of the child threads will be automatically discar
   // Thread 2 \
  // Thread 3  
  **join_none**   
+In the below figure you can see that after the execution of main thread 1 we have same delays for main thread 2 and child thread (i.e thread 1) so here we can see that main thread 2 is executed first and then the child thread are executed and you can after executing child thread1 and thread 2 only we can see main thread 3 even though we have same delays so we can say that all the time child thread has the priority
 
 ![Untitled Diagram drawio (8)](https://user-images.githubusercontent.com/110509375/186891715-959c0d1d-3cfa-44cd-9b58-8ff957c8b85b.png)
 
