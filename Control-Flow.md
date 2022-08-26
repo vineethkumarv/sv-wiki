@@ -300,10 +300,10 @@ It can be said as indefinite iteration.
 Below example gives the idea of the working of forever loop .
 
 **lab link** -   
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_code.sv  
 
 **lab output link**    
-    
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_loop_output.log  
 
 
 
@@ -320,6 +320,10 @@ In this loop , first condition is checked , if it is true and the statements ins
 Below example will give the idea about the working of the while loop.
 
 **lab link** -
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
+
+**lab output link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_loop_output.log  
 
 
 ***
@@ -338,9 +342,10 @@ do while loop execute the statements atleast once if the condition is false .
                 `end  `  
 
 **lab link** -  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code.sv  
 
 **lab output link**  
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code_output.log  
 
 ***
 
@@ -383,10 +388,10 @@ This loop is use for the repeating of statements or operation for fix number of 
              `end  `  
 
 **lab link** - 
-  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat_loop/repeat_code.sv  
 
 **lab output link**
-  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat_loop/repeat_loop_output.log   
 
 
 ***
