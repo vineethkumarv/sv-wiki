@@ -111,6 +111,7 @@ github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blo
 ## disable fork  
 
 On execution of the disable fork, all the active process will get terminated.
+
 In the below figure we can see that after execution of main thread 1 we will move the thread 1 (fork_join) but after the thread 1 execution when it hit by the disable fork it termiates the process and executes the main thread 2.
 
 ![Untitled Diagram drawio (10)](https://user-images.githubusercontent.com/110509375/186893331-6fd6670c-fcfc-400b-90e2-53846c9e7068.png)
