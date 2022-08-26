@@ -47,13 +47,21 @@ The below figure shows the output of single dimension packed array, here packed 
 
                                    Figure.1 single dimension packed array ouptut
 
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/single_packed/packed_array.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/single_packed/packed_array.log
+ 
 The below figure shows the output of multi dimension packed array, here it consists of bit [2:0][3:0]xyz = 12'hdfe.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
 ![multi_packed](https://user-images.githubusercontent.com/110448056/186884901-0dfbfccd-c15f-4677-b9d3-8c394994a6b8.png)
 
                                   Figure.2 multi dimensional packed array output
-  
+
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.log
+
 **Applications of packed arrays:**
 
 They are used to store packet structures on which bit-select and part-select operations could be performed.
@@ -84,6 +92,10 @@ The below figure shows the output of single dimension unpacked array.
 
                                  Figure.3 single dimensional unpacked array output
 
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked_array.log
+
 The below figure shows the output of multi dimension unpacked array, here it consists of int abc[2][3] = $urandom_range(10,50).
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
@@ -91,6 +103,10 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 
                                 Figure.4 multi dimensional unpacked array output
           
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.log
+
 **Applications of unpacked arrays:**
 
 They are used to model Random Access Memories (RAMs), Read Only Memories (ROMs) and register files where one element is accessed at a time.
@@ -130,6 +146,10 @@ The below figure shows the output of dynamic array.
 
                              Figure.5 dynamic array output
 
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic/dynamic.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic/dynamic_array.log
+
 The below figure shows the output of dynamic array methods.
 In example,
 
@@ -140,6 +160,10 @@ xyz = '{11,12,13,14,15,16,17,18,19,20};
 ![methods_dynamic](https://user-images.githubusercontent.com/110448056/186891136-81fbb195-14c4-42b0-b355-fb280346ecc7.png)
 
                              Figure.6 dynamic array methods output
+
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods_dynamic.log
 
 **Applications of dynamic arrays:**
 
@@ -193,6 +217,10 @@ The below figure shows the output of associative array.
 
                                Figure.7 associative array output
 
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative/associative_array.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative/associative_array.log
+
 The below figure shows the output of associative array methods.
 In example,
 
@@ -203,6 +231,11 @@ abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 }
 ![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
 
                              Figure.8 associative methods output
+
+**Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative_methods/associative_methods.sv
+
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative_methods/associative_mthod.log
+
 
 **Applications of associative arrays:**
 
