@@ -11,7 +11,7 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 sr. no. | **data type**         |
 |:--|:---------------------- |
 |1.|[2-stage and 4-stage](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-state-and-4-state-data-type-cheat-sheet) |
-|2.|[Arrays]() | 
+|2.|[Arrays](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array) | 
 |3.|[Strings](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#string) |
 |4.|[Structures](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure) |
 |5.|[Enumerated](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#enum) | 
