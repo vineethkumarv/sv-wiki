@@ -84,6 +84,9 @@ SystemVerilog provides constructs that allow one process to terminate or wait fo
 The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution.
 it wait untill all the fork procersses complete the execution .  
 
+![Untitled Diagram drawio (9)](https://user-images.githubusercontent.com/110509375/186892635-e4555220-2465-4c79-b5f1-856ec84194c8.png)
+
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
 
 github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log  
@@ -91,6 +94,9 @@ github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blo
 ## disable fork  
 
 On execution of the disable fork, all the active process will get terminated.
+
+![Untitled Diagram drawio (10)](https://user-images.githubusercontent.com/110509375/186893331-6fd6670c-fcfc-400b-90e2-53846c9e7068.png)
+
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
 
