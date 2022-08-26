@@ -3,7 +3,7 @@
                              Figure.1. Control Flow
 
 ## Conditional Statement 
-Conditional statement  are used for executing the statements by giving the conditions. These statements until the condition become false . 
+Conditional statements are used for executing the statements by giving the conditions. These statements will work according to the condition. 
 There are various types of conditional statements - 
 
 ![Untitled Diagram-Page-1 drawio (2)](https://user-images.githubusercontent.com/110447788/186898999-9060d1d8-ba85-4dde-9b51-20218e709e0c.png)
@@ -11,7 +11,7 @@ There are various types of conditional statements -
                              Figure.2. Conditional Statements
 
 ### if 
- This statement is use for giving a single condition and   inside it executing the multiple statements or single statement . This is generally use for comparison of a number or two numbers .
+ This statement is used for giving a single condition and inside it executing the multiple statements or single statement. This is generally used for comparison of a number or two numbers.
 
 **Syntax**   
               `if(condition)begin  `  
@@ -29,7 +29,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 ***
 ### if else
 
-This statement , first the compiler goes to the if condition and checks the condition and execute it if it is true  or if "if" condition is not true , the compiler will go to the "else" statement and checks the condition either it is true or not . If the "if" or "else" any one of them is not true , then the compiler show the error .
+In this statement first, the compiler goes to the if condition and checks the condition and executes it if it is true or if the "if" condition is not true, the compiler will go to the "else" statement and checks the condition either it is true or not. If the "if" or "else" of any one of them is not true, then the compiler shows the error.
 
 **Syntax** -     
                `if(condition)begin  `    
@@ -52,7 +52,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 
 ### if else ladder 
 
-This statement is use by giving the multiple conditional statements . These statements are 'if elseif elseif .... else' . First the compiler checks the 'if 'condition and execute it if it is true  or if it is false, it will jump to the elseif condition and execute and soo on , at last it will come to else condition . 
+This statement is used by giving multiple conditional statements. These statements are 'if elseif elseif .... else' . First, the compiler checks the 'if 'condition and executes it if it is true or if it is false, it will jump to the else if condition and execute, and so on, at last, it will come to the else condition. 
 
 **Syntax** -   
 `              if(condition)begin  `  
@@ -78,7 +78,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 
 
 ***
-There are three new conditional statements are introduced in system verilog . These are -
+There are three new conditional statements are introduced in the system Verilog. These are -
 
 1. unique if 
 2. unique0 if 
@@ -87,12 +87,12 @@ There are three new conditional statements are introduced in system verilog . Th
 ***
 
 ### unique if
-This statement is same as the if condition statement when only one condition is true in the whole code . 
+This statement is the same as the if condition statement when only one condition is true in the whole code. 
 
-If more than the conditions are true this statement execute the first one which is true ,gives the output and will not write any error only write the warning(that more than one statement is true).
-If all the statements are false ,it will not display any error but will display a warning .
+If more than the conditions are true this statement executes the first one which is true, gives the output, and will not write any error only write the warning(that more than one statement is true).
+If all the statements are false, it will not display any error but will display a warning.
 
-Below lab example will show how unique if is different from the traditional if else statement .
+The below lab example will show how unique it is different from the traditional if else statement.
 
   **Syntax** -  
 `               unique if(condition)begin  `  
@@ -115,12 +115,12 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 ***
 ###  unique0 if 
 
-This statement is same as the if condition statement when only one condition is true in the whole code . 
+This statement is the same as the if condition statement when only one condition is true in the whole code. 
 
-If more than one condition is true , it will read the first true condition and display the output without any error but display a warning (more than one condition is true ).
-If more than one condition is false , it will not display any output , not even any error and warning.
+If more than one condition is true, it will read the first true condition and display the output without any error but display a warning (more than one condition is true ).
+If more than one condition is false, it will not display any output, not even any error and warning.
 
-Below examples will show the difference between the unique0 if and traditional if else condition .
+The below examples will show the difference between the unique0 if and traditional if else condition.
 
   **Syntax** -    
 `               unique0 if(condition)begin  `  
@@ -138,13 +138,13 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 ***
 ###  priority if 
 
-This is again a update version of if else condition statement .When only one condition is true , it will work same as the if else condition . 
+This is again an updated version of the if-else condition statement . When only one condition is true, it will work the same as the if else condition. 
 
-When more than one condition is true , it will execute the first true condition and gives the output and it will not display any error not even warning.
+When more than one condition is true, it will execute the first true condition and gives the output and it will not display any error not even a warning.
 
-When all the conditions are false it will display only a warning . 
+When all the conditions are false it will display only a warning. 
 
-Below example will properly show the working idea of the priority if condition .
+The below example will properly show the working idea of the priority if condition.
 
 **Syntax** -    
 `               priority if(condition)begin  `  
@@ -169,9 +169,9 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 
 
 ## case 
-The case statement allows us to execute the code for the particular case expression . 
-This will give the proper structure for a long code and decrease the complexity of the code also .  
-There are three updates for the case statement in system verilog and these are -  
+The case statement allows us to execute the code for the particular case expression. 
+This will give the proper structure for a long code and decrease the complexity of the code also.  
+There are three updates for the case statement in the system Verilog and these are -  
 1. unique case  
 2. unique0 case  
 3. priority case  
@@ -179,14 +179,14 @@ There are three updates for the case statement in system verilog and these are -
 ***
 ### unique case 
 
-In this , if all the case condition is false , it will display a warning (not match is found for the case statement )with no error .
-If all the conditions are true or more than one is true , it will read the first right or matched case condition and will display the output with one warning and no error.
+In this, if all the case condition is false, it will display a warning (no match is found for the case statement ) with no error.
+If all the conditions are true or more than one is true, it will read the first right or matched case condition and will display the output with one warning and no error.
 
 **Syntax**-  
 `            unique case(condition)  `  
             `condition_1: Statements ;  `  
             `.......`  
-            `conditon_N:  Statements ;  `  
+            `conditon_N:  Statements;  `  
             `endcase  `  
 
 **lab link** 
@@ -202,7 +202,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 ***
 ### priority case 
 
-In this type of case statement, if more than one case condition is true , it will display the output without giving any error with no warning .
+In this type of case statement, if more than one case condition is true, it will display the output without giving any error with no warning.
 
 **Syntax**-  
 `             priority case (condition)  `  
@@ -236,7 +236,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 
 ## Loops 
 
-The loops has a sequence of instructions , it will execute when the instruction is true and execute until the condition of loops will not false . When the condition become false , the loops will terminate . 
+The loops have a sequence of instructions, it will execute when the instruction is true and execute until the condition of the loops will not false. When the condition becomes false, the loops will terminate. 
 There are various kinds of loops  -
  
 
@@ -250,11 +250,11 @@ There are various kinds of loops  -
 
 
 ### 1. for 
-for loop, execute the statements multiple times until the statement become false . Execution of "for loop" require three steps -
+for loop, execute the statements multiple times until the statement become false. Execution of "for loop" requires three steps -
 
-a. Initialization - It will firstly initialize the variable .
-b. condition -  give condition to the loops . It will decide the purpose of the loop.
-c. modifier - means in this part , the increment or decrement done .
+a. Initialization - It will first initialize the variable.
+b. condition -  give condition to the loops. It will decide the purpose of the loop.
+c. modifier - means in this part, the increment or decrement is done.
 
 **Syntax** -   
 `              for (initialization; condition; modifier) begin  `    
@@ -271,15 +271,15 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 *** 
 ### 2. foreach
 
-This loop is the update version of for loop in system verilog . As compare to for loop , foreach loop syntax is less complicated .
-When the condition is true , the statements of the loop execute until the condition become false same as for loop .
+This loop is the updated version of for loop in the system Verilog. As compared to for loop, foreach loop syntax is less complicated.
+When the condition is true, the statements of the loop execute until the condition becomes false same as for loop.
 
 **Syntax** -    
 `               foreach(variable[iterator])begin  `  
                `Statements;  `  
                `end   `  
 
-Below example will give the working idea of foreach loop .
+The below example will give the working idea of foreach loop.
 
 **lab link** -
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_loop.sv
@@ -291,14 +291,14 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
  
 ### 3. forever loop
 As the name says forever loop will execute the statements inside the loop forever.  
-It can be said as indefinite iteration.
+It can be said an indefinite iteration.
 
 **Syntax** -   
 `           forever begin  `  
            `multiple statements;  `  
            `end  `  
   
-Below example gives the idea of the working of forever loop .
+The below example gives the idea of the working of a forever loop.
 
 **lab link** -   
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_code.sv  
@@ -312,13 +312,13 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ### 4. while
 
-In this loop , first condition is checked , if it is true and the statements inside the while loop will execute until the condition become false .
+In this loop, the first condition is checked, if it is true and the statements inside the while loop will execute until the condition become false.
 
 **Syntax** -   
 `               while(condition)begin              `  
                `Statements;  `  
                `end  `  
-Below example will give the idea about the working of the while loop.
+The below example will give an idea about the working of the while loop.
 
 **lab link** -
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
@@ -328,8 +328,8 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 
 ***
- ### 5. do while 
-A do while loop first executes the statements once, and then checks for the condition to be true. If the condition is true, the set of statements are executed until the condition turns out to be false. If the condition is false, the loop ends right there.
+ ### 5. do-while 
+A do while loop first executes the statements once, and then checks for the condition is be true. If the condition is true, the set of statements is executed until the condition turns out to be false. If the condition is false, the loop ends right there.
 
 
 **Syntax** -  
@@ -350,13 +350,13 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ### 6. break 
  
-Break is use to terminate the any loop . Generally, we use break after giving the condition in code using the if statement.
+A break is used to terminate any loop. Generally, we use break after giving the condition in code using the if statement.
 
-We can use break statement in any loop(for , while , do-while), for terminating the execution of loop . It is always use inside the loop.
+We can use break statements in any loop(for, while, do-while), for terminating the execution of a loop. It is always used inside the loop.
 
 **Syntax** - `break;`  
 
-Below example will show ,how to terminate the loop using the break statement .
+The below example will show, how to terminate the loop using the break statement.
 
 **lab link** -  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue.sv
@@ -368,11 +368,11 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/b
 
 ### 7. continue 
 
-This statement is generally use for skipping the statements in the loop . It is also use inside the loops .
+This statement is generally used for skipping the statements in the loop. It is also used inside the loops.
 
 **Syntax** - `continue;`   
 
-Below example will show how the continue  statement work . 
+The below example will show how the continue statement work. 
 
 **lab link** -  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue.sv
@@ -384,7 +384,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/b
 
 ### 8. repeat 
 
-This loop is use for the repeating of statements or operation for fix number of times .
+This loop is used for repeating statements or operations for fixed number of times.
 
 **Syntax** -  
              `repeat(no. of times)begin  `  
@@ -400,9 +400,9 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ***
 
-## Blocking and non blocking statement - 
+## Blocking and non-blocking statement - 
 ### Blocking statement  
-Blocking statements are assigned with = . It will execute one after the other in procedural blocks . Blocking statements are execute in a block in a sequential manner but when more than two procedural blocks , these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks .
+Blocking statements are assigned with =. It will execute one after the other in procedural blocks. Blocking statements are executed in a block in a sequential manner but when more than two procedural blocks, these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks.
 
 **Syntax** -  
 `            variable_datatype variable name = value assign;`  
@@ -418,10 +418,10 @@ For example - 1. Time delay assignation
 `end `  
 `endmodule `  
 
- In this code , there are two variables a and b . The value assign to a = 10 after the 10sec and the value assign to b = 20 after the time delay of 20+10=30 sec . 
+ In this code, there are two variables a and b. The value assigns to a = 10 after the 10sec and the value is assigned to b = 20 after the time delay of 20+10=30 sec. 
 
 
-Example 2 - Swapping of two number using blocking statement .  
+Example 2 - Swapping of two numbers using blocking statement.  
 **Code**  
 `module non_blocking;`  
 `login [4:0] a , b;`  
@@ -429,7 +429,7 @@ Example 2 - Swapping of two number using blocking statement .
 `a=10;`  
 `b=30;`  
 `int t;  // introducing the temporary variable.  `  
-`// swapping two number using the temporary variable //`  
+`// swapping two numbers using the temporary variable //`  
 `a=t;  // t=10;`  
 `t = b;  // b=10;`  
 `b= a ;  // a = 30;`  
@@ -450,8 +450,8 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/b
 
 ### Non - blocking statement  
 
- Non - blocking statement are assign with the <=. It will not block the execution of statement inside that particular block.
-These statement will execute the parallel inside that particular block . 
+ Non-blocking statements are assigned with the <=. It will not block the execution of a statement inside that particular block.
+These statements will execute the parallel inside that particular block. 
 
 **Syntax** -  
 `             data_type_name variable_name <= value assignation ;`  
@@ -466,7 +466,7 @@ For example-1-
 `end `  
 `endmodule `  
 
- In this code , there are two variables a and b . The value assign to a = 10 after the 10sec and  parallel the value assign to b = 20 after the time delay of 20 sec . 
+ In this code, there are two variables a and b. The value assigns to a = 10 after the 10sec and parallels the value assign to b = 20 after the time delay of 20 sec. 
              
 
 Example2 -  Swapping of two numbers 
@@ -478,12 +478,12 @@ Example2 -  Swapping of two numbers
 `b= 30;`  
 `a<=b;  `// Assign the value to b to a    
 `b<=a;  `  // Assign the value of b to a   
-`$monitor("The value of a and b after swapping is %d %d" , a, b );  `    
+`$monitor("The value of a and b after swapping is %d %d", a, b );  `    
  `end   `  
 `endmodule   `    
 
 **Output**  
-The value of a and b after swapping is 30 and 20 .
+The value of a and b after swapping is 30 and 20.
 
 **lab link**
 
@@ -508,8 +508,8 @@ S.No.|Function | Task |
 :-----|:--------|:------|
 1.|Not have timing control statents| have timing control statements|
 2.|  Can return some value | Cannot return any value|
-3.| Can call only other functions , not tasks .|Can call other task and function both.|
-4.| only return input arguments | Can return input , output and inout arguments |
+3.| Can call only other functions, not tasks .|Can call other task and function both.|
+4.| only return input arguments | Can return input, output and input arguments |
 
 
 
@@ -518,11 +518,11 @@ S.No.|Function | Task |
 
 ### Function 
 
-The function is the subroutine that contain procedural code.
-The purpose of the function is to return the value that can be used in the expression .
-The function cannot have time control statements like # , @ or fork join( The function must execute in zero time .)  
-A function can call other functions not other tasks .
-A function can have atleast one argument but not have any inout or out argument .
+The function is the subroutine that contains procedural code.
+The purpose of the function is to return the value that can be used in the expression.
+The function cannot have time control statements like #, @, or fork-join( The function must execute in zero time .)  
+A function can call other functions, not other tasks.
+A function can have at least one argument but not have any input and out argument.
 
 
 **Syntax** -  
@@ -535,7 +535,7 @@ Arguments are of two types -
 
 2. actual argument - value and function passed to and from the routine.
 
-We can call the function mainly by two ways -
+We can call the function mainly in two ways -
 1. call by value   
 2. call by reference  
 
@@ -545,7 +545,7 @@ In argument pass by value, the argument passing mechanism works by copying each 
 
 If any changes to arguments within the subroutine, those changes will not be visible outside the subroutine.
 
-Below example will show the clear overview of working of call by value function .
+The below example will show a clear overview of the working of the call by value function.
 
 **lab link**
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_value/function_by_value.sv
@@ -557,9 +557,9 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/f
 
 ### call by reference 
 
-In this , the reference to the original argument is passes to the subroutine .As the argument within a subroutine is pointing to an original argument, any changes to the argument within subroutine will be visible outside.
+In this, the reference to the original argument is passed to the subroutine. As the argument within a subroutine is pointing to an original argument, any changes to the argument within the subroutine will be visible outside.
 
-Below example will show the clear idea .
+The below example will show the clear idea.
 
 
 **lab link**
@@ -573,18 +573,18 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/f
 
  ## task 
 
-The task is use to split the code in into small parts same as function but there are some differences in between them .  
+The task is used to split the code into small parts same as the function but there are some differences between them.  
 In task , we can provide time delays like # , @ .etc.  
-Task can call other tasks and functions also .
-Task cannot return anu value .
-We can assign input ,output and inout argument in task , which is not possible in functions.
+The task can call other tasks and functions also.
+The task cannot return any value.
+We can assign input, output,inout arguments in task, which is not possible in functions.
  
 **Syntax** -  
 `task task_name(arguments)`  
 `Statements;  `  
 `endtask  `  
 
-There are generally two type to task we use -  
+There are generally two types of tasks we use -  
 1. Static task   
 2. Automatic task  
 
@@ -616,9 +616,9 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/t
 ***
 ## events 
 
-Event is use for synchronizing between two or more concurrently active processes. First process will trigger the event another one is wait for the event .  
+Event is used for synchronizing between two or more concurrently active processes. The first process will trigger the event another one is waiting for the event.  
 Event can trigger by using the -> or ->> operator .
-Processes can wait for event by using the @ operator or .triggered .
+Processes can wait for the event by using the @ operator or .triggered.
 
 
 
