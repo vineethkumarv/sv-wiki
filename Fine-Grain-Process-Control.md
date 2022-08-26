@@ -9,7 +9,7 @@ When we fork off any thread, a new object of process class is created at that ti
 |:---------------------- | :--------------------|
 |[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#self)|     will return the handle of the process|
 |    kill()   |   will kill the thread     |
-|[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/_edit#status)|will return information about which mode the current thread is|
+|[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#status)|will return information about which mode the current thread is|
 |await()| waits for some other thread to complete.|
 |suspend()| suspends the thread for some indefinite time|
 |resume()| resumes the thread from suspended state|
