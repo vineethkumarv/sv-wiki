@@ -5,7 +5,8 @@ In the below figure we can see that types of processes and the process controls.
 
 ![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/110509375/186194367-81333f7f-a4f1-486c-800c-79606be624c3.png)
 
-                                                *** Fig 1   ***
+          Fig-1: The processes and process control blocks.
+
 ## Cheat sheet links
 | **Processes**         | **Description** |
 |:---------------------- | :-------------|
@@ -18,14 +19,14 @@ In the below figure we can see that types of processes and the process controls.
 
 ## Processes or Threads
 We have 3 types of Threads/Processes
- 1. fork-join
-1.  fork-join_any
-1.  fork-join_none
+1. fork-join
+2.  fork-join_any
+3.  fork-join_none
 
 ## 1.fork-join
 SystemVerilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute when all the child thread is finish the execution.  
 
- **syntax**:-
+**syntax**:-
   
 **fork**  
    //Thread 1  
@@ -37,11 +38,11 @@ In the below we can see that main thread 1 is executed first but main thread 2 i
 
 ![Untitled Diagram drawio (6)](https://user-images.githubusercontent.com/110509375/186889441-662c114e-ac91-4947-94c8-7c0f303c606c.png)
 
-                                             ***  Fig 2  ***
+          Fig-2: The output of fork join block.
   
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.sv
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
+Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
 
 ## 2.fork-join_any  
 
@@ -59,11 +60,11 @@ In the below figure we can see that  here  main thread 1 executed and one child 
 
 ![Untitled Diagram drawio (7)](https://user-images.githubusercontent.com/110509375/186891255-902be705-514f-46a5-b460-f49a7598c228.png)
 
-                                          ****  Fig 3   ***
+          Fig-3: The output of fork join_any block.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
+Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
 
 ## 3. fork-join_none  
 
@@ -81,19 +82,19 @@ In the below figure you can see that after the execution of main thread 1 we hav
 
 ![Untitled Diagram drawio (8)](https://user-images.githubusercontent.com/110509375/186891715-959c0d1d-3cfa-44cd-9b58-8ff957c8b85b.png)
 
-                                                 *** fig 4 ***
+          Fig-4: The output of the fork join_none block.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.log
+Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.log
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 # **Process control**
 
 SystemVerilog provides constructs that allow one process to terminate or wait for the completion of other processes. 
-* wait fork
-* disable fork
-## wait fork  
+1. wait fork
+2. disable fork
+##1. wait fork  
 
 The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution.
 it wait untill all the fork procersses complete the execution .  
@@ -102,22 +103,22 @@ In the below figure we see that the main thread 2 is executed after all the thre
 
 ![Untitled Diagram drawio (9)](https://user-images.githubusercontent.com/110509375/186892635-e4555220-2465-4c79-b5f1-856ec84194c8.png)
 
-                                              *** Fig 5 ***
+          Fig-5: The output of wait fork process control statement.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
 
-github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log  
+github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log  
 
-## disable fork  
+##2. disable fork  
 
 On execution of the disable fork, all the active process will get terminated.
 
 In the below figure we can see that after execution of main thread 1 we will move the thread 1 (fork_join) but after the thread 1 execution when it hit by the disable fork it termiates the process and executes the main thread 2.
 
 ![Untitled Diagram drawio (10)](https://user-images.githubusercontent.com/110509375/186893331-6fd6670c-fcfc-400b-90e2-53846c9e7068.png)
-                                             
-                                                        *** Fig 6 ***
+
+          Fig-6: The output of disable fork process control statement.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.log
+Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.log
