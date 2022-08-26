@@ -75,98 +75,120 @@ integer is 4-state data type, integer can be either 0,1,x and z which represent 
 ****Syntax :**** `integer variable_name;`  
 ****Example :**** `integer data;`
 
-The below figure shows the output of integer output.
+The below figure shows the output of integer data type.
 
 ![integer](https://user-images.githubusercontent.com/110448382/186824975-f4a0493d-fe8d-4da9-8c6d-f9eaf43de032.png)
 
                                        Figure.2. integer output 
 
+---
+
 ## 3. time
 
-time is special data type for simulation time measuring. time is 4-state data type, time represent 64-bit unsigned integer, that can be used in conjunction with the $time system task to hold current simulation time.
+time is special data type for simulation time measuring. It is 4-state data type,represent 64-bit unsigned integer, that can be used in conjunction with the $time system task to hold current simulation time.
 
 ****Syntax :**** `time variable_name;`  
 ****Example :**** `time t;`       
 `t=$time;`    
 
-The below figure shows the output of integer output.
+The below figure shows the output of time data type.
 
 ![time](https://user-images.githubusercontent.com/110448382/186825013-5d37ca86-66d8-4012-a437-d9b3c7f4d611.png)
 
+                                     Figure.3. time output
+
+---
 
 ## 4. real
 
-The real data type implemented as a 64-bit real number. Real numbers can be specified in either decimal notation (4.43) or in scientific notation (42e8). initial value of real data type is 0.
+The real data type implemented as a 64-bit real number. Real numbers can be specified in either decimal notation (4.43) or in scientific notation (42e8). Default value of real data type is 0.
 
 ****Syntax :**** `real variable_name;`  
 ****Example :**** `real data;`      
 `data = 4.43;`   
 
-The below figure shows the output of integer output.
+The below figure shows the output of real data type.
 
 ![real](https://user-images.githubusercontent.com/110448382/186825049-8e139a76-5e2d-43f1-af75-f8e886d79ef3.png)
 
+                                        Figure.4. real output
+
+---
 
 ## 5. bit
 
-bit is 2-state 32-bit unsigned integer which is used most often testbenches. bit can be either 0 or 1 which represents a single bit. initial value of bit data type is 0.
+bit is 2-state 32-bit unsigned integer which is used most often test benches. It can be either 0 or 1 which represents a single bit. Default value of bit data type is 0.
 
 ****Syntax :**** `bit variable_name;`  
 ****Example :**** `bit data;`        
 `bit [0:31] data`    
 
-The below figure shows the output of integer output.
+The below figure shows the output of bit data type.
 
 ![bit](https://user-images.githubusercontent.com/110448382/186825098-59e5284a-6a0f-4fdc-8ad6-ff434a685832.png)
 
+                                         Figure.5. bit output
+
+---
 
 ## 6. byte
 
-byte is 2-state data type which is used most often testbenches. byte can be either 0 or 1 which represent a 8-bit signed integer. initial value of byte is 0.
+byte is 2-state data type which is used most often test benches. It can be either 0 or 1 which represent a 8-bit signed integer. Default value of byte is 0.
 
 ****Syntax :**** `byte variable_name;`  
 ****Example :**** `byte data;`   
 
-The below figure shows the output of integer output.
+The below figure shows the output of byte data type.
 
 ![byte](https://user-images.githubusercontent.com/110448382/186825136-81275ffc-0942-43fe-b7bf-5aa42ba24ca9.png)
 
+                                  Figure.6. byte output
+
+---
 
 ## 7. shortint 
 
-shortint is 2-state data type, shortint can be either 0 or 1 which represent a 16-bit signed integer. initial value of shortint is 0.
+shortint is 2-state data type. It can be either 0 or 1 which represent a 16-bit signed integer. Default value of shortint is 0.
 
 ****Syntax :**** `shortint variable_name;`  
 ****Example :**** `shortint data;`
 
-The below figure shows the output of integer output.
+The below figure shows the output of shortint data type.
 
 ![shortint](https://user-images.githubusercontent.com/110448382/186825172-17bb35a1-c1a4-4071-ad9f-6e45e9011b8f.png)
 
+                                       Figure.7. shortint output
+
+---
 
 ## 8. int 
 
-int is 2-state data type which is used most often testbenches. int can be either 0 or 1 which represent a 32-bit signed integer. initial value of int is 0.
+int is 2-state data type which is used most often testbenches. It can be either 0 or 1 which represent a 32-bit signed integer. Default value of int is 0.
 
 ****Syntax :**** `int variable_name;`  
 ****Example :**** `int data;`
 
-The below figure shows the output of integer output.
+The below figure shows the output of int data type.
 
 ![int](https://user-images.githubusercontent.com/110448382/186825210-010b32ee-95c4-4c6e-b638-9f81ec703812.png)
 
+                                      Figure.8.int output
+
+---
 
 ## 9. longint 
 
-longint is 2-state data type, longint can be either 0 or 1 which represent a 64-bit signed integer. initial value of longint is 0.
+longint is 2-state data type. It can be either 0 or 1 which represent a 64-bit signed integer. Default value of longint is 0.
 
 ****Syntax :**** `longint variable_name;`  
 
 ****Example :**** `longint data;`
 
-The below figure shows the output of longint output.
+The below figure shows the output of longint data type.
 
 ![longint](https://user-images.githubusercontent.com/110448382/186825249-c7470eb9-2738-4218-8d16-ce9634cd5c31.png)
+
+                                        Figure.9. longint output
 
 ---
 
