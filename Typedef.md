@@ -33,7 +33,12 @@ The below figure shows that output of typedef with class.
 
                                                    Fig 1 : Typedef with class  
 
-The above example and output shows that how typedef avoids the compiler error in class1 because class2 declaration is not done  at that time. If we didn't use 'typdef class2' at the beginning , it will show some compiler error. It will display the text given inside the $display.
+The above example and output shows that how typedef avoids the compiler error in class1 because class2 declaration is not done  at that time. If we didn't use 'typdef class2' at the beginning , it will show some compiler error. It will display the text given inside the $display.  
+
+
+Github lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.sv   
+
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.log 
 
 ## **Typedef in Structure**  
 
@@ -57,11 +62,17 @@ Without Typedef, Structure may happen some compile errors in large complex testb
  **Output:**    
 
 The below figure shows the output of typedef with structure datatype.
-![12](https://user-images.githubusercontent.com/110484152/186636386-2301edc3-eda9-498c-b038-84e4c3de68a4.png)  
-
-                                                    Fig 2: Typedef with structure  
+![12](https://user-images.githubusercontent.com/110484152/186636386-2301edc3-eda9-498c-b038-84e4c3de68a4.png)    
+  
+                                                 Fig 2: Typedef with structure  
 
 The above output shows that typedef in structure decreases the usage of longer datatypes by creating new variable. We can see that in example 'longint' datatype changed to 'age' ,it is a new variable that is created by using typedef in structure.   
+
+Github lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/structtypedef/structtypedef.sv  
+
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/structtypedef/structtypedef.log  
+
+ 
 ## **Typedef in Enumeration**   
 
 Typedef uses for when we need more than one variable to share the same enumeration values. Without Typedef we will get syntax error. Enumeration datatype create new variable for all values.
@@ -81,5 +92,9 @@ The below figure shows the typedef with 'enumeration datatype
 
                                              Fig 3 : Typedef with Enumeration 
 
-The above output shows that enum datatype with typedef .If we didn't use typedef with enumeration datatype, it will show syntax error. The output shows that enumeration datatype created a new variable 'e_ pen' and initialize a variable 'pen'. After this, choose one value and assign to 'pen'. It will display the assigned value.   
+The above output shows that enum datatype with typedef .If we didn't use typedef with enumeration datatype, it will show syntax error. The output shows that enumeration datatype created a new variable 'e_ pen' and initialize a variable 'pen'. After this, choose one value and assign to 'pen'. It will display the assigned value.      
+
+Github lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/enumtypedef/enumtypedef.sv  
+
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/enumtypedef/enumtypedef.log
 
