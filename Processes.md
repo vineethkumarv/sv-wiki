@@ -27,7 +27,7 @@ SystemVerilog provides support for parallel threads through fork-join construct.
   //Thread 2  
   //Thread 3  
 **join**  
-In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute with the time delays.
+In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.
 
 ![Untitled Diagram drawio (6)](https://user-images.githubusercontent.com/110509375/186889441-662c114e-ac91-4947-94c8-7c0f303c606c.png)
 
@@ -47,6 +47,8 @@ The parent thread blocks will be execute when  any one of the child threads is f
   // Thread 2 \
  // Thread 3  
 **join_any**
+
+In the below figure we can see that  here  main thread 1 executed and one child is executed and then main thread 2 is executed.If we have main thread and child thread has same delay then the child thread is executed first like here we can see thread 4-1  and main thread 2 has same time delay but thread 4-1(i.e child thread) executed first. 
 
 ![Untitled Diagram drawio (7)](https://user-images.githubusercontent.com/110509375/186891255-902be705-514f-46a5-b460-f49a7598c228.png)
 
