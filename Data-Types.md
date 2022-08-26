@@ -26,15 +26,15 @@ sr. no. | **data type**         |
 
 sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
 |:--|:---------------------- | :-------------|:-----------------|:-----------------------|
-|1.|logic |   4 | >=1 | unsigned  | 
-|2.|integer | 4 | 32  | signed   |
-|3.|time | 4 | 64 | unsigned  |
-|4.| real | 4 | 64 | unsigned |
-|5.|bit |   2 | >=1 | unsigned  | 
-|6.|byte | 2 | 8  | signed   |
-|7.|shortint | 2 | 16 | signed  |
-|8.| int | 2 | 32 | signed |
-|9.| longint | 2 | 64 | signed |
+|1.|[logic](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-logic) |   4 | >=1 | unsigned  | 
+|2.|[integer](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-integer) | 4 | 32  | signed   |
+|3.|[time](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-time) | 4 | 64 | unsigned  |
+|4.|[real](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-real) | 4 | 64 | unsigned |
+|5.|[bit](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#5-bit) |   2 | >=1 | unsigned  | 
+|6.|[byte](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#6-byte) | 2 | 8  | signed   |
+|7.|[shortint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#7-shortint) | 2 | 16 | signed  |
+|8.|[int](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#8-int) | 2 | 32 | signed |
+|9.|[longint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#9-longint) | 2 | 64 | signed |
 
          Tabular column.1. 2-state and 4-state data type
 
