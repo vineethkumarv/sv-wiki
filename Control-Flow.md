@@ -106,6 +106,10 @@ Below lab example will show how unique if is different from the traditional if e
 
 
 **lab link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if_code.sv  
+
+**lab output link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if_code_output.log  
 
 
 ***
@@ -127,7 +131,8 @@ Below examples will show the difference between the unique0 if and traditional i
                `end  `  
   
 
-**lab links**
+**lab links**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique0_if/unique0_if_code.sv  
 
 
 ***
@@ -151,7 +156,10 @@ Below example will properly show the working idea of the priority if condition .
               
               
   
-**lab link**
+**lab link**  
+
+
+**lab output link**   
 
 
 ***
@@ -183,9 +191,9 @@ If all the conditions are true or more than one is true , it will read the first
 **lab link** 
 
 
-***
+**lab output link**  
 
-### unique0 case 
+ 
 
 
      
@@ -204,6 +212,8 @@ In this type of case statement, if more than one case condition is true , it wil
    
 **lab link** - 
 
+
+**lab output link**  
 
 
 
@@ -291,6 +301,7 @@ Below example gives the idea of the working of forever loop .
 
 **lab link** -   
 
+
 **lab output link**    
     
 
@@ -326,7 +337,9 @@ do while loop execute the statements atleast once if the condition is false .
                 `Statements;  `  
                 `end  `  
 
-**lab link** -
+**lab link** -  
+
+**lab output link**  
 
 
 ***
@@ -341,7 +354,10 @@ We can use break statement in any loop(for , while , do-while), for terminating 
 
 Below example will show ,how to terminate the loop using the break statement .
 
-**lab link** -
+**lab link** -  
+
+
+**lab output link**  
 
 
 ***
@@ -367,10 +383,10 @@ This loop is use for the repeating of statements or operation for fix number of 
              `end  `  
 
 **lab link** - 
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat_loop/repeat_code.sv  
+  
 
 **lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat_loop/repeat_loop_output.log  
+  
 
 
 ***
