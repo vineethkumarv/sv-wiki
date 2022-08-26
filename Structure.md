@@ -46,7 +46,9 @@ The below output shows the unpacked structure.
 
 The above output illustrates that the unpacked structure contains the different datatypes like string, int, byte etc. The string must be initialised within double quotes only. The variables like int , byte can be assign the value itself  
 
-Github Lablink: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/structn/structn.sv
+Github Lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/structn/structn.sv  
+
+Github Lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/structn/structn.log
 
 
 ## **Packed structure**  
@@ -79,7 +81,9 @@ The below output shows that output of packed structure
 
 The above output illustrates the output of packed structure. It contains the different datatypes like bit , logic . We can assign values and  display as output. Here we cannot  use string dataype inside the packed structure because string cannot be treated as single vector. It will show compile error.    
 
-Github Lablink:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.sv 
+Github lab code link :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.sv   
+
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.log
 
 
 ----
