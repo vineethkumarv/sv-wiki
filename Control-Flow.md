@@ -142,7 +142,7 @@ Below example will properly show the working idea of the priority if condition .
 
 
 
-## class  
+## case 
 The case statement allows us to execute the code for the particular case expression . 
 This will give the proper structure for a long code and decrease the complexity of the code also .  
 There are three updates for the case statement in system verilog and these are -  
