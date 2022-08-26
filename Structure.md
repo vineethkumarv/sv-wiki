@@ -15,7 +15,7 @@ Unpacked structure is the default structure syntax and is same as normal structu
 
 structure name = '{value1, value2, value3};   
 
-**** Alternate Method to assign values:****  
+****Alternate Method to assign values:****  
  
  structure name = '{variable1 : value1 , variable2 : value2 , variable 3 : value3};  
 This method gives initialization done in one step. The variable and value can be separated by a colon '.' .
