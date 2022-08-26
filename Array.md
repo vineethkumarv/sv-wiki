@@ -1,5 +1,217 @@
+# Arrays
+An array is a collection of elements, all of the same type, and accessed using its name and one or more indices. Verilog 2001 required that the low and high array limits must be part of the array declaration. System Verilog has introduced the compact array declaration style, where just giving the array size along with the array name declaration is enough.
+
+The below figure shows the different types of arrays used in System Verilog.
+![arrays_sv](https://user-images.githubusercontent.com/110448056/186146778-a5174960-8e33-42df-845e-d1fd2bc1b1f3.png)
+
+                                                     Fig.1 Types of arrays in SV
+
+## Arrays cheat sheet
+
+**Sr No.** | **Arrays Types**         | **Description**                                                                   | 
+|---|------------------------------------------ | -------------------------------------------------------------------------------------|
+1|[Packed Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#packed-arrays) | Dimension of array declared before array name declaration |       
+2|[Unpacked Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#unpacked-arrays) | Dimension of the array declared after array name declaration | 
+3|[Dynamic Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#dynamic-arrays) | Memories will be allocated at run time |
+4|[Associative Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#associative-arrays) | Memories allocated only when it is used and any index type is used for indexing the array |
+5|[Queue](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#queue) | It is similar to fifo and we can add and remove elements from queue at run time |
+
+## Static Arrays(Fixed size arrays):
+In fixed size array / Static arrays, array size will be constant throughout the simulation, Once the array is declared no need to create it. By default, the array will be initialized with value ‘0’. In this type of arrays memories will be occupied during compilation stage and we can't able to rellocate the memories at run time.
+
+Static arrays has two types: 1) Packed Arrays 2) Unpacked Arrays.
+
+---
+
+### Packed Arrays:
+A packed array is one where the dimensions of the array is declared before the array name. In this multiple bits of array stored in one memory location.
+
+**Note:-** It can be made of any single bit data types bit, logic and reg. we can't use multi bits data types for packed arrays.
+ 
+**Syntax:-** `[data_type] [dimensions] [array_name];`
+
+**Example,** 
+
+bit [3:0]abc = 4'b0110  
+logic [15:0]pqr = 16'h10fe  
+reg [7:0]xyz = 8'd16
+
+**Some Points about packed arrays:**
+
+*  If a packed array is declared as signed, then the array viewed as a single vector shall be signed. The individual elements of the array are unsigned unless they are of a named type declared as signed.
+* The maximum size of a packed array can be limited, but shall be at least 65536 (2^16) bits.
+
+The below figure shows the output of single dimension packed array, here packed array consists of reg, logic and bit data type as mentioned in the above example.
+
+![single_packed](https://user-images.githubusercontent.com/110448056/186883341-d960ed62-8e66-4ff9-b729-2f03c7ffd57f.png)
+
+                                   Figure.1 single dimension packed array ouptut
+
+The below figure shows the output of multi dimension packed array, here it consists of bit [2:0][3:0]xyz = 12'hdfe.
+Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
+
+![multi_packed](https://user-images.githubusercontent.com/110448056/186884901-0dfbfccd-c15f-4677-b9d3-8c394994a6b8.png)
+
+                                  Figure.2 multi dimensional packed array output
+  
+**Applications of packed arrays:**
+
+They are used to store packet structures on which bit-select and part-select operations could be performed.
+
+---
+
+### Unpacked Arrays:
+A unpacked array is one where the dimensions of the array is declared after the array name. In this multiple bits will be stored in different memory locations.
+
+**Syntax:-**  `[data_type] [array_name] [dimension];`
+
+**Example,** 
+
+byte a[8] = '{4,5,6,2,3,7,9,10}
+
+int abc[10] = $urandom_range(10,50); where, $urandom_range is inbuilt function which generates random numbers between 10 to 50.
+
+**Some Points about unpacked arrays:**
+
+* They can be of any data type.
+* If an unpacked array is declared as signed, then this applies to the individual elements of the array, since the whole array cannot be viewed as a single vector.
+* The unpacked dimensions can be arranged in memory in any way that the simulator chooses – does not have to be contiguous.
+* They could be fixed-size arrays, dynamic arrays, associative arrays or queues.
+
+The below figure shows the output of single dimension unpacked array.
+
+![single_unpacked](https://user-images.githubusercontent.com/110448056/186889154-0f23c201-ca8b-47cd-ae46-8fcd3c0d0cfd.png)
+
+                                 Figure.3 single dimensional unpacked array output
+
+The below figure shows the output of multi dimension unpacked array, here it consists of int abc[2][3] = $urandom_range(10,50).
+Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
+
+![multi_unpacked](https://user-images.githubusercontent.com/110448056/186889779-c6758475-6199-4e4e-9cbf-e25e0e2abd29.png)
+
+                                Figure.4 multi dimensional unpacked array output
+          
+**Applications of unpacked arrays:**
+
+They are used to model Random Access Memories (RAMs), Read Only Memories (ROMs) and register files where one element is accessed at a time.
+
+---
+
+## Dynamic Arrays:
+A dynamic array is an unpacked array whose size can be set or changed at run time. The space for a dynamic array does not exist until the array is explicitly created at run-time. 
+
+**Syntax:-** `<data_type> array_name []`
+
+**Example,**
+
+int abc[] = new[7];
+
+abc[7] = '{11,12,13,14,15,16,17};
+
+**Some Points about unpacked arrays:**
+
+* The default size of an un-initialized dynamic array is 0.
+* Dynamic arrays support all variable data types as element types, including arrays.
+* An out-of-bound access in a dynamic array leads to a run-time error.
+
+**Dynamic Arrays Methods cheat sheet:**
+
+Sr No. | **Methods**         | **description**                                                                   | 
+|---|------------------------------------------ | -------------------------------------------------------------------------------------|
+1|constructor new [value] | Sets the size of a dynamic array and initializes its elements or changes the size of the array at run-time. If the value is zero, the array shall become empty. If the value is negative, then it is an error.   |       
+2|function int size() | The size() method returns the current size of a dynamic array or returns zero if the array has not been created| 
+3|function void delete() | The delete() method empties the array, resulting in a zero-sized array|
+
+                                Tabular.1. dynamic array methods
+
+The below figure shows the output of dynamic array.
+
+![dynamic](https://user-images.githubusercontent.com/110448056/186890744-7a0a6733-b3a1-4e87-ae49-7956d8b5a7d1.png)
+
+                             Figure.5 dynamic array output
+
+The below figure shows the output of dynamic array methods.
+In example,
+
+int xyz[] = new[10];
+
+xyz = '{11,12,13,14,15,16,17,18,19,20};
+
+![methods_dynamic](https://user-images.githubusercontent.com/110448056/186891136-81fbb195-14c4-42b0-b355-fb280346ecc7.png)
+
+                             Figure.6 dynamic array methods output
+
+**Applications of dynamic arrays:**
+
+A dynamic array that can be allocated and re-sized during simulation will avoid this unnecessary memory allocation.
+
+---
+
+## Associative Arrays:
+
+An associative array is an unpacked array data-type. It does not have any storage allocated until it is used, and the index type used to access elements is not restricted to integers.
+
+**Syntax:-** `<data_type> array_name [index_type]`
+
+where, index type is any data type or it's wildcard "*".
+
+**Example,**
+
+int abc[*];
+
+abc  = '{ 1:20, 25:22, 38:66};
+
+string pqr[string];
+
+pqr = '{"fruits":"mango", "vegetables":"cucumber","season":"monsoon"};
+
+**Some Points about unpacked arrays:**
+
+* Associative array elements are unpacked.
+* It can be stored by the simulator as a hash (lookup) table for extremely fast access of its elements. A hash table contains an array of groups of elements. A function called hash function generates a unique key to compute the index into this array, from which the correct array element value is obtained.
+* Elements in an associative array can be accessed in a similar way as those in a one-dimensional array.
+* If an attempt is made to read an invalid (non-existent) associative array entry, then the simulator will issue a warning and will return the value ‘x’ for a 4-state integral type or a value ‘0’ for a 2-state integral type.
+
+**Associative Arrays Methods cheat sheet:**
+
+Sr. No| Function | Description
+|-- | -- | --
+1|function int num () | Returns the number of entries in the associative array
+2|function int size () | Also returns the number of entries, if empty 0 is returned
+3|function void delete ([input index]) | index when specified deletes the entry at that index, else the whole array is deleted
+4|function int exists (input index) | Checks whether an element exists at specified index; returns 1 if it does, else 0
+5|function int first (ref index) | Assigns to the given index variable the value of the first index; returns 0 for empty array
+6|function int last (ref index) | Assigns to given index variable the value of the last index; returns 0 for empty array
+7|function int next (ref index) | Finds the smallest index whose value is greater than the given index
+8|function int prev (ref index) | Finds the largest index whose value is smaller than the given index
+
+                                  Tabular.2. associative arrays methods
+
+The below figure shows the output of associative array.
+
+![associative](https://user-images.githubusercontent.com/110448056/186892320-543d76d4-30e2-4f1b-adbc-dd9a68969c25.png)
+
+                               Figure.7 associative array output
+
+The below figure shows the output of associative array methods.
+In example,
+
+int abc[string];
+
+abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 };
+
+![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
+
+                             Figure.8 associative methods output
+
+**Applications of associative arrays:**
+
+Associative arrays used to design Content Addressable Memories (CAMs). Random read or write tests for verification of memories could use associative arrays for storing data only for addresses which have been written. This would take up significantly much lesser memory than the entire array normally used in Verilog.
+
+---
+
 # Queue
- Queue is a datatype used to have the variable size ordered collection of same datatypes in unpacked array format, it is used to insert the element in the array and delete the element in the array by both the ends.It is like buffer, used to model the first in first out(FIFO) and last in fast out (LIFO).
+Queue is a datatype used to have the variable size ordered collection of same datatypes in unpacked array format, it is used to insert the element in the array and delete the element in the array by both the ends.It is like buffer, used to model the first in first out(FIFO) and last in fast out (LIFO).
 
 ****Syntax****: `data_type name[$];`
                  
