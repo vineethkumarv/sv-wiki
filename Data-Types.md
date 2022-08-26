@@ -351,23 +351,23 @@ The below figure shows different types of structures in System Verilog.
  
 Unpacked structure is the default structure syntax and is same as normal structure. The different variables holds different data inside the structure known as members of the structure. Structure members were treated as independent variables. when we want to assign values to  the members of structure, then use 'structure name. variable'.    
 
-#### Assignments To Struct Members:
+****Assignments To Struct Members:****
 
 structure name = '{value1, value2, value3};   
 
-#### Alternate Method to assign values:  
+**** Alternate Method to assign values:****  
  
  structure name = '{variable1 : value1 , variable2 : value2 , variable 3 : value3};  
 This method gives initialization done in one step. The variable and value can be separated by a colon '.' .
 
 
-### **Syntax:**
+ **Syntax:**
 
 `struct{`    
         `list of  different types of variables with sizes`      
       `} structure name;`    
 
-### **Example:**    
+**Example:**    
  
 `struct{` 
        `string name;`   
@@ -377,7 +377,7 @@ This method gives initialization done in one step. The variable and value can be
 
 
 
-### **Output:**   
+ **Output:**   
    
 The below output shows the unpacked structure.
 ![s1](https://user-images.githubusercontent.com/110484152/186596674-18bb7ee5-7000-4f59-aa2b-8909b0c94c66.png)
@@ -395,13 +395,13 @@ In RTL code, a packed structure is treated as a single vector and each data type
 
 Note: Structure cannot be packed if it cannot be represented as a vector.     
 
-### **Syntax:**  
+ **Syntax:**  
 
 `typedef struct packed{`  
 `list of  different types of variables with sizes`  
 `} structure name;`   
 
-### **Example:**     
+ **Example:**     
 
 `typedef struct packed{`  
 `byte id;`  
@@ -409,7 +409,7 @@ Note: Structure cannot be packed if it cannot be represented as a vector.
 `logic[15:0]salary;`  
 `}employee_ details;` 
 
-### **Output:**     
+ **Output:**     
 
 The below output shows that output of packed structure  
 ![ps1](https://user-images.githubusercontent.com/110484152/186596534-8471a1dd-bdf0-401f-bfc7-2ecedd59157a.png)  
@@ -426,19 +426,20 @@ The above output illustrates the output of packed structure. It contains the dif
 
 Typedef used to create new identifiers from longer datatype specification. It  is similar to alias command. Typedef uses mainly in complex testbenches in System Verilog because it replaces the longer datatypes like int(unsigned longint, signed shortint), byte ,bit[7:0],logic[7:0] with identifiers in the code. Typedef uses in Class, Structure and  Enumeration to  make the datatype declarations  easier.  
   
-### **Syntax:**  
+ **Syntax:**  
 
 `typedef <base_type> <size> <type_name>;`  
 
+ 
 ## **Typedef in Class**   
 
 The main use of Typedef in class is that sometimes we use class variable before the declaration of the class itself. At that time it will cause some compile errors to the code. So avoid that compile errors , we can use 'typedef class variable' before the declaration of class itself.   
   
-### **Syntax:**  
+ **Syntax:**  
 
 `typedef class class_name;`
 
-### **Example:**    
+ **Example:**    
 
 `typedef class fruit2;`   
 `class fruit1;`    
@@ -449,7 +450,7 @@ The main use of Typedef in class is that sometimes we use class variable before 
 `fruit1 f;`  
 `endclass`  
 
-### **Output:**    
+ **Output:**    
 
 The below figure shows that output of typedef with class.
 ![typedef class](https://user-images.githubusercontent.com/110484152/186602737-1d67bede-f186-4483-822b-cc8d808c1f21.png)  
@@ -462,14 +463,14 @@ The above example and output shows that how typedef avoids the compiler error in
 
 Without Typedef, Structure may happen some compile errors in large complex testbenches. Typedef also provide declarations make more easier.  
 
-### **Syntax:**     
+ **Syntax:**     
 
 `typedef struct {`   
          `datatype name;`  
          `datatype name;`  
          `}structure_name;`  
 
-### **Example:**   
+ **Example:**   
  
 `typedef struct{`  
 `string name;`  
@@ -477,7 +478,7 @@ Without Typedef, Structure may happen some compile errors in large complex testb
 `longint age;`   
 `} personal_ details;` 
 
-### **Output:**    
+ **Output:**    
 
 The below figure shows the output of typedef with structure datatype.
 ![12](https://user-images.githubusercontent.com/110484152/186636386-2301edc3-eda9-498c-b038-84e4c3de68a4.png)  
@@ -489,15 +490,15 @@ The above output shows that typedef in structure decreases the usage of longer d
 
 Typedef uses for when we need more than one variable to share the same enumeration values. Without Typedef we will get syntax error. Enumeration datatype create new variable for all values.
  
-### **Syntax:**    
+ **Syntax:**    
 
  `typedef enum { values } <type_ name>;`
 
-### **Example:**    
+ **Example:**    
 
 `typedef enum {RORITO,FLAIRFX,REYNOLDS} <e_ pen>;`
 
-### **Output:**    
+ **Output:**    
 
 The below figure shows the typedef with 'enumeration datatype  
 ![typeenum](https://user-images.githubusercontent.com/110484152/186602985-64dd1698-8a5d-4951-9a30-523acc0ad1bc.png)  
