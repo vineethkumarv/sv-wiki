@@ -8,11 +8,11 @@ When we fork off any thread, a new object of process class is created at that ti
 |      **Tasks**         |     **Description**  |
 |:---------------------- | :--------------------|
 |[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#self)|     will return the handle of the process|
-|    kill()   |   will kill the thread     |
+|    [kill()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#kill)   |   will kill the thread     |
 |[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#status)|will return information about which mode the current thread is|
-|await()| waits for some other thread to complete.|
-|suspend()| suspends the thread for some indefinite time|
-|resume()| resumes the thread from suspended state|
+|[await()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#await)| waits for some other thread to complete.|
+|[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#suspend)| suspends the thread for some indefinite time|
+|[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#resume)| resumes the thread from suspended state|
 ## self()
 It creates the object. To access others we need to create  object first.  
 
