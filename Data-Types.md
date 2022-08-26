@@ -78,7 +78,11 @@ By default logic data type is unsigned and its initial value is x. logic data ty
 ### syntax:
 `logic variable_name;`
 
+The below figure shows the output of logic data type.
 
+![logic](https://user-images.githubusercontent.com/110448382/186890682-bfba09db-21ce-43ef-b991-379a5207ce5d.png)
+
+                                       Figure.1. logic output 
 ---
 
 ## 2. integer
