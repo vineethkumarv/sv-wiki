@@ -156,8 +156,8 @@ Below example will properly show the working idea of the priority if condition .
               
               
   
-**lab link**  
-
+**lab link**   
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priority_if_code.sv  
 
 **lab output link**   
 
