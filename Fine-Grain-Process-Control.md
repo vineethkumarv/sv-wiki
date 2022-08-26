@@ -53,7 +53,6 @@ Github output link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7
 
 ## suspend
 This function suspends the execution of the process. It can suspend its own or other process’s execution. The execution is suspended until a resume () is encountered. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be suspended in the current timestamp.  
-
 ![suspend](https://user-images.githubusercontent.com/110447489/186921070-9b5385aa-0299-426f-860e-0734ee586aba.jpg)
 
  
