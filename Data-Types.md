@@ -17,10 +17,12 @@ sr. no. | **data type**         |
 |5.|Enumerated | 
 |6.|User defined |
 
+                                          Tabular column. indexing data type
+
 ---
 
 
-## 2 and 4 state data type cheat sheet  
+## 2-state and 4-state data type cheat sheet  
 
 sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
 |:--|:---------------------- | :-------------|:-----------------|:-----------------------|
@@ -33,6 +35,8 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 |7.|shortint | 2 | 16 | signed  |
 |8.| int | 2 | 32 | signed |
 |9.| longint | 2 | 64 | signed |
+
+                                          Tabular column.1. 2-state and 4-state data type
 
 ---
 
@@ -67,7 +71,7 @@ The below tabular column represent the 4 different state.
 |x or X | Logic state unknown|
 | z or Z|Logic state high impedance |
 
-
+                                          Tabular column.2. value of 4-state
 ---
 
 ## 1. Logic
