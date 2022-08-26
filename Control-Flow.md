@@ -328,10 +328,8 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ***
  ### 5. do while 
+A do while loop first executes the statements once, and then checks for the condition to be true. If the condition is true, the set of statements are executed until the condition turns out to be false. If the condition is false, the loop ends right there.
 
-This loop will execute the condition first and then checks the condition . Then if the condition is true , the statement inside the while loop will execute until the condition become false .
-
-do while loop execute the statements atleast once if the condition is false .
 
 **Syntax** -  
 `                 do begin                 `  
