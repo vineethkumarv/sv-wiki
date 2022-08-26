@@ -81,4 +81,4 @@ github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blo
 
 ## disable fork  
 
-Terminate all child thread below the current contest level.
+On execution of the disable fork, all the active process will get terminated.
