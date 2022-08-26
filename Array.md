@@ -10,11 +10,11 @@ The below figure shows the different types of arrays used in System Verilog.
 
 **Sr No.** | **Arrays Types**         | **Description**                                                                   | 
 |---|------------------------------------------ | -------------------------------------------------------------------------------------|
-1|[Packed Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#packed-arrays) | Dimension of array declared before array name declaration |       
-2|[Unpacked Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#unpacked-arrays) | Dimension of the array declared after array name declaration | 
-3|[Dynamic Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#dynamic-arrays) | Memories will be allocated at run time |
-4|[Associative Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#associative-arrays) | Memories allocated only when it is used and any index type is used for indexing the array |
-5|[Queue](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array/_edit#queue) | It is similar to fifo and we can add and remove elements from queue at run time |
+1|[Packed Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#packed-arrays) | Dimension of array declared before array name declaration |       
+2|[Unpacked Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#unpacked-arrays) | Dimension of the array declared after array name declaration | 
+3|[Dynamic Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#dynamic-arrays) | Memories will be allocated at run time |
+4|[Associative Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#associative-arrays) | Memories allocated only when it is used and any index type is used for indexing the array |
+5|[Queue](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#queue) | It is similar to fifo and we can add and remove elements from queue at run time |
 
 ## Static Arrays(Fixed size arrays):
 In fixed size array / Static arrays, array size will be constant throughout the simulation, Once the array is declared no need to create it. By default, the array will be initialized with value ‘0’. In this type of arrays memories will be occupied during compilation stage and we can't able to rellocate the memories at run time.
