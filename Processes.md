@@ -20,11 +20,11 @@ We have 3 types of Threads/Processes
 ## 1.fork-join
 SystemVerilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute when all the child thread is finish the execution .
 ### syntax
-**fork** 
-  Thread 1 \
-  Thread 2 \
-  Thread 3
-**join**
+**fork**   
+  Thread 1  
+  Thread 2  
+  Thread 3  
+**join**  
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.sv
 
 Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
