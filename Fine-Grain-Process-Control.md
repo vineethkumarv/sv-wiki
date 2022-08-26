@@ -14,7 +14,9 @@ When we fork off any thread, a new object of process class is created at that ti
 |suspend()| suspends the thread for some indefinite time|
 |resume()| resumes the thread from suspended state|
 ## self()
-It creates the object. To access others we need to create  object first.
+It creates the object. To access others we need to create  object first.  
+
+Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_self/fine_self.sv
 ## Status()
 It will shows the status or state of the thread i.e Finished,Running,Waiting,Suspended,Killed.
 ## kill()
