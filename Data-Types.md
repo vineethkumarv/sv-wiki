@@ -322,7 +322,7 @@ By default logic data type is unsigned and its initial value is x. logic data ty
 
 
 
-
+---
 
 
 
