@@ -1,4 +1,7 @@
 
+![Untitled Diagram-Page-2 drawio (2)](https://user-images.githubusercontent.com/110447788/186902152-dc7802fb-763d-4cb9-a2aa-d5a70f2ba067.png)
+
+
 ## Conditional Statement 
 Conditional statement  are used for executing the statements by giving the conditions. These statements until the condition become false . 
 There are various types of conditional statements - 
