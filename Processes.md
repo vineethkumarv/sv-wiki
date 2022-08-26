@@ -48,6 +48,9 @@ The parent thread blocks will be execute when  any one of the child threads is f
  // Thread 3  
 **join_any**
 
+![Untitled Diagram drawio (7)](https://user-images.githubusercontent.com/110509375/186891255-902be705-514f-46a5-b460-f49a7598c228.png)
+
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
 
 Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
@@ -63,6 +66,8 @@ It does not mean that the rest of the child threads will be automatically discar
   // Thread 2 \
  // Thread 3  
  **join_none**   
+
+![Untitled Diagram drawio (8)](https://user-images.githubusercontent.com/110509375/186891715-959c0d1d-3cfa-44cd-9b58-8ff957c8b85b.png)
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
 
