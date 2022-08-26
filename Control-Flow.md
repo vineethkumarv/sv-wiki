@@ -77,7 +77,7 @@ Below lab example will show how unique if is different from the traditional if e
 `               unique if(condition)begin  `  
                `Statements;  `  
                `end  `  
-               `if else(condition)begin  `  
+               `elseif(condition)begin  `  
                `Statements;  `  
                `end  `  
 
@@ -101,7 +101,7 @@ Below examples will show the difference between the unique0 if and traditional i
 `               unique0 if(condition)begin  `  
                `Statements;  `  
                `end  `  
-               `if else(condition)begin  `  
+               `else if(condition)begin  `  
                `Statements;  `  
                `end  `  
   
@@ -124,7 +124,7 @@ Below example will properly show the working idea of the priority if condition .
 `               priority if(condition)begin  `  
                `Statements;  `  
                `end  `  
-               `if else(condition)begin  `  
+               `else if(condition)begin  `  
                `Statements;  `  
                `end  `  
               
@@ -135,6 +135,58 @@ Below example will properly show the working idea of the priority if condition .
 
 ***
 
+
+
+
+## class  
+The case statement allows us to execute the code for the particular case expression . 
+This will give the proper structure for a long code and decrease the complexity of the code also .  
+There are three updates for the case statement in system verilog and these are -  
+1. unique case  
+2. unique0 case  
+3. priority case  
+
+***
+### unique case 
+
+In this , if all the case condition is false , it will display a warning (not match is found for the case statement )with no error .
+If all the conditions are true or more than one is true , it will read the first right or matched case condition and will display the output with one warning and no error.
+
+**Syntax**-  
+`            unique case(condition)  `  
+            `condition_1: Statements ;  `  
+            `.......`  
+            `conditon_N:  Statements ;  `  
+            `endcase  `  
+
+**lab link** 
+
+
+***
+
+### unique0 case 
+
+
+     
+
+***
+### priority case 
+
+In this type of case statement, if more than one case condition is true , it will display the output without giving any error with no warning .
+
+**Syntax**-  
+`             priority case (condition)  `  
+             `case_1: statement;  `  
+             `----  `  
+             `case_N: statement ;  `  
+             `endcase `  
+   
+**lab link** - 
+
+
+
+
+***
 
 
 
@@ -299,50 +351,98 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 
 ***
-## class  
-The case statement allows us to execute the code for the particular case expression . 
-This will give the proper structure for a long code and decrease the complexity of the code also .  
-There are three updates for the case statement in system verilog and these are -  
-1. unique case  
-2. unique0 case  
-3. priority case  
+
+## Blocking and non blocking statement - 
+### Blocking statement  
+Blocking statements are assigned with = . It will execute one after the other in procedural blocks . Blocking statements are execute in a block in a sequential manner but when more than two procedural blocks , these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks .
+
+**Syntax** -  
+`            variable_datatype variable name = value assign;`  
+
+For example - 1. Time delay assignation 
+
+  
+` module blocking_assignment;  `  
+`int a , b;`  
+`initial begin `  
+`#10 a = 10;`  
+`#20 b = 20;`  
+`end `  
+`endmodule `  
+
+ In this code , there are two variables a and b . The value assign to a = 10 after the 10sec and the value assign to b = 20 after the time delay of 20+10=30 sec . 
+
+
+Example 2 - Swapping of two number using blocking statement .  
+**Code**  
+`module non_blocking;`  
+`login [4:0] a , b;`  
+`initial begin `  
+`a=10;`  
+`b=30;`  
+`int t;  // introducing the temporary variable.  `  
+`// swapping two number using the temporary variable //`  
+`a=t;  // t=10;`  
+`t = b;  // b=10;`  
+`b= a ;  // a = 30;`  
+`$monitor(" a = %d , b= %d", a,b);  `  
+`end `  
+`endmodule `  
+
+**Output**  
+a=30 , b = 10
+
+**lab links**
+
 
 ***
-### unique case 
 
-In this , if all the case condition is false , it will display a warning (not match is found for the case statement )with no error .
-If all the conditions are true or more than one is true , it will read the first right or matched case condition and will display the output with one warning and no error.
+### Non - blocking statement  
 
-**Syntax**-  
-`            unique case(condition)  `  
-            `condition_1: Statements ;  `  
-            `.......`  
-            `conditon_N:  Statements ;  `  
-            `endcase  `  
+ Non - blocking statement are assign with the <=. It will not block the execution of statement inside that particular block.
+These statement will execute the parallel inside that particular block . 
 
-**lab link** 
+**Syntax** -  
+`             data_type_name variable_name <= value assignation ;`  
+ 
+For example-1-  
+**Code**  
+` module blocking_assignment;  `  
+`int a , b;`  
+`initial begin `  
+`#10 a <= 10;`  
+`#20 b <= 20;`  
+`end `  
+`endmodule `  
+
+ In this code , there are two variables a and b . The value assign to a = 10 after the 10sec and  parallel the value assign to b = 20 after the time delay of 20 sec . 
+             
+
+Example2 -  Swapping of two numbers 
+**Code**  
+`module non_blocking;  `  
+`logic [4:0] a ,b;  `  
+`initial begin  `  
+`a= 20;`  // assigning the values to a and b   
+`b= 30;`  
+`a<=b;  `// Assign the value to b to a    
+`b<=a;  `  // Assign the value of b to a   
+`$monitor("The value of a and b after swapping is %d %d" , a, b );  `    
+ `end   `  
+`endmodule   `    
+
+**Output**  
+The value of a and b after swapping is 30 and 20 .
+
+**lab link**
 
 
-***
-
-### unique0 case 
 
 
-     
 
-***
-### priority case 
 
-In this type of case statement, if more than one case condition is true , it will display the output without giving any error with no warning .
 
-**Syntax**-  
-`             priority case (condition)  `  
-             `case_1: statement;  `  
-             `----  `  
-             `case_N: statement ;  `  
-             `endcase `  
-   
-**lab link** - 
+
 
 
 
@@ -451,7 +551,10 @@ Automatic tasks allocate unique, stacked storage for each task call.
 ***
 ## events 
 
-Event is use for synchronizing between two or more concurrently active processes. First process will trigger the event another one is wait for the event .
+Event is use for synchronizing between two or more concurrently active processes. First process will trigger the event another one is wait for the event .  
+Event can trigger by using the -> or ->> operator .
+Processes can wait for event by using the @ operator or .triggered .
+
 
 
 
