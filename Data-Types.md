@@ -4,6 +4,19 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 
 ![new_data_types](https://user-images.githubusercontent.com/110448382/186157987-25bc0cd1-655e-4576-b156-3b40b7350253.png)
 
+
+
+## data type cheat sheet  
+
+sr. no. | **data type**         |
+|:--|:---------------------- |
+|1.|2-stage and 4-stage |
+|2.|Arrays | 
+|3.|Strings |
+|4.|Structures |
+|5.|Enumerated | 
+|6.|User defined |
+
 ---
 
 
