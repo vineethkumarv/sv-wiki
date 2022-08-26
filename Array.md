@@ -217,7 +217,7 @@ The below figure shows the output of associative array.
 
 ![associative](https://user-images.githubusercontent.com/110448056/186892320-543d76d4-30e2-4f1b-adbc-dd9a68969c25.png)
 
-                               Figure.7 associative array output
+                               Figure.8. associative array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative/associative_array.sv
 
@@ -232,7 +232,7 @@ abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 }
 
 ![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
 
-                             Figure.8 associative methods output
+                             Figure.9. associative methods output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative_methods/associative_methods.sv
 
@@ -267,7 +267,7 @@ Here $- first element
 
 ![bounded queue](https://user-images.githubusercontent.com/110412474/186423427-f222976c-7179-40ac-83fb-0ae011222e72.jpg)
 
-                            Figure.9. Bounded queue with push and pop operation
+                            Figure.10. Bounded queue with push and pop operation
 
 
 
@@ -286,7 +286,7 @@ $ - last element
 
 ![unbounded queue](https://user-images.githubusercontent.com/110412474/186423948-b22286aa-8de7-4dde-9b0e-08bbdf394306.jpg)
 
-                            Figure.10. Unbounded queue with push and pop operation                         
+                            Figure.11. Unbounded queue with push and pop operation                         
 
 ---  
 
@@ -332,7 +332,7 @@ The below Figure.1 shows the output for size(), delete(), insert() Methods of Qu
 ![newqueue1](https://user-images.githubusercontent.com/110412474/186829636-ba817def-7c37-4c16-9f50-af55f1bc9f84.JPG)
 
 
-                          Figure.11 Queue Method Example.1
+                          Figure.12. Queue Method Example.1
  
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue.sv
 
@@ -371,7 +371,7 @@ The below Figure.2 shows the output of pop.front(), pop.back(), push.front(), pu
   
 ![newqueue2](https://user-images.githubusercontent.com/110412474/186828222-396f58a1-fdb4-4e89-88a6-506185f9495a.JPG)
 
-                             Figure.12. Queue Method Example.2
+                             Figure.13. Queue Method Example.2
 
  Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method2/queue.sv
 
@@ -384,7 +384,7 @@ In the System Verilog the array Manipulation method are the built in method used
 
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
  
-                                        Figure.13. Flow chart of Array Manipulation Method
+                                        Figure.14. Flow chart of Array Manipulation Method
 ## Array Manipulation Method Cheat Sheet
 Method | Description
 -- | --
@@ -463,11 +463,11 @@ Return the last index of the array which satisfy the given expression the given 
 Expression:  a = array.find_last_index(check) with (check < "oldtown");  
 It will find all the index position of the element which will match the condition, here 'b', 'm' and 'n' are having less ascii value compared to 'o', so it will print only the last array index position as '{4} . 
  
-The below Figure 2.1 shows the output of Array locator methods of function find()
+The below Figure 15 shows the output of Array locator methods of function find()
 
 ![newarrayfind](https://user-images.githubusercontent.com/110412474/186823831-8aa6de65-6db3-446e-8c13-b9b541aca0aa.JPG)
                                       
-                                               Fig.2.1: Array Locator Method 
+                                               Figure.15. Array Locator Method 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_find/array.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_find/arrayfind.log
@@ -476,7 +476,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 ------
 # The Array Locator Method optional 'with' clause
 
-****Example****: consider array of five elements, shown the output in Fig:2.2
+****Example****: consider array of five elements, shown the output in Figure.16
 
 array[8] = {1,9,9,7,2,7,0,6}
 
@@ -504,7 +504,7 @@ The below Figure 2.2 shows the output  for display the minimum value, maximum va
 
 ![newmax2](https://user-images.githubusercontent.com/110412474/186824043-319638ce-3631-427c-89c4-1a27dd814504.JPG)
                                       
-                                            Fig.2.2:Array Locator Method
+                                            Figure.16. Array Locator Method
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_max/arraymax.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_max/arraymax.log
@@ -548,7 +548,7 @@ The below Figure.3 shows the output of Array Ordering Method.
 ![neworder3](https://user-images.githubusercontent.com/110412474/186827961-0f1a61c5-c71e-4e70-90ce-2ddaf9c95a7c.JPG)
 
 
-                                           Fig.3: Array ordering method
+                                           Figure.17. Array ordering method
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_ordering/arrayorder.sv
 
@@ -603,13 +603,13 @@ Return the output by doing the bitwise XOR(^) operation for all array element
         (^)   110   
       ouptut: 011    
 
-The below Figure.4 shows the output for Array Reduction Method.
+The below Figure.18 shows the output for Array Reduction Method.
 
 
 
 ![newreduction4](https://user-images.githubusercontent.com/110412474/186825000-4e4f6341-d933-47e1-8638-4fad88e1d0f5.JPG)
                                       
-                                                     Fig.4:Array Reduction Method
+                                                     Figure.18. Array Reduction Method
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_Reduction/arrayreduction.sv
 
