@@ -57,7 +57,7 @@ The below tabular column represent the 4 different state.
 
 ---
 
-### 1) Logic
+## 1. Logic
 
 The logic data type is a 4 state type that can take values 0,1,x and z. logic data type which can be used in place of both the wire and reg data types because wire data type does not have multiple drivers.  
 By default logic data type is unsigned and its initial value is x. logic data type can be driven in both procedural block and continuous assign statements.
@@ -196,14 +196,27 @@ The below figure shows the output of longint data type.
 
 Enumerated data types defines a set of named values.
 
-****Syntax**** : `enum enum_base_type(optional) { <enum_name_declaration> = constant_expr(optional)...} <enum_type_identifier>;`
+****Syntax**** : `enum enum_base_type(optional) { <enum_name_declaration> = constant_expr(optional)...} <enum_type_identifier>;`  
+
+****Example :**** `enum {monday, tuesday, wednesday, thursday, friday, saturday, sunday} days;`
 
 * An enumerated type is stored as type ‘int’ unless specified as something else.
 * This type automatically gives a unique value to every name in the list.
 * Values default to the ‘int’ type starting at 0 and then incrementing by 1.
 * If a value is not specified for a name, it gets the value of the previous name in the list incremented by 1.
 
+In the below figure output of default value of enum. 
+  
+![default_enum](https://user-images.githubusercontent.com/110448382/186869397-d54b85a0-2276-4c1a-98a1-bc23bfef1ea4.png)
+
+In the below figure output of set value of enum.  
+
+![set_enum](https://user-images.githubusercontent.com/110448382/186869460-cf12764a-49ec-4379-a174-7b3870a0c6e0.png)
+
 ---
+
+
+****enum method :****
 
 sl.no|Method | Description
 -- |-- | --
@@ -216,6 +229,23 @@ sl.no|Method | Description
 
 
 ---
+
+### enumerated types data type typedef
+
+In typedef a type name can be given so that the same type can be used in many places.  
+
+****Syntax**** : `typedef enum enum_base_type(optional) { <enum_name_declaration> = constant_expr(optional)...} <enum_type_identifier>;`  
+
+****Example :**** `typedef enum {monday, tuesday, wednesday, thursday, friday, saturday, sunday} week;`  
+`week = day;`  
+
+In below figure declare typedef type and output using enum methods.
+
+![typedef_enum](https://user-images.githubusercontent.com/110448382/186874037-c29e2317-5854-4fd9-a859-df544365b10a.png)
+
+
+---
+
 
 # String
 
