@@ -16,6 +16,8 @@ The below figure shows the different types of arrays used in System Verilog.
 4|[Associative Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#associative-arrays) | Memories allocated only when it is used and any index type is used for indexing the array |
 5|[Queue](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#queue) | It is similar to fifo and we can add and remove elements from queue at run time |
 
+                                       Table.1. Array cheat sheet
+
 ## Static Arrays(Fixed size arrays):
 In fixed size array / Static arrays, array size will be constant throughout the simulation, Once the array is declared no need to create it. By default, the array will be initialized with value ‘0’. In this type of arrays memories will be occupied during compilation stage and we can't able to rellocate the memories at run time.
 
@@ -45,7 +47,7 @@ The below figure shows the output of single dimension packed array, here packed 
 
 ![single_packed](https://user-images.githubusercontent.com/110448056/186883341-d960ed62-8e66-4ff9-b729-2f03c7ffd57f.png)
 
-                                   Figure.1 single dimension packed array ouptut
+                                   Figure.2 single dimension packed array ouptut
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/single_packed/packed_array.sv
 
@@ -56,7 +58,7 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 
 ![multi_packed](https://user-images.githubusercontent.com/110448056/186884901-0dfbfccd-c15f-4677-b9d3-8c394994a6b8.png)
 
-                                  Figure.2 multi dimensional packed array output
+                                  Figure.3 multi dimensional packed array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.sv
 
@@ -90,7 +92,7 @@ The below figure shows the output of single dimension unpacked array.
 
 ![single_unpacked](https://user-images.githubusercontent.com/110448056/186889154-0f23c201-ca8b-47cd-ae46-8fcd3c0d0cfd.png)
 
-                                 Figure.3 single dimensional unpacked array output
+                                 Figure.4 single dimensional unpacked array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked.sv
 
@@ -101,7 +103,7 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 
 ![multi_unpacked](https://user-images.githubusercontent.com/110448056/186889779-c6758475-6199-4e4e-9cbf-e25e0e2abd29.png)
 
-                                Figure.4 multi dimensional unpacked array output
+                                Figure.5 multi dimensional unpacked array output
           
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.sv
 
@@ -138,13 +140,13 @@ Sr No. | **Methods**         | **description**                                  
 2|function int size() | The size() method returns the current size of a dynamic array or returns zero if the array has not been created| 
 3|function void delete() | The delete() method empties the array, resulting in a zero-sized array|
 
-                                Tabular.1. dynamic array methods
+                                Table.2. dynamic array methods
 
 The below figure shows the output of dynamic array.
 
 ![dynamic](https://user-images.githubusercontent.com/110448056/186890744-7a0a6733-b3a1-4e87-ae49-7956d8b5a7d1.png)
 
-                             Figure.5 dynamic array output
+                             Figure.6 dynamic array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic/dynamic.sv
 
@@ -159,7 +161,7 @@ xyz = '{11,12,13,14,15,16,17,18,19,20};
 
 ![methods_dynamic](https://user-images.githubusercontent.com/110448056/186891136-81fbb195-14c4-42b0-b355-fb280346ecc7.png)
 
-                             Figure.6 dynamic array methods output
+                             Figure.7 dynamic array methods output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods.sv
 
@@ -187,7 +189,7 @@ abc  = '{ 1:20, 25:22, 38:66};
 
 string pqr[string];
 
-pqr = '{"fruits":"mango", "vegetables":"cucumber","season":"monsoon"};
+pqr = '{"fruits":"mango" , "vegetables":"cucumber" , "season":"monsoon"};
 
 **Some Points about unpacked arrays:**
 
@@ -209,7 +211,7 @@ Sr. No| Function | Description
 7|function int next (ref index) | Finds the smallest index whose value is greater than the given index
 8|function int prev (ref index) | Finds the largest index whose value is smaller than the given index
 
-                                  Tabular.2. associative arrays methods
+                                  Table.3. associative arrays methods
 
 The below figure shows the output of associative array.
 
@@ -265,7 +267,7 @@ Here $- first element
 
 ![bounded queue](https://user-images.githubusercontent.com/110412474/186423427-f222976c-7179-40ac-83fb-0ae011222e72.jpg)
 
-                            Fig.1: Bounded queue with push and pop operation
+                            Figure.9. Bounded queue with push and pop operation
 
 
 
@@ -284,7 +286,7 @@ $ - last element
 
 ![unbounded queue](https://user-images.githubusercontent.com/110412474/186423948-b22286aa-8de7-4dde-9b0e-08bbdf394306.jpg)
 
-                            Fig.2: Unbounded queue with push and pop operation                         
+                            Figure.10. Unbounded queue with push and pop operation                         
 
 ---  
 
@@ -300,7 +302,7 @@ push_back() | inserts the given element at the end of the queue
 pop_front() | removes and returns the first element of the queue
 pop_back() | removes and returns the last element of the queue
   
-                    Table.1 Queue Methods
+                    Table.4 Queue Methods
 ---
 
 ## Queue Methods
@@ -330,7 +332,7 @@ The below Figure.1 shows the output for size(), delete(), insert() Methods of Qu
 ![newqueue1](https://user-images.githubusercontent.com/110412474/186829636-ba817def-7c37-4c16-9f50-af55f1bc9f84.JPG)
 
 
-                          Fig.1: Queue Method Example.1
+                          Figure.11 Queue Method Example.1
  
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue.sv
 
@@ -369,7 +371,8 @@ The below Figure.2 shows the output of pop.front(), pop.back(), push.front(), pu
   
 ![newqueue2](https://user-images.githubusercontent.com/110412474/186828222-396f58a1-fdb4-4e89-88a6-506185f9495a.JPG)
 
-                             Fig.2:Queue Method Example.2
+                             Figure.12. Queue Method Example.2
+
  Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method2/queue.sv
 
  Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method2/queue_data.log
@@ -381,7 +384,7 @@ In the System Verilog the array Manipulation method are the built in method used
 
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
  
-                                        Fig.1: Flow chart of Array Manipulation Method
+                                        Figure.13. Flow chart of Array Manipulation Method
 ## Array Manipulation Method Cheat Sheet
 Method | Description
 -- | --
@@ -405,7 +408,7 @@ and() | Return the bitwise AND(&) of all the element
 or() | Return the bitwise OR of all the element in an array
 xor() | Return the bitwise XOR(^) of all the element in an array
 
-              Table.1: Array Manipulation Method
+              Table.6. Array Manipulation Method
 ## Array locator Method
 We declare the array with some elements by using the array locator method we can filter the values of the existing array by using the with clause evaluation conditions and all the element satisfyingly the condition are put in an array or return the value. The array locator method uses the with clause  for the below methods,
 
