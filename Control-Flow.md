@@ -407,25 +407,7 @@ Blocking statements are assigned with =. It will execute serially in procedural 
 **Syntax** -  
 `            variable_name(LHS) = expression(RHS);`  
 
-Example - Swapping of two numbers using blocking statement.  
-**Code**  
-`module non_blocking;`  
-`login [4:0] a , b;`  
-`initial begin `  
-`a=10;`  
-`b=30;`  
-`int t;  // introducing the temporary variable.  `  
-`// swapping two numbers using the temporary variable //`  
-`a=t;  // t=10;`  
-`t = b;  // b=10;`  
-`b= a ;  // a = 30;`  
-`$monitor(" a = %d , b= %d", a,b);  `  
-`end `  
-`endmodule `  
-
-**Output**  
-a=30 , b = 10
-
+For a better understanding of Blocking statements go through the following lab
 **lab link**
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap.sv
 
@@ -440,48 +422,14 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/b
 These statements will execute the parallel inside that particular block. 
 
 **Syntax** -  
-`             data_type_name variable_name <= value assignation ;`  
- 
-For example-1-  
-**Code**  
-` module blocking_assignment;  `  
-`int a , b;`  
-`initial begin `  
-`#10 a <= 10;`  
-`#20 b <= 20;`  
-`end `  
-`endmodule `  
+`             Variable(LHS) <= Expression(RHS) ; `  
 
- In this code, there are two variables a and b. The value assigns to a = 10 after the 10sec and parallels the value assign to b = 20 after the time delay of 20 sec. 
-             
-
-Example2 -  Swapping of two numbers 
-**Code**  
-`module non_blocking;  `  
-`logic [4:0] a ,b;  `  
-`initial begin  `  
-`a= 20;`  // assigning the values to a and b   
-`b= 30;`  
-`a<=b;  `// Assign the value to b to a    
-`b<=a;  `  // Assign the value of b to a   
-`$monitor("The value of a and b after swapping is %d %d", a, b );  `    
- `end   `  
-`endmodule   `    
-
-**Output**  
-The value of a and b after swapping is 30 and 20.
-
+For a better understanding of Blocking statements go through the following lab
 **lab link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/non_blocking_swap/non_blocking_swap.sv
 
-
-
-
-
-
-
-
-
-
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/non_blocking_swap/non_blocking_swap_log.log
 
 
 
@@ -492,10 +440,10 @@ The value of a and b after swapping is 30 and 20.
 
 S.No.|Function | Task |
 :-----|:--------|:------|
-1.|Not have timing control statents| have timing control statements|
-2.|  Can return some value | Cannot return any value|
-3.| Can call only other functions, not tasks .|Can call other task and function both.|
-4.| only return input arguments | Can return input, output and input arguments |
+1.|  Not have timing control statents| have timing control statements|
+2.|  Can return a single value | It won't return but affect the values globally |
+3.|  Can call only other functions, not tasks .|Can call other tasks and functions both.|
+
 
 
 
@@ -506,9 +454,9 @@ S.No.|Function | Task |
 
 The function is the subroutine that contains procedural code.
 The purpose of the function is to return the value that can be used in the expression.
-The function cannot have time control statements like #, @, or fork-join( The function must execute in zero time .)  
+The function cannot have time control statements like #, @, or fork-join( The function must execute in zero time).
 A function can call other functions, not other tasks.
-A function can have at least one argument but not have any input and out argument.
+A function can have at least one argument which is to be returned.
 
 
 **Syntax** -  
@@ -562,13 +510,9 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/f
 The task is used to split the code into small parts same as the function but there are some differences between them.  
 In task , we can provide time delays like # , @ .etc.  
 The task can call other tasks and functions also.
-The task cannot return any value.
-We can assign input, output,inout arguments in task, which is not possible in functions.
+The task will not return any value.
+We can assign input, output,inout arguments in tasks.
  
-**Syntax** -  
-`task task_name(arguments)`  
-`Statements;  `  
-`endtask  `  
 
 There are generally two types of tasks we use -  
 1. Static task   
@@ -579,7 +523,12 @@ There are generally two types of tasks we use -
 
 ### Static task 
 
-Static tasks share the same storage space for all task calls.
+ Any task is defaultly static task in which overriding will be there.
+
+**Syntax** -  
+`task task_name(arguments)`  
+`Statements;  `  
+`endtask  `  
 
 **lab link** -
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/static_task/task.sv
@@ -593,6 +542,11 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/t
 
 Automatic tasks allocate unique, stacked storage for each task call.
 
+**Syntax** -  
+`task automatic task_name(ref arguments)`  
+`Statements;  `  
+`endtask  `    
+
 **lab link** -
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/automatic_task/automatic_task.sv
 
@@ -602,9 +556,21 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/t
 ***
 ## events 
 
-Event is used for synchronizing between two or more concurrently active processes. The first process will trigger the event another one is waiting for the event.  
-Event can trigger by using the -> or ->> operator .
-Processes can wait for the event by using the @ operator or .triggered.
+Event is used for synchronization between two or more concurrently active processes. Initially, we need to declare the event and then it needs to be triggered by using the -> or ->> operator.
+
+Processes can wait for the event by using the @ operator or wait(event_name.triggered).  
+when both @ and wait comes at the same point then a race-around condition occurs in between both.
+
+For a better understanding of events go through the below lab  
+
+**lab link:**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/events/event/event.sv
+
+**lab output link:**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/events/event/event_log.log
+
+
+
 
 
 
