@@ -23,6 +23,7 @@ Here $- first element
                             Fig.1: Bounded queue with push and pop operation
 
 
+
 ---
 
 
@@ -43,7 +44,7 @@ $ - last element
 ---  
 
 
-**** Queue method cheat sheet****
+****Queue method cheat sheet****
 Method | Description
 -- | --
 size() |  returns the number of items in the queue
@@ -61,19 +62,19 @@ pop_back() | removes and returns the last element of the queue
 
 Example.1 : consider the variable size queue named as queue1 = {2,7,1,9,9,7}, the output is shown in Fig.1
    
-****size():****
+* ****size():****
 
 Display the number of element in the queue ,if the queue is empty display the empty array.  
 Expression: queue1.size()- It is used to display the size of the array queue1.   
 output : 6  
 
-****delete():****  
+* ****delete():****  
   
 It is used to delete the queue element of specified index position.  
 Expression : queue.delete(0) - It delete the array element '2' in the zeroth index position in the queue1.   
 ouput: '{7, 1, 9, 9, 7} 
 
-****insert(index, queue_element):****
+* ****insert(index, queue_element):****
 
   It is used to insert the queue element in the particular index position.  
   Expression: insert(0, 2)- It insert the array element '2' in the zeroth index position in the queue1.  
@@ -86,31 +87,34 @@ The below Figure.1 shows the output for size(), delete(), insert() Methods of Qu
 
                           Fig.1: Queue Method Example.1
  
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue_data_type.log
 
 ---
 
 Example.2 : consider the variable size queue named as  
  queue1 ={"manipal", "bangalore", "udupi"};   
 
-****pop.front():****
+* ****pop.front():****
   
 It remove the queue element from the front of the queue and return the first queue element.  
  In the above example, the array element from the front of the queue1 is removed i.e "manipal".        
  Now  After removing the array element the queue1 as the elements. queue1 ={ "bangalore", "udupi"};
 
-****pop.back():****
+* ****pop.back():****
   
 It remove the queue element from the back of the queue and return the queue last queue element.  
   In the above example, the array element from the back of the queue1 is removed i.e "udupi".    
   Now After removing the array element the queue1 as the elements. queue1 = `{"bangalore"}
   
-****push.front():****
+* ****push.front():****
   
 It insert the queue element to the front of the queue.  
  Expression: push.front("yelahanka") - Insert the array element to the front of the queue1.  
   After push.front() the array elements of queue1 is '{"yelahanka", "bangalore"}  
   
-****push.back():****
+* ****push.back():****
   
 It insert the queue element to the back of the queue.  
   Expression: push.back("udupi")- Insert the array element to the back of the queue1  
@@ -121,7 +125,10 @@ The below Figure.2 shows the output of pop.front(), pop.back(), push.front(), pu
 ![newqueue2](https://user-images.githubusercontent.com/110412474/186828222-396f58a1-fdb4-4e89-88a6-506185f9495a.JPG)
 
                              Fig.2:Queue Method Example.2
-     
+ Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method2/queue.sv
+
+ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method2/queue_data.log
+    
 ---
 
 # Array Manipulation Method
@@ -213,6 +220,12 @@ The below Figure 2.1 shows the output of Array locator methods of function find(
 ![newarrayfind](https://user-images.githubusercontent.com/110412474/186823831-8aa6de65-6db3-446e-8c13-b9b541aca0aa.JPG)
                                       
                                                Fig.2.1: Array Locator Method 
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_find/array.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_find/arrayfind.log
+
+
+------
 # The Array Locator Method optional 'with' clause
 
 ****Example****: consider array of five elements, shown the output in Fig:2.2
@@ -244,6 +257,11 @@ The below Figure 2.2 shows the output  for display the minimum value, maximum va
 ![newmax2](https://user-images.githubusercontent.com/110412474/186824043-319638ce-3631-427c-89c4-1a27dd814504.JPG)
                                       
                                             Fig.2.2:Array Locator Method
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_max/arraymax.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_max/arraymax.log
+
+-----------
 
 # Array Ordering method
 
@@ -283,6 +301,13 @@ The below Figure.3 shows the output of Array Ordering Method.
 
 
                                            Fig.3: Array ordering method
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_ordering/arrayorder.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_ordering/array_order.log
+
+------------
+
 # Array Reduction Method  
 
 Example: consider array of four element, shown the output in Fig.4: 
@@ -337,3 +362,8 @@ The below Figure.4 shows the output for Array Reduction Method.
 ![newreduction4](https://user-images.githubusercontent.com/110412474/186825000-4e4f6341-d933-47e1-8638-4fad88e1d0f5.JPG)
                                       
                                                      Fig.4:Array Reduction Method
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_Reduction/arrayreduction.sv
+
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_Reduction/array_reduction.log
