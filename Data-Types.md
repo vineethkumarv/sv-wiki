@@ -150,6 +150,146 @@ longint is 2-state data type, longint can be either 0 or 1 which represent a 64-
 
 ![longint](https://user-images.githubusercontent.com/110448382/186825249-c7470eb9-2738-4218-8d16-ce9634cd5c31.png)
 
+---
+
+# enum
+
+Enumerated data types defines a set of named values.
+
+****Syntax**** : `enum enum_base_type(optional) { <enum_name_declaration> = constant_expr(optional)...} <enum_type_identifier>;`
+
+* An enumerated type is stored as type ‘int’ unless specified as something else.
+* This type automatically gives a unique value to every name in the list.
+* Values default to the ‘int’ type starting at 0 and then incrementing by 1.
+* If a value is not specified for a name, it gets the value of the previous name in the list incremented by 1.
+
+---
+
+sl.no|Method | Description
+-- |-- | --
+1|first() | returns the value of the first member of the enumeration
+2|last() | returns the value of the last member of the enumeration
+3|next() | returns the value of next member of the enumeration
+4|prev() | returns the value of previous member of the enumeration
+5|num() | returns the number of elements in the given enumeration
+6|name() | returns the string representation of the given enumeration value
+
+
+---
+
+# String
+
+A string type is a variable-length ordered collection of characters. The length of a string is the number of characters in the collection.
+
+****Syntax**** :`string variable_name [= initial_value];`
+
+****Example****: `string str = Manipal`
+
+* The memory space for strings is dynamically allocated.
+* The indices of string variables shall be numbered from 0 to N–1 (where N is the length of the string) so that index 0 is the first (leftmost) character of the string and index N–1 is the last (rightmost) character of the string.
+* An un-initialized or empty string is represented with the special value “”. An empty string has 0 length. 
+
+---
+
+****String operators cheat sheet**** 
+
+ Operation   | **Operator**         | **Description**                                                                   | 
+|:---|:------------------------------------------ | :-------------------------------------------------------------------------------------|
+Equality|str1==str2 | Returns 1 if the two strings are equal and 0 if they are not  |       
+Inequality|str1!=str2     |Returns 1 if the two strings are not equal and 0 if they are| 
+Comparison|Str1 < Str2, Str1 <= Str2, Str1 > Str2, Str1 >= Str2 |Returns 1 if the corresponding condition is true and 0 if false|
+Concatenation|{Str1, Str2, ..., StrN}  | All strings will be concatenated into one resultant string                                        
+Replication | {multiplier{Str}} | Replicates the string N number of times, where N is specified by the multiplier|
+Indexing | Str[index] | Returns a byte, the ASCII code at the given index. If given index is out of range, it returns 0|
+
+                                          Tabular column.1.string operators
+
+****Example:****
+
+Consider 2 strings, str1 as Manipal and str2 as Udupi,
+  
+* ****Equality operator**** (str1 == str2), here the string 1 each letter ASCII value will be compared with string 2's of each letter sequentially, if it is equal then it will return 1 or else 0, here instead of 1 and 0 we're using statements. In this example, strings are not equal, because the ascii value of U is 85 and M is 77. Here the first letters ascii value are not same so it will display as strings are not equal.
+
+* ****Inequality operator**** (str1 != str2) , here the string 1 each letter ASCII value will be compared with string 2's of each letter sequentially, if it is not equal then it will return 1 or else 0, here instead of 1 and 0 we're using statements. In this example, strings are not equal, because the ascii value of U is 85 and M is 77. Here the first letters ascii value are not same so it will display as strings are not equal.
+
+* ****Comparison operator****(>, => ,<, =<), here the string 1 each letter ASCII value will be compared with string 2's of each letter sequentially, here it will check for >, => ,<, =< condition, if any of these becomes true, it will return 1. Here as we discussed in the above points, U as large ascii value, so here string1 < string2 and string1 =< string2.
+
+* ****Concatenation operator**** ({str1,str2}), here 2 strings are concatenated and resultant is single string. So output will be ManipalUdupi.
+
+* ****Replication operator**** ({2{str1}}), here it replicates the string N number of times, where N is specified by the multiplier. Here we're considering N as 2, so string1 will be replicated 2 times, and the output is ManipalManipal.
+
+* ****Displaying index letter**** (str1[i]), here we'll get the ascii character at mentioned index number. In this case, we've included for loop to display all the ascii characters of a string, so we get the output as   
+M  
+a  
+n  
+i  
+p  
+a  
+l  
+
+
+The below figure.1 illustrates the output for string operators
+
+![string_oper2](https://user-images.githubusercontent.com/110443214/186822122-a5f85160-9938-41d3-811f-5b155df68cb2.png)
+
+
+                                   Figure.1. Output of string operators
+
+
+---
+
+
+****String Methods cheat sheet**** 
+
+Function | Description
+-- | --
+str.len() | Returns length of string.
+str.putc() | Used to assign one character of string.
+str.getc() | Returns a character.
+str.tolower() | Returns the lowercase of string.
+str.toupper() | Returns the uppercase of string.
+str.compare(s) | Returns the string compare result as ascii value.
+str.icompare(s) | Returns caseless string compare result as ascii value.
+str.substr(i,j) | Returns the sub string of main string.
+
+                 Tabular column.2. string methods
+
+****Example:****
+
+Consider a string Manipal,
+
+* ****str.len()****, here it will give the length of a string. As we considered Manipal, here there are 7 ascii character. So the output is 7.
+
+* ****str.putc()****, it is used to assign one character of a string. So consider one temp variable to store the changes of the string and assign character "t" for 3rd index as given temp.putc(3, "t"). And the output we'll get as Mantpal.
+
+* ****str.getc()****, it returns a character as output. Here mention the index of a character, which we want to get as output as given str.getc(1). And the output we get as a.
+
+* ****str.tolower()****, it gives a string in lowercase. So the output will be manipal.
+
+* ****str.toupper()****, it gives a string in uppercase. So the output will be MANIPAL.
+
+* ****str.compare(s)****, it will compare the string and gives output in ascii value. To make comparison, declare one more string as mirafra, and compare Manipal with mirafra. Here comparison will takes place with each character of a string Manipal with the each character of mirafra sequentially. Here ascii value of M = 77 and m = 109. So the difference between 77-109 is -32. So we get the output as -32.
+
+* ****str.icompare(s)****, it will compare the string without considering the cases of letters, and gives output in ascii value. As mentioned above, the strings are Manipal and mirafra, here it's a case insensitive comparison, M and m will consider as same, and next letters are a = 97 and i = 105, hence the difference between them is (97 - 105) -8. So the output is -8.
+
+* ****str.substr(i,j)****, it gives the sub string of main string. So we should mention the sub string indices which are to be displayed as given, str.substr(1,2). In Manipal the 1 and 2 index ascii characters are a and n. So the output will be an.
+
+
+The below figure.2. shows the output of string methods.
+
+![string_method2](https://user-images.githubusercontent.com/110443214/186822759-93e298e7-88c9-4c73-b300-54e0bf76a383.png)
+
+                                          Figure.2. Output of string methods
+
+
+
+
+
+
+
+
+
+
 
 
 
