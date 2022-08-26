@@ -209,9 +209,13 @@ In the below figure output of default value of enum.
   
 ![default_enum](https://user-images.githubusercontent.com/110448382/186869397-d54b85a0-2276-4c1a-98a1-bc23bfef1ea4.png)
 
+                                   Figure.1. Output of enum default value
+
 In the below figure output of set value of enum.  
 
 ![set_enum](https://user-images.githubusercontent.com/110448382/186869460-cf12764a-49ec-4379-a174-7b3870a0c6e0.png)
+
+                                   Figure.2. Output of set enum value
 
 ---
 
@@ -227,6 +231,7 @@ sl.no|Method | Description
 5|num() | returns the number of elements in the given enumeration
 6|name() | returns the string representation of the given enumeration value
 
+                                          Tabular column.1. enum methods 
 
 ---
 
@@ -243,6 +248,7 @@ In below figure declare typedef type and output using enum methods.
 
 ![typedef_enum](https://user-images.githubusercontent.com/110448382/186874037-c29e2317-5854-4fd9-a859-df544365b10a.png)
 
+                                   Figure.3. Output of typedef enum using enum method
 
 ---
 
