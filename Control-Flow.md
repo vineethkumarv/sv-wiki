@@ -18,7 +18,12 @@ There are various types of conditional statements -
                `statements;  `  
                `end`  
 
-**log file link**  
+**log file link** 
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if/if_code.sv   
+
+**lab output link**   
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if/if_code_output.log  
+
 
 
 ***
@@ -34,7 +39,11 @@ This statement , first the compiler goes to the if condition and checks the cond
                `Statements;  `  
                `end`  
 
-**Lab link**
+**Lab link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else/if_else_code.sv  
+
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else/if_else_code_output.log  
 
 
 
@@ -62,6 +71,10 @@ This statement is use by giving the multiple conditional statements . These stat
               `end  `  
 
 **lab link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_code.sv  
+
+**lab output link** 
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_output.log  
 
 
 ***
