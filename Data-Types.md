@@ -15,7 +15,7 @@ sr. no. | **data type**         |
 |3.|[Strings](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#string) |
 |4.|[Structures](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure) |
 |5.|[Enumerated](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#enum) | 
-|6.|[User defined](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Typedef) |
+|6.|[User defined](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/User-defined) |
 
         Tabular column. data types
 
