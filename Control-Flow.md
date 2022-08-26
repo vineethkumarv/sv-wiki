@@ -449,6 +449,9 @@ Automatic tasks allocate unique, stacked storage for each task call.
 
 
 ***
+## events 
+
+Event is use for synchronizing between two or more concurrently active processes. First process will trigger the event another one is wait for the event .
 
 
 
