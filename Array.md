@@ -1,3 +1,129 @@
+# Queue
+ Queue is a datatype used to have the variable size ordered collection of same datatypes in unpacked array format, it is used to insert the element in the array and delete the element in the array by both the ends.It is like buffer, used to model the first in first out(FIFO) and last in fast out (LIFO).
+
+****Syntax****: `data_type name[$];`
+                 
+data_type- data_type of queue element  
+name - name of the queue  
+[$] - declare the unbounded queue  
+
+There are two types of queue declaration
+
+## 1. bounded
+
+ The queue as the size limit. we need to provide the max value while declare the queue 
+ 
+syntax: `data_type name[$:255];`
+ 
+Here $- first element
+255 - last element
+
+![bounded queue](https://user-images.githubusercontent.com/110412474/186423427-f222976c-7179-40ac-83fb-0ae011222e72.jpg)
+
+                            Fig.1: Bounded queue with push and pop operation
+
+
+---
+
+
+## 2. unbounded
+
+ The queue as no size limit. we do not provide an size of queue it is a variable size queue.
+ 
+syntax: `data_type name[1:$];`
+     
+Here 1 - first element
+$ - last element
+
+
+![unbounded queue](https://user-images.githubusercontent.com/110412474/186423948-b22286aa-8de7-4dde-9b0e-08bbdf394306.jpg)
+
+                            Fig.2: Unbounded queue with push and pop operation                         
+
+---  
+
+
+**** Queue method cheat sheet****
+Method | Description
+-- | --
+size() |  returns the number of items in the queue
+insert() | inserts the given item at the specified index position
+delete() | deletes the item at the specified index position
+push_front() | inserts the given element at the front of the queue
+push_back() | inserts the given element at the end of the queue
+pop_front() | removes and returns the first element of the queue
+pop_back() | removes and returns the last element of the queue
+  
+                    Table.1 Queue Methods
+---
+
+## Queue Methods
+
+Example.1 : consider the variable size queue named as queue1 = {2,7,1,9,9,7}, the output is shown in Fig.1
+   
+****size():****
+
+Display the number of element in the queue ,if the queue is empty display the empty array.  
+Expression: queue1.size()- It is used to display the size of the array queue1.   
+output : 6  
+
+****delete():****  
+  
+It is used to delete the queue element of specified index position.  
+Expression : queue.delete(0) - It delete the array element '2' in the zeroth index position in the queue1.   
+ouput: '{7, 1, 9, 9, 7} 
+
+****insert(index, queue_element):****
+
+  It is used to insert the queue element in the particular index position.  
+  Expression: insert(0, 2)- It insert the array element '2' in the zeroth index position in the queue1.  
+ output: '{ 2, 7, 1, 9, 9, 7}  
+
+The below Figure.1 shows the output for size(), delete(), insert() Methods of Queue.
+  
+![newqueue1](https://user-images.githubusercontent.com/110412474/186829636-ba817def-7c37-4c16-9f50-af55f1bc9f84.JPG)
+
+
+                          Fig.1: Queue Method Example.1
+ 
+
+---
+
+Example.2 : consider the variable size queue named as  
+ queue1 ={"manipal", "bangalore", "udupi"};   
+
+****pop.front():****
+  
+It remove the queue element from the front of the queue and return the first queue element.  
+ In the above example, the array element from the front of the queue1 is removed i.e "manipal".        
+ Now  After removing the array element the queue1 as the elements. queue1 ={ "bangalore", "udupi"};
+
+****pop.back():****
+  
+It remove the queue element from the back of the queue and return the queue last queue element.  
+  In the above example, the array element from the back of the queue1 is removed i.e "udupi".    
+  Now After removing the array element the queue1 as the elements. queue1 = `{"bangalore"}
+  
+****push.front():****
+  
+It insert the queue element to the front of the queue.  
+ Expression: push.front("yelahanka") - Insert the array element to the front of the queue1.  
+  After push.front() the array elements of queue1 is '{"yelahanka", "bangalore"}  
+  
+****push.back():****
+  
+It insert the queue element to the back of the queue.  
+  Expression: push.back("udupi")- Insert the array element to the back of the queue1  
+  After push,back() the array elements of the queue1 is '{"yelahanka", "bangalore", "udupi"}
+
+The below Figure.2 shows the output of pop.front(), pop.back(), push.front(), push.back(), Methods of Queue.
+  
+![newqueue2](https://user-images.githubusercontent.com/110412474/186828222-396f58a1-fdb4-4e89-88a6-506185f9495a.JPG)
+
+                             Fig.2:Queue Method Example.2
+     
+---
+
 # Array Manipulation Method
 In the System Verilog the array Manipulation method are the built in method used to searching and ordering. The array manipulation method iterate through the each array element to evaluate the expression given by the with clause. The with clause is must for the some of the method and for some it is optional. "with" is refer to evaluate the existing array with the conditions.The below figure shows the Flow chart of Array Manipulation Method
 
