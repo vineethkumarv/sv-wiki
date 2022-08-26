@@ -402,26 +402,12 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ## Blocking and non-blocking statement - 
 ### Blocking statement  
-Blocking statements are assigned with =. It will execute one after the other in procedural blocks. Blocking statements are executed in a block in a sequential manner but when more than two procedural blocks, these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks.
+Blocking statements are assigned with =. It will execute serially in procedural blocks. Blocking statements are executed in a block in a sequential manner but when more than two procedural blocks, these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks.
 
 **Syntax** -  
-`            variable_datatype variable name = value assign;`  
+`            variable_name(LHS) = expression(RHS);`  
 
-For example - 1. Time delay assignation 
-
-  
-` module blocking_assignment;  `  
-`int a , b;`  
-`initial begin `  
-`#10 a = 10;`  
-`#20 b = 20;`  
-`end `  
-`endmodule `  
-
- In this code, there are two variables a and b. The value assigns to a = 10 after the 10sec and the value is assigned to b = 20 after the time delay of 20+10=30 sec. 
-
-
-Example 2 - Swapping of two numbers using blocking statement.  
+Example - Swapping of two numbers using blocking statement.  
 **Code**  
 `module non_blocking;`  
 `login [4:0] a , b;`  
