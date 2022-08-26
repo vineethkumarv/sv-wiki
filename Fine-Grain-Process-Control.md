@@ -16,11 +16,17 @@ When we fork off any thread, a new object of process class is created at that ti
 ## self()
 It creates the object. To access others we need to create  object first.  
 
+![self](https://user-images.githubusercontent.com/110447489/186918391-9abe783b-1538-4764-a5eb-5105ee94345f.jpg)
+
+
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_self/fine_self.sv  
 
 Github output link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_self/fine_self.log
 ## Status()
 It will shows the status or state of the thread i.e Finished,Running,Waiting,Suspended,Killed.  
+
+![status](https://user-images.githubusercontent.com/110447489/186918464-d50a89cc-c8ae-4b16-97b6-00159fd7fbd0.jpg)
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_status/fine_status.sv  
 
