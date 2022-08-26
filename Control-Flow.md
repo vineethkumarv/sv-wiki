@@ -22,7 +22,7 @@ This statement , first the compiler goes to the if condition and checks the cond
                `if(condition)begin  `    
                `statements;  `   
                `end   `  
-               `else begin    `  
+               `else begin    `    
                `Statements;  `  
                `end`  
 
@@ -41,10 +41,10 @@ This statement is use by giving the multiple conditional statements . These stat
 `              if(condition)begin  `  
               `Statements;  `  
               `end   `
-              `elseif (condition)begin  `  
+              `elseif (condition)begin  `    
               `Statements;   `  
               `end  `
-              `elseif(condition)begin  `  
+              `elseif(condition)begin  `    
               `Statements;  `  
               `end   `  
                `...  `  
