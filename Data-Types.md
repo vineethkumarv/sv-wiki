@@ -76,6 +76,7 @@ The logic data type is a 4 state type that can take values 0,1,x and z. logic da
 By default logic data type is unsigned and its initial value is x. logic data type can be driven in both procedural block and continuous assign statements.
 
 ****syntax :**** `logic variable_name;`  
+
 ****Example :**** `logic [2:0] logic_data_type;`
 
 
@@ -91,7 +92,8 @@ The below figure shows the output of logic data type.
 integer is 4-state data type, integer can be either 0,1,x and z which represent a 32-bit signed number. Default value of integer is x. integer can hold values ranging from -2^31 to (2^31)-1.
 
 ****Syntax :**** `integer variable_name;`  
-****Example :**** `integer data;`
+
+****Example :**** `integer integer_data;`
 
 The below figure shows the output of integer data type.
 
@@ -106,8 +108,9 @@ The below figure shows the output of integer data type.
 time is special data type for simulation time measuring. It is 4-state data type,represent 64-bit unsigned integer, that can be used in conjunction with the $time system task to hold current simulation time.
 
 ****Syntax :**** `time variable_name;`  
-****Example :**** `time t;`       
-`t=$time;`    
+
+****Example :**** `time time_data;`       
+`time_data = $time;`    
 
 The below figure shows the output of time data type.
 
@@ -122,8 +125,9 @@ The below figure shows the output of time data type.
 The real data type implemented as a 64-bit real number. Real numbers can be specified in either decimal notation (4.43) or in scientific notation (42e8). Default value of real data type is 0.
 
 ****Syntax :**** `real variable_name;`  
-****Example :**** `real data;`      
-`data = 4.43;`   
+
+****Example :**** `real real_data;`      
+`real_data = 4.43;`   
 
 The below figure shows the output of real data type.
 
@@ -138,8 +142,9 @@ The below figure shows the output of real data type.
 bit is 2-state 32-bit unsigned integer which is used most often test benches. It can be either 0 or 1 which represents a single bit. Default value of bit data type is 0.
 
 ****Syntax :**** `bit variable_name;`  
-****Example :**** `bit data;`        
-`bit [0:31] data`    
+
+****Example :**** `bit single_data;`        
+`bit [3:0] multi_bit_data;`    
 
 The below figure shows the output of bit data type.
 
@@ -154,7 +159,8 @@ The below figure shows the output of bit data type.
 byte is 2-state data type which is used most often test benches. It can be either 0 or 1 which represent a 8-bit signed integer. Default value of byte is 0.
 
 ****Syntax :**** `byte variable_name;`  
-****Example :**** `byte data;`   
+
+****Example :**** `byte byte_data;`   
 
 The below figure shows the output of byte data type.
 
@@ -169,7 +175,8 @@ The below figure shows the output of byte data type.
 shortint is 2-state data type. It can be either 0 or 1 which represent a 16-bit signed integer. Default value of shortint is 0.
 
 ****Syntax :**** `shortint variable_name;`  
-****Example :**** `shortint data;`
+
+****Example :**** `shortint shortint_data;`
 
 The below figure shows the output of shortint data type.
 
@@ -184,7 +191,8 @@ The below figure shows the output of shortint data type.
 int is 2-state data type which is used most often testbenches. It can be either 0 or 1 which represent a 32-bit signed integer. Default value of int is 0.
 
 ****Syntax :**** `int variable_name;`  
-****Example :**** `int data;`
+
+****Example :**** `int int_data;`
 
 The below figure shows the output of int data type.
 
@@ -200,7 +208,7 @@ longint is 2-state data type. It can be either 0 or 1 which represent a 64-bit s
 
 ****Syntax :**** `longint variable_name;`  
 
-****Example :**** `longint data;`
+****Example :**** `longint longint_data;`
 
 The below figure shows the output of longint data type.
 
