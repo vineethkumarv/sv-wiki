@@ -35,11 +35,17 @@ Github output link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7
 ## kill()
 The kill () function terminates the process and all its sub-processes. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be terminated in the current timestamp.  
 
+![kill](https://user-images.githubusercontent.com/110447489/186920953-8f5deced-828e-4944-8ee1-3c16734410bc.jpg)
+
+
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_kill/fine_kill.sv
 
 Github output link- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_kill/fine_kill.log 
 ## await()
 This task allows one process to wait for another process.  
+
+![await](https://user-images.githubusercontent.com/110447489/186921010-49531f05-485a-4308-af15-a15d1c33c991.jpg)
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_await/fine_await.sv
 
@@ -47,12 +53,18 @@ Github output link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7
 
 ## suspend
 This function suspends the execution of the process. It can suspend its own or other process’s execution. The execution is suspended until a resume () is encountered. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be suspended in the current timestamp.  
+
+![suspend](https://user-images.githubusercontent.com/110447489/186921070-9b5385aa-0299-426f-860e-0734ee586aba.jpg)
+
  
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.sv
 
 Github output link-  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.log
 ## resume()  
 This function restarts the process that was suspended. Resuming a process that was suspended while being blocked (due to wait statement, delay or waiting for an event to trigger) shall reinitialize that process to the event expression or wait for the wait condition to be true or for the delay to expire.  
+
+![resume](https://user-images.githubusercontent.com/110447489/186921148-5ad587d6-c786-4bcd-aefe-d87fbe52f673.jpg)
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_resume/fine_resume.sv
 
