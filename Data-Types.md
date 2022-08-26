@@ -17,7 +17,7 @@ sr. no. | **data type**         |
 |5.|[Enumerated](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#enum) | 
 |6.|[User defined](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/User-defined) |
 
-        Tabular column. data types
+        Tabular column.1. data types
 
 ---
 
@@ -36,7 +36,7 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 |8.|[int](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#8-int) | 2 | 32 | signed |
 |9.|[longint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#9-longint) | 2 | 64 | signed |
 
-         Tabular column.1. 2-state and 4-state data type
+         Tabular column.2. 2-state and 4-state data type
 
 ---
 
@@ -71,7 +71,7 @@ The below tabular column represent the 4 different state.
 |x or X | Logic state unknown|
 | z or Z|Logic state high impedance |
 
-                                          Tabular column.2. value of 4-state
+                                          Tabular column.3. value of 4-state
 ---
 
 ## 1. Logic
@@ -276,7 +276,7 @@ In the below figure output of default value of enum.
   
 ![default_enum](https://user-images.githubusercontent.com/110448382/186869397-d54b85a0-2276-4c1a-98a1-bc23bfef1ea4.png)
 
-                                   Figure.1. Output of enum default value
+                                   Figure.10. Output of enum default value
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/default_value_enum/default_value_enum.sv
 
@@ -287,7 +287,7 @@ In the below figure output of set value of enum.
 
 ![set_enum](https://user-images.githubusercontent.com/110448382/186869460-cf12764a-49ec-4379-a174-7b3870a0c6e0.png)
 
-                                   Figure.2. Output of set enum value
+                                   Figure.11. Output of set enum value
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/set_value_enum/set_value_enum.sv
 
@@ -308,7 +308,7 @@ sl.no|Method | Description
 5|num() | returns the number of elements in the given enumeration
 6|name() | returns the string representation of the given enumeration value
 
-                                          Tabular column.1. enum methods 
+                                          Tabular column.4. enum methods 
 
 ---
 
@@ -325,7 +325,7 @@ In below figure declare typedef type and output using enum methods.
 
 ![typedef_enum](https://user-images.githubusercontent.com/110448382/186874037-c29e2317-5854-4fd9-a859-df544365b10a.png)
 
-                                   Figure.3. Output of typedef enum using enum method
+                                   Figure.12. Output of typedef enum using enum method
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/typedef_enum/typedef_enum.sv
 
@@ -360,7 +360,7 @@ Concatenation|{Str1, Str2, ..., StrN}  | All strings will be concatenated into o
 Replication | {multiplier{Str}} | Replicates the string N number of times, where N is specified by the multiplier|
 Indexing | Str[index] | Returns a byte, the ASCII code at the given index. If given index is out of range, it returns 0|
 
-                                          Tabular column.1.string operators
+                                          Tabular column.5.string operators
 
 ****Example:****
 
@@ -391,7 +391,7 @@ The below figure.1 illustrates the output for string operators
 ![string_oper2](https://user-images.githubusercontent.com/110443214/186822122-a5f85160-9938-41d3-811f-5b155df68cb2.png)
 
 
-                                   Figure.1. Output of string operators
+                                   Figure.13. Output of string operators
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_op/string_op.sv
 
@@ -414,7 +414,7 @@ str.compare(s) | Returns the string compare result as ascii value.
 str.icompare(s) | Returns caseless string compare result as ascii value.
 str.substr(i,j) | Returns the sub string of main string.
 
-                 Tabular column.2. string methods
+                 Tabular column.6. string methods
 
 ****Example:****
 
@@ -441,7 +441,7 @@ The below figure.2. shows the output of string methods.
 
 ![string_method2](https://user-images.githubusercontent.com/110443214/186822759-93e298e7-88c9-4c73-b300-54e0bf76a383.png)
 
-                                          Figure.2. Output of string methods
+                                          Figure.14. Output of string methods
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_me/string_method.sv
 
