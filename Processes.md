@@ -13,7 +13,7 @@ In the below figure we can see that types of processes and the process controls.
 |[fork join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1fork-join)|Parent thread will execute when all child threads are over|
 |[fork join_any](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2fork-join_any)|Parent thread will be execute when anyone child thread gets over|
 |[fork join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3-fork-join_none)|Parent thread executed parallel with child thread |
-|[wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#wait-fork)|It allows the main process to wait until all the child thread process is over|
+|[wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1-wait-fork)|It allows the main process to wait until all the child thread process is over|
 |[disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#disable-fork)|It terminate the all the execution when disable fork is execute|
 
 
