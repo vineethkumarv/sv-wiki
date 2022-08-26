@@ -160,6 +160,7 @@ Below example will properly show the working idea of the priority if condition .
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priority_if_code.sv  
 
 **lab output link**   
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priority_if_code_output.log
 
 
 ***
@@ -189,10 +190,10 @@ If all the conditions are true or more than one is true , it will read the first
             `endcase  `  
 
 **lab link** 
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case.sv
 
 **lab output link**  
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case_log.log
  
 
 
@@ -211,10 +212,10 @@ In this type of case statement, if more than one case condition is true , it wil
              `endcase `  
    
 **lab link** - 
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/priority_case/priority_case.sv
 
 **lab output link**  
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/priority_case/priority_case_log.log
 
 
 ***
@@ -281,10 +282,10 @@ When the condition is true , the statements of the loop execute until the condit
 Below example will give the working idea of foreach loop .
 
 **lab link** -
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_loop.sv
 
 **lab output link** -
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_loop_log.log
 
 ***
  
@@ -358,10 +359,10 @@ We can use break statement in any loop(for , while , do-while), for terminating 
 Below example will show ,how to terminate the loop using the break statement .
 
 **lab link** -  
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue.sv
 
 **lab output link**  
-
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue_log.log
 
 ***
 
@@ -373,6 +374,11 @@ This statement is generally use for skipping the statements in the loop . It is 
 
 Below example will show how the continue  statement work . 
 
+**lab link** -  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue.sv
+
+**lab output link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue_log.log
 
 ***
 
@@ -434,8 +440,11 @@ Example 2 - Swapping of two number using blocking statement .
 **Output**  
 a=30 , b = 10
 
-**lab links**
+**lab link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap.sv
 
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap_log.log
 
 ***
 
@@ -539,7 +548,10 @@ If any changes to arguments within the subroutine, those changes will not be vis
 Below example will show the clear overview of working of call by value function .
 
 **lab link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_value/function_by_value.sv
 
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_value/func_by_value_log.log
 
 ***
 
@@ -549,9 +561,12 @@ In this , the reference to the original argument is passes to the subroutine .As
 
 Below example will show the clear idea .
 
-**lab link**
 
- 
+**lab link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_ref/function_by_ref.sv
+
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_ref/func_by_ref_log.log
 
 
 ***
@@ -581,7 +596,10 @@ There are generally two type to task we use -
 Static tasks share the same storage space for all task calls.
 
 **lab link** -
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/static_task/task.sv
 
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/static_task/task1.log
 
 ***
 
@@ -589,6 +607,11 @@ Static tasks share the same storage space for all task calls.
 
 Automatic tasks allocate unique, stacked storage for each task call.
 
+**lab link** -
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/automatic_task/automatic_task.sv
+
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/automatic_task/task_auto_log.log
 
 ***
 ## events 
