@@ -2,6 +2,10 @@
 ## Conditional Statement 
 Conditional statement  are used for executing the statements by giving the conditions. These statements until the condition become false . 
 There are various types of conditional statements - 
+
+![Untitled Diagram drawio (20)](https://user-images.githubusercontent.com/110447788/186894698-e040de62-4bc9-4666-a53a-ebc790b2bca6.png)
+
+
 ### if 
  This statement is use for giving a single condition and   inside it executing the multiple statements or single statement . This is generally use for comparison of a number or two numbers .
 
@@ -207,7 +211,9 @@ In this type of case statement, if more than one case condition is true , it wil
 The loops has a sequence of instructions , it will execute when the instruction is true and execute until the condition of loops will not false . When the condition become false , the loops will terminate . 
 There are various kinds of loops  -
  
-**Pictures of loops**
+
+
+![Loops](https://user-images.githubusercontent.com/110447788/186894792-61b4d18d-35b4-4f25-897b-f556f88acd0f.png)
 
 
 ***
