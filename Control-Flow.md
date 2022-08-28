@@ -23,7 +23,7 @@ There are various types of conditional statements -
                `statements;  `  
                `end`  
 
-**log file link** 
+**Lab link** 
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if/if_code.sv   
 
 **lab output link**   
@@ -62,11 +62,11 @@ This statement is used by giving multiple conditional statements. These statemen
 **Syntax** -   
 `              if(condition)begin  `  
               `Statements;  `  
-              `end   `
-              `elseif (condition)begin  `    
+              `end   `  
+              `else if (condition)begin  `    
               `Statements;   `  
-              `end  `
-              `elseif(condition)begin  `    
+              `end  `  
+              `else if(condition)begin  `    
               `Statements;  `  
               `end   `  
                `...  `  
@@ -103,7 +103,7 @@ The below lab example will show how unique it is different from the traditional 
 `               unique if(condition)begin  `  
                `Statements;  `  
                `end  `  
-               `elseif(condition)begin  `  
+               `else if(condition)begin  `  
                `Statements;  `  
                `end  `  
 
@@ -255,11 +255,11 @@ There are various kinds of loops  -
 
 
 ### 1. for 
-for loop, execute the statements multiple times until the statement become false. Execution of "for loop" requires three steps -
+for loop, execute the statements multiple times until the condition become false. Execution of "for loop" requires three steps -
 
-a. Initialization - It will first initialize the variable.
-b. condition -  give condition to the loops. It will decide the purpose of the loop.
-c. modifier - means in this part, the increment or decrement is done.
+a. Initialization - It will first initialize the variable.  
+b. condition -  give condition to the loops. It will decide the purpose of the loop.  
+c. modifier - means in this part, the increment or decrement is done.  
 
 **Syntax** -   
 `              for (initialization; condition; modifier) begin  `    
@@ -322,7 +322,8 @@ In this loop, the first condition is checked, if it is true and the statements i
 **Syntax** -   
 `               while(condition)begin              `  
                `Statements;  `  
-               `end  `  
+               `end  ` 
+ 
 The below example will give an idea about the working of the while loop.
 
 **lab link** -
@@ -467,7 +468,26 @@ A function can have at least one argument which is to be returned.
 **Syntax** -  
   `function data_type function_name(arguments )`  
 `    <Statements>;  `  
-    `endfunction  `  
+    `endfunction  `   
+
+**Example** - 
+ 
+`module function_tb;`   
+`int x;`  
+`function int sum(input int a, b);`    
+    `sum = a+b;`   
+  `endfunction`
+ `initial begin`    
+    `x=sum(10,5);`  
+`$display("\tValue of X = %0d",x);`    
+`end` 
+`endmodule:function_tb`   
+
+In the above example is adding two integer number by calling function name.  
+we declaring the function name is 'sum' and function type is int data_type and calling the function name in inside the module.
+   
+**output**  
+`Value of X= 15;`   
 
 Arguments are of two types - 
 1. formal argument - declare in the routine header.
