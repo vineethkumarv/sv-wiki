@@ -483,11 +483,22 @@ A function can have at least one argument which is to be returned.
 `end` 
 `endmodule:function_tb`   
 
-In the above example is adding two integer number by calling function name.  
+Here in the above example is adding two integer number by calling function name.  
 we declaring the function name is 'sum' and function type is int data_type and calling the function name in inside the module.
    
 **output**  
 `Value of X= 15;`   
+
+
+**Void function**  
+Void functions are simply functions that have no return value.    
+void is used to indicate null return from the function.    
+The can be used wherever a statement is allowed. They cannot be used as part of an expression.  
+ 
+**Syntax**    
+`function void function_name;`  
+
+The function 'function_name' is not returning any type but only displaying some data, so this can be of void datatype.    
 
 Arguments are of two types - 
 1. formal argument - declare in the routine header.
@@ -513,6 +524,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/f
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_value/func_by_value_log.log
 
 ***
+ 
 
 ### call by reference 
 
