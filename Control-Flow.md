@@ -6,7 +6,8 @@
 Conditional statements are used for executing the statements by giving the conditions. These statements will work according to the condition. 
 There are various types of conditional statements - 
 
-![Untitled Diagram-Page-1 drawio (2)](https://user-images.githubusercontent.com/110447788/186898999-9060d1d8-ba85-4dde-9b51-20218e709e0c.png)
+![Untitled Diagram-Page-1 drawio (3)](https://user-images.githubusercontent.com/110447788/187055885-99715bb3-e2ed-4a5e-aa69-57c8f0a003fd.png)
+
 
                              Figure.2. Conditional Statements
 
