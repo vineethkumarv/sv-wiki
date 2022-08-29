@@ -127,7 +127,7 @@ The below tabular column represent the 4 different state.
 Syntax : `reg variable_name;`  
 
 
-****wire**** - A wire is a Verilog data-type used to connect elements and to connect nets that are driven by a single gate or continuous assignment.
+****wire**** - A wire is a Verilog data-type used to connect elements and to connect nets that are driven by a single gate or continuous assignment.    
 Syntax : `wire variable_name;`     
 
 ****tri**** - The tri net type can be used where multiple drivers drive a net.  
