@@ -404,10 +404,10 @@ A string type is a variable-length ordered collection of characters. The length 
 |:---|:------------------------------------------ | :-------------------------------------------------------------------------------------|
 Equality|str1==str2 | Returns 1 if the two strings are equal and 0 if they are not  |       
 Inequality|str1!=str2     |Returns 1 if the two strings are not equal and 0 if they are| 
-Comparison|Str1 < Str2, Str1 <= Str2, Str1 > Str2, Str1 >= Str2 |Returns 1 if the corresponding condition is true and 0 if false|
-Concatenation|{Str1, Str2, ..., StrN}  | All strings will be concatenated into one resultant string                                        
-Replication | {multiplier{Str}} | Replicates the string N number of times, where N is specified by the multiplier|
-Indexing | Str[index] | Returns a byte, the ASCII code at the given index. If given index is out of range, it returns 0|
+Comparison|str1 < str2, str1 <= str2, str1 > str2, str1 >= str2 |Returns 1 if the corresponding condition is true and 0 if false|
+Concatenation|{str1, str2, ..., strN}  | All strings will be concatenated into one resultant string                                        
+Replication | {multiplier{str}} | Replicates the string N number of times, where N is specified by the multiplier|
+Indexing | str[index] | Returns a byte, the ASCII code at the given index. If given index is out of range, it returns 0|
 
                                           Tabular column.5.string operators
 
