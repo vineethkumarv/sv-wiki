@@ -312,18 +312,18 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 Enumerated data types defines a set of named values.
 
-****Syntax**** : `enum enum_base_type(optional) {  
- <enum_name_declaration> = constant_expr(optional)...}  
+****Syntax**** : `enum enum_base_type(optional) {    
+ <enum_name_declaration> = constant_expr(optional)...}    
 <enum_type_identifier>;`  
 
-****Example :**** `enum {monday,  
- tuesday,  
- wednesday,  
- thursday,  
- friday,   
-saturday,  
- sunday  
-} days;`
+****Example :**** `enum {monday,    
+ tuesday,    
+ wednesday,    
+ thursday,    
+ friday,     
+saturday,    
+ sunday    
+} days;`  
 
 * An enumerated type is stored as type ‘int’ unless specified as something else.
 * This type automatically gives a unique value to every name in the list.
