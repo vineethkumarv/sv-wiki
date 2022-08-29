@@ -62,10 +62,10 @@ By inverting each bit of a number and adding plus 1 to its least significant bit
 
 ****Example to illustrate signed and unsigned number****
 
-* Consider 3 bit, here n=3,
+ Consider 3 bit, here n=3,
 
 
-**Unsigned range**  
+* **Unsigned range**  
  0 to (2^(n) - 1  
 0 to (2^(3)) - 1  
 0 to 7
@@ -82,7 +82,7 @@ By inverting each bit of a number and adding plus 1 to its least significant bit
 111|7|
 
 
-**Signed range**  
+* **Signed range**  
 -2^(n-1) to 2^(n-1)-1  
 -2^(3-1) to 2^(3-1)-1    
 -2^(2) to 2^(2)-1  
