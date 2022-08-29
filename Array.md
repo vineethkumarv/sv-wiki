@@ -102,7 +102,7 @@ The below figure shows the output of single dimension unpacked array.
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked_array.log
 
-The below figure shows the output of multi dimension unpacked array, here it consists of int abc[2][3] = $urandom_range(10,50).
+The below figure shows the output of multi dimension unpacked array, here it consists of `int abc[2][3] = $urandom_range(10,50)`.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
 ![multi_unpacked](https://user-images.githubusercontent.com/110448056/186889779-c6758475-6199-4e4e-9cbf-e25e0e2abd29.png)
@@ -128,14 +128,18 @@ Mix of Packed arrays and unpacked arrays are known as mixed multi dimensional ar
 
 `logic [2:0][3:0] mixed_array [2:0][3:0];`
 
-In this example, going from left to right side the memory will be allocated and it's showing in the figure below.
-
-
-
 **Some Points about mixed multidimensional arrays:**
 
 * All unpacked dimensions are first referenced from the left-most to the right-most dimension in that order. 
 * All packed dimensions are then referenced from the left-most to the right-most dimension in that order.
+
+In the given example, going from left to right side the memory will be allocated and for that first unpacked array dimension are considered as shown in diagram below and after that packed array dimensions are considered.
+
+![mixed-arrays](https://user-images.githubusercontent.com/110448056/187194239-d189bcf7-1b64-407a-b35b-ec1e8fdce5cf.png)
+
+                               Figure.6 mixed multi dimensional array memory allocation
+
+--- 
 
 ## Dynamic Arrays:
 A dynamic array is an unpacked array whose size can be set or changed at run time. The space for a dynamic array does not exist until the array is explicitly created at run-time. 
@@ -152,7 +156,7 @@ A dynamic array is an unpacked array whose size can be set or changed at run tim
 
 * The default size of an un-initialized dynamic array is 0.
 * Dynamic arrays support all variable data types as element types, including arrays.
-* An out-of-bound access in a dynamic array leads to a default value of the data_type.
+* An out-of-bound access in a dynamic array leads to a default value of the data type.
 
 **Dynamic Arrays Methods cheat sheet:**
 
@@ -196,7 +200,7 @@ In example,
 
 `da[5] = '{1,2,5,6,8};`
 
-` out of bound access of dynamic array da[1024] = 0;`
+`out of bound access of dynamic array da[1024] = 0;`
 
 ![dynamic](https://user-images.githubusercontent.com/110412474/187175379-fa7e35e3-df71-4421-a5dd-a5fcabb4fb84.JPG)
 
@@ -271,7 +275,7 @@ In example,
 
 ![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
 
-                              Figure.9. associative methods output
+                                Figure.9. associative methods output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative_methods/associative_methods.sv
 
@@ -289,7 +293,7 @@ Queue is a datatype used to have the variable size ordered collection of same da
 
 ****Syntax****: `data_type name[$];`
                  
-data_type- data_type of queue element  
+data_type - data_type of queue element  
 name - name of the queue  
 [$] - declare the unbounded queue  
 
@@ -375,19 +379,7 @@ The below Figure.1 shows the output for size(), delete(), insert() Methods of Qu
  
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue.sv
 
-Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue_data_type.log  
-
-------
-
-The below figure shows an example of deleting the whole queue1 element by using the function queue1.delete()  
-
-![queue12](https://user-images.githubusercontent.com/110412474/187183389-287e9b56-9dce-4ae5-929e-a395258bd37d.JPG)
-
-                              Figure.12.1: Queue Method Example.1
-
-Github lab code link : https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method3/queue.sv
-
-Github lab output link : https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method3/queue_data_type.log
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue_data_type.log
 
 ---
 
@@ -436,8 +428,7 @@ In the System Verilog the array Manipulation method are the built in method used
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
  
                                         Figure.14. Flow chart of Array Manipulation Method
-## Array Manipulation Method (Non- Destructive) Cheat Sheet
-
+## Array Manipulation Method Cheat Sheet
 Method | Description
 -- | --
 find() | Returns all elements satisfying the given expression
@@ -450,19 +441,15 @@ max() | Return the element which as maximum value
 min() | Return the element which as minimum value
 unique() | Return the all elements which as unique value
 unique_index() | Return the all index place which as unique value
+reverse() | Reverse the order of array element
+sort() | sort the array element in ascending order
+rsort() | sort the array element in descending order
+shuffle() | shuffle the array element such that the value of index is in Randomized order
 sum() | return the sum of all the element
 product() | return the product of all the element
 and() | Return the bitwise AND(&) of all the element
 or() | Return the bitwise OR of all the element in an array
 xor() | Return the bitwise XOR(^) of all the element in an array
-
-## Array Manipulation Method (Destructive) Cheat Sheet
-Method | Description
--- | --
-reverse() | Reverse the order of array element
-sort() | sort the array element in ascending order
-rsort() | sort the array element in descending order
-shuffle() | shuffle the array element such that the value of index is in Randomized order
 
               Table.6. Array Manipulation Method
 ## Array locator Method
