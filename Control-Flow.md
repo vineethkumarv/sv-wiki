@@ -1,5 +1,6 @@
    
-![Untitled Diagram-Page-2 drawio (4)](https://user-images.githubusercontent.com/110447788/187056946-7ab2094a-49fb-460d-ac0f-02b605d09247.png)
+![Untitled Diagram-Page-2 drawio (6)](https://user-images.githubusercontent.com/110447788/187111580-998e981a-05a0-46d1-81a3-67909da81011.png)
+
 
   
 
@@ -9,7 +10,8 @@
 Conditional statements are used for executing the statements by giving the conditions. These statements will work according to the condition. 
 There are various types of conditional statements - 
 
-![Untitled Diagram-Page-1 drawio (3)](https://user-images.githubusercontent.com/110447788/187055975-1b8db8c1-8559-47c1-9956-107105393609.png)
+![Untitled Diagram-Page-4 drawio (2)](https://user-images.githubusercontent.com/110447788/187111521-c2b587d7-eac4-49b6-973a-0bef9a6ef9a2.png)
+
 
 
 
