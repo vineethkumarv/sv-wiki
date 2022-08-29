@@ -4,7 +4,7 @@
 
   
 
-                             Figure.1. Control Flow
+                                       Figure.1. Control Flow
 
 ## Conditional Statement 
 Conditional statements are used for executing the statements by giving the conditions. These statements will work according to the condition. 
@@ -15,7 +15,7 @@ There are various types of conditional statements -
 
 
 
-                             Figure.2. Conditional Statements  
+                                        Figure.2. Conditional Statements  
   
 
 S.No.|If_variants |  
