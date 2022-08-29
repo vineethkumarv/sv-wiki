@@ -34,7 +34,7 @@ A packed array is one where the dimensions of the array is declared before the a
 
 **Example,** 
 
-`bit [3:0]abc = 4'b0110` 
+`bit [3:0]abc = 4'b0110`  
 `logic [15:0]pqr = 16'h10fe`  
 `reg [7:0]xyz = 8'd16`
 
@@ -42,6 +42,7 @@ A packed array is one where the dimensions of the array is declared before the a
 
 *  If a packed array is declared as signed, then the array viewed as a single vector shall be signed. The individual elements of the array are unsigned unless they are of a named type declared as signed.
 * The maximum size of a packed array can be limited, but shall be at least 65536 (2^16) bits.
+* Packed arrays are synthesizable.
 
 The below figure shows the output of single dimension packed array, here packed array consists of reg, logic and bit data type as mentioned in the above example.
 
@@ -79,7 +80,9 @@ A unpacked array is one where the dimensions of the array is declared after the 
 
 `byte a[8] = '{4,5,6,2,3,7,9,10}`
 
-int abc[10] = $urandom_range(10,50); where, $urandom_range is inbuilt function which generates random numbers between 10 to 50.
+`int abc[10] = $urandom_range(10,50);` 
+
+where, $urandom_range is inbuilt function which generates random numbers between 10 to 50.
 
 **Some Points about unpacked arrays:**
 
@@ -87,12 +90,13 @@ int abc[10] = $urandom_range(10,50); where, $urandom_range is inbuilt function w
 * If an unpacked array is declared as signed, then this applies to the individual elements of the array, since the whole array cannot be viewed as a single vector.
 * The unpacked dimensions can be arranged in memory in any way that the simulator chooses – does not have to be contiguous.
 * They could be fixed-size arrays, dynamic arrays, associative arrays or queues.
+* Unpacked arrays are Non-synthesizable.
 
 The below figure shows the output of single dimension unpacked array.
 
 ![single_unpacked](https://user-images.githubusercontent.com/110448056/186889154-0f23c201-ca8b-47cd-ae46-8fcd3c0d0cfd.png)
 
-                                 Figure.4 single dimensional unpacked array output
+                                  Figure.4 single dimensional unpacked array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked.sv
 
@@ -103,7 +107,7 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 
 ![multi_unpacked](https://user-images.githubusercontent.com/110448056/186889779-c6758475-6199-4e4e-9cbf-e25e0e2abd29.png)
 
-                                Figure.5 multi dimensional unpacked array output
+                                 Figure.5 multi dimensional unpacked array output
           
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.sv
 
@@ -114,6 +118,20 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 They are used to model Random Access Memories (RAMs), Read Only Memories (ROMs) and register files where one element is accessed at a time.
 
 ---
+
+## Mixed Multi Dimensional Arrays:
+Mix of Packed arrays and unpacked arrays are known as mixed multi dimensional array. 
+
+**Syntax:-**  `[data_type] [dimensions] [array_name] [dimensions];`
+
+**Example,** 
+        `l    r              l  r`
+`logic [2:0][3:0] mixed_array [2][3];`
+
+**Some Points about mixed multidimensional arrays:**
+
+* All unpacked dimensions are first referenced from the left-most to the right-most dimension in that order. 
+* All packed dimensions are then referenced from the left-most to the right-most dimension in that order.
 
 ## Dynamic Arrays:
 A dynamic array is an unpacked array whose size can be set or changed at run time. The space for a dynamic array does not exist until the array is explicitly created at run-time. 
@@ -140,13 +158,13 @@ Sr No. | **Methods**         | **description**                                  
 2|function int size() | The size() method returns the current size of a dynamic array or returns zero if the array has not been created| 
 3|function void delete() | The delete() method empties the array, resulting in a zero-sized array|
 
-                                Table.2. dynamic array methods
+                                 Table.2. dynamic array methods
 
 The below figure shows the output of dynamic array.
 
 ![dynamic](https://user-images.githubusercontent.com/110448056/186890744-7a0a6733-b3a1-4e87-ae49-7956d8b5a7d1.png)
 
-                               Figure.6 dynamic array output
+                                 Figure.6 dynamic array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic/dynamic.sv
 
