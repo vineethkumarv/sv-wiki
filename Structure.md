@@ -40,7 +40,7 @@ This method gives initialization done in one step. The variable and value can be
  **Output:**   
    
 The below output shows the unpacked structure.
-![s1](https://user-images.githubusercontent.com/110484152/186596674-18bb7ee5-7000-4f59-aa2b-8909b0c94c66.png)
+![s1](https://user-images.githubusercontent.com/110484152/187270345-017b3e36-812c-470f-89bb-7f537d22fced.png)
 
                                                       Fig 2: Unpacked structure  
 
@@ -75,7 +75,7 @@ Note: Structure cannot be packed if it cannot be represented as a vector.
  **Output:**     
 
 The below output shows that output of packed structure  
-![ps1](https://user-images.githubusercontent.com/110484152/186596534-8471a1dd-bdf0-401f-bfc7-2ecedd59157a.png)  
+![ps1](https://user-images.githubusercontent.com/110484152/187270250-0aa48a5a-9fc3-417f-957a-03921d06da1a.png)
 
                                             Fig 3: Packed structure  
 
