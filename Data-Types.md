@@ -313,8 +313,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 Enumerated data types defines a set of named values.
 
 ****Syntax**** : `enum enum_base_type(optional) {`    
- `<enum_name_declaration> = constant_expr(optional)...} `   
-`<enum_type_identifier>;`  
+ `<enum_name_declaration> = constant_expr(optional)... `   
+`}<enum_type_identifier>;`  
 
 ****Example :**** `enum {monday,`    
  `tuesday,`    
@@ -374,19 +374,19 @@ sl.no|Method | Description
 
 In typedef a type name can be given so that the same type can be used in many places.  
 
-****Syntax**** : `typedef enum enum_base_type(optional) {   
-<enum_name_declaration> = constant_expr(optional)...  
-} <enum_type_identifier>;`  
+****Syntax**** : `typedef enum enum_base_type(optional) {`   
+`<enum_name_declaration> = constant_expr(optional)...`  
+`} <enum_type_identifier>;`  
 
-****Example :**** `typedef enum {monday,  
- tuesday,   
-wednesday,  
- thursday,  
- friday,  
- saturday,  
- sunday  
-} week;`  
-`week = day;`  
+****Example :**** `typedef enum {monday,`  
+` tuesday,`   
+`wednesday,`  
+` thursday,`  
+ `friday,`  
+ `saturday,`  
+` sunday ` 
+} week_e;`  
+`week_e = day;`  
 
 In below figure declare typedef type and output using enum methods.
 
