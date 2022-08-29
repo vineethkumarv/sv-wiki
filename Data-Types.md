@@ -123,6 +123,18 @@ The below tabular column represent the 4 different state.
                                           Tabular column.3. value of 4-state
 ---
 
+****reg**** -  A reg variable is used to model storage elements such as latches, flip-flops and memories, it stores a value and it is is used in a procedural assignment.  
+Syntax : `reg variable_name;`  
+
+
+****wire**** - A wire is a Verilog data-type used to connect elements and to connect nets that are driven by a single gate or continuous assignment.
+Syntax : `wire variable_name;`     
+
+****tri**** - The tri net type can be used where multiple drivers drive a net.  
+
+
+
+---
 ## 1. Logic
 
 The logic data type is a 4 state type that can take values 0,1,x and z. logic data type which can be used in place of both the wire and reg data types because wire data type does not have multiple drivers.  
