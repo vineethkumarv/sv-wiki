@@ -209,7 +209,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ## 5. bit
 
-bit is 2-state 32-bit unsigned integer which is used most often test benches. It can be either 0 or 1 which represents a single bit. Default value of bit data type is 0.
+bit is 2-state which is used most often test benches. It can be either 0 or 1 which represents a single bit. Default value of bit data type is 0.
 
 ****Syntax :**** `bit variable_name;`  
 
