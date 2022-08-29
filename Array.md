@@ -125,8 +125,12 @@ Mix of Packed arrays and unpacked arrays are known as mixed multi dimensional ar
 **Syntax:-**  `[data_type] [dimensions] [array_name] [dimensions];`
 
 **Example,** 
-        `l    r              l  r`
-`logic [2:0][3:0] mixed_array [2][3];`
+
+`logic [2:0][3:0] mixed_array [2:0][3:0];`
+
+In this example, going from left to right side the memory will be allocated and it's showing in the figure below.
+
+
 
 **Some Points about mixed multidimensional arrays:**
 
