@@ -385,7 +385,7 @@ In typedef a type name can be given so that the same type can be used in many pl
  `friday,`  
  `saturday,`  
 ` sunday ` 
-} week_e;`  
+`} week_e;`  
 `week_e = day;`  
 
 In below figure declare typedef type and output using enum methods.
