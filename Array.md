@@ -34,9 +34,9 @@ A packed array is one where the dimensions of the array is declared before the a
 
 **Example,** 
 
-`bit [3:0]abc = 4'b0110`  
-`logic [15:0]pqr = 16'h10fe`  
-`reg [7:0]xyz = 8'd16`
+`1) bit [3:0]abc = 4'b0110`  
+`2) logic [15:0]pqr = 16'h10fe`  
+`3) reg [7:0]xyz = 8'd16`
 
 **Some Points about packed arrays:**
 
@@ -54,7 +54,7 @@ The below figure shows the output of single dimension packed array, here packed 
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/single_packed/packed_array.log
  
-The below figure shows the output of multi dimension packed array, here it consists of bit [2:0][3:0]xyz = 12'hdfe.
+The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz = 12'hdfe`.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
 ![multi_packed](https://user-images.githubusercontent.com/110448056/186884901-0dfbfccd-c15f-4677-b9d3-8c394994a6b8.png)
