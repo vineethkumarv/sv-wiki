@@ -83,9 +83,9 @@ By inverting each bit of a number and adding plus 1 to its least significant bit
 
 
 **Signed range**  
--2^(n-1) to 2^(n-1)-1
--2^(3-1) to 2^(3-1)-1  
--2^(2) to 2^(2)-1
+-2^(n-1) to 2^(n-1)-1  
+-2^(3-1) to 2^(3-1)-1    
+-2^(2) to 2^(2)-1  
 -4 to 3
 
 **Signed bits** | **Value in decimal**|
@@ -102,9 +102,9 @@ By inverting each bit of a number and adding plus 1 to its least significant bit
 In the above example, the MSB bit is considered for sign flag, as mentioned earlier, if MSB is 0 means positive and 1 means negative.  
 For 100, 1 is MSB i.e negative  
 Take 2's compliment of 00
-first, take 1's compliment , 11
-add 1,                         1  
-result is 100 i.e 4  
+first, take 1's compliment , 11  
+add 1,                         1    
+result is 100 i.e 4    
 so it is -4
 
 ---
