@@ -87,5 +87,64 @@ Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blo
 
 
 ----
+# **Union**  
 
+The union is similar to structures while union shares the memory location. The largest datatype size will be the memory size for all members in the union. The 'union' keyword is used for defined for Union. They are two types: Packed Union and Unpacked Union.   
+
+## Unpacked Union  
+
+The unpacked structure use the keyword 'union' keyword. It uses the datatypes like int, byte ,bit, logic .Only the largest datatype size should be taken for the whole union members. In this scenario, sometimes the whole memory space may not be used for all the union members. The value changed for one variable also effects other elements inside the Union. 
+
+## syntax:  
+
+union {  
+int data;
+byte
+
+## Example:  
+
+
+## Output:  
+   
+The below figure shows the output of Unpacked Union.  
+
+
+
+
+
+
+
+## Packed Union    
+
+The Packed Union is defined by 'union packed' keyword. It uses only same type elements with same size. This is one of the limitation of packed Union.
+
+
+## syntax:  
+
+`typedef union packed  {`  
+`list of  different elements`  
+`} Union_name;`  
+
+## Example:  
+
+`typedef union packed {` 
+`bit [7:0];`
+`bit [1:0][3:0];`  
+`} abc_u ;`  
+
+## Output:  
+
+The below figure shows that the output of packed union.  
+
+
+
+
+
+
+
+  
+
+
+
+  
 
