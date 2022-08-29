@@ -97,12 +97,15 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
 
 ## syntax:  
 
-union {  
-int data;
-byte
+`union {` 
+`list of elements`
+`} Union_name`
 
-## Example:  
+## Example:    
 
+`union {`  
+`  
+}
 
 ## Output:  
    
