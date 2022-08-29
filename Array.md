@@ -375,7 +375,19 @@ The below Figure.1 shows the output for size(), delete(), insert() Methods of Qu
  
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue.sv
 
-Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue_data_type.log
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue_data_type.log  
+
+------
+
+The below figure shows an example of deleting the whole queue1 element by using the function queue1.delete()  
+
+![queue12](https://user-images.githubusercontent.com/110412474/187183389-287e9b56-9dce-4ae5-929e-a395258bd37d.JPG)
+
+                              Figure.12.1: Queue Method Example.1
+
+Github lab code link : https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method3/queue.sv
+
+Github lab output link : https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method3/queue_data_type.log
 
 ---
 
