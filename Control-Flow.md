@@ -24,7 +24,7 @@ S.No.|If_variants |
 2.|[if else](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#if-else)| 
 3.|[if else ladder](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#if-else-ladder)|
 4.|[unique if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#unique-if)| 
-5.|[unique if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#unique0-if)|
+5.|[unique0 if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#unique0-if)|
 6.|[priority if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#priority-if)|
 
 ### 1. if 
