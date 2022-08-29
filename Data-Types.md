@@ -65,7 +65,7 @@ By inverting each bit of a number and adding plus 1 to its least significant bit
 * Consider 3 bit, here n=3,
 
 
-*Unsigned range**  
+**Unsigned range**  
  0 to (2^(n) - 1  
 0 to (2^(3)) - 1  
 0 to 7
