@@ -49,7 +49,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/c
 ***
 ### 2. if else
 
-In this statement first, the compiler goes to the if condition and checks the condition and executes it if it is true or if the "if" condition is not true, the compiler will go to the "else" statement and checks the condition either it is true or not. If the "if" or "else" of any one of them is not true, then the compiler shows the error.
+In this statement first, the compiler goes to the if condition and checks the condition and executes it if it is true or if the "if" condition is not true, the compiler will go to the "else" statement .
 
 **Syntax** -     
                `if(condition)begin  `    
