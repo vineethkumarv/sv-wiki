@@ -83,7 +83,18 @@ The above output illustrates the output of packed structure. It contains the dif
 
 Github lab code link :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.sv   
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.log
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.log  
+
+
+## Difference of packed structure and Unpacked structure 
+
+sr. no. |**Packed structure**|**Unpacked structure**|  
+|:--|:---------------------- | :-------------| 
+|1.|struct packed  keyword is used for define packed structure| struct keyword is used for define unpacked structure|      
+|2.|Smaller memory footprint because of single bit data declaration| Larger memory footprints because it includes all dataypes|   
+|3.|string datatype cannot be used and only packed datatypes and integer dataypes allowed| All datatypes can be used.|  
+|4.|It is used in RTL code because it can synthesis the code |It is not used in RTL code because it cannot synthesis by synthesis tool|   
+|5.|Entire structure packed together without memory gaps |Unpacked structure doesnot have a packing structure |     
 
 
 ----
@@ -140,7 +151,33 @@ The Packed Union is defined by 'union packed' keyword. It uses only same type el
 
 ## Output:  
 
-The below figure shows that the output of packed union.  
+The below figure shows that the output of packed union.    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Difference between structure and union
+
+sr. no. |**structure**|**Union**|  
+|:--|:---------------------- | :-------------| 
+|1.| struct keyword is used to create structure variable | Union keyword is used to define union variable |      
+|2.| Handle different types of element at a time |Handle single type of element at a time|   
+|3.| Each structure element gets memory separately | Every element share the memory space separately|  
+|4.| The value of element doesn't get changed when other elements change. | The element value will get changed  when other element value changes|  
+|5.| Structure variable size is same or greater than sum of elements| The size of union variable is same as the size of largest dataype|   
+
 
 
 
