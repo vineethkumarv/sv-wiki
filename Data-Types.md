@@ -510,7 +510,8 @@ Consider a string Manipal,
 
 The below figure.2. shows the output of string methods.
 
-![string_method2](https://user-images.githubusercontent.com/110443214/186822759-93e298e7-88c9-4c73-b300-54e0bf76a383.png)
+![string_method](https://user-images.githubusercontent.com/110443214/187138876-6128baa0-5a0b-40cc-8a3a-4a7eded269ed.png)
+
 
                                           Figure.14. Output of string methods
 
