@@ -35,7 +35,11 @@ This method gives initialization done in one step. The variable and value can be
        `byte id;`  
        `} employee;`    
 
+The below figure shows that the data alignment of unpacked structure.  
+ 
+![image](https://user-images.githubusercontent.com/110484152/187272132-8f676df5-921b-4ccd-9233-fd716266beaa.png)  
 
+                                             Fig 3:  Data alignment of unpacked structure  
 
  **Output:**   
    
@@ -70,7 +74,13 @@ Note: Structure cannot be packed if it cannot be represented as a vector.
 `byte id;`  
 `bit[7:0]experience;`   
 `logic[15:0]salary;`  
-`}employee_ details;` 
+`}employee_ details;`   
+  
+The below figure shows that the data alignment of Packed structure.  
+
+![image](https://user-images.githubusercontent.com/110484152/187272734-a3fff0ec-94bf-4b03-b065-4faf0263a4b9.png)  
+
+                                                    Fig 4 : Data alignment of Packed structure
 
  **Output:**     
 
