@@ -277,9 +277,10 @@ There are various kinds of loops  -
  
 
 
-![Loops](https://user-images.githubusercontent.com/110447788/186894792-61b4d18d-35b4-4f25-897b-f556f88acd0f.png)
+![Untitled Diagram-Page-6 drawio (2)](https://user-images.githubusercontent.com/110447788/187124383-92b1cd6a-7628-4ddb-9eb0-7378ae8cdce9.png)
 
-                           Figure.3. Loops
+
+                                        Figure.3. Loops
 
 ***
 
