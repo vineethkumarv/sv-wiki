@@ -148,7 +148,7 @@ A dynamic array is an unpacked array whose size can be set or changed at run tim
 
 * The default size of an un-initialized dynamic array is 0.
 * Dynamic arrays support all variable data types as element types, including arrays.
-* An out-of-bound access in a dynamic array leads to a run-time error.
+* An out-of-bound access in a dynamic array leads to a garbage value.
 
 **Dynamic Arrays Methods cheat sheet:**
 
