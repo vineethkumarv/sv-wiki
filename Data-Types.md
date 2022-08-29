@@ -312,9 +312,18 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 Enumerated data types defines a set of named values.
 
-****Syntax**** : `enum enum_base_type(optional) { <enum_name_declaration> = constant_expr(optional)...} <enum_type_identifier>;`  
+****Syntax**** : `enum enum_base_type(optional) {  
+ <enum_name_declaration> = constant_expr(optional)...}  
+<enum_type_identifier>;`  
 
-****Example :**** `enum {monday, tuesday, wednesday, thursday, friday, saturday, sunday} days;`
+****Example :**** `enum {monday,  
+ tuesday,  
+ wednesday,  
+ thursday,  
+ friday,   
+saturday,  
+ sunday  
+} days;`
 
 * An enumerated type is stored as type ‘int’ unless specified as something else.
 * This type automatically gives a unique value to every name in the list.
@@ -365,9 +374,18 @@ sl.no|Method | Description
 
 In typedef a type name can be given so that the same type can be used in many places.  
 
-****Syntax**** : `typedef enum enum_base_type(optional) { <enum_name_declaration> = constant_expr(optional)...} <enum_type_identifier>;`  
+****Syntax**** : `typedef enum enum_base_type(optional) {   
+<enum_name_declaration> = constant_expr(optional)...  
+} <enum_type_identifier>;`  
 
-****Example :**** `typedef enum {monday, tuesday, wednesday, thursday, friday, saturday, sunday} week;`  
+****Example :**** `typedef enum {monday,  
+ tuesday,   
+wednesday,  
+ thursday,  
+ friday,  
+ saturday,  
+ sunday  
+} week;`  
 `week = day;`  
 
 In below figure declare typedef type and output using enum methods.
@@ -390,7 +408,7 @@ A string type is a variable-length ordered collection of characters. The length 
 
 ****Syntax**** :`string variable_name [= initial_value];`
 
-****Example****: `string str = Manipal`
+****Example****: `string str = Manipal;`
 
 * The memory space for strings is dynamically allocated.
 * The indices of string variables shall be numbered from 0 to N–1 (where N is the length of the string) so that index 0 is the first (leftmost) character of the string and index N–1 is the last (rightmost) character of the string.
