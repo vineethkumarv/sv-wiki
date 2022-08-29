@@ -158,7 +158,7 @@ The below examples will show the difference between the unique0 if and tradition
                `end  `  
  
 * Note    
-Unique0_if is working in only EDA Playground not in the questasim tool.       
+Unique0_if is working in only EDA Playground not in the questasim tool version is 10.6C.       
 
 **lab links**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique0_if/unique0_if_code.sv  
