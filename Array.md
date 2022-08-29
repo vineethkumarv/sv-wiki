@@ -34,9 +34,9 @@ A packed array is one where the dimensions of the array is declared before the a
 
 **Example,** 
 
-bit [3:0]abc = 4'b0110  
-logic [15:0]pqr = 16'h10fe  
-reg [7:0]xyz = 8'd16
+`bit [3:0]abc = 4'b0110` 
+`logic [15:0]pqr = 16'h10fe`  
+`reg [7:0]xyz = 8'd16`
 
 **Some Points about packed arrays:**
 
@@ -122,9 +122,9 @@ A dynamic array is an unpacked array whose size can be set or changed at run tim
 
 **Example,**
 
-`int abc[] = new[7];
+`int abc[] = new[7];`
 
-abc[7] = '{11,12,13,14,15,16,17};`
+`abc[7] = '{11,12,13,14,15,16,17};`
 
 **Some Points about unpacked arrays:**
 
@@ -155,9 +155,9 @@ The below figure shows the output of dynamic array.
 The below figure shows the output of dynamic array methods.
 In example,
 
-`int xyz[] = new[10];
+`int xyz[] = new[10];`
 
-xyz = '{11,12,13,14,15,16,17,18,19,20};`
+`xyz = '{11,12,13,14,15,16,17,18,19,20};`
 
 ![methods_dynamic](https://user-images.githubusercontent.com/110448056/186891136-81fbb195-14c4-42b0-b355-fb280346ecc7.png)
 
@@ -183,13 +183,13 @@ where, index type is any data type or it's wildcard "*".
 
 **Example,**
 
-`int abc[*];
+`int abc[*];`
 
-abc  = '{ 1:20, 25:22, 38:66};
+`abc  = '{ 1:20, 25:22, 38:66};`
 
-string pqr[string];
+`string pqr[string];`
 
-pqr = '{"fruits":"mango" , "vegetables":"cucumber" , "season":"monsoon"};`
+`pqr = '{"fruits":"mango" , "vegetables":"cucumber" , "season":"monsoon"};`
 
 **Some Points about unpacked arrays:**
 
@@ -226,9 +226,9 @@ The below figure shows the output of associative array.
 The below figure shows the output of associative array methods.
 In example,
 
-`int abc[string];
+`int abc[string];`
 
-abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 };`
+`abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 };`
 
 ![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
 
