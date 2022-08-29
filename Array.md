@@ -77,7 +77,7 @@ A unpacked array is one where the dimensions of the array is declared after the 
 
 **Example,** 
 
-byte a[8] = '{4,5,6,2,3,7,9,10}
+`byte a[8] = '{4,5,6,2,3,7,9,10}`
 
 int abc[10] = $urandom_range(10,50); where, $urandom_range is inbuilt function which generates random numbers between 10 to 50.
 
@@ -122,9 +122,9 @@ A dynamic array is an unpacked array whose size can be set or changed at run tim
 
 **Example,**
 
-int abc[] = new[7];
+`int abc[] = new[7];
 
-abc[7] = '{11,12,13,14,15,16,17};
+abc[7] = '{11,12,13,14,15,16,17};`
 
 **Some Points about unpacked arrays:**
 
@@ -146,7 +146,7 @@ The below figure shows the output of dynamic array.
 
 ![dynamic](https://user-images.githubusercontent.com/110448056/186890744-7a0a6733-b3a1-4e87-ae49-7956d8b5a7d1.png)
 
-                             Figure.6 dynamic array output
+                               Figure.6 dynamic array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic/dynamic.sv
 
@@ -155,13 +155,13 @@ The below figure shows the output of dynamic array.
 The below figure shows the output of dynamic array methods.
 In example,
 
-int xyz[] = new[10];
+`int xyz[] = new[10];
 
-xyz = '{11,12,13,14,15,16,17,18,19,20};
+xyz = '{11,12,13,14,15,16,17,18,19,20};`
 
 ![methods_dynamic](https://user-images.githubusercontent.com/110448056/186891136-81fbb195-14c4-42b0-b355-fb280346ecc7.png)
 
-                             Figure.7 dynamic array methods output
+                              Figure.7 dynamic array methods output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods.sv
 
@@ -183,13 +183,13 @@ where, index type is any data type or it's wildcard "*".
 
 **Example,**
 
-int abc[*];
+`int abc[*];
 
 abc  = '{ 1:20, 25:22, 38:66};
 
 string pqr[string];
 
-pqr = '{"fruits":"mango" , "vegetables":"cucumber" , "season":"monsoon"};
+pqr = '{"fruits":"mango" , "vegetables":"cucumber" , "season":"monsoon"};`
 
 **Some Points about unpacked arrays:**
 
@@ -226,13 +226,13 @@ The below figure shows the output of associative array.
 The below figure shows the output of associative array methods.
 In example,
 
-int abc[string];
+`int abc[string];
 
-abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 };
+abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 };`
 
 ![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
 
-                             Figure.9. associative methods output
+                              Figure.9. associative methods output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative_methods/associative_methods.sv
 
@@ -246,7 +246,7 @@ Associative arrays used to design Content Addressable Memories (CAMs). Random re
 ---
 
 # Queue
-Queue is a datatype used to have the variable size ordered collection of same datatypes in unpacked array format, it is used to insert the element in the array and delete the element in the array by both the ends.It is like buffer, used to model the first in first out(FIFO) and last in fast out (LIFO).
+Queue is a datatype used to have the variable size ordered collection of same datatypes in unpacked array format, it is used to insert the element in the array and delete the element in the array by both the ends. It is like buffer, used to model the first in first out(FIFO) and last in first out (LIFO).
 
 ****Syntax****: `data_type name[$];`
                  
