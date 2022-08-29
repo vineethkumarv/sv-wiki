@@ -10,7 +10,7 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 
 sr. no. | **data type**         |
 |:--|:---------------------- |
-|1.|[2-stage and 4-stage](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-state-and-4-state-data-type-cheat-sheet) |
+|1.|[2-state and 4-state](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-state-and-4-state-data-type-cheat-sheet) |
 |2.|[Arrays](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array) | 
 |3.|[Strings](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#string) |
 |4.|[Structures](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure) |
@@ -43,10 +43,10 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 ****Signed and Unsigned numbers****
 
 ****Unsigned number****:The unsigned numbers do not use any flag for the sign, i.e., only positive numbers can be stored by the unsigned numbers.  
-The range of the unsigned binary numbers starts from 0 to (2^n-1), n represents number of bits.
+The range of the unsigned binary numbers starts from 0 to ((2^n) - 1), n represents number of bits.
 
 ****Signed numbers****:The positive and negative values are differentiated by using the sign flag in signed numbers. Signed bit makes two possible representations of zero (positive (0) and negative (1)).  
-The range of the signed binary numbers starts from  -2^(n-1)+1 to 2^(n-1)-1, n represents number of bits.  
+The range of the signed binary numbers starts from  -2^(n-1) to 2^(n-1)-1, n represents number of bits.  
 There are the following types of representation of signed binary numbers:
 
 1. ****Sign-Magnitude form****
@@ -57,6 +57,55 @@ By inverting each bit of a number, we can obtain the 1's complement of a number.
 
 3. ****2's Complement****
 By inverting each bit of a number and adding plus 1 to its least significant bit, we can obtain the 2's complement of a number. The negative numbers can also be represented in the form of 2's complement. In this form, the binary number also has an extra bit for sign representation as a sign-magnitude form.
+
+---
+
+****Example to illustrate signed and unsigned number****
+
+* Consider 3 bit, here n=3,
+
+
+*Unsigned range**  
+ 0 to (2^(n) - 1  
+0 to (2^(3)) - 1  
+0 to 7
+
+**Unsigned bits** | **Value in decimal**|
+|:--|:---------------------- |  
+000|0|  
+001|1|  
+010|2|  
+011|3|  
+100|4|  
+101|5|  
+110|6|  
+111|7|
+
+
+**Signed range**  
+-2^(n-1) to 2^(n-1)-1
+-2^(3-1) to 2^(3-1)-1  
+-2^(2) to 2^(2)-1
+-4 to 3
+
+**Signed bits** | **Value in decimal**|
+|:--|:---------------------- |  
+000|0|  
+001|1|  
+010|2|  
+011|3|  
+100|-4|  
+101|-3|  
+110|-2|  
+111|-1|
+
+In the above example, the MSB bit is considered for sign flag, as mentioned earlier, if MSB is 0 means positive and 1 means negative.  
+For 100, 1 is MSB i.e negative  
+Take 2's compliment of 00
+first, take 1's compliment , 11
+add 1,                         1  
+result is 100 i.e 4  
+so it is -4
 
 ---
 
