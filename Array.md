@@ -436,7 +436,8 @@ In the System Verilog the array Manipulation method are the built in method used
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
  
                                         Figure.14. Flow chart of Array Manipulation Method
-## Array Manipulation Method Cheat Sheet
+## Array Manipulation Method (Non- Destructive) Cheat Sheet
+
 Method | Description
 -- | --
 find() | Returns all elements satisfying the given expression
@@ -449,15 +450,19 @@ max() | Return the element which as maximum value
 min() | Return the element which as minimum value
 unique() | Return the all elements which as unique value
 unique_index() | Return the all index place which as unique value
-reverse() | Reverse the order of array element
-sort() | sort the array element in ascending order
-rsort() | sort the array element in descending order
-shuffle() | shuffle the array element such that the value of index is in Randomized order
 sum() | return the sum of all the element
 product() | return the product of all the element
 and() | Return the bitwise AND(&) of all the element
 or() | Return the bitwise OR of all the element in an array
 xor() | Return the bitwise XOR(^) of all the element in an array
+
+## Array Manipulation Method (Destructive) Cheat Sheet
+Method | Description
+-- | --
+reverse() | Reverse the order of array element
+sort() | sort the array element in ascending order
+rsort() | sort the array element in descending order
+shuffle() | shuffle the array element such that the value of index is in Randomized order
 
               Table.6. Array Manipulation Method
 ## Array locator Method
