@@ -20,12 +20,12 @@ There are various types of conditional statements -
 
 S.No.|If_variants |  
 :-----|:--------|
-1.|[if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#if)|
-2.|[if else](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#if-else)| 
-3.|[if else ladder](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#if-else-ladder)|
-4.|[unique if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#unique-if)| 
-5.|[unique0 if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#unique0-if)|
-6.|[priority if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#priority-if)|
+1.|[if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#1-if)|
+2.|[if else](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#2-if-else)| 
+3.|[if else ladder](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#3-if-else-ladder)|
+4.|[unique if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#4-unique-if)| 
+5.|[unique0 if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#5-unique0-if)|
+6.|[priority if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#6-priority-if)|
 
 ### 1. if 
  This statement is used for giving a single condition and inside it executing the multiple statements or single statement. This is generally used for comparison of a number or two numbers.
