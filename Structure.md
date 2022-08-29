@@ -109,7 +109,10 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
 
 ## Output:  
    
-The below figure shows the output of Unpacked Union.  
+The below figure shows the output of Unpacked Union.    
+
+![union unpacked](https://user-images.githubusercontent.com/110484152/187269071-b2285625-59b3-449d-b2c4-b5f0ce2dc270.png)
+
 
 
 
