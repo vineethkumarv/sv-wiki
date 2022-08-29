@@ -152,7 +152,7 @@ A dynamic array is an unpacked array whose size can be set or changed at run tim
 
 * The default size of an un-initialized dynamic array is 0.
 * Dynamic arrays support all variable data types as element types, including arrays.
-* An out-of-bound access in a dynamic array leads to a garbage value.
+* An out-of-bound access in a dynamic array leads to a default value of the data_type.
 
 **Dynamic Arrays Methods cheat sheet:**
 
@@ -187,7 +187,24 @@ In example,
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods.sv
 
-**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods_dynamic.log
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods_dynamic.log    
+
+The below figure shows the output of out-of-bound access in a dynamic array leads to default value of data_type.
+In example,
+
+`int da[] =new[5];`
+
+`da[5] = '{1,2,5,6,8};`
+
+` out of bound access of dynamic array da[1024] = 0;`
+
+![dynamic](https://user-images.githubusercontent.com/110412474/187175379-fa7e35e3-df71-4421-a5dd-a5fcabb4fb84.JPG)
+
+                                 Fig:7.1 out-of-bound access of Dynamic array  
+
+**Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_unbound/dynamic.sv
+
+**Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_unbound/dynamic.log
 
 **Applications of dynamic arrays:**
 
