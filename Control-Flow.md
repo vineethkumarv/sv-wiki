@@ -116,7 +116,7 @@ There are three new conditional statements are introduced in the system Verilog.
 This statement is the same as the if condition statement when only one condition is true in the whole code. 
 
 If more than the conditions are true this statement executes the first one which is true, gives the output, and will not write any error only write the warning(that more than one statement is true).
-If all the statements are false, it will not display any error but will display a warning.
+If all the conditions are false, it will not display any error but will display a warning.
 
 The below lab example will show how unique it is different from the traditional if else statement.
 
