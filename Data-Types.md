@@ -316,13 +316,13 @@ Enumerated data types defines a set of named values.
  `<enum_name_declaration> = constant_expr(optional)... `   
 `}<enum_type_identifier>;`  
 
-****Example :**** `enum {monday,`    
- `tuesday,`    
-` wednesday,`    
- `thursday,`    
-` friday,`     
-`saturday,`    
-` sunday`    
+****Example :**** `enum {MONDAY,`    
+ `TUESDAY,`    
+` WEDNESDAY,`    
+ `THURSDAY,`    
+` FRIDAY,`     
+`SATURDAY,`    
+` SUNDAY`    
 `} days;`  
 
 * An enumerated type is stored as type ‘int’ unless specified as something else.
@@ -378,13 +378,13 @@ In typedef a type name can be given so that the same type can be used in many pl
 `<enum_name_declaration> = constant_expr(optional)...`  
 `} <enum_type_identifier>;`  
 
-****Example :**** `typedef enum {monday,`  
-` tuesday,`   
-`wednesday,`  
-` thursday,`  
- `friday,`  
- `saturday,`  
-` sunday ` 
+****Example :**** `typedef enum {MONDAY,`  
+ `TUESDAY,`    
+` WEDNESDAY,`    
+ `THURSDAY,`    
+` FRIDAY,`     
+`SATURDAY,`    
+` SUNDAY` 
 `} week_e;`  
 `week_e = day;`  
 
