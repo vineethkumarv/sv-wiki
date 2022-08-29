@@ -441,6 +441,10 @@ Consider 2 strings, str1 as Manipal and str2 as Udupi,
 
 * ****Concatenation operator**** ({str1,str2}), here 2 strings are concatenated and resultant is single string. So output will be ManipalUdupi.
 
+****Note****: Using concatenation operator, we can concatenate the undeclared strings also, for example,   
+{str1,"Mangalore",str2}
+**Output** - ManipalMangaloreUdupi
+
 * ****Replication operator**** ({2{str1}}), here it replicates the string N number of times, where N is specified by the multiplier. Here we're considering N as 2, so string1 will be replicated 2 times, and the output is ManipalManipal.
 
 * ****Displaying index letter**** (str1[i]), here we'll get the ascii character at mentioned index number. In this case, we've included for loop to display all the ascii characters of a string, so we get the output as   
