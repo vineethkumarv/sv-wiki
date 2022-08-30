@@ -385,8 +385,18 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
+The below Figure.12.1 show the output to delete the whole array element in the queue1.   
+considering the variable size queue named as queue1 = {2,7,1,9,9,7}
 
+![queue12](https://user-images.githubusercontent.com/110412474/187353273-93ea69e7-4923-4281-8096-539d30436525.JPG)
 
+                                   Figure.12.1. Queue Method Example.1
+
+**Github code lab link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method3/queue.sv
+
+**Github code output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method3/makefile
+ 
+-------
 
 Example.2 : consider the variable size queue named as  
  queue1 ={"manipal", "bangalore", "udupi"};   
@@ -433,9 +443,9 @@ In the System Verilog the array Manipulation method are the built in method used
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
  
                                         Figure.14. Flow chart of Array Manipulation Method
-## Array Manipulation Method Cheat Sheet
+### Array Manipulation Method(Non-Destructive-The array whose output is stored in the another array it will not effect the original array) Cheat Sheet
 Method | Description
--- | --
+-- | --  
 find() | Returns all elements satisfying the given expression
 find_index() | Returns the indices of all elements satisfying the given expression
 find_first() | Returns the first element satisfying the given expression
@@ -446,17 +456,23 @@ max() | Return the element which as maximum value
 min() | Return the element which as minimum value
 unique() | Return the all elements which as unique value
 unique_index() | Return the all index place which as unique value
-reverse() | Reverse the order of array element
-sort() | sort the array element in ascending order
-rsort() | sort the array element in descending order
-shuffle() | shuffle the array element such that the value of index is in Randomized order
 sum() | return the sum of all the element
 product() | return the product of all the element
 and() | Return the bitwise AND(&) of all the element
 or() | Return the bitwise OR of all the element in an array
 xor() | Return the bitwise XOR(^) of all the element in an array
 
-              Table.6. Array Manipulation Method
+         Table.6.1. Array Manipulation Method
+
+### Array Manipulation Method (Destructive-The array whose output is directly effected to the original array )Cheat Sheet
+Method | Description
+-- | --
+reverse() | Reverse the order of array element
+sort() | sort the array element in ascending order
+rsort() | sort the array element in descending order
+shuffle() | shuffle the array element such that the value of index is in Randomized order
+
+              Table.6.2. Array Manipulation Method
 ## Array locator Method
 We declare the array with some elements by using the array locator method we can filter the values of the existing array by using the with clause evaluation conditions and all the element satisfyingly the condition are put in an array or return the value. The array locator method uses the with clause  for the below methods,
 
