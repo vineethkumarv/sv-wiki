@@ -61,6 +61,10 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 
                                   Figure.3 multi dimensional packed array output
 
+The below figure shows how the array elements stored in 2-dimensional packed array. for `bit [2:0][3:0]xyz = 12'hdfe` example going from left to right in dimensions elements will occupied the memory.
+
+
+
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.sv
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.log
