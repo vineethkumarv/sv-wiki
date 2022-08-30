@@ -2,7 +2,7 @@
 An array is a collection of elements, all of the same type, and accessed using its name and one or more indices. Verilog 2001 required that the low and high array limits must be part of the array declaration. System Verilog has introduced the compact array declaration style, where just giving the array size along with the array name declaration is enough.
 
 The below figure shows the different types of arrays used in System Verilog.
-![arrays_sv](https://user-images.githubusercontent.com/110448056/186146778-a5174960-8e33-42df-845e-d1fd2bc1b1f3.png)
+![arrays_sv](https://user-images.githubusercontent.com/110448056/187371213-6de08da7-079a-4a4c-974b-9cc3304ae162.png)
 
                                                      Fig.1 Types of arrays in SV
 
@@ -201,6 +201,8 @@ The below figure shows the output of dynamic array.
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic/dynamic_array.log
 
+---
+
 The below figure shows the output of dynamic array methods.
 In example,
 
@@ -214,7 +216,9 @@ In example,
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods.sv
 
-**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods_dynamic.log    
+**Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods_dynamic.log  
+
+---  
 
 The below figure shows the output of out-of-bound access in a dynamic array leads to default value of data_type.
 In example,
@@ -232,6 +236,8 @@ In example,
 **Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_unbound/dynamic.sv
 
 **Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_unbound/dynamic.log
+
+---
 
 **Applications of dynamic arrays:**
 
@@ -289,6 +295,8 @@ The below figure shows the output of associative array.
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative/associative_array.log
 
+---
+
 The below figure shows the output of associative array methods.
 In example,
 
@@ -304,6 +312,7 @@ In example,
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative_methods/associative_mthod.log
 
+---
 
 **Applications of associative arrays:**
 
@@ -334,9 +343,7 @@ Here $- first element
 ![bounded queue](https://user-images.githubusercontent.com/110412474/186423427-f222976c-7179-40ac-83fb-0ae011222e72.jpg)
 
                             Figure.13 Bounded queue with push and pop operation
-
 ---
-
 
 ## 2. unbounded
 
@@ -351,9 +358,7 @@ $ - last element
 ![unbounded queue](https://user-images.githubusercontent.com/110412474/186423948-b22286aa-8de7-4dde-9b0e-08bbdf394306.jpg)
 
                             Figure.14 Unbounded queue with push and pop operation                         
-
 ---  
-
 
 ****Queue method cheat sheet****
 Method | Description
