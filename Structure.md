@@ -31,7 +31,7 @@ This method gives initialization done in one step. The variable and value can be
  
 `struct{` 
        `string name;`   
-       `int salary;`  
+       `bit[15:0] salary;`  
        `byte id;`  
        `} employee;`    
 
@@ -39,12 +39,14 @@ The below figure shows that the data alignment of unpacked structure.
  
 ![image](https://user-images.githubusercontent.com/110484152/187272132-8f676df5-921b-4ccd-9233-fd716266beaa.png)  
 
-                                             Fig 2:  Data alignment of unpacked structure  
+                                             Fig 2:  Data alignment of unpacked structure     
+
+The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for byte.
 
  **Output:**   
    
 The below output shows the unpacked structure.
-![unpacked structure](https://user-images.githubusercontent.com/110484152/187355773-7e78fc04-63d9-487a-ae2c-7c9572fe5d76.png)
+![unpacked structure](https://user-images.githubusercontent.com/110484152/187358167-5687962b-152f-4e88-9913-a9989e3308d1.png)  
 
                                                Fig 3: Unpacked structure  
 
@@ -82,13 +84,15 @@ The below figure shows that the data alignment of Packed structure.
 
 ![image](https://user-images.githubusercontent.com/110484152/187272734-a3fff0ec-94bf-4b03-b065-4faf0263a4b9.png)  
 
-                                                    Fig 4 : Data alignment of Packed structure  
+                                                    Fig 4 : Data alignment of Packed structure     
 
+The 'byte' takes 8 bits , 8 bits for bit[7:0] and 16 bits for logic[15:0].
 
 
  **Output:**     
 
-The below output shows that output of packed structure  
+The below output shows that output of packed structure    
+ 
 ![ps1](https://user-images.githubusercontent.com/110484152/187270250-0aa48a5a-9fc3-417f-957a-03921d06da1a.png)
 
                                                      Fig 5: Packed structure  
@@ -108,10 +112,14 @@ sr. no. |**Packed structure**|**Unpacked structure**|
 |2.|Smaller memory footprint because of single bit data declaration| Larger memory footprints because it includes all dataypes|   
 |3.|string datatype cannot be used and only packed datatypes and integer dataypes allowed| All datatypes can be used.|  
 |4.|It is used in RTL code because it can synthesis the code |It is not used in RTL code because it cannot synthesis by synthesis tool|   
-|5.|Entire structure packed together without memory gaps |Unpacked structure doesnot have a packing structure |     
+|5.|Entire structure packed together without memory gaps |Unpacked structure doesnot have a packing structure |      
+
+                                          Table 1: Difference of packed structure and Unpacked structure  
 
 
-----
+----  
+
+
 # **Union**  
 
 The union is similar to structures while union shares the memory location. The largest datatype size will be the memory size for all members in the union. The 'union' keyword is used for defined for Union. They are two types: Packed Union and Unpacked Union.   
@@ -128,10 +136,10 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
 
 ## Example:    
 
-`union {`      
-`int x;  
-byte y;  
-} data;  
+`union {`        
+`int x;    
+`byte y; ` 
+`} data;`  
 
 ## Output:  
    
@@ -139,20 +147,19 @@ The below figure shows the output of Unpacked Union.
 
 ![union unpacked](https://user-images.githubusercontent.com/110484152/187355979-ba378df4-89b9-4133-822e-a5a726537da5.png)
 
-                                          Fig 6: Output of Unpacked Union.   
+                                          Fig 1: Output of Unpacked Union.   
 
 The unpacked union contains different datatypes and it should be different size. But the unpacked union shares the memory so, the member which have largest memory size should be same for all union members. Here in example, 'int' and 'byte' datatype is used and 'int' size is 32 bit and 'byte' is 8 bit ,'int' is largest among them so the size of all union members is 32 bit.      
 
-## Data alignment of Unpacked union  
+## Data alignment of Unpacked union      
 
-  
+The below figure shows that  Data alignment of Unpacked union 
 
-     
+ ![image](https://user-images.githubusercontent.com/110484152/187362996-28178b48-1556-4738-a604-3051c5f5835d.png)  
 
-                                                           
+                                         Fig 2: Data alignment of Unpacked union       
 
-
-
+The  figure shows that 'int' takes 32 bit and 'byte' takes 8 bit. But in unpacked union all members share the memory. Here 'int' is the largest datatype, so 32 bits shared for all other members in union.  
 
 
 ## Packed Union    
@@ -171,33 +178,27 @@ The Packed Union is defined by 'union packed' keyword. It uses only same type el
 `bit [7:0];`
 `bit [1:0][3:0];`  
 `} abc_u ;`  
+  
+## Data alignment of packed union   
 
+The below figure shows the Data alignment of packed union     
+
+![image](https://user-images.githubusercontent.com/110484152/187362817-9881a485-8a1d-4801-a431-47fa6fac8ae9.png)   
+
+                                                  Fig 3:  Data alignment of packed union  
+
+The figure shows that bit datatype  and '[7:0]' -8bit is used. Inside packed union , all members should be same type of element and same size . 
+
+                                                
 ## Output:  
 
 The below figure shows that the output of packed union.     
 
 ![packed union ss](https://user-images.githubusercontent.com/110484152/187356087-1939a332-8598-42d8-8d23-f8431711b69c.png)   
 
-The packed union output shows that only same type of element  eg, 'bit' and only with same size can be used as union members. 
-  
-
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                                  Fig 4: Output of packed union.   
+ 
+The packed union output shows that only same type of element  eg, 'bit' and only with same size can be used as union members.     
 
 
 ## Difference between structure and union
@@ -210,7 +211,7 @@ sr. no. |**structure**|**Union**|
 |4.| The value of element doesn't get changed when other elements change. | The element value will get changed  when other element value changes|  
 |5.| Structure variable size is same or greater than sum of elements| The size of union variable is same as the size of largest dataype|   
 
-
+---
 
 
 
