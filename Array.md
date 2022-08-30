@@ -56,7 +56,6 @@ The below figure shows the output of single dimension packed array, here packed 
 
 ---
  
-
 The below figure shows how the array elements stored in 2-dimensional packed array. for `bit [2:0][3:0]xyz = 12'hdfe` example going from left to right in dimensions elements will occupied the memory.
 
 
@@ -117,7 +116,7 @@ The below figure shows the output of single dimension unpacked array.
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked_array.log
 
 ---
-The below figure shows how the array elements stored in 2-dimensional unpacked array. for **int abc[2][3]** example going from left to right in dimensions elements will occupied the memory.
+The below figure shows how the array elements stored in 2-dimensional unpacked array. for `int abc[2][3]` example going from left to right in dimensions elements will occupied the memory.
 
 ![2d-unpacked](https://user-images.githubusercontent.com/110448056/187358802-12683dd1-175d-4f2a-a1cf-25e0bfe3d75f.png)
 
@@ -162,8 +161,7 @@ In the given example, going from left to right side the memory will be allocated
 
 ![mixed-arrays](https://user-images.githubusercontent.com/110448056/187194239-d189bcf7-1b64-407a-b35b-ec1e8fdce5cf.png)
 
-                               Figure.7 mixed multi dimensional array memory allocation
-
+                               Figure.7 mixed multi dimensional array memory allocation-
 --- 
 
 ## Dynamic Arrays:
@@ -185,11 +183,11 @@ A dynamic array is an unpacked array whose size can be set or changed at run tim
 
 **Dynamic Arrays Methods cheat sheet:**
 
-Sr No. | **Methods**         | **description**                                                                   | 
-|---|------------------------------------------ | -------------------------------------------------------------------------------------|
-1|constructor new [value] | Sets the size of a dynamic array and initializes its elements or changes the size of the array at run-time. If the value is zero, the array shall become empty. If the value is negative, then it is an error.   |       
-2|function int size() | The size() method returns the current size of a dynamic array or returns zero if the array has not been created| 
-3|function void delete() | The delete() method empties the array, resulting in a zero-sized array|
+**Sr No.** | **Methods**         | **Example** | **description**                                                                  | 
+|---|----------------------------| -------------- | -------------------------------------------------------------------------------------|
+1|constructor new [value] | abc.new[] | Sets the size of a dynamic array and initializes its elements or changes the size of the array at run-time. If the value is zero, the array shall become empty. If the value is negative, then it is an error.   |       
+2|function int size() | abc.size() | The size() method returns the current size of a dynamic array or returns zero if the array has not been created| 
+3|function void delete() | abc.delete() | The delete() method empties the array, resulting in a zero-sized array|
 
                                  Table.2. dynamic array methods
 
@@ -268,16 +266,16 @@ where, index type is any data type or it's wildcard "*".
 
 **Associative Arrays Methods cheat sheet:**
 
-Sr. No| Function | Description
-|-- | -- | --
-1|function int num () | Returns the number of entries in the associative array
-2|function int size () | Also returns the number of entries, if empty 0 is returned
-3|function void delete ([input index]) | index when specified deletes the entry at that index, else the whole array is deleted
-4|function int exists (input index) | Checks whether an element exists at specified index; returns 1 if it does, else 0
-5|function int first (ref index) | Assigns to the given index variable the value of the first index; returns 0 for empty array
-6|function int last (ref index) | Assigns to given index variable the value of the last index; returns 0 for empty array
-7|function int next (ref index) | Finds the smallest index whose value is greater than the given index
-8|function int prev (ref index) | Finds the largest index whose value is smaller than the given index
+**Sr. No**| **Function** | **Example** | **Description**
+|-- | -- | -- | --
+1| int num () | abc.num() | Returns the number of entries in the associative array
+2| int size () | abc.size() | Also returns the number of entries, if empty 0 is returned
+3| void delete ([input index]) | abc.delete(index) | index when specified deletes the entry at that index, else the whole array is deleted
+4| int exists (input index) | abc.exists(index) | Checks whether an element exists at specified index; returns 1 if it does, else 0
+5| int first (ref index) | abc.first(index) | Assigns to the given index variable the value of the first index; returns 0 for empty array
+6| int last (ref index) | abc.last(index) | Assigns to given index variable the value of the last index; returns 0 for empty array
+7| int next (ref index) | abc.next(index) | Finds the smallest index whose value is greater than the given index
+8| int prev (ref index) | abc.prev(index) | Finds the largest index whose value is smaller than the given index
 
                                   Table.3. associative arrays methods
 
