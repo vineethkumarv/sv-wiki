@@ -57,7 +57,7 @@ The below figure shows the output of single dimension packed array, here packed 
 The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz = 12'hdfe`.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
-![mixed-arrays](https://user-images.githubusercontent.com/110448056/187356265-156453ae-9888-4b6d-8e71-807f4387717b.png)
+![multi_packed](https://user-images.githubusercontent.com/110448056/187356692-03d6a7a1-e02c-42d3-81af-7505e5d37c99.png)
 
                                   Figure.3 multi dimensional packed array output
 
@@ -113,8 +113,14 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 
 ![multi_unpacked](https://user-images.githubusercontent.com/110448056/186889779-c6758475-6199-4e4e-9cbf-e25e0e2abd29.png)
 
-                                 Figure.5 multi dimensional unpacked array output
+                                   Figure.5 multi dimensional unpacked array output
           
+The below figure shows how the array elements stored in 2-dimensional unpacked array. for **int abc[2][3]** example going from left to right in dimensions elements will occupied the memory.
+
+![2d-unpacked](https://user-images.githubusercontent.com/110448056/187358802-12683dd1-175d-4f2a-a1cf-25e0bfe3d75f.png)
+
+                                   Figure.6 two dimensional unpacked array memory layout
+
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.sv
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.log
@@ -143,7 +149,7 @@ In the given example, going from left to right side the memory will be allocated
 
 ![mixed-arrays](https://user-images.githubusercontent.com/110448056/187194239-d189bcf7-1b64-407a-b35b-ec1e8fdce5cf.png)
 
-                               Figure.6 mixed multi dimensional array memory allocation
+                               Figure.7 mixed multi dimensional array memory allocation
 
 --- 
 
@@ -178,7 +184,7 @@ The below figure shows the output of dynamic array.
 
 ![dynamic](https://user-images.githubusercontent.com/110448056/186890744-7a0a6733-b3a1-4e87-ae49-7956d8b5a7d1.png)
 
-                                 Figure.6 dynamic array output
+                                 Figure.8 dynamic array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic/dynamic.sv
 
@@ -193,7 +199,7 @@ In example,
 
 ![methods_dynamic](https://user-images.githubusercontent.com/110448056/186891136-81fbb195-14c4-42b0-b355-fb280346ecc7.png)
 
-                              Figure.7 dynamic array methods output
+                              Figure.9 dynamic array methods output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_method/methods.sv
 
@@ -210,7 +216,7 @@ In example,
 
 ![dynamic](https://user-images.githubusercontent.com/110412474/187175379-fa7e35e3-df71-4421-a5dd-a5fcabb4fb84.JPG)
 
-                                 Fig:7.1 out-of-bound access of Dynamic array  
+                                 Figure.10 out-of-bound access of Dynamic array  
 
 **Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/dynamic_array/dynamic_unbound/dynamic.sv
 
@@ -266,7 +272,7 @@ The below figure shows the output of associative array.
 
 ![associative](https://user-images.githubusercontent.com/110448056/186892320-543d76d4-30e2-4f1b-adbc-dd9a68969c25.png)
 
-                               Figure.8. associative array output
+                                 Figure.11 associative array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative/associative_array.sv
 
@@ -281,7 +287,7 @@ In example,
 
 ![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
 
-                                Figure.9. associative methods output
+                                Figure.12 associative methods output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/associative_array/associative_methods/associative_methods.sv
 
@@ -316,9 +322,7 @@ Here $- first element
 
 ![bounded queue](https://user-images.githubusercontent.com/110412474/186423427-f222976c-7179-40ac-83fb-0ae011222e72.jpg)
 
-                            Figure.10. Bounded queue with push and pop operation
-
-
+                            Figure.13 Bounded queue with push and pop operation
 
 ---
 
@@ -335,7 +339,7 @@ $ - last element
 
 ![unbounded queue](https://user-images.githubusercontent.com/110412474/186423948-b22286aa-8de7-4dde-9b0e-08bbdf394306.jpg)
 
-                            Figure.11. Unbounded queue with push and pop operation                         
+                            Figure.14 Unbounded queue with push and pop operation                         
 
 ---  
 
@@ -381,7 +385,7 @@ The below Figure.12 shows the output for size(), delete(), insert() Methods of Q
 ![newqueue1](https://user-images.githubusercontent.com/110412474/186829636-ba817def-7c37-4c16-9f50-af55f1bc9f84.JPG)
 
 
-                          Figure.12. Queue Method Example.1
+                          Figure.15 Queue Method Example.1
  
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue.sv
 
@@ -396,7 +400,7 @@ considering the variable size queue named as queue1 = {2,7,1,9,9,7}
 
 ![queue12](https://user-images.githubusercontent.com/110412474/187353273-93ea69e7-4923-4281-8096-539d30436525.JPG)
 
-                                   Figure.12.1. Queue Method Example.1
+                                   Figure.16 Queue Method Example.1
 
 **Github code lab link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method3/queue.sv
 
@@ -435,7 +439,7 @@ The below Figure.2 shows the output of pop.front(), pop.back(), push.front(), pu
   
 ![newqueue2](https://user-images.githubusercontent.com/110412474/186828222-396f58a1-fdb4-4e89-88a6-506185f9495a.JPG)
 
-                             Figure.13. Queue Method Example.2
+                             Figure.17 Queue Method Example.2
 
  Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method2/queue.sv
 
@@ -448,7 +452,7 @@ In the System Verilog the array Manipulation method are the built in method used
 
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
  
-                                        Figure.14. Flow chart of Array Manipulation Method
+                                        Figure.18 Flow chart of Array Manipulation Method
 ### Array Manipulation Method(Non-Destructive-The array whose output is stored in the another array it will not effect the original array) Cheat Sheet
 Method | Description
 -- | --  
@@ -537,13 +541,13 @@ The below Figure 15 shows the output of Array locator methods of function find()
 
 ![newarrayfind](https://user-images.githubusercontent.com/110412474/186823831-8aa6de65-6db3-446e-8c13-b9b541aca0aa.JPG)
                                       
-                                               Figure.15. Array Locator Method 
+                                               Figure.19 Array Locator Method 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_find/array.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_find/arrayfind.log
 
-
 ------
+
 # The Array Locator Method optional 'with' clause
 
 ****Example****: consider array of five elements, shown the output in Figure.16
@@ -574,7 +578,7 @@ The below Figure 2.2 shows the output  for display the minimum value, maximum va
 
 ![newmax2](https://user-images.githubusercontent.com/110412474/186824043-319638ce-3631-427c-89c4-1a27dd814504.JPG)
                                       
-                                            Figure.16. Array Locator Method
+                                            Figure.20 Array Locator Method
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_max/arraymax.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_max/arraymax.log
@@ -618,7 +622,7 @@ The below Figure.3 shows the output of Array Ordering Method.
 ![neworder3](https://user-images.githubusercontent.com/110412474/186827961-0f1a61c5-c71e-4e70-90ce-2ddaf9c95a7c.JPG)
 
 
-                                           Figure.17. Array ordering method
+                                           Figure.21 Array ordering method
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_ordering/arrayorder.sv
 
@@ -679,7 +683,7 @@ The below Figure.18 shows the output for Array Reduction Method.
 
 ![newreduction4](https://user-images.githubusercontent.com/110412474/186825000-4e4f6341-d933-47e1-8638-4fad88e1d0f5.JPG)
                                       
-                                                     Figure.18. Array Reduction Method
+                                                     Figure.22 Array Reduction Method
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_Reduction/arrayreduction.sv
 
