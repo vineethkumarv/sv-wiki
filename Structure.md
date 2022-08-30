@@ -134,8 +134,8 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
 
 ## Example:    
 
-`union {`            
-`int x;  
+`union {`  
+ `int x;`  
 `byte y;`  
 `} data;`  
 
