@@ -48,7 +48,9 @@ The below output shows the unpacked structure.
 
                                                Fig 3: Unpacked structure  
 
-The above output illustrates that the unpacked structure contains the different datatypes like string, int, byte etc. The string must be initialised within double quotes only. The variables like int , byte can be assign the value itself  
+**Note**: Without using 'Typedef' in unpacked structure, value initialization can only be done in one line itself. Otherwise it will show  compile error.  
+
+The above output illustrates that the unpacked structure contains the different datatypes like string, int, byte etc. The string must be initialised within double quotes only. The variables like int , byte can be assign the value itself.   
 
 Github Lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/structn/structn.sv  
 
@@ -80,7 +82,9 @@ The below figure shows that the data alignment of Packed structure.
 
 ![image](https://user-images.githubusercontent.com/110484152/187272734-a3fff0ec-94bf-4b03-b065-4faf0263a4b9.png)  
 
-                                                    Fig 4 : Data alignment of Packed structure
+                                                    Fig 4 : Data alignment of Packed structure  
+
+
 
  **Output:**     
 
