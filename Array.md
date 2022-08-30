@@ -381,6 +381,8 @@ Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue_data_type.log
 
+
+
 ---
 
 
