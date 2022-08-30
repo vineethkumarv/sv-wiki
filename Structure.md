@@ -44,7 +44,7 @@ The below figure shows that the data alignment of unpacked structure.
  **Output:**   
    
 The below output shows the unpacked structure.
-![s1](https://user-images.githubusercontent.com/110484152/187270345-017b3e36-812c-470f-89bb-7f537d22fced.png)
+![unpacked structure](https://user-images.githubusercontent.com/110484152/187355773-7e78fc04-63d9-487a-ae2c-7c9572fe5d76.png)
 
                                                Fig 3: Unpacked structure  
 
@@ -133,13 +133,15 @@ byte y;
    
 The below figure shows the output of Unpacked Union.    
 
-![union unpacked](https://user-images.githubusercontent.com/110484152/187269071-b2285625-59b3-449d-b2c4-b5f0ce2dc270.png)   
+![union unpacked](https://user-images.githubusercontent.com/110484152/187355979-ba378df4-89b9-4133-822e-a5a726537da5.png)
 
                                           Fig 6: Output of Unpacked Union.   
 
 The unpacked union contains different datatypes and it should be different size. But the unpacked union shares the memory so, the member which have largest memory size should be same for all union members. Here in example, 'int' and 'byte' datatype is used and 'int' size is 32 bit and 'byte' is 8 bit ,'int' is largest among them so the size of all union members is 32 bit.      
 
 ## Data alignment of Unpacked union  
+
+  
 
      
 
@@ -151,7 +153,7 @@ The unpacked union contains different datatypes and it should be different size.
 
 ## Packed Union    
 
-The Packed Union is defined by 'union packed' keyword. It uses only same type elements with same size. This is one of the limitation of packed Union.
+The Packed Union is defined by 'union packed' keyword. It uses only same type elements like 'bit' , 'logic', 'reg'  with same size. This is one of the limitation of packed Union.
 
 ## syntax:  
 
@@ -169,6 +171,11 @@ The Packed Union is defined by 'union packed' keyword. It uses only same type el
 ## Output:  
 
 The below figure shows that the output of packed union.     
+
+![packed union ss](https://user-images.githubusercontent.com/110484152/187356087-1939a332-8598-42d8-8d23-f8431711b69c.png)   
+
+The packed union output shows that only same type of element  eg, 'bit' and only with same size can be used as union members. 
+  
 
   
 
