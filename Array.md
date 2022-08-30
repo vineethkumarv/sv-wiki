@@ -116,6 +116,14 @@ The below figure shows the output of single dimension unpacked array.
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked_array.log
 
+---
+The below figure shows how the array elements stored in 2-dimensional unpacked array. for **int abc[2][3]** example going from left to right in dimensions elements will occupied the memory.
+
+![2d-unpacked](https://user-images.githubusercontent.com/110448056/187358802-12683dd1-175d-4f2a-a1cf-25e0bfe3d75f.png)
+
+                                   Figure.6 two dimensional unpacked array memory layout
+
+
 The below figure shows the output of multi dimension unpacked array, here it consists of `int abc[2][3] = $urandom_range(10,50)`.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
@@ -123,15 +131,12 @@ Here, 2 dimensional packed array declared and and we can similarly create 3 dime
 
                                    Figure.5 multi dimensional unpacked array output
           
-The below figure shows how the array elements stored in 2-dimensional unpacked array. for **int abc[2][3]** example going from left to right in dimensions elements will occupied the memory.
-
-![2d-unpacked](https://user-images.githubusercontent.com/110448056/187358802-12683dd1-175d-4f2a-a1cf-25e0bfe3d75f.png)
-
-                                   Figure.6 two dimensional unpacked array memory layout
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.sv
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/multi_unpacked/multi_unpacked.log
+
+---
 
 **Applications of unpacked arrays:**
 
