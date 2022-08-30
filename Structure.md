@@ -39,14 +39,14 @@ The below figure shows that the data alignment of unpacked structure.
  
 ![image](https://user-images.githubusercontent.com/110484152/187272132-8f676df5-921b-4ccd-9233-fd716266beaa.png)  
 
-                                             Fig 3:  Data alignment of unpacked structure  
+                                             Fig 2:  Data alignment of unpacked structure  
 
  **Output:**   
    
 The below output shows the unpacked structure.
 ![s1](https://user-images.githubusercontent.com/110484152/187270345-017b3e36-812c-470f-89bb-7f537d22fced.png)
 
-                                                      Fig 2: Unpacked structure  
+                                               Fig 3: Unpacked structure  
 
 The above output illustrates that the unpacked structure contains the different datatypes like string, int, byte etc. The string must be initialised within double quotes only. The variables like int , byte can be assign the value itself  
 
@@ -87,7 +87,7 @@ The below figure shows that the data alignment of Packed structure.
 The below output shows that output of packed structure  
 ![ps1](https://user-images.githubusercontent.com/110484152/187270250-0aa48a5a-9fc3-417f-957a-03921d06da1a.png)
 
-                                            Fig 3: Packed structure  
+                                                     Fig 5: Packed structure  
 
 The above output illustrates the output of packed structure. It contains the different datatypes like bit , logic . We can assign values and  display as output. Here we cannot  use string dataype inside the packed structure because string cannot be treated as single vector. It will show compile error.    
 
@@ -114,7 +114,7 @@ The union is similar to structures while union shares the memory location. The l
 
 ## Unpacked Union  
 
-The unpacked structure use the keyword 'union' keyword. It uses the datatypes like int, byte ,bit, logic .Only the largest datatype size should be taken for the whole union members. In this scenario, sometimes the whole memory space may not be used for all the union members. The value changed for one variable also effects other elements inside the Union. 
+The unpacked structure use the keyword 'union' keyword. It uses the datatypes like int, byte ,bit, logic .Only the largest datatype size should be taken for the whole union members. In this scenario, sometimes the whole memory space may not be used for all the union members. The value changed for one variable also effects other members inside the Union. 
 
 ## syntax:  
 
@@ -124,18 +124,26 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
 
 ## Example:    
 
-`union {`  
-`  
-}
+`union {`      
+`int x;  
+byte y;  
+} data;  
 
 ## Output:  
    
 The below figure shows the output of Unpacked Union.    
 
-![union unpacked](https://user-images.githubusercontent.com/110484152/187269071-b2285625-59b3-449d-b2c4-b5f0ce2dc270.png)
+![union unpacked](https://user-images.githubusercontent.com/110484152/187269071-b2285625-59b3-449d-b2c4-b5f0ce2dc270.png)   
 
+                                          Fig 6: Output of Unpacked Union.   
 
+The unpacked union contains different datatypes and it should be different size. But the unpacked union shares the memory so, the member which have largest memory size should be same for all union members. Here in example, 'int' and 'byte' datatype is used and 'int' size is 32 bit and 'byte' is 8 bit ,'int' is largest among them so the size of all union members is 32 bit.      
 
+## Data alignment of Unpacked union  
+
+     
+
+                                                           
 
 
 
@@ -144,7 +152,6 @@ The below figure shows the output of Unpacked Union.
 ## Packed Union    
 
 The Packed Union is defined by 'union packed' keyword. It uses only same type elements with same size. This is one of the limitation of packed Union.
-
 
 ## syntax:  
 
@@ -161,7 +168,11 @@ The Packed Union is defined by 'union packed' keyword. It uses only same type el
 
 ## Output:  
 
-The below figure shows that the output of packed union.    
+The below figure shows that the output of packed union.     
+
+  
+
+  
 
 
 
