@@ -464,7 +464,10 @@ In the System Verilog the array Manipulation method are the built in method used
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
  
                                         Figure.18 Flow chart of Array Manipulation Method
-### Array Manipulation Method(Non-Destructive-The array whose output is stored in the another array it will not effect the original array) Cheat Sheet
+### Array Manipulation Method Cheat Sheet
+
+****Note ****:Non-Destructive-The array whose output is stored in the another array it will not effect the original array)  
+
 Method | Description
 -- | --  
 find() | Returns all elements satisfying the given expression
@@ -485,7 +488,10 @@ xor() | Return the bitwise XOR(^) of all the element in an array
 
          Table.6.1. Array Manipulation Method
 
-### Array Manipulation Method (Destructive-The array whose output is directly effected to the original array )Cheat Sheet
+### Array Manipulation Method Cheat Sheet
+
+****Note****: Destructive-The array whose output is directly effected to the original array
+
 Method | Description
 -- | --
 reverse() | Reverse the order of array element
