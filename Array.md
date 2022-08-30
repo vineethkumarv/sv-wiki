@@ -466,7 +466,7 @@ In the System Verilog the array Manipulation method are the built in method used
                                         Figure.18 Flow chart of Array Manipulation Method
 ### Array Manipulation Method Cheat Sheet
 
-****Note ****:Non-Destructive-The array whose output is stored in the another array it will not effect the original array)  
+****Note**** :Non-Destructive-The array whose output is stored in the another array it will not effect the original array)  
 
 Method | Description
 -- | --  
