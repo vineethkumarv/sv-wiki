@@ -302,9 +302,9 @@ In example,
 
 `int abc[string];`
 
-`abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38 };`
+`abc = '{"vadodara" : 10, "ahmedabad" : 25, "rajkot" : 55, "surendranagar" : 38, "surat":48};`
 
-![associative_methods](https://user-images.githubusercontent.com/110448056/186893146-f5b8990d-8c3b-44b6-8301-cecbb722c2bb.png)
+![associative_methods](https://user-images.githubusercontent.com/110448056/187507122-51b4629c-b817-4e74-9ce3-3d9f7b2ff9a2.png)
 
                                 Figure.12 associative methods output
 
