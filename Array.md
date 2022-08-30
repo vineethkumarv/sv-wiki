@@ -53,23 +53,31 @@ The below figure shows the output of single dimension packed array, here packed 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/single_packed/packed_array.sv
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/single_packed/packed_array.log
+
+---
  
-The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz = 12'hdfe`.
-Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
-
-![multi_packed](https://user-images.githubusercontent.com/110448056/187356692-03d6a7a1-e02c-42d3-81af-7505e5d37c99.png)
-
-                                  Figure.3 multi dimensional packed array output
 
 The below figure shows how the array elements stored in 2-dimensional packed array. for `bit [2:0][3:0]xyz = 12'hdfe` example going from left to right in dimensions elements will occupied the memory.
 
+
 ![2d-packed](https://user-images.githubusercontent.com/110448056/187356323-2d671f63-2de6-4082-938f-c43ea6724534.png)
 
-                                 Figure.4 two dimensional packed array memory layout
+                                 Figure.3 two dimensional packed array memory layout
+
+The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz = 12'hdfe`.
+Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
+
+
+![multi_packed](https://user-images.githubusercontent.com/110448056/187356692-03d6a7a1-e02c-42d3-81af-7505e5d37c99.png)
+
+                                  Figure.4 multi dimensional packed array output
+
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.sv
 
 **Github lab output link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.log
+
+---
 
 **Applications of packed arrays:**
 
