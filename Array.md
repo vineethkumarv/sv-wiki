@@ -473,15 +473,15 @@ In the System Verilog the array Manipulation method are the built in method used
 
 ****Note**** :Non-Destructive-The array whose output is stored in the another array it will not effect the original array)  
 
-Method | Description
--- | --  
-find() | Returns all elements satisfying the given expression
-find_index() | Returns the indices of all elements satisfying the given expression
-find_first() | Returns the first element satisfying the given expression
-find_first_index() | Returns the index of the first element satisfying the given expression
-find_last() | Returns the last element satisfying the given expression
-find_last_index() | Returns the index of the last element satisfying the given expression
-max() | Return the element which as maximum value
+Method | Example | Description
+-- | -- | -- 
+find() with condition(); | array.find(check) with (check >="oldtown")  | Returns all elements satisfying the given expression
+find_index() with condition(); | array.find_index(check) with (check =="yelahanka"); |  Returns the indices of all elements satisfying the given expression  
+find_first() with condition(); |  array.find_first(check) with (check < "yelahanka" & check >= "newton" ); |  Returns the first element satisfying the given expression  
+find_first_index() with condition();| array.find_first_index(check) with (check < "yelahanka"); | Returns the index of the first element satisfying the given expression
+find_last() with condition(); | array.find_last(check) with (check < "oldtown");  | Returns the last element satisfying the given expression
+find_last_index() with condition(); | array.find_last_index(check) with (check < "oldtown"); |  Returns the index of the last element satisfying the given expression
+function max(); | array.max(); Return the element which as maximum value
 min() | Return the element which as minimum value
 unique() | Return the all elements which as unique value
 unique_index() | Return the all index place which as unique value
@@ -520,7 +520,7 @@ Note: Here the comparison happens with the each ascii character of a string with
 
 This method is used to find the value in the existing array based on with clause conditional expressions.
 
-Expression: result = array.find(check) with (check >="oldtown)"  
+Expression: result = array.find(check) with (check >="oldtown")  
 It will find the string from the existing array based on the condition (check >="oldtown), here the ascii value of 'y' is greater than o ,so it will print the output '{"yelahanka", "oldtown"}.
 
 
