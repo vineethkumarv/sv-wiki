@@ -361,15 +361,15 @@ $ - last element
 ---  
 
 ****Queue method cheat sheet****
-Method | Description
--- | --
-size() |  returns the number of items in the queue
-insert() | inserts the given item at the specified index position
-delete() | deletes the item at the specified index position
-push_front() | inserts the given element at the front of the queue
-push_back() | inserts the given element at the end of the queue
-pop_front() | removes and returns the first element of the queue
-pop_back() | removes and returns the last element of the queue
+Method | Example | Description  
+-- | --  | --- 
+function int size ();| queue1.size(); |  returns the number of items in the queue
+function void insert (input integer index, input element_t item); | queue1.insert(int 0, 2); | inserts the given item at the specified index position
+function void delete ( [input integer index] ); | queue1.delete(0); | deletes the item at the specified index position
+function element_t pop_front (); | queue1.push_front(); | inserts the given element at the front of the queue
+function element_t pop_back (); | queue1.push_back(); | inserts the given element at the end of the queue
+function void push_front (input element_t item); | queue1.pop_front("yelahanka") | removes and returns the first element of the queue
+function void push_back (input element_t item); | queue1.pop_back("udupi") | removes and returns the last element of the queue
   
                     Table.4 Queue Methods
 ---
