@@ -11,3 +11,31 @@ A **time slot** encompasses all simulation activity that is processed in the eve
 time.  
 "Note that execution of simulation events within a time slot may require multiple iterations through the simulation event regions for that same time slot."  
 
+## Event regions in verilog:
+
+---------------------- pic of verilog regions -----------------------------------
+
+## Event regions in system verilog:
+
+---------------------- pic of system verilog regions ----------------------------
+
+### Explinations.
+
+Regions that are designed to implement correct RTL functionality:  
+• Active regions (Active, Inactive and NBA regions - but avoid Inactive region events).  
+Regions that are designed to implement correct verification execution:  
+• Preponed, Reactive regions (Reactive, Re-Inactive, Re-NBA) and Postponed regions.  
+Regions that are designed to implement concurrent assertion checking:  
+• Preponed, Observed, and Reactive regions.  
+Region that should be avoided:  
+• Inactive region.  
+
+
+
+
+
+
+
+
+
+
