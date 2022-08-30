@@ -159,9 +159,10 @@ The below figure shows that  Data alignment of Unpacked union
 
                                          Fig 2: Data alignment of Unpacked union       
 
-The  figure shows that 'int' takes 32 bit and 'byte' takes 8 bit. But in unpacked union all members share the memory. Here 'int' is the largest datatype, so 32 bits shared for all other members in union.  
+The  figure shows that 'int' takes 32 bit and 'byte' takes 8 bit. But in unpacked union all members share the memory. Here 'int' is the largest datatype, so 32 bits shared for all other members in union.    
+Github Lab code link:
 
-
+Github lab output link:
 ## Packed Union    
 
 The Packed Union is defined by 'union packed' keyword. It uses only same type elements like 'bit' , 'logic', 'reg'  with same size. This is one of the limitation of packed Union.
@@ -198,8 +199,9 @@ The below figure shows that the output of packed union.
 
                                                   Fig 4: Output of packed union.   
  
-The packed union output shows that only same type of element  eg, 'bit' and only with same size can be used as union members.     
-
+The packed union output shows that only same type of element  eg, 'bit' and only with same size can be used as union members.   
+Github Lab code link:    
+Github lab output link:
 
 ## Difference between structure and union
 
