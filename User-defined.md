@@ -29,8 +29,7 @@ The main use of Typedef in class is that sometimes we use class variable before 
  **Output:**    
 
 The below figure shows that output of typedef with class.
-![typedef class](https://user-images.githubusercontent.com/110484152/186602737-1d67bede-f186-4483-822b-cc8d808c1f21.png)  
-
+![typedef class](https://user-images.githubusercontent.com/110484152/187377151-6b4af7bb-4dfb-4297-94b1-b3463212fd89.png)
                                                    Fig 1 : Typedef with class  
 
 The above example and output shows that how typedef avoids the compiler error in class1 because class2 declaration is not done  at that time. If we didn't use 'typdef class2' at the beginning , it will show some compiler error. It will display the text given inside the $display.  
