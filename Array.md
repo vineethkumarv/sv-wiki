@@ -481,15 +481,15 @@ find_first() with condition(); |  array.find_first(check) with (check < "yelahan
 find_first_index() with condition();| array.find_first_index(check) with (check < "yelahanka"); | Returns the index of the first element satisfying the given expression
 find_last() with condition(); | array.find_last(check) with (check < "oldtown");  | Returns the last element satisfying the given expression
 find_last_index() with condition(); | array.find_last_index(check) with (check < "oldtown"); |  Returns the index of the last element satisfying the given expression
-function max(); | array.max(); Return the element which as maximum value
-min() | Return the element which as minimum value
-unique() | Return the all elements which as unique value
-unique_index() | Return the all index place which as unique value
-sum() | return the sum of all the element
-product() | return the product of all the element
-and() | Return the bitwise AND(&) of all the element
-or() | Return the bitwise OR of all the element in an array
-xor() | Return the bitwise XOR(^) of all the element in an array
+function max(); | array.max(); | Return the element which as maximum value
+function min(); | array.min(); | Return the element which as minimum value
+function unique(); | array.unique(); | Return the all elements which as unique value
+function unique_index(); | array.unique_index(); | Return the all index place which as unique value
+function sum(); | array.sum(); | return the sum of all the element
+function product(); | array.product(); | return the product of all the element
+function and(); | array.and(); | Return the bitwise AND(&) of all the element
+function or(); | array.or(); | Return the bitwise OR of all the element in an array
+function xor(); | array.xor(); | Return the bitwise XOR(^) of all the element in an array
 
          Table.6.1. Array Manipulation Method
 
@@ -497,12 +497,12 @@ xor() | Return the bitwise XOR(^) of all the element in an array
 
 ****Note****: Destructive-The array whose output is directly effected to the original array
 
-Method | Description
--- | --
-reverse() | Reverse the order of array element
-sort() | sort the array element in ascending order
-rsort() | sort the array element in descending order
-shuffle() | shuffle the array element such that the value of index is in Randomized order
+Method | Example | Description
+-- | -- | --
+function reverse(); | array.reverse(); | Reverse the order of array element
+function sort(); | array.sort(); | sort the array element in ascending order
+function rsort(); | array.rsort(); | sort the array element in descending order
+function shuffle(); | array.shuffle(); | shuffle the array element such that the value of index is in Randomized order
 
               Table.6.2. Array Manipulation Method
 ## Array locator Method
