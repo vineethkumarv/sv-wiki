@@ -57,13 +57,15 @@ The below figure shows the output of single dimension packed array, here packed 
 The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz = 12'hdfe`.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
-![multi_packed](https://user-images.githubusercontent.com/110448056/186884901-0dfbfccd-c15f-4677-b9d3-8c394994a6b8.png)
+![mixed-arrays](https://user-images.githubusercontent.com/110448056/187356265-156453ae-9888-4b6d-8e71-807f4387717b.png)
 
                                   Figure.3 multi dimensional packed array output
 
 The below figure shows how the array elements stored in 2-dimensional packed array. for `bit [2:0][3:0]xyz = 12'hdfe` example going from left to right in dimensions elements will occupied the memory.
 
+![2d-packed](https://user-images.githubusercontent.com/110448056/187356323-2d671f63-2de6-4082-938f-c43ea6724534.png)
 
+                                 Figure.4 two dimensional packed array memory layout
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/packed_array/multi_packed/multi_packed.sv
 
@@ -100,7 +102,7 @@ The below figure shows the output of single dimension unpacked array.
 
 ![single_unpacked](https://user-images.githubusercontent.com/110448056/186889154-0f23c201-ca8b-47cd-ae46-8fcd3c0d0cfd.png)
 
-                                  Figure.4 single dimensional unpacked array output
+                                  Figure.5 single dimensional unpacked array output
 
 **Github lab code link:-** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/unpacked_array/single_unpacked/unpacked.sv
 
