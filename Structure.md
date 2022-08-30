@@ -54,10 +54,9 @@ The below output shows the unpacked structure.
 
 The above output illustrates that the unpacked structure contains the different datatypes like string, int, byte etc. The string must be initialised within double quotes only. The variables like int , byte can be assign the value itself.   
 
-Github Lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/structn/structn.sv  
+Github Lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-unpacked/structn.sv
 
-Github Lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/structn/structn.log
-
+Github Lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-unpacked/structn.log
 
 ## **Packed structure**  
  
@@ -99,10 +98,9 @@ The below output shows that output of packed structure
 
 The above output illustrates the output of packed structure. It contains the different datatypes like bit , logic . We can assign values and  display as output. Here we cannot  use string dataype inside the packed structure because string cannot be treated as single vector. It will show compile error.    
 
-Github lab code link :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.sv   
+Github lab code link :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.sv
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.log  
-
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.log
 
 ## Difference of packed structure and Unpacked structure 
 
@@ -159,10 +157,12 @@ The below figure shows that  Data alignment of Unpacked union
 
                                          Fig 2: Data alignment of Unpacked union       
 
-The  figure shows that 'int' takes 32 bit and 'byte' takes 8 bit. But in unpacked union all members share the memory. Here 'int' is the largest datatype, so 32 bits shared for all other members in union.    
-Github Lab code link:
+The  figure shows that 'int' takes 32 bit and 'byte' takes 8 bit. But in unpacked union all members share the memory. Here 'int' is the largest datatype, so 32 bits shared for all other members in union.      
 
-Github lab output link:
+Github Lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/union/union-unpacked/union-unpack.sv  
+
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/union/union-unpacked/union-unpack.log  
+
 ## Packed Union    
 
 The Packed Union is defined by 'union packed' keyword. It uses only same type elements like 'bit' , 'logic', 'reg'  with same size. This is one of the limitation of packed Union.
@@ -199,9 +199,11 @@ The below figure shows that the output of packed union.
 
                                                   Fig 4: Output of packed union.   
  
-The packed union output shows that only same type of element  eg, 'bit' and only with same size can be used as union members.   
-Github Lab code link:    
-Github lab output link:
+The packed union output shows that only same type of element  eg, 'bit' and only with same size can be used as union members.     
+
+Github Lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/union/union-packed/unionpack.sv  
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/union/union-packed/unionpack.log
 
 ## Difference between structure and union
 
