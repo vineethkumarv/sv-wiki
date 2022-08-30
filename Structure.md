@@ -114,7 +114,7 @@ sr. no. |**Packed structure**|**Unpacked structure**|
 |4.|It is used in RTL code because it can synthesis the code |It is not used in RTL code because it cannot synthesis by synthesis tool|   
 |5.|Entire structure packed together without memory gaps |Unpacked structure doesnot have a packing structure |      
 
-                                          Table 1: Difference of packed structure and Unpacked structure  
+                                     Table 1: Difference of packed structure and Unpacked structure  
 
 
 ----  
@@ -130,15 +130,15 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
 
 ## syntax:  
 
-`union {` 
-`list of elements`
+`union {`   
+`list of elements`  
 `} Union_name`
 
 ## Example:    
 
-`union {`        
-`int x;    
-`byte y; ` 
+`union {`          
+`int x;      
+`byte y; `   
 `} data;`  
 
 ## Output:  
@@ -174,9 +174,9 @@ The Packed Union is defined by 'union packed' keyword. It uses only same type el
 
 ## Example:  
 
-`typedef union packed {` 
-`bit [7:0];`
-`bit [1:0][3:0];`  
+`typedef union packed {`   
+`bit [7:0];`  
+`bit [1:0][3:0];`    
 `} abc_u ;`  
   
 ## Data alignment of packed union   
