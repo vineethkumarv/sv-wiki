@@ -370,7 +370,7 @@ ouput: '{7, 1, 9, 9, 7}
   Expression: insert(0, 2)- It insert the array element '2' in the zeroth index position in the queue1.  
  output: '{ 2, 7, 1, 9, 9, 7}  
 
-The below Figure.1 shows the output for size(), delete(), insert() Methods of Queue.
+The below Figure.12 shows the output for size(), delete(), insert() Methods of Queue.
   
 ![newqueue1](https://user-images.githubusercontent.com/110412474/186829636-ba817def-7c37-4c16-9f50-af55f1bc9f84.JPG)
 
@@ -382,6 +382,9 @@ Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method1/queue_data_type.log
 
 ---
+
+
+
 
 Example.2 : consider the variable size queue named as  
  queue1 ={"manipal", "bangalore", "udupi"};   
