@@ -137,7 +137,7 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
 `union {`  
  `int x;`  
 `byte y;`  
-`} data;`  
+`} data_u;`  
 
 ## Output:  
    
