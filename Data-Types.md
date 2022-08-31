@@ -320,6 +320,93 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
+# Data type casting
+
+casting means the conversion of one data type to another datatype.  
+there are two types of casting,
+
+static  
+dynamic  
+
+****static :**** The casting happens at compile time. So, there will not be any run time error. static casting is only applicable to fixed data types. It does not apply to the Object-Oriented programming concept.
+
+****Syntax :****
+`data_type'(variable or expression or value);`
+
+
+****dynamic :**** Casting happens at run-time. If the casting is invalid, an error is reported. Dynamic casting is used to cast the assigned values to the variables that might not be ordinarily valid. The $cast is the system method. The $cast can be either function or task.
+
+****Syntax :****
+`$cast(destination_variable, source_expression_or_variable);`
+
+
+## static casting
+
+### 1. integer to int  
+****Example :**** `int_data = int'(integer_data);`  
+
+![integer_to_int](https://user-images.githubusercontent.com/110448382/187766327-ff3b8330-7dd5-43a3-a8fe-f8b9246a9ed2.png)
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/integer_to_int/integer_to_int.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/integer_to_int/integer_to_int.log
+
+### 2. shortint to  int and longint  
+****Example :**** `int_data = int'(shortint_data);`  
+`longint_data = longint'(shortint_data);`
+
+![shortint_to_i_l](https://user-images.githubusercontent.com/110448382/187766716-381f7e0a-3943-48d8-8a45-67bde4a80d44.png)
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/shortint/shortint_casting.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/shortint/shortint_casting.log
+
+### 3. int to longint  
+****Example :**** `longint_data = longint'(int_data);`
+
+![int_to_longint](https://user-images.githubusercontent.com/110448382/187766791-1c30b5a6-a71b-4bc2-b958-744e6c291330.png)
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/int_to_longint/int_to_longint.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/int_to_longint/int_to_longint.log
+
+### 4. real to int  
+****Example :**** `int_data = int'(real_data);`
+
+![real_to_int](https://user-images.githubusercontent.com/110448382/187766860-79a99293-f916-4314-824a-d77d92f624e8.png)
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/real_to_int/real_to_int.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/real_to_int/real_to_int.log
+
+### 5. real to time  
+****Example :**** `time_data = time'(real_data);`
+
+![real_to_time](https://user-images.githubusercontent.com/110448382/187766904-fba98b9b-83a1-4e3d-96b8-1bde3deb23d6.png)
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/real_to_time/real_to_time.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/real_to_time/real_to_time.log
+
+### 6. logic to byte  
+****Example :**** `byte_data = byte'(logic_data);`
+
+![logic_to_byte](https://user-images.githubusercontent.com/110448382/187766945-89a8639a-b1cf-45f3-acd5-ba1ffc44d49a.png)
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/logic_to_byte/logic_to_byte.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/logic_to_byte/logic_to_byte.log
+
+### 7. bit to byte  
+****Example :**** `byte_data = byte'(bit_data);`
+
+![bit_to_byte](https://user-images.githubusercontent.com/110448382/187766988-72a478dd-16ec-4321-989e-35fcc69afd5c.png)
+
+Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/bit_to_byte/bit_to_byte.sv
+
+Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/bit_to_byte/bit_ti_byte.log
+
+---
 # enum
 
 Enumerated data types defines a set of named values.
