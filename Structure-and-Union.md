@@ -177,7 +177,7 @@ The Packed Union is defined by 'union packed' keyword. It uses only same type el
 
 `typedef union packed {`   
 `bit [7:0];`  
-`bit [1:0][3:0];`    
+`bit [7:0];`    
 `} abc_u ;`  
   
 ## Data alignment of packed union   
