@@ -188,7 +188,7 @@ The below figure shows the Data alignment of packed union
 
                                                   Fig 3:  Data alignment of packed union  
 
-The figure shows that bit datatype  and '[7:0]' -8bit is used. Inside packed union , all members should be same type of element and same size . 
+The figure shows that bit datatype  and 8bit  size is used. Inside packed union , all members should be same type of element and same size . Here 8 bit size allocated for all union members. 
 
                                                 
 ## Output:  
