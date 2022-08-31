@@ -41,7 +41,7 @@ The below figure shows that the data alignment of unpacked structure.
 
                                              Fig 2:  Data alignment of unpacked structure     
 
-The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for byte.
+The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for byte. Here bitstream size is 48. Unpacked structure has more memory footprint than packed structure.
 
  **Output:**   
    
@@ -85,10 +85,9 @@ The below figure shows that the data alignment of Packed structure.
 
                                                     Fig 4 : Data alignment of Packed structure     
 
-The 'byte' takes 8 bits , 8 bits for bit[7:0] and 16 bits for logic[15:0].
+The 'byte' takes 8 bits , 8 bits for bit[7:0] and 16 bits for logic[15:0].Here bitstream size is 32 bit. Packed  structure has less footprint than unpacked structure. 
 
-
- **Output:**     
+**Output:**     
 
 The below output shows that output of packed structure    
  
@@ -100,7 +99,8 @@ The above output illustrates the output of packed structure. It contains the dif
 
 Github lab code link :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.sv
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.log
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/structure/struct-packed/struct-packed.log  
+
 
 ## Difference of packed structure and Unpacked structure 
 
