@@ -29,7 +29,7 @@ This method gives initialization done in one step. The variable and value can be
 
 **Example:**    
  
-`struct{` 
+`struct{`   
        `string name;`   
        `bit[15:0] salary;`  
        `byte id;`  
