@@ -75,7 +75,7 @@ The below figure shows the output of typedef with structure datatype.
 
 The above output shows that typedef in structure decreases the usage of longer datatypes by creating new variable. We can see that in example 'longint' datatype changed to 'age' ,it is a new variable that is created by using typedef in structure.    
 
-**Note :**The below figure shows that error when typedef is not used with structure   
+**Note :** The below figure shows that error when typedef is not used with structure   
 
 ![struct error](https://user-images.githubusercontent.com/110484152/187746976-132c4e3c-2e96-4058-ab03-51692595e6db.png)    
 
@@ -108,7 +108,7 @@ The below figure shows the typedef with 'enumeration datatype
 
 The above output shows that enum datatype with typedef .    
 
-**Note:**The below figure shows the error when typedef is not used with enum datatype.  
+**Note:** The below figure shows the error when typedef is not used with enum datatype.  
 
 ![enum error](https://user-images.githubusercontent.com/110484152/187746592-26eed55e-1a8a-4955-bbed-cf96e68261c9.png)   
 
