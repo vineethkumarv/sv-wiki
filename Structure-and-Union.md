@@ -33,7 +33,7 @@ This method gives initialization done in one step. The variable and value can be
        `string name;`   
        `bit[15:0] salary;`  
        `byte id;`  
-       `} employee;`    
+       `} employee_s;`    
 
 The below figure shows that the data alignment of unpacked structure.  
  
@@ -43,14 +43,14 @@ The below figure shows that the data alignment of unpacked structure.
 
 The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for byte. Here bitstream size is 48. Unpacked structure has more memory footprint than packed structure.
 
- **Output:**   
+ **Output:**  
+
+**Note**: Without using 'Typedef' in unpacked structure, value initialization can only be done in one line itself. Otherwise it will show  compile error.    
    
 The below output shows the unpacked structure.
 ![unpacked structure](https://user-images.githubusercontent.com/110484152/187358167-5687962b-152f-4e88-9913-a9989e3308d1.png)  
 
                                                Fig 3: Unpacked structure  
-
-**Note**: Without using 'Typedef' in unpacked structure, value initialization can only be done in one line itself. Otherwise it will show  compile error.  
 
 The above output illustrates that the unpacked structure contains the different datatypes like string, int, byte etc. The string must be initialised within double quotes only. The variables like int , byte can be assign the value itself.   
 
@@ -77,7 +77,7 @@ Note: Structure cannot be packed if it cannot be represented as a vector.
 `byte id;`  
 `bit[7:0]experience;`   
 `logic[15:0]salary;`  
-`}employee_ details;`   
+`}employee_ details_s;`   
   
 The below figure shows that the data alignment of Packed structure.  
 
