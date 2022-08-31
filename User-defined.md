@@ -28,8 +28,9 @@ The main use of Typedef in class is that sometimes we use class variable before 
 
  **Output:**    
 
-The below figure shows that output of typedef with class.
-![typedef class](https://user-images.githubusercontent.com/110484152/187377151-6b4af7bb-4dfb-4297-94b1-b3463212fd89.png)
+The below figure shows that output of typedef with class.  
+
+![typedef class](https://user-images.githubusercontent.com/110484152/187588716-d102f765-7b5e-4d28-824e-7f6da953e085.png)
                                                    Fig 1 : Typedef with class  
 
 The above example and output shows that how typedef avoids the compiler error in class1 because class2 declaration is not done  at that time. If we didn't use 'typdef class2' at the beginning , it will show some compiler error. It will display the text given inside the $display.  
@@ -37,7 +38,8 @@ The above example and output shows that how typedef avoids the compiler error in
 
 Github lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.sv  
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.log
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.log  
+
 ## **Typedef in Structure**  
 
 Without Typedef, Structure may happen some compile errors in large complex testbenches. Typedef also provide declarations make more easier.  
@@ -60,7 +62,8 @@ Without Typedef, Structure may happen some compile errors in large complex testb
  **Output:**    
 
 The below figure shows the output of typedef with structure datatype.
-![typestruct](https://user-images.githubusercontent.com/110484152/187587821-78efe5d6-c0f7-433c-a014-eee8cee3dcd7.png)
+![typestruct](https://user-images.githubusercontent.com/110484152/187587821-78efe5d6-c0f7-433c-a014-eee8cee3dcd7.png)  
+
                                                  Fig 2: Typedef with structure  
 
 The above output shows that typedef in structure decreases the usage of longer datatypes by creating new variable. We can see that in example 'longint' datatype changed to 'age' ,it is a new variable that is created by using typedef in structure.   
@@ -83,7 +86,8 @@ Typedef uses for when we need more than one variable to share the same enumerati
 
  **Output:**    
 
-The below figure shows the typedef with 'enumeration datatype  
+The below figure shows the typedef with 'enumeration datatype    
+
 ![typeenum](https://user-images.githubusercontent.com/110484152/186602985-64dd1698-8a5d-4951-9a30-523acc0ad1bc.png)  
 
                                              Fig 3 : Typedef with Enumeration 
