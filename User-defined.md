@@ -35,10 +35,9 @@ The below figure shows that output of typedef with class.
 The above example and output shows that how typedef avoids the compiler error in class1 because class2 declaration is not done  at that time. If we didn't use 'typdef class2' at the beginning , it will show some compiler error. It will display the text given inside the $display.  
 
 
-Github lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.sv   
+Github lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.sv  
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.log 
-
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/classtypedef/classtypedef.log
 ## **Typedef in Structure**  
 
 Without Typedef, Structure may happen some compile errors in large complex testbenches. Typedef also provide declarations make more easier.  
@@ -56,21 +55,19 @@ Without Typedef, Structure may happen some compile errors in large complex testb
 `string name;`  
 `byte id;`   
 `longint age;`   
-`} personal_ details;` 
+`} personal_ details_s;` 
 
  **Output:**    
 
 The below figure shows the output of typedef with structure datatype.
-![12](https://user-images.githubusercontent.com/110484152/186636386-2301edc3-eda9-498c-b038-84e4c3de68a4.png)    
-  
+![typestruct](https://user-images.githubusercontent.com/110484152/187587821-78efe5d6-c0f7-433c-a014-eee8cee3dcd7.png)
                                                  Fig 2: Typedef with structure  
 
 The above output shows that typedef in structure decreases the usage of longer datatypes by creating new variable. We can see that in example 'longint' datatype changed to 'age' ,it is a new variable that is created by using typedef in structure.   
 
 Github lab code link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/structtypedef/structtypedef.sv  
 
-Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/structtypedef/structtypedef.log  
-
+Github lab output link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/typedef/structtypedef/structtypedef.log
  
 ## **Typedef in Enumeration**   
 
