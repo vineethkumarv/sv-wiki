@@ -45,12 +45,17 @@ The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for 
 
  **Output:**  
 
-**Note**: Without using 'Typedef' in unpacked structure, value initialization can only be done in one line itself. Otherwise it will show  compile error.    
+**Note**: Without using 'Typedef' in unpacked structure, value initialization can only be done in one line itself. Otherwise it will show  compile error.     
+
+![unpacked pg](https://user-images.githubusercontent.com/110484152/187838737-4b185846-86fa-4fd1-a24c-35381db8cd30.png)  
+
+                                                     Fig 3: Compile error when not using typedef
+  
    
 The below output shows the unpacked structure.
 ![unpacked structure](https://user-images.githubusercontent.com/110484152/187358167-5687962b-152f-4e88-9913-a9989e3308d1.png)  
 
-                                               Fig 3: Unpacked structure  
+                                                  Fig 4: Unpacked structure  
 
 The above output illustrates that the unpacked structure contains the different datatypes like string, int, byte etc. The string must be initialised within double quotes only. The variables like int , byte can be assign the value itself.   
 
@@ -83,7 +88,7 @@ The below figure shows that the data alignment of Packed structure.
 
 ![image](https://user-images.githubusercontent.com/110484152/187272734-a3fff0ec-94bf-4b03-b065-4faf0263a4b9.png)  
 
-                                                    Fig 4 : Data alignment of Packed structure     
+                                                    Fig 5 : Data alignment of Packed structure     
 
 The 'byte' takes 8 bits , 8 bits for bit[7:0] and 16 bits for logic[15:0].Here bitstream size is 32 bit. Packed  structure has less footprint than unpacked structure. 
 
@@ -93,7 +98,7 @@ The below output shows that output of packed structure
  
 ![ps1](https://user-images.githubusercontent.com/110484152/187270250-0aa48a5a-9fc3-417f-957a-03921d06da1a.png)
 
-                                                     Fig 5: Packed structure  
+                                                     Fig 6: Packed structure  
 
 The above output illustrates the output of packed structure. It contains the different datatypes like bit , logic . We can assign values and  display as output. Here we cannot  use string dataype inside the packed structure because string cannot be treated as single vector. It will show compile error.    
 
