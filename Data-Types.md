@@ -494,7 +494,7 @@ Enumerated data types defines a set of named values.
 
 In the below figure output of default value of enum. 
   
-![default_enum](https://user-images.githubusercontent.com/110448382/186869397-d54b85a0-2276-4c1a-98a1-bc23bfef1ea4.png)
+![default_value](https://user-images.githubusercontent.com/110448382/187858568-1fbaa256-fe2c-4b54-87cd-5a66cfe8486e.png)
 
                                    Figure.17. Output of enum default value
 
@@ -505,7 +505,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 In the below figure output of set value of enum.  
 
-![set_enum](https://user-images.githubusercontent.com/110448382/186869460-cf12764a-49ec-4379-a174-7b3870a0c6e0.png)
+![set_value](https://user-images.githubusercontent.com/110448382/187858661-cb20f4cf-b251-4448-bc72-3efecd8f8098.png)
 
                                    Figure.18. Output of set enum value
 
@@ -552,7 +552,7 @@ In typedef a type name can be given so that the same type can be used in many pl
 
 In below figure declare typedef type and output using enum methods.
 
-![typedef_enum](https://user-images.githubusercontent.com/110448382/186874037-c29e2317-5854-4fd9-a859-df544365b10a.png)
+![enum_typedef](https://user-images.githubusercontent.com/110448382/187858749-d04ff2bd-96c8-4c20-8ab3-b6b7bc0e9ca3.png)
 
                                    Figure.19. Output of typedef enum using enum method
 
