@@ -10,11 +10,11 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 
 sr. no. | **data type**         |
 |:--|:---------------------- |
-|1.|[4-state]() |
-|2.|[2-state]() |
+|1.|[4-state](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-state-data-type-cheat-sheet) |
+|2.|[2-state](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-state-data-type-cheat-sheet) |
 |3.|[Arrays](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array) | 
 |4.|[Strings](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#string) |
-|5.|[Structures](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure) |
+|5.|[Structures and Union](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure-and-Union) |
 |6.|[Enumerated](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#enum) | 
 |7.|[User defined](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/User-defined) |
 
@@ -98,12 +98,12 @@ so it is -4
 
 sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
 |:--|:---------------------- | :-------------|:-----------------|:-----------------------|
-|1.|[reg](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-logic) |   4 | >=1 | unsigned  | 
-|2.|[wire](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-integer) | 4 | 32  | signed   |
-|3.|[logic](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-logic) |   4 | >=1 | unsigned  | 
-|4.|[integer](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-integer) | 4 | 32  | signed   |
-|5.|[time](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-time) | 4 | 64 | unsigned  |
-|6.|[real](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-real) | 4 | 64 | unsigned |
+|1.|[reg](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-reg) |   4 | >=1 | unsigned  | 
+|2.|[wire](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-wire) | 4 | >=  | unsigned   |
+|3.|[logic](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-logic) |   4 | >=1 | unsigned  | 
+|4.|[integer](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-integer) | 4 | 32  | signed   |
+|5.|[time](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#5-time) | 4 | 64 | unsigned  |
+|6.|[real](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#6-real) | 4 | 64 | unsigned |
 
          Tabular column.2. 4-state data type
 
@@ -238,11 +238,11 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
 |:--|:---------------------- | :-------------|:-----------------|:-----------------------|
-|1.|[bit](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#5-bit) |   2 | >=1 | unsigned  | 
-|2.|[byte](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#6-byte) | 2 | 8  | signed   |
-|3.|[shortint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#7-shortint) | 2 | 16 | signed  |
-|4.|[int](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#8-int) | 2 | 32 | signed |
-|5.|[longint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#9-longint) | 2 | 64 | signed |
+|1.|[bit](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-bit) |   2 | >=1 | unsigned  | 
+|2.|[byte](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-byte) | 2 | 8  | signed   |
+|3.|[shortint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-shortint) | 2 | 16 | signed  |
+|4.|[int](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-int) | 2 | 32 | signed |
+|5.|[longint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#5-longint) | 2 | 64 | signed |
 
          Tabular column.4. 2-state data type
 
