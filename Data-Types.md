@@ -2,7 +2,7 @@
 
 In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X and Z. However, in the case of test benches, these 4-state variables were not required. For example, to count the number of packets, we would require a 2-state variable. Thus, System Verilog introduces a new class of variables of 2-states, i.e., 0 and 1. 
 
-![new_data_types](https://user-images.githubusercontent.com/110448382/186157987-25bc0cd1-655e-4576-b156-3b40b7350253.png)
+![data_type](https://user-images.githubusercontent.com/110448382/187842567-e575dc1c-9a1d-421c-a582-69d9fb9e48e0.png)
 
 
 
@@ -10,35 +10,19 @@ In Verilog, all the data types were of 4-state, i.e., it could represent 0, 1, X
 
 sr. no. | **data type**         |
 |:--|:---------------------- |
-|1.|[2-state and 4-state](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-state-and-4-state-data-type-cheat-sheet) |
-|2.|[Arrays](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array) | 
-|3.|[Strings](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#string) |
-|4.|[Structures](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure) |
-|5.|[Enumerated](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#enum) | 
-|6.|[User defined](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/User-defined) |
+|1.|[4-state]() |
+|2.|[2-state]() |
+|3.|[Arrays](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array) | 
+|4.|[Strings](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#string) |
+|5.|[Structures](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure) |
+|6.|[Enumerated](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#enum) | 
+|7.|[User defined](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/User-defined) |
 
         Tabular column.1. data types
 
 ---
 
 
-## 2-state and 4-state data type cheat sheet  
-
-sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
-|:--|:---------------------- | :-------------|:-----------------|:-----------------------|
-|1.|[logic](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-logic) |   4 | >=1 | unsigned  | 
-|2.|[integer](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-integer) | 4 | 32  | signed   |
-|3.|[time](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-time) | 4 | 64 | unsigned  |
-|4.|[real](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-real) | 4 | 64 | unsigned |
-|5.|[bit](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#5-bit) |   2 | >=1 | unsigned  | 
-|6.|[byte](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#6-byte) | 2 | 8  | signed   |
-|7.|[shortint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#7-shortint) | 2 | 16 | signed  |
-|8.|[int](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#8-int) | 2 | 32 | signed |
-|9.|[longint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#9-longint) | 2 | 64 | signed |
-
-         Tabular column.2. 2-state and 4-state data type
-
----
 
 ****Signed and Unsigned numbers****
 
@@ -123,15 +107,43 @@ The below tabular column represent the 4 different state.
                                           Tabular column.3. value of 4-state
 ---
 
-****reg**** -  A reg variable is used to model storage elements such as latches, flip-flops and memories, it stores a value and it is is used in a procedural assignment.  
-Syntax : `reg variable_name;`  
+## 4-state data type cheat sheet  
+
+sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
+|:--|:---------------------- | :-------------|:-----------------|:-----------------------|
+|1.|[reg](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-logic) |   4 | >=1 | unsigned  | 
+|2.|[wire](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-integer) | 4 | 32  | signed   |
+|3.|[logic](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#1-logic) |   4 | >=1 | unsigned  | 
+|4.|[integer](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#2-integer) | 4 | 32  | signed   |
+|5.|[time](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-time) | 4 | 64 | unsigned  |
+|6.|[real](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-real) | 4 | 64 | unsigned |
+
+         Tabular column.2. 4-state data type
+
+---
+
+## 1. reg  
+
+A reg variable is used to model storage elements such as latches, flip-flops and memories, it stores a value and it is is used in a procedural assignment.  
+
+****Syntax :**** `reg variable_name;`  
 
 
-****wire**** - A wire is a Verilog data-type used to connect elements and to connect nets that are driven by a single gate or continuous assignment.    
-Syntax : `wire variable_name;`     
+---
 
-****tri**** - The tri net type can be used where multiple drivers drive a net.  
 
+## 2. wire 
+
+A wire is a Verilog data-type used to connect elements and to connect nets that are driven by a single gate or continuous assignment.    
+
+****Syntax :**** `wire variable_name;`     
+
+
+---
+
+## tri
+
+The tri net type can be used where multiple drivers drive a net.  
 
 
 ---
@@ -218,6 +230,23 @@ Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/real_data_type/data_type_real.log
 
 ---
+
+
+## 2-state data type cheat sheet  
+
+sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/unsigned**  |
+|:--|:---------------------- | :-------------|:-----------------|:-----------------------|
+|1.|[bit](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#5-bit) |   2 | >=1 | unsigned  | 
+|2.|[byte](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#6-byte) | 2 | 8  | signed   |
+|3.|[shortint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#7-shortint) | 2 | 16 | signed  |
+|4.|[int](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#8-int) | 2 | 32 | signed |
+|5.|[longint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#9-longint) | 2 | 64 | signed |
+
+         Tabular column.2. 2-state data type
+
+
+---
+
 
 ## 5. bit
 
