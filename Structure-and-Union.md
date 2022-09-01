@@ -41,7 +41,7 @@ The below figure shows that the data alignment of unpacked structure.
 
                                              Fig 2:  Data alignment of unpacked structure     
 
-The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for byte. Here bitstream size is 48. Unpacked structure has more memory footprint than packed structure.
+The 'string' takes 24 bits for "sam" , here string treat as  ascii character. Then 16 bits for bit[15:0] and 8 bits for byte. Here bitstream size is 48. Unpacked structure has more memory footprint than packed structure.
 
  **Output:**  
 
