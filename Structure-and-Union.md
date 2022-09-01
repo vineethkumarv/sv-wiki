@@ -47,8 +47,7 @@ The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for 
 
 **Note**: Without using 'Typedef' in unpacked structure, value initialization can only be done in one line itself. Otherwise it will show  compile error.     
 
-![unpacked pg](https://user-images.githubusercontent.com/110484152/187838737-4b185846-86fa-4fd1-a24c-35381db8cd30.png)  
-
+![unpack ](https://user-images.githubusercontent.com/110484152/187841989-ba37f227-09dd-4f8e-a9d4-715be7962493.png)
                                                      Fig 3: Compile error when not using typedef
   
    
