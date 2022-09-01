@@ -349,6 +349,8 @@ There are two types of casting,
 
 ****Example :**** `int_data = int'(integer_data);`  
 
+The below figure shows the output of integer to int casting.
+
 ![integer_to_int](https://user-images.githubusercontent.com/110448382/187766327-ff3b8330-7dd5-43a3-a8fe-f8b9246a9ed2.png)
 
                                        Figure.10. integer to int casting output
@@ -359,7 +361,9 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ### 2. shortint to  int and longint  
 ****Example :**** `int_data = int'(shortint_data);`  
-`longint_data = longint'(shortint_data);`
+`longint_data = longint'(shortint_data);`  
+
+The below figure shows the output of shortint to int and shortint to longint casting.
 
 ![shortint_to_i_l](https://user-images.githubusercontent.com/110448382/187766716-381f7e0a-3943-48d8-8a45-67bde4a80d44.png)
 
@@ -372,6 +376,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 ### 3. int to longint  
 ****Example :**** `longint_data = longint'(int_data);`
 
+The below figure shows the output of int to longint casting.
+
 ![int_to_longint](https://user-images.githubusercontent.com/110448382/187766791-1c30b5a6-a71b-4bc2-b958-744e6c291330.png)
 
                                        Figure.12. int to longint casting output
@@ -382,6 +388,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ### 4. real to int  
 ****Example :**** `int_data = int'(real_data);`
+
+The below figure shows the output of real to int casting.
 
 ![real_to_int](https://user-images.githubusercontent.com/110448382/187766860-79a99293-f916-4314-824a-d77d92f624e8.png)
 
@@ -394,6 +402,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 ### 5. real to time  
 ****Example :**** `time_data = time'(real_data);`
 
+The below figure shows the output of real to time casting.
+
 ![real_to_time](https://user-images.githubusercontent.com/110448382/187766904-fba98b9b-83a1-4e3d-96b8-1bde3deb23d6.png)
 
                                        Figure.14. real to time casting output
@@ -405,6 +415,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 ### 6. logic to byte  
 ****Example :**** `byte_data = byte'(logic_data);`
 
+The below figure shows the output of logic to byte casting.
+
 ![logic_to_byte](https://user-images.githubusercontent.com/110448382/187766945-89a8639a-b1cf-45f3-acd5-ba1ffc44d49a.png)
 
                                        Figure.15. logic to byte casting output
@@ -415,6 +427,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ### 7. bit to byte  
 ****Example :**** `byte_data = byte'(bit_data);`
+
+The below figure shows the output of bit to byte casting.
 
 ![bit_to_byte](https://user-images.githubusercontent.com/110448382/187766988-72a478dd-16ec-4321-989e-35fcc69afd5c.png)
 
@@ -451,7 +465,7 @@ In the below figure output of default value of enum.
   
 ![default_enum](https://user-images.githubusercontent.com/110448382/186869397-d54b85a0-2276-4c1a-98a1-bc23bfef1ea4.png)
 
-                                   Figure.10. Output of enum default value
+                                   Figure.17. Output of enum default value
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/default_value_enum/default_value_enum.sv
 
@@ -462,7 +476,7 @@ In the below figure output of set value of enum.
 
 ![set_enum](https://user-images.githubusercontent.com/110448382/186869460-cf12764a-49ec-4379-a174-7b3870a0c6e0.png)
 
-                                   Figure.11. Output of set enum value
+                                   Figure.18. Output of set enum value
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/set_value_enum/set_value_enum.sv
 
@@ -509,7 +523,7 @@ In below figure declare typedef type and output using enum methods.
 
 ![typedef_enum](https://user-images.githubusercontent.com/110448382/186874037-c29e2317-5854-4fd9-a859-df544365b10a.png)
 
-                                   Figure.12. Output of typedef enum using enum method
+                                   Figure.19. Output of typedef enum using enum method
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/typedef_enum/typedef_enum.sv
 
@@ -579,7 +593,7 @@ The below figure.1 illustrates the output for string operators
 ![string_oper2](https://user-images.githubusercontent.com/110443214/186822122-a5f85160-9938-41d3-811f-5b155df68cb2.png)
 
 
-                                   Figure.13. Output of string operators
+                                   Figure.20. Output of string operators
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_op/string_op.sv
 
@@ -630,7 +644,7 @@ The below figure.2. shows the output of string methods.
 ![string_method](https://user-images.githubusercontent.com/110443214/187138876-6128baa0-5a0b-40cc-8a3a-4a7eded269ed.png)
 
 
-                                          Figure.14. Output of string methods
+                                          Figure.21. Output of string methods
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/string/string_me/string_method.sv
 
