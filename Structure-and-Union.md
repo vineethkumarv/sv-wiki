@@ -147,7 +147,7 @@ The unpacked structure use the keyword 'union' keyword. It uses the datatypes li
    
 The below figure shows the output of Unpacked Union.    
 
-![union unpacked](https://user-images.githubusercontent.com/110484152/187355979-ba378df4-89b9-4133-822e-a5a726537da5.png)
+![unss](https://user-images.githubusercontent.com/110484152/187967811-3bdc1911-a2b2-4fbd-b9f4-66633fb470a7.png)
 
                                           Fig 1: Output of Unpacked Union.   
 
@@ -199,7 +199,7 @@ The figure shows that bit datatype  and 8bit  size is used. Inside packed union 
 
 The below figure shows that the output of packed union.     
 
-![packed union ss](https://user-images.githubusercontent.com/110484152/187356087-1939a332-8598-42d8-8d23-f8431711b69c.png)   
+![upss](https://user-images.githubusercontent.com/110484152/187968006-a3f40ac9-7022-43e5-a60b-758576b64ef8.png)
 
                                                   Fig 4: Output of packed union.   
  
