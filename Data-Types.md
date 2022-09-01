@@ -117,8 +117,8 @@ The below tabular column represent the 4 different state.
 |:------------------------------------------ | :-------------------------------------------------------------------------------------|
 |0 |    Logic state 0 |       
 |1|Logic state 1 | 
-|x or X | Logic state unknown|
-| z or Z|Logic state high impedance |
+|x or X | Logic state unknown(related to registers)|
+| z or Z|Logic state high impedance (related to wires) |
 
                                           Tabular column.3. value of 4-state
 ---
