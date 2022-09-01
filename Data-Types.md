@@ -351,6 +351,8 @@ There are two types of casting,
 
 ![integer_to_int](https://user-images.githubusercontent.com/110448382/187766327-ff3b8330-7dd5-43a3-a8fe-f8b9246a9ed2.png)
 
+                                       Figure.10. integer to int casting output
+
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/integer_to_int/integer_to_int.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/integer_to_int/integer_to_int.log
@@ -361,6 +363,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ![shortint_to_i_l](https://user-images.githubusercontent.com/110448382/187766716-381f7e0a-3943-48d8-8a45-67bde4a80d44.png)
 
+                                       Figure.11. shortint to int and shortint to longint casting output
+
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/shortint/shortint_casting.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/shortint/shortint_casting.log
@@ -369,6 +373,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 ****Example :**** `longint_data = longint'(int_data);`
 
 ![int_to_longint](https://user-images.githubusercontent.com/110448382/187766791-1c30b5a6-a71b-4bc2-b958-744e6c291330.png)
+
+                                       Figure.12. int to longint casting output
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/int_to_longint/int_to_longint.sv
 
@@ -379,6 +385,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ![real_to_int](https://user-images.githubusercontent.com/110448382/187766860-79a99293-f916-4314-824a-d77d92f624e8.png)
 
+                                       Figure.13. real to int casting output
+
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/real_to_int/real_to_int.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/real_to_int/real_to_int.log
@@ -387,6 +395,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 ****Example :**** `time_data = time'(real_data);`
 
 ![real_to_time](https://user-images.githubusercontent.com/110448382/187766904-fba98b9b-83a1-4e3d-96b8-1bde3deb23d6.png)
+
+                                       Figure.14. real to time casting output
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/real_to_time/real_to_time.sv
 
@@ -397,6 +407,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ![logic_to_byte](https://user-images.githubusercontent.com/110448382/187766945-89a8639a-b1cf-45f3-acd5-ba1ffc44d49a.png)
 
+                                       Figure.15. logic to byte casting output
+
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/logic_to_byte/logic_to_byte.sv
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/logic_to_byte/logic_to_byte.log
@@ -405,6 +417,8 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 ****Example :**** `byte_data = byte'(bit_data);`
 
 ![bit_to_byte](https://user-images.githubusercontent.com/110448382/187766988-72a478dd-16ec-4321-989e-35fcc69afd5c.png)
+
+                                       Figure.16. bit to byte casting output
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/casting_data_type/bit_to_byte/bit_to_byte.sv
 
