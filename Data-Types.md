@@ -93,19 +93,6 @@ so it is -4
 
 ---
 
-## Four state data type
-
-The below tabular column represent the 4 different state.  
-
- | **State**         | **Description**                                                                   | 
-|:------------------------------------------ | :-------------------------------------------------------------------------------------|
-|0 |    Logic state 0 |       
-|1|Logic state 1 | 
-|x or X | Logic state unknown(related to registers)|
-| z or Z|Logic state high impedance (related to wires) |
-
-                                          Tabular column.2. value of 4-state
----
 
 ## 4-state data type cheat sheet  
 
@@ -118,8 +105,23 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 |5.|[time](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-time) | 4 | 64 | unsigned  |
 |6.|[real](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-real) | 4 | 64 | unsigned |
 
-         Tabular column.3. 4-state data type
+         Tabular column.2. 4-state data type
 
+
+---
+
+## Four state
+
+The below tabular column represent the 4 different state.  
+
+ | **State**         | **Description**                                                                   | 
+|:------------------------------------------ | :-------------------------------------------------------------------------------------|
+|0 |    Logic state 0 |       
+|1|Logic state 1 | 
+|x or X | Logic state unknown(related to registers)|
+| z or Z|Logic state high impedance (related to wires) |
+
+                                          Tabular column.3. value of 4-state
 ---
 
 ## 1. reg  
@@ -147,7 +149,7 @@ The tri net type can be used where multiple drivers drive a net.
 
 
 ---
-## 1. Logic
+## 3. Logic
 
 The logic data type is a 4 state type that can take values 0,1,x and z. logic data type which can be used in place of both the wire and reg data types because wire data type does not have multiple drivers.  
 By default logic data type is unsigned and its initial value is x. logic data type can be driven in both procedural block and continuous assign statements.
@@ -169,7 +171,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
-## 2. integer
+## 4. integer
 
 integer is 4-state data type, integer can be either 0,1,x and z which represent a 32-bit signed number. Default value of integer is x. integer can hold values ranging from -2^31 to (2^31)-1.
 
@@ -189,7 +191,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
-## 3. time
+## 5. time
 
 time is special data type for simulation time measuring. It is 4-state data type,represent 64-bit unsigned integer, that can be used in conjunction with the $time system task to hold current simulation time.
 
@@ -210,7 +212,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
-## 4. real
+## 6. real
 
 The real data type implemented as a 64-bit real number. Real numbers can be specified in either decimal notation (4.43) or in scientific notation (42e8). Default value of real data type is 0.
 
@@ -248,7 +250,7 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 ---
 
 
-## 5. bit
+## 1. bit
 
 bit is 2-state which is used most often test benches. It can be either 0 or 1 which represents a single bit. Default value of bit data type is 0.
 
@@ -269,7 +271,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
-## 6. byte
+## 2. byte
 
 byte is 2-state data type which is used most often test benches. It can be either 0 or 1 which represent a 8-bit signed integer. Default value of byte is 0.
 
@@ -289,7 +291,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
-## 7. shortint 
+## 3. shortint 
 
 shortint is 2-state data type. It can be either 0 or 1 which represent a 16-bit signed integer. Default value of shortint is 0.
 
@@ -309,7 +311,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
-## 8. int 
+## 4. int 
 
 int is 2-state data type which is used most often testbenches. It can be either 0 or 1 which represent a 32-bit signed integer. Default value of int is 0.
 
@@ -329,7 +331,7 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 
 ---
 
-## 9. longint 
+## 5. longint 
 
 longint is 2-state data type. It can be either 0 or 1 which represent a 64-bit signed integer. Default value of longint is 0.
 
