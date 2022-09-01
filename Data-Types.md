@@ -323,26 +323,30 @@ Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/bl
 # Data type casting
 
 casting means the conversion of one data type to another datatype.  
-there are two types of casting,
 
-static  
-dynamic  
+There are two types of casting,
 
-****static :**** The casting happens at compile time. So, there will not be any run time error. static casting is only applicable to fixed data types. It does not apply to the Object-Oriented programming concept.
+* Static casting 
+* Dynamic casting
+
+****static casting :**** The casting happens at compile time. So, there will not be any run time error. static casting is only applicable to fixed data types. It does not apply to the Object-Oriented programming concept.
 
 ****Syntax :****
+
 `data_type'(variable or expression or value);`
 
 
-****dynamic :**** Casting happens at run-time. If the casting is invalid, an error is reported. Dynamic casting is used to cast the assigned values to the variables that might not be ordinarily valid. The $cast is the system method. The $cast can be either function or task.
+****dynamic casting :**** Casting happens at run-time. If the casting is invalid, an error is reported. Dynamic casting is used to cast the assigned values to the variables that might not be ordinarily valid. The $cast is the system method. The $cast can be either function or task.
 
 ****Syntax :****
+
 `$cast(destination_variable, source_expression_or_variable);`
 
 
 ## static casting
 
 ### 1. integer to int  
+
 ****Example :**** `int_data = int'(integer_data);`  
 
 ![integer_to_int](https://user-images.githubusercontent.com/110448382/187766327-ff3b8330-7dd5-43a3-a8fe-f8b9246a9ed2.png)
