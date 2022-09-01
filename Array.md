@@ -63,7 +63,7 @@ The below figure shows how the array elements stored in 2-dimensional packed arr
 
                                  Figure.3 two dimensional packed array memory layout
 
-The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz = 12'hdfe`.
+The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz`.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
 
