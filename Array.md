@@ -269,6 +269,7 @@ where, index type is any data type or it's wildcard "*".
 * It can be stored by the simulator as a hash (lookup) table for extremely fast access of its elements. A hash table contains an array of groups of elements. A function called hash function generates a unique key to compute the index into this array, from which the correct array element value is obtained.
 * Elements in an associative array can be accessed in a similar way as those in a one-dimensional array.
 * If an attempt is made to read an invalid (non-existent) associative array entry, then the simulator will issue a warning and will return the value ‘x’ for a 4-state integral type or a value ‘0’ for a 2-state integral type.
+* Use of "*" this wild card will increases the simulation time so avoid to use that while declaring the array.
 
 **Associative Arrays Methods cheat sheet:**
 
@@ -462,6 +463,16 @@ The below Figure.2 shows the output of pop.front(), pop.back(), push.front(), pu
  Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Queue/queue_method2/queue_data.log
     
 ---
+
+## Advantages and disadvantages of Arrays:
+
+**Arrays Type** | **Advantage** | **Disadvantage**
+-- | -- | --
+Fixed Size Arrays | 1) Size can be calculated previously before run time. 2) Memory allocated in ROM in bss section of memory and simulation time less compared to unpacked arrays.  | 1)  Size is fixed we can’t expands the arrays.   2) Memory wastage.
+Dynamic Arrays | 1) Continues memory allocation   2) We can jump from one memory location to another using loops.  3) We can travel in array at ease due to order   4) Time taken to execute is less compared to queues | 1) We can’t insert and delete the value at particular index location   2) Memories allocated in heap memory and so simulation time is more compared to fixed arrays
+Associative Arrays | 1) It’s Memory friendly   2) Any data type is used for indexing  3) We can insert and delete the values at particular index | 1) Memories allocation is discontinuous    2) No fixed relation between indexing and so travelling through array is difficult 3) Id/keys required to jump to the other memory location in array
+Queues | 1) We can insert and delete the values at particular index    2) We can insert elements in between existing elements   3) Large amount of data can manage efficiently with ease.  4) Push &   pop operation can be performed easily so better than associative arrays | 1) Time taken to execute is more compared to the dynamic arrays   2) It is bit complex as it expands / increases compared to dynamic arrays.
+
 
 # Array Manipulation Method
 In the System Verilog the array Manipulation method are the built in method used to searching and ordering. The array manipulation method iterate through the each array element to evaluate the expression given by the with clause. The with clause is must for the some of the method and for some it is optional. "with" is refer to evaluate the existing array with the conditions.The below figure shows the Flow chart of Array Manipulation Method
@@ -708,6 +719,5 @@ The below Figure.18 shows the output for Array Reduction Method.
                                                      Figure.22 Array Reduction Method
 
 Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_Reduction/arrayreduction.sv
-
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/sv_arrays/Array_methods/Array_Reduction/array_reduction.log
