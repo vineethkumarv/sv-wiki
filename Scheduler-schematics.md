@@ -35,15 +35,15 @@ Let's discuss about all the regions of System Verilog
 ## 1. Active Region set  
 
 This Active region set includes 
-**1. Active region**
-**2. Inactive region** and 
-**3. NBA region.**
+**i. Active region**
+**ii. Inactive region** and 
+**iii. NBA region.**
 
 The Active region set is used to schedule blocking and non-blocking assignments included in the module.  
 All tasks and functions called from a module also scheduled in the active region set.  
 The Active region set is used to schedule the RTL and behavioral code.
 
-### 1.Active region
+### i. Active region
 
 The Active region holds the current active region set events being evaluated and can be processed in any order.  
 
@@ -55,18 +55,32 @@ The principal function of this region is to evaluate and execute all current mod
 • Evaluate inputs and update outputs of Verilog primitives.  
 • Execute the $display and $finish commands.  
 
---------------------------------------------- Race aviodance ---------------------------------------------
+### ii. Inactive regions
+
+The Inactive region holds the events to be evaluated after all the Active events are processed.  
+
+Most engineers are continue to use #0 assignments are trying to defeat a race condition that might exist in their code due to assignments  
+made to the same variable from more than one always block.  
+Engineers that follow good coding practices will have no need for #0 RTL assignments and hence, the Inactive region is unused.  
+
+
+If events are being executed in the active region set, an explicit #0 delay control requires the process to be
+suspended and an event to be scheduled into the Inactive region of the current time slot so that the process
+can be resumed in the next Inactive to Active iteration.
+
+
+
+
+--------------------------------------------- Race aviodance ---------------------------------------------  
+
 Race avoidance:
 
 Sunburst Design Race Avoidance Guideline #3 dictates that all RTL combinational logic
 modeled using an always block should be coded using blocking assignments to ensure that
 combinational logic execute
- 
 
+This region is where #0 blocking assignments are scheduled and per Sunburst
+Design Race Avoidance Guideline #8, engineers should not make #0 RTL procedural
+assignments3
 
-
-
-
-
-
-
+, which is a violation of Sunburst Design Race Avoidance Guideline #6.
