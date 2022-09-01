@@ -45,7 +45,7 @@ The 'string' takes 24 bits for "sam" ,then 16 bits for bit[15:0] and 8 bits for 
 
  **Output:**  
 
-**Note**: Without using 'Typedef' in unpacked structure, value initialization can only be done in one line itself. Otherwise it will show  compile error.     
+**Note**: Without using 'Typedef'  and if we try to initialize the values line by line using alternate  method (Refer Alternate method to assign values), it will show  compile error. Without typedef, value initialization can only be done in one line itself.   
 
 ![unpack ](https://user-images.githubusercontent.com/110484152/187841989-ba37f227-09dd-4f8e-a9d4-715be7962493.png)
                                                      Fig 3: Compile error when not using typedef
