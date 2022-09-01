@@ -56,14 +56,14 @@ The below figure shows the output of single dimension packed array, here packed 
 
 ---
  
-The below figure shows how the array elements stored in 2-dimensional packed array. for `bit [2:0][3:0]xyz = 12'hdfe` example going from left to right in dimensions elements will occupied the memory.
+The below figure shows how the array elements stored in 2-dimensional packed array. for `bit [2:0][3:0]xyz` example going from left to right in dimensions elements will occupied the memory.
 
 
 ![2d-packed](https://user-images.githubusercontent.com/110448056/187356323-2d671f63-2de6-4082-938f-c43ea6724534.png)
 
                                  Figure.3 two dimensional packed array memory layout
 
-The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz`.
+The below figure shows the output of multi dimension packed array, here it consists of `bit [2:0][3:0]xyz=12'hdfe`.
 Here, 2 dimensional packed array declared and and we can similarly create 3 dimensional array as same.
 
 
