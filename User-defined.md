@@ -92,9 +92,9 @@ Typedef uses for when we need more than one variable to share the same enumerati
  
  **Syntax:**    
 
- `typedef enum {`  
- `values ` 
-` } <type_ name>;`
+ `typedef enum {`      
+ `values `     
+` } <type_ name>;`   
 
  **Example:**    
 
