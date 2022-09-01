@@ -104,7 +104,7 @@ The below tabular column represent the 4 different state.
 |x or X | Logic state unknown(related to registers)|
 | z or Z|Logic state high impedance (related to wires) |
 
-                                          Tabular column.3. value of 4-state
+                                          Tabular column.2. value of 4-state
 ---
 
 ## 4-state data type cheat sheet  
@@ -118,7 +118,7 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 |5.|[time](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#3-time) | 4 | 64 | unsigned  |
 |6.|[real](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#4-real) | 4 | 64 | unsigned |
 
-         Tabular column.2. 4-state data type
+         Tabular column.3. 4-state data type
 
 ---
 
@@ -242,7 +242,7 @@ sr. no. | **data type**         | **2-state/4-state** |   **bit**  |  **signed/u
 |4.|[int](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#8-int) | 2 | 32 | signed |
 |5.|[longint](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Data-Types#9-longint) | 2 | 64 | signed |
 
-         Tabular column.2. 2-state data type
+         Tabular column.4. 2-state data type
 
 
 ---
@@ -526,7 +526,7 @@ sl.no|Method | Description
 5|num() | returns the number of elements in the given enumeration
 6|name() | returns the string representation of the given enumeration value
 
-                                          Tabular column.4. enum methods 
+                                          Tabular column.5. enum methods 
 
 ---
 
@@ -587,7 +587,7 @@ Concatenation|{str1, str2, ..., strN}  | All strings will be concatenated into o
 Replication | {multiplier{str}} | Replicates the string N number of times, where N is specified by the multiplier|
 Indexing | str[index] | Returns a byte, the ASCII code at the given index. If given index is out of range, it returns 0|
 
-                                          Tabular column.5.string operators
+                                          Tabular column.6.string operators
 
 ****Example:****
 
@@ -645,7 +645,7 @@ str.compare(s) | Returns the string compare result as ascii value.
 str.icompare(s) | Returns caseless string compare result as ascii value.
 str.substr(i,j) | Returns the sub string of main string.
 
-                 Tabular column.6. string methods
+                 Tabular column.7. string methods
 
 ****Example:****
 
