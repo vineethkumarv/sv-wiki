@@ -513,7 +513,6 @@ Github lab code link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob
 
 Github lab output link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/data_type/two_and_four_state/enum_data_type/set_value_enum/set_value_enum.log
 
-
 ---
 
 
