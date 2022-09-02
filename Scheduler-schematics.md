@@ -17,7 +17,9 @@ time.
 
 ## Event regions in system verilog:
 
----------------------- pic of system verilog regions ----------------------------
+![sv_regions (5)](https://user-images.githubusercontent.com/110411714/188096452-5df8e8ec-7445-49c1-a547-19ef636cc771.png)
+
+          Fig-2: System verilog event regions.
 
 ### Explinations.
 
