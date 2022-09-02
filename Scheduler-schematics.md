@@ -48,9 +48,6 @@ There is some doubt as to whether an implementation actually must perform the sa
 Sampled values are always defined with respect to a clocking expression. Therefore, it is only necessary to sample values in the Preponed region of the time slot in which the clocking expression is triggered, and not in every time slot.    
 
 
--------------------------------------------------------- fig -------------------------------------------------------------
-
-
 ## 2. Active Region set  
 
 This Active region set includes 
@@ -64,7 +61,7 @@ The Active region set is used to schedule the RTL and behavioral code.
 
 ![active_region_set](https://user-images.githubusercontent.com/110411714/188075198-2caa7588-3c62-40fd-b3ab-d4c65821daf1.png)
 
-          Fig- : The blocks of Active region set.
+          Fig-3: The blocks of Active region set.
 
 ### i. Active region
 
@@ -111,6 +108,10 @@ This Re-Active region set includes
 
 The reactive region set is used to schedule blocking assignments, #0 blocking assignments and non-blocking assignments included in program code. Any task or function called from a program is also scheduled into the reactive set event regions.  
 The intended purpose of the reactive region set is to schedule testbench stimulus drivers and testbench verification checking in the same time slot after RTL code has settled to a semi-steady state.  
+
+![re-active_region](https://user-images.githubusercontent.com/110411714/188098532-ad0d1eda-19ce-4a4e-91dd-0f28b77465d1.png)
+
+          Fig-4: Blocks of Re-Active region set.
 
 ### i. Re-Active region
 
@@ -162,22 +163,3 @@ This region is also used to collect functional coverage for items that use strob
 Postponed region PLI events are also scheduled in this region.   
 
 There is no feedback path from the Postponed region back into the RTL or Reactive-loop regions, so the values displayed and the coverage collected will be the final values for that time slot.  
-
---------------------------------------------- Race aviodance ---------------------------------------------  
-
-Race avoidance:
-
-Sunburst Design Race Avoidance Guideline #3 dictates that all RTL combinational logic
-modeled using an always block should be coded using blocking assignments to ensure that
-combinational logic execute
-
-This region is where #0 blocking assignments are scheduled and per Sunburst
-Design Race Avoidance Guideline #8, engineers should not make #0 RTL procedural
-assignments3
-
-, which is a violation of Sunburst Design Race Avoidance Guideline #6.
-
-Sunburst Design Race Avoidance Guideline #1 dictates that all RTL clocked logic modeled
-using an always block should be coded using nonblocking assignments to ensure that the
-sequential logic will execute in the NBA region and correctly model the pipelined nature of
-sequential elements
