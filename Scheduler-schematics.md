@@ -36,13 +36,14 @@ Let's discuss about all the regions of System Verilog
 
 The function of this region is to sample values that are used by concurrent assertions. The Preponed region is executed only once in each time slot, immediately after advancing simulation time (there is no feedback path to re-execute the Preponed region).  
 
-There is some doubt as to whether an implementation actually must perform the sampling in the Preponed region or if the sampling may be done in the Postponed region of the previous time slot. Because both, Postponed and Preponed are read-only regions, the actual signal values are the same in any two contiguous Postponed-Preponed regions, thus, it is not observable in which region the simulator actually samples a value – the only value that is different is the simulation time.
+There is some doubt as to whether an implementation actually must perform the sampling in the Preponed region or if the sampling may be done in the Postponed region of the previous time slot. Because both, Postponed and Preponed are read-only regions.
 
-**"The values of variables used in assertions are sampled in the Preponed region of a time slot, and the assertions are evaluated during the Observed region."**
+**"The values of variables used in assertions are sampled in the Preponed region of a time slot, and the assertions are evaluated during the Observed region."**  
 
-Sampled values are always defined with respect to a clocking expression. Therefore, it is only necessary to sample values in the Preponed region of the time slot in which the clocking expression is triggered, and not in every time slot. When processing in the Preponed region, how does the simulator know that a clock will be triggered later during the processing of that particular time slot? The answer is that the simulator does not need to know about any future events, it only needs to ensure that the values present in the Preponed region are available to the sampling constructs when the clocking expression is actually triggered while processing the latter regions. The simulator can accomplish this by maintaining two values for each sampled signal, its current value and its value when the Preponed region was processed. This way, when the sampling clock is triggered, the sampling construct simply uses the value corresponding to the Preponed region.  
+Sampled values are always defined with respect to a clocking expression. Therefore, it is only necessary to sample values in the Preponed region of the time slot in which the clocking expression is triggered, and not in every time slot.    
 
--------------------------------------------------------- fig --------------------------------------------
+
+-------------------------------------------------------- fig -------------------------------------------------------------
 
 
 ## 2. Active Region set  
@@ -54,13 +55,17 @@ This Active region set includes
 
 The Active region set is used to schedule blocking and non-blocking assignments included in the module.  
 All tasks and functions called from a module also scheduled in the active region set.  
-The Active region set is used to schedule the RTL and behavioral code.
+The Active region set is used to schedule the RTL and behavioral code.  
+
+![active_region_set](https://user-images.githubusercontent.com/110411714/188069133-422e853f-ab16-4d41-926d-f3f75ac2184b.png)
+
+          Fig- : The blocks of Active region set.
 
 ### i. Active region
 
 The Active region holds the current active region set events being evaluated and can be processed in any order.  
 
-The principal function of this region is to evaluate and execute all current module activity in any order:  
+The function of this region is to evaluate and execute all current module activity in any order:  
 
 • Execute all module blocking assignments.  
 • Execute all module continuous assignments.  
@@ -68,21 +73,24 @@ The principal function of this region is to evaluate and execute all current mod
 • Evaluate inputs and update outputs of Verilog primitives.  
 • Execute the $display and $finish commands.  
 
+
 ### ii. Inactive regions
 
 The Inactive region holds the events to be evaluated after all the Active events are processed.  
-Most engineers are continue to use #0 assignments are trying to defeat a race condition that might exist in their code due to assignments  
-made to the same variable from more than one always block.  
-If events are being executed in the active region set, an explicit #0 delay control requires the process to be suspended and an event to be scheduled into the Inactive region of the current time slot so that the process can be resumed in the next Inactive to Active iteration.  
-Engineers that follow good coding practices will have no need for #0 RTL assignments and hence, the Inactive region is unused.  
+
+If events are being executed in the active region set, an explicit #0 delay control requires the process to be suspended and an event to be scheduled into the Inactive region of the current time slot. so that the process can be resumed in the next Inactive to Active iteration.  
+
+Most of the users are continue to use #0 assignments to defeat a race condition that might exist in their code due to assignments made to the same variable from more than one always block. users that follow good coding practices will have no need for #0 RTL assignments and hence, **the Inactive region is unused.**  
+
 
 ### iii. NBA region
 
-The principal function of this region is to execute the updates to the Left-Hand-Side (LHS) variables that were scheduled in the Active region for all currently executing non-blocking assignments.  
+The function of this region is to execute the updates to the Left-Hand-Side (LHS) variables that were scheduled in the Active region for all currently executing non-blocking assignments.  
 The NBA (non-blocking assignment update) region holds the events to be evaluated after all the Inactive events are processed.  
 If events are being executed in the active region set, a non-blocking assignment creates an event in the NBA region scheduled for the current or a later simulation time.  
 
-## 4. observed region
+
+## 3. observed region
 
 The function of this region is to evaluate the concurrent assertions using the values sampled in the Preponed region. Assertions that execute a pass or fail action block, actually schedule a process associated with the pass and fail code into the Reactive regions, not in the Observed region.  
 
