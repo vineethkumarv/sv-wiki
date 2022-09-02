@@ -56,7 +56,7 @@ The parent thread blocks will be execute when  any one of the child threads is f
  // Thread 3  
 **join_any**
 
-In the below figure we can see that  here  main thread 1 executed and one child is executed and then main thread 2 is executed.If we have main thread and child thread has same delay then the child thread is executed first like here we can see thread 4-1  and main thread 2 has same time delay but thread 4-1(i.e child thread) executed first. 
+In the below figure we can see that  here  main thread 1 executed and one child is executed and then main thread 2 is executed. 
 
 ![Untitled Diagram drawio (7)](https://user-images.githubusercontent.com/110509375/186891255-902be705-514f-46a5-b460-f49a7598c228.png)
 
@@ -78,7 +78,6 @@ It does not mean that the rest of the child threads will be automatically discar
  // Thread 3  
  **join_none**   
 
-In the below figure you can see that after the execution of main thread 1 we have same delays for main thread 2 and child thread (i.e thread 1) so here we can see that main thread 2 is executed first and then the child thread are executed and you can after executing child thread1 and thread 2 only we can see main thread 3 even though we have same delays so we can say that all the time child thread has the priority
 
 ![Untitled Diagram drawio (8)](https://user-images.githubusercontent.com/110509375/186891715-959c0d1d-3cfa-44cd-9b58-8ff957c8b85b.png)
 
