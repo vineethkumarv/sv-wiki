@@ -32,7 +32,20 @@ Region that should be avoided:
 
 Let's discuss about all the regions of System Verilog  
 
-## 1. Active Region set  
+## 1. preponed region
+
+The function of this region is to sample values that are used by concurrent assertions. The Preponed region is executed only once in each time slot, immediately after advancing simulation time (there is no feedback path to re-execute the Preponed region).  
+
+There is some doubt as to whether an implementation actually must perform the sampling in the Preponed region or if the sampling may be done in the Postponed region of the previous time slot. Because both, Postponed and Preponed are read-only regions, the actual signal values are the same in any two contiguous Postponed-Preponed regions, thus, it is not observable in which region the simulator actually samples a value – the only value that is different is the simulation time.
+
+**"The values of variables used in assertions are sampled in the Preponed region of a time slot, and the assertions are evaluated during the Observed region."**
+
+Sampled values are always defined with respect to a clocking expression. Therefore, it is only necessary to sample values in the Preponed region of the time slot in which the clocking expression is triggered, and not in every time slot. When processing in the Preponed region, how does the simulator know that a clock will be triggered later during the processing of that particular time slot? The answer is that the simulator does not need to know about any future events, it only needs to ensure that the values present in the Preponed region are available to the sampling constructs when the clocking expression is actually triggered while processing the latter regions. The simulator can accomplish this by maintaining two values for each sampled signal, its current value and its value when the Preponed region was processed. This way, when the sampling clock is triggered, the sampling construct simply uses the value corresponding to the Preponed region.  
+
+-------------------------------------------------------- fig --------------------------------------------
+
+
+## 2. Active Region set  
 
 This Active region set includes 
 **i. Active region**
@@ -69,6 +82,13 @@ The principal function of this region is to execute the updates to the Left-Hand
 The NBA (non-blocking assignment update) region holds the events to be evaluated after all the Inactive events are processed.  
 If events are being executed in the active region set, a non-blocking assignment creates an event in the NBA region scheduled for the current or a later simulation time.  
 
+## 4. observed region
+
+The function of this region is to evaluate the concurrent assertions using the values sampled in the Preponed region. Assertions that execute a pass or fail action block, actually schedule a process associated with the pass and fail code into the Reactive regions, not in the Observed region.  
+
+This is because concurrent assertions are designed to behave strictly as monitors, they are not allowed to modify the state of the design. But, assertions cannot schedule any Active region events.
+
+
 ## 2. Re-Active region set
 
 This Re-Active region set includes 
@@ -76,13 +96,59 @@ This Re-Active region set includes
 **ii. Re-Inactive region** and 
 **iii. Re-NBA region.**
 
-The Reactive region holds the current reactive region set events being evaluated and can be processed in any order.
-The code specified by blocking assignments in checkers, program blocks and the code in action blocks of concurrent assertions are scheduled 
-in the Reactive region.  
 The reactive region set is used to schedule blocking assignments, #0 blocking assignments and non-blocking assignments included in program code. Any task or function called from a program is also scheduled into the reactive set event regions.  
 The intended purpose of the reactive region set is to schedule testbench stimulus drivers and testbench verification checking in the same time slot after RTL code has settled to a semi-steady state.  
 
+### i. Re-Active region
 
+The Re-Active region holds the current reactive region set events being evaluated and can be processed in any order.
+The code specified by blocking assignments in checkers, program blocks and the code in action blocks of concurrent assertions are scheduled 
+in the Re-Active region.  
+
+The principal function of this region is to evaluate and execute all current program activity.  
+
+• Execute all program blocking assignments.
+• Execute all program continuous assignments
+• Execute the pass/fail code from concurrent assertions.
+• Evaluate the Right-Hand-Side (RHS) of all program non-blocking assignments and schedule updates into the Re-NBA region.
+• Execute the $exit and implicit $exit commands.
+
+This region is used to execute the verification processes spawned by program blocks. Because the Reactive region is located towards the end of the time slot, a process that executes at this point in the simulation has access to three key pieces of information:  
+1. The current set of steady-state Active region set values – at the start of the current time slot.  
+2. The next set of steady-state Active region set values - after clock and signal propagation.  
+3. The disposition of all concurrent assertions triggered in this time slot.  
+All this information enables more powerful and flexible verification techniques without forcing users to resort to specialized synchronization code.  
+The processes that execute when processing the Reactive region typically drive back the stimulus into the design.  
+
+### ii. Re-Inactive region
+
+The Re-Inactive region iterates with the Reactive region until all Reactive/Re-Inactive events have completed. Then, within the same time slot, the RTL regions (Active-Inactive-NBA) will re-trigger if the program execution scheduled any events in those regions in the same time slot.  
+
+Events are scheduled into the Re-Inactive region by executing a #0 in a program process. However, that recommendation does not apply when dealing with verification code, where it is often useful (and harmless) to add some determinism to the scheduler.  
+
+For example, when forking background processes, it is often very useful to allow the newly created sub-processes a chance to start executing before continuing the execution of the parent process. This is easily accomplished with the following code:
+
+### iii. Re-NBA region
+
+The Re-NBA region holds the events to be evaluated after all the Re-Inactive events are processed.  
+If events are being executed in the reactive region set, a non-blocking assignment creates an event in the Re-NBA region scheduled for the current or a later simulation time.  
+
+The principal function of this region is to execute the updates to the Left-Hand-Side (LHS) variables that were scheduled in the Re-Active region for all currently executing non-blocking assignments that were evaluated in the Reactive region.  
+As currently defined, the Re-NBA region iterates with the Reactive and Re-Inactive regions until all Reactive region set events have completed. Then, if program execution scheduled any Reactive region events that could trigger Active region set events in the same time slot, the
+Active set regions (Active-Inactive-NBA) will re-trigger and iterate until the Active region set events have completed.  
+
+
+## 5. posponed region
+
+The function of this region is to execute the `$strobe` and `$monitor` commands that will show the final updated values for the current time slot.  
+
+No new value changes are allowed to happen in the current time slot once the Postponed region is reached. Within this region, it is illegal to write values to any net or variable or to schedule an event in any previous region within the current time slot.  
+
+This region is also used to collect functional coverage for items that use strobe sampling.  
+
+Postponed region PLI events are also scheduled in this region.   
+
+There is no feedback path from the Postponed region back into the RTL or Reactive-loop regions, so the values displayed and the coverage collected will be the final values for that time slot.  
 
 --------------------------------------------- Race aviodance ---------------------------------------------  
 
