@@ -57,7 +57,7 @@ The Active region set is used to schedule blocking and non-blocking assignments 
 All tasks and functions called from a module also scheduled in the active region set.  
 The Active region set is used to schedule the RTL and behavioral code.  
 
-![active_region_set](https://user-images.githubusercontent.com/110411714/188069133-422e853f-ab16-4d41-926d-f3f75ac2184b.png)
+![active_region_set](https://user-images.githubusercontent.com/110411714/188075198-2caa7588-3c62-40fd-b3ab-d4c65821daf1.png)
 
           Fig- : The blocks of Active region set.
 
