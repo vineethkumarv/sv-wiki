@@ -13,13 +13,16 @@ time.
 
 ## Event regions in verilog:
 
----------------------- pic of verilog regions -----------------------------------
+![verilog_regions](https://user-images.githubusercontent.com/110411714/188097582-2a0a97c1-d3da-4df2-8cbe-adcf54d51a9e.png)
+
+          Fig-1: Verilog event regions.
 
 ## Event regions in system verilog:
 
 ![sv_regions (5)](https://user-images.githubusercontent.com/110411714/188096452-5df8e8ec-7445-49c1-a547-19ef636cc771.png)
 
           Fig-2: System verilog event regions.
+
 
 ### Explinations.
 
