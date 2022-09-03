@@ -78,8 +78,8 @@ code:
         bit signed [7:0] data = 8'b11xz11x1;   
 
         initial begin
-           $display("\nValue of bit signed data in binary = %0d\n",data);
-           $display("\nValue of bit signed data in decimal = %0d\n",data);
+           $display("\nValue of bit signed data in binary = %0b",data);
+           $display("Value of bit signed data in decimal = %0d\n",data);
         end
       endmodule: data_type_bit
 
@@ -90,3 +90,27 @@ output :
       Value of bit signed data in decimal = -51
 
 In the above code, we declared bit as 11xz11x1, here bit is 2 state, so x and z are converted to 0 and it will become 11001101. Since it is signed bit it gives -51 in decimal format. 
+
+
+
+
+**10.What is the output if you declare byte as unsigned and assign value as 11101001 ?**
+
+**Answer:**   
+code: 
+
+      module data_type_byte;   
+         // declare byte unsigned type 8 bit variable 
+         byte unsigned data = 8'b11101001;
+
+         initial begin
+           $display("\nValue of byte unsigned data in binary = %0b",data);
+           $display("Value of byte unsigned data in decimal = %0d\n",data);
+         end
+      endmodule: data_type_byte
+
+
+output :   
+
+      Value of byte unsigned data in binary = 11101001
+      Value of byte unsigned data in decimal = 233
