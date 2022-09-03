@@ -33,7 +33,7 @@ The below figure shows the memory layout.
 
 **3) Dynamic Arrays Over Queues:**
 
-* According to memory layout, dynamic array executes faster and it will required less simulation time but queues will required more time to execute.
+* According to footprint, dynamic array executes faster and it will required less simulation time but queues will required more time to execute.
 
 ![dynamic-1](https://user-images.githubusercontent.com/110448056/188267346-99ee256d-34b8-4946-92b6-4ecf42d368d4.png)
 
