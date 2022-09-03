@@ -21,7 +21,9 @@ The below figure shows the different types of arrays used in System Verilog.
 ## Static Arrays(Fixed size arrays):
 In fixed size array / Static arrays, array size will be constant throughout the simulation, Once the array is declared no need to create it. By default, the array will be initialized with value ‘0’. In this type of arrays memories will be occupied during compilation stage and we can't able to rellocate the memories at run time.
 
-## Static arrays has two types: 1) Packed Arrays 2) Unpacked Arrays.
+## Static arrays has two types:   
+1) Packed Arrays   
+2) Unpacked Arrays.
 
 ---
 
