@@ -7,9 +7,10 @@ The below figure shows different types of structures in System Verilog.
 
                                                 Fig 1: Structure Diagram  
 
-#Types of structure
-1.Unpacked structure
-2.Packed structure
+# Types of structure
+
+1.Unpacked structure  
+2.Packed structure  
 
 ## Unpacked Structure  
  
