@@ -10,12 +10,12 @@ The below figure shows the different types of arrays used in System Verilog.
 
 **Sr No.** | **Arrays Types**         | **Description**                                                                   | 
 |---|------------------------------------------ | -------------------------------------------------------------------------------------|
-1|[Packed Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#packed-arrays) | Dimension of array declared before array name declaration |       
-2|[Unpacked Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#unpacked-arrays) | Dimension of the array declared after array name declaration | 
-3|[Dynamic Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#dynamic-arrays) | Memories will be allocated at run time |
-4|[Associative Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#associative-arrays) | Memories allocated only when it is used and any index type is used for indexing the array |
-5|[Queue](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#queue) | It is similar to fifo and we can add and remove elements from queue at run time |
-6 | [Array Manipulation Methods](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#array-manipulation-method) | It consist of array locator method, Array ordering method and Array Reduction method  |
+1|[Packed Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#1packed-arrays) | Dimension of array declared before array name declaration |       
+2|[Unpacked Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#2unpacked-arrays) | Dimension of the array declared after array name declaration | 
+3|[Dynamic Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#3dynamic-arrays) | Memories will be allocated at run time |
+4|[Associative Array](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#4associative-arrays) | Memories allocated only when it is used and any index type is used for indexing the array |
+5|[Queue](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#5queue) | It is similar to fifo and we can add and remove elements from queue at run time |
+6 | [Array Manipulation Methods](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#6array-manipulation-method) | It consist of array locator method, Array ordering method and Array Reduction method  |
                                        Table.1. Array cheat sheet
 
 ## Static Arrays(Fixed size arrays):
