@@ -19,7 +19,7 @@ The below figure shows the memory layout.
 * We can easily add elements using new() method but in fixed arrays we can't add elements after the declaration.
 * We can delete entire arrays after allocating the memories to it but in fixed arrays we can't delete the memories after declaring array.
 
-**Note:** In fixed arrays, there is no methods.
+**Note:** In fixed arrays, there is no methods like new(),delete().
 
 **2) Dynamic Arrays Over Associative Arrays:**
 
@@ -348,4 +348,4 @@ OUTPUT:
       `run -all      
       // Insert the array element at 0 index position of queue1: {{manipal} {banglaore} {udupi}}  
       exit  
------
+---
