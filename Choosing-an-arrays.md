@@ -35,6 +35,14 @@ The below figure shows the memory layout.
 
 * According to memory layout, dynamic array executes faster and it will required less simulation time but queues will required more time to execute.
 
+![dynamic-1](https://user-images.githubusercontent.com/110448056/188267346-99ee256d-34b8-4946-92b6-4ecf42d368d4.png)
+
+                             Figure.3. dynamic array execution time
+
+![queue-1](https://user-images.githubusercontent.com/110448056/188267352-d9bba19f-cf55-41fa-8646-2b907fabcb67.png)
+
+                             Figure.4. queue execution time
+
 * Dynamic array used to trace the each and every element in the array using the loops but in queue with pop and push operation. we can't trace the all element of array using fooreach loop. for pop operation the size of the array is decrement and i is increment and for push operation the size of the array is increment and i is also increment it result in Killing process. 
  
 code:
@@ -125,7 +133,7 @@ OUTPUT:
 
 ## Associative Arrays:
 
-1) Advantages of Associative array over all arrays:
+**1) Advantages of Associative array over all arrays:**
 
 * The ****function exists(input index);**** method is used in the associative array to find the index element where this method is not used in associative and dynamic array.
 
@@ -202,7 +210,7 @@ OUTPUT:
 
 ---
 
-2) Associative array over dynamic array and queue:
+**2) Associative array over dynamic array and queue:**
 
 * In Associative array the **index type is of any data_type** can used but while in dynamic and queue **we can't use different data types for indexing.**
 
@@ -233,7 +241,7 @@ OUTPUT:
 
 ---
 
-3) Associative array over dynamic array and fixed array:
+**3) Associative array over dynamic array and fixed array:**
 
 * We can delete the particular index element in Associative array by using **function void delete(input index);** but in dynamic and fixed type we can't use **function void delete(input index);** to delete the particular index.  
 
