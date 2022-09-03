@@ -37,3 +37,7 @@ A dynamic array needs memory allocation using new[] to hold elements. Here is an
     ………
     // Double the array size, preserving previous values.
     addr = new[200](addr);
+
+**7.Difference between packed and unpacked structure**
+
+**Answer:**
