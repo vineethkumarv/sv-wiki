@@ -41,3 +41,7 @@ A dynamic array needs memory allocation using new[] to hold elements. Here is an
 **7.Difference between packed and unpacked structure**
 
 **Answer:**
+
+**8.What happens if we give same value for different names in enumeration data type?**
+
+**Answer:**
