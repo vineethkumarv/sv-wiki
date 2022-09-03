@@ -7,6 +7,10 @@ The below figure shows different types of structures in System Verilog.
 
                                                 Fig 1: Structure Diagram  
 
+#Types of structure
+1.Unpacked structure
+2.Packed structure
+
 ## Unpacked Structure  
  
 Unpacked structure is the default structure syntax and is same as normal structure. The different variables holds different data inside the structure known as members of the structure. Structure members were treated as independent variables. when we want to assign values to  the members of structure, then use 'structure name. variable'.    
