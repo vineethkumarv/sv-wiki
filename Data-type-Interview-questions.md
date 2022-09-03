@@ -27,6 +27,9 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#static-arrays-h
 
 **Answer:**
 
+Refer the below link 
+https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Choosing-an-arrays
+
 **6.Given a dynamic array of size 100, how can the array be re-sized to hold 200 elements while the lower 100 elements are preserved as original?**
 
 **Answer:**
