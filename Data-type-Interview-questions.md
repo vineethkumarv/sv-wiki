@@ -48,7 +48,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure-and-Union#t
 
 **8.What happens if we give same value for different names in enumeration data type?**
 
-**Answer:**
+**Answer:**   
 code:
       
       module set_value_enum;    
@@ -65,3 +65,24 @@ code:
 output :       
 
       Error: Enum member 'TUESDAY' does not have unique value.
+
+
+
+**9.What is the output if you declare bit as signed and assign value as 11xz11x1 ?**
+
+**Answer:**   
+code:   
+
+      module data_type_bit;   
+        // declare bit signed type 8 bit variable 
+        bit signed [7:0] data = 8'b11xz11x1;   
+
+        initial begin
+           $display("\nValue of bit signed data in decimal = %0d\n",data);
+        end
+      endmodule: data_type_bit
+
+
+output :   
+
+      Value of bit signed data in decimal = -51
