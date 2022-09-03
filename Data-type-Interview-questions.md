@@ -45,3 +45,19 @@ A dynamic array needs memory allocation using new[] to hold elements. Here is an
 **8.What happens if we give same value for different names in enumeration data type?**
 
 **Answer:**
+code:
+      
+      module set_value_enum;    
+      //set same value for MONDAY and TUESDAY.  
+       enum {MONDAY=2, 
+             TUESDAY=2, 
+             WEDNESDAY=5, 
+             THURSDAY, 
+             FRIDAY=10, 
+             SATURDAY, 
+             SUNDAY }days;
+
+
+output :       
+
+      Error: Enum member 'TUESDAY' does not have unique value.
