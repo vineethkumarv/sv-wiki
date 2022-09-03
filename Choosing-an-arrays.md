@@ -336,7 +336,7 @@ OUTPUT:
   
 **2) Advantages of Queue over Dynamic & Associative Array:**
 
-* In queue we can insert the element at any index position using the method **function delete(index , element);** but in dynamic and associative array we can't insert the element in the array.  
+* In queue we can insert the element at any index position using the method **function insert(index , queue_element);**. So we can say inserting is easy. Thus the queue length increases and shrinks even if we remove or add elements from the middle, but in dynamic and associative array we can't insert the element in the array.  
 
 code:
 
