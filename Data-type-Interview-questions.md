@@ -114,3 +114,6 @@ output :
 
       Value of byte unsigned data in binary = 11101001
       Value of byte unsigned data in decimal = 233
+
+
+In the above code, we declared byte as 11101001. Since it is unsigned byte it gives 233 in decimal format.
