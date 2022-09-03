@@ -2,7 +2,8 @@
 
 **1) Fixed Arrays Over All Arrays:**
 
-* Fixed Arrays execute faster than all other types of arrays (i.e Associative arrays, dynamic arrays, queues) because it will store in uninitialized data segment (bss segment) of memory. and so it will consume less simulation time to execute. it will show in below figure.
+* Fixed Arrays execute faster than all other types of arrays (i.e Associative arrays, dynamic arrays, queues) because it will store in uninitialized data segment (bss segment) of memory, so it will consume less simulation time to execute. And the heap is the segment where dynamic, associative and queue  memory allocation takes place.  
+The below figure shows the memory layout.
 
 ![memory_segments](https://user-images.githubusercontent.com/110448056/188258335-c478ebd9-4785-415d-9873-cbf6269eecd4.png)
 
