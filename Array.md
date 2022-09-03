@@ -25,7 +25,7 @@ Static arrays has two types: 1) Packed Arrays 2) Unpacked Arrays.
 
 ---
 
-### Packed Arrays:
+### 1.Packed Arrays:
 A packed array is one where the dimensions of the array is declared before the array name. In this multiple bits of array stored in one memory location.
 
 **Note:-** It can be made of any single bit data types bit, logic and reg. we can't use multi bits data types for packed arrays.
@@ -84,7 +84,7 @@ They are used to store packet structures on which bit-select and part-select ope
 
 ---
 
-### Unpacked Arrays:
+### 2.Unpacked Arrays:
 A unpacked array is one where the dimensions of the array is declared after the array name. In this multiple bits will be stored in different memory locations.
 
 **Syntax:-**  `[data_type] [array_name] [dimension];`
@@ -164,7 +164,7 @@ In the given example, going from left to right side the memory will be allocated
                                Figure.7 mixed multi dimensional array memory allocation-
 --- 
 
-## Dynamic Arrays:
+## 3.Dynamic Arrays:
 A dynamic array is an unpacked array whose size can be set or changed at run time. The space for a dynamic array does not exist until the array is explicitly created at run-time. 
 
 **Syntax:-** `<data_type> array_name []`
@@ -245,7 +245,7 @@ A dynamic array that can be allocated and re-sized during simulation will avoid 
 
 ---
 
-## Associative Arrays:
+## 4.Associative Arrays:
 
 An associative array is an unpacked array data-type. It does not have any storage allocated until it is used, and the index type used to access elements is not restricted to integers.
 
@@ -321,7 +321,7 @@ Associative arrays used to design Content Addressable Memories (CAMs). Random re
 
 ---
 
-# Queue
+# 5.Queue
 Queue is a datatype used to have the variable size ordered collection of same datatypes in unpacked array format, it is used to insert the element in the array and delete the element in the array by both the ends. It is like buffer, used to model the first in first out(FIFO) and last in first out (LIFO).
 
 ****Syntax****: `data_type name[$];`
