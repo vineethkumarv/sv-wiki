@@ -474,7 +474,7 @@ Associative Arrays | 1) It’s Memory friendly   2) Any data type is used for in
 Queues | 1) We can insert and delete the values at particular index    2) We can insert elements in between existing elements   3) Large amount of data can manage efficiently with ease.  4) Push &   pop operation can be performed easily so better than associative arrays | 1) Time taken to execute is more compared to the dynamic arrays   2) It is bit complex as it expands / increases compared to dynamic arrays.
 
 
-# Array Manipulation Method
+# 6.Array Manipulation Method
 In the System Verilog the array Manipulation method are the built in method used to searching and ordering. The array manipulation method iterate through the each array element to evaluate the expression given by the with clause. The with clause is must for the some of the method and for some it is optional. "with" is refer to evaluate the existing array with the conditions.The below figure shows the Flow chart of Array Manipulation Method
 
 ![Array Manipulation Method](https://user-images.githubusercontent.com/110412474/186419438-45f9dc16-d26b-4846-a7a1-ba8c3da67a46.jpg)
