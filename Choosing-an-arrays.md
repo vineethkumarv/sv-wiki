@@ -14,9 +14,11 @@
 
 **1) Dynamic Arrays Over Fixed Arrays:**
 
-* Memories allocated at run time so memory will not be wasted but in fixed array memories would be wasted.
+* Memories allocated at run time, so memory will not be wasted but in fixed array memories would be wasted when we don't the actual size.
 * We can easily add elements using new() method but in fixed arrays we can't add elements after the declaration.
 * We can delete entire arrays after allocating the memories to it but in fixed arrays we can't delete the memories after declaring array.
+
+**Note:** In fixed arrays, there is no methods.
 
 **2) Dynamic Arrays Over Associative Arrays:**
 
@@ -30,4 +32,4 @@
 
 **3) Dynamic Arrays Over Queues:**
 
-* It's faster in execution and it will required less simulation time but queues will required more time to execute so dynamic arrays are faster in execution.
+* According to memory layout, dynamic array executes faster and it will required less simulation time but queues will required more time to execute.
