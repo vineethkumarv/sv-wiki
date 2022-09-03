@@ -1,5 +1,3 @@
-# Choosing an arrays:
-
 ## Fixed Arrays/Static Arrays:
 
 **1) Fixed Arrays Over All Arrays:**
