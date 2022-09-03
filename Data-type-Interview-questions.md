@@ -1,7 +1,10 @@
 ****1.Is there any difference between reg and logic in SystemVerilog?****
 
 **Answer:**  
-Before system verilog ,verilog is mainly used for synthesis and verification purposes. In verilog there are two main data type - 1) reg 2)net .reg is mainly used when we want to store values in the variable .It is mainly used inside procedural block .mainly it is used for designing of sequential circuit .net variable are mainly continuously driven .In net type variable it is not possible to store value .
+Before system verilog ,verilog is mainly used for synthesis and verification purposes. In verilog there are two main data type   
+ 1) reg  
+ 2)net   
+Reg is mainly used when we want to store values in the variable .It is mainly used inside procedural block .mainly it is used for designing of sequential circuit .net variable are mainly continuously driven .In net type variable it is not possible to store value .
 
 So ,there is lots of confusion for designer ,where to use reg and where to use net.This problem is solved in system verilog .System verilog introduced a new data type called as “logic”. This data type can be use at both the places. It can be use for net as well as reg.
 
