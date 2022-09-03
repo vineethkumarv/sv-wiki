@@ -78,6 +78,7 @@ code:
         bit signed [7:0] data = 8'b11xz11x1;   
 
         initial begin
+           $display("\nValue of bit signed data in binary = %0d\n",data);
            $display("\nValue of bit signed data in decimal = %0d\n",data);
         end
       endmodule: data_type_bit
@@ -85,4 +86,7 @@ code:
 
 output :   
 
+      Value of bit signed data in binary = 11001101
       Value of bit signed data in decimal = -51
+
+In the above code, we declared bit as 11xz11x1, here bit is 2 state, so x and z are converted to 0 and it will become 11001101. Since it is signed bit it gives -51 in decimal format. 
