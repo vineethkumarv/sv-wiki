@@ -35,9 +35,8 @@ The below figure shows the memory layout.
 
 * According to memory layout, dynamic array executes faster and it will required less simulation time but queues will required more time to execute.
 
-1. Dynamic array used to trace the each and every element in the array using the loops.
-  
-
+* Dynamic array used to trace the each and every element in the array using the loops but in queue with pop and push operation. we can't trace the all element of array using fooreach loop. for pop operation the size of the array is decrement and i is increment and for push operation the size of the array is increment and i is also increment it result in Killing process. 
+ 
 code:
 
       module dynamic;
@@ -65,10 +64,6 @@ OUTPUT:
      verifying the values of each index, dyn[7] = 7  
      exit  
 
-
-**In queue with pop and push operation. we can't trace the all element of array using fooreach loop.**
-* for pop operation the size of the array is decrement and i is increment  
-* for push operation the size of the array is increment and i is also increment it result in Killing process. 
   
 code: using pop operation
 
@@ -93,7 +88,7 @@ OUTPUT:
      verifying the values of each index, que[3] = 6  
      exit  
 
-code: using push operation
+code: using push operation in queue
 
      module queue;
      int que[$];
@@ -126,9 +121,13 @@ OUTPUT:
      Result reached the maximum of 5000 lines. Killing process.
      Execution interrupted or reached maximum runtime.
 
-# Advantages of Associative array over all arrays 
+---
 
-**1.** The ****function exists(input index);**** method is used in the associative array to find the index element where this method is not used in associative and dynamic array.
+## Associative Arrays:
+
+1) Advantages of Associative array over all arrays:
+
+* The ****function exists(input index);**** method is used in the associative array to find the index element where this method is not used in associative and dynamic array.
 
 code:  
 
@@ -153,8 +152,10 @@ OUTPUT:
      the element exist= {"Dilip":12}   
      exit 
 
-* In Dynamic array & queue  there is no such method like  **function exists(input index);** to find the array element if we use  **function exists(input index);** in dynamic array the following error is occur:
+* In Dynamic array & queue  there is no such method like **function exists(input index)** to find the array element if we use  **function exists(input index);** in dynamic array the following error is occur
+
 Dynamic array:    
+
 code:  
 
       module dynamic;
@@ -201,14 +202,14 @@ OUTPUT:
 
 ---
 
-**Associative array over dynamic array and queue.**
+2) Associative array over dynamic array and queue:
 
-**2.** In Associative array the **index type is of any data_type** can used but while in dynamic and queue **we can't use different data types for indexing.**
+* In Associative array the **index type is of any data_type** can used but while in dynamic and queue **we can't use different data types for indexing.**
 
 code:
 
-     module associative;
-     int id[int];
+    module associative;
+    int id[int];
     int name[string];
     int value[int];
     initial
@@ -232,9 +233,9 @@ OUTPUT:
 
 ---
 
-**Associative array over dynamic array and fixed array.**
+3) Associative array over dynamic array and fixed array:
 
-**3**.We can delete the particular index element in Associative array by using **function void delete(input index);** but in dynamic and fixed type we can't use **function void delete(input index);** to delete the particular index.  
+* We can delete the particular index element in Associative array by using **function void delete(input index);** but in dynamic and fixed type we can't use **function void delete(input index);** to delete the particular index.  
 
 code:
 
@@ -269,14 +270,15 @@ OUTPUT:
      The id is = {{4275:25} }  
      exit  
 
-
-**4.** The Associative array is memory friendly we can store the value of the array in any memory location
+* The Associative array is memory friendly we can store the value of the array in any memory location.
 
 ---
 
-# Advantages of Queue over all arrays
+## Queues:
 
-1. In queue the main advantage is push & pop operation.  
+**1) Advantages of Queue over all arrays**
+
+* In queue the main advantage is push & pop operation.  
 * The push used to insert the element in to queue.  
 * The push as two methods **function push_back(input element_t); & function push_front(input element_t);**
 * The pop as two methods **function pop_front(); & function pop_back();**
@@ -321,10 +323,12 @@ OUTPUT:
 
     // queue1 : '{"Yelahanka", "banglaore", "udupi"}  
     exit
-------  
- **Advantages of Queue over Dynamic & Associative Array**  
 
-2. In queue we can insert the element at any index position using the method **function delete(index , element);** but in dynamic and associative array we can't insert the element in the array.  
+------
+  
+**2) Advantages of Queue over Dynamic & Associative Array:**
+
+* In queue we can insert the element at any index position using the method **function delete(index , element);** but in dynamic and associative array we can't insert the element in the array.  
 
 code:
 
@@ -345,10 +349,3 @@ OUTPUT:
       // Insert the array element at 0 index position of queue1: {{manipal} {banglaore} {udupi}}  
       exit  
 -----
-
-
-  
-
-
-
-    
