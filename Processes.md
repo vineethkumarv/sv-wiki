@@ -28,17 +28,48 @@ SystemVerilog provides support for parallel threads through fork-join construct.
 
 **syntax**:-
   
-**fork**  
-   //Thread 1  
-  //Thread 2  
-  //Thread 3  
-**join**  
+`fork`  
+   `Thread 1`  
+   `Thread 2`  
+   `Thread 3`  
+`join`
 
-In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.
+**code snippet**:-  
+
+`fork:fork_main`  
+   `begin:first`  
+      `#1 a <= b;`  
+      `b <= 7;`  
+      `$monitor("[%0t]Thread-1: Values of a= %0d,b= %0d, c= %0d,d= %0d",$time,a,b,c,d);`  
+      `#1 ->e1;`  
+      `c = b;`  
+   `end:first`  
+   `begin:second`  
+      `wait(e1.triggered);`  
+      `$display("[%0t] Event is triggered",$time);`  
+      `begin:first_2 //Thread 4`  
+         `#1 d = c;`  
+      `end:first_2`  
+    `end:second`  
+`join:fork_main`
+
+In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
 ![Untitled Diagram drawio (6)](https://user-images.githubusercontent.com/110509375/186889441-662c114e-ac91-4947-94c8-7c0f303c606c.png)
 
           Fig-2: The output of fork join block.
+
+In the below fig you can easily understand how the entire code for fork-join works with respect to regions.  
+where sampling of the variables will be done in preponed region.  
+All the blocking assignments will be executed and all non-blocking assignments was evaluated in active region.  
+$display statements will be executed in active region.  
+All #0 delays statements will be executed in inactive region.  
+The evaluated non-blocking assignments will be executed in NBA region.
+$monitor statements will be executed in postponed region.
+
+![fork_join](https://user-images.githubusercontent.com/110411714/188447939-537320d2-c8a8-4266-9b40-0f343427d743.png)
+
+          Fig : scheduler Schematic for fork-join block.
   
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.sv
 
