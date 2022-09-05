@@ -15,7 +15,7 @@ The below figure shows the memory layout.
 
 **1) Dynamic Arrays Over Fixed Arrays:**
 
-* Memories allocated at run time, so memory will not be wasted but in fixed array memories would be wasted when we don't the actual size.
+* Memories allocated at run time, so memory will not be wasted but in fixed array memories would be wasted when we don't know the actual size.
 * We can easily add elements using new() method but in fixed arrays we can't add elements after the declaration.
 * We can delete entire arrays after allocating the memories to it but in fixed arrays we can't delete the memories after declaring array.
 
