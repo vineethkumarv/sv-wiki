@@ -2,201 +2,553 @@
 ![Untitled Diagram-Page-2 drawio (6)](https://user-images.githubusercontent.com/110447788/187111580-998e981a-05a0-46d1-81a3-67909da81011.png)
 
 
+
+
+           
+                                     Figure.1. Control Flow  
+# Control flow 
+## Conditional Statements  
+Conditional statements are used to check whether the statements in the blocks are executed or not. Conditional statements create the block of statements. If the expression given is -   
+**true** - Execute the set of statements in the block.  
+**false** - the statements inside that block will not be executed.  
+**else** - if the expressions are false then the else block statements will execute at last. 
+
+There are different types of conditional statements. These are --  
+### 1. if without else  
+flow chart -  
+This conditional statement is used for the basic codes where only need to make a decision by giving one condition. If the expression in the condition is -  
+**true** - execute the statements in the block.  
+**false** - will not execute the statement.  
+
+**Syntax**    
+`if(condition)begin  `  
+`Statements;  `  
+`end  `  
+
+_Note_  
+For more than one statement in conditional blocks, need to use begin end block. Statements inside the begin end block execute in a sequential manner.  
+
+**Example**  - Here, the variable declare is a and value assigned to it is 10. The compiler will check the if conditional expression and condition is true a=10. So, the compiler will execute the set of statements inside the if block.     
+**Code snippet**  
+`bit [3:0]a;`   
+`initial begin`  
+    `a=10;`  
+   `$display ("Value of a = %0d",a);`  
+   `if (a==10)begin`  
+      `$display ("if expression is true , Successfully entered into the if block");`  
+      `$display ( "a is equal to 10 " );`  
+    `end`  
+     `$display("out of if block");`  
+  `end`  
+
+**Output snippet**  
+***
+
+### 2. if else 
+This conditional statement has two sets of statements, one in the if block and another in the else block. If the expression in the `if` block is true, statements inside it will execute or if the expression is false, statements inside the `else` block will execute.  
+`else` block doesn't check any expression to execute statements inside it, it just executes after if the expression is false.  
+**Syntax**  
+`if(condition) begin  `  
+`Statement1;`  
+`Statement2;`  
+`------`  
+`StatementN;  `  
+`end  `  
+`else begin  `  
+`Statement1;  `  
+`Statement2;  `  
+`---------  `  
+`StatementN;`  
+`end `  
   
+**Example**  - Here the variable declares a is byte type(signed) and the value assigned to it is -1. If conditional expression is false as a is less than 0  
 
-                                       Figure.1. Control Flow
+`byte a;`  
+`initial begin`  
+  `a = -1;`  
+  `$display ("Assign the value of a = %0d ",a);`  
+  `$display("-------------------------------------");`  
+  `if(a>0)begin //false`    
+    `$display ("Successfully enters into if block");`    
+    `$display ("a is a positive number");`  
+    `$display ("----------------------------------");`   
+  `end`   
+  `else`  
+    `$display ("Number is negative");`  
+  `$display ("Out of if else block");`  
+`end`  
 
-## Conditional Statement 
-Conditional statements are used for executing the statements by giving the conditions. These statements will work according to the condition. 
-There are various types of conditional statements - 
-
-![Untitled Diagram-Page-4 drawio (2)](https://user-images.githubusercontent.com/110447788/187111521-c2b587d7-eac4-49b6-973a-0bef9a6ef9a2.png)
-
-
-
-
-                                        Figure.2. Conditional Statements  
-  
-
-S.No.|If_variants |  
-:-----|:--------|
-1.|[if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#1-if)|
-2.|[if else](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#2-if-else)| 
-3.|[if else ladder](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#3-if-else-ladder)|
-4.|[unique if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#4-unique-if)| 
-5.|[unique0 if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#5-unique0-if)|
-6.|[priority if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#6-priority-if)|
-
-### 1. if 
- This statement is used for giving a single condition and inside it executing the multiple statements or single statement. This is generally used for comparison of a number or two numbers.
-
-**Syntax**   
-              `if(condition)begin  `  
-               `statements;  `  
-               `end`    
-  
-
-![if](https://user-images.githubusercontent.com/110412468/187090976-32b8d1a8-c072-4e95-bbf7-713db8f4b1c6.png)
-
-**Lab link** 
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if/if_code.sv   
-
-**lab output link**   
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if/if_code_output.log  
-
-
+ 
 
 ***
-### 2. if else
+ 
+### 3. if else ladder  
+This conditional statement helps us to decide among multiple options or expressions. As soon as the expression becomes true, the statements inside it execute and the remaining code blocks are bypassed. If none of the expressions is true, the else block executes.   
+else block is an optional block in the ladder. It is used to avoid confusion in code.  
+**Syntax**  
 
-In this statement first, the compiler goes to the if condition and checks the condition and executes it if it is true or if the "if" condition is not true, the compiler will go to the "else" statement .
+`if(condition) begin  `  
+`Statement1;`  
+`Statement2;`  
+`------`  
+`StatementN;  `  
+`end  `  
+`elseif begin  `  
+`Statement1;`  
+`Statement2;`  
+`------`  
+`StatementN;  `  
+`end   `  
+  
+`else begin  `  
+`Statement1;  `  
+`Statement2;  `  
+`---------  `  
+`StatementN;`  
+`end `  
 
-**Syntax** -     
-               `if(condition)begin  `    
-               `statements;  `   
-               `end   `  
-               `else begin    `    
-               `Statements;  `  
-               `end`    
+**Example**  
+**without else**  
+Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements which has valid condition expression. 
+**Example**  - Below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
+
+
+`int a,b,c;`  
+`initial begin`  
+ `a = 10;`  
+ `b = 12;`  
+ `c = 13;`  
+ `$display ("Assign the value of a = %0d , b= %0d , c =%0d  " ,a,b,c);`  
+ `$display ("------------------------------------------------------");`  
+ `if (a>b)begin //false`    
+   `$display ("Successfully enters into if block ");`  
+   `$display ("Value of a < b");`  
+   `$display ("----------------------------------");`  
+ `end`  
+ `else if (b<c)begin //true`  
+   `$display ("Successfully enters into else if block ");`  
+   `$display ("value of b<c");`  
+   `$display ("----------------------------------------------------");`  
+   `end`  
+   `else if (c<0) begin //false`    
+     `$display ("Successfully enters into second elseif block ");`  
+     `$display ("c is a negative number ");`  
+     `$display ("--------------------------------------------");`  
+   `end`  
+   `$display ("Out from ladder block");`  
+ `end`  
+**output snap**  
+ 
+**with else**  
+When none of the conditional expressions is true, the compiler will execute the set of statements of the else block.   
+**Example**  
+Here the example shows the execution of the else block.   
+**Code snippet**  
+
+`int a, b,c;`  
+`initial begin`  
+ `a = -12;`  
+ `b = 12;`  
+ `c = 10;`  
+ `$display ("Assign the value of a =%0d  b = %0d  c = %0d ", a,b,c);`  
+ `$display ("------------------------------------------------------");`  
+ `if (a>0) //false condition`    
+ `begin`   
+ `$display ("Entered into if block ");`  
+ `$display ("a is a negative number");`  
+ `end`  
+ `else if (a==0) begin  // false condition`  
+   `$display ("Entered into first elseif block ");`  
+   `$display ("a is a negative number ");`  
+ `end`  
+   `else if (b<c)begin // false condition`  
+     `$display ("Entered into second else if block ");`  
+     `$display ("b is less than c ");`  
+   `end`  
+   `else begin`  
+     `$display ("None of the condition is true in if-else if blocks ");`  
+     `$display ("-------------------------------------------------");`  
+   `end`  
+   `$display ("Out of the conditional block ");`  
+ `end`  
+**output snippet**
+
+***
+In SystemVerilog, there are three versions of a conditional statement updated. These are -  
+### 4. unique if   
+This is the updated conditional statement. In a unique if conditional statement, unlike the if-else block the compiler read all the blocks sequentially whether the block is true or not.  
+**Syntax**  
+`unique if(condition)begin  `  
+`Statements;  `  
+`end   `  
+`else if (condition) begin  `  
+`Statements;  `  
+`end  `  
+`else if (condition) begin  `  
+`Statements;  `  
+`end  `  
+ 
+
+There are three possibilities to know the working of a unique if block and these are   
+**a. Only one expression is true**     
+If only the expression is true unique if conditional statement will work the same as the basic if else block. The output will be the, set of statements inside the block which is executing.  
+    
+**Example **- Below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
+size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditonal blocks (else if blocks).  
+
+` bit [4:0] a;`  
+ `int b ;`  
+ `initial begin`  
+ `unique if ($size(a)<$size(b))begin //True  `  
+   `$display ("Inside the unique if block");`  
+   `$display ("The size of a is smaller than b ");`  
+ `end`  
+ `else if ($size(a)==$size(b)) begin //False`  
+   `$display ("Inside the first else if block");`  
+   `$display ("Size of a = Size of b");`  
+ `end`  
+ `else if ($size(a)>$size(b))begin //False`  
+   `$display ("Inside the second else if block");`  
+   `$display ("Size of a is greater than the size of b ");`  
+ `end`  
+ `$display ("Out from conditional block ");`    
+`end`  
+
+**output snap**
+
+
+
+
+
+
+
+
+
+ 
+**b. None of the conditions is true**  
+**flow chart**  
+with else -  else block statements execute.  
+Example - Below example shows the execution of a set of statements inside the else block.  
+Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition and again condition becomes false. Then, the compiler at last will execute the else block.   
+The output will be the set of statements inside the else block.    
+**Code snippet**  
+
+`int  money;`  
+`initial begin`  
+  `money = 900;`  
+`$display ("Money in account  = %0d",money);`  
+`$display ("------------------------");`  
+`unique if (money>1000)begin //false`  
+  `$display ("Inside the unique if block ");`  
+  `$display ("can withdraw money  ");`  
+`end`  
+`else if (money==0)begin //false`  
+  `$display ("Inside the first else if block ");`  
+  `$display ("Account block .");`  
+`end`  
+`else`  
+  `$display ("Money withdrawal not allowed .");`  
+  `$display ("--------------------------------");`  
+  `$display ("Out of the conditional block ");  
+  
+`end`  
+
+
+
+**without else** - The compiler will read all the conditional blocks and gives a warning.  
+ **Example **-  Below example shows execute of code with the else block.    
+Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.   
+**code**           
+
+`initial begin` 
+  `a =13;`  
+  `$display ("The value of a = %0d", a);`  
+  `$display ("------------------------");`  
+  `unique if (a%2 == 0)begin  // false`  
+    `$display ("Inside the unique if block ");`  
+    `$display ("a is an even number");`  
+  `end`     
+  `else if (a <2)begin // false`  
+  `$display (" Inside the else if block ");`  
+  `$display ("a is smaller than 2 ");`  
+`end`  
+`else if (a !=13) begin // False`  
+  `$display ("Inside the second else if block ");`  
+  `$display ("a is not equal to 13 ");`     
+`end`  
+`$display ("Out of the conditional block ");`    
+
+`end`  
+
+  **output snap**
+
+
+**c. More than one condition is true**  
+The compiler read all conditional blocks sequential whether the expression is true or not. If more than one conditional block is valid, the output compiler executes the statements which are inside the first valid block. The output will be the set of statements inside the first true conditional block that also gives a warning.  
+**Example** - Here the variable declaration is "a" and value assigned to it is 12. The compiler will check the first condition, as (a%2==0) is true and then the compiler will execute the unique if conditional block statements. But, here the compiler task is not finished yet. The compiler will go to the next conditional blocks and will check the conditional expression. As both else, if the conditional statement is true because a >0 and a = 12. After that, the compiler will come out from the conditional blocks and executes the statements from the conditional block.  
+The output will be the set of statements of unique if block and one warning are also there.           
+**Code snippet**  
+`bit [3:0] a;`  
+`initial begin`  
+  `a = 12;`  
+  `$display ("The value of a = %0d", a);`  
+  `$display ("------------------------");`  
+  `unique if (a%2 ==0)begin`  
+    `$display ("Inside the unique if block ");`  
+    `$display ("a is an even number.");`  
+  `end`  
+  `else if (a>0)begin`  
+    `$display ("Inside the first else if block ");`  
+    `$display ("a is a positive number");`  
+  `end`  
+  `else if (a ==12)begin`  
+    `$display ("Inside the second else if block ");`  
+    `$display ("Value of a =12");`  
+  `end`  
+  `$display ("Out from the conditional blocks");`  
+  `$display ("---------------------------------");`    
+
+`end`    
+ 
+**Output snap**  
+
+
+
+**Uniqueif v/s if** 
+|S.No|uniqueif|if|
+|:----|:-------|:--|
+|1.|
+
+
+
+
+
+### 5.unique0if  
+Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
+**Syntax**  
+`unique0if(condition)begin  `  
+`Statements;  `  
+`end   `  
+`else if (condition) begin  `  
+`Statements;  `  
+`end  `  
+`else if (condition) begin  `  
+`Statements;  `  
+`end  `  
+
+**Example** - Below example show the working of unique if condition.  
+Here, the variable declared is age and the value assigned to it is 17. The compiler will check all the conditional expression and as we can see all the conditional expression is false. So, as the output, after simulation, there will be a set of statements which are out from the conditional block.   
+
+
+`int  age;`  
+`initial begin`  
+  `age = 17;`  
+  `$display ("The age of the person = %0d ",age);`  
+  `$display ("----------------------------------");`  
+`unique0 if(age >18)begin // false`  
+    `$display ("Inside the unique 0 if block ");`  
+    `$display ("Eligible for voting");`  
+  `end`  
+  `else if(age>30) begin //false`  
+    `$display ("Inside the first else if block ");`  
+    `$display ("Eligible as candidate for PM election in India ");`  
+  `end`  
+  `else if(age ==10)begin // false`  
+    `$display ("Inside the second else if block ");`  
+    `$display ("Wait for 8 years more. ");`    
+`end`  
+`$display ("Out from the conditional block ");`  
+
+`end`  
+
+**output snap**
+
+***
+
+### 6.priority if   
+priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. Below explanation will give a clear picture of how the priority if block work.
+**Syntax**  
+`priority if (cond_expression)begin  `  
+`Statements;  `  
+`end  `  
+`else if (cond_expression)begin  `  
+`Statements;  `  
+`end  `  
+`-------`  
+`else begin //(optional) `  
+`Statements ;`  
+`end `  
+
+
+
+
+
+
+
+To get the clarity of working on priority if, three conditions are specified and these are -    
+**a. only one conditional expression is true**   
+ When only one condition is true, the priority if block is as same as the if else if ... block.  
+
+**Example**  
+Here, there are three variables declared a,b, and c. The default size of the int data type is 32 bits and the byte is 8 bits. $bit() is the default function of System Verilog which will give the size of the variable. The value assign to a=10 ,b=12 and c =13. First, the priority if the block expression is false because the value of a is not equal to the size of a (12 != 32) and then the compiler will check the next statement. The first else if the condition is true because both a and c are of the same data type.  
+As the output, the execution of statements inside the first else if block.  
+It is just the same as the if else if block.  
+**Code**    
    
-![if else](https://user-images.githubusercontent.com/110412468/187091007-fc64d39f-d642-4014-bb67-3f0bfb3be242.png)
+`int a;`  
+`byte b;`  
+`int c;`  
+`initial begin`  
+ `$display ("The default size of a = ",$bits(a));`  
+ `$display ("The default size of b = ",$bits(b));`  
+ `$display ("The default size of c = ",$bits(c));`  
+ `$display ("-----------------------------------");`  
+ `a = 10; //assign value`  
+ `b= 12;  // assign value`  
+ `c=13;   // assign value`  
+ `priority if (a == $bits(a))begin //false`  
+   `$display ("Inside the priority if block");`  
+   `$display ("Here , value assign to a = default size of a ");`  
+  `end` 
+ `else if ($bits(a)== $bits(c))begin //true`  
+   `$display ("Inside the first else if block ");`  
+   `$display ( " Default size of a = default size of c ");`  
+ `end`  
+ `else if (a>b)begin //false`  
+   `$display ("Inside the second else if block ");`  
+   `$display ("value of a is greater than b ");`  
+ `end`  
+ `$display ("-----------------------------");`  
+`$display ("Out from the block ");`  
+`end`  
+
+**Output snap**  
 
 
-**Lab link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else/if_else_code.sv  
+**b. More than one conditional expression is true**  
+The compiler will check the conditional expression sequentially. It will execute all the statements and after simulation, the output will be a set of statements inside the first true conditional block with no warning.  
+**Example** - Here, the variable is a,b and c and value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it and comes out from the conditional block. The output will be the set of statements inside the first true else if block with no warning.  
+**Code** 
 
-**lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else/if_else_code_output.log  
 
+`int a,b,c;`  
+`initial begin`  
+  `a = 10;`  
+  `b =20;`  
+  `c = 30;`  
+`$display ( "The value of a =%0d  b = %0d  c = %0d ", a,b,c);`  
+`$display ("-----------------------------------------------");`  
+`priority if (a>b)begin //false`  
+  `$display ("Inside the priority if block ");`  
+  `$display (" a <b");`  
+`end`  
+`else if ( b <c )begin //true`  
+  `$display ("Inside the first else if block");`  
+  `$display ("b<c");`  
+`end`  
+`else if (a <c )begin //true`  
+  `$display ("Inside the second else if block ");`  
+  `$display ( "a < c ");`  
+`end`  
+`$display ("Out from the conditional block ");`  
+`end`  
 
+**output snap** 
+
+**c.none of the condition is true**  
+
+**c1. without else**  
+When none of the conditional expressions is true, the compiler will come out from the conditional blocks and execute the statements which are out from the conditional blocks.  
+**Example** - Here, there are three conditional expressions. The compiler checks the conditional expression because all are false. Then, the output will be the set of statements out from the block.    
+
+`int bill;`  
+`initial begin`  
+  `bill = 6000; // assign the value`  
+  `$display ("Total bill = %0d",bill);`  
+  `$display ("------------------------");`  
+  `priority if (bill < 1000)begin // false`  
+    `$display ("Inside the priority if ");`  
+    `$display ("No discount");`  
+  `end`  
+  `else if (bill ==8000)begin //false`  
+    `$display ("Inside the first else if block ");`  
+    `$display ("10% discount available ");`  
+  `end`  
+  `else if (bill >8000)begin // false`  
+    `$display ("Inside the second else if block ");`  
+    `$display ("15% discount available");`  
+  `end`  
+`$display ("Out from the conditional block");`  
+`$display ("Do more shopping for more discount ......");`  
+
+`end`  
+
+**c2.with else**  
+When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
+**Example** - In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.    
+
+`int bill;`  
+`initial begin`  
+  `bill = 6000; // assign the value`  
+  `$display ("Total bill = %0d",bill);`  
+  `$display ("------------------------");`  
+  `priority if (bill < 1000)begin // false`  
+    `$display ("Inside the priority if ");`  
+    `$display ("No discount");`  
+  `end`  
+  `else if (bill ==8000)begin //false`  
+    `$display ("Inside the first else if block ");`  
+    `$display ("10 percent  discount available ");`  
+  `end`  
+  `else if (bill >8000)begin // false`  
+    `$display ("Inside the second else if block ");`  
+    `$display ("15 percent discount available");`  
+  `end`  
+  `else begin`  
+    `$display ("Inside the else block ");`  
+    `$display ("5 percent discount available ");`  
+  `end`  
+  `$display ("Out from the conditional block");`  
+  `$display ("Do more shopping for more discount ......");`  
+
+`end`  
+
+**output snippet**  
 
 
 ***
-
-### 3. if else ladder 
-
-This statement is used by giving multiple conditional statements. These statements are 'if elseif elseif .... else' . First, the compiler checks the 'if 'condition and executes it if it is true or if it is false, it will jump to the else if condition and execute, and so on, at last, it will come to the else condition. 
-
-**Syntax** -   
-`              if(condition)begin  `  
-              `Statements;  `  
-              `end   `  
-              `else if (condition)begin  `    
-              `Statements;   `  
-              `end  `  
-              `else if(condition)begin  `    
-              `Statements;  `  
-              `end   `  
-               `...  `  
-               `...  `  
-              `else begin  `  
-              `Statements;  `  
-              `end  `    
-  
-![if else ladder](https://user-images.githubusercontent.com/110412468/187091020-c234a3d2-860a-41b5-8f25-d00f43b559ed.png)
+###  Difference between conditional statements  
+|S.No.|Condition| if elseif |unique if|unique0 if|priority if|
+|:-----|:-------|:----------|:--------|:----------|:----------|
+| 1.| only one conditional expression is true|execute the set of statements inside the true conditional block |execute the set of statements inside the true conditional block |execute the set of statements inside the true conditional block |execute the set of statements inside the true conditional block |
+|2.|more than one conditional expression is true|executes the first true conditional block statements, no warning display |executes the first true conditional block statements, a warning display |executes the first true conditional block statements, a warning display |executes the first true conditional block statements, no warning display | 
+|3.|none of the conditional expressions is true without else |execute the statements out from the conditional block, no warning display |execute the statements out from the conditional block, a warning display |execute the statements out from the conditional block, no warning display |execute the statements out from the conditional block, a warning display | 
+|:---|:---|:-----|:-----|:----|
 
 
-**lab link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_code.sv  
 
-**lab output link** 
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_output.log  
+***  
+## Purpose of warning    
+The unique if, unique0 if and priority if are the updated versions of if-else conditional statements in the system Verilog. These conditional statements display the warning which helps to detect the dead code or unused conditional statements. 
 
 
-***
-There are three new conditional statements are introduced in the system Verilog. These are -
+### Dead code  
+Dead code is code that doesn’t have any effect on your simulation or synthesis. Examples of dead code are signals that are never used or conditions that are never triggered.
 
-*  unique if 
-*  unique0 if 
-*  priority if 
+Dead code does not bother the simulator or the synthesis tool. However, it consumes the mental energy of anybody reading the code. People will try to figure out the purpose of a given statement and it may take a while before they realize that they are dealing with a dead code. This makes it more expensive to review code and reuse code. In general, the dead code is a form of technical debt that should be avoided.  
 
 ***
 
-### 4. unique if
-This statement is the same as the if condition statement when only one condition is true in the whole code. 
-
-If more than the conditions are true this statement executes the first one which is true, gives the output, and will not write any error only write the warning(that more than one statement is true).
-If all the conditions are false, it will not display any error but will display a warning.
-
-The below lab example will show how unique it is different from the traditional if else statement.
-
-  **Syntax** -  
-`               unique if(condition)begin  `  
-               `Statements;  `  
-               `end  `  
-               `else if(condition)begin  `  
-               `Statements;  `  
-               `end  `  
 
 
-![unique if](https://user-images.githubusercontent.com/110412468/187091031-091ce394-fad5-40de-b979-41adf896b462.png)
 
 
-**lab link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if_code.sv  
-
-**lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if_code_output.log  
 
 
-***
-### 5. unique0 if 
-
-This statement is the same as the if condition statement when only one condition is true in the whole code. 
-
-If more than one condition is true, it will read the first true condition and display the output without any error but display a warning (more than one condition is true ).
-If more than one condition is false, it will not display any output, not even any error and warning.
-
-The below examples will show the difference between the unique0 if and traditional if else condition.
-
-  **Syntax** -    
-`               unique0 if(condition)begin  `  
-               `Statements;  `  
-               `end  `  
-               `else if(condition)begin  `  
-               `Statements;  `  
-               `end  `  
- 
-* Note    
-Unique0_if is working in only EDA Playground not in the questasim tool version is 10.6C.       
-
-**lab links**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique0_if/unique0_if_code.sv  
- 
-
-**Output Screenshot**     
-![Untitled Diagram drawio](https://user-images.githubusercontent.com/106074838/187127684-87aed0d7-5452-4555-9303-b606e6064337.png)        
 
 
-***
-### 6. priority if 
 
-This is again an updated version of the if-else condition statement . When only one condition is true, it will work the same as the if else condition. 
 
-When more than one condition is true, it will execute the first true condition and gives the output and it will not display any error not even a warning.
-
-When all the conditions are false it will display only a warning. 
-
-The below example will properly show the working idea of the priority if condition.
-
-**Syntax** -    
-`               priority if(condition)begin  `  
-               `Statements;  `  
-               `end  `  
-               `else if(condition)begin  `  
-               `Statements;  `  
-               `end  `    
-
-              
- 
-![priority if](https://user-images.githubusercontent.com/110412468/187091052-fa23a4b7-ae46-47f0-a7bb-4c413b07a407.png)
-             
-  
-**lab link**   
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priority_if_code.sv  
-
-**lab output link**   
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priority_if_code_output.log
 
 
 ***
