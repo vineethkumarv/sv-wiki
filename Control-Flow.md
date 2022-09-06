@@ -677,6 +677,47 @@ In this example, if none of the case conditions is true or no default statement 
 
 **lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default_op.log
 
+### Using of range in case statement with the use of inside statement:    
+
+In this, the range is declared in the case statement with the use of an inside statement.    
+If we want to give a range value in a case statement, this will be done with help of an inside statement.
+
+**Syntax:**
+         
+           case(condition) inside
+           condition_1: Statements ;
+           condition_2: Statements ;
+           ...........
+           conditon_N: Statements;
+           endcase
+ 
+
+**Example:**
+
+              unique case(x) inside
+              [2:3] : $display("Value of x = %0d", x);
+              [4:5] :$display("Value of x = %0d",x);
+              [6:9] : $display("Value of x = %0d",x);
+              [8:9]  : $display("Value of x = %0d" ,x);
+              default : $display("Value of x is not found");
+              endcase
+
+In the above example, we are declaring a range in a case statement with the use of **inside** statement. In this, they will get the value from the declared range by the use of an inside statement.
+
+![Untitled Diagram-Page-6 drawio (4)](https://user-images.githubusercontent.com/110447788/188553176-7f10aa14-ce7c-4fb6-beca-acd912dd8fbb.png)
+
+In the above output, the case statement will get executed with the use of inside statement.The case statement will get executed and displays the output 'Value of x = 6'  
+
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range.sv
+
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range_op.log
+
+
+
+
+
+
+
 ### Use of Break statement inside the case statement:
 
 the break statement is not allowed to use within the loops. while using a break inside the case statement, an error has occurred.
