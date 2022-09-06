@@ -18,7 +18,7 @@ There are different types of conditional statements. These are --
 
 ![if  drawio](https://user-images.githubusercontent.com/110443268/188595474-4f9f67fe-e330-4a4e-9506-9b242cdd7553.png)  
  
-                               fig -2: if :flow chart
+                               fig -2: if : flow chart
 
   
 This conditional statement is used for the basic codes where only need to make a decision by giving one condition. If the expression in the condition is -  
@@ -33,7 +33,8 @@ This conditional statement is used for the basic codes where only need to make a
 _Note_  
 For more than one statement in conditional blocks, need to use begin end block. Statements inside the begin end block execute in a sequential manner.  
 
-**Example**  - Here, the variable declare is a and value assigned to it is 10. The compiler will check the if conditional expression and condition are true a=10. So, the compiler will execute the set of statements inside the if block.     
+**Example**  -  
+ Here, the variable declare is a and value assigned to it is 10. The compiler will check the if conditional expression and condition are true a=10. So, the compiler will execute the set of statements inside the if block.     
 
 **Code snippet** 
  
@@ -60,9 +61,9 @@ For more than one statement in conditional blocks, need to use begin end block. 
 
 ![_if else final  drawio](https://user-images.githubusercontent.com/110443268/188595760-4e4b095b-ddaa-48a2-8422-94ed1a650c09.png)  
 
-                                 fig -3 : Flow chart-if else 
+                                 fig -3: Flow chart-if else 
 
-This conditional statement has two sets of statements, one in the if block and another in the else block. If the expression in the `if` block is true, statements inside it will execute or if the expression is false, statements inside the `else` block will execute.  
+This conditional statement has two sets of statements, one in the if block and another in the else block. If the expression in the `if` block is true, statements inside it will execute, or if the expression is false, statements inside the `else` block will execute.  
 `else` block doesn't check any expression to execute statements inside it, it just executes after if the expression is false.  
 **Syntax**  
 `if(condition) begin  `  
@@ -78,7 +79,8 @@ This conditional statement has two sets of statements, one in the if block and a
 `StatementN;`  
 `end `  
   
-**Example**  - Here the variable declares a is byte type(signed) and the value assigned to it is -1. If conditional expression is false as a is less than 0.    
+**Example**  -   
+Here the variable declares a is byte type(signed) and the value assigned to it is -1. If the conditional expression is false as a is less than 0.    
 
 **Code Snippet**  
 
@@ -111,10 +113,11 @@ This conditional statement has two sets of statements, one in the if block and a
   
 <img width="474" alt="if else ladder paint - Copy" src="https://user-images.githubusercontent.com/110443268/188673326-e7a52794-eab7-4575-84a9-024fc1af51c6.png">
 
-                                   fig-3 :flow chart-if else ladder
+                                   fig-4 :flow chart-if else ladder
   
 This conditional statement helps us to decide among multiple options or expressions. As soon as the expression becomes true, the statements inside it execute and the remaining code blocks are bypassed. If none of the expressions is true, the else block executes.   
 else block is an optional block in the ladder. It is used to avoid confusion in code.  
+
 **Syntax**  
 
 `if(condition) begin  `  
@@ -139,8 +142,10 @@ else block is an optional block in the ladder. It is used to avoid confusion in 
 
 **Example**  
 **without else**  
+
 Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements which has valid condition expression. 
-**Example**  - Below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
+**Example**  -
+ Below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
 
 **Code Snippet**  
   
@@ -214,19 +219,20 @@ Here the example shows the execution of the else block.
 **output snippet**  
 <img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">  
                
-                          fig -4 : Output-if else ladder with else
+                          fig -5: Output-if else ladder with else
 
 **Lab link**  
 **Log file link**  
 
 ***
 In SystemVerilog, there are three versions of a conditional statement updated. These are -  
+
 ### 4. unique if  
 ![uniqueif1](https://user-images.githubusercontent.com/110443268/188621317-1834d950-0e08-459b-8c92-4226efee2f21.jpg)
 
-                   fig-4 :flow chart:unique_if 
+                   fig-5 :flow chart:unique_if 
    
-This is the updated conditional statement. In a unique if conditional statement, unlike the if-else block the compiler read all the blocks sequentially whether the block is true or not.  
+This is the updated conditional statement. In a unique, if conditional statement, unlike the if-else block the compiler read all the blocks sequentially whether the block is true or not.  
 **Syntax**  
 `unique if(condition)begin  `  
 `Statements;  `  
@@ -244,7 +250,7 @@ There are three possibilities to know the working of a unique if block and these
 If only the expression is true unique if conditional statement will work the same as the basic if else block. The output will be the, set of statements inside the block which is executing.  
     
 **Example**- Below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
-size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditonal blocks (else if blocks).   
+size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditional blocks (else if blocks).   
 
 **Code snippet**  
 
@@ -270,7 +276,7 @@ size() is a default function of SV, use to get the size of the given variable. T
 
 <img width="674" alt="5" src="https://user-images.githubusercontent.com/110443268/188663928-def7bbea-b5d0-4b5f-a8a2-75b543f7b6bf.png">  
         
-                                 fig -5 : unique if - only one true condition
+                                 fig -6: unique if - only one true condition
 
 **Lab link**  
 
@@ -285,7 +291,8 @@ with else -  else block statements execute.
                            fig -5 : with else unique if flow chart
  
 
-Example - Below example shows the execution of a set of statements inside the else block.  
+Example -  
+ Below example shows the execution of a set of statements inside the else block.  
 Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition and again condition becomes false. Then, the compiler at last will execute the else block.   
 The output will be the set of statements inside the else block.  
     
@@ -323,7 +330,8 @@ The output will be the set of statements inside the else block.
 **Flow chart** - Refer fig -4. 
  
   
- **Example**-  Below example shows execute of code with the else block.    
+ **Example**-  
+  Below example shows execute of code with the else block.    
 Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.  
    
 **Code Snippet**             
@@ -355,7 +363,7 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
 
 
 **c. More than one condition is true**  
-The compiler read all conditional blocks sequential whether the expression is true or not. If more than one conditional block is valid, the output compiler executes the statements which are inside the first valid block. The output will be the set of statements inside the first true conditional block that also gives a warning.  
+The compiler read all conditional blocks sequentially whether the expression is true or not. If more than one conditional block is valid, the output compiler executes the statements which are inside the first valid block. The output will be the set of statements inside the first true conditional block that also gives a warning.  
 **Example** - Here the variable declaration is "a" and value assigned to it is 12. The compiler will check the first condition, as (a%2==0) is true and then the compiler will execute the unique if conditional block statements. But, here the compiler task is not finished yet. The compiler will go to the next conditional blocks and will check the conditional expression. As both else, if the conditional statement is true because a >0 and a = 12. After that, the compiler will come out from the conditional blocks and executes the statements from the conditional block.  
 The output will be the set of statements of unique if block and one warning are also there.  
            
@@ -470,7 +478,7 @@ To get the clarity of working on priority if, three conditions are specified and
 **a. only one conditional expression is true**   
  When only one condition is true, the priority if block is as same as the if else if ... block.  
 
-**Example**  
+**Example**      
 Here, there are three variables declared a,b, and c. The default size of the int data type is 32 bits and the byte is 8 bits. $bit() is the default function of System Verilog which will give the size of the variable. The value assign to a=10 ,b=12 and c =13. First, the priority if the block expression is false because the value of a is not equal to the size of a (12 != 32) and then the compiler will check the next statement. The first else if the condition is true because both a and c are of the same data type.  
 As the output, the execution of statements inside the first else if block.  
 It is just the same as the if else if block.  
@@ -515,7 +523,7 @@ It is just the same as the if else if block.
 
 **b. More than one conditional expression is true**  
 The compiler will check the conditional expression sequentially. It will execute all the statements and after simulation, the output will be a set of statements inside the first true conditional block with no warning.  
-**Example** - Here, the variable is a,b and c and the value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it and comes out from the conditional block. The output will be the set of statements inside the first true else if blocked with no warning.  
+**Example** - Here, the variable is a,b and c, and the value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it, and comes out from the conditional block. The output will be the set of statements inside the first true else if blocked with no warning.  
  
 **Code Snippet**  
 
@@ -582,7 +590,7 @@ When none of the conditional expressions is true, the compiler will come out fro
   
 <img width="926" alt="12" src="https://user-images.githubusercontent.com/110443268/188670397-71956394-1333-44a2-afa6-9c74b4f45427.png">  
      
-                                    fig -12:Output - priority if -none of the condition is true without else
+                                    fig -12:Output - priority if -none of the conditions is true without else
 
 **lab link**  
 
@@ -595,7 +603,8 @@ When none of the conditional expressions is true, the compiler will come out fro
                          fig -8 : with else priority if
 
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
-**Example** - In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.  
+**Example** -      
+ In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.  
 **Code Snippet**      
 
      int bill;  
@@ -626,7 +635,7 @@ When none of the conditional expressions is true by default compiler to execute 
 **output snippet**    
 <img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">  
 
-                   fig -12:Output - priority if -none of the condition is true without else
+                   fig -12:Output - priority if -none of the conditions is true without else
 
 
 **Lab link**
@@ -646,7 +655,7 @@ When none of the conditional expressions is true by default compiler to execute 
 
 ***  
 ## Purpose of warning    
-The unique if, unique0 if and priority if are the updated versions of if-else conditional statements in the system Verilog. These conditional statements display the warning which helps to detect the dead code or unused conditional statements. 
+The unique if, unique0 if, and priority if are the updated versions of if-else conditional statements in the system Verilog. These conditional statements display the warning which helps to detect the dead code or unused conditional statements. 
 
 
 ### Dead code  
@@ -676,9 +685,9 @@ Dead code does not bother the simulator or the synthesis tool. However, it consu
 ## case 
  The case statement allows us to execute the code for the particular case expression. This will give the proper structure for a long code and decrease the complexity of the code also. 
   
- Case statement evaluates a given expression and based on the evaluated value(matching a certain condition), it executes the statements associated with it. Basically, it is used to perform different actions based on different conditions. 
+ A case statement evaluates a given expression and based on the evaluated value(matching a certain condition), it executes the statements associated with it. Basically, it is used to perform different actions based on different conditions. 
      
-A system verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statement must be grouped and be within the begin and end statement.
+A system verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statements must be grouped and within the begin and end statement.
 
 **Syntax:**
 
@@ -702,7 +711,7 @@ A system verilog case statement starts with the case keyword and ends with the e
             default : $display("Value of x is not find");
             endcase
 
-In the above example,  here expression= "x" should match with one of the case items. In this '01' value is given to the x so the case item '01' is match with the expression = 'x'. This will print the value of x = 1
+In the above example,  here expression= "x" should match one of the case items. In this '01' value is given to the x so the case item '01' is matched with the expression = 'x'. This will print the value of x = 1
 
 
 **Flowchart:**
@@ -720,7 +729,7 @@ In the above output, the case statement will execute for all conditions and be t
 **lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case_op.log
 
 ### Using of Case statement without default:   
-In case statement, default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
+In case statement, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
 If none of the given case conditions is true, the statement within the default statement is executed.    
 Execution will exit the case block without doing anything if none of the items matches the condition and a default statement is not given.
 
@@ -744,7 +753,7 @@ Execution will exit the case block without doing anything if none of the items m
               11 : $display("Value of x = %0b" ,x);  
               endcase  
 
-In the above example, a case statement is used without the default statement. Default statement is used when none of the conditions is true. In this one of the conditions is true and it will print the value of x is '1'    
+In the above example, a case statement is used without the default statement. A default statement is used when none of the conditions is true. In this one of the conditions is true and it will print that the value of x as '1'    
 In this example, if none of the case conditions is true or no default statement is not given then execution will exit the case block without doing anything 
 
 **Flowchart:**
@@ -753,7 +762,7 @@ In this example, if none of the case conditions is true or no default statement 
 
 ![Untitled Diagram-Page-2 drawio (8)](https://user-images.githubusercontent.com/110447788/188394434-8c70750b-388b-4537-a9d8-f7c7db2f507d.png)
 
- In the above output, case statement is used without default statement .In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
+ In the above output, the case statement is used without a default statement. In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default.sv
 
@@ -788,7 +797,7 @@ In the above example, we are declaring a range in a case statement with the use 
 
 ![Untitled Diagram-Page-6 drawio (4)](https://user-images.githubusercontent.com/110447788/188553176-7f10aa14-ce7c-4fb6-beca-acd912dd8fbb.png)
 
-In the above output, the case statement will get executed with the use of inside statement.The case statement will get executed and displays the output 'Value of x = 6'  
+In the above output, the case statement will get executed with the use of an inside statement. The case statement will get executed and displays the output 'Value of x = 6'  
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range.sv
 
@@ -866,8 +875,8 @@ In the above output, all the condition is false so the unique case gives a warni
              11  :$display("Value of x is =%0b" , x);
              endcase
 
-In the above example, unique case statement is used. In the unique case, if more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.    
-In these two condition is true, at the time of execution this will take the first matched condition and print the value of x = '0' with a warning(no error)
+In the above example, a unique case statement is used. In the unique case, if more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.    
+If these two condition is true, at the time of execution this will take the first matched condition and print the value of x = '0' with a warning(no error)
 
 **Flowchart:** 
 
@@ -878,7 +887,7 @@ In these two condition is true, at the time of execution this will take the firs
 ![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
 
  
-In the above output, a unique case statement is used. In this more than one condition is true, unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
+In the above output, a unique case statement is used. In this more than one condition is true, the unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique_case2.sv
 
@@ -887,7 +896,7 @@ In the above output, a unique case statement is used. In this more than one cond
 ### unique case with default statement
 
 In this, we will use the default statement inside the unique case statement.    
-If none of the conditions is true inside the unique case statement then default statement will get executed.
+If none of the conditions is true inside the unique case statement then the default statement will get executed.
 
 **Syntax:**
 
@@ -922,7 +931,7 @@ In this, if no conditions of the case statement are true then the default statem
 
 ![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
 
-In the above output, there is no condition is true inside the case statement, then default statement is get executed and prints the 'Value of x = 1'
+In the above output, there is no condition is true inside the case statement, then the default statement is get executed and prints the 'Value of x = 1'
 in the output.
 
 **lab link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default.sv
@@ -956,13 +965,13 @@ If all the conditions are true or more than one condition is true, it will read 
             01 : $display(" Value of x is = %0b", x);
             endcase
 
-In the above example, unique0 case is used. In these two condition is true and unique0 will read the first right or matched condition and prints the output Value of x = "1" with the warning.
+In the above example, the unique0 case is used. In these two conditions is true and unique0 will read the first right or matched condition and print the output Value of x = "1" with the warning.
 
 **Flowchart:**
 
 ![Untitled Diagram-Page-8 drawio (3)](https://user-images.githubusercontent.com/110447788/188300546-eb50b6e6-a5b8-44a4-94fe-e73f828b8e9a.png)
 
-In the above output, two conditions is true at a time this will make the case statement is not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
+In the above output, two conditions are true at a time this will make the case statement not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
 
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case.sv
@@ -989,7 +998,7 @@ In this type of case statement, if more than one case condition is true, it will
             7 : $display ("Found to be 7");
             endcase
 
-In the above example, priority case is used. In these two conditions is the right or matched condition so the priority case will read the first right condition and execute it and display the output with no warning and no error.
+In the above example, the priority case is used. In these two conditions is the right or matched condition so the priority case will read the first right condition and execute it and display the output with no warning and no error.
 
 **Flowchart:**
 
@@ -1208,7 +1217,7 @@ In the above example, a break statement is used inside the loop which terminates
 
 ![Untitled Diagram-Page-3 drawio (1)](https://user-images.githubusercontent.com/110447788/188300378-7daf30b0-062b-47c6-b265-bacb850aa0ed.png)
 
-In the above output, break statement is used inside the loop. The output shows the value for index 0 & 1, after this break statement is encountered and display "Calling break"
+In the above output, a break statement is used inside the loop. The output shows the value for index 0 & 1, after this break statement is encountered and display "Calling break"
 
 
 
@@ -1247,7 +1256,7 @@ In the above example, **continue** statement is used inside the loop that skips 
 
 ![Untitled Diagram-Page-4 drawio (3)](https://user-images.githubusercontent.com/110447788/188300409-2097d70f-2fc7-4105-9a32-d4fc9c24c9af.png)
 
-In the above output, continue statement is used inside the loop. The output shows the value for iterations 0 & 1 and for iteration 2  continue statement is encountered and displays "Calling continue" and after this jumps to the next iteration immediately and prints the value for iterations 3 & 4
+In the above output, the continue statement is used inside the loop. The output shows the value for iterations 0 & 1 and for iteration 2  continue statement is encountered and displays "Calling continue" and after this jumps to the next iteration immediately and prints the value for iterations 3 & 4
 
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue.sv
