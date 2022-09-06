@@ -355,7 +355,7 @@ The output will be the set of statements of unique if block and one warning are 
 
 ### 5.unique0if  
 
-![3](https://user-images.githubusercontent.com/110443268/188602340-ebcc4aea-41c4-4cd9-8ade-781e1273e5f8.png)
+![4](https://user-images.githubusercontent.com/110443268/188603356-2ca225d6-7ca4-4452-aee8-608adcfac4c7.png)
 
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
