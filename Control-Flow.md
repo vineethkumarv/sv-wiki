@@ -720,6 +720,45 @@ In the above output, a unique case statement is used. In this more than one cond
 
 **lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique2_case_op.log
 
+### unique case with default statement
+
+In this, we will use the default statement inside the unique case statement.    
+If none of the conditions is true inside the unique case statement then default statement will get executed.
+
+**Syntax:**
+
+           unique case(condition)
+           condition_1: Statements ;
+           condition_2: Statements ;
+           ............
+           conditon_N: Statements;
+           default :   Statements;
+           endcase 
+
+**Example:**
+
+            x = 2'b01;
+            unique case(x)
+            00 : $display("Value of x is =%0b" , x);
+           // 01 : $display("Value of x is =%0b" , x);
+            10 : $display("Value of x is =%0b" , x);
+            11 : $display("Value of x is =%0b" , x);
+            default  :$display("Value of x is =%0b" , x);
+            endcase
+
+In the above example, the default statement is used inside the unique case statement.  
+In this, if no conditions of the case statement are true then the default statement will get executed.
+
+![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
+
+In the above output, there is no condition is true inside the case statement, then default statement is get executed and prints the 'Value of x = 1'
+in the output.
+
+**lab link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default.sv
+
+**lab output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default_op.log
+
+
 
 ## uniuqe0 case
 
