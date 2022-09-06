@@ -733,12 +733,14 @@ In the above example,  here expression= "x" should match one of the case items. 
 **Flowchart:**
 
 ![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110447788/188362145-06201cc7-c397-4b46-b399-afb77f1dcc5e.png)
-                              Fig -10:
+
+                              Fig -10: case statement with default statement
 
 **Output snippet:**
 
 ![Untitled Diagram-Page-5 drawio (1)](https://user-images.githubusercontent.com/110447788/188300504-805f8740-4cf9-41c7-be1a-6c50a2986b45.png)
-                        Fig -14: Output   
+
+                        Fig -14: Output:  -  case statement in which one condition is true
 
 In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output
 
@@ -777,11 +779,14 @@ In this example, if none of the case conditions is true or no default statement 
 **Flowchart:**
 
 ![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110447788/188387249-68cd086b-7cd0-4ec8-97cc-5d96d511eeb8.png)
-                       Fig -11:
+                      
+                                       Fig -11: case statement without default statement
+
 **Output snippet:**
 
 ![Untitled Diagram-Page-2 drawio (8)](https://user-images.githubusercontent.com/110447788/188394434-8c70750b-388b-4537-a9d8-f7c7db2f507d.png)
-                       Fig -14:
+
+                       Fig -14: Output: case statement in which one condition is true
 
  In the above output, the case statement is used without a default statement. In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
 
@@ -819,7 +824,8 @@ In the above example, we are declaring a range in a case statement with the use 
 
 ![Untitled Diagram-Page-6 drawio (4)](https://user-images.githubusercontent.com/110447788/188553176-7f10aa14-ce7c-4fb6-beca-acd912dd8fbb.png)
 
-                       Fig -15: Output
+                       Fig -15: Output: case statement with range
+
 In the above output, the case statement will get executed with the use of an inside statement. The case statement will get executed and displays the output 'Value of x = 6'  
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range.sv
@@ -839,7 +845,8 @@ the break statement is not allowed to use within the loops. while using a break 
 **Output snippet:**
 
 ![Untitled Diagram-Page-4 drawio (4)](https://user-images.githubusercontent.com/110447788/188432824-01ddb873-d877-44d1-b65d-78116d2b6020.png)
-                     Fig - 16: Output
+
+                     Fig - 16: Output: break statement does not allow inside the case
 
 In the above output, a break statement is used inside the case statement. System Verilog does not allow the use of a break statement inside the case statement.  
 In this, an error will occur.
@@ -882,7 +889,7 @@ In the above example, the unique case statement is used. Here all the conditions
 
 ![Untitled Diagram-Page-6 drawio (3)](https://user-images.githubusercontent.com/110447788/188300519-a4af7834-91ea-44c9-9f11-c61f7497efbb.png)
 
-                             Fig - 17: Output
+                             Fig - 17: Output: In unique case, no conditions are true 
 
 In the above output, all the condition is false so the unique case gives a warning with no error.
 
@@ -910,13 +917,13 @@ If these two condition is true, at the time of execution this will take the firs
 
 ![Untitled Diagram-Page-2 (1)](https://user-images.githubusercontent.com/110447788/188631312-47429f33-e575-4f20-977b-2ee272f46f3a.jpg)
         
-                        Fig -12:
+                        Fig -12: unique case statement
 
 **Output snippet:**
 
 ![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
      
-                         Fig -18: Output
+                         Fig -18: Output: unique casein which more than one condition is true
  
 In the above output, a unique case statement is used. In this more than one condition is true, the unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
@@ -957,12 +964,13 @@ In this, if no conditions of the case statement are true then the default statem
 
 ![Untitled Diagram-Page-2 drawio (12)](https://user-images.githubusercontent.com/110447788/188619322-f903de48-023e-46cf-9f2d-38b42cfdb295.png)
 
-                      Fig -13:
+                      Fig -13:unique case with default statement
 
 **Output snippet:**
 
 ![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
-                        Fig - 19: Output
+
+                        Fig - 19: Output: no conditions are true, default statement get executed 
 
 In the above output, there is no condition is true inside the case statement, then the default statement is get executed and prints the 'Value of x = 1'
 in the output.
@@ -1004,13 +1012,15 @@ In the above example, the unique0 case is used. In these two conditions is true 
 
 ![Untitled Diagram-Page-8 drawio (3)](https://user-images.githubusercontent.com/110447788/188300546-eb50b6e6-a5b8-44a4-94fe-e73f828b8e9a.png)
 
-                                    Fig -20: Output
+                                    Fig -20: Output:unique0 case in which two conditions is true
+
 In the above output, two conditions are true at a time this will make the case statement not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
 
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case.sv
 
 **lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case_op.log
+
 ### 2. priority case 
 
 In this type of case statement, if more than one case condition is true, it will display the output without giving any error with no warning.
@@ -1038,11 +1048,12 @@ In the above example, the priority case is used. In these two conditions is the 
 
 ![Untitled Diagram-Page-2 (2)](https://user-images.githubusercontent.com/110447788/188636662-ce0699fb-568e-4863-b106-6f347b439e50.jpg)
 
-                            Fig -14:
+                            Fig -14: priority case satement
 **Output snippet:**
 
 ![Untitled Diagram-Page-9 drawio (4)](https://user-images.githubusercontent.com/110447788/188300570-d5fc26b9-0fac-4499-9cbf-8785c03171f2.png)
-                               Fig -21: Output
+
+                               Fig -21: Output: priority case statement in which two condition is true
 
 In the above output, more than one condition is true. priority case checks the first right matched condition, executes it, and displays the output without warning and error.
 
@@ -1171,6 +1182,9 @@ The below example will give an idea about the working of the while loop.
   
 ![while](https://user-images.githubusercontent.com/110412468/187091159-f86d2f2e-1e21-496f-83db-9f7a97133b80.png)
 
+**Flowchart:**
+![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
+
 
 **lab link** -
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
@@ -1193,6 +1207,9 @@ A do while loop first executes the statements once, and then checks for the cond
                 `end  `    
   
 ![do while](https://user-images.githubusercontent.com/110412468/187091173-640712aa-4016-4596-9905-db555569a1e9.png)
+
+**Flowchart:**
+![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
 
 
 **lab link** -  
