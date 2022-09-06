@@ -563,12 +563,6 @@ Dead code does not bother the simulator or the synthesis tool. However, it consu
      
 A system verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statement must be grouped and be within the begin and end statement.
 
-**Syntax:**The case statement allows us to execute the code for the particular case expression. This will give the proper structure for a long code and decrease the complexity of the code also. 
-  
- Case statement evaluates a given expression and based on the evaluated value(matching a certain condition), it executes the statements associated with it. Basically, it is used to perform different actions based on different conditions. 
-     
-A system verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statement must be grouped and be within the begin and end statement.
-
 **Syntax:**
 
 
