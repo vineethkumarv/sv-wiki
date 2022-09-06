@@ -176,7 +176,7 @@ Sequentially all the conditional expressions will be checked. The compiler will 
   
 **output snippet**  
 <img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
-                            fig -3 : output - if else ladder without else
+                            fig -3: output - if else ladder without else
 
 
 **Lab link**  
@@ -217,6 +217,7 @@ Here the example shows the execution of the else block.
     end  
   
 **output snippet**  
+
 <img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">  
                
                           fig -5: Output-if else ladder with else
@@ -232,7 +233,8 @@ In SystemVerilog, there are three versions of a conditional statement updated. T
 
                    fig-5 :flow chart:unique_if 
    
-This is the updated conditional statement. In a unique, if conditional statement, unlike the if-else block the compiler read all the blocks sequentially whether the block is true or not.  
+This is the updated conditional statement. In a unique, if conditional statement, unlike the if-else block the compiler read all the blocks sequentially whether the block is true or not. 
+ 
 **Syntax**  
 `unique if(condition)begin  `  
 `Statements;  `  
@@ -249,7 +251,8 @@ There are three possibilities to know the working of a unique if block and these
 **a. Only one expression is true**     
 If only the expression is true unique if conditional statement will work the same as the basic if else block. The output will be the, set of statements inside the block which is executing.  
     
-**Example**- Below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
+**Example**-   
+ The below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
 size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditional blocks (else if blocks).   
 
 **Code snippet**  
@@ -292,6 +295,7 @@ with else -  else block statements execute.
  
 
 Example -  
+
  Below example shows the execution of a set of statements inside the else block.  
 Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition and again condition becomes false. Then, the compiler at last will execute the else block.   
 The output will be the set of statements inside the else block.  
@@ -320,7 +324,7 @@ The output will be the set of statements inside the else block.
 **Output snap**    
 <img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">  
   
-                                    fig -6 :output - unique if -none of the condition is true with else
+                                    fig -6 : output - unique if -none of the conditions is true with else
 **Lab link**  
 
 **log file link**  
@@ -331,7 +335,7 @@ The output will be the set of statements inside the else block.
  
   
  **Example**-  
-  Below example shows execute of code with the else block.    
+  The below example shows execute of code with the else block.    
 Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.  
    
 **Code Snippet**             
@@ -407,6 +411,7 @@ The output will be the set of statements of unique if block and one warning are 
 
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
+
 `unique0if(condition)begin  `  
 `Statements;  `  
 `end   `  
@@ -456,10 +461,12 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
    
-                      fig -7 : priorityif
+                           fig -7: priorityif
 
 priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
+
 **Syntax**  
+
 `priority if (cond_expression)begin  `  
 `Statements;  `  
 `end  `  
@@ -478,7 +485,8 @@ To get the clarity of working on priority if, three conditions are specified and
 **a. only one conditional expression is true**   
  When only one condition is true, the priority if block is as same as the if else if ... block.  
 
-**Example**      
+**Example**  
+    
 Here, there are three variables declared a,b, and c. The default size of the int data type is 32 bits and the byte is 8 bits. $bit() is the default function of System Verilog which will give the size of the variable. The value assign to a=10 ,b=12 and c =13. First, the priority if the block expression is false because the value of a is not equal to the size of a (12 != 32) and then the compiler will check the next statement. The first else if the condition is true because both a and c are of the same data type.  
 As the output, the execution of statements inside the first else if block.  
 It is just the same as the if else if block.  
@@ -522,6 +530,7 @@ It is just the same as the if else if block.
 **log file link**  
 
 **b. More than one conditional expression is true**  
+
 The compiler will check the conditional expression sequentially. It will execute all the statements and after simulation, the output will be a set of statements inside the first true conditional block with no warning.  
 **Example** - Here, the variable is a,b and c, and the value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it, and comes out from the conditional block. The output will be the set of statements inside the first true else if blocked with no warning.  
  
@@ -635,7 +644,7 @@ When none of the conditional expressions is true by default compiler to execute 
 **output snippet**    
 <img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">  
 
-                   fig -12:Output - priority if -none of the conditions is true without else
+                   fig -12: Output - priority if -none of the conditions is true without else
 
 
 **Lab link**
