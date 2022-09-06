@@ -49,6 +49,9 @@ For more than one statement in conditional blocks, need to use begin end block. 
     end  
 
 **Output snippet**  
+<img width="655" alt="1" src="https://user-images.githubusercontent.com/110443268/188662446-3cac3305-0f7a-435c-808e-5ee433a19e4c.png">
+**Lab link**  
+**log file link**   
 ***
 
 ### 2. if else 
@@ -75,6 +78,8 @@ This conditional statement has two sets of statements, one in the if block and a
   
 **Example**  - Here the variable declares a is byte type(signed) and the value assigned to it is -1. If conditional expression is false as a is less than 0.    
 
+**Code Snippet**  
+
     byte a;  
     initial begin  
     a = -1;  
@@ -90,7 +95,12 @@ This conditional statement has two sets of statements, one in the if block and a
       $display ("Out of if else block");  
      end  
 
- 
+ **Output Snippet**  
+<img width="661" alt="2" src="https://user-images.githubusercontent.com/110443268/188662765-67e08d46-2cfa-428f-bdc5-c57f473c91bd.png">
+
+**Lab link**  
+**log file link**  
+
 
 ***
  
@@ -154,12 +164,17 @@ Sequentially all the conditional expressions will be checked. The compiler will 
         $display ("Out from ladder block");  
         end  
   
-**output snap**  
+**output snippet**  
+<img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">
+
+**Lab link**  
+**Log file link**    
  
 **with else**  
 When none of the conditional expressions is true, the compiler will execute the set of statements of the else block.   
 **Example**  
 Here the example shows the execution of the else block.   
+
 **Code snippet**  
 
     int a, b,c;  
@@ -189,7 +204,11 @@ Here the example shows the execution of the else block.
      $display ("Out of the conditional block ");  
     end  
   
-**output snippet**
+**output snippet**  
+<img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">
+
+**Lab link**  
+**Log file link**  
 
 ***
 In SystemVerilog, there are three versions of a conditional statement updated. These are -  
@@ -218,6 +237,8 @@ If only the expression is true unique if conditional statement will work the sam
 **Example**- Below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
 size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditonal blocks (else if blocks).  
 
+**Code snippet**  
+
      bit [4:0] a;  
      int b;  
      initial begin  
@@ -236,15 +257,12 @@ size() is a default function of SV, use to get the size of the given variable. T
       $display ("Out from conditional block ");    
       end  
 
-**output snap**
+**output snippet**
 
+<img width="674" alt="5" src="https://user-images.githubusercontent.com/110443268/188663928-def7bbea-b5d0-4b5f-a8a2-75b543f7b6bf.png">
 
-
-
-
-
-
-
+**Lab link**  
+**log file link**
 
  
 **b. None of the conditions is true**  
