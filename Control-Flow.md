@@ -194,8 +194,7 @@ Here the example shows the execution of the else block.
 ***
 In SystemVerilog, there are three versions of a conditional statement updated. These are -  
 ### 4. unique if  
-
-![uniqueif _withelsedrawio](https://user-images.githubusercontent.com/110443268/188596786-8c62b6bc-e712-410a-a000-7812c240ba2c.png)  
+![uniqueif1](https://user-images.githubusercontent.com/110443268/188621317-1834d950-0e08-459b-8c92-4226efee2f21.jpg)
 
                    fig-4 :flow chart:unique_if 
    
@@ -252,7 +251,8 @@ size() is a default function of SV, use to get the size of the given variable. T
  
 with else -  else block statements execute.
 
-**Flow Chart** - Refer fig -4 
+<img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">
+ 
 
 Example - Below example shows the execution of a set of statements inside the else block.  
 Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition and again condition becomes false. Then, the compiler at last will execute the else block.   
@@ -283,9 +283,7 @@ The output will be the set of statements inside the else block.
 
 **without else** - The compiler will read all the conditional blocks and gives a warning.  
 
-![uniqueif _withoutelse drawio](https://user-images.githubusercontent.com/110443268/188600001-3689459f-478f-422f-b7a5-606ac682e202.png)  
 
-                   fig - 5 :flow chart 
   
   
  **Example**-  Below example shows execute of code with the else block.    
@@ -355,7 +353,7 @@ The output will be the set of statements of unique if block and one warning are 
 
 ### 5.unique0if  
 
-![4](https://user-images.githubusercontent.com/110443268/188603356-2ca225d6-7ca4-4452-aee8-608adcfac4c7.png)
+<img width="520" alt="uniqueif1 drawio" src="https://user-images.githubusercontent.com/110443268/188624283-a7feb571-9299-4571-8faf-99250c065ceb.png">
 
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
@@ -515,6 +513,9 @@ When none of the conditional expressions is true, the compiler will come out fro
     end  
 
 **c2.with else**  
+
+<img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
+
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
 **Example** - In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.  
 **Code Snippet**      
