@@ -235,55 +235,56 @@ size() is a default function of SV, use to get the size of the given variable. T
 with else -  else block statements execute.  
 Example - Below example shows the execution of a set of statements inside the else block.  
 Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition and again condition becomes false. Then, the compiler at last will execute the else block.   
-The output will be the set of statements inside the else block.    
+The output will be the set of statements inside the else block.  
+    
 **Code snippet**  
 
-`int  money;`  
-`initial begin`  
-  `money = 900;`  
-`$display ("Money in account  = %0d",money);`  
-`$display ("------------------------");`  
-`unique if (money>1000)begin //false`  
-  `$display ("Inside the unique if block ");`  
-  `$display ("can withdraw money  ");`  
-`end`  
-`else if (money==0)begin //false`  
-  `$display ("Inside the first else if block ");`  
-  `$display ("Account block .");`  
-`end`  
-`else`  
-  `$display ("Money withdrawal not allowed .");`  
-  `$display ("--------------------------------");`  
-  `$display ("Out of the conditional block ");  
-  
-`end`  
+    int  money;  
+    initial begin  
+    money = 900;  
+    $display ("Money in account  = %0d",money);  
+    $display ("------------------------");  
+    unique if (money>1000)begin //false  
+      $display ("Inside the unique if block ");  
+      $display ("can withdraw money  ");  
+    end  
+    else if (money==0)begin //false  
+     $display ("Inside the first else if block ");  
+     $display ("Account block .");  
+    end  
+    else  
+    $display ("Money withdrawal not allowed .");  
+    $display ("--------------------------------");  
+    $display ("Out of the conditional block ");  
+    end  
 
-
+**Output snap**
 
 **without else** - The compiler will read all the conditional blocks and gives a warning.  
- **Example **-  Below example shows execute of code with the else block.    
-Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.   
-**code**           
+  
+ **Example**-  Below example shows execute of code with the else block.    
+Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.  
+   
+**Code Snippet**             
 
-`initial begin` 
-  `a =13;`  
-  `$display ("The value of a = %0d", a);`  
-  `$display ("------------------------");`  
-  `unique if (a%2 == 0)begin  // false`  
-    `$display ("Inside the unique if block ");`  
-    `$display ("a is an even number");`  
-  `end`     
-  `else if (a <2)begin // false`  
-  `$display (" Inside the else if block ");`  
-  `$display ("a is smaller than 2 ");`  
-`end`  
-`else if (a !=13) begin // False`  
-  `$display ("Inside the second else if block ");`  
-  `$display ("a is not equal to 13 ");`     
-`end`  
-`$display ("Out of the conditional block ");`    
-
-`end`  
+     initial begin 
+      a =13;  
+      $display ("The value of a = %0d", a);  
+      $display ("------------------------");  
+      unique if (a%2 == 0)begin  // false  
+        $display ("Inside the unique if block ");  
+        $display ("a is an even number");  
+      end     
+      else if (a <2)begin // false  
+       $display (" Inside the else if block ");  
+       $display ("a is smaller than 2 ");  
+      end  
+      else if (a !=13) begin // False  
+        $display ("Inside the second else if block ");  
+        $display ("a is not equal to 13 ");     
+      end    
+      $display ("Out of the conditional block ");    
+      end  
 
   **output snap**
 
@@ -291,38 +292,36 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
 **c. More than one condition is true**  
 The compiler read all conditional blocks sequential whether the expression is true or not. If more than one conditional block is valid, the output compiler executes the statements which are inside the first valid block. The output will be the set of statements inside the first true conditional block that also gives a warning.  
 **Example** - Here the variable declaration is "a" and value assigned to it is 12. The compiler will check the first condition, as (a%2==0) is true and then the compiler will execute the unique if conditional block statements. But, here the compiler task is not finished yet. The compiler will go to the next conditional blocks and will check the conditional expression. As both else, if the conditional statement is true because a >0 and a = 12. After that, the compiler will come out from the conditional blocks and executes the statements from the conditional block.  
-The output will be the set of statements of unique if block and one warning are also there.           
+The output will be the set of statements of unique if block and one warning are also there.  
+           
 **Code snippet**  
-`bit [3:0] a;`  
-`initial begin`  
-  `a = 12;`  
-  `$display ("The value of a = %0d", a);`  
-  `$display ("------------------------");`  
-  `unique if (a%2 ==0)begin`  
-    `$display ("Inside the unique if block ");`  
-    `$display ("a is an even number.");`  
-  `end`  
-  `else if (a>0)begin`  
-    `$display ("Inside the first else if block ");`  
-    `$display ("a is a positive number");`  
-  `end`  
-  `else if (a ==12)begin`  
-    `$display ("Inside the second else if block ");`  
-    `$display ("Value of a =12");`  
-  `end`  
-  `$display ("Out from the conditional blocks");`  
-  `$display ("---------------------------------");`    
-
-`end`    
+  
+     bit [3:0] a;  
+     initial begin  
+     a = 12;  
+     $display ("The value of a = %0d", a);  
+     $display ("------------------------");  
+     unique if (a%2 ==0)begin  
+       $display ("Inside the unique if block ");  
+       $display ("a is an even number.");  
+     end  
+     else if (a>0)begin  
+      $display ("Inside the first else if block ");  
+      $display ("a is a positive number");  
+      end  
+      else if (a ==12)begin  
+       $display ("Inside the second else if block ");  
+       $display ("Value of a =12");  
+      end  
+      $display ("Out from the conditional blocks");  
+      $display ("---------------------------------");    
+      end    
  
 **Output snap**  
 
 
 
-**Uniqueif v/s if** 
-|S.No|uniqueif|if|
-|:----|:-------|:--|
-|1.|
+
 
 
 
@@ -345,33 +344,32 @@ Unique0if is the same as unique if but unlike unique if does not report a violat
 Here, the variable declared is age and the value assigned to it is 17. The compiler will check all the conditional expression and as we can see all the conditional expression is false. So, as the output, after simulation, there will be a set of statements which are out from the conditional block.   
 
 
-`int  age;`  
-`initial begin`  
-  `age = 17;`  
-  `$display ("The age of the person = %0d ",age);`  
-  `$display ("----------------------------------");`  
-`unique0 if(age >18)begin // false`  
-    `$display ("Inside the unique 0 if block ");`  
-    `$display ("Eligible for voting");`  
-  `end`  
-  `else if(age>30) begin //false`  
-    `$display ("Inside the first else if block ");`  
-    `$display ("Eligible as candidate for PM election in India ");`  
-  `end`  
-  `else if(age ==10)begin // false`  
-    `$display ("Inside the second else if block ");`  
-    `$display ("Wait for 8 years more. ");`    
-`end`  
-`$display ("Out from the conditional block ");`  
-
-`end`  
+    int  age;  
+    initial begin  
+      age = 17;  
+      $display ("The age of the person = %0d ",age);  
+      $display ("----------------------------------");  
+    unique0 if(age >18)begin // false  
+        $display ("Inside the unique 0 if block ");  
+       $display ("Eligible for voting");  
+    end   
+    else if(age>30) begin //false  
+      $display ("Inside the first else if block ");  
+      $display ("Eligible as candidate for PM election in India ");  
+    end  
+    else if(age ==10)begin // false  
+      $display ("Inside the second else if block ");  
+      $display ("Wait for 8 years more. ");    
+    end  
+    $display ("Out from the conditional block ");  
+    end  
 
 **output snap**
 
 ***
 
 ### 6.priority if   
-priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. Below explanation will give a clear picture of how the priority if block work.
+priority if executes conditions sequentialy. It is also the same as if-else conditional statement but there are some differences. Below explanation will give a clear picture of how the priority if block work.
 **Syntax**  
 `priority if (cond_expression)begin  `  
 `Statements;  `  
@@ -386,11 +384,8 @@ priority if executes conditions sequentially. It is also the same as if-else con
 
 
 
-
-
-
-
-To get the clarity of working on priority if, three conditions are specified and these are -    
+To get the clarity of working on priority if, three conditions are specified and these are -  
+    
 **a. only one conditional expression is true**   
  When only one condition is true, the priority if block is as same as the if else if ... block.  
 
@@ -398,65 +393,66 @@ To get the clarity of working on priority if, three conditions are specified and
 Here, there are three variables declared a,b, and c. The default size of the int data type is 32 bits and the byte is 8 bits. $bit() is the default function of System Verilog which will give the size of the variable. The value assign to a=10 ,b=12 and c =13. First, the priority if the block expression is false because the value of a is not equal to the size of a (12 != 32) and then the compiler will check the next statement. The first else if the condition is true because both a and c are of the same data type.  
 As the output, the execution of statements inside the first else if block.  
 It is just the same as the if else if block.  
-**Code**    
+  
+**Code Snippet**      
    
-`int a;`  
-`byte b;`  
-`int c;`  
-`initial begin`  
- `$display ("The default size of a = ",$bits(a));`  
- `$display ("The default size of b = ",$bits(b));`  
- `$display ("The default size of c = ",$bits(c));`  
- `$display ("-----------------------------------");`  
- `a = 10; //assign value`  
- `b= 12;  // assign value`  
- `c=13;   // assign value`  
- `priority if (a == $bits(a))begin //false`  
-   `$display ("Inside the priority if block");`  
-   `$display ("Here , value assign to a = default size of a ");`  
-  `end` 
- `else if ($bits(a)== $bits(c))begin //true`  
-   `$display ("Inside the first else if block ");`  
-   `$display ( " Default size of a = default size of c ");`  
- `end`  
- `else if (a>b)begin //false`  
-   `$display ("Inside the second else if block ");`  
-   `$display ("value of a is greater than b ");`  
- `end`  
- `$display ("-----------------------------");`  
-`$display ("Out from the block ");`  
-`end`  
+    int a;  
+    byte b;  
+    int c;  
+    initial begin 
+     $display ("The default size of a = ",$bits(a));  
+     $display ("The default size of b = ",$bits(b));  
+     $display ("The default size of c = ",$bits(c));  
+     $display ("-----------------------------------");  
+     a = 10; //assign value  
+     b= 12;  // assign value  
+    c=13;   // assign value  
+    priority if (a == $bits(a))begin //false  
+     $display ("Inside the priority if block");  
+     $display ("Here , value assign to a = default size of a ");  
+    end 
+    else if ($bits(a)== $bits(c))begin //true  
+      $display ("Inside the first else if block ");  
+      $display ( " Default size of a = default size of c ");  
+    end  
+    else if (a>b)begin //false  
+      $display ("Inside the second else if block ");  
+      $display ("value of a is greater than b ");  
+    end  
+    $display ("-----------------------------");  
+    $display ("Out from the block ");  
+    end 
 
 **Output snap**  
 
 
 **b. More than one conditional expression is true**  
 The compiler will check the conditional expression sequentially. It will execute all the statements and after simulation, the output will be a set of statements inside the first true conditional block with no warning.  
-**Example** - Here, the variable is a,b and c and value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it and comes out from the conditional block. The output will be the set of statements inside the first true else if block with no warning.  
+**Example** - Here, the variable is a,b and c and the value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it and comes out from the conditional block. The output will be the set of statements inside the first true else if blocked with no warning.  
 **Code** 
 
 
-`int a,b,c;`  
-`initial begin`  
-  `a = 10;`  
-  `b =20;`  
-  `c = 30;`  
-`$display ( "The value of a =%0d  b = %0d  c = %0d ", a,b,c);`  
-`$display ("-----------------------------------------------");`  
-`priority if (a>b)begin //false`  
-  `$display ("Inside the priority if block ");`  
-  `$display (" a <b");`  
-`end`  
-`else if ( b <c )begin //true`  
-  `$display ("Inside the first else if block");`  
-  `$display ("b<c");`  
-`end`  
-`else if (a <c )begin //true`  
-  `$display ("Inside the second else if block ");`  
-  `$display ( "a < c ");`  
-`end`  
-`$display ("Out from the conditional block ");`  
-`end`  
+     int a,b,c;  
+     initial begin  
+      a = 10;  
+      b =20;  
+      c = 30;  
+     $display ( "The value of a =%0d  b = %0d  c = %0d ", a,b,c);  
+     $display ("-----------------------------------------------");  
+     priority if (a>b)begin //false  
+       $display ("Inside the priority if block ");  
+       $display (" a <b");  
+     end  
+    else if ( b <c )begin //true  
+      $display ("Inside the first else if block");  
+      $display ("b<c"); 
+    end  
+    else if (a <c )begin //true  
+      $display ("Inside the second else if block ");  
+      $display ( "a < c ");  
+    end  
+    $display ("Out from the conditional block ");  
+    end  
 
 **output snap** 
 
@@ -466,57 +462,58 @@ The compiler will check the conditional expression sequentially. It will execute
 When none of the conditional expressions is true, the compiler will come out from the conditional blocks and execute the statements which are out from the conditional blocks.  
 **Example** - Here, there are three conditional expressions. The compiler checks the conditional expression because all are false. Then, the output will be the set of statements out from the block.    
 
-`int bill;`  
-`initial begin`  
-  `bill = 6000; // assign the value`  
-  `$display ("Total bill = %0d",bill);`  
-  `$display ("------------------------");`  
-  `priority if (bill < 1000)begin // false`  
-    `$display ("Inside the priority if ");`  
-    `$display ("No discount");`  
-  `end`  
-  `else if (bill ==8000)begin //false`  
-    `$display ("Inside the first else if block ");`  
-    `$display ("10% discount available ");`  
-  `end`  
-  `else if (bill >8000)begin // false`  
-    `$display ("Inside the second else if block ");`  
-    `$display ("15% discount available");`  
-  `end`  
-`$display ("Out from the conditional block");`  
-`$display ("Do more shopping for more discount ......");`  
+**Code Snippet**
 
-`end`  
+     int bill;  
+    initial begin  
+     bill = 6000; // assign the value  
+    $display ("Total bill = %0d",bill);  
+    $display ("------------------------");  
+    priority if (bill < 1000)begin // false  
+      $display ("Inside the priority if ")  
+      $display ("No discount");  
+    end  
+    else if (bill ==8000)begin //false  
+      $display ("Inside the first else if block ");  
+      $display ("10% discount available ");  
+    end  
+    else if (bill >8000)begin // false  
+      $display ("Inside the second else if block ");  
+      $display ("15% discount available");  
+    end  
+    $display ("Out from the conditional block");  
+    $display ("Do more shopping for more discount ......");  
+    end  
 
 **c2.with else**  
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
-**Example** - In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.    
+**Example** - In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.  
+**Code Snippet**      
 
-`int bill;`  
-`initial begin`  
-  `bill = 6000; // assign the value`  
-  `$display ("Total bill = %0d",bill);`  
-  `$display ("------------------------");`  
-  `priority if (bill < 1000)begin // false`  
-    `$display ("Inside the priority if ");`  
-    `$display ("No discount");`  
-  `end`  
-  `else if (bill ==8000)begin //false`  
-    `$display ("Inside the first else if block ");`  
-    `$display ("10 percent  discount available ");`  
-  `end`  
-  `else if (bill >8000)begin // false`  
-    `$display ("Inside the second else if block ");`  
-    `$display ("15 percent discount available");`  
-  `end`  
-  `else begin`  
-    `$display ("Inside the else block ");`  
-    `$display ("5 percent discount available ");`  
-  `end`  
-  `$display ("Out from the conditional block");`  
-  `$display ("Do more shopping for more discount ......");`  
-
-`end`  
+     int bill;  
+     initial begin  
+     bill = 6000; // assign the value  
+     $display ("Total bill = %0d",bill);  
+     $display ("------------------------");  
+     priority if (bill < 1000)begin // false  
+      $display ("Inside the priority if ");  
+      $display ("No discount");  
+     end  
+     else if (bill ==8000)begin //false  
+      $display ("Inside the first else if block ");  
+      $display ("10 percent  discount available ");  
+    end  
+    else if (bill >8000)begin // false  
+     $display ("Inside the second else if block ");  
+     $display ("15 percent discount available");  
+    end  
+    else begin  
+     $display ("Inside the else block ");  
+     $display ("5 percent discount available ");  
+    end  
+    $display ("Out from the conditional block");  
+    $display ("Do more shopping for more discount ......");  
+    end  
 
 **output snippet**  
 
@@ -528,7 +525,7 @@ When none of the conditional expressions is true by default compiler to execute 
 | 1.| only one conditional expression is true|execute the set of statements inside the true conditional block |execute the set of statements inside the true conditional block |execute the set of statements inside the true conditional block |execute the set of statements inside the true conditional block |
 |2.|more than one conditional expression is true|executes the first true conditional block statements, no warning display |executes the first true conditional block statements, a warning display |executes the first true conditional block statements, a warning display |executes the first true conditional block statements, no warning display | 
 |3.|none of the conditional expressions is true without else |execute the statements out from the conditional block, no warning display |execute the statements out from the conditional block, a warning display |execute the statements out from the conditional block, no warning display |execute the statements out from the conditional block, a warning display | 
-|:---|:---|:-----|:-----|:----|
+
 
 
 
