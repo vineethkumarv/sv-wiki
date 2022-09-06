@@ -762,24 +762,35 @@ In the above output, two conditions is true at a time this will make the case st
 
 In this type of case statement, if more than one case condition is true, it will display the output without giving any error with no warning.
 
-**Syntax**-  
-`             priority case (condition)  `  
-             `case_1: statement;  `  
-             `----  `  
-             `case_N: statement ;  `  
-             `endcase `    
-  
-![priority case](https://user-images.githubusercontent.com/110412468/187091100-fcd0d4fd-7a9d-45cd-b5d7-37fb425f8d77.png)
+**Syntax :**  
 
-   
-**lab link** - 
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/priority_case/priority_case.sv
+             priority case(condition)
+             condition_1: Statements ;
+             condition_2: Statements ;
+             ...........
+             conditon_N: Statements;
+             endcase
 
-**lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/priority_case/priority_case_log.log
+### Example:      
+            pqr = 5;
+            priority case (pqr)
+            5 : $display ("Found to be 5");
+            5 : $display ("Again found to be 5");
+            7 : $display ("Found to be 7");
+            endcase
+
+In the above example, priority case is used. In these two conditions is the right or matched condition so the priority case will read the first right condition and execute it and display the output with no warning and no error.
+
+**Flowchart:**
 
 
-***
+![Untitled Diagram-Page-9 drawio (4)](https://user-images.githubusercontent.com/110447788/188300570-d5fc26b9-0fac-4499-9cbf-8785c03171f2.png)
+
+In the above output, more than one condition is true. priority case checks the first right matched condition, executes it, and displays the output without warning and error.
+
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case.sv
+
+**lab output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case_op.log    
 
 
 
