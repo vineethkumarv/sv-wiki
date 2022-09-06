@@ -49,7 +49,9 @@ For more than one statement in conditional blocks, need to use begin end block. 
     end  
 
 **Output snippet**  
-<img width="655" alt="1" src="https://user-images.githubusercontent.com/110443268/188662446-3cac3305-0f7a-435c-808e-5ee433a19e4c.png">
+<img width="655" alt="1" src="https://user-images.githubusercontent.com/110443268/188662446-3cac3305-0f7a-435c-808e-5ee433a19e4c.png">  
+
+                    fig -1 : Output - if
 **Lab link**  
 **log file link**   
 ***
@@ -96,7 +98,8 @@ This conditional statement has two sets of statements, one in the if block and a
      end  
 
  **Output Snippet**  
-<img width="661" alt="2" src="https://user-images.githubusercontent.com/110443268/188662765-67e08d46-2cfa-428f-bdc5-c57f473c91bd.png">
+<img width="661" alt="2" src="https://user-images.githubusercontent.com/110443268/188662765-67e08d46-2cfa-428f-bdc5-c57f473c91bd.png">      
+                   fig -2 : Output -if else
 
 **Lab link**  
 **log file link**  
@@ -167,7 +170,9 @@ Sequentially all the conditional expressions will be checked. The compiler will 
         end  
   
 **output snippet**  
-<img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">
+<img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
+                            fig -3 : output - if else ladder without else
+
 
 **Lab link**  
 **Log file link**    
@@ -177,7 +182,7 @@ When none of the conditional expressions is true, the compiler will execute the 
 **Example**  
 Here the example shows the execution of the else block.   
 
-**Code snippet**  
+**Code snippet**   
 
     int a, b,c;  
     initial begin  
@@ -207,7 +212,9 @@ Here the example shows the execution of the else block.
     end  
   
 **output snippet**  
-<img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">
+<img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">  
+               
+                          fig -4 : Output-if else ladder with else
 
 **Lab link**  
 **Log file link**  
@@ -237,7 +244,7 @@ There are three possibilities to know the working of a unique if block and these
 If only the expression is true unique if conditional statement will work the same as the basic if else block. The output will be the, set of statements inside the block which is executing.  
     
 **Example**- Below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
-size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditonal blocks (else if blocks).  
+size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditonal blocks (else if blocks).   
 
 **Code snippet**  
 
@@ -261,9 +268,12 @@ size() is a default function of SV, use to get the size of the given variable. T
 
 **output snippet**
 
-<img width="674" alt="5" src="https://user-images.githubusercontent.com/110443268/188663928-def7bbea-b5d0-4b5f-a8a2-75b543f7b6bf.png">
+<img width="674" alt="5" src="https://user-images.githubusercontent.com/110443268/188663928-def7bbea-b5d0-4b5f-a8a2-75b543f7b6bf.png">  
+        
+                                 fig -5 : unique if - only one true condition
 
 **Lab link**  
+
 **log file link**
 
  
@@ -300,9 +310,10 @@ The output will be the set of statements inside the else block.
     $display ("Out of the conditional block ");  
     end  
 
-**Output snap**  
-<img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">
-
+**Output snap**    
+<img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">  
+  
+                                    fig -6 :output - unique if -none of the condition is true with else
 **Lab link**  
 
 **log file link**  
@@ -337,7 +348,10 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
       end  
 
   **output snap**
-<img width="923" alt="7" src="https://user-images.githubusercontent.com/110443268/188665260-eac31337-b4b5-49cc-ba49-0fb853a8c2ea.png">
+<img width="923" alt="7" src="https://user-images.githubusercontent.com/110443268/188665260-eac31337-b4b5-49cc-ba49-0fb853a8c2ea.png">  
+ 
+                                    fig -7: output - unique if -none of the conditions is true without else
+
 
 
 **c. More than one condition is true**  
@@ -370,11 +384,11 @@ The output will be the set of statements of unique if block and one warning are 
  
 **Output snap**  
 
-<img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">
-
-
-
-
+<img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">  
+                
+                            fig -8: Output - unique if -more than one condition is true  
+**lab link**  
+**log file link**  
 
 
 ### 5.unique0if  
@@ -421,7 +435,9 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
     end  
 
 **output snippet**
-<img width="627" alt="9" src="https://user-images.githubusercontent.com/110443268/188665606-6b9f4e2f-016b-443a-84fe-c05a64d4dba6.png">
+<img width="627" alt="9" src="https://user-images.githubusercontent.com/110443268/188665606-6b9f4e2f-016b-443a-84fe-c05a64d4dba6.png">  
+
+                           fig-9 : Output-unique0 if
 
 **Lab link**  
 **Log file link**  
@@ -489,7 +505,9 @@ It is just the same as the if else if block.
     end 
 
 **Output snap**  
-<img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">
+<img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">  
+                 
+                       fig -10:Output-priority if -only one condition is true
 
 **lab link**  
 
@@ -524,7 +542,9 @@ The compiler will check the conditional expression sequentially. It will execute
     end  
 
 **output snap** 
-<img width="629" alt="11" src="https://user-images.githubusercontent.com/110443268/188669964-9897afe8-bdc5-42f6-ab98-773df939fa8e.png">
+<img width="629" alt="11" src="https://user-images.githubusercontent.com/110443268/188669964-9897afe8-bdc5-42f6-ab98-773df939fa8e.png">  
+ 
+                               fig -11: Output -priority if -more than one true condition
 **lab link**
 
 **log file link**  
@@ -559,7 +579,10 @@ When none of the conditional expressions is true, the compiler will come out fro
     end  
 
 **Output Snippet**  
-<img width="926" alt="12" src="https://user-images.githubusercontent.com/110443268/188670397-71956394-1333-44a2-afa6-9c74b4f45427.png">
+  
+<img width="926" alt="12" src="https://user-images.githubusercontent.com/110443268/188670397-71956394-1333-44a2-afa6-9c74b4f45427.png">  
+     
+                                    fig -12:Output - priority if -none of the condition is true without else
 
 **lab link**  
 
@@ -600,8 +623,11 @@ When none of the conditional expressions is true by default compiler to execute 
     $display ("Do more shopping for more discount ......");  
     end  
 
-**output snippet**  
-<img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">
+**output snippet**    
+<img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">  
+
+                   fig -12:Output - priority if -none of the condition is true without else
+
 
 **Lab link**
 
