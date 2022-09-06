@@ -46,7 +46,7 @@ Below diagram shows connecting design and testbench with the interface.
 
 ![interface Diagram](https://user-images.githubusercontent.com/110443214/187851196-6acc7850-4fb0-4960-9515-3a329d724e28.jpg)
  
-                        Figure.3.top module without interface
+                        Figure.3.top module with interface
 
 
 ---
@@ -69,7 +69,7 @@ Below figure shows the output of **and** **gate** using interface.
 
 ![interface 1png](https://user-images.githubusercontent.com/110443214/188553269-4f18c2b3-0670-4e98-b4a2-a0f86ace3ba5.png)
 
-                                         Figure.4.output for and gate with interface
+                                         Figure.4.output for ****and**** gate with interface
 
 ****Advantages of SystemVerilog interfaces****
 
