@@ -782,7 +782,8 @@ In this, if no conditions of the case statement are true then the default statem
 
 **Flowchart:**
 
-![Untitled Diagram-Page-2 drawio (9)](https://user-images.githubusercontent.com/110447788/188613923-0e0bcadb-dacd-4ab1-a603-afb9a5089706.png)
+![Untitled Diagram-Page-2 drawio (12)](https://user-images.githubusercontent.com/110447788/188619322-f903de48-023e-46cf-9f2d-38b42cfdb295.png)
+
 
 
 
