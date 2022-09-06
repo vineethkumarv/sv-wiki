@@ -911,6 +911,8 @@ In the above example, priority case is used. In these two conditions is the righ
 
 **Flowchart:**
 
+![Untitled Diagram-Page-2 (2)](https://user-images.githubusercontent.com/110447788/188636662-ce0699fb-568e-4863-b106-6f347b439e50.jpg)
+
 
 ![Untitled Diagram-Page-9 drawio (4)](https://user-images.githubusercontent.com/110447788/188300570-d5fc26b9-0fac-4499-9cbf-8785c03171f2.png)
 
