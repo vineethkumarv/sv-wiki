@@ -28,18 +28,20 @@ This conditional statement is used for the basic codes where only need to make a
 _Note_  
 For more than one statement in conditional blocks, need to use begin end block. Statements inside the begin end block execute in a sequential manner.  
 
-**Example**  - Here, the variable declare is a and value assigned to it is 10. The compiler will check the if conditional expression and condition is true a=10. So, the compiler will execute the set of statements inside the if block.     
-**Code snippet**  
-`bit [3:0]a;`   
-`initial begin`  
-    `a=10;`  
-   `$display ("Value of a = %0d",a);`  
-   `if (a==10)begin`  
-      `$display ("if expression is true , Successfully entered into the if block");`  
-      `$display ( "a is equal to 10 " );`  
-    `end`  
-     `$display("out of if block");`  
-  `end`  
+**Example**  - Here, the variable declare is a and value assigned to it is 10. The compiler will check the if conditional expression and condition are true a=10. So, the compiler will execute the set of statements inside the if block.     
+
+**Code snippet** 
+ 
+    bit [3:0]a;   
+    initial begin  
+     a=10;  
+    $display ("Value of a = %0d",a);  
+    if (a==10)begin  
+       $display ("if the expression is true, Successfully entered into the if block"); 
+       $display ( "a is equal to 10 " );  
+     end  
+      $display("out of if block");  
+    end  
 
 **Output snippet**  
 ***
@@ -61,22 +63,22 @@ This conditional statement has two sets of statements, one in the if block and a
 `StatementN;`  
 `end `  
   
-**Example**  - Here the variable declares a is byte type(signed) and the value assigned to it is -1. If conditional expression is false as a is less than 0  
+**Example**  - Here the variable declares a is byte type(signed) and the value assigned to it is -1. If conditional expression is false as a is less than 0.    
 
-`byte a;`  
-`initial begin`  
-  `a = -1;`  
-  `$display ("Assign the value of a = %0d ",a);`  
-  `$display("-------------------------------------");`  
-  `if(a>0)begin //false`    
-    `$display ("Successfully enters into if block");`    
-    `$display ("a is a positive number");`  
-    `$display ("----------------------------------");`   
-  `end`   
-  `else`  
-    `$display ("Number is negative");`  
-  `$display ("Out of if else block");`  
-`end`  
+    byte a;  
+    initial begin  
+    a = -1;  
+     $display ("Assign the value of a = %0d ",a);  
+     $display("-------------------------------------");  
+     if(a>0)begin //false    
+       $display ("Successfully enters into if block");    
+       $display ("a is a positive number");  
+       $display ("----------------------------------");   
+      end   
+      else  
+       $display ("Number is negative");  
+      $display ("Out of if else block");  
+     end  
 
  
 
@@ -112,31 +114,33 @@ else block is an optional block in the ladder. It is used to avoid confusion in 
 Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements which has valid condition expression. 
 **Example**  - Below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
 
-
-`int a,b,c;`  
-`initial begin`  
- `a = 10;`  
- `b = 12;`  
- `c = 13;`  
- `$display ("Assign the value of a = %0d , b= %0d , c =%0d  " ,a,b,c);`  
- `$display ("------------------------------------------------------");`  
- `if (a>b)begin //false`    
-   `$display ("Successfully enters into if block ");`  
-   `$display ("Value of a < b");`  
-   `$display ("----------------------------------");`  
- `end`  
- `else if (b<c)begin //true`  
-   `$display ("Successfully enters into else if block ");`  
-   `$display ("value of b<c");`  
-   `$display ("----------------------------------------------------");`  
-   `end`  
-   `else if (c<0) begin //false`    
-     `$display ("Successfully enters into second elseif block ");`  
-     `$display ("c is a negative number ");`  
-     `$display ("--------------------------------------------");`  
-   `end`  
-   `$display ("Out from ladder block");`  
- `end`  
+**Code Snippet**  
+  
+         int a,b,c;  
+         initial begin    
+         a = 10;      
+         b = 12;   
+         c = 13;   
+         $display ("Assign the value of a = %0d , b= %0d , c =%0d  " ,a,b,c);    
+         $display ("------------------------------------------------------");    
+         if (a>b)begin //false      
+           $display ("Successfully enters into if block ");  
+           $display ("Value of a < b");  
+           $display ("----------------------------------");    
+          end    
+         else if (b<c)begin //true    
+           $display ("Successfully enters into else if block ");  
+           $display ("value of b<c");  
+           $display ("----------------------------------------------------");  
+          end    
+          else if (c<0) begin //false    
+            $display ("Successfully enters into second elseif block ");  
+           $display ("c is a negative number ");    
+           $display ("--------------------------------------------");  
+         end    
+        $display ("Out from ladder block");  
+        end  
+  
 **output snap**  
  
 **with else**  
@@ -145,32 +149,33 @@ When none of the conditional expressions is true, the compiler will execute the 
 Here the example shows the execution of the else block.   
 **Code snippet**  
 
-`int a, b,c;`  
-`initial begin`  
- `a = -12;`  
- `b = 12;`  
- `c = 10;`  
- `$display ("Assign the value of a =%0d  b = %0d  c = %0d ", a,b,c);`  
- `$display ("------------------------------------------------------");`  
- `if (a>0) //false condition`    
- `begin`   
- `$display ("Entered into if block ");`  
- `$display ("a is a negative number");`  
- `end`  
- `else if (a==0) begin  // false condition`  
-   `$display ("Entered into first elseif block ");`  
-   `$display ("a is a negative number ");`  
- `end`  
-   `else if (b<c)begin // false condition`  
-     `$display ("Entered into second else if block ");`  
-     `$display ("b is less than c ");`  
-   `end`  
-   `else begin`  
-     `$display ("None of the condition is true in if-else if blocks ");`  
-     `$display ("-------------------------------------------------");`  
-   `end`  
-   `$display ("Out of the conditional block ");`  
- `end`  
+    int a, b,c;  
+    initial begin  
+    a = -12;  
+    b = 12;  
+    c = 10;  
+    $display ("Assign the value of a =%0d  b = %0d  c = %0d ", a,b,c);  
+    $display ("------------------------------------------------------");  
+    if (a>0) //false condition    
+    begin`   
+    $display ("Entered into if block ");  
+    $display ("a is a negative number");  
+    end  
+     else if (a==0) begin  // false condition  
+       $display ("Entered into first elseif block ");  
+       $display ("a is a negative number ");  
+     end  
+     else if (b<c)begin // false condition  
+       $display ("Entered into second else if block ");  
+       $display ("b is less than c ");  
+      end  
+      else begin  
+       $display ("None of the condition is true in if-else if blocks ");  
+       $display ("-------------------------------------------------");  
+     end  
+     $display ("Out of the conditional block ");  
+    end  
+  
 **output snippet**
 
 ***
