@@ -105,6 +105,8 @@ This conditional statement has two sets of statements, one in the if block and a
 ***
  
 ### 3. if else ladder   
+  
+<img width="474" alt="if else ladder paint - Copy" src="https://user-images.githubusercontent.com/110443268/188673326-e7a52794-eab7-4575-84a9-024fc1af51c6.png">
 
                                    fig-3 :flow chart-if else ladder
   
@@ -269,7 +271,8 @@ size() is a default function of SV, use to get the size of the given variable. T
  
 with else -  else block statements execute.
 
-<img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">
+<img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">  
+                           fig -5 : with else unique if flow chart
  
 
 Example - Below example shows the execution of a set of statements inside the else block.  
@@ -306,7 +309,7 @@ The output will be the set of statements inside the else block.
 
 **without else** - The compiler will read all the conditional blocks and gives a warning.  
 
-
+**Flow chart** - Refer fig -4. 
  
   
  **Example**-  Below example shows execute of code with the else block.    
@@ -374,10 +377,11 @@ The output will be the set of statements of unique if block and one warning are 
 
 
 
-
 ### 5.unique0if  
 
 <img width="520" alt="uniqueif1 drawio" src="https://user-images.githubusercontent.com/110443268/188624283-a7feb571-9299-4571-8faf-99250c065ceb.png">
+
+                   fig -6 :unique0_if  
 
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
@@ -428,6 +432,8 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
    
+                      fig -7 : priorityif
+
 priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
 **Syntax**  
 `priority if (cond_expression)begin  `  
@@ -562,6 +568,8 @@ When none of the conditional expressions is true, the compiler will come out fro
 **c2.with else**  
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
+      
+                         fig -8 : with else priority if
 
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
 **Example** - In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.  
