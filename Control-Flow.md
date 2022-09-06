@@ -484,6 +484,7 @@ It is just the same as the if else if block.
 
 **Output snap**  
 <img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">
+
 **lab link**  
 
 **log file link**  
@@ -525,8 +526,8 @@ The compiler will check the conditional expression sequentially. It will execute
 **c.none of the condition is true**  
 
 **c1. without else**  
-When none of the conditional expressions is true, the compiler will come out from the conditional blocks and execute the statements which are out from the conditional blocks.  
-**Example** - Here, there are three conditional expressions. The compiler checks the conditional expression because all are false. Then, the output will be the set of statements out from the block.    
+When none of the conditional expressions is true, the compiler will come out from the conditional blocks and execute the statements which are out from the conditional block and display a warning.   
+**Example** - Here, there are three conditional expressions. The compiler checks the conditional expression because all are false. Then, the output will be the set of statements out from the block and display a warning.    
 
 **Code Snippet**
 
