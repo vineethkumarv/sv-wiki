@@ -396,7 +396,10 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 ***
 
 ### 6.priority if   
-priority if executes conditions sequentialy. It is also the same as if-else conditional statement but there are some differences. Below explanation will give a clear picture of how the priority if block work.
+
+<img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
+   
+priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
 **Syntax**  
 `priority if (cond_expression)begin  `  
 `Statements;  `  
