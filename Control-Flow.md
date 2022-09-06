@@ -291,13 +291,14 @@ size() is a default function of SV, use to get the size of the given variable. T
 with else -  else block statements execute.
 
 <img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">  
-                           fig -5 : with else unique if flow chart
+
+                           fig -6: with else unique if flow chart
  
 
 Example -  
 
- Below example shows the execution of a set of statements inside the else block.  
-Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition and again condition becomes false. Then, the compiler at last will execute the else block.   
+ The below example shows the execution of a set of statements inside the else block.  
+Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition, and again condition becomes false. Then, the compiler at last will execute the else block.   
 The output will be the set of statements inside the else block.  
     
 **Code snippet**  
@@ -334,7 +335,8 @@ The output will be the set of statements inside the else block.
 **Flow chart** - Refer fig -4. 
  
   
- **Example**-  
+ **Example**- 
+ 
   The below example shows execute of code with the else block.    
 Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.  
    
@@ -407,7 +409,7 @@ The output will be the set of statements of unique if block and one warning are 
 
 <img width="520" alt="uniqueif1 drawio" src="https://user-images.githubusercontent.com/110443268/188624283-a7feb571-9299-4571-8faf-99250c065ceb.png">
 
-                   fig -6 :unique0_if  
+                       fig -7 :unique0_if  
 
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
@@ -422,7 +424,9 @@ Unique0if is the same as unique if but unlike unique if does not report a violat
 `Statements;  `  
 `end  `  
 
-**Example** - Below example show the working of unique if condition.  
+**Example** -
+
+ The below example show the working of unique if condition.  
 Here, the variable declared is age and the value assigned to it is 17. The compiler will check all the conditional expression and as we can see all the conditional expression is false. So, as the output, after simulation, there will be a set of statements which are out from the conditional block.   
 
 **Code Snippet**  
@@ -461,7 +465,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
    
-                           fig -7: priorityif
+                           fig -8: priorityif
 
 priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
 
@@ -609,7 +613,7 @@ When none of the conditional expressions is true, the compiler will come out fro
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
       
-                         fig -8 : with else priority if
+                         fig -9: with else priority if
 
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
 **Example** -      
