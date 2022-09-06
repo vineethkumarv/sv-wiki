@@ -114,6 +114,9 @@ It does not mean that the rest of the child threads will be automatically discar
 
           Fig-4: The output of the fork join_none block.
 
+![Untitled Diagram drawio (14)](https://user-images.githubusercontent.com/110509375/188595513-afc52f87-fdf7-43d5-9211-f5da54b4cde0.png)
+
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
 
 Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.log
