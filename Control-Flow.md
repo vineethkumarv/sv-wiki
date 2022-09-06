@@ -298,7 +298,7 @@ The output will be the set of statements inside the else block.
     end  
 
 **Output snap**  
-<img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">
+<img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">
 
 **Lab link**  
 
@@ -366,9 +366,8 @@ The output will be the set of statements of unique if block and one warning are 
       end    
  
 **Output snap**  
-<img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">
 
-
+<img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">
 
 
 
@@ -484,13 +483,16 @@ It is just the same as the if else if block.
     end 
 
 **Output snap**  
+<img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">
+**lab link**  
 
+**log file link**  
 
 **b. More than one conditional expression is true**  
 The compiler will check the conditional expression sequentially. It will execute all the statements and after simulation, the output will be a set of statements inside the first true conditional block with no warning.  
 **Example** - Here, the variable is a,b and c and the value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it and comes out from the conditional block. The output will be the set of statements inside the first true else if blocked with no warning.  
-**Code** 
-
+ 
+**Code Snippet**  
 
      int a,b,c;  
      initial begin  
@@ -515,6 +517,10 @@ The compiler will check the conditional expression sequentially. It will execute
     end  
 
 **output snap** 
+<img width="629" alt="11" src="https://user-images.githubusercontent.com/110443268/188669964-9897afe8-bdc5-42f6-ab98-773df939fa8e.png">
+**lab link**
+
+**log file link**  
 
 **c.none of the condition is true**  
 
@@ -544,6 +550,13 @@ When none of the conditional expressions is true, the compiler will come out fro
     $display ("Out from the conditional block");  
     $display ("Do more shopping for more discount ......");  
     end  
+
+**Output Snippet**  
+<img width="926" alt="12" src="https://user-images.githubusercontent.com/110443268/188670397-71956394-1333-44a2-afa6-9c74b4f45427.png">
+
+**lab link**  
+
+**log file link**  
 
 **c2.with else**  
 
@@ -579,7 +592,11 @@ When none of the conditional expressions is true by default compiler to execute 
     end  
 
 **output snippet**  
+<img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">
 
+**Lab link**
+
+**Log file link**
 
 ***
 ###  Difference between conditional statements  
