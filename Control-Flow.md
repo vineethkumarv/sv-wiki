@@ -198,26 +198,26 @@ There are three possibilities to know the working of a unique if block and these
 **a. Only one expression is true**     
 If only the expression is true unique if conditional statement will work the same as the basic if else block. The output will be the, set of statements inside the block which is executing.  
     
-**Example **- Below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
+**Example**- Below example shows the three conditional blocks unique if, else if, else if. Here, there are two variables declared one is bit type and the other is int type.  
 size() is a default function of SV, use to get the size of the given variable. The size of a is 5 and b is 32 (default size if int data type ). So, the size of b is greater than a, which means unique if the conditional expression is true. Then, the compiler jumps from the conditional block code and does not execute other conditonal blocks (else if blocks).  
 
-` bit [4:0] a;`  
- `int b ;`  
- `initial begin`  
- `unique if ($size(a)<$size(b))begin //True  `  
-   `$display ("Inside the unique if block");`  
-   `$display ("The size of a is smaller than b ");`  
- `end`  
- `else if ($size(a)==$size(b)) begin //False`  
-   `$display ("Inside the first else if block");`  
-   `$display ("Size of a = Size of b");`  
- `end`  
- `else if ($size(a)>$size(b))begin //False`  
-   `$display ("Inside the second else if block");`  
-   `$display ("Size of a is greater than the size of b ");`  
- `end`  
- `$display ("Out from conditional block ");`    
-`end`  
+     bit [4:0] a;  
+     int b;  
+     initial begin  
+     unique if ($size(a)<$size(b))begin //True    
+       $display ("Inside the unique if block");  
+       $display ("The size of a is smaller than b ");  
+     end  
+     else if ($size(a)==$size(b)) begin //False  
+        $display ("Inside the first else if block");  
+        $display ("Size of a = Size of b");  
+      end  
+      else if ($size(a)>$size(b))begin //False  
+        $display ("Inside the second else if block");  
+        $display ("Size of a is greater than the size of b ");  
+      end  
+      $display ("Out from conditional block ");    
+      end  
 
 **output snap**
 
