@@ -746,6 +746,12 @@ In the above output, all the condition is false so the unique case gives a warni
 In the above example, unique case statement is used. In the unique case, if more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.    
 In these two condition is true, at the time of execution this will take the first matched condition and print the value of x = '0' with a warning(no error)
 
+**Flowchart:** 
+
+![Untitled Diagram-Page-2 (1)](https://user-images.githubusercontent.com/110447788/188631312-47429f33-e575-4f20-977b-2ee272f46f3a.jpg)
+
+
+
 ![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
 
  
