@@ -297,12 +297,17 @@ The output will be the set of statements inside the else block.
     $display ("Out of the conditional block ");  
     end  
 
-**Output snap**
+**Output snap**  
+<img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">
+
+**Lab link**  
+
+**log file link**  
 
 **without else** - The compiler will read all the conditional blocks and gives a warning.  
 
 
-  
+ 
   
  **Example**-  Below example shows execute of code with the else block.    
 Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.  
@@ -329,6 +334,7 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
       end  
 
   **output snap**
+<img width="923" alt="7" src="https://user-images.githubusercontent.com/110443268/188665260-eac31337-b4b5-49cc-ba49-0fb853a8c2ea.png">
 
 
 **c. More than one condition is true**  
@@ -360,6 +366,7 @@ The output will be the set of statements of unique if block and one warning are 
       end    
  
 **Output snap**  
+<img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">
 
 
 
@@ -388,6 +395,7 @@ Unique0if is the same as unique if but unlike unique if does not report a violat
 **Example** - Below example show the working of unique if condition.  
 Here, the variable declared is age and the value assigned to it is 17. The compiler will check all the conditional expression and as we can see all the conditional expression is false. So, as the output, after simulation, there will be a set of statements which are out from the conditional block.   
 
+**Code Snippet**  
 
     int  age;  
     initial begin  
@@ -409,7 +417,11 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
     $display ("Out from the conditional block ");  
     end  
 
-**output snap**
+**output snippet**
+<img width="627" alt="9" src="https://user-images.githubusercontent.com/110443268/188665606-6b9f4e2f-016b-443a-84fe-c05a64d4dba6.png">
+
+**Lab link**  
+**Log file link**  
 
 ***
 
