@@ -557,8 +557,110 @@ Dead code does not bother the simulator or the synthesis tool. However, it consu
 
 
 ## case 
-The case statement allows us to execute the code for the particular case expression. 
-This will give the proper structure for a long code and decrease the complexity of the code also.  
+ The case statement allows us to execute the code for the particular case expression. This will give the proper structure for a long code and decrease the complexity of the code also. 
+  
+ Case statement evaluates a given expression and based on the evaluated value(matching a certain condition), it executes the statements associated with it. Basically, it is used to perform different actions based on different conditions. 
+     
+A system verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statement must be grouped and be within the begin and end statement.
+
+**Syntax:**The case statement allows us to execute the code for the particular case expression. This will give the proper structure for a long code and decrease the complexity of the code also. 
+  
+ Case statement evaluates a given expression and based on the evaluated value(matching a certain condition), it executes the statements associated with it. Basically, it is used to perform different actions based on different conditions. 
+     
+A system verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statement must be grouped and be within the begin and end statement.
+
+**Syntax:**
+
+
+
+        case(condition)
+        condition_1: Statements ;
+        condition_2: Statements ;
+        ...........
+        conditon_N: Statements;
+        default   : Statements;
+        endcase
+
+### Example:         
+            x = 2'b01;
+            case(x)
+            00 : $display("Value of x = %0b", x);
+            01 : $display("Value of x = %0b",x);
+            10 : $display("Value of x = %0b",x);
+            11 : $display("Value of x = %0b" ,x);
+            default : $display("Value of x is not find");
+            endcase
+
+In the above example,  here expression= "x" should match with one of the case items. In this '01' value is given to the x so the case item '01' is match with the expression = 'x'. This will print the value of x = 1
+
+
+**Flowchart:**
+
+![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110447788/188362145-06201cc7-c397-4b46-b399-afb77f1dcc5e.png)
+
+
+
+![Untitled Diagram-Page-5 drawio (1)](https://user-images.githubusercontent.com/110447788/188300504-805f8740-4cf9-41c7-be1a-6c50a2986b45.png)
+
+In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output
+
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case.sv
+
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case_op.log
+
+### Using of Case statement without default:   
+In case statement, default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
+If none of the given case conditions is true, the statement within the default statement is executed.    
+Execution will exit the case block without doing anything if none of the items matches the condition and a default statement is not given.
+
+**Syntax:**
+
+            case(condition)  
+            condition_1: Statements ;   
+            condition_2: Statements ;  
+            ...........  
+            conditon_N: Statements;  
+            endcase  
+
+
+**Example:**
+ 
+              x = 2'b01;  
+              case(x)  
+              00 : $display("Value of x = %0b", x);  
+              01 : $display("Value of x = %0b",x);  
+              10 : $display("Value of x = %0b",x);  
+              11 : $display("Value of x = %0b" ,x);  
+              endcase  
+
+In the above example, a case statement is used without the default statement. Default statement is used when none of the conditions is true. In this one of the conditions is true and it will print the value of x is '1'    
+In this example, if none of the case conditions is true or no default statement is not given then execution will exit the case block without doing anything 
+
+**Flowchart:**
+
+![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110447788/188387249-68cd086b-7cd0-4ec8-97cc-5d96d511eeb8.png)
+
+![Untitled Diagram-Page-2 drawio (8)](https://user-images.githubusercontent.com/110447788/188394434-8c70750b-388b-4537-a9d8-f7c7db2f507d.png)
+
+ In the above output, case statement is used without default statement .In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
+
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default.sv
+
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default_op.log
+
+### Use of Break statement inside the case statement:
+
+the break statement is not allowed to use within the loops. while using a break inside the case statement, an error has occurred.
+
+![Untitled Diagram-Page-4 drawio (4)](https://user-images.githubusercontent.com/110447788/188432824-01ddb873-d877-44d1-b65d-78116d2b6020.png)
+ 
+In the above output, a break statement is used inside the case statement. System Verilog does not allow the use of a break statement inside the case statement.  
+In this, an error will occur.
+
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case.sv
+
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case_op.log
+ 
 There are three updates for the case statement in the system Verilog and these are -  
 *  unique case  
 *  unique0 case  
