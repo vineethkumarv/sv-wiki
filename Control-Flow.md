@@ -1043,26 +1043,6 @@ In the above output, break statement is used inside the loop. The output shows t
 
 **lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break_op.log
 
-
-
-##  Blocking and non-blocking statement - 
-* ### Blocking statement  
-Blocking statements are assigned with =. It will execute serially in procedural blocks. Blocking statements are executed in a block in a sequential manner but when more than two procedural blocks, these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks.
-
-**Syntax** -  
-`            variable_name(LHS) = expression(RHS);`  
-
-For a better understanding of Blocking statements go through the following lab  
-  
-![block1](https://user-images.githubusercontent.com/110412468/187091224-dd73b66b-3071-4db9-9f46-7e30cc406eeb.png)
-
-
-**lab link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap.sv
-
-**lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap_log.log
-
 ### continue:
 
 The continue statement is used to skip the current iteration of a loop. We can use the continue statement inside any type of loops such as for, while, and do-while loop. Basically, continue statements are used in situations when we want to continue the loop but do not want the particular iteration in the loop.
@@ -1100,6 +1080,28 @@ In the above output, continue statement is used inside the loop. The output show
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue.sv
 
 **lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue_sv_op.log
+
+
+
+
+##  Blocking and non-blocking statement - 
+* ### Blocking statement  
+Blocking statements are assigned with =. It will execute serially in procedural blocks. Blocking statements are executed in a block in a sequential manner but when more than two procedural blocks, these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks.
+
+**Syntax** -  
+`            variable_name(LHS) = expression(RHS);`  
+
+For a better understanding of Blocking statements go through the following lab  
+  
+![block1](https://user-images.githubusercontent.com/110412468/187091224-dd73b66b-3071-4db9-9f46-7e30cc406eeb.png)
+
+
+**lab link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap.sv
+
+**lab output link**
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap_log.log
+
 
 
 ***
