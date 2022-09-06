@@ -740,7 +740,7 @@ In the above example,  here expression= "x" should match one of the case items. 
 
 ![Untitled Diagram-Page-5 drawio (1)](https://user-images.githubusercontent.com/110447788/188300504-805f8740-4cf9-41c7-be1a-6c50a2986b45.png)
 
-                        Fig -14: Output:  -  case statement in which one condition is true
+                        Fig -14: Output: case statement in which one condition is true
 
 In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output
 
@@ -846,7 +846,7 @@ the break statement is not allowed to use within the loops. while using a break 
 
 ![Untitled Diagram-Page-4 drawio (4)](https://user-images.githubusercontent.com/110447788/188432824-01ddb873-d877-44d1-b65d-78116d2b6020.png)
 
-                     Fig - 16: Output: break statement does not allow inside the case
+                     Fig - 16: Output: break statement is not allowed inside the case
 
 In the above output, a break statement is used inside the case statement. System Verilog does not allow the use of a break statement inside the case statement.  
 In this, an error will occur.
@@ -889,7 +889,7 @@ In the above example, the unique case statement is used. Here all the conditions
 
 ![Untitled Diagram-Page-6 drawio (3)](https://user-images.githubusercontent.com/110447788/188300519-a4af7834-91ea-44c9-9f11-c61f7497efbb.png)
 
-                             Fig - 17: Output: In unique case, no conditions are true 
+                             Fig - 17: Output: In a unique case, no conditions are true 
 
 In the above output, all the condition is false so the unique case gives a warning with no error.
 
@@ -923,7 +923,7 @@ If these two condition is true, at the time of execution this will take the firs
 
 ![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
      
-                         Fig -18: Output: unique casein which more than one condition is true
+                         Fig -18: Output: unique case in which more than one condition is true
  
 In the above output, a unique case statement is used. In this more than one condition is true, the unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
@@ -970,7 +970,7 @@ In this, if no conditions of the case statement are true then the default statem
 
 ![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
 
-                        Fig - 19: Output: no conditions are true, default statement get executed 
+                        Fig - 19: Output: no conditions are true, default statement gets executed 
 
 In the above output, there is no condition is true inside the case statement, then the default statement is get executed and prints the 'Value of x = 1'
 in the output.
@@ -983,7 +983,7 @@ in the output.
 
 ## uniuqe0 case
 
-In unique0 case, if all the case condition is false, it will not display a warning with no error.   
+In the unique0 case, if all the case condition is false, it will not display a warning with no error.   
 If all the conditions are true or more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.
 
 **Syntax :**
@@ -1012,7 +1012,7 @@ In the above example, the unique0 case is used. In these two conditions is true 
 
 ![Untitled Diagram-Page-8 drawio (3)](https://user-images.githubusercontent.com/110447788/188300546-eb50b6e6-a5b8-44a4-94fe-e73f828b8e9a.png)
 
-                                    Fig -20: Output:unique0 case in which two conditions is true
+                                    Fig -20: Output:unique0 case in which two conditions are true
 
 In the above output, two conditions are true at a time this will make the case statement not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
 
@@ -1048,12 +1048,12 @@ In the above example, the priority case is used. In these two conditions is the 
 
 ![Untitled Diagram-Page-2 (2)](https://user-images.githubusercontent.com/110447788/188636662-ce0699fb-568e-4863-b106-6f347b439e50.jpg)
 
-                            Fig -14: priority case satement
+                            Fig -14: priority case statement
 **Output snippet:**
 
 ![Untitled Diagram-Page-9 drawio (4)](https://user-images.githubusercontent.com/110447788/188300570-d5fc26b9-0fac-4499-9cbf-8785c03171f2.png)
 
-                               Fig -21: Output: priority case statement in which two condition is true
+                               Fig -21: Output: priority case statement in which two conditions are true
 
 In the above output, more than one condition is true. priority case checks the first right matched condition, executes it, and displays the output without warning and error.
 
@@ -1183,6 +1183,7 @@ The below example will give an idea about the working of the while loop.
 ![while](https://user-images.githubusercontent.com/110412468/187091159-f86d2f2e-1e21-496f-83db-9f7a97133b80.png)
 
 **Flowchart:**
+
 ![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
 
 
@@ -1209,6 +1210,7 @@ A do while loop first executes the statements once, and then checks for the cond
 ![do while](https://user-images.githubusercontent.com/110412468/187091173-640712aa-4016-4596-9905-db555569a1e9.png)
 
 **Flowchart:**
+
 ![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
 
 
@@ -1265,13 +1267,15 @@ In the above example, a break statement is used inside the loop which terminates
 
 ![Untitled Diagram-Page-1 drawio (5)](https://user-images.githubusercontent.com/110447788/188305065-221831fc-8e53-48dd-b9de-da445a1a4861.png)
 
+                                      Fig- : break statement
 
 **Output snippet:**
 
 
 ![Untitled Diagram-Page-3 drawio (1)](https://user-images.githubusercontent.com/110447788/188300378-7daf30b0-062b-47c6-b265-bacb850aa0ed.png)
 
-                          Fig - : Output
+                          Fig - : Output: break statement gets executed at iteration 2
+
 In the above output, a break statement is used inside the loop. The output shows the value for index 0 & 1, after this break statement is encountered and display "Calling break"
 
 
@@ -1307,12 +1311,13 @@ In the above example, **continue** statement is used inside the loop that skips 
 
 ![Untitled Diagram-Page-1 drawio (6)](https://user-images.githubusercontent.com/110447788/188305077-aca9f33b-5b5c-4c4c-a674-a262c6c6cf7c.png)
 
-                                        Fig - :
+                                        Fig - : continue statement
 
 **Output snippet:**
 
 ![Untitled Diagram-Page-4 drawio (3)](https://user-images.githubusercontent.com/110447788/188300409-2097d70f-2fc7-4105-9a32-d4fc9c24c9af.png)
-                                  Fig - : Output
+
+                                  Fig - : Output: continue statement executes at iteration 2 
 
 In the above output, the continue statement is used inside the loop. The output shows the value for iterations 0 & 1 and for iteration 2  continue statement is encountered and displays "Calling continue" and after this jumps to the next iteration immediately and prints the value for iterations 3 & 4
 
