@@ -780,6 +780,12 @@ If none of the conditions is true inside the unique case statement then default 
 In the above example, the default statement is used inside the unique case statement.  
 In this, if no conditions of the case statement are true then the default statement will get executed.
 
+**Flowchart:**
+
+![Untitled Diagram-Page-2 drawio (9)](https://user-images.githubusercontent.com/110447788/188613923-0e0bcadb-dacd-4ab1-a603-afb9a5089706.png)
+
+
+
 ![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
 
 In the above output, there is no condition is true inside the case statement, then default statement is get executed and prints the 'Value of x = 1'
