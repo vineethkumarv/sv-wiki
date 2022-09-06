@@ -15,7 +15,12 @@ Conditional statements are used to check whether the statements in the blocks ar
 
 There are different types of conditional statements. These are --  
 ### 1. if without else  
-flow chart -  
+
+![if  drawio](https://user-images.githubusercontent.com/110443268/188595474-4f9f67fe-e330-4a4e-9506-9b242cdd7553.png)  
+ 
+                               fig -2: if :flow chart
+
+  
 This conditional statement is used for the basic codes where only need to make a decision by giving one condition. If the expression in the condition is -  
 **true** - execute the statements in the block.  
 **false** - will not execute the statement.  
@@ -47,6 +52,11 @@ For more than one statement in conditional blocks, need to use begin end block. 
 ***
 
 ### 2. if else 
+
+![_if else final  drawio](https://user-images.githubusercontent.com/110443268/188595760-4e4b095b-ddaa-48a2-8422-94ed1a650c09.png)  
+
+                                 fig -3 : Flow chart-if else 
+
 This conditional statement has two sets of statements, one in the if block and another in the else block. If the expression in the `if` block is true, statements inside it will execute or if the expression is false, statements inside the `else` block will execute.  
 `else` block doesn't check any expression to execute statements inside it, it just executes after if the expression is false.  
 **Syntax**  
@@ -84,7 +94,10 @@ This conditional statement has two sets of statements, one in the if block and a
 
 ***
  
-### 3. if else ladder  
+### 3. if else ladder   
+
+                                   fig-3 :flow chart-if else ladder
+  
 This conditional statement helps us to decide among multiple options or expressions. As soon as the expression becomes true, the statements inside it execute and the remaining code blocks are bypassed. If none of the expressions is true, the else block executes.   
 else block is an optional block in the ladder. It is used to avoid confusion in code.  
 **Syntax**  
@@ -180,7 +193,12 @@ Here the example shows the execution of the else block.
 
 ***
 In SystemVerilog, there are three versions of a conditional statement updated. These are -  
-### 4. unique if   
+### 4. unique if  
+
+![uniqueif _withelsedrawio](https://user-images.githubusercontent.com/110443268/188596786-8c62b6bc-e712-410a-a000-7812c240ba2c.png)  
+
+                   fig-4 :flow chart:unique_if 
+   
 This is the updated conditional statement. In a unique if conditional statement, unlike the if-else block the compiler read all the blocks sequentially whether the block is true or not.  
 **Syntax**  
 `unique if(condition)begin  `  
@@ -231,8 +249,11 @@ size() is a default function of SV, use to get the size of the given variable. T
 
  
 **b. None of the conditions is true**  
-**flow chart**  
-with else -  else block statements execute.  
+ 
+with else -  else block statements execute.
+
+**Flow Chart** - Refer fig -4 
+
 Example - Below example shows the execution of a set of statements inside the else block.  
 Here, the variable is money, and the value assigned to the variable is 900. First conditional statements unique if will be false because money is less than 1000. Then, the compiler will check the else if condition and again condition becomes false. Then, the compiler at last will execute the else block.   
 The output will be the set of statements inside the else block.  
@@ -261,6 +282,11 @@ The output will be the set of statements inside the else block.
 **Output snap**
 
 **without else** - The compiler will read all the conditional blocks and gives a warning.  
+
+![uniqueif _withoutelse drawio](https://user-images.githubusercontent.com/110443268/188600001-3689459f-478f-422f-b7a5-606ac682e202.png)  
+
+                   fig - 5 :flow chart 
+  
   
  **Example**-  Below example shows execute of code with the else block.    
 Here, the variable is a and the value assigned to it is 13. Now, the compiler will check the condition sequentially. First, the unique if conditional expression will be checked. As  (a %2) is not equal to 0 so, this conditional expression becomes false. Then, the compiler will go to first else if block and as (a>2) again the conditional expression becomes false. Then, the compiler will check for the next else if block and as a is not equal to 13 again condition becomes false. At last, the compiler will jump from the conditional block and executes the statements outside the conditional blocks.  
@@ -328,6 +354,9 @@ The output will be the set of statements of unique if block and one warning are 
 
 
 ### 5.unique0if  
+
+![3](https://user-images.githubusercontent.com/110443268/188602340-ebcc4aea-41c4-4cd9-8ade-781e1273e5f8.png)
+
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
 `unique0if(condition)begin  `  
