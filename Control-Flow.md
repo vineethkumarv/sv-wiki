@@ -663,28 +663,63 @@ There are three updates for the case statement in the system Verilog and these a
 ***
 ### 1. unique case 
 
-In this, if all the case condition is false, it will display a warning (no match is found for the case statement ) with no error.
-If all the conditions are true or more than one is true, it will read the first right or matched case condition and will display the output with one warning and no error.
+In a unique case, if all the case condition is false, it will display a warning (no match is found for the case statement ) with no error.  
+If all the conditions are true or more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.
 
-**Syntax**-  
-`            unique case(condition)  `  
-            `condition_1: Statements ;  `  
-            `.......`  
-            `conditon_N:  Statements;  `  
-            `endcase  `    
-  
-![unique case](https://user-images.githubusercontent.com/110412468/187091083-c944fd23-383f-452b-a357-981b5895b491.png)
+**Syntax :**
+
+      unique case(condition)
+      condition_1: Statements ;
+      condition_2: Statements ;
+      ............
+      conditon_N: Statements;
+      endcase
+
+### Example:     
+           x = 2'b01;
+           unique case(x)
+           00 : $display(" Value of x is = %0b", x);
+           //01 : $display(" Value of x is = %0b", x);
+           10 : $display(" Value of x is = %0b", x);
+           11 : $display(" Value of x is = %0b", x);
+           endcase
+In the above example, the unique case statement is used. Here all the conditions are false, this will print the output with a warning and no error.
+
+**Flowchart:**
+
+![Untitled Diagram-Page-6 drawio (3)](https://user-images.githubusercontent.com/110447788/188300519-a4af7834-91ea-44c9-9f11-c61f7497efbb.png)
+
+In the above output, all the condition is false so the unique case gives a warning with no error.
 
 
-**lab link** 
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case.sv
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case.sv
 
-**lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case_log.log
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case_op.log
+
+
+**Example:**
+           
+             x = 2'b00;
+             unique case(x)
+             00 : $display("Value of x is =%0b" , x);
+             00 : $display("Value of x is =%0b" , x);
+             01 : $display("Value of x is =%0b" , x);
+             10  : $display("Value of x is =%0b" , x);
+             11  :$display("Value of x is =%0b" , x);
+             endcase
+
+In the above example, unique case statement is used. In the unique case, if more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.    
+In these two condition is true, at the time of execution this will take the first matched condition and print the value of x = '0' with a warning(no error)
+
+![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
+
  
+In the above output, a unique case statement is used. In this more than one condition is true, unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique_case2.sv
 
-     
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique2_case_op.log
+
 
 ***
 ### 2. priority case 
