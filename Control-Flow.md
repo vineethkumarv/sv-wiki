@@ -965,33 +965,45 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 
 ***
-### break & Continue
- 
-* break  
+### break 
 
-A break is used to terminate any loop. Generally, we use break after giving the condition in code using the if statement.
+A break statement is used to terminate the loop immediately. When a break statement is encountered inside a loop, the loop iteration stops there. Generally, we use break after giving the condition in code using the if statement.
 
-We can use break statements in any loop(for, while, do-while), for terminating the execution of a loop. It is always used inside the loop.
-  
-* continue 
+We can use break statements in any loop(for, foreach, forever, do-while, while, do-while,), for terminating the execution of a loop. It is always used inside the loop. The break statement ends the loop immediately when it is encountered.
 
-This statement is generally used for skipping a particular iteration in the loop. It is also used inside the loops.  
-Break will comes out of the loop completely but continue skips only the present iteration.
+**Syntax**:
 
-**Syntax** - `break;` / `continue;`   
+`break;`
 
-The below example will show, how to terminate the loop using the break statement.  
+### Example:     
+            foreach(array[i])
+            if(i==2)begin
+            $display("----Calling break----");
+            break;
+            end
 
-![break   continue](https://user-images.githubusercontent.com/110412468/187091194-76deb9e4-4a75-487d-bab3-d9cb12ef614f.png)
+In the above example, a break statement is used inside the loop which terminates the loop when condition is true. In this break is used at index 2 so that the loop stops at index 2 and comes out of the loop.
 
 
-**lab link** -  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue.sv
 
-**lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break_continue_log.log
+**Flowchart:**
 
-***
+![Untitled Diagram-Page-1 drawio (5)](https://user-images.githubusercontent.com/110447788/188305065-221831fc-8e53-48dd-b9de-da445a1a4861.png)
+
+
+
+
+
+![Untitled Diagram-Page-3 drawio (1)](https://user-images.githubusercontent.com/110447788/188300378-7daf30b0-062b-47c6-b265-bacb850aa0ed.png)
+
+In the above output, break statement is used inside the loop. The output shows the value for index 0 & 1, after this break statement is encountered and display "Calling break"
+
+
+
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break.sv
+
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break_op.log
+
 
 
 ##  Blocking and non-blocking statement - 
@@ -1011,6 +1023,45 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/b
 
 **lab output link**
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap_log.log
+
+### continue:
+
+The continue statement is used to skip the current iteration of a loop. We can use the continue statement inside any type of loops such as for, while, and do-while loop. Basically, continue statements are used in situations when we want to continue the loop but do not want the particular iteration in the loop.
+
+Using continue, we can skip the current iteration of a loop and jumps to the next iteration of the loop immediately
+
+**Syntax**:
+
+`continue;
+`
+###  Example:   
+            foreach(array[i])
+            begin
+            if(i==2)begin
+            $display("-----Calling Continue----");
+            continue;
+            end
+
+In the above example, **continue** statement is used inside the loop that skips the current iteration of a loop. In the following loop **continue** is used at index 2 so that the loop skips the particular iteration at index 2 and goes for the next iteration.    
+
+
+
+
+**Flowchart:**
+
+![Untitled Diagram-Page-1 drawio (6)](https://user-images.githubusercontent.com/110447788/188305077-aca9f33b-5b5c-4c4c-a674-a262c6c6cf7c.png)
+
+
+
+![Untitled Diagram-Page-4 drawio (3)](https://user-images.githubusercontent.com/110447788/188300409-2097d70f-2fc7-4105-9a32-d4fc9c24c9af.png)
+
+In the above output, continue statement is used inside the loop. The output shows the value for iterations 0 & 1 and for iteration 2  continue statement is encountered and displays "Calling continue" and after this jumps to the next iteration immediately and prints the value for iterations 3 & 4
+
+
+**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue.sv
+
+**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue_sv_op.log
+
 
 ***
 * ###  Non - blocking statement  
