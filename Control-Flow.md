@@ -1354,7 +1354,6 @@ In the do-while loop, first execute the condition once and then check whether th
                 `Statements;  `  
                 `end  `    
   
-![do while](https://user-images.githubusercontent.com/110412468/187091173-640712aa-4016-4596-9905-db555569a1e9.png)
 
 **Flowchart:**
 
