@@ -1,7 +1,9 @@
 # Loops
 A Loop is nothing but statements that need to be run more than once are included in the loop instead of writing the statements repeatedly. Loops will run multiple times based on conditional statements, If the condition is always true then it becomes an infinite loop and the system will hang.  
+ 
+![Untitled Diagram-Page-6 drawio (2)](https://user-images.githubusercontent.com/110412468/188841850-164cf527-9a88-49b6-acd8-01f4c6db9ff2.png)
 
-**loops fig**  
+                          Loops variations
 
 ## loops cheat sheet
 |S.No.|Loops_variants|Explanation|
