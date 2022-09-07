@@ -6,11 +6,11 @@
                          Figure.1 operators 
  
 
-Sr No. | |
--- | -- | --
-1 |  | Dimension of array declared before array name declaration
+Sr No. |-- |
+-- | -- | --  
+1 | Arithmetic operators [https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/operators-arithmetic-operators] | 
 2 |
-3 |
+3 [
 4 |
 
 
