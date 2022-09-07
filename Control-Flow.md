@@ -57,9 +57,10 @@ The below figure shows the output of if conditional statement.
                                   fig -1 : Output - if
 
 
-**GitHub Lab Code link** 
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if/if_code.sv 
  
-**GitHub Lab Output link**   
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if/if_code_log.log 
 
 
 
@@ -113,9 +114,10 @@ The below figure shows the output of if-else conditional statement.
       
                            fig -2 : Output -if else
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else/if_else.sv  
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else/if_else_log.log 
 
 
 ***
@@ -195,10 +197,12 @@ Sequentially all the conditional expressions will be checked. The compiler will 
                                     fig -3: output - if else ladder without else
 
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:-https://github.com/muneeb-mbytes/SystemVerilog_Course/tree/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_withoutelse  
 
-**GitHub Lab Output link**    
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_withoutelse/if_elseif_log.log    
  
+
 **b. with else**  
 When none of the conditional expressions is true, the compiler will execute the set of statements of the else block.   
 **Example**  
@@ -241,9 +245,9 @@ The below figure shows the output of the if-else ladder with else conditional st
                                 fig -4: Output-if else ladder with else
 
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_withelse/if_elseif_else.sv  
 
-**GitHub Lab Output link**  
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/if_else_ladder/if_else_ladder_withelse/if_elseif_else_log.log  
 
 ***
 In SystemVerilog, there are three versions of a conditional statement updated. These are -  
@@ -303,9 +307,9 @@ The below figure shows the output of the unique if for only one true condition.
         
                                  fig -5: output: unique if - only one true condition
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if1/unique_if1.sv  
 
-**GitHub Lab Outputlink**
+**GitHub Lab Outputlink**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if1/unique_if1_log.log
 
  
 **b. None of the conditions is true**  
@@ -352,9 +356,11 @@ The below figure shows the output of the unique if -none of the conditions is tr
   
                                     fig -6: output - unique if -none of the conditions is true with else
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if4/unique_if4.sv  
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if4/unique_if4_log.log  
+
 
 **without else** - The compiler will read all the conditional blocks and gives a warning.  
 
@@ -396,9 +402,10 @@ The below figure shows the output of the unique if -none of the conditions is tr
  
                                     fig -7: output - unique if -none of the conditions is true without else
 
-**GitHub Lab Code Link**  
+**GitHub Lab Code Link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if3/unique_if3.sv  
 
-**GitHub Lab Output Link**
+**GitHub Lab Output Link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if3/unique_if3_log.log
+
 
 
 **c. More than one condition is true** 
@@ -439,9 +446,10 @@ The below figure shows the output of the unique if -more than the conditions is 
                 
                                    fig -8: Output - unique if -more than one condition is true  
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if2/unique_if2.sv  
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique_if/unique_if2/unique_if2_log.log  
 
 ***
 
@@ -500,9 +508,10 @@ The below figure shows the output of the unique0 if -none of the conditions is t
 
                                        fig-9 : Output-unique0 if
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique0_if/unique0_if.sv  
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/unique0_if/unique0_if_log.log  
 
 ***
 
@@ -577,9 +586,11 @@ It is just the same as the if else if block.
                  
                                     fig -10:Output-priority if -only one condition is true
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_1/priorityif_1.sv 
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_1/priorityif_1_log.log 
+
 
 **b. More than one conditional expression is true**  
 
@@ -619,9 +630,11 @@ The compiler will check the conditional expression sequentially. It will execute
  
                                     fig -11: Output -priority if -more than one true condition
 
-**GitHub Lab Code link**
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_2/priorityif_2.sv
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_2/priorityif_2_log.log  
+
 
 **c.none of the condition is true**  
 
@@ -664,9 +677,11 @@ When none of the conditional expressions is true, the compiler will come out fro
                                     fig -12:Output - priority if -none of the conditions is true without else
 
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_3/priorityif_3.sv  
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_3/priorityif_3_log.log  
+
 
 **c2.with else**  
 
@@ -712,9 +727,11 @@ When none of the conditional expressions is true by default compiler to execute 
 
                                fig -13: Output - priority if -none of the conditions is true without else
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_4/priorityif_4.sv  
 
-**GitHub Lab Output link**  
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/if_variants/priority_if/priorityif_4/priorityif_4_log.log  
+
 
 ***
 ###  Difference between conditional statements  
@@ -761,7 +778,7 @@ Dead code does not bother the simulator or the synthesis tool. However, it consu
   
  A case statement evaluates a given expression and based on the evaluated value(matching a certain condition), it executes the statements associated with it. Basically, it is used to perform different actions based on different conditions. 
      
-A system verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statements must be grouped and within the begin and end statement.
+A system Verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statements must be grouped and within the begin and end statements.
 
 **Syntax:**
 
@@ -805,12 +822,15 @@ The below figure shows the output of the case statement which is true for one co
 
 In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output.
 
-**GitHub Lab Code link**https://github.com/piyushagrawal4578/control-flow/blob/main/case/case.sv
- 
-**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case_op.log
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case/case.sv
 
-### Using of Case statement without a default:   
-In case statement, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
+ 
+**GitHub Lab Output link** :- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case/case_op.log
+
+
+### Using of Case statement without a default  
+  
+In case statements, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
 If none of the given case conditions is true, the statement within the default statement is executed.    
 Execution will exit the case block without doing anything if none of the items matches the condition and a default statement is not given.
 
