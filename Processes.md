@@ -164,7 +164,26 @@ SystemVerilog provides constructs that allow one process to terminate or wait fo
 ## 1. wait fork  
 
 The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution.
-it wait untill all the fork procersses complete the execution .  
+it wait untill all the fork procersses complete the execution . 
+ 
+**code snippet**:
+
+`fork:FORK_F1 //Thread 2`  
+     `#2 b <= "Delta";//T2-1`  
+`#0 $display("[%0t] Thread_T2: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
+     `begin:BEGIN_B2 //Thread 2-3`  
+        `#1 -> e1;`  
+        `c = "Hoode";`  
+        `#1 $display("[%0t] Thread_T3: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
+      `end:BEGIN_B2`    
+     `fork:FORK_F2 //Thread 2-4`  
+        `wait(e1.triggered);`    
+        `#2 $display("[%0t] Thread_T4: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`    
+      `join:FORK_F2`  
+      `#1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 3`  
+`join_none:FORK_F1`  
+    `wait fork;`  
+ `#0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6`  
 
 In the below figure we see that the main thread 2 is executed after all the threads are executed even though we have the zero time delay for the main thread 2.it's because we have included the wait fork before the main thread 2 so it waits until the fork gets done.
 
@@ -179,6 +198,26 @@ github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 ## 2. disable fork  
 
 On execution of the disable fork, all the active process will get terminated.
+
+**code snippet**:
+
+`fork:FORK_F1`  
+      `#3 b <= "Delta";//Thread 1`  
+      `#4 $display("[%0t] Thread_T2: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 2`  
+      `begin:BEGIN_B2 //Thread 3` 
+        `#1 -> e1;`  
+        `c = "Hoode";`  
+        `#1 $display("[%0t] Thread_T3: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
+      `end:BEGIN_B2`  
+      `fork:FORK_F2 //Thread 4`  
+          `@(e1.triggered);`  
+          `#1 $display("[%0t] Thread_T4: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
+      `join:FORK_F2`  
+      `#1 $display("[%0t] Thread_T5: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
+`join_any:FORK_F1`  
+     `disable fork;`  
+    `#1 $display("[%0t] Thread_T6: ending of fork-join",$time);`  
+
 
 In the below figure we can see that after execution of main thread 1 we will move the thread 1 (fork_join) but after the thread 1 execution when it hit by the disable fork it termiates the process and executes the main thread 2.
 
