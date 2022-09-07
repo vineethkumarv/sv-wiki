@@ -137,11 +137,36 @@ Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_status/fine_status.log  
 
 ## kill()
-The kill () function terminates the process and all its sub-processes. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be terminated in the current timestamp.
+The kill () function terminates the process and all its sub-processes. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be terminated in the current timestamp.  
+
+**code snippet**  
+
+     $display("[%0t] Seeking status:",$time);
+
+      fork:FORK_F1
+
+        begin:BEGIN_B2
+         p1 = process :: self();
+         #1 $display("[%0t] I am in process p1",$time);
+         $display("[%0t] Initial status check of p1: %s",$time,p1.status); 
+         ->e1;
+        
+         if(p1.status() != process :: FINISHED)
+           p1.kill();
+        end:BEGIN_B2
+      
+       begin
+         wait(e1.triggered);
+         #1 $display("[%0t] Status of p1 before killing: %s",$time,p1.status());
+       end
+
+      join:FORK_F1
+
 
 Here in the below Fig-4 we can see that process p1 is started and running at 4ns but at 5ns by using kill() method we killed the process p1.  
 
-![kill](https://user-images.githubusercontent.com/110447489/186920953-8f5deced-828e-4944-8ee1-3c16734410bc.jpg)
+![snap kill](https://user-images.githubusercontent.com/110447489/188854422-e29291ce-76cd-4153-a241-b100ecebbf54.jpg)
+
 
           Fig-4: The output of the kill() method.
 
@@ -152,9 +177,48 @@ Github log_file link- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob
 ## await()
 This task allows one process to wait for another process.  
 
-Here in the below Fig-5 we are trying to make process p1 to wait until the process p2 was finished. so you can see that at 7ns process p1 was waiting till 9ns for process p2 and at 11ns process p1 was finished.
+**code snippet**  
 
-![await](https://user-images.githubusercontent.com/110447489/186921010-49531f05-485a-4308-af15-a15d1c33c991.jpg)
+     $display("[%0t] Seeking status:",$time);
+
+      fork:FORK_F1
+    
+       begin:BEGIN_B2
+         p1 = process :: self();
+         #1 $display("[%0t] I am in process p1",$time);
+         $display("[%0t] Initial status of p1: %s",$time,p1.status());
+         $display("[%0t] Status of p1 before await: %s",$time,p1.status());
+        
+         if(p1.status() != process :: FINISHED)
+           p2.await();
+        
+       end:BEGIN_B2
+      
+       #2 $display("[%0t] Status of p1 after await: %s",$time,p1.status());
+    
+       begin:BEGIN_B4 
+         p2 = process :: self();
+         #1 $display("[%0t] I am in process p2",$time);
+         $display("[%0t] Initial status of p2: %s",$time,p2.status());
+         #2 ->e2;
+       end:BEGIN_B4
+     
+       begin:BEGIN_B5
+         wait(e2.triggered);
+         $display("[%0t] Final status of p2: %s",$time,p2.status());
+         ->e1;
+       end:BEGIN_B5
+
+       begin:BEGIN_B6
+         wait(e1.triggered);
+         $display("[%0t] Final status of p1: %s",$time,p1.status());
+        end:BEGIN_B6
+      join_any:FORK_F1
+
+Here in the below Fig-5 we are trying to make process p1 to wait until the process p2 was finished. so you can see that at 7ns process p1 was waiting till 9ns for process p2 and at 11ns process p1 was finished.  
+
+![snap await](https://user-images.githubusercontent.com/110447489/188854896-70bd06a5-a9e2-4869-a0d0-326bf1593eac.jpg)
+
 
           Fig-5: The output of the await() method.
 
@@ -164,10 +228,48 @@ Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 
 ## suspend()
 This function suspends the execution of the process. It can suspend its own or other process’s execution. The execution is suspended until a resume () is encountered. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be suspended in the current timestamp.  
+**code snippet**  
+
+       $display("[%0t] Seeking status:",$time);
+                 
+        fork:FORK_F1
+                   
+        begin:BEGIN_B2
+          p1 = process :: self();
+          #1 $display("[%0t] I am in process p1",$time);
+          $display("[%0t] Initial status of p1: %s",$time,p1.status());
+          ->e1;
+
+          if(p1.status() != process :: FINISHED)
+        
+          begin:BEGIN_B3
+            #1 $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
+            p1.suspend();
+            $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());
+          end:BEGIN_B3
+      
+         end:BEGIN_B2 
+
+         begin:BEGIN_B4
+          wait(e1.triggered);
+          p2 = process :: self();
+          #1 $display("[%0t] I am in process p2",$time);
+          $display("[%0t] Initial status of p2: %s",$time,p2.status());
+          ->e2;
+         end:BEGIN_B4
+
+         begin:BEGIN_B5
+          wait(e2.triggered);
+          #1 $display("[%0t] Final status of p1: %s",$time,p1.status());
+          $display("[%0t] Final status of p2: %s",$time,p2.status());
+         end:BEGIN_B5
+
+       join:FORK_F1
+
 
 Here in the below Fig-6 we can see that process p1 at 7ns was suspended and we are not using resume() method so the process p1 was still in suspended state even at 11ns.
 
-![suspend2](https://user-images.githubusercontent.com/110447489/186922121-b24067a5-fe97-4838-8ac7-3506578b49a5.jpg)
+![snap suspend](https://user-images.githubusercontent.com/110447489/188855408-809402de-8ed4-44fe-a5df-0f84d1360673.jpg)
 
           Fig-6: The output of the suspend() method.
  
@@ -178,9 +280,50 @@ Github log_file link-  https://github.com/muneeb-mbytes/SystemVerilog_Course/blo
 ## resume()  
 This function restarts the process that was suspended. Resuming a process that was suspended while being blocked (due to wait statement, delay or waiting for an event to trigger) shall reinitialize that process to the event expression or wait for the wait condition to be true or for the delay to expire.  
 
+**code snippet**  
+
+     $display("[%0t] Seeking status:",$time);
+                 
+     fork:FORK_F1
+                   
+       begin:BEGIN_B2
+         p1 = process :: self();
+         #1 $display("[%0t] I am in process p1",$time);
+         $display("[%0t] Initial status of p1: %s",$time,p1.status());
+         ->e1;
+
+         if(p1.status() != process :: FINISHED)
+        
+         begin:BEGIN_B3
+           #1 $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
+           p1.suspend();
+           $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());
+         end:BEGIN_B3
+      
+       end:BEGIN_B2 
+
+       begin:BEGIN_B4
+         wait(e1.triggered);
+         p2 = process :: self();
+         #1 $display("[%0t] I am in process p2",$time);
+         $display("[%0t] Initial status of p2: %s",$time,p2.status());
+         ->e2;
+       end:BEGIN_B4
+
+       begin:BEGIN_B5
+         wait(e2.triggered);
+         #1 $display("[%0t] Final status of p1: %s",$time,p1.status());
+         $display("[%0t] Final status of p2: %s",$time,p2.status());
+       end:BEGIN_B5
+
+      join:FORK_F1
+
+     end:BEGIN_B1  
+
 Here in the below Fig-7 we can see at 7ns process p1 was suspended and at 16ns i was checking the status before using resume() method it was showing suspended so then at 17ns after using resume() method the status of process p1 is running and then it was finished.
 
-![resume](https://user-images.githubusercontent.com/110447489/186921148-5ad587d6-c786-4bcd-aefe-d87fbe52f673.jpg)
+![snap resume](https://user-images.githubusercontent.com/110447489/188856168-9389e0ce-7b26-4b66-ab8e-97b6c0fc4c60.jpg)
+
 
           Fig-7: The output of the resume() method.
 
