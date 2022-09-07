@@ -56,11 +56,12 @@ The below figure shows the output of if conditional statement.
 
                                   fig -1 : Output - if
 
-** GitHub Lab Code link** 
- 
-** GitHub lab output link**   
 
-***
+**GitHub Lab Code link** 
+ 
+**GitHub lab output link**   
+
+
 
 ### 2. if else 
 
@@ -112,7 +113,7 @@ The below figure shows the output of if-else conditional statement.
       
                            fig -2 : Output -if else
 
-** GitHub Lab Code link**  
+**GitHub Lab Code link**  
 
 **GitHub Lab Output link**  
 
@@ -300,7 +301,7 @@ The below figure shows the output of the unique if for only one true condition.
         
                                  fig -5: output: unique if - only one true condition
 
-** GitHub Lab Code link**  
+**GitHub Lab Code link**  
 
 **GitHub Lab Outputlink**
 
@@ -348,7 +349,7 @@ The below figure shows the output of the unique if -none of the conditions is tr
   
                                     fig -6: output - unique if -none of the conditions is true with else
 
-** GitHub Lab Code link**  
+**GitHub Lab Code link**  
 
 **GitHub Lab Output link**  
 
@@ -434,7 +435,7 @@ The below figure shows the output of the unique if -more than the conditions is 
                 
                                    fig -8: Output - unique if -more than one condition is true  
 
-** GitHub Lab Code link**  
+**GitHub Lab Code link**  
 
 **GitHub Lab Output link**  
 
@@ -495,10 +496,9 @@ The below figure shows the output of the unique0 if -none of the conditions is t
 
                                        fig-9 : Output-unique0 if
 
+**GitHub Lab Code link**  
 
-**Lab link**  
-
-**Log file link**  
+**GitHub Lab Output link**  
 
 ***
 
@@ -572,7 +572,7 @@ It is just the same as the if else if block.
                  
                                     fig -10:Output-priority if -only one condition is true
 
-** GitHub Lab Code link**  
+**GitHub Lab Code link**  
 
 **GitHub Lab Output link**  
 
@@ -613,7 +613,7 @@ The compiler will check the conditional expression sequentially. It will execute
  
                                     fig -11: Output -priority if -more than one true condition
 
-** GitHub Lab Code link**
+**GitHub Lab Code link**
 
 **GitHub Lab Output link**  
 
