@@ -52,7 +52,7 @@ For more than one statement in conditional blocks, need to use begin end block. 
 **Output snippet**  
 <img width="655" alt="1" src="https://user-images.githubusercontent.com/110443268/188662446-3cac3305-0f7a-435c-808e-5ee433a19e4c.png">  
 
-                          fig -1 : Output - if
+                                  fig -1 : Output - if
 
 **Lab link**  
 **log file link**   
@@ -148,6 +148,7 @@ else block is an optional block in the ladder. It is used to avoid confusion in 
 
 Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements that has valid condition expression. 
 **Example**  -
+
  The below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
 
 **Code Snippet**  
@@ -180,7 +181,7 @@ Sequentially all the conditional expressions will be checked. The compiler will 
 **output snippet**  
 <img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
 
-                                fig -3: output - if else ladder without else
+                                    fig -3: output - if else ladder without else
 
 
 **Lab link**  
@@ -224,7 +225,7 @@ Here the example shows the execution of the else block.
 
 <img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">  
                
-                          fig -5: Output-if else ladder with else
+                                fig -4: Output-if else ladder with else
 
 
 **Lab link**  
@@ -236,7 +237,7 @@ In SystemVerilog, there are three versions of a conditional statement updated. T
 ### 4. unique if  
 ![uniqueif1](https://user-images.githubusercontent.com/110443268/188621317-1834d950-0e08-459b-8c92-4226efee2f21.jpg)
 
-                   fig-5 :flow chart:unique_if 
+                                    fig-5 :flow chart:unique_if 
    
 This is the updated conditional statement. In a unique, if conditional statement, unlike the if-else block the compiler read all the blocks sequentially whether the block is true or not. 
  
@@ -284,7 +285,7 @@ size() is a default function of SV, use to get the size of the given variable. T
 
 <img width="674" alt="5" src="https://user-images.githubusercontent.com/110443268/188663928-def7bbea-b5d0-4b5f-a8a2-75b543f7b6bf.png">  
         
-                                 fig -6: unique if - only one true condition
+                                 fig -5: output: unique if - only one true condition
 
 **Lab link**  
 
@@ -297,7 +298,7 @@ with else - else block statements execute.
 
 <img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">  
 
-                           fig -6: with else unique if flow chart
+                                  fig -6: with else unique if flow chart
  
 
 Example -  
@@ -407,7 +408,7 @@ The output will be the set of statements of unique if block and one warning are 
 
 <img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">  
                 
-                            fig -8: Output - unique if -more than one condition is true  
+                                   fig -8: Output - unique if -more than one condition is true  
 
 **lab link**  
 **log file link**  
@@ -462,7 +463,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 **output snippet**
 <img width="627" alt="9" src="https://user-images.githubusercontent.com/110443268/188665606-6b9f4e2f-016b-443a-84fe-c05a64d4dba6.png">  
 
-                                   fig-9 : Output-unique0 if
+                                       fig-9 : Output-unique0 if
 
 
 **Lab link**  
@@ -474,7 +475,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
    
-                                fig -8: priorityif
+                                     fig -8: priorityif
 
 priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
 
@@ -536,7 +537,7 @@ It is just the same as the if else if block.
 **Output snap**  
 <img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">  
                  
-                                 fig -10:Output-priority if -only one condition is true
+                                    fig -10:Output-priority if -only one condition is true
 
 **lab link**  
 
@@ -574,7 +575,7 @@ The compiler will check the conditional expression sequentially. It will execute
 **output snap** 
 <img width="629" alt="11" src="https://user-images.githubusercontent.com/110443268/188669964-9897afe8-bdc5-42f6-ab98-773df939fa8e.png">  
  
-                                  fig -11: Output -priority if -more than one true condition
+                                    fig -11: Output -priority if -more than one true condition
 
 **lab link**
 
@@ -751,7 +752,7 @@ In the above example,  here expression= "x" should match one of the case items. 
 
 ![Untitled Diagram-Page-5 drawio (1)](https://user-images.githubusercontent.com/110447788/188300504-805f8740-4cf9-41c7-be1a-6c50a2986b45.png)
 
-                        Fig -14: Output: case statement in which one condition is true
+                                 Fig -14: Output: case statement in which one condition is true
 
 In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output.
 
@@ -797,7 +798,7 @@ In this example, if none of the case conditions is true or no default statement 
 
 ![Untitled Diagram-Page-2 drawio (8)](https://user-images.githubusercontent.com/110447788/188394434-8c70750b-388b-4537-a9d8-f7c7db2f507d.png)
 
-                                    Fig -14: Output: case statement in which one condition is true
+                                    Fig -15: Output: case statement in which one condition is true
 
  In the above output, the case statement is used without a default statement. In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
 
@@ -835,7 +836,7 @@ In the above example, we are declaring a range in a case statement with the use 
 
 ![Untitled Diagram-Page-6 drawio (4)](https://user-images.githubusercontent.com/110447788/188553176-7f10aa14-ce7c-4fb6-beca-acd912dd8fbb.png)
 
-                                  Fig -15: Output: case statement with a range
+                                  Fig -16: Output: case statement with a range
 
 In the above output, the case statement will get executed with the use of an inside statement. The case statement will get executed and displays the output 'Value of x = 6'  
 
@@ -857,7 +858,7 @@ the break statement is not allowed to use within the loops. while using a break 
 
 ![Untitled Diagram-Page-4 drawio (4)](https://user-images.githubusercontent.com/110447788/188432824-01ddb873-d877-44d1-b65d-78116d2b6020.png)
 
-                                    Fig - 16: Output: break statement is not allowed inside the case
+                                    Fig - 17: Output: break statement is not allowed inside the case
 
 In the above output, a break statement is used inside the case statement. System Verilog does not allow the use of a break statement inside the case statement.  
 In this, an error will occur.
@@ -900,7 +901,7 @@ In the above example, the unique case statement is used. Here all the conditions
 
 ![Untitled Diagram-Page-6 drawio (3)](https://user-images.githubusercontent.com/110447788/188300519-a4af7834-91ea-44c9-9f11-c61f7497efbb.png)
 
-                                   Fig - 17: Output: In a unique case, no conditions are true 
+                                      Fig - 18: Output: In a unique case, no conditions are true 
 
 In the above output, all the condition is false so the unique case gives a warning with no error.
 
@@ -934,7 +935,7 @@ If these two condition is true, at the time of execution this will take the firs
 
 ![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
      
-                               Fig -18: Output: unique case in which more than one condition is true
+                               Fig -19: Output: unique case in which more than one condition is true
  
 In the above output, a unique case statement is used. In this more than one condition is true, the unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
@@ -981,7 +982,7 @@ In this, if no conditions of the case statement are true then the default statem
 
 ![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
 
-                                Fig - 19: Output: no conditions are true, default statement gets executed 
+                                Fig - 20: Output: no conditions are true, default statement gets executed 
 
 In the above output, there is no condition is true inside the case statement, then the default statement is get executed and prints the 'Value of x = 1'
 in the output.
@@ -1023,7 +1024,7 @@ In the above example, the unique0 case is used. In these two conditions is true 
 
 ![Untitled Diagram-Page-8 drawio (3)](https://user-images.githubusercontent.com/110447788/188300546-eb50b6e6-a5b8-44a4-94fe-e73f828b8e9a.png)
 
-                                    Fig -20: Output:unique0 case in which two conditions are true
+                                    Fig -21: Output:unique0 case in which two conditions are true
 
 In the above output, two conditions are true at a time this will make the case statement not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
 
@@ -1065,7 +1066,7 @@ In the above example, the priority case is used. In these two conditions is the 
 
 ![Untitled Diagram-Page-9 drawio (4)](https://user-images.githubusercontent.com/110447788/188300570-d5fc26b9-0fac-4499-9cbf-8785c03171f2.png)
 
-                               Fig -21: Output: priority case statement in which two conditions are true
+                               Fig -22: Output: priority case statement in which two conditions are true
 
 In the above output, more than one condition is true. priority case checks the first right matched condition, executes it, and displays the output without warning and error.
 
