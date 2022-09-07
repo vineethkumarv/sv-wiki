@@ -50,12 +50,14 @@ For more than one statement in conditional blocks, need to use begin end block. 
     end  
 
 **Output snippet**  
+The below figure shows the output of if conditional statement.  
+ 
 <img width="655" alt="1" src="https://user-images.githubusercontent.com/110443268/188662446-3cac3305-0f7a-435c-808e-5ee433a19e4c.png">  
 
                                   fig -1 : Output - if
 
-**Lab link**  
-**log file link**   
+** GitHub Lab Code link**  
+** GitHub lab output link**   
 ***
 
 ### 2. if else 
@@ -102,12 +104,14 @@ Here the variable declares a is byte type(signed) and the value assigned to it i
      end  
 
  **Output Snippet**  
+The below figure shows the output of if-else conditional statement.  
+  
 <img width="661" alt="2" src="https://user-images.githubusercontent.com/110443268/188662765-67e08d46-2cfa-428f-bdc5-c57f473c91bd.png">
       
                            fig -2 : Output -if else
 
-**Lab link**  
-**log file link**  
+** GitHub Lab Code link**  
+**GitHub Lab Output link**  
 
 
 ***
@@ -180,14 +184,15 @@ Sequentially all the conditional expressions will be checked. The compiler will 
         end  
   
 **output snippet**  
+  The below figure shows the output of if else ladder without else conditional statement.  
 
 <img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
 
                                     fig -3: output - if else ladder without else
 
 
-**Lab link**  
-**Log file link**    
+**GitHub Lab Code link**  
+**GitHub Lab Output link**    
  
 **b. with else**  
 When none of the conditional expressions is true, the compiler will execute the set of statements of the else block.   
@@ -224,14 +229,15 @@ Here the example shows the execution of the else block.
     end  
   
 **output snippet**  
+The below figure shows the output of the if-else ladder with else conditional statement.     
 
 <img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">  
                
                                 fig -4: Output-if else ladder with else
 
 
-**Lab link**  
-**Log file link**  
+**GitHub Lab Code link**  
+**GitHub Lab Output link**  
 
 ***
 In SystemVerilog, there are three versions of a conditional statement updated. These are -  
@@ -283,15 +289,15 @@ size() is a default function of SV, use to get the size of the given variable. T
       $display ("Out from conditional block ");    
       end  
 
-**output snippet**
-
+**output snippet**  
+The below figure shows the output of the unique if for only one true condition.
 <img width="674" alt="5" src="https://user-images.githubusercontent.com/110443268/188663928-def7bbea-b5d0-4b5f-a8a2-75b543f7b6bf.png">  
         
                                  fig -5: output: unique if - only one true condition
 
-**Lab link**  
+** GitHub Lab Code link**  
 
-**log file link**
+**GitHub Lab Outputlink**
 
  
 **b. None of the conditions is true**  
@@ -330,14 +336,16 @@ The output will be the set of statements inside the else block.
     $display ("Out of the conditional block ");  
     end  
 
-**Output snap**    
+**Output snap**  
+The below figure shows the output of the unique if -none of the conditions is true with else.  
+    
 <img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">  
   
                                     fig -6: output - unique if -none of the conditions is true with else
 
-**Lab link**  
+** GitHub Lab Code link**  
 
-**log file link**  
+**GitHub Lab Output link**  
 
 **without else** - The compiler will read all the conditional blocks and gives a warning.  
 
@@ -370,11 +378,16 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
       $display ("Out of the conditional block ");    
       end  
 
-  **output snap**
+  **output snap**  
+The below figure shows the output of the unique if -none of the conditions is true without else.  
+  
+
 <img width="923" alt="7" src="https://user-images.githubusercontent.com/110443268/188665260-eac31337-b4b5-49cc-ba49-0fb853a8c2ea.png">  
  
                                     fig -7: output - unique if -none of the conditions is true without else
 
+**GitHub Lab Code Link**  
+**GitHub LAb Output Link**
 
 
 **c. More than one condition is true** 
@@ -407,13 +420,18 @@ The output will be the set of statements of unique if block and one warning are 
       end    
  
 **Output snap**  
+  
+The below figure shows the output of the unique if -more than the conditions is true.  
+ 
 
 <img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">  
                 
                                    fig -8: Output - unique if -more than one condition is true  
 
-**lab link**  
-**log file link**  
+** GitHub Lab Code link**  
+**GitHub Lab Output link**  
+
+***
 
 
 ### 5.unique0if  
@@ -462,7 +480,9 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
     $display ("Out from the conditional block ");  
     end  
 
-**output snippet**
+**output snippet**  
+The below figure shows the output of the unique0 if -none of the conditions is true.  
+
 
 <img width="627" alt="9" src="https://user-images.githubusercontent.com/110443268/188665606-6b9f4e2f-016b-443a-84fe-c05a64d4dba6.png">  
 
@@ -478,7 +498,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
    
-                                     fig -8: flow chart: priorityif
+                                     fig -8: flow chart: priority if
 
 priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
 
@@ -538,14 +558,15 @@ It is just the same as the if else if block.
     end 
 
 **Output snap** 
- 
+ The below figure shows the output of the priority if - only one condition is true.  
+  
 <img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">  
                  
                                     fig -10:Output-priority if -only one condition is true
 
-**lab link**  
+** GitHub Lab Code link**  
 
-**log file link**  
+**GitHub Lab Output link**  
 
 **b. More than one conditional expression is true**  
 
@@ -576,15 +597,17 @@ The compiler will check the conditional expression sequentially. It will execute
     $display ("Out from the conditional block ");  
     end  
 
-**output snap** 
+**output snap**  
+ 
+ The below figure shows the output of the priority if - more than one condition is true.  
 
 <img width="629" alt="11" src="https://user-images.githubusercontent.com/110443268/188669964-9897afe8-bdc5-42f6-ab98-773df939fa8e.png">  
  
                                     fig -11: Output -priority if -more than one true condition
 
-**lab link**
+** GitHub Lab Code link**
 
-**log file link**  
+**GitHub Lab Output link**  
 
 **c.none of the condition is true**  
 
@@ -619,15 +642,16 @@ When none of the conditional expressions is true, the compiler will come out fro
     end  
 
 **Output Snippet**  
-  
+   The below figure shows the output of the priority if - none of the conditions is true without else.  
+
 <img width="926" alt="12" src="https://user-images.githubusercontent.com/110443268/188670397-71956394-1333-44a2-afa6-9c74b4f45427.png">  
      
                                     fig -12:Output - priority if -none of the conditions is true without else
 
 
-**lab link**  
+**GitHub Lab Code link**  
 
-**log file link**  
+**GitHub Lab Output link**  
 
 **c2.with else**  
 
@@ -665,7 +689,9 @@ When none of the conditional expressions is true by default compiler to execute 
     $display ("Do more shopping for more discount ......");  
     end  
 
-**output snippet**    
+**output snippet**  
+ The below figure shows the output of the priority if - more than one condition is true without else.  
+    
 <img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">  
 
                                fig -13: Output - priority if -none of the conditions is true without else
