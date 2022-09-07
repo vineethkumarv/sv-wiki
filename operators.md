@@ -95,9 +95,14 @@ a != b | a not equal to b, the result may be unknown (logical equality)
 Consider, a = 111     
           b = 101
 *  **a == b**: Here we perform the logical equality of a,b, the result is zero when both numbers are the same then the result is 1.  
-*  **a != b**: Here we perform the logical inequality of a,b the result is zero when both numbers are the same then the result is 0.  
-*  **a === b**: Here we perform the case e  
+*  **a != b**: Here we perform the logical inequality of a,b the result is 1 when both numbers are the same then the result is 0.  
+*  **a === b**: Here we perform the case equality of a,b the result is zero when both numbers are the same then the result is 1.  
+*  **a!=== b**: Here we perform the case inequality of a,b the result is 1 when both numbers are the same then the result is 0.  
+   
  
+![equality](https://user-images.githubusercontent.com/106074838/188873316-cbe43fc7-65f3-4007-a299-2cb25b8e3e90.png)  
+
+                   Figure.4. the output of the equality operator. 
 
 
 **GitHub lab code link**     
@@ -132,8 +137,31 @@ Consider, a = 100
 **GitHub lab output link**  
 
 ---
+5.**Bitwise operator:**   
+We use the bit-wise operators to combine a number of single-bit inputs into a single-bit output.  
+
+**Bitwise operator cheat sheet**  
+Operator | Description
+-- | --
+~ | negation
+& | and
+\| | inclusive or
+^ | exclusive or
+^~ or ~^ | exclusive nor (equivalence)
 
 
+****Example:****  
+Consider, a = 100  
+b=110  
+
+
+
+
+                         Figure.5. the output of the Bitwise operator. 
+
+**GitHub lab code link**     
+
+**GitHub lab output link**  
 
 ---
 
