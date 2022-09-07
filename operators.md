@@ -1,11 +1,10 @@
-**Operators** : 
 
 ****Operators****  :  
 
-![opppp](https://user-images.githubusercontent.com/106074838/188847440-ad11ced1-9375-4e1e-956e-b5b4eab2d7b9.png)    
+![Untitled Diagram-Page-2 drawio (16)](https://user-images.githubusercontent.com/106074838/188924259-c1baf802-b992-462a-9edc-033773c113c4.png)     
 
                          Figure.1 operators 
-There  
+ 
 
 
 
@@ -138,7 +137,8 @@ Consider, a = 100
 
 ---
 5.**Bitwise operator:**   
-  
+Bitwise operators perform a bit-wise operation on two operands.   
+They take each bit in one operand and perform the operation with the corresponding bit in the other operand. If one operand is shorter than the other, it will be extended on the left side with zeroes to match the length of the longer operand.   
 
 **Bitwise operator cheat sheet**  
 Operator | Description
@@ -206,9 +206,11 @@ Consider, a = 101
 **GitHub lab code link**     
 
 **GitHub lab output link**  
+
 ---
+
 7.**Conditional Operator:** 
-To use the conditional operator, we write a logical expression before the? operator which is then evaluated to see if it is true or false.
+To use the conditional operator, we write a logical expression before the? the operator which is then evaluated to see if it is true or false.
 The output is assigned to one of two values depending on whether the expression is true or false.  
  
 the general syntax for the conditional operator.  
@@ -228,6 +230,7 @@ In the above example enable condition is true it will execute the data otherwise
 **GitHub lab code link**     
 
 **GitHub lab output link**  
+
 ***
 
 
@@ -249,12 +252,12 @@ Operator | Description
 ****Example:****  
 Consider, a = 1010    
    
-*  ** &a **: Here we performing the Reduction and operation, and the result is 0.  
-*  ** |a **: Here we performing the Reduction or operation, and the result is 1.  
-*  ** ~&a **: Here we performing the Reduction NAND operation, and the result is 1.  
-*  ** ~|a **: Here we performing the Reduction or operation, and the result is 0.  
-*  ** ^a **: Here we performing the Reduction or operation, and the result is 0.  
-*  ** ~^a **: Here we performing the Reduction or operation, and the result is 1. 
+*  **&a**:  Here we performing the Reduction and operation, and the result is 0.  
+*  **|a**: Here we performing the Reduction or operation, and the result is 1.  
+*  **~&a**: Here we performing the Reduction NAND operation, and the result is 1.  
+*  **~|a**: Here we performing the Reduction or operation, and the result is 0.  
+*  **^a**: Here we performing the Reduction or operation, and the result is 0.  
+*  **~^a**: Here we performing the Reduction or operation, and the result is 1. 
   
 ![reduction](https://user-images.githubusercontent.com/106074838/188919502-6de9155c-d618-4697-9b38-2d9586a87eca.png)
 
@@ -264,8 +267,9 @@ Consider, a = 1010
 
 **GitHub lab output link**   
 
-8.** Concatenation and Replication Operators:**    
+***
 
+9.**Concatenation and Replication Operators:**    
 
 **Concatenation and Replication operator cheat sheet**  
 Operator | Description
@@ -273,6 +277,34 @@ Operator | Description
 { } | Concatenation operator
 {{ }} | Replication operator 
 
+* concatenation operator to combine two or more signals into a vector.  
+Concatenations are expressed using the brace characters { and },   
+with commas separating the expressions within.  
+
+**Example: **
+a=4'b1010;
+b=4'b1110; 
+ {a,b} -if a and b both are 8-bit numbers, and the results has 8 bits.  
+  Concatenation output is  10101110   
+
+**Replication Operator**  
+The replication operator is used to replicate a group of bits n times. Say you have a 4-bit variable and you want to replicate it 4 times to get a 16-bit variable.  
+a=4'b1010;
+b=4'b1110; 
+{2{a},b} - this is equivalent to {a, a, b} and total number of bit is 12-bit.   
+Replication Output is 101010101110  
+
+
+
+![concation](https://user-images.githubusercontent.com/106074838/188925641-5220c0b5-3433-4783-ba88-a9a599921c0c.png)
+
+
+
+               Figure.10. the output of the Concatenation and Replication operator.
+   
+**GitHub lab code link**     
+
+**GitHub lab output link**   
 
 
 
