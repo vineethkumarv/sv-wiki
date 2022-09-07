@@ -130,7 +130,10 @@ Consider, a = 100
  if all the variable's values are zero then only the result is 0. and if any one of the variable values is 1's then the result is 1.   
 *  **!a **: Here we performing the Logical Not of a and the result is 0. if all variable value is zero then the result is 0. ( just vice versa).  
 
-![logical](https://user-images.githubusercontent.com/106074838/188864090-4a8153c8-fa79-49ca-8fec-ea83d327df8a.png)  
+![logical](https://user-images.githubusercontent.com/106074838/188941508-7a88b92e-f4f1-462e-8eb6-d47d2c0c74b7.png)
+ 
+
+
 
               Figure.5. the output of the Logical operator.  
 **GitHub lab code link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/logic/logic_code.sv   
@@ -220,9 +223,9 @@ the general syntax for the conditional operator.
 **output = <condition> ? <true> : <false>**
 
 ****Example:****  
-Consider, y = enable ? <data> : <1'bx> 
+Consider, y = enable ? data1 : data2
  
-In the above example enable condition is true it will execute the data otherwise it going to the 1'bx. 
+In the above example enable condition is true it will execute the data otherwise it going to the data2. 
  
 ![conditional](https://user-images.githubusercontent.com/106074838/188886981-dc5abfe0-6d61-498a-a1da-a8bcb976c779.png)  
      
