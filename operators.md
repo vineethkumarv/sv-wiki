@@ -6,6 +6,13 @@
                          Figure.1 operators 
  
 
+Sr No. | |
+-- | -- | --
+1 |  | Dimension of array declared before array name declaration
+2 |
+3 |
+4 |
+
 
 
 **1. Arithmetic Operators**    
