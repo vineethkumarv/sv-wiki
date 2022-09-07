@@ -130,8 +130,8 @@ Consider, a = 100
  if all the variable's values are zero then only the result is 0. and if any one of the variable values is 1's then the result is 1.   
 *  **!a **: Here we performing the Logical Not of a and the result is 0. if all variable value is zero then the result is 0. ( just vice versa).  
 
-![logical](https://user-images.githubusercontent.com/106074838/188941508-7a88b92e-f4f1-462e-8eb6-d47d2c0c74b7.png)
- 
+![a1 drawio](https://user-images.githubusercontent.com/106074838/188944394-e8d82da5-038b-4a85-b48d-b0f512eeb8de.png)
+
 
 
 
