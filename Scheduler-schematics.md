@@ -30,6 +30,7 @@ Event is used for synchronization between two or more concurrently active proces
 
 Processes can wait for the event by using the @ operator or wait(event_name.triggered).
 when both @ and wait comes at the same point then a race-around condition occurs in between both.
+
 ## Event regions in verilog:
 
 ![verilog_regions](https://user-images.githubusercontent.com/110411714/188097582-2a0a97c1-d3da-4df2-8cbe-adcf54d51a9e.png)
