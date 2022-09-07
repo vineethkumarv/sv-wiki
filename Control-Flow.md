@@ -5,7 +5,7 @@
 
 
            
-                                     Fig -1: Control Flow  
+                                                   Fig -1: Control Flow  
 # Control flow 
 ## Conditional Statements  
 Conditional statements are used to check whether the statements in the blocks are executed or not. Conditional statements create the block of statements. If the expression given is -   
