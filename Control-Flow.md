@@ -1270,7 +1270,7 @@ A while loop first checks the condition is true and then executes the statements
 
 ![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
 
-**Code snippet**  
+**Code snap**  
 
 **Output snippet**  
 
@@ -1279,6 +1279,48 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 **lab output link**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_loop_output.log  
+
+
+
+**Declare variable inside the loop  **
+  
+We can declare variables inside the loop. But that variable is a local variable, only we can use it inside the loop if can't use it out of the loop. If we use the variable out of the loop it will through an error.  
+  
+**Example** - Below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
+
+**Code Snippet**  
+   
+    int x = 2; // variable declare  
+    initial begin  
+    while ( x<5)begin  
+    int a;  // declare the variable inside the loop  
+    $display ("Iteration = %0d",x);  
+    $display ("a is a local variable");  
+    $display ("The size of a = %0d",$size(a));  
+    $display ("------------------------------");  
+    // a is a local variable. We can't use it out of the loop.  
+    x++;    // incrementing the x  
+    end  
+    // After the execution of the above loop. The value of x = 4 .  
+
+    while (x<8)begin  
+     $display ("x is a global varaible ");  
+     $display ( "The value of x = %0d",x);  
+     $display ("------------------------");  
+    x++;  
+    end  
+    end  
+
+
+**Output Snap**  
+
+<img width="355" alt="18" src="https://user-images.githubusercontent.com/110443268/188861444-ce3f23e8-8e05-4254-82d3-2abf485775ef.png">
+
+
+**GitHub Lab Code link**  
+
+
+**GitHub Lab Output link**  
 
 
 ***
@@ -1303,7 +1345,7 @@ In the do-while loop, first execute the condition once and then check whether th
 **GitHub Lab Code link** -  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code.sv  
 
-**GitHub LAb Output link**  
+**GitHub Lab Output link**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code_output.log  
 
 ***
