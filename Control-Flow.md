@@ -143,8 +143,8 @@ else block is an optional block in the ladder. It is used to avoid confusion in 
 `StatementN;`  
 `end `  
 
-**Example**  
-**without else**  
+
+**a. without else**  
 
 Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements that has valid condition expression. 
 
@@ -180,6 +180,7 @@ Sequentially all the conditional expressions will be checked. The compiler will 
         end  
   
 **output snippet**  
+
 <img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
 
                                     fig -3: output - if else ladder without else
@@ -188,7 +189,7 @@ Sequentially all the conditional expressions will be checked. The compiler will 
 **Lab link**  
 **Log file link**    
  
-**with else**  
+**b. with else**  
 When none of the conditional expressions is true, the compiler will execute the set of statements of the else block.   
 **Example**  
 Here the example shows the execution of the else block.   
