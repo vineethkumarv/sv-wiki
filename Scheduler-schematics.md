@@ -11,7 +11,25 @@ A **time slot** encompasses all simulation activity that is processed in the eve
 time.  
 "Note that execution of simulation events within a time slot may require multiple iterations through the simulation event regions for that same time slot."  
 
+## Blocking and non-blocking statement -  
 
+**Blocking statement**  
+Blocking statements are assigned with =. It will execute serially in procedural blocks. Blocking statements are executed in a block in a sequential manner but when more than two procedural blocks, these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks.
+
+Syntax -
+variable_name(LHS) = expression(RHS);
+
+**Non - blocking statement**  
+Non-blocking statements are assigned with the <=. It will not block the execution of a statement inside that particular block. These statements will execute the parallel inside that particular block.
+
+Syntax -
+Variable(LHS) <= Expression(RHS) ;
+
+## Events  
+Event is used for synchronization between two or more concurrently active processes. Initially, we need to declare the event and then it needs to be triggered by using the -> or ->> operator.
+
+Processes can wait for the event by using the @ operator or wait(event_name.triggered).
+when both @ and wait comes at the same point then a race-around condition occurs in between both.
 ## Event regions in verilog:
 
 ![verilog_regions](https://user-images.githubusercontent.com/110411714/188097582-2a0a97c1-d3da-4df2-8cbe-adcf54d51a9e.png)
