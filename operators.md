@@ -15,7 +15,7 @@ Sr No. | |
 
 
 
-**1. Arithmetic Operators**    
+# **1. Arithmetic Operators**    
 We use arithmetic operators to perform basic mathematic functions on our variables. These operators should already be familiar as they are mostly replications of common mathematic symbols.  
 
 **The table below shows the full list of arithmetic operators in SystemVerilog.**    
