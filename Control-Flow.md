@@ -56,8 +56,10 @@ The below figure shows the output of if conditional statement.
 
                                   fig -1 : Output - if
 
-** GitHub Lab Code link**  
+** GitHub Lab Code link** 
+ 
 ** GitHub lab output link**   
+
 ***
 
 ### 2. if else 
@@ -111,6 +113,7 @@ The below figure shows the output of if-else conditional statement.
                            fig -2 : Output -if else
 
 ** GitHub Lab Code link**  
+
 **GitHub Lab Output link**  
 
 
@@ -192,6 +195,7 @@ Sequentially all the conditional expressions will be checked. The compiler will 
 
 
 **GitHub Lab Code link**  
+
 **GitHub Lab Output link**    
  
 **b. with else**  
@@ -237,6 +241,7 @@ The below figure shows the output of the if-else ladder with else conditional st
 
 
 **GitHub Lab Code link**  
+
 **GitHub Lab Output link**  
 
 ***
@@ -387,7 +392,8 @@ The below figure shows the output of the unique if -none of the conditions is tr
                                     fig -7: output - unique if -none of the conditions is true without else
 
 **GitHub Lab Code Link**  
-**GitHub LAb Output Link**
+
+**GitHub Lab Output Link**
 
 
 **c. More than one condition is true** 
@@ -429,6 +435,7 @@ The below figure shows the output of the unique if -more than the conditions is 
                                    fig -8: Output - unique if -more than one condition is true  
 
 ** GitHub Lab Code link**  
+
 **GitHub Lab Output link**  
 
 ***
@@ -490,6 +497,7 @@ The below figure shows the output of the unique0 if -none of the conditions is t
 
 
 **Lab link**  
+
 **Log file link**  
 
 ***
