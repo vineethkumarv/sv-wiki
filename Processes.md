@@ -36,22 +36,26 @@ SystemVerilog provides support for parallel threads through fork-join construct.
 
 **code snippet**:-  
 
-`fork:fork_main`  
-   `begin:first`  
-      `#1 a <= b;`  
-      `b <= 7;`  
-      `$monitor("[%0t]Thread-1: Values of a= %0d,b= %0d, c= %0d,d= %0d",$time,a,b,c,d);`  
-      `#1 ->e1;`  
-      `c = b;`  
-   `end:first`  
-   `begin:second`  
-      `wait(e1.triggered);`  
-      `$display("[%0t] Event is triggered",$time);`  
-      `begin:first_2 //Thread 4`  
-         `#1 d = c;`  
-      `end:first_2`  
-    `end:second`  
-`join:fork_main`
+    fork:FORK_F1  
+      
+      begin:BEGIN_B2  
+        #1 a <= b;  
+        b <= 7;  
+        $monitor("[%0t] Thread-T2: Values of a= %0d,b= %0d, c= %0d,d= %0d",$time,a,b,c,d);  
+        #1 ->e1;  
+        c = b;  
+      end:BEGIN_B2  
+    
+      begin:BEGIN_B3  
+        wait(e1.triggered);  
+        $display("[%0t] Event is triggered",$time);       
+    
+        begin:BEGIN_B4 //Thread 4  
+          #1 d = c;           
+        end:BEGIN_B4  
+
+      end:BEGIN_B3  
+    join:FORK_F1
 
 In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
@@ -91,21 +95,28 @@ The parent thread blocks will be execute when  any one of the child threads is f
  
  **code snippet**:
  
-`fork:FORK_F1`  
-      `begin:BEGIN_B2//Thread 1`  
-        `#0 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d); `   
-       `begin:BEGIN_B3`  
-          `b <= a;`  
-          `#1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
-        `end:BEGIN_B3`  
-      `end:BEGIN_B2`  
-      `fork:FORK_F2//Thread 2`  
-        `begin:BEGIN_B4`  
-          `#3 -> e1;`  
-          `$display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
-        `end:BEGIN_B4`  
-          `join:FORK_F2`  
-     `join_any:FORK_F1`  
+    fork:FORK_F1  
+      
+      begin:BEGIN_B2//Thread 1  
+        #0 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);      
+        
+        begin:BEGIN_B3  
+          b <= a;  
+          #1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+        end:BEGIN_B3  
+      
+      end:BEGIN_B2  
+      
+      fork:FORK_F2//Thread 2  
+        
+        begin:BEGIN_B4  
+          #3 -> e1;  
+          $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+        end:BEGIN_B4  
+          
+      join:FORK_F2  
+      
+    join_any:FORK_F1
 
 In the below figure we can see that  here  main thread 1 executed and one child is executed and then main thread 2 is executed. 
 
@@ -132,17 +143,20 @@ It does not mean that the rest of the child threads will be automatically discar
  
 **code snippet**:
 
-`fork:FORK_F1`  
-      `begin:BEGIN_B2`  
-        `#1 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
-        `b <= a;`  
-        `#1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
-      `end:BEGIN_B2`  
-      `fork:FORK_F2`  
-        `#1 -> e1;`  
-        `$display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`   
-      `join:FORK_F2`  
-`join_none:FORK_F1`
+    fork:FORK_F1  
+      
+      begin:BEGIN_B2  
+        #1 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);      
+        b <= a;  
+        #1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+      end:BEGIN_B2  
+      
+      fork:FORK_F2  
+        #1 -> e1;  
+        $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+      join:FORK_F2  
+      
+    join_none:FORK_F1
 
 **Output**:
 
@@ -173,22 +187,30 @@ it wait untill all the fork procersses complete the execution .
  
 **code snippet**:
 
-`fork:FORK_F1 //Thread 2`  
-     `#2 b <= "Delta";//T2-1`  
-`#0 $display("[%0t] Thread_T2: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
-     `begin:BEGIN_B2 //Thread 2-3`  
-        `#1 -> e1;`  
-        `c = "Hoode";`  
-        `#1 $display("[%0t] Thread_T3: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
-      `end:BEGIN_B2`    
-     `fork:FORK_F2 //Thread 2-4`  
-        `wait(e1.triggered);`    
-        `#2 $display("[%0t] Thread_T4: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`    
-      `join:FORK_F2`  
-      `#1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 3`  
-`join_none:FORK_F1`  
-    `wait fork;`  
- `#0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6`  
+    fork:FORK_F1 //Thread 2  
+    
+      #2 b <= "Delta";//T2-1  
+
+      #0 $display("[%0t] Thread_T2: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+                
+      begin:BEGIN_B2 //Thread 2-3  
+        #1 -> e1;  
+        c = "Hoode";  
+        #1 $display("[%0t] Thread_T3: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+      end:BEGIN_B2  
+      
+      fork:FORK_F2 //Thread 2-4  
+        wait(e1.triggered);  
+        #2 $display("[%0t] Thread_T4: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+      join:FORK_F2  
+      
+      #1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 3  
+
+    join_none:FORK_F1  
+    
+    wait fork;  
+    #0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6
+   
 
 In the below figure we see that the main thread 2 is executed after all the threads are executed even though we have the zero time delay for the main thread 2.it's because we have included the wait fork before the main thread 2 so it waits until the fork gets done.
 
@@ -207,22 +229,29 @@ On execution of the disable fork, all the active process will get terminated.
 
 **code snippet**:
 
-`fork:FORK_F1`  
-      `#3 b <= "Delta";//Thread 1`  
-      `#4 $display("[%0t] Thread_T2: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 2`  
-      `begin:BEGIN_B2 //Thread 3` 
-        `#1 -> e1;`  
-        `c = "Hoode";`  
-        `#1 $display("[%0t] Thread_T3: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
-      `end:BEGIN_B2`  
-      `fork:FORK_F2 //Thread 4`  
-          `@(e1.triggered);`  
-          `#1 $display("[%0t] Thread_T4: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
-      `join:FORK_F2`  
-      `#1 $display("[%0t] Thread_T5: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);`  
-`join_any:FORK_F1`  
-     `disable fork;`  
-    `#1 $display("[%0t] Thread_T6: ending of fork-join",$time);`  
+    fork:FORK_F1  
+      
+      #3 b <= "Delta";//Thread 1  
+      
+      #4 $display("[%0t] Thread_T2: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 2  
+             
+      begin:BEGIN_B2 //Thread 3  
+        #1 -> e1;  
+        c = "Hoode";  
+        #1 $display("[%0t] Thread_T3: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+      end:BEGIN_B2  
+      
+      fork:FORK_F2 //Thread 4  
+          @(e1.triggered);  
+          #1 $display("[%0t] Thread_T4: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+      join:FORK_F2  
+      
+      #1 $display("[%0t] Thread_T5: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+      
+    join_any:FORK_F1  
+
+    disable fork;  
+    #1 $display("[%0t] Thread_T6: ending of fork-join",$time);   
 
 
 In the below figure we can see that after execution of main thread 1 we will move the thread 1 (fork_join) but after the thread 1 execution when it hit by the disable fork it termiates the process and executes the main thread 2.
