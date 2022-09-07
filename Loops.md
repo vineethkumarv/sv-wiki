@@ -61,7 +61,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 
 
-**Declare variable inside the loop  **
+**Declare variable inside the loop**
   
 We can declare variables inside the loop. But that variable is a local variable, only we can use it inside the loop if can't use it out of the loop. If we use the variable out of the loop it will through an error.  
   
