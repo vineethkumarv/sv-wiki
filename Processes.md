@@ -81,11 +81,29 @@ The parent thread blocks will be execute when  any one of the child threads is f
 
  **syntax**:-
   
-**fork**  
-   // Thread 1 \
-  // Thread 2 \
- // Thread 3  
-**join_any**
+`fork  `  
+   `Thread 1 `  
+   `Thread 2 `  
+   `Thread 3  `  
+`join_any`  
+ 
+ **code snippet**:
+ 
+`fork:FORK_F1`  
+      `begin:BEGIN_B2//Thread 1`  
+        `#0 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d); `   
+       `begin:BEGIN_B3`  
+          `b <= a;`  
+          `#1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
+        `end:BEGIN_B3`  
+      `end:BEGIN_B2`  
+      `fork:FORK_F2//Thread 2`  
+        `begin:BEGIN_B4`  
+          `#3 -> e1;`  
+          `$display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
+        `end:BEGIN_B4`  
+          `join:FORK_F2`  
+     `join_any:FORK_F1`  
 
 In the below figure we can see that  here  main thread 1 executed and one child is executed and then main thread 2 is executed. 
 
@@ -103,12 +121,27 @@ The parent thread is executed parallel with the child thread. This means the thr
 It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.  
  **syntax**:-  
  
-**fork**  
-   // Thread 1 \
-  // Thread 2 \
- // Thread 3  
- **join_none**   
+`fork `  
+  `Thread 1`  
+  `Thread 2`  
+  `Thread 3`  
+`join_none`
+ 
+**code snippet**:
 
+`fork:FORK_F1`  
+      `begin:BEGIN_B2`  
+        `#1 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
+        `b <= a;`  
+        `#1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`  
+      `end:BEGIN_B2`  
+      `fork:FORK_F2`  
+        `#1 -> e1;`  
+        `$display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);`   
+      `join:FORK_F2`  
+`join_none:FORK_F1`
+
+**Output**:
 
 ![Untitled Diagram drawio (8)](https://user-images.githubusercontent.com/110509375/186891715-959c0d1d-3cfa-44cd-9b58-8ff957c8b85b.png)
 
