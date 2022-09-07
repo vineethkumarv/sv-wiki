@@ -8,7 +8,7 @@
 
 Sr No. |-- |
 -- | -- | --  
-1 | Arithmetic operators [https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/operators-arithmetic-operators] | 
+1 | [Arithmetic operators](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/operators#1-arithmetic-operators)| 
 2 |
 3 [
 4 |
