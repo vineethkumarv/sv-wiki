@@ -121,10 +121,10 @@ The below figure shows the output of if-else conditional statement.
 ***
  
 ### 3. if else ladder   
-  
-<img width="527" alt="17" src="https://user-images.githubusercontent.com/110443268/188810764-fa42b586-fc92-44aa-9ce7-01a87dc4d10a.png">
+                  
+![if else ladder](https://user-images.githubusercontent.com/110412468/188856002-aefd1408-82d7-42e1-a9b6-6cfbcda1dc99.png)  
 
-                                   fig-4 :flow chart-if else ladder
+                   fig-4 :flow chart-if else ladder
   
 This conditional statement helps us to decide among multiple options or expressions. As soon as the expression becomes true, the statements inside it execute and the remaining code blocks are bypassed. If none of the expressions is true, the else block executes.   
 else block is an optional block in the ladder. It is used to avoid confusion in code.  
