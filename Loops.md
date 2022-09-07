@@ -53,9 +53,9 @@ A while loop first checks the condition is true and then executes the statements
 <img width="491" alt="while1" src="https://user-images.githubusercontent.com/110443268/188872484-af46f752-e8d2-4fbd-946f-e31f7e8482f4.png">
   
 
-** GitHub lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_basic/while_basic.sv
+**GitHub lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_basic/while_basic.sv
 
-** GitHub lab output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_basic/while_basic_log.log  
+**GitHub lab output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_basic/while_basic_log.log  
 
 
 
@@ -63,7 +63,9 @@ A while loop first checks the condition is true and then executes the statements
   
 We can declare variables inside the loop. But that variable is a local variable, only we can use it inside the loop if can't use it out of the loop. If we use the variable out of the loop it will through an error.  
   
-**Example** - Below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
+**Example** - 
+
+Below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
 
 **Code Snap**  
    
@@ -118,7 +120,9 @@ In the do-while loop, first execute the condition once and then check whether th
 
 ![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
 
-**Example** - Below example shows code to understand the working of do - while loop.  
+**Example** - 
+
+Below example shows code to understand the working of do - while loop.  
 
 
 
@@ -136,7 +140,9 @@ In the do-while loop, first execute the condition once and then check whether th
     while(apple<6); //while loop condition    
     end     
 
-**Output Snap**  Below figure shows the output of do while loop 
+**Output Snap** 
+
+ The below figure shows the output of do while loop 
 
 <img width="541" alt="while2" src="https://user-images.githubusercontent.com/110443268/188873058-a9eeae37-7185-441c-9ac7-42a644d351a4.png">
 
@@ -157,7 +163,9 @@ This loop is used for repeating statements or operations for a fixed given numbe
              `end  `    
   
 
-**Example** - Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times.  
+**Example** - 
+
+Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times.  
  
 **Code Snippet**  
   
@@ -189,7 +197,9 @@ This loop is used for repeating statements or operations for a fixed given numbe
 **Implementation of repeat loop using for loop**  
 We can implement a repeat loop using other loops also. Below example will show the implementation of a repeat loop using for loop.  
 
-**Example** - Same as the above example, here we are repeating these same statements using them for a  loop.  
+**Example** - 
+
+Same as the above example, here we are repeating these same statements using them for a  loop.  
   
 **Code Snippet**  
 
