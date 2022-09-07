@@ -19,9 +19,56 @@ When we fork off any thread, a new object of process class is created at that ti
 ## self()
 It creates the object for process class. The object is used to access all the methods of process class.   
 
+**code snippet**  
+
+    fork:FORK_F1  
+      
+       $display("[%0t] Entered into fork-join and started first check for the process",$time);  
+       #1 ->e1;  
+      
+        begin:BEGIN_B2  
+         wait(e1.triggered);  
+         if(p1 == null)  
+          #1 $display("[%0t] Not created",$time);  
+         else  
+           #1 $display("[%0t] Created",$time);  
+         ->e3;  
+         ->e2;  
+       end:BEGIN_B2
+      
+       #2 p1 = process :: self();
+
+       begin:BEGIN_B3
+        wait(e2.triggered);
+        $display("[%0t] Started second check for the process",$time);
+        if(p1 == null)
+          $display("[%0t] Not created",$time);
+        else
+          $display("[%0t] Created",$time);
+        ->e4;
+      end:BEGIN_B3
+      
+      fork:FORK_F2
+
+        begin:BEGIN_B4
+          wait(e3.triggered);
+          $display("[%0t] first check for the process done",$time);
+        end:BEGIN_B4
+      
+        begin:BEGIN_B5
+          wait(e4.triggered);
+          $display("[%0t] Second check for the process done",$time);
+        end:BEGIN_B5
+      
+      join:FORK_F2
+
+    join:FORK_F1
+
+
 Here in the below Fig-2 you can see that at 0ns time the object was not created but after 10ns time we used self() method in the code so the object was created.
 
-![self](https://user-images.githubusercontent.com/110447489/186918391-9abe783b-1538-4764-a5eb-5105ee94345f.jpg)
+![snap self](https://user-images.githubusercontent.com/110447489/188852816-d3a77ddf-15c6-416c-ba7c-34e0b28dde05.jpg)
+
 
           Fig-2: The output of the self() method.
 
@@ -32,9 +79,56 @@ Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 ## Status()
 It will shows the status or state of the process i.e Finished,Running,Waiting,Suspended,Killed.  
 
+**code snippet**  
+
+     $display("[%0t] Seeking status:",$time);  
+    
+      fork:FORK_F1  
+      
+         begin:BEGIN_B2  
+          p1 = process :: self();  
+          #1 $display("[%0t] I am in process p1",$time);  
+          $display("[%0t] Initial status of p1: %s",$time,p1.status());  
+          #1 $display("[%0t] Still working in p1",$time);  
+          ->e1;  
+          ->e2;  
+         end:BEGIN_B2  
+ 
+        begin:BEGIN_B3  
+          p2 = process :: self();  
+          wait(e2.triggered);  
+          #1 $display("[%0t] I am in process p2",$time);  
+          $display("[%0t] Initial status of p2: %s",$time,p2.status());  
+          $display("[%0t] Still working in p2",$time);  
+          ->e3;  
+        end:BEGIN_B3  
+
+        begin:BEGIN_B4  
+          wait(e1.triggered);  
+          $display("[%0t] Final status of p1: %s",$time,p1.status());  
+        end:BEGIN_B4  
+
+        begin:BEGIN_B5  
+          wait(e3.triggered);  
+          $display("[%0t] Final status of p2: %s",$time,p2.status());  
+        end:BEGIN_B5  
+
+        fork:FORK_F2  
+          p3 = process :: self();  
+          #1 $display("[%0t] I am in process p3",$time);  
+          #1 $display("[%0t] status of p3: %s",$time,p3.status());  
+          #1 ->e4;  
+        join:FORK_F2  
+
+      join_any:FORK_F1
+
+       wait(e4.triggered);   
+      #1 $display("[%0t] Final status of p3: %s",$time,p3.status());  
+
 Here in the below Fig-3 you can see that there are some strings which are in upper-case those are the status of a process p1 and p2.
 
-![status](https://user-images.githubusercontent.com/110447489/186918464-d50a89cc-c8ae-4b16-97b6-00159fd7fbd0.jpg)
+![snap status](https://user-images.githubusercontent.com/110447489/188853934-e79b1b4a-0726-4636-a982-a8ecf5e7cdf5.jpg)
+
 
           Fig-3: The output of the status() method.
 
