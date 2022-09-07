@@ -29,8 +29,12 @@ A while loop first checks the condition is true and then executes the statements
 **Flowchart:**
 
 ![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
+ 
+                                         Fig -1: Flowchart: while loop
 
-**Example** - Here, the example shows the print of a statement of 5 times using the while loop.  
+**Example** - 
+
+Here, the example shows the print of a statement of 5 times using the while loop.  
 
 
 **Code snap**  
@@ -50,6 +54,8 @@ A while loop first checks the condition is true and then executes the statements
 
 **Output snap**  
 
+The below figure shows the output of the while loop
+
 <img width="491" alt="while1" src="https://user-images.githubusercontent.com/110443268/188872484-af46f752-e8d2-4fbd-946f-e31f7e8482f4.png">
   
 
@@ -65,7 +71,7 @@ We can declare variables inside the loop. But that variable is a local variable,
   
 **Example** - 
 
-Below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
+The below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
 
 **Code Snap**  
    
@@ -92,6 +98,9 @@ Below example show the difference between the local and global variable.  There 
 
 
 **Output Snap**  
+
+The below figure shows the output of the  declaring the  variable inside the loop
+
 
 <img width="355" alt="18" src="https://user-images.githubusercontent.com/110443268/188861444-ce3f23e8-8e05-4254-82d3-2abf485775ef.png">
 
@@ -120,9 +129,11 @@ In the do-while loop, first execute the condition once and then check whether th
 
 ![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
 
+                                    Fig - 2: Flowchart: do while loop
+
 **Example** - 
 
-Below example shows code to understand the working of do - while loop.  
+The below example shows code to understand the working of do - while loop.  
 
 
 
@@ -165,7 +176,7 @@ This loop is used for repeating statements or operations for a fixed given numbe
 
 **Example** - 
 
-Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times.  
+The below example shows the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times.  
  
 **Code Snippet**  
   
@@ -182,8 +193,12 @@ Below example shows, the working of the repeat loop. Here, there are three state
 
 ![repeat](https://user-images.githubusercontent.com/110447788/188849639-db5fe78a-a6d6-43a8-8665-c12a9d51f46b.png)
 
+                                    Fig -3: Flowchart: repeat loop
 
 **Output Snippet**  
+
+The below figure shows the output of the repeat loop
+
 
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803547-7c5ff4fc-8388-45fc-817f-19c431c51943.png">
 
@@ -211,7 +226,10 @@ Same as the above example, here we are repeating these same statements using the
        end  
     end  
 
-**Output Snippet**  
+**Output Snap**  
+
+The below figure shows the output of the repeat loop by using for loop
+
 
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803668-ac46bcff-47a4-4867-8f87-3b946770c3e8.png">
 
@@ -252,12 +270,12 @@ For loop is simply a more compact form of while loop. In for loop assignment, th
 
 ![forloop](https://user-images.githubusercontent.com/110412468/188261911-62cacd1a-ee35-427a-8247-27f25a6fef28.png)  
 
-               Flowchart.1 - for loop flowchart  
+                             Flowchart.4- for loop flowchart  
 
 **output:**  
 ![for1](https://user-images.githubusercontent.com/110412468/188284411-8bbf4704-d0a5-4f19-8ad3-9dc068d30d31.png)  
 
-         Fig.1 - for loop output
+                             Fig.1 - for loop output
 
 As per the flowchart initially, i is 1 so the condition satisfies and performs display statement and prints as "iteration 1" and then goes to modifier and increments i, check the condition again and so on till i=5, now after 5 i is incremented to 6 then checks condition which is failed so comes out of the loop.
 
@@ -350,7 +368,7 @@ In the above example, a fixed array of size 5 is taken, using a foreach loop to 
 
 ![foreach flowchart](https://user-images.githubusercontent.com/110412468/188263683-d16a12a4-b6a5-4dc5-aa13-20cade36fd31.PNG)  
 
-               Flowchart-2.foreach loop flowchart  
+               Flowchart-5.foreach loop flowchart  
 
 **output:**  
 ![foreach1](https://user-images.githubusercontent.com/110412468/188284453-97501f0b-3bd3-4231-bc70-2bb179409464.png)   
@@ -427,7 +445,7 @@ In the above example, forever is used which is having display statement and incr
   
 ![forever finish](https://user-images.githubusercontent.com/110412468/188265756-3184f9c5-fc3e-4597-b10b-b096416f339a.png)  
 
-               Flowchart-3.forever with finish flowchart  
+               Flowchart-6.forever with finish flowchart  
 
 **output:**   
 ![forever using finish1](https://user-images.githubusercontent.com/110412468/188284468-0ab76b2c-abde-49f4-84dc-5c603adfcf3d.PNG)  
