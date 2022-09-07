@@ -1270,14 +1270,22 @@ A while loop first checks the condition is true and then executes the statements
 
 ![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
 
+**Example** - Here, the example shows the print of a statement of 5 times using the while loop.  
+
+
 **Code snap**  
 
-**Output snippet**  
 
-**lab link** -
+
+**Output snap**  
+
+<img width="491" alt="while1" src="https://user-images.githubusercontent.com/110443268/188872484-af46f752-e8d2-4fbd-946f-e31f7e8482f4.png">
+  
+
+** GitHub lab Code link** -
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
 
-**lab output link**  
+** GitHub lab output link**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_loop_output.log  
 
 
@@ -1288,7 +1296,7 @@ We can declare variables inside the loop. But that variable is a local variable,
   
 **Example** - Below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
 
-**Code Snippet**  
+**Code Snap**  
    
     int x = 2; // variable declare  
     initial begin  
@@ -1340,6 +1348,16 @@ In the do-while loop, first execute the condition once and then check whether th
 **Flowchart:**
 
 ![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
+
+**Example** - Below example shows code to understand the working of do - while loop.  
+
+
+
+**Code Snap**  
+
+**Output Snap**  Below figure shows the output of do while loop 
+
+<img width="541" alt="while2" src="https://user-images.githubusercontent.com/110443268/188873058-a9eeae37-7185-441c-9ac7-42a644d351a4.png">
 
 
 **GitHub Lab Code link** -  
