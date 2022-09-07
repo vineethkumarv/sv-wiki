@@ -154,8 +154,16 @@ Operator | Description
 Consider, a = 100  
 b=110  
 
+*  **a & b**: bit-wise and of a,b the result is 100.  
+*  **a | b**: bit-wise or of a,b the result is 110.  
+*  **a ~& b**: bit-wise nand of a,b the result is 011.  
+*  **a ~| b**: bit-wise nor of a,b the result is 001.  
+*  **a ^ b**: bit-wise xor of a,b the result is 101.  
+*  **a ~^ b**: bit-wise nxor of a,b the result is 010.  
 
 
+
+![bitwise](https://user-images.githubusercontent.com/106074838/188878058-9c816249-4770-4567-bbfa-d7c102350f16.png)  
 
                          Figure.5. the output of the Bitwise operator. 
 
@@ -164,7 +172,7 @@ b=110
 **GitHub lab output link**  
 
 ---
-
+6.
 
 
 ---
