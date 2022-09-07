@@ -1218,22 +1218,22 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 ***
 
 ### 4. while
-
-In this loop, the first condition is checked, if it is true and the statements inside the while loop will execute until the condition become false.
-
+In a while loop, first we need to check the condition then only we can execute the statements. We need to initialize the variable in the condition before execution.  
+A while loop first checks the condition is true and then executes the statements if it is true. If the condition is false, the loop ends right there.     
+   
 **Syntax** -   
 `               while(condition)begin              `  
                `Statements;  `  
                `end  ` 
- 
-The below example will give an idea about the working of the while loop.  
   
-![while](https://user-images.githubusercontent.com/110412468/187091159-f86d2f2e-1e21-496f-83db-9f7a97133b80.png)
 
 **Flowchart:**
 
 ![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
 
+**Code snippet**  
+
+**Output snippet**  
 
 **lab link** -
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
@@ -1244,8 +1244,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ***
  ### 5. do-while 
-A do while loop first executes the statements once, and then checks for the condition is be true. If the condition is true, the set of statements is executed until the condition turns out to be false. If the condition is false, the loop ends right there.
-
+In the do-while loop, first execute the condition once and then check whether the condition is true or not. If the condition is true, the set of statements is executed until the condition turns out to be false. If the condition is false the loop ends right there.  
 
 **Syntax** -  
 `                 do begin                 `  
@@ -1262,10 +1261,10 @@ A do while loop first executes the statements once, and then checks for the cond
 ![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
 
 
-**lab link** -  
+**GitHub Lab Code link** -  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code.sv  
 
-**lab output link**  
+**GitHub LAb Output link**  
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code_output.log  
 
 ***
