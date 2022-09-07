@@ -49,7 +49,7 @@ For more than one statement in conditional blocks, need to use begin end block. 
       $display("out of if block");  
     end  
 
-**Output snippet**  
+**Output Snap**  
 The below figure shows the output of if conditional statement.  
  
 <img width="655" alt="1" src="https://user-images.githubusercontent.com/110443268/188662446-3cac3305-0f7a-435c-808e-5ee433a19e4c.png">  
@@ -106,7 +106,7 @@ Here the variable declares a is byte type(signed) and the value assigned to it i
       $display ("Out of if else block");  
      end  
 
- **Output Snippet**  
+ **Output Snap**  
 The below figure shows the output of if-else conditional statement.  
   
 <img width="661" alt="2" src="https://user-images.githubusercontent.com/110443268/188662765-67e08d46-2cfa-428f-bdc5-c57f473c91bd.png">
@@ -187,7 +187,7 @@ Sequentially all the conditional expressions will be checked. The compiler will 
         $display ("Out from ladder block");  
         end  
   
-**output snippet**  
+**output Snap**  
   The below figure shows the output of the if else ladder without the else conditional statement.  
 
 <img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
@@ -233,7 +233,7 @@ Here the example shows the execution of the else block.
      $display ("Out of the conditional block ");  
     end  
   
-**output snippet**  
+**output Snap**  
 The below figure shows the output of the if-else ladder with else conditional statement.     
 
 <img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">  
@@ -295,7 +295,7 @@ size() is a default function of SV, use to get the size of the given variable. T
       $display ("Out from conditional block ");    
       end  
 
-**output snippet**  
+**output Snap**  
 
 The below figure shows the output of the unique if for only one true condition.
 
@@ -387,7 +387,7 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
       $display ("Out of the conditional block ");    
       end  
 
-  **output snap**  
+  **Output Snap**  
 
 The below figure shows the output of the unique if -none of the conditions is true without else.  
   
@@ -430,7 +430,7 @@ The output will be the set of statements of unique if block and one warning are 
       $display ("---------------------------------");    
       end    
  
-**Output snap**  
+**Output Snap**  
   
 The below figure shows the output of the unique if -more than the conditions is true.  
  
@@ -492,7 +492,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
     $display ("Out from the conditional block ");  
     end  
 
-**output snippet**  
+**Output Snap**  
 The below figure shows the output of the unique0 if -none of the conditions is true.  
 
 
@@ -569,7 +569,7 @@ It is just the same as the if else if block.
     $display ("Out from the block ");  
     end 
 
-**Output snap** 
+**Output Snap** 
 
  The below figure shows the output of the priority if - only one condition is true.  
   
@@ -611,7 +611,7 @@ The compiler will check the conditional expression sequentially. It will execute
     $display ("Out from the conditional block ");  
     end  
 
-**output snap**  
+**Output Snap**  
  
  The below figure shows the output of the priority if - more than one condition is true.  
 
@@ -655,7 +655,7 @@ When none of the conditional expressions is true, the compiler will come out fro
     $display ("Do more shopping for more discount ......");  
     end  
 
-**Output Snippet**  
+**Output Snap**  
 
    The below figure shows the output of the priority if - none of the conditions is true without else.  
 
@@ -705,7 +705,7 @@ When none of the conditional expressions is true by default compiler to execute 
     $display ("Do more shopping for more discount ......");  
     end  
 
-**output snippet**  
+**Output Snap**  
  The below figure shows the output of the priority if - more than one condition is true without else.  
     
 <img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">  
@@ -794,7 +794,7 @@ In the above example,  here expression= "x" should match one of the case items. 
 
                                   Fig -10: flow chart: case statement with default statement
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of the case statement which is true for one condition.  
   
@@ -843,7 +843,7 @@ In this example, if none of the case conditions is true or no default statement 
                       
                                        Fig -11: flow chart: case statement without default statement
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of the case statement without using the default statement.  
   
@@ -885,7 +885,7 @@ If we want to give a range value in a case statement, this will be done with hel
 
 In the above example, we are declaring a range in a case statement with the use of **inside** statement. In this, they will get the value from the declared range by the use of an inside statement.
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of the case statement with a range.  
   
@@ -910,7 +910,7 @@ In the above output, the case statement will get executed with the use of an ins
 
 the break statement is not allowed to use within the loops. while using a break inside the case statement, an error has occurred.
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of using a break statement inside the case statement.  
   
@@ -957,7 +957,7 @@ If all the conditions are true or more than one condition is true, it will read 
 
 In the above example, the unique case statement is used. Here all the conditions are false, this will print the output with a warning and no error.
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of a unique case statement in which no conditions are true.  
   
@@ -994,7 +994,7 @@ If these two condition is true, at the time of execution this will take the firs
         
                               Fig -12: flow chart: unique case statement
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of a unique case statement in which more than one condition is true.  
   
@@ -1044,7 +1044,7 @@ In this, if no conditions of the case statement are true then the default statem
 
                                Fig -13: flow chart: unique case with default statement
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of a unique case statement by using the default statement.  
 
@@ -1088,7 +1088,7 @@ If all the conditions are true or more than one condition is true, it will read 
 
 In the above example, the unique0 case is used. In these two conditions is true and unique0 will read the first right or matched condition and print the output Value of x = "1" with the warning.
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of the unique0 case statement in which two conditions are true.  
 
@@ -1134,7 +1134,7 @@ In the above example, the priority case is used. In these two conditions is the 
 
                                 Fig -14: flow chart: priority case statement
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of the priority case statement in which two conditions are true.  
 
@@ -1400,7 +1400,7 @@ In the above example, a break statement is used inside the loop which terminates
 
                                       Fig-: flow chart: break statement
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of using the break statement.  
   
@@ -1446,7 +1446,7 @@ In the above example, **continue** statement is used inside the loop that skips 
 
                                         Fig - : flow chart: continue statement
 
-**Output snippet:**
+**Output Snap:**
 
 The below figure shows the output of using the continue statement.  
   
