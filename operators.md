@@ -211,7 +211,7 @@ Consider, a = 101
 To use the conditional operator, we write a logical expression before the? operator which is then evaluated to see if it is true or false.
 The output is assigned to one of two values depending on whether the expression is true or false.  
  
-general syntax for the conditional operator.  
+the general syntax for the conditional operator.  
 
 **output = <condition> ? <true> : <false>**
 
@@ -231,12 +231,12 @@ In the above example enable condition is true it will execute the data otherwise
 ***
 
 
-8.**Reduction operator:**  
+8.**Reduction operator:**   
 
+Reduction operators are unary.  
+They perform a bit-wise operation on a single operand to produce a single-bit result.  
 
 **Reduction operator cheat sheet**
-
-
 Operator | Description
 -- | --
 & | and
@@ -246,8 +246,34 @@ Operator | Description
 ^ | xor
 ^~ or ~^ | xnor
 
+****Example:****  
+Consider, a = 1010    
+   
+*  ** &a **: Here we performing the Reduction and operation, and the result is 0.  
+*  ** |a **: Here we performing the Reduction or operation, and the result is 1.  
+*  ** ~&a **: Here we performing the Reduction NAND operation, and the result is 1.  
+*  ** ~|a **: Here we performing the Reduction or operation, and the result is 0.  
+*  ** ^a **: Here we performing the Reduction or operation, and the result is 0.  
+*  ** ~^a **: Here we performing the Reduction or operation, and the result is 1. 
+  
+![reduction](https://user-images.githubusercontent.com/106074838/188919502-6de9155c-d618-4697-9b38-2d9586a87eca.png)
+
+             Figure.9. the output of the Reduction operator.
+   
 **GitHub lab code link**     
 
-**GitHub lab output link**  
+**GitHub lab output link**   
+
+8.** Concatenation and Replication Operators:**    
+
+
+**Concatenation and Replication operator cheat sheet**  
+Operator | Description
+-- | --
+{ } | Concatenation operator
+{{ }} | Replication operator 
+
+
+
 
 
