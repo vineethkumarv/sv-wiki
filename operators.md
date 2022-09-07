@@ -131,7 +131,7 @@ Consider, a = 100
 
 ![logical](https://user-images.githubusercontent.com/106074838/188864090-4a8153c8-fa79-49ca-8fec-ea83d327df8a.png)  
 
-              Figure.4. the output of the Logical operator.  
+              Figure.5. the output of the Logical operator.  
 **GitHub lab code link**     
 
 **GitHub lab output link**  
@@ -165,16 +165,47 @@ b=110
 
 ![bitwise](https://user-images.githubusercontent.com/106074838/188878058-9c816249-4770-4567-bbfa-d7c102350f16.png)  
 
-                         Figure.5. the output of the Bitwise operator. 
+                         Figure.6. the output of the Bitwise operator. 
 
 **GitHub lab code link**     
 
 **GitHub lab output link**  
 
 ---
-6.
+6.**shift operator:**   
+
+There 2 types of shift operators 
+* Logical shift operators   
+* Arithmetic shift operators  
+
+**Shift operator cheat sheet**  
+
+|Operator | Description|
+|-- | --|
+|<< | shift left logical|
+|>> | shift right logical|
+|<<< | shift left arithmetic|
+|>>> | shift right arithmetic|
 
 
+The shift operator actually requires two arguments. The first of these is the name of the signal which we want to shift. The second argument is the number of bits we want to shift.    
+
+When we use the logical shift operators, all the blank positions are filled with 0's after the signal has been shifted by the required number of bits.
+
+****Example:****  
+Consider, a = 101    
+*  **a <<1**: a is shifted to the left by a 1-bit position and the result is 011. 
+*  **a >>1**: a is shifted to the right by a 1-bit position and the result is 010. 
+*  **a >>>2**: a is shifted to the right by a 2-bit position and the result is 111. (in the right shifted by 2-bit position and filled with 1's.)     
+*  **a <<<2**: a is shifted to the left by a 2-bit position and the result is 100. 
+
+![shift](https://user-images.githubusercontent.com/106074838/188883284-40ae0e7a-1f7f-4244-bbb4-5cf69565c1c9.png)  
+
+                     Figure.7. the output of the shift operator.   
+
+**GitHub lab code link**     
+
+**GitHub lab output link**  
 ---
 
 8.**Reduction operator:**
