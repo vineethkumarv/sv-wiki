@@ -799,11 +799,11 @@ A system Verilog case statement starts with the case keyword and ends with the e
             // 01 : $display("Value of x = %0b",x);
             10 : $display("Value of x = %0b",x);
             11 : $display("Value of x = %0b" ,x);
-            default : $display("Value of x is not find");
+            default : $display("Value of x is not found");
             endcase
 
 In the above example,  here expression= "x" should match one of the case items but here no condition is true. In this '01' value is given to the x so the case item '01' is not matched with the expression = 'x'. Then default get executes. 
-If none of the conditions is true then the default statement gets executed .
+If none of the conditions is true then the default statement gets executed. This will display 'Value of x is not found' in the output.
 
 
 **Flowchart:**
@@ -814,7 +814,7 @@ If none of the conditions is true then the default statement gets executed .
 
 **Output Snap:**
 
-The below figure shows the output of the case statement which is not true for any condition.  
+The below figure shows the output of the case statement in which one condition is true.  
   
 
 ![Untitled Diagram-Page-5 drawio (1)](https://user-images.githubusercontent.com/110447788/188300504-805f8740-4cf9-41c7-be1a-6c50a2986b45.png)
