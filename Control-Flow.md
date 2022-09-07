@@ -1042,7 +1042,9 @@ In the above output, two conditions are true at a time this will make the case s
 
 In this type of case statement, if more than one case condition is true, it will display the output without giving any error with no warning.
 
-**Syntax :**  
+**Syntax
+***
+:**  
 
              priority case(condition)
              condition_1: Statements ;
@@ -1091,6 +1093,8 @@ In the above output, more than one condition is true. priority case checks the f
 
 
 
+***
+
 
 
 ## Loops 
@@ -1127,7 +1131,7 @@ c. modifier - means in this part, the increment or decrement is done.
 **Syntax** -   
 `              for (initialization; condition; modifier) begin  `    
               `Statements;  `    
-              `end   `  ##     
+              `end   `       
   
 ![for loop](https://user-images.githubusercontent.com/110412468/187091118-b1918f12-53e4-464d-a8e6-593fb5275796.png)
 
@@ -1242,7 +1246,7 @@ https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/l
 
 ### 6. repeat 
 
-This loop is used for repeating statements or operations for a fixed number of times.
+This loop is used for repeating statements or operations for a fixed given number of times.  
 
 **Syntax** -  
              `repeat(no. of times)begin  `  
@@ -1251,12 +1255,21 @@ This loop is used for repeating statements or operations for a fixed number of t
   
 ![repeat loop](https://user-images.githubusercontent.com/110412468/187091201-fa51918b-57e9-4353-bf81-3886311dc947.png)
 
+**Example** - Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times. 
+**Code Snippet**  
+
+**Output snippet**  
+
 
 **lab link** - 
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat_loop/repeat_code.sv  
 
 **lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat_loop/repeat_loop_output.log   
+
+**Implementation of repeat loop using for loop**  
+We can implement a repeat loop using other loops also. Below example will show the implementation of a repeat loop using for loop.  
+
+**Example** - Same as the above example , here we are repeating these same statements using the for a  loop.
+  
 
 
 ***
