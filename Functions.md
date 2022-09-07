@@ -57,10 +57,15 @@ Here in the above example function name is sum which is of return type int i.e.,
 
 **Flowchart:**
 
-![function flowchart - Copy](https://user-images.githubusercontent.com/110412468/188573070-fc9e6eef-762a-44a5-8adf-3957dbbeaf91.png)  
+![function flowchart - Copy](https://user-images.githubusercontent.com/110412468/188573070-fc9e6eef-762a-44a5-8adf-3957dbbeaf91.png)   
+
+                    Flowchart.1- functions passing values  
 
 **output:**  
-![func pass by val1](https://user-images.githubusercontent.com/110412468/188588577-c1aef74b-1d62-4b46-adb3-7b43662f042b.png)
+
+![func pass by val1](https://user-images.githubusercontent.com/110412468/188588577-c1aef74b-1d62-4b46-adb3-7b43662f042b.png)  
+
+              Fig.1- output for function with passing values as arguments  
 
 In the above example, the result is a variable declared as int to store the result of the function sum.  
 when the sum function is executed, the simulator checks for the function named sum is present or not, if yes then compares the arguments and return the type of function if all match then it proceeds with statements of the function. Then the value 5 is stored in var1, and 6 is stored in var2 After entering into the function it will display entered into function, and next, it will return the value of var1+var2 which will be caught by the variable result and displayed in the next line.
@@ -87,9 +92,13 @@ when the sum function is executed, the simulator checks for the function named s
 
 ![function flowchart - Copy (2)](https://user-images.githubusercontent.com/110412468/188593202-c0bb5016-f856-4a55-ba94-0d45826642db.png)  
 
+                    Flowchart.2- functions passing arguments as variables   
+
 **output:**  
 
 ![func pass by variables1](https://user-images.githubusercontent.com/110412468/188593334-04c163c0-df7c-4ddf-9dc0-832bf29a9bad.png)  
+
+              Fig.1- output for function with passing values as variables  
 
 This is almost similar to the example of passing by values but here will just pass the values by storing the values in variables so that the same line can be reusable if needed and here the variables called in initial module a&b are different than the a&b in function i.e., they have separate memory if any change is made in function on variables a&b then it won't be reflected with values of main modules a&b until a&b are declared as global. 
 Here in the functional declaration we also mentioned input for variables whereas in the first example we didn't mention it, so we can give the directions of arguments if necessary and only one output is possible for functions.
@@ -110,6 +119,8 @@ Here in the functional declaration we also mentioned input for variables whereas
 **output:**  
 
 ![func call from display1](https://user-images.githubusercontent.com/110412468/188594048-7d9f5443-493d-4b26-805c-9e3e5f9c897d.png)    
+   
+              Fig.3- output for function call from an expression    
 
 In the above example, we didn't use any variables to store the values of the return type of the function, function is called directly from the display statement where the return value is passed to the display statement or else can be used in any expression i.e., function can be called as part of an expression (if we want to add 3 values of 4,5,6 then we can use as 4+sum(5,6).)  
 
@@ -132,6 +143,8 @@ In the above example, we didn't use any variables to store the values of the ret
 **output:**  
   
 ![func pass by positional1](https://user-images.githubusercontent.com/110412468/188599306-fc055066-b27a-4c07-8159-ea5ee63d940f.png)  
+   
+              Fig.4- output for function call passing positional arguments   
 
 In the above example, we are calling the function using positional arguments i.e., value 5 is pointed to var1 of the function and 6 to var2 and then after works as a normal function only.
 
@@ -172,7 +185,9 @@ Here we are using the function with an automatic keyword which means whenever th
 **output:**  
 
 ![func automatic1](https://user-images.githubusercontent.com/110412468/188612191-0375c8f2-8c42-46f6-a151-e1ffe005203f.png)  
-  
+     
+              Fig.5- output for automatic function     
+
 In the above example, we created two functions one is static & other is automatic and calling the sum function twice in the fork so runs parallel and runs concurrently so in the static function the previous memory is overwritten with the old values so that's why lost the data of sum which is 5 but in automatic, it was showing as expected, so whenever automatic is used new memory is allocated for every call.  
 
 
@@ -185,6 +200,7 @@ In the above example, we created two functions one is static & other is automati
 
 ![function flowchart - Copy (3)](https://user-images.githubusercontent.com/110412468/188602682-44e19404-dd9e-451a-a83d-6f317841550e.png)
 
+                    Flowchart.3- functions passing arguments as variables with reference  
 **Example:**   
 
           int result,addend,augend;  
@@ -224,6 +240,8 @@ when calling the function by passing variables reference, need to mention the ke
 **output:**  
   
 ![func pass by ref1](https://user-images.githubusercontent.com/110412468/188600795-1c972676-f695-4f83-8fcf-b2567a85cd43.png)  
+   
+              Fig.6- output for function call passing arguments with reference   
 
 In the above example, here trying to call the function by passing the variables reference which means the values addend and augend in the main module and in the automatic function both share the same space of memory. In the example mentioned both static and automatic were given the sum and swapped the variables which are performed in automatic but not in static function.   
  
@@ -251,6 +269,8 @@ In the above example, here trying to call the function by passing the variables 
 **output:**   
 
 ![func return void1](https://user-images.githubusercontent.com/110412468/188607672-a724034e-477d-4467-aa18-08e57e5c74be.png)
+   
+              Fig.7- output for void function type     
 
 In the example, we are calling the function but don't care about the return value of the function, but if we don't mention then the compiler will through warning so in that case will use the convert the function data type to void or else can ignore at function calling point by using the type conversion 
 
@@ -279,6 +299,8 @@ In the example, we are calling the function but don't care about the return valu
 **output:**  
 
 ![func return arr1](https://user-images.githubusercontent.com/110412468/188604840-93f11301-2bff-48e8-b54e-cee307a35de9.png)  
+   
+              Fig.8- output for function returns an array     
 
 In this example, calling the function with an array, initially took an empty array of int type so will have all 0's initially and in function assigning the values starting from 1 and incrementing by 1 value and assigning for each index of the array with help of foreach loop, here we used reference so the arr and array both are same. 
 
@@ -306,6 +328,8 @@ In this example, calling the function with an array, initially took an empty arr
 **output:**   
 
 ![func array from display1](https://user-images.githubusercontent.com/110412468/188615368-51613153-5cc7-4698-820e-e22fe12e0d43.png)  
+   
+              Fig.8- output for a function call from an expression which returns array    
 
 In the example, we are calling a function from a display that returns an array where we need to create a data type using a typedef as mentioned in code with the array and size and make use of that data type and call the function, note that you need to change the function return type to the typedef type.
 
@@ -344,9 +368,12 @@ In general, calling a task from a function is illegal, the compiler will through
 
 ![task from func](https://user-images.githubusercontent.com/110412468/188619777-ff448c85-170e-4604-a466-779d621944c3.png)
 
+                    Flowchart.4- calling a task from the function  
+
 **output:**   
  
 ![task from func1](https://user-images.githubusercontent.com/110412468/188620923-5148ad27-001e-496a-8c10-918cf0c93e65.png)
-
-
+   
+              Fig.9- output for calling a task from function      
+              
 In the initial block, called a function that has some statements and calls a task inside the fork join_none so that the task from a function can be accomplished, here at 0 ns the simulator is in the initial block and a func is called, then @1 ns it printed that I'm in function and task is called @1ns in func and from there simulator goes to task, @2ns it prints I'm in task and waits for 1ns more and leaving the task.
