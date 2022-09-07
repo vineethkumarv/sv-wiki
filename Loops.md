@@ -8,14 +8,211 @@ A Loop is nothing but statements that need to be run more than once are included
 ## loops cheat sheet
 |S.No.|Loops_variants|Explanation|
 |:----|:-------------|:----------|
-|1.|[while]()|Repeats the set of statements based on condition|
-|2.|[do_while]()|Once runs the statements without checking the condition then behaves as while|
-|3.|[repeat]()|Repeats the statements only a particular number of times|
+|1.|[while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops/_edit#1-while)|Repeats the set of statements based on condition|
+|2.|[do_while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops/_edit#2-do-while)|Once runs the statements without checking the condition then behaves as while|
+|3.|[repeat](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops/_edit#3repeat)|Repeats the statements only a particular number of times|
 |4.|[for_loop](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#4for-loop)|Similar to while but more compact than while|
 |5.|[foreach](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#5foreach)|Only Used to traverse through every element of array |
 |6.|[forever](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#6forever)|Repeats the statements throughout simulation|  
  
 ***
+### 1. while
+In a while loop, first we need to check the condition then only we can execute the statements. We need to initialize the variable in the condition before execution.  
+A while loop first checks the condition is true and then executes the statements if it is true. If the condition is false, the loop ends right there.     
+   
+**Syntax** -   
+`               while(condition)begin              `  
+               `Statements;  `  
+               `end  ` 
+  
+
+**Flowchart:**
+
+![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
+
+**Example** - Here, the example shows the print of a statement of 5 times using the while loop.  
+
+
+**Code snap**  
+
+
+    int apple = 1; //int data type and variable name is apple
+
+    initial begin  //procedural blocks
+     $display("-----while loop output ---");
+    while (apple <6) //while loop and condition
+      begin
+     $display("\t value of apple = %0d", apple);
+     apple++;
+    end  
+    end
+
+
+**Output snap**  
+
+<img width="491" alt="while1" src="https://user-images.githubusercontent.com/110443268/188872484-af46f752-e8d2-4fbd-946f-e31f7e8482f4.png">
+  
+
+** GitHub lab Code link** -
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
+
+** GitHub lab output link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_loop_output.log  
+
+
+
+**Declare variable inside the loop  **
+  
+We can declare variables inside the loop. But that variable is a local variable, only we can use it inside the loop if can't use it out of the loop. If we use the variable out of the loop it will through an error.  
+  
+**Example** - Below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
+
+**Code Snap**  
+   
+    int x = 2; // variable declare  
+    initial begin  
+    while ( x<5)begin  
+    int a;  // declare the variable inside the loop  
+    $display ("Iteration = %0d",x);  
+    $display ("a is a local variable");  
+    $display ("The size of a = %0d",$size(a));  
+    $display ("------------------------------");  
+    // a is a local variable. We can't use it out of the loop.  
+    x++;    // incrementing the x  
+    end  
+    // After the execution of the above loop. The value of x = 4 .  
+
+    while (x<8)begin  
+     $display ("x is a global varaible ");  
+     $display ( "The value of x = %0d",x);  
+     $display ("------------------------");  
+    x++;  
+    end  
+    end  
+
+
+**Output Snap**  
+
+<img width="355" alt="18" src="https://user-images.githubusercontent.com/110443268/188861444-ce3f23e8-8e05-4254-82d3-2abf485775ef.png">
+
+
+**GitHub Lab Code link**  
+
+
+**GitHub Lab Output link**  
+
+
+***
+ ### 2. do-while 
+In the do-while loop, first execute the condition once and then check whether the condition is true or not. If the condition is true, the set of statements is executed until the condition turns out to be false. If the condition is false the loop ends right there.  
+
+**Syntax** -  
+`                 do begin                 `  
+                 `Statements;           `  
+                 `end                  `  
+                `while(condition)begin     `  
+                `Statements;  `  
+                `end  `    
+  
+
+**Flowchart:**
+
+![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
+
+**Example** - Below example shows code to understand the working of do - while loop.  
+
+
+
+**Code Snap**   
+
+     int apple = 1; //int data type and variable name is apple
+     initial begin //procedural block
+     $display("------do while output ---");
+     do //do statements
+    begin
+     $display("\t Value of apple = %0d", apple);
+
+     apple = apple +1;
+    end      
+    while(apple<6); //while loop condition    
+    end     
+
+**Output Snap**  Below figure shows the output of do while loop 
+
+<img width="541" alt="while2" src="https://user-images.githubusercontent.com/110443268/188873058-a9eeae37-7185-441c-9ac7-42a644d351a4.png">
+
+
+**GitHub Lab Code link** -  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code.sv  
+
+**GitHub Lab Output link**  
+https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code_output.log  
+
+***
+
+### 3.repeat 
+
+This loop is used for repeating statements or operations for a fixed given number of times.  
+
+**Syntax** -  
+             `repeat(no. of times)begin  `  
+             `statements;  `  
+             `end  `    
+  
+
+**Example** - Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times.  
+ 
+**Code Snippet**  
+  
+    module repeat_code;  
+    initial begin ;  
+     repeat(4)begin   // Repeat the statements inside 4 times  
+       $display ("Good morning");  
+       $display ("Keep shining");  
+       $display ("--------------");  
+     end  
+    end  
+
+**Flowchart:**
+
+![repeat](https://user-images.githubusercontent.com/110447788/188849639-db5fe78a-a6d6-43a8-8665-c12a9d51f46b.png)
+
+
+**Output Snippet**  
+
+<img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803547-7c5ff4fc-8388-45fc-817f-19c431c51943.png">
+
+
+**GitHub Code Lab link** - 
+
+**GitHub Lab Output link**
+
+**Implementation of repeat loop using for loop**  
+We can implement a repeat loop using other loops also. Below example will show the implementation of a repeat loop using for loop.  
+
+**Example** - Same as the above example, here we are repeating these same statements using them for a  loop.  
+  
+**Code Snippet**  
+
+     initial begin  
+      for (int i = 1;i<=4;i++)begin   // for loop initialization, repeat the statements inside it for  
+         $display ("Good morning");   // 4 times (i =1,2,3,4)  
+         $display ("Keep Shining");  
+         $display ("------------");  
+       end  
+    end  
+
+**Output Snippet**  
+
+<img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803668-ac46bcff-47a4-4867-8f87-3b946770c3e8.png">
+
+**GitHub Lab Code link**  
+
+**GitHub Lab Output link**  
+  
+
+***
+
 ## 4.for loop  
 
 For loop is simply a more compact form of while loop. In for loop assignment, there are three parts:  
@@ -24,7 +221,7 @@ For loop is simply a more compact form of while loop. In for loop assignment, th
 * modifier - incrementing/decrementing the variables.
 
 **Syntax:**  
-`for ( Initialization ; condition ; modifier )`  
+`for ( Initialization; condition; modifier )`  
 `begin`  
 `statement1;`  
 `statement2`  
@@ -66,11 +263,10 @@ Note: If you use a local scope variable outside then the compiler throughs an er
 
 
 ***
-
-### Nested for loop
+**Nested for loop**
 
 **Syntax:**  
-`for ( Initialization ; condition ; modifier )`    
+`for ( Initialization ; condition; modifier )`    
 `begin`  
 `statements;`
 `for ( Initialization ; condition ; modifier )`
@@ -100,8 +296,8 @@ In the above example we are using nested for loop to print tables, so took i as 
 
 In this i,j& k are used as i X j = k, so i is range from 1-2 and each has j from 1-10 and k is storing and printing using display statements.    
 
-**Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/nested_for/table_for_loop.sv     
-**Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/nested_for/tabe_for_loop_output.log     
+**GitHub lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/nested_for/table_for_loop.sv     
+**GitHub lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/nested_for/tabe_for_loop_output.log     
 
 **Advantages:**
 * Readable
