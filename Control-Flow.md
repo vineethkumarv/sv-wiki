@@ -926,6 +926,45 @@ In this, an error will occur.
 
 **GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case_op.log
  
+**Using of disable keyword to disable the nested loop inside the task**
+
+Using the disable keyword followed by a task will only disable tasks and named blocks.
+The disable statement discontinues the execution of a named group of statements. 
+
+**Example:**
+
+            task nes();
+            for (int i=1;i<=3;i++)
+            begin
+            for(int j=1;j<=3;j++)
+            begin
+            if(i==2)
+            begin
+            disable nes;
+            end
+            $display("\t i= %0d , j= %0d ",i,j);
+            end
+            end
+            endtask
+            endmodule:nested_loop
+
+In the above example, disable keyword is used to disable the task at a particular iteration. Inside the task, we declared the two nested "for" loops in which we use the if condition to move out from the loops with the use of disable keyword. Inside the task, the 'if' condition has been declared at iteration '2'. At iteration '2' if the condition matches and it will disable the task with the help of disable keyword.
+
+
+
+**Output Snap**
+
+The below figure shows the output in which disable keyword is used to disables the task.
+
+![Screenshot (24)](https://user-images.githubusercontent.com/110447788/188873987-430a7984-a3df-4d51-bfa1-2e562f509844.png)
+
+                          Fig - : Output: Using of disable keyword inside the task
+
+**GitHub Lab Code link:** https://github.com/piyushagrawal4578/control-flow/blob/main/nested_loop/nested_loop.sv
+
+**GitHub Lab Output Code:** https://github.com/piyushagrawal4578/control-flow/blob/main/nested_loop/nested_loop_op.log
+
+
 There are three updates for the case statement in the system Verilog and these are -  
 *  unique case  
 *  unique0 case  
