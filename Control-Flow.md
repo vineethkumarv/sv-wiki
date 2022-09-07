@@ -147,6 +147,7 @@ else block is an optional block in the ladder. It is used to avoid confusion in 
 **without else**  
 
 Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements that has valid condition expression. 
+
 **Example**  -
 
  The below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
@@ -298,7 +299,7 @@ with else - else block statements execute.
 
 <img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">  
 
-                                  fig -6: with else unique if flow chart
+                                  fig -6:flow chart:  with else unique if 
  
 
 Example -  
@@ -418,7 +419,7 @@ The output will be the set of statements of unique if block and one warning are 
 
 <img width="520" alt="uniqueif1 drawio" src="https://user-images.githubusercontent.com/110443268/188624283-a7feb571-9299-4571-8faf-99250c065ceb.png">
 
-                                  fig -7 :unique0_if  
+                                  fig -7 :flow chart: unique0_if  
 
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
@@ -461,6 +462,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
     end  
 
 **output snippet**
+
 <img width="627" alt="9" src="https://user-images.githubusercontent.com/110443268/188665606-6b9f4e2f-016b-443a-84fe-c05a64d4dba6.png">  
 
                                        fig-9 : Output-unique0 if
@@ -475,7 +477,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
    
-                                     fig -8: priorityif
+                                     fig -8: flow chart: priorityif
 
 priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
 
@@ -534,7 +536,8 @@ It is just the same as the if else if block.
     $display ("Out from the block ");  
     end 
 
-**Output snap**  
+**Output snap** 
+ 
 <img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">  
                  
                                     fig -10:Output-priority if -only one condition is true
@@ -628,7 +631,7 @@ When none of the conditional expressions is true, the compiler will come out fro
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
       
-                                 fig -9: with else priority if
+                                 fig -9: flow chart: with else priority if
 
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
 **Example** -      
@@ -746,7 +749,7 @@ In the above example,  here expression= "x" should match one of the case items. 
 
 ![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110447788/188362145-06201cc7-c397-4b46-b399-afb77f1dcc5e.png)
 
-                                  Fig -10: case statement with default statement
+                                  Fig -10: flow chart: case statement with default statement
 
 **Output snippet:**
 
@@ -792,7 +795,7 @@ In this example, if none of the case conditions is true or no default statement 
 
 ![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110447788/188387249-68cd086b-7cd0-4ec8-97cc-5d96d511eeb8.png)
                       
-                                       Fig -11: case statement without default statement
+                                       Fig -11: flow chart: case statement without default statement
 
 **Output snippet:**
 
@@ -929,7 +932,7 @@ If these two condition is true, at the time of execution this will take the firs
 
 ![Untitled Diagram-Page-2 (1)](https://user-images.githubusercontent.com/110447788/188631312-47429f33-e575-4f20-977b-2ee272f46f3a.jpg)
         
-                              Fig -12: unique case statement
+                              Fig -12: flow chart: unique case statement
 
 **Output snippet:**
 
@@ -976,7 +979,7 @@ In this, if no conditions of the case statement are true then the default statem
 
 ![Untitled Diagram-Page-2 drawio (12)](https://user-images.githubusercontent.com/110447788/188619322-f903de48-023e-46cf-9f2d-38b42cfdb295.png)
 
-                               Fig -13:unique case with default statement
+                               Fig -13: flow chart: unique case with default statement
 
 **Output snippet:**
 
@@ -1024,7 +1027,7 @@ In the above example, the unique0 case is used. In these two conditions is true 
 
 ![Untitled Diagram-Page-8 drawio (3)](https://user-images.githubusercontent.com/110447788/188300546-eb50b6e6-a5b8-44a4-94fe-e73f828b8e9a.png)
 
-                                    Fig -21: Output:unique0 case in which two conditions are true
+                                    Fig -21: Output: unique0 case in which two conditions are true
 
 In the above output, two conditions are true at a time this will make the case statement not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
 
@@ -1060,7 +1063,7 @@ In the above example, the priority case is used. In these two conditions is the 
 
 ![Untitled Diagram-Page-2 (2)](https://user-images.githubusercontent.com/110447788/188636662-ce0699fb-568e-4863-b106-6f347b439e50.jpg)
 
-                                Fig -14: priority case statement
+                                Fig -14: flow chart: priority case statement
 
 **Output snippet:**
 
@@ -1098,7 +1101,7 @@ There are various kinds of loops  -
 ![Untitled Diagram-Page-6 drawio (2)](https://user-images.githubusercontent.com/110447788/187124383-92b1cd6a-7628-4ddb-9eb0-7378ae8cdce9.png)
 
 
-                                        Figure.3. Loops
+                                        Fig - : Loops
 
 ***
 
@@ -1280,7 +1283,7 @@ In the above example, a break statement is used inside the loop which terminates
 
 ![Untitled Diagram-Page-1 drawio (5)](https://user-images.githubusercontent.com/110447788/188305065-221831fc-8e53-48dd-b9de-da445a1a4861.png)
 
-                                      Fig-: break statement
+                                      Fig-: flow chart: break statement
 
 **Output snippet:**
 
@@ -1324,7 +1327,7 @@ In the above example, **continue** statement is used inside the loop that skips 
 
 ![Untitled Diagram-Page-1 drawio (6)](https://user-images.githubusercontent.com/110447788/188305077-aca9f33b-5b5c-4c4c-a674-a262c6c6cf7c.png)
 
-                                        Fig - : continue statement
+                                        Fig - : flow chart: continue statement
 
 **Output snippet:**
 
