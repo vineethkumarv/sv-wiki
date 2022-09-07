@@ -2,6 +2,7 @@
 
 ****Operators****  :  
 
+![opppp](https://user-images.githubusercontent.com/106074838/188847440-ad11ced1-9375-4e1e-956e-b5b4eab2d7b9.png)  
 
 There  
 
@@ -14,14 +15,17 @@ The table below shows the full list of arithmetic operators in SystemVerilog.
 ![airthmatic_1](https://user-images.githubusercontent.com/106074838/188830091-fab594b8-522f-4c59-8fad-6268427aab03.PNG)  
 
 The below figure shows the output of the Arithmetic operator screenshot  
+![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/106074838/188851432-89a890f2-25d9-42c2-9abe-dbe0d3398503.png)  
 
 
 for Better understanding go through this code  
-**GitHub lab code link**     
+**GitHub lab code link**   
+    
 
 **GitHub lab output link**   
   
 
+***
 
 **2. Logical Operator**  
 The Logical operators are similar to the bit-wise operators  
