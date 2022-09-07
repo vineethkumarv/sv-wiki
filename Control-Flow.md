@@ -1028,9 +1028,9 @@ The below figure shows the output of a unique case statement in which no conditi
 In the above output, all the condition is false so the unique case gives a warning with no error.
 
 
-**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case.sv
+**GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_none_true/unique_case.sv
 
-**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case_op.log
+**GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_none_true/unique_case_op.log
 
 
 **Example:**
@@ -1064,9 +1064,9 @@ The below figure shows the output of a unique case statement in which more than 
  
 In the above output, a unique case statement is used. In this more than one condition is true, the unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
-**GitHub Code Lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique_case2.sv
+**GitHub Code Lab link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case_default/unique_case_default.sv
 
-**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique2_case_op.log
+**GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case_default/unique_case_default_op.log
 
 ### unique case with default statement
 
@@ -1114,9 +1114,9 @@ The below figure shows the output of a unique case statement by using the defaul
 In the above output, there is no condition is true inside the case statement, then the default statement is get executed and prints the 'Value of x = 1'
 in the output.
 
-**GitHub Code Lab link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default.sv
+**GitHub Code Lab link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case_default/unique_case_default.sv
 
-**GitHub Lab Output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default_op.log
+**GitHub Lab Output link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_case_default/unique_case_default_op.log
 
 
 
@@ -1158,9 +1158,9 @@ The below figure shows the output of the unique0 case statement in which two con
 In the above output, two conditions are true at a time this will make the case statement not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
 
 
-**GitHub Code Lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case.sv
+**GitHub Code Lab link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique0_case/unique0_case.sv
 
-**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case_op.log
+**GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique0_case/unique0_case_op.log
 
 ### 2. priority case 
 
@@ -1201,9 +1201,9 @@ The below figure shows the output of the priority case statement in which two co
 
 In the above output, more than one condition is true. priority case checks the first right matched condition, executes it, and displays the output without warning and error.
 
-**GitHub Code Lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case.sv
+**GitHub Code Lab link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/priority_case/priority_case.sv
 
-**GitHub Lab Output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case_op.log    
+**GitHub Lab Output link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/priority_case/priority_case_op.log 
 
 
 
