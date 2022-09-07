@@ -5,7 +5,7 @@
 
 
            
-                                     Figure.1. Control Flow  
+                                     Fig -1: Control Flow  
 # Control flow 
 ## Conditional Statements  
 Conditional statements are used to check whether the statements in the blocks are executed or not. Conditional statements create the block of statements. If the expression given is -   
@@ -18,7 +18,7 @@ There are different types of conditional statements. These are --
 
 ![if  drawio](https://user-images.githubusercontent.com/110443268/188595474-4f9f67fe-e330-4a4e-9506-9b242cdd7553.png)  
  
-                               fig -2: if : flow chart
+                               fig -2: if flow chart
 
   
 This conditional statement is used for the basic codes where only need to make a decision by giving one condition. If the expression in the condition is -  
@@ -33,7 +33,7 @@ This conditional statement is used for the basic codes where only need to make a
 _Note_  
 For more than one statement in conditional blocks, need to use begin end block. Statements inside the begin end block execute in a sequential manner.  
 
-**Example**  -  
+**Example**  -     
  Here, the variable declare is a and value assigned to it is 10. The compiler will check the if conditional expression and condition are true a=10. So, the compiler will execute the set of statements inside the if block.     
 
 **Code snippet** 
@@ -52,7 +52,8 @@ For more than one statement in conditional blocks, need to use begin end block. 
 **Output snippet**  
 <img width="655" alt="1" src="https://user-images.githubusercontent.com/110443268/188662446-3cac3305-0f7a-435c-808e-5ee433a19e4c.png">  
 
-                    fig -1 : Output - if
+                          fig -1 : Output - if
+
 **Lab link**  
 **log file link**   
 ***
@@ -79,7 +80,8 @@ This conditional statement has two sets of statements, one in the if block and a
 `StatementN;`  
 `end `  
   
-**Example**  -   
+**Example**  -  
+ 
 Here the variable declares a is byte type(signed) and the value assigned to it is -1. If the conditional expression is false as a is less than 0.    
 
 **Code Snippet**  
@@ -100,8 +102,9 @@ Here the variable declares a is byte type(signed) and the value assigned to it i
      end  
 
  **Output Snippet**  
-<img width="661" alt="2" src="https://user-images.githubusercontent.com/110443268/188662765-67e08d46-2cfa-428f-bdc5-c57f473c91bd.png">      
-                   fig -2 : Output -if else
+<img width="661" alt="2" src="https://user-images.githubusercontent.com/110443268/188662765-67e08d46-2cfa-428f-bdc5-c57f473c91bd.png">
+      
+                           fig -2 : Output -if else
 
 **Lab link**  
 **log file link**  
@@ -143,9 +146,9 @@ else block is an optional block in the ladder. It is used to avoid confusion in 
 **Example**  
 **without else**  
 
-Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements which has valid condition expression. 
+Sequentially all the conditional expressions will be checked. The compiler will execute the set of statements that has valid condition expression. 
 **Example**  -
- Below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
+ The below example has three variables a,b and c. The value assigned to them is 10,12 and 13. the compiler will check the conditional expression one after the other. Here the second conditional expression is true or valid. The output will be the set of statements inside the else if block. 
 
 **Code Snippet**  
   
@@ -176,7 +179,8 @@ Sequentially all the conditional expressions will be checked. The compiler will 
   
 **output snippet**  
 <img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
-                            fig -3: output - if else ladder without else
+
+                                fig -3: output - if else ladder without else
 
 
 **Lab link**  
@@ -221,6 +225,7 @@ Here the example shows the execution of the else block.
 <img width="659" alt="3" src="https://user-images.githubusercontent.com/110443268/188663392-2b76d206-0fea-45d5-9e18-24efb2c6004a.png">  
                
                           fig -5: Output-if else ladder with else
+
 
 **Lab link**  
 **Log file link**  
@@ -288,7 +293,7 @@ size() is a default function of SV, use to get the size of the given variable. T
  
 **b. None of the conditions is true**  
  
-with else -  else block statements execute.
+with else - else block statements execute.
 
 <img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">  
 
@@ -325,7 +330,8 @@ The output will be the set of statements inside the else block.
 **Output snap**    
 <img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">  
   
-                                    fig -6 : output - unique if -none of the conditions is true with else
+                                    fig -6: output - unique if -none of the conditions is true with else
+
 **Lab link**  
 
 **log file link**  
@@ -368,7 +374,8 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
 
 
 
-**c. More than one condition is true**  
+**c. More than one condition is true** 
+ 
 The compiler read all conditional blocks sequentially whether the expression is true or not. If more than one conditional block is valid, the output compiler executes the statements which are inside the first valid block. The output will be the set of statements inside the first true conditional block that also gives a warning.  
 **Example** - Here the variable declaration is "a" and value assigned to it is 12. The compiler will check the first condition, as (a%2==0) is true and then the compiler will execute the unique if conditional block statements. But, here the compiler task is not finished yet. The compiler will go to the next conditional blocks and will check the conditional expression. As both else, if the conditional statement is true because a >0 and a = 12. After that, the compiler will come out from the conditional blocks and executes the statements from the conditional block.  
 The output will be the set of statements of unique if block and one warning are also there.  
@@ -401,6 +408,7 @@ The output will be the set of statements of unique if block and one warning are 
 <img width="640" alt="6" src="https://user-images.githubusercontent.com/110443268/188664946-63f8f84f-5480-4fa1-a36a-09cccc83593b.png">  
                 
                             fig -8: Output - unique if -more than one condition is true  
+
 **lab link**  
 **log file link**  
 
@@ -409,7 +417,7 @@ The output will be the set of statements of unique if block and one warning are 
 
 <img width="520" alt="uniqueif1 drawio" src="https://user-images.githubusercontent.com/110443268/188624283-a7feb571-9299-4571-8faf-99250c065ceb.png">
 
-                       fig -7 :unique0_if  
+                                  fig -7 :unique0_if  
 
 Unique0if is the same as unique if but unlike unique if does not report a violation if none of the conditions is true. unique0if is not synthesizable because it does not display a warning in the output, so the programmer can't be able to read the dead code or the error in the code properly.  
 **Syntax**  
@@ -454,7 +462,8 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 **output snippet**
 <img width="627" alt="9" src="https://user-images.githubusercontent.com/110443268/188665606-6b9f4e2f-016b-443a-84fe-c05a64d4dba6.png">  
 
-                           fig-9 : Output-unique0 if
+                                   fig-9 : Output-unique0 if
+
 
 **Lab link**  
 **Log file link**  
@@ -465,7 +474,7 @@ Here, the variable declared is age and the value assigned to it is 17. The compi
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
    
-                           fig -8: priorityif
+                                fig -8: priorityif
 
 priority if executes conditions sequentially. It is also the same as if-else conditional statement but there are some differences. The below explanation will give a clear picture of how the priority if block works.
 
@@ -527,7 +536,7 @@ It is just the same as the if else if block.
 **Output snap**  
 <img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">  
                  
-                       fig -10:Output-priority if -only one condition is true
+                                 fig -10:Output-priority if -only one condition is true
 
 **lab link**  
 
@@ -565,7 +574,8 @@ The compiler will check the conditional expression sequentially. It will execute
 **output snap** 
 <img width="629" alt="11" src="https://user-images.githubusercontent.com/110443268/188669964-9897afe8-bdc5-42f6-ab98-773df939fa8e.png">  
  
-                               fig -11: Output -priority if -more than one true condition
+                                  fig -11: Output -priority if -more than one true condition
+
 **lab link**
 
 **log file link**  
@@ -608,6 +618,7 @@ When none of the conditional expressions is true, the compiler will come out fro
      
                                     fig -12:Output - priority if -none of the conditions is true without else
 
+
 **lab link**  
 
 **log file link**  
@@ -616,7 +627,7 @@ When none of the conditional expressions is true, the compiler will come out fro
 
 <img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
       
-                         fig -9: with else priority if
+                                 fig -9: with else priority if
 
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
 **Example** -      
@@ -651,7 +662,7 @@ When none of the conditional expressions is true by default compiler to execute 
 **output snippet**    
 <img width="604" alt="13" src="https://user-images.githubusercontent.com/110443268/188670474-2babe11c-8b3c-465f-b3b8-118bc5e2d112.png">  
 
-                   fig -13: Output - priority if -none of the conditions is true without else
+                               fig -13: Output - priority if -none of the conditions is true without else
 
 
 **Lab link**
@@ -734,7 +745,7 @@ In the above example,  here expression= "x" should match one of the case items. 
 
 ![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110447788/188362145-06201cc7-c397-4b46-b399-afb77f1dcc5e.png)
 
-                              Fig -10: case statement with default statement
+                                  Fig -10: case statement with default statement
 
 **Output snippet:**
 
@@ -742,13 +753,13 @@ In the above example,  here expression= "x" should match one of the case items. 
 
                         Fig -14: Output: case statement in which one condition is true
 
-In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output
+In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output.
 
 **lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case.sv
 
 **lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case_op.log
 
-### Using of Case statement without default:   
+### Using of Case statement without a default:   
 In case statement, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
 If none of the given case conditions is true, the statement within the default statement is executed.    
 Execution will exit the case block without doing anything if none of the items matches the condition and a default statement is not given.
@@ -786,7 +797,7 @@ In this example, if none of the case conditions is true or no default statement 
 
 ![Untitled Diagram-Page-2 drawio (8)](https://user-images.githubusercontent.com/110447788/188394434-8c70750b-388b-4537-a9d8-f7c7db2f507d.png)
 
-                       Fig -14: Output: case statement in which one condition is true
+                                    Fig -14: Output: case statement in which one condition is true
 
  In the above output, the case statement is used without a default statement. In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
 
@@ -824,7 +835,7 @@ In the above example, we are declaring a range in a case statement with the use 
 
 ![Untitled Diagram-Page-6 drawio (4)](https://user-images.githubusercontent.com/110447788/188553176-7f10aa14-ce7c-4fb6-beca-acd912dd8fbb.png)
 
-                       Fig -15: Output: case statement with range
+                                  Fig -15: Output: case statement with a range
 
 In the above output, the case statement will get executed with the use of an inside statement. The case statement will get executed and displays the output 'Value of x = 6'  
 
@@ -846,7 +857,7 @@ the break statement is not allowed to use within the loops. while using a break 
 
 ![Untitled Diagram-Page-4 drawio (4)](https://user-images.githubusercontent.com/110447788/188432824-01ddb873-d877-44d1-b65d-78116d2b6020.png)
 
-                     Fig - 16: Output: break statement is not allowed inside the case
+                                    Fig - 16: Output: break statement is not allowed inside the case
 
 In the above output, a break statement is used inside the case statement. System Verilog does not allow the use of a break statement inside the case statement.  
 In this, an error will occur.
@@ -889,7 +900,7 @@ In the above example, the unique case statement is used. Here all the conditions
 
 ![Untitled Diagram-Page-6 drawio (3)](https://user-images.githubusercontent.com/110447788/188300519-a4af7834-91ea-44c9-9f11-c61f7497efbb.png)
 
-                             Fig - 17: Output: In a unique case, no conditions are true 
+                                   Fig - 17: Output: In a unique case, no conditions are true 
 
 In the above output, all the condition is false so the unique case gives a warning with no error.
 
@@ -917,13 +928,13 @@ If these two condition is true, at the time of execution this will take the firs
 
 ![Untitled Diagram-Page-2 (1)](https://user-images.githubusercontent.com/110447788/188631312-47429f33-e575-4f20-977b-2ee272f46f3a.jpg)
         
-                        Fig -12: unique case statement
+                              Fig -12: unique case statement
 
 **Output snippet:**
 
 ![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
      
-                         Fig -18: Output: unique case in which more than one condition is true
+                               Fig -18: Output: unique case in which more than one condition is true
  
 In the above output, a unique case statement is used. In this more than one condition is true, the unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
@@ -964,13 +975,13 @@ In this, if no conditions of the case statement are true then the default statem
 
 ![Untitled Diagram-Page-2 drawio (12)](https://user-images.githubusercontent.com/110447788/188619322-f903de48-023e-46cf-9f2d-38b42cfdb295.png)
 
-                      Fig -13:unique case with default statement
+                               Fig -13:unique case with default statement
 
 **Output snippet:**
 
 ![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
 
-                        Fig - 19: Output: no conditions are true, default statement gets executed 
+                                Fig - 19: Output: no conditions are true, default statement gets executed 
 
 In the above output, there is no condition is true inside the case statement, then the default statement is get executed and prints the 'Value of x = 1'
 in the output.
@@ -1048,7 +1059,8 @@ In the above example, the priority case is used. In these two conditions is the 
 
 ![Untitled Diagram-Page-2 (2)](https://user-images.githubusercontent.com/110447788/188636662-ce0699fb-568e-4863-b106-6f347b439e50.jpg)
 
-                            Fig -14: priority case statement
+                                Fig -14: priority case statement
+
 **Output snippet:**
 
 ![Untitled Diagram-Page-9 drawio (4)](https://user-images.githubusercontent.com/110447788/188300570-d5fc26b9-0fac-4499-9cbf-8785c03171f2.png)
@@ -1267,7 +1279,7 @@ In the above example, a break statement is used inside the loop which terminates
 
 ![Untitled Diagram-Page-1 drawio (5)](https://user-images.githubusercontent.com/110447788/188305065-221831fc-8e53-48dd-b9de-da445a1a4861.png)
 
-                                      Fig- : break statement
+                                      Fig-: break statement
 
 **Output snippet:**
 
