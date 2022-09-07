@@ -844,6 +844,7 @@ In this example, if none of the case conditions is true or no default statement 
                                        Fig -11: flow chart: case statement without default statement
 
 **Output snippet:**
+
 The below figure shows the output of the case statement without using the default statement.  
   
 
@@ -883,7 +884,11 @@ If we want to give a range value in a case statement, this will be done with hel
               endcase
 
 In the above example, we are declaring a range in a case statement with the use of **inside** statement. In this, they will get the value from the declared range by the use of an inside statement.
+
 **Output snippet:**
+
+The below figure shows the output of the case statement with a range.  
+  
 
 ![Untitled Diagram-Page-6 drawio (4)](https://user-images.githubusercontent.com/110447788/188553176-7f10aa14-ce7c-4fb6-beca-acd912dd8fbb.png)
 
