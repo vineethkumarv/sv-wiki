@@ -26,8 +26,9 @@ Please refer to the below code for a better understanding.
              endmodule  
 
  The below figure shows the output of calling a function inside a task.  
-![Untitled Diagram drawio (9)](https://user-images.githubusercontent.com/106074838/188474636-7609f629-5713-46ff-bfbd-c9753fd06b99.png)
-  
+![Untitled Diagram drawio (9)](https://user-images.githubusercontent.com/106074838/188474636-7609f629-5713-46ff-bfbd-c9753fd06b99.png)  
+
+                      Figure.1. output of calling a function inside a task. 
 
 The above screenshot is telling calling a task inside a function. 
 In the inside function, we call the task by using the fork-join_none process.  
@@ -61,6 +62,7 @@ Please refer to the below code for a better understanding.
 The below figure shows the output of the Repeat loop.  
 ![Untitled Diagram drawio (4)](https://user-images.githubusercontent.com/106074838/188260448-466387c0-54b6-4767-b421-9bb4b83d0a9e.png)   
 
+                          Figure.2. the output of the Repeat loop. 
 ***
 
 
@@ -137,7 +139,8 @@ and terminate the forever loop by using a $finish statement. otherwise, it was a
 
 The below figure shows the output of the forever loop   
 ![Untitled Diagram drawio (6)](https://user-images.githubusercontent.com/106074838/188388444-a9060788-1faa-4cf9-b4b8-796d41bb6c70.png)  
-
+   
+                          Figure.3. the output of the forever loop.  
 
 ***
   
@@ -183,6 +186,9 @@ In the above code is post-increment code, the i value is initially 1 and we assi
 The below figure shows the output of both pre-increment and post-increment 
 ![Untitled Diagram drawio (7)](https://user-images.githubusercontent.com/106074838/188421237-1af9c422-9c64-4503-a679-e8677f4c0e7d.png)  
 
+                     Figure.4. the output of both pre-increment and post-increment.  
+  
+
 *** 
 
 7. Does the Repeat loop inside the break keyword work?  
@@ -207,8 +213,9 @@ for a better understanding look at the below code
 In the above code is repeat loop with break keyword, we are declaring the repeat loop it will be executed 5 times but using the break keyword to terminate the loop in a 3rd execution time cycle itself.  
        
 The below figure shows the output of the repeat loop with the break keyword.   
-![Untitled Diagram drawio (8)](https://user-images.githubusercontent.com/106074838/188438380-83f8c068-78f3-491d-9dec-3c1c5febf12c.png)  
-***
+![Untitled Diagram drawio (8)](https://user-images.githubusercontent.com/106074838/188438380-83f8c068-78f3-491d-9dec-3c1c5febf12c.png)   
+
+                                Figure.5. the output of the repeat loop with the break keyword. 
 
 
 8.**what is the difference between If and unique if statements**?    
