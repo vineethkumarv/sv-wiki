@@ -578,7 +578,8 @@ It is just the same as the if else if block.
 
 **b. More than one conditional expression is true**  
 
-The compiler will check the conditional expression sequentially. It will execute all the statements and after simulation, the output will be a set of statements inside the first true conditional block with no warning.  
+The compiler will check the conditional expression sequentially. It will execute all the statements and after simulation, the output will be a set of statements inside the first true conditional block with no warning.
+  
 **Example** - Here, the variable is a,b and c, and the value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it, and comes out from the conditional block. The output will be the set of statements inside the first true else if blocked with no warning.  
  
 **Code Snippet**  
@@ -650,6 +651,7 @@ When none of the conditional expressions is true, the compiler will come out fro
     end  
 
 **Output Snippet**  
+
    The below figure shows the output of the priority if - none of the conditions is true without else.  
 
 <img width="926" alt="12" src="https://user-images.githubusercontent.com/110443268/188670397-71956394-1333-44a2-afa6-9c74b4f45427.png">  
@@ -670,6 +672,7 @@ When none of the conditional expressions is true, the compiler will come out fro
 When none of the conditional expressions is true by default compiler to execute the statements which are inside the else block.  
 **Example** -      
  In the below example, all the conditional expression is false and then the compiler will execute the statements inside the else block.  
+
 **Code Snippet**      
 
      int bill;  
@@ -704,10 +707,9 @@ When none of the conditional expressions is true by default compiler to execute 
 
                                fig -13: Output - priority if -none of the conditions is true without else
 
+**GitHub Lab Code link**  
 
-**Lab link**
-
-**Log file link**
+**GitHub Lab Output link**  
 
 ***
 ###  Difference between conditional statements  
@@ -795,9 +797,9 @@ In the above example,  here expression= "x" should match one of the case items. 
 
 In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output.
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case.sv
-
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case_op.log
+**GitHub Lab Code link**https://github.com/piyushagrawal4578/control-flow/blob/main/case/case.sv
+ 
+**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case/case_op.log
 
 ### Using of Case statement without a default:   
 In case statement, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
@@ -841,9 +843,9 @@ In this example, if none of the case conditions is true or no default statement 
 
  In the above output, the case statement is used without a default statement. In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default.sv
+**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default_op.log
+**GitHub Lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default_op.log
 
 ### Using of range in case statement with the use of inside statement:    
 
@@ -879,9 +881,9 @@ In the above example, we are declaring a range in a case statement with the use 
 
 In the above output, the case statement will get executed with the use of an inside statement. The case statement will get executed and displays the output 'Value of x = 6'  
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range.sv
+**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range_op.log
+**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range_op.log
 
 
 
@@ -902,9 +904,9 @@ the break statement is not allowed to use within the loops. while using a break 
 In the above output, a break statement is used inside the case statement. System Verilog does not allow the use of a break statement inside the case statement.  
 In this, an error will occur.
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case.sv
+**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case_op.log
+**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case_op.log
  
 There are three updates for the case statement in the system Verilog and these are -  
 *  unique case  
@@ -945,9 +947,9 @@ In the above example, the unique case statement is used. Here all the conditions
 In the above output, all the condition is false so the unique case gives a warning with no error.
 
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case.sv
+**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case_op.log
+**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case/unique_case_op.log
 
 
 **Example:**
@@ -978,9 +980,9 @@ If these two condition is true, at the time of execution this will take the firs
  
 In the above output, a unique case statement is used. In this more than one condition is true, the unique case will read the first matched condition and will give the Value of x = '0' with a warning (no error).
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique_case2.sv
+**GitHub Code Lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique_case2.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique2_case_op.log
+**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique2_case/unique2_case_op.log
 
 ### unique case with default statement
 
@@ -1026,9 +1028,9 @@ In this, if no conditions of the case statement are true then the default statem
 In the above output, there is no condition is true inside the case statement, then the default statement is get executed and prints the 'Value of x = 1'
 in the output.
 
-**lab link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default.sv
+**GitHub Code Lab link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default.sv
 
-**lab output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default_op.log
+**GitHub Lab Output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/unique_case_default/unique_case_default_op.log
 
 
 
@@ -1068,9 +1070,9 @@ In the above example, the unique0 case is used. In these two conditions is true 
 In the above output, two conditions are true at a time this will make the case statement not unique, uniquq0 will read the first right matched condition and display the  Value of x is 1 with the warning 
 
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case.sv
+**GitHub Code Lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case_op.log
+**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/unique0_case/unique0_case_op.log
 
 ### 2. priority case 
 
@@ -1111,9 +1113,9 @@ In the above example, the priority case is used. In these two conditions is the 
 
 In the above output, more than one condition is true. priority case checks the first right matched condition, executes it, and displays the output without warning and error.
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case.sv
+**GitHub Code Lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case.sv
 
-**lab output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case_op.log    
+**GitHub Lab Output link**  https://github.com/piyushagrawal4578/control-flow/blob/main/priority_case/priority_case_op.log    
 
 
 
@@ -1300,14 +1302,19 @@ This loop is used for repeating statements or operations for a fixed given numbe
      end  
     end  
 
+**Flowchart:**
+
+![repeat](https://user-images.githubusercontent.com/110447788/188849639-db5fe78a-a6d6-43a8-8665-c12a9d51f46b.png)
+
+
 **Output Snippet**  
 
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803547-7c5ff4fc-8388-45fc-817f-19c431c51943.png">
 
 
-**lab link** - 
+**GitHub Code Lab link** - 
 
-**lab output link**
+**GitHub Lab Output link**
 
 **Implementation of repeat loop using for loop**  
 We can implement a repeat loop using other loops also. Below example will show the implementation of a repeat loop using for loop.  
@@ -1328,9 +1335,9 @@ We can implement a repeat loop using other loops also. Below example will show t
 
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803668-ac46bcff-47a4-4867-8f87-3b946770c3e8.png">
 
-**Lab link**  
+**GitHub Lab Code link**  
 
-**Log file link**  
+**GitHub Lab Output link**  
   
 
 
