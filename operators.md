@@ -94,7 +94,10 @@ a != b | a not equal to b, the result may be unknown (logical equality)
 ****Example:****  
 Consider, a = 111     
           b = 101
-*  **a == b**:Here a equal to b, the relation is false, so the result is 0.
+*  **a == b**: Here we perform the logical equality of a,b, the result is zero when both numbers are the same then the result is 1.  
+*  **a != b**: Here we perform the logical inequality of a,b the result is zero when both numbers are the same then the result is 0.  
+*  **a === b**: Here we perform the case e  
+ 
 
 
 **GitHub lab code link**     
@@ -117,9 +120,9 @@ There are only three logical operators for better understanding follow the below
 ****Example:****  
 Consider, a = 100     
           b = 111
-*  **a && b**: Here we performing the Logical AND of a,b the result is 1. if any one of the variable values is zero then the result is 0.   
-*  **a || b**: Here we performing the Logical OR of a,b the result is 1. if all the variable's values are zero then only the result is 0.  
-*  **!a **: Here we performing the Logical Not of a the  
+*  **a && b**: Here we performing the Logical AND of a,b, and the result is 1. if any one of the variable values is zero then the result is 0.   
+*  **a || b**: Here we performing the Logical OR of a,b, and the result is 1. if all the variable's values are zero then only the result is 0.  
+*  **!a **: Here we performing the Logical Not of a and the result is 0. if all variable value is zero then the result is 0. ( just vice versa).  
 
 ![logical](https://user-images.githubusercontent.com/106074838/188864090-4a8153c8-fa79-49ca-8fec-ea83d327df8a.png)  
 
