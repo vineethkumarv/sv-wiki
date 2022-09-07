@@ -778,7 +778,7 @@ Dead code does not bother the simulator or the synthesis tool. However, it consu
   
  A case statement evaluates a given expression and based on the evaluated value(matching a certain condition), it executes the statements associated with it. Basically, it is used to perform different actions based on different conditions. 
      
-A system Verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statements must be grouped and within the begin and end statements.
+A system Verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statements must be grouped within the begin and end statements.
 
 **Syntax:**
 
