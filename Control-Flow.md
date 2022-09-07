@@ -188,7 +188,7 @@ Sequentially all the conditional expressions will be checked. The compiler will 
         end  
   
 **output snippet**  
-  The below figure shows the output of if else ladder without else conditional statement.  
+  The below figure shows the output of the if else ladder without the else conditional statement.  
 
 <img width="659" alt="4" src="https://user-images.githubusercontent.com/110443268/188663047-5e03f142-8a0e-4f93-a8ee-e2fa4216a2e1.png">  
 
@@ -296,7 +296,9 @@ size() is a default function of SV, use to get the size of the given variable. T
       end  
 
 **output snippet**  
+
 The below figure shows the output of the unique if for only one true condition.
+
 <img width="674" alt="5" src="https://user-images.githubusercontent.com/110443268/188663928-def7bbea-b5d0-4b5f-a8a2-75b543f7b6bf.png">  
         
                                  fig -5: output: unique if - only one true condition
@@ -343,6 +345,7 @@ The output will be the set of statements inside the else block.
     end  
 
 **Output snap**  
+
 The below figure shows the output of the unique if -none of the conditions is true with else.  
     
 <img width="672" alt="8" src="https://user-images.githubusercontent.com/110443268/188665366-1d4eca95-13ee-4f09-a04c-b151d8dc5221.png">  
@@ -385,6 +388,7 @@ Here, the variable is a and the value assigned to it is 13. Now, the compiler wi
       end  
 
   **output snap**  
+
 The below figure shows the output of the unique if -none of the conditions is true without else.  
   
 
@@ -566,6 +570,7 @@ It is just the same as the if else if block.
     end 
 
 **Output snap** 
+
  The below figure shows the output of the priority if - only one condition is true.  
   
 <img width="617" alt="10" src="https://user-images.githubusercontent.com/110443268/188669700-86d998f5-93ad-4823-8f98-1b84ae0217ee.png">  
@@ -791,6 +796,9 @@ In the above example,  here expression= "x" should match one of the case items. 
 
 **Output snippet:**
 
+The below figure shows the output of the case statement which is true for one condition.  
+  
+
 ![Untitled Diagram-Page-5 drawio (1)](https://user-images.githubusercontent.com/110447788/188300504-805f8740-4cf9-41c7-be1a-6c50a2986b45.png)
 
                                  Fig -14: Output: case statement in which one condition is true
@@ -836,6 +844,8 @@ In this example, if none of the case conditions is true or no default statement 
                                        Fig -11: flow chart: case statement without default statement
 
 **Output snippet:**
+The below figure shows the output of the case statement without using the default statement.  
+  
 
 ![Untitled Diagram-Page-2 drawio (8)](https://user-images.githubusercontent.com/110447788/188394434-8c70750b-388b-4537-a9d8-f7c7db2f507d.png)
 
@@ -897,6 +907,9 @@ the break statement is not allowed to use within the loops. while using a break 
 
 **Output snippet:**
 
+The below figure shows the output of using a break statement inside the case statement.  
+  
+
 ![Untitled Diagram-Page-4 drawio (4)](https://user-images.githubusercontent.com/110447788/188432824-01ddb873-d877-44d1-b65d-78116d2b6020.png)
 
                                     Fig - 17: Output: break statement is not allowed inside the case
@@ -939,6 +952,8 @@ If all the conditions are true or more than one condition is true, it will read 
 In the above example, the unique case statement is used. Here all the conditions are false, this will print the output with a warning and no error.
 
 **Output snippet:**
+The below figure shows the output of a unique case statement in which no conditions are true.  
+  
 
 ![Untitled Diagram-Page-6 drawio (3)](https://user-images.githubusercontent.com/110447788/188300519-a4af7834-91ea-44c9-9f11-c61f7497efbb.png)
 
@@ -973,6 +988,9 @@ If these two condition is true, at the time of execution this will take the firs
                               Fig -12: flow chart: unique case statement
 
 **Output snippet:**
+
+The below figure shows the output of a unique case statement in which more than one condition is true.  
+  
 
 ![Untitled Diagram-Page-3 drawio (2)](https://user-images.githubusercontent.com/110447788/188424211-6e39fd47-a153-47be-8154-a808116d2dbb.png)
      
@@ -1021,6 +1039,8 @@ In this, if no conditions of the case statement are true then the default statem
 
 **Output snippet:**
 
+The below figure shows the output of a unique case statement by using the default statement.  
+
 ![Untitled Diagram-Page-5 drawio (2)](https://user-images.githubusercontent.com/110447788/188492977-950cee1a-5762-440c-ba60-fcb911e155ec.png)
 
                                 Fig - 20: Output: no conditions are true, default statement gets executed 
@@ -1062,6 +1082,8 @@ If all the conditions are true or more than one condition is true, it will read 
 In the above example, the unique0 case is used. In these two conditions is true and unique0 will read the first right or matched condition and print the output Value of x = "1" with the warning.
 
 **Output snippet:**
+
+The below figure shows the output of the unique0 case statement in which two conditions are true.  
 
 ![Untitled Diagram-Page-8 drawio (3)](https://user-images.githubusercontent.com/110447788/188300546-eb50b6e6-a5b8-44a4-94fe-e73f828b8e9a.png)
 
@@ -1106,6 +1128,8 @@ In the above example, the priority case is used. In these two conditions is the 
                                 Fig -14: flow chart: priority case statement
 
 **Output snippet:**
+
+The below figure shows the output of the priority case statement in which two conditions are true.  
 
 ![Untitled Diagram-Page-9 drawio (4)](https://user-images.githubusercontent.com/110447788/188300570-d5fc26b9-0fac-4499-9cbf-8785c03171f2.png)
 
@@ -1371,6 +1395,8 @@ In the above example, a break statement is used inside the loop which terminates
 
 **Output snippet:**
 
+The below figure shows the output of using the break statement.  
+  
 
 ![Untitled Diagram-Page-3 drawio (1)](https://user-images.githubusercontent.com/110447788/188300378-7daf30b0-062b-47c6-b265-bacb850aa0ed.png)
 
@@ -1415,6 +1441,8 @@ In the above example, **continue** statement is used inside the loop that skips 
 
 **Output snippet:**
 
+The below figure shows the output of using the continue statement.  
+  
 ![Untitled Diagram-Page-4 drawio (3)](https://user-images.githubusercontent.com/110447788/188300409-2097d70f-2fc7-4105-9a32-d4fc9c24c9af.png)
 
                                   Fig - : Output: continue statement executes at iteration 2 
