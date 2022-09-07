@@ -30,8 +30,7 @@ Please refer to the below code for a better understanding.
   
 
 The above screenshot is telling calling a task inside a function. 
-In the inside function we calling task by using the fork-join_none process.  
-Note: Before calling the task inside a function, we have check the delay elements inside the task if no delay elements are there then only we can call the task inside the function. if a delay is there inside the task is not possible to call the task in the inside function.    
+In the inside function, we call the task by using the fork-join_none process.  
 
 ***
    
