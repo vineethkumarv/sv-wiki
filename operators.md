@@ -21,10 +21,10 @@ The below figure shows the output of the Arithmetic operator screenshot
 
 
 for Better understanding go through this code  
-**GitHub lab code link:**   
+**GitHub lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/arithmetic/arithmetic_code.sv  
     
 
-**GitHub lab output link:**   
+**GitHub lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/arithmetic/arithmetic_code_output.log  
   
 
 ***
@@ -64,9 +64,9 @@ Consider, a = 111
 
               Figure.3. the output of the relation operator. 
 
-**GitHub lab code link**     
+**GitHub lab code link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/relational/relational_code.sv    
 
-**GitHub lab output link**  
+**GitHub lab output link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/relational/relational_code_output.log
 
 ***
 
@@ -104,9 +104,9 @@ Consider, a = 111
                    Figure.4. the output of the equality operator. 
 
 
-**GitHub lab code link**     
+**GitHub lab code link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/equality/equality_code.sv     
 
-**GitHub lab output link**  
+**GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/equality/equality_code_output.log
 
 *** 
 
@@ -133,9 +133,9 @@ Consider, a = 100
 ![logical](https://user-images.githubusercontent.com/106074838/188864090-4a8153c8-fa79-49ca-8fec-ea83d327df8a.png)  
 
               Figure.5. the output of the Logical operator.  
-**GitHub lab code link**     
+**GitHub lab code link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/logic/logic_code.sv   
 
-**GitHub lab output link**  
+**GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/logic/logic_code_output.log  
 
 ---
 5.**Bitwise operator:**   
@@ -169,9 +169,9 @@ b=110
 
                          Figure.6. the output of the Bitwise operator. 
 
-**GitHub lab code link**     
+**GitHub lab code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/bitwise/bitwise_code.sv    
 
-**GitHub lab output link**  
+**GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/bitwise/bitwise_code_output.log
 
 ---
 6.**shift operator:**   
@@ -205,9 +205,9 @@ Consider, a = 101
 
                      Figure.7. the output of the shift operator.   
 
-**GitHub lab code link**     
+**GitHub lab code link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/shift/shift_code.sv   
 
-**GitHub lab output link**  
+**GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/shift/shift_code_output.log 
 
 ---
 
@@ -229,9 +229,9 @@ In the above example enable condition is true it will execute the data otherwise
 
                Figure.8. the output of the Condition operator.   
 
-**GitHub lab code link**     
+**GitHub lab code link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/conditional/conditional_code.sv   
 
-**GitHub lab output link**  
+**GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/conditional/conditional_code_output.log 
 
 ***
 
@@ -265,9 +265,9 @@ Consider, a = 1010
 
              Figure.9. the output of the Reduction operator.
    
-**GitHub lab code link**     
+**GitHub lab code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/reduction/reduction_code.sv  
 
-**GitHub lab output link**   
+**GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/reduction/reduction_code_output.log   
 
 ***
 
@@ -304,9 +304,9 @@ Replication Output is 101010101110
 
                Figure.10. the output of the Concatenation and Replication operator.
    
-**GitHub lab code link**     
+**GitHub lab code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/concatenation_Replication/concatenation_code.sv    
 
-**GitHub lab output link**   
+**GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/concatenation_Replication/concatenation_code_output.log  
 
 
 
