@@ -576,6 +576,7 @@ The compiler will check the conditional expression sequentially. It will execute
     end  
 
 **output snap** 
+
 <img width="629" alt="11" src="https://user-images.githubusercontent.com/110443268/188669964-9897afe8-bdc5-42f6-ab98-773df939fa8e.png">  
  
                                     fig -11: Output -priority if -more than one true condition
