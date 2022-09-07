@@ -124,8 +124,10 @@ There are only three logical operators for better understanding follow the below
 ****Example:****  
 Consider, a = 100     
           b = 111
-*  **a && b**: Here we performing the Logical AND of a,b, and the result is 1. if any one of the variable values is zero then the result is 0.   
-*  **a || b**: Here we performing the Logical OR of a,b, and the result is 1. if all the variable's values are zero then only the result is 0.  
+*  **a && b**: Here we performing the Logical AND of a,b, and the result is 1.  
+ when any one of the variable values is zero then the result is 0. and when one of the variable values is 1's then the result is 1.   
+*  **a || b**: Here we performing the Logical OR of a,b, and the result is 1.  
+ if all the variable's values are zero then only the result is 0. and if any one of the variable values is 1's then the result is 1.   
 *  **!a **: Here we performing the Logical Not of a and the result is 0. if all variable value is zero then the result is 0. ( just vice versa).  
 
 ![logical](https://user-images.githubusercontent.com/106074838/188864090-4a8153c8-fa79-49ca-8fec-ea83d327df8a.png)  
