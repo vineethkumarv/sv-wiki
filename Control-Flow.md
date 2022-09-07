@@ -1253,12 +1253,23 @@ This loop is used for repeating statements or operations for a fixed given numbe
              `statements;  `  
              `end  `    
   
-![repeat loop](https://user-images.githubusercontent.com/110412468/187091201-fa51918b-57e9-4353-bf81-3886311dc947.png)
+![repeat loop](https://user-images.githubusercontent.com/110412468/187091201-fa51918b-57e9-4353-bf81-3886311dc947.png)  
 
-**Example** - Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times. 
+
+**Example** - Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times.  
+ 
 **Code Snippet**  
 
-**Output snippet**  
+**Output snippet**
+  
+    module repeat_code;  
+    initial begin ;  
+     repeat(4)begin   // Repeat the statements inside 4 times  
+       $display ("Good morning");  
+       $display ("Keep shining");  
+       $display ("--------------");  
+     end  
+    end  
 
 
 **lab link** - 
@@ -1268,7 +1279,22 @@ This loop is used for repeating statements or operations for a fixed given numbe
 **Implementation of repeat loop using for loop**  
 We can implement a repeat loop using other loops also. Below example will show the implementation of a repeat loop using for loop.  
 
-**Example** - Same as the above example , here we are repeating these same statements using the for a  loop.
+**Example** - Same as the above example, here we are repeating these same statements using them for a  loop.  
+**Code Snippet**  
+
+**Output Snippet**  
+
+   initial begin  
+    for (int i = 1;i<=4;i++)begin   // for loop initialization, repeat the statements inside it for  
+       $display ("Good morning");   // 4 times (i =1,2,3,4)  
+       $display ("Keep Shining");  
+       $display ("------------");  
+     end  
+  end  
+
+**Lab link**  
+
+**Log file link**  
   
 
 
