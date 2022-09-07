@@ -796,13 +796,14 @@ A system Verilog case statement starts with the case keyword and ends with the e
             x = 2'b01;
             case(x)
             00 : $display("Value of x = %0b", x);
-            01 : $display("Value of x = %0b",x);
+            // 01 : $display("Value of x = %0b",x);
             10 : $display("Value of x = %0b",x);
             11 : $display("Value of x = %0b" ,x);
             default : $display("Value of x is not find");
             endcase
 
-In the above example,  here expression= "x" should match one of the case items. In this '01' value is given to the x so the case item '01' is matched with the expression = 'x'. This will print the value of x = 1
+In the above example,  here expression= "x" should match one of the case items but here no condition is true. In this '01' value is given to the x so the case item '01' is not matched with the expression = 'x'. Then default get executes. 
+If none of the conditions is true then the default statement gets executed .
 
 
 **Flowchart:**
@@ -813,7 +814,7 @@ In the above example,  here expression= "x" should match one of the case items. 
 
 **Output Snap:**
 
-The below figure shows the output of the case statement which is true for one condition.  
+The below figure shows the output of the case statement which is not true for any condition.  
   
 
 ![Untitled Diagram-Page-5 drawio (1)](https://user-images.githubusercontent.com/110447788/188300504-805f8740-4cf9-41c7-be1a-6c50a2986b45.png)
@@ -1552,9 +1553,9 @@ In the above output, a break statement is used inside the loop. The output shows
 
 
 
-**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break.sv
+**GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break/break.sv
 
-**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break_op.log
+**GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break/break_op.log
 
 ### continue:
 
@@ -1596,9 +1597,9 @@ The below figure shows the output of using the continue statement.
 In the above output, the continue statement is used inside the loop. The output shows the value for iterations 0 & 1 and for iteration 2  continue statement is encountered and displays "Calling continue" and after this jumps to the next iteration immediately and prints the value for iterations 3 & 4
 
 
-**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue.sv
+**GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/continue/continue.sv
 
-**GitHub Lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue_sv_op.log
+**GitHub Lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/continue/continue_sv_op.log
 
 
 
