@@ -199,12 +199,15 @@ When we use the logical shift operators, all the blank positions are filled with
 
 ****Example:****  
 Consider, a = 101    
-*  **a <<1**: a is shifted to the left by a 1-bit position and the result is 011. 
-*  **a >>1**: a is shifted to the right by a 1-bit position and the result is 010. 
-*  **a >>>2**: a is shifted to the right by a 2-bit position and the result is 111. (in the right shifted by 2-bit position and filled with 1's.)     
-*  **a <<<2**: a is shifted to the left by a 2-bit position and the result is 100. 
+*  **a <<1**: a is Logical shifted to the left by a 1-bit position and the result is 011. 
+*  **a >>1**: a is Logical shifted to the right by a 1-bit position and the result is 010.      
+*  **a <<<2**: a is shifted to the left by a 2-bit position and the result is 100.   
+*  **a >>>2**: a is shifted to the right by a 2-bit position and the result is 001. 
+*  **a >>>2**: a is Arithmetic shifted to the right by a 2-bit position. when we use signed data type in the code, then Arithmetic right will take shifted 2- bit position and filled with 1's. and the result is 111.    
 
-![shift](https://user-images.githubusercontent.com/106074838/188883284-40ae0e7a-1f7f-4244-bbb4-5cf69565c1c9.png)  
+![a1 drawio (2)](https://user-images.githubusercontent.com/106074838/188954310-9f39ee50-34d7-4ed5-b487-c66a94f3c01a.png)  
+
+ 
 
                      Figure.7. the output of the shift operator.   
 
@@ -301,7 +304,7 @@ Replication Output is 101010101110
 
 
 
-![concation](https://user-images.githubusercontent.com/106074838/188925641-5220c0b5-3433-4783-ba88-a9a599921c0c.png)
+![a1 drawio (1)](https://user-images.githubusercontent.com/106074838/188945957-401470d7-c4cd-4264-a817-a97c5d4792e5.png)
 
 
 
