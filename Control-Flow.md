@@ -587,7 +587,7 @@ The compiler will check the conditional expression sequentially. It will execute
   
 **Example** - Here, the variable is a,b and c, and the value assigned to it is 10,20 and 30. We can see the first conditional expression a>b is false. Then, the compiler will check the next block. First and second else if block both have true conditional expression. But, the compiler only checks the first true expression, executes it, and comes out from the conditional block. The output will be the set of statements inside the first true else if blocked with no warning.  
  
-**Code Snippet**  
+**Code Snap**  
 
      int a,b,c;  
      initial begin  
@@ -1538,7 +1538,7 @@ In the above output, a break statement is used inside the loop. The output shows
 
 ### continue:
 
-The continue statement is used to skip the current iteration of a loop. We can use the continue statement inside any type of loops such as for, while, and do-while loop. Basically, continue statements are used in situations when we want to continue the loop but do not want the particular iteration in the loop.
+The continue statement is used to skip the current iteration of a loop. We can use the continue statement inside any type of loop such as for, while, and do-while loop. Basically, continue statements are used in situations when we want to continue the loop but do not want the particular iteration in the loop.
 
 Using continue, we can skip the current iteration of a loop and jumps to the next iteration of the loop immediately
 
