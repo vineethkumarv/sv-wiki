@@ -9,9 +9,9 @@ A Loop is nothing but statements that need to be run more than once are included
 |1.|[while]()|Repeats the set of statements based on condition|
 |2.|[do_while]()|Once runs the statements without checking the condition then behaves as while|
 |3.|[repeat]()|Repeats the statements only a particular number of times|
-|4.|[for_loop]()|Similar to while but more compact than while|
-|5.|[foreach]()|Only Used to traverse through every element of array |
-|6.|[forever]()|Repeats the statements throughout simulation|  
+|4.|[for_loop](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#4for-loop)|Similar to while but more compact than while|
+|5.|[foreach](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#5foreach)|Only Used to traverse through every element of array |
+|6.|[forever](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#6forever)|Repeats the statements throughout simulation|  
  
 ***
 ## 4.for loop  
@@ -42,11 +42,14 @@ For loop is simply a more compact form of while loop. In for loop assignment, th
 
 **Flowchart:**  
 
-![forloop](https://user-images.githubusercontent.com/110412468/188261911-62cacd1a-ee35-427a-8247-27f25a6fef28.png)
+![forloop](https://user-images.githubusercontent.com/110412468/188261911-62cacd1a-ee35-427a-8247-27f25a6fef28.png)  
+
+               Flowchart.1 - for loop flowchart  
 
 **output:**  
 ![for1](https://user-images.githubusercontent.com/110412468/188284411-8bbf4704-d0a5-4f19-8ad3-9dc068d30d31.png)  
 
+         Fig.1 - for loop output
 
 As per the flowchart initially, i is 1 so the condition satisfies and performs display statement and prints as "iteration 1" and then goes to modifier and increments i, check the condition again and so on till i=5, now after 5 i is incremented to 6 then checks condition which is failed so comes out of the loop.
 
@@ -57,7 +60,7 @@ Note: If you use a local scope variable outside then the compiler throughs an er
 
 ![for error1](https://user-images.githubusercontent.com/110412468/188284390-190b7e96-887b-4234-9aaa-56303b6afc80.png)
 
-
+         Fig.2 - error of for loop local scope variable usage out of loop
 
 
 ***
@@ -89,7 +92,9 @@ Note: If you use a local scope variable outside then the compiler throughs an er
 In the above example we are using nested for loop to print tables, so took i as table number and j for going from 1-10 and k to store the value of multiplication. Here observe that j & k are used at the same initialization and you can do the same for conditions and modifiers also to have multi variables at a time.
 
 **output:**  
-![table loop1](https://user-images.githubusercontent.com/110412468/188284380-5c87ad4b-8990-4abd-bea0-177beefece59.png)  
+![table loop1](https://user-images.githubusercontent.com/110412468/188284380-5c87ad4b-8990-4abd-bea0-177beefece59.png)    
+
+         Fig.3 - nested for loop output  
 
 In this i,j& k are used as i X j = k, so i is range from 1-2 and each has j from 1-10 and k is storing and printing using display statements.    
 
@@ -136,11 +141,14 @@ In the above example, a fixed array of size 5 is taken, using a foreach loop to 
 
 **Flowchart:**  
 
-![foreach flowchart](https://user-images.githubusercontent.com/110412468/188263683-d16a12a4-b6a5-4dc5-aa13-20cade36fd31.PNG)
+![foreach flowchart](https://user-images.githubusercontent.com/110412468/188263683-d16a12a4-b6a5-4dc5-aa13-20cade36fd31.PNG)  
 
+               Flowchart-2.foreach loop flowchart  
 
 **output:**  
-![foreach1](https://user-images.githubusercontent.com/110412468/188284453-97501f0b-3bd3-4231-bc70-2bb179409464.png)  
+![foreach1](https://user-images.githubusercontent.com/110412468/188284453-97501f0b-3bd3-4231-bc70-2bb179409464.png)   
+
+         Fig.4 - foreach loop output  
 
 As per the flowchart initially checks for the size of the array, as it is >0, so proceeds to execution of foreach statements i.e., assigns array[0]=0 and displaying the same and then increments i value by 1 and repeats the same until array[4]. Then at array[5] condition is failing because the array size is 5 only (i.e., 0,1,2,3,4) comes out of loop.
 
@@ -153,8 +161,9 @@ The same functionality of above program we can achieve by using for loop as foll
 
 The following is the snap of output of foreach using for loop
 **output of foreach using for loop:**  
-![foreach usign for 1](https://user-images.githubusercontent.com/110412468/188284443-a376de17-b164-427e-98f4-659f6c6a2ccc.png)  
+![foreach using for 1](https://user-images.githubusercontent.com/110412468/188284443-a376de17-b164-427e-98f4-659f6c6a2ccc.png)  
 
+         Fig.5 - foreach using for output
 
 **Github lab code link:**   
 **Github lab output link:**  
@@ -209,11 +218,14 @@ In the above example, forever is used which is having display statement and incr
 
 **Flowchart:**  
   
-![forever finish](https://user-images.githubusercontent.com/110412468/188265756-3184f9c5-fc3e-4597-b10b-b096416f339a.png)
+![forever finish](https://user-images.githubusercontent.com/110412468/188265756-3184f9c5-fc3e-4597-b10b-b096416f339a.png)  
+
+               Flowchart-3.forever with finish flowchart  
 
 **output:**   
 ![forever using finish1](https://user-images.githubusercontent.com/110412468/188284468-0ab76b2c-abde-49f4-84dc-5c603adfcf3d.PNG)  
 
+         Fig.6 - forever with finish output  
 
 As the forever doesn't have any condition it simply enters and displays a value and then a is incremented and a 4ns delay is introduced so for every 4ns the output is getting printed and at 20 ns $display and prints stopped using $finish is executed in second initial module as well as $finish is called in which will terminate the simulation.
 
@@ -251,9 +263,12 @@ This is similar example of forever with $finish but here we have used break cond
   
 ![forever break](https://user-images.githubusercontent.com/110412468/188266175-5b081e46-62ac-4be8-8dd6-9bbf11e397d5.png)
 
+               Flowchart-4.forever using break flowchart  
 
 **output:**  
-![forever using break1](https://user-images.githubusercontent.com/110412468/188284478-a5724ff5-5b7f-445c-b36b-309dbd386c68.PNG)  
+![forever using break1](https://user-images.githubusercontent.com/110412468/188284478-a5724ff5-5b7f-445c-b36b-309dbd386c68.PNG)    
+
+         Fig.7 - forever with finish output  
 
 As the forever doesn't have any condition it simply enters and displays a value and then a is incremented and a 4ns delay is introduced so for every 4ns the output is getting printed after a value greater than 8 then enters into if block which has a break which moves simulator to out of the loop.
 
