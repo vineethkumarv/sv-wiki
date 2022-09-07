@@ -106,5 +106,8 @@ Operator | Description
 ^ | xor
 ^~ or ~^ | xnor
 
+**GitHub lab code link**     
+
+**GitHub lab output link**  
 
 
