@@ -114,7 +114,7 @@ Here the variable declares a is byte type(signed) and the value assigned to it i
  
 ### 3. if else ladder   
   
-<img width="474" alt="if else ladder paint - Copy" src="https://user-images.githubusercontent.com/110443268/188673326-e7a52794-eab7-4575-84a9-024fc1af51c6.png">
+<img width="527" alt="17" src="https://user-images.githubusercontent.com/110443268/188810764-fa42b586-fc92-44aa-9ce7-01a87dc4d10a.png">
 
                                    fig-4 :flow chart-if else ladder
   
