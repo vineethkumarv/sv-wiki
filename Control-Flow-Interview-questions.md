@@ -1,5 +1,5 @@
 
-1.**How to call the function inside a task? giving example with code.**
+**1. How to call the task inside a function? giving example with code.**
 
 **Answer**: Normally task can be a call function inside the task.    
 but calling the task inside the function is not possible because task has delay elements and the function does not have any delay elements but a wall clock delay is there.      
@@ -34,11 +34,13 @@ The above screenshot is telling calling a task inside a function.
 In the inside function, we call the task by using the fork-join_none process.  
 
 ***
-   
+     
+**2. What is the output of the following snippet?** 
 
+         int x=2;
+         repeat(x);
+         $display("The value of x is %0d", x);
 
-
-2.**What is the output of x= 2 using a repeat loop?**  
 
 **Answer**:In the repeat loop is used for repeating statements or operations for a fixed number of times.    
 but here initially they give the value and value is 2     
@@ -66,16 +68,15 @@ The below figure shows the output of the Repeat loop.
 ***
 
 
-3.**What is dead code in System Verilog?**  
-**Answer**: Dead code is code that doesn't affect your simulation or synthesis.   
+**3.What is a dead code in System Verilog?**    
+**Answer**: Dead code is a piece of code that doesn't run at all & which doesn't affect your simulation or synthesis.  
+The code which has code coverage of 0% i.e., the final product chip there will be some hardware generated in the chip which has never been used in the lifetime.  
 Examples of dead code are signals that are never used or conditions that are never triggered in code.  
 
-For better understanding follow this link   
 
 ***
 
-  
-4.**In the Foreach loop can we use a local variable in an inside module? by using the scope resolution operator?**  
+**4.Can we use a local variable of the foreach loop outside of the loop? why?**  
 **Answer** : No  
 
                         int array[5]  
@@ -91,7 +92,7 @@ in the foreach loop we use i as a variable and i variable is cant used in the in
 ***
 
 
-5.**How to use the forever loop using for loop condition manner**?   
+**5.How to use the forever loop using for loop ?**   
 Normally As the name says forever loop will execute the statements inside the loop forever.  
 It can be said an indefinite iteration.  
 There are 2 ways to do the forever loop in for loop.  
@@ -145,7 +146,7 @@ The below figure shows the output of the forever loop
 ***
   
  
-6.**What is difference between ++i and i++ in SV** ?  
+**6.What is difference between pre-increment(++i) and post-icrement(i++) in SV** ?  
 **Answer** :   
 ++i pre-increment will increment the value of i and then return the incremented value.  
 
@@ -191,7 +192,8 @@ The below figure shows the output of both pre-increment and post-increment
 
 *** 
 
-7. Does the Repeat loop inside the break keyword work?  
+**7. How will the break keyword work inside the repeat loop?**  
+
 **Answer** :  
   we use the break keyword inside the repeat loop it will terminate the loop. and based on certain conditions.   
 
@@ -218,7 +220,7 @@ The below figure shows the output of the repeat loop with the break keyword.
                                 Figure.5. the output of the repeat loop with the break keyword. 
 
 
-8.**what is the difference between If and unique if statements**?    
+**8.what is the difference between If and unique if statements**?    
 Answer :  
 |SL.No|condition | if |unique if |
 |-----|----------|----|----------|
@@ -230,7 +232,7 @@ Answer :
 
 ***
 
-9.**what is the difference between If and priority if statements**?  
+**9. what is the difference between If and priority if statements**?  
 Answer :  
 |SL.No|condition | if |priority if |
 |-----|----------|----|----------|
@@ -240,30 +242,6 @@ Answer :
  
 
    
-
-
-
-
-  
-
-
-   
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
 
 
 
