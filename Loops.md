@@ -53,11 +53,9 @@ A while loop first checks the condition is true and then executes the statements
 <img width="491" alt="while1" src="https://user-images.githubusercontent.com/110443268/188872484-af46f752-e8d2-4fbd-946f-e31f7e8482f4.png">
   
 
-** GitHub lab Code link** -
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
+** GitHub lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_basic/while_basic.sv
 
-** GitHub lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_loop_output.log  
+** GitHub lab output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_basic/while_basic_log.log  
 
 
 
@@ -96,10 +94,11 @@ We can declare variables inside the loop. But that variable is a local variable,
 <img width="355" alt="18" src="https://user-images.githubusercontent.com/110443268/188861444-ce3f23e8-8e05-4254-82d3-2abf485775ef.png">
 
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_local_var/whil.sv 
 
 
-**GitHub Lab Output link**  
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_local_var/while_variable_log.log  
+
 
 
 ***
@@ -142,11 +141,9 @@ In the do-while loop, first execute the condition once and then check whether th
 <img width="541" alt="while2" src="https://user-images.githubusercontent.com/110443268/188873058-a9eeae37-7185-441c-9ac7-42a644d351a4.png">
 
 
-**GitHub Lab Code link** -  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code.sv  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while.sv  
 
-**GitHub Lab Output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code_output.log  
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while.sv  
 
 ***
 
@@ -183,9 +180,11 @@ This loop is used for repeating statements or operations for a fixed given numbe
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803547-7c5ff4fc-8388-45fc-817f-19c431c51943.png">
 
 
-**GitHub Code Lab link** - 
+**GitHub Code Lab link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat/repeat_normal/repeat.sv
 
-**GitHub Lab Output link**
+
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat/repeat_normal/repeat_code_log.log
+
 
 **Implementation of repeat loop using for loop**  
 We can implement a repeat loop using other loops also. Below example will show the implementation of a repeat loop using for loop.  
@@ -206,9 +205,9 @@ We can implement a repeat loop using other loops also. Below example will show t
 
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803668-ac46bcff-47a4-4867-8f87-3b946770c3e8.png">
 
-**GitHub Lab Code link**  
+**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat/repeat_using_for_loop/repeat_for.sv 
 
-**GitHub Lab Output link**  
+**GitHub Lab Output link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat/repeat_using_for_loop/repeat_for_log.log
   
 
 ***
