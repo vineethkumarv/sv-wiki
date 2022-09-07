@@ -98,7 +98,7 @@ when the sum function is executed, the simulator checks for the function named s
 
 ![func pass by variables1](https://user-images.githubusercontent.com/110412468/188593334-04c163c0-df7c-4ddf-9dc0-832bf29a9bad.png)  
 
-              Fig.1- output for function with passing values as variables  
+              Fig.2- output for function with passing values as variables  
 
 This is almost similar to the example of passing by values but here will just pass the values by storing the values in variables so that the same line can be reusable if needed and here the variables called in initial module a&b are different than the a&b in function i.e., they have separate memory if any change is made in function on variables a&b then it won't be reflected with values of main modules a&b until a&b are declared as global. 
 Here in the functional declaration we also mentioned input for variables whereas in the first example we didn't mention it, so we can give the directions of arguments if necessary and only one output is possible for functions.
@@ -329,7 +329,7 @@ In this example, calling the function with an array, initially took an empty arr
 
 ![func array from display1](https://user-images.githubusercontent.com/110412468/188615368-51613153-5cc7-4698-820e-e22fe12e0d43.png)  
    
-              Fig.8- output for a function call from an expression which returns array    
+              Fig.9- output for a function call from an expression which returns array    
 
 In the example, we are calling a function from a display that returns an array where we need to create a data type using a typedef as mentioned in code with the array and size and make use of that data type and call the function, note that you need to change the function return type to the typedef type.
 
@@ -374,6 +374,6 @@ In general, calling a task from a function is illegal, the compiler will through
  
 ![task from func1](https://user-images.githubusercontent.com/110412468/188620923-5148ad27-001e-496a-8c10-918cf0c93e65.png)
    
-              Fig.9- output for calling a task from function      
+              Fig.10- output for calling a task from function      
               
 In the initial block, called a function that has some statements and calls a task inside the fork join_none so that the task from a function can be accomplished, here at 0 ns the simulator is in the initial block and a func is called, then @1 ns it printed that I'm in function and task is called @1ns in func and from there simulator goes to task, @2ns it prints I'm in task and waits for 1ns more and leaving the task.
