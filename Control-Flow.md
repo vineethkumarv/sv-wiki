@@ -1107,9 +1107,7 @@ In the above output, two conditions are true at a time this will make the case s
 
 In this type of case statement, if more than one case condition is true, it will display the output without giving any error with no warning.
 
-**Syntax
-***
-:**  
+**Syntax:**  
 
              priority case(condition)
              condition_1: Statements ;
