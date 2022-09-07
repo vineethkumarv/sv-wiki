@@ -207,8 +207,32 @@ Consider, a = 101
 
 **GitHub lab output link**  
 ---
+7.**Conditional Operator:** 
+To use the conditional operator, we write a logical expression before the? operator which is then evaluated to see if it is true or false.
+The output is assigned to one of two values depending on whether the expression is true or false.  
+ 
+general syntax for the conditional operator.  
 
-8.**Reduction operator:**
+**output = <condition> ? <true> : <false>**
+
+****Example:****  
+Consider, y = enable ? <data> : <1'bx> 
+ 
+In the above example enable condition is true it will execute the data otherwise it going to the 1'bx. 
+ 
+![conditional](https://user-images.githubusercontent.com/106074838/188886981-dc5abfe0-6d61-498a-a1da-a8bcb976c779.png)  
+     
+
+               Figure.8. the output of the Condition operator.   
+
+**GitHub lab code link**     
+
+**GitHub lab output link**  
+***
+
+
+8.**Reduction operator:**  
+
 
 **Reduction operator cheat sheet**
 
