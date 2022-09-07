@@ -59,7 +59,7 @@ The below figure shows the output of if conditional statement.
 
 **GitHub Lab Code link** 
  
-**GitHub lab output link**   
+**GitHub Lab Output link**   
 
 
 
@@ -1380,9 +1380,9 @@ In the above output, a break statement is used inside the loop. The output shows
 
 
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break.sv
+**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break_op.log
+**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break/break_op.log
 
 ### continue:
 
@@ -1422,9 +1422,9 @@ In the above example, **continue** statement is used inside the loop that skips 
 In the above output, the continue statement is used inside the loop. The output shows the value for iterations 0 & 1 and for iteration 2  continue statement is encountered and displays "Calling continue" and after this jumps to the next iteration immediately and prints the value for iterations 3 & 4
 
 
-**lab link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue.sv
+**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue.sv
 
-**lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue_sv_op.log
+**GitHub Lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/continue/continue_sv_op.log
 
 
 
@@ -1441,10 +1441,10 @@ For a better understanding of Blocking statements go through the following lab
 ![block1](https://user-images.githubusercontent.com/110412468/187091224-dd73b66b-3071-4db9-9f46-7e30cc406eeb.png)
 
 
-**lab link**
+**GitHub Lab Code link**
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap.sv
 
-**lab output link**
+**GitHub Lab Output link**
 https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap_log.log
 
 
