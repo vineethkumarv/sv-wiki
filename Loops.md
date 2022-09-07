@@ -55,8 +55,8 @@ For loop is simply a more compact form of while loop. In for loop assignment, th
 
 As per the flowchart initially, i is 1 so the condition satisfies and performs display statement and prints as "iteration 1" and then goes to modifier and increments i, check the condition again and so on till i=5, now after 5 i is incremented to 6 then checks condition which is failed so comes out of the loop.
 
-**Github lab code link:**  
-**Github lab output link:**   
+**Github lab code link:**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/for_loop/for_code.sv  
+**Github lab output link:**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/for_loop/for_loop_output.log   
 
 Note: If you use a local scope variable outside then the compiler throughs an error as shown below.
 
@@ -100,8 +100,8 @@ In the above example we are using nested for loop to print tables, so took i as 
 
 In this i,j& k are used as i X j = k, so i is range from 1-2 and each has j from 1-10 and k is storing and printing using display statements.    
 
-**Github lab code link:**    
-**Github lab output link:**    
+**Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/nested_for/table_for_loop.sv     
+**Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for/nested_for/tabe_for_loop_output.log     
 
 **Advantages:**
 * Readable
@@ -154,8 +154,8 @@ In the above example, a fixed array of size 5 is taken, using a foreach loop to 
 
 As per the flowchart initially checks for the size of the array, as it is >0, so proceeds to execution of foreach statements i.e., assigns array[0]=0 and displaying the same and then increments i value by 1 and repeats the same until array[4]. Then at array[5] condition is failing because the array size is 5 only (i.e., 0,1,2,3,4) comes out of loop.
 
-**Github lab code link:**  
-**Github lab output link:**   
+**Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_loop/foreach_loop.sv 
+**Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_loop/foreach_loop_log.log  
 
 The same functionality of above program we can achieve by using for loop as following line replaced with foreach.  
 
@@ -167,8 +167,8 @@ The following is the snap of output of foreach using for loop
 
          Fig.5 - foreach using for output
 
-**Github lab code link:**   
-**Github lab output link:**  
+**Github lab code link:**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_using_for/foreach_using_for.sv    
+**Github lab output link:**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_using_for/foreach_using_for_log.log  
 
 **Note:** we can use nested foreach similarly as used in nested for loop and can access multidimensional arrays.  
 
@@ -231,8 +231,8 @@ In the above example, forever is used which is having display statement and incr
 
 As the forever doesn't have any condition it simply enters and displays a value and then a is incremented and a 4ns delay is introduced so for every 4ns the output is getting printed and at 20 ns $display and prints stopped using $finish is executed in second initial module as well as $finish is called in which will terminate the simulation.
 
-**Github lab code link:**  
-**Github lab output link:**   
+**Github lab code link:**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever/forever_loop_finish/forever_loop.sv  
+**Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever/forever_loop_finish/forever_loop_output.log    
 
 * ### forever with break:  
 
@@ -270,12 +270,12 @@ This is similar example of forever with $finish but here we have used break cond
 **output:**  
 ![forever using break1](https://user-images.githubusercontent.com/110412468/188284478-a5724ff5-5b7f-445c-b36b-309dbd386c68.PNG)    
 
-         Fig.7 - forever with finish output  
+         Fig.7 - forever with break output  
 
 As the forever doesn't have any condition it simply enters and displays a value and then a is incremented and a 4ns delay is introduced so for every 4ns the output is getting printed after a value greater than 8 then enters into if block which has a break which moves simulator to out of the loop.
 
-**Github lab code link:**  
-**Github lab output link:**   
+**Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever/forever_loop_break/forever_loop.sv    
+**Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever/forever_loop_break/forever_loop_output.log    
 
 **advantages:**  
 * we cant use always block inside an always or a class there this forever is used and can achieve the same job  
