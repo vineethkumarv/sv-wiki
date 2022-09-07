@@ -138,7 +138,7 @@ Consider, a = 100
 
 ---
 5.**Bitwise operator:**   
-We use the bit-wise operators to combine a number of single-bit inputs into a single-bit output.  
+  
 
 **Bitwise operator cheat sheet**  
 Operator | Description
