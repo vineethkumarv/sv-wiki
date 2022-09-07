@@ -1276,6 +1276,17 @@ A while loop first checks the condition is true and then executes the statements
 **Code snap**  
 
 
+    int apple = 1; //int data type and variable name is apple
+
+    initial begin  //procedural blocks
+     $display("-----while loop output ---");
+    while (apple <6) //while loop and condition
+      begin
+     $display("\t value of apple = %0d", apple);
+     apple++;
+    end  
+    end
+
 
 **Output snap**  
 
@@ -1353,7 +1364,19 @@ In the do-while loop, first execute the condition once and then check whether th
 
 
 
-**Code Snap**  
+**Code Snap**   
+
+     int apple = 1; //int data type and variable name is apple
+     initial begin //procedural block
+     $display("------do while output ---");
+     do //do statements
+    begin
+     $display("\t Value of apple = %0d", apple);
+
+     apple = apple +1;
+    end      
+    while(apple<6); //while loop condition    
+    end     
 
 **Output Snap**  Below figure shows the output of do while loop 
 
