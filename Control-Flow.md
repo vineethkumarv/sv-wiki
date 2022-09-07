@@ -954,9 +954,11 @@ If all the conditions are true or more than one condition is true, it will read 
            10 : $display(" Value of x is = %0b", x);
            11 : $display(" Value of x is = %0b", x);
            endcase
+
 In the above example, the unique case statement is used. Here all the conditions are false, this will print the output with a warning and no error.
 
 **Output snippet:**
+
 The below figure shows the output of a unique case statement in which no conditions are true.  
   
 
