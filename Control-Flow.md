@@ -874,9 +874,9 @@ The below figure shows the output of the case statement without using the defaul
 
  In the above output, the case statement is used without a default statement. In this one case condition is true, at the time of execution the output will come to 'Value of x = 1'.If none of the conditions is true or the default statement is not given then the execution will exit the case block without anything.  
 
-**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default.sv
+**GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_default/case_without_default.sv
 
-**GitHub Lab output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_default/case_without_default_op.log
+**GitHub Lab output link**https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_default/case_without_default_op.log
 
 ### Using of range in case statement with the use of inside statement:    
 
@@ -916,9 +916,9 @@ The below figure shows the output of the case statement with a range.
 
 In the above output, the case statement will get executed with the use of an inside statement. The case statement will get executed and displays the output 'Value of x = 6'  
 
-**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range.sv
+**GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_range/case_range.sv
 
-**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/case_range/case_range_op.log
+**GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_range/case_range_op.log
 
 
 
@@ -942,9 +942,9 @@ The below figure shows the output of using a break statement inside the case sta
 In the above output, a break statement is used inside the case statement. System Verilog does not allow the use of a break statement inside the case statement.  
 In this, an error will occur.
 
-**GitHub Lab Code link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case.sv
+**GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/break_case/break_case.sv
 
-**GitHub Lab Output link** https://github.com/piyushagrawal4578/control-flow/blob/main/break_case/break_case_op.log
+**GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/break_case/break_case_op.log
  
 **Using of disable keyword to disable the nested loop inside the task**
 
@@ -980,9 +980,9 @@ The below figure shows the output in which disable keyword is used to disables t
 
                           Fig - : Output: Using of disable keyword inside the task
 
-**GitHub Lab Code link:** https://github.com/piyushagrawal4578/control-flow/blob/main/nested_loop/nested_loop.sv
+**GitHub Lab Code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/nested_loop_break/nested_loop.sv
 
-**GitHub Lab Output Code:** https://github.com/piyushagrawal4578/control-flow/blob/main/nested_loop/nested_loop_op.log
+**GitHub Lab Output Code:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/nested_loop_break/nested_loop_op.log
 
 
 There are three updates for the case statement in the system Verilog and these are -  
