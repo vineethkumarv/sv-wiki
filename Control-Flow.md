@@ -799,6 +799,8 @@ A system Verilog case statement starts with the case keyword and ends with the e
         default   : Statements;
         endcase
 
+### Case statement in which no conditions are true
+
 ### Example:         
             x = 2'b01;
             case(x)
@@ -933,6 +935,19 @@ In the above output, the case statement will get executed with the use of an ins
 ### Use of Break statement inside the case statement:
 
 the break statement is not allowed to use within the loops. while using a break inside the case statement, an error has occurred.
+
+**Syntax**
+
+            case(condition) inside
+            condition_1: Statements ;
+            condition_2: begin
+                       Statements ;
+                        break;
+                        end
+            ...........
+            conditon_N: Statements;
+            endcase
+ 
 
 **Output Snap:**
 
