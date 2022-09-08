@@ -165,7 +165,7 @@ In the above example, we are calling the function using positional arguments i.e
 **syntax:**  
 `function automatic function_name(arguments);`  
 
-**Example: **  
+**Example:**  
 
           module func_automatic();
               int result1,result2;
