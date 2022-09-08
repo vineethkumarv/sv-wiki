@@ -799,9 +799,10 @@ A system Verilog case statement starts with the case keyword and ends with the e
         default   : Statements;
         endcase
 
-**Case statement in which no conditions are true**
+**case statement in which no conditions are true**
 
-### Example:         
+**Example:         **  
+
             x = 2'b11;
             case(x)
             00 : $display("Value of x = %0b", x);
@@ -832,7 +833,7 @@ In the above output, the case statement will execute for all conditions and be t
 **GitHub Lab Output link** :- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case/case_op.log
 
 
-### Using of Case statement without a default  
+**Using of Case statement without a default  **
   
 In case statements, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
 If none of the given case conditions is true, the statement within the default statement is executed.    
@@ -883,7 +884,7 @@ The below figure shows the output of the case statement without using the defaul
 
 **GitHub Lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_default/case_without_default_op.log
 
-### Using of range in case statement with the use of inside statement:    
+**Using of range in case statement with the use of inside statement:    **
 
 In this, the range is declared in the case statement with the use of an inside statement.    
 If we want to give a range value in a case statement, this will be done with help of an inside statement.
@@ -932,9 +933,9 @@ In the above output, the case statement will get executed with the use of an ins
 
 
 
-### Use of Break statement inside the case statement:
+**Use of Break statement inside the case statement:**
 
-the break statement is not allowed to use within the loops. while using a break inside the case statement, an error has occurred.
+The break statement is not allowed to use within the loops. while using a break inside the case statement, an error has occurred.
 
 **Syntax**
 
@@ -1039,9 +1040,9 @@ If all the conditions are true or more than one condition is true, it will read 
       conditon_N: Statements;
       endcase
 
-### Example:   
+**Example:   **
 
-**In this unique case, all the conditions are false-**
+**all the conditions are false-**
   
            x = 2'b01;
            unique case(x)
@@ -1069,7 +1070,7 @@ In the above output, all the condition is false so the unique case gives a warni
 
 **GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_none_true/unique_case_op.log
 
-**Unique case with more than one condition is true**
+**more than one condition is true**
 
 In a unique case, if all the case condition is false, it will display a warning (no match is found for the case statement ) with no error.     
 If all the conditions are true or more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.
@@ -1266,296 +1267,6 @@ In the above output, more than one condition is true. priority case checks the f
 
 
 
-## Loops 
-
-The loops have a sequence of instructions, it will execute when the instruction is true and execute until the condition of the loops will not false. When the condition becomes false, the loops will terminate. 
-There are various kinds of loops  -
- 
-
-
-![Untitled Diagram-Page-6 drawio (2)](https://user-images.githubusercontent.com/110447788/187124383-92b1cd6a-7628-4ddb-9eb0-7378ae8cdce9.png)
-
-
-                                        Fig - : Loops
-
-***
-
-S.No.|loops_variants |  
-:-----|:--------|
-1.|[for](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#1-for)|
-2.|[foreach](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#2-foreach)| 
-3.|[forever](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#3-forever-loop)|
-4.|[while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#4-while)| 
-5.|[do while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#5-do-while)|
-6.|[repeat](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#6-repeat)|
-
-
-### 1. for 
-for loop, execute the statements multiple times until the condition become false. Execution of "for loop" requires three steps -
-
-a. Initialization - It will first initialize the variable.  
-b. condition -  give condition to the loops. It will decide the purpose of the loop.  
-c. modifier - means in this part, the increment or decrement is done.  
-
-**Syntax** -   
-`              for (initialization; condition; modifier) begin  `    
-              `Statements;  `    
-              `end   `       
-  
-![for loop](https://user-images.githubusercontent.com/110412468/187091118-b1918f12-53e4-464d-a8e6-593fb5275796.png)
-
-
-**lab link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_code.sv  
-
-**lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/for_loop/for_loop_output.log  
-
-
-*** 
-### 2. foreach
-
-This loop is the updated version of for loop in the system Verilog. As compared to for loop, foreach loop syntax is less complicated.
-When the condition is true, the statements of the loop execute until the condition becomes false same as for loop.
-
-**Syntax** -    
-`               foreach(variable[iterator])begin  `  
-               `Statements;  `  
-               `end   `    
-  
-![foreach](https://user-images.githubusercontent.com/110412468/187091133-a9064005-7a33-4c88-bb60-8af8243b846c.png)
-
-
-The below example will give the working idea of foreach loop.
-
-**lab link** -
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_loop.sv
-
-**lab output link** -
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/foreach/foreach_loop_log.log
-
-***
- 
-### 3. forever loop
-As the name says forever loop will execute the statements inside the loop forever.  
-It can be said an indefinite iteration.
-
-**Syntax** -   
-`           forever begin  `  
-           `multiple statements;  `  
-           `end  `    
-  
-![forever](https://user-images.githubusercontent.com/110412468/187091144-6641b98e-2f4f-49be-9c47-2038dd8c604d.png)
-
-  
-The below example gives the idea of the working of a forever loop.
-
-**lab link** -   
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_code.sv  
-
-**lab output link**    
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/forever_loop/forever_loop_output.log  
-
-
-
-***
-
-### 4. while
-In a while loop, first we need to check the condition then only we can execute the statements. We need to initialize the variable in the condition before execution.  
-A while loop first checks the condition is true and then executes the statements if it is true. If the condition is false, the loop ends right there.     
-   
-**Syntax** -   
-`               while(condition)begin              `  
-               `Statements;  `  
-               `end  ` 
-  
-
-**Flowchart:**
-
-![nanoo dig](https://user-images.githubusercontent.com/110447788/188705046-66e378e6-3057-4bb2-ba48-5fa286c49571.png)
-
-**Example** - Here, the example shows the print of a statement of 5 times using the while loop.  
-
-
-**Code snap**  
-
-
-    int apple = 1; //int data type and variable name is apple
-
-    initial begin  //procedural blocks
-     $display("-----while loop output ---");
-    while (apple <6) //while loop and condition
-      begin
-     $display("\t value of apple = %0d", apple);
-     apple++;
-    end  
-    end
-
-
-**Output snap**  
-
-<img width="491" alt="while1" src="https://user-images.githubusercontent.com/110443268/188872484-af46f752-e8d2-4fbd-946f-e31f7e8482f4.png">
-  
-
-** GitHub lab Code link** -
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_code.sv  
-
-** GitHub lab output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_loop_output.log  
-
-
-
-**Declare variable inside the loop  **
-  
-We can declare variables inside the loop. But that variable is a local variable, only we can use it inside the loop if can't use it out of the loop. If we use the variable out of the loop it will through an error.  
-  
-**Example** - Below example show the difference between the local and global variable.  There are two variables are there one is local (a) and another one is global(x). a is the local variable for a first while loop. We can not use it outside that particular loop in which it is declared. x is a global variable, we can use it out of the loop.  
-
-**Code Snap**  
-   
-    int x = 2; // variable declare  
-    initial begin  
-    while ( x<5)begin  
-    int a;  // declare the variable inside the loop  
-    $display ("Iteration = %0d",x);  
-    $display ("a is a local variable");  
-    $display ("The size of a = %0d",$size(a));  
-    $display ("------------------------------");  
-    // a is a local variable. We can't use it out of the loop.  
-    x++;    // incrementing the x  
-    end  
-    // After the execution of the above loop. The value of x = 4 .  
-
-    while (x<8)begin  
-     $display ("x is a global varaible ");  
-     $display ( "The value of x = %0d",x);  
-     $display ("------------------------");  
-    x++;  
-    end  
-    end  
-
-
-**Output Snap**  
-
-<img width="355" alt="18" src="https://user-images.githubusercontent.com/110443268/188861444-ce3f23e8-8e05-4254-82d3-2abf485775ef.png">
-
-
-**GitHub Lab Code link**  
-
-
-**GitHub Lab Output link**  
-
-
-***
- ### 5. do-while 
-In the do-while loop, first execute the condition once and then check whether the condition is true or not. If the condition is true, the set of statements is executed until the condition turns out to be false. If the condition is false the loop ends right there.  
-
-**Syntax** -  
-`                 do begin                 `  
-                 `Statements;           `  
-                 `end                  `  
-                `while(condition)begin     `  
-                `Statements;  `  
-                `end  `    
-  
-
-**Flowchart:**
-
-![nanoo dig2](https://user-images.githubusercontent.com/110447788/188705142-bb1b3c17-ff8c-4de2-9a86-83321afa2670.png)
-
-**Example** - Below example shows code to understand the working of do - while loop.  
-
-
-
-**Code Snap**   
-
-     int apple = 1; //int data type and variable name is apple
-     initial begin //procedural block
-     $display("------do while output ---");
-     do //do statements
-    begin
-     $display("\t Value of apple = %0d", apple);
-
-     apple = apple +1;
-    end      
-    while(apple<6); //while loop condition    
-    end     
-
-**Output Snap**  Below figure shows the output of do while loop 
-
-<img width="541" alt="while2" src="https://user-images.githubusercontent.com/110443268/188873058-a9eeae37-7185-441c-9ac7-42a644d351a4.png">
-
-
-**GitHub Lab Code link** -  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code.sv  
-
-**GitHub Lab Output link**  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while_code_output.log  
-
-***
-
-### 6. repeat 
-
-This loop is used for repeating statements or operations for a fixed given number of times.  
-
-**Syntax** -  
-             `repeat(no. of times)begin  `  
-             `statements;  `  
-             `end  `    
-  
-
-**Example** - Below example shows, the working of the repeat loop. Here, there are three statements inside the repeat loop. the repeating is for 4 times.  
- 
-**Code Snippet**  
-  
-    module repeat_code;  
-    initial begin ;  
-     repeat(4)begin   // Repeat the statements inside 4 times  
-       $display ("Good morning");  
-       $display ("Keep shining");  
-       $display ("--------------");  
-     end  
-    end  
-
-**Flowchart:**
-
-![repeat](https://user-images.githubusercontent.com/110447788/188849639-db5fe78a-a6d6-43a8-8665-c12a9d51f46b.png)
-
-
-**Output Snippet**  
-
-<img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803547-7c5ff4fc-8388-45fc-817f-19c431c51943.png">
-
-
-**GitHub Code Lab link** - 
-
-**GitHub Lab Output link**
-
-**Implementation of repeat loop using for loop**  
-We can implement a repeat loop using other loops also. Below example will show the implementation of a repeat loop using for loop.  
-
-**Example** - Same as the above example, here we are repeating these same statements using them for a  loop.  
-  
-**Code Snippet**  
-
-     initial begin  
-      for (int i = 1;i<=4;i++)begin   // for loop initialization, repeat the statements inside it for  
-         $display ("Good morning");   // 4 times (i =1,2,3,4)  
-         $display ("Keep Shining");  
-         $display ("------------");  
-       end  
-    end  
-
-**Output Snippet**  
-
-<img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803668-ac46bcff-47a4-4867-8f87-3b946770c3e8.png">
-
-**GitHub Lab Code link**  
-
-**GitHub Lab Output link**  
-  
-
-
 ***
 ### break 
 
@@ -1567,7 +1278,7 @@ We can use break statements in any loop(for, foreach, forever, do-while, while, 
 
 `break;`
 
-### Example:     
+**Example:     **
             foreach(array[i])
             if(i==2)begin
             $display("----Calling break----");
@@ -1601,6 +1312,9 @@ In the above output, a break statement is used inside the loop. The output shows
 
 **GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/break_continue/break/break_op.log
 
+
+***
+
 ### continue:
 
 The continue statement is used to skip the current iteration of a loop. We can use the continue statement inside any type of loop such as for, while, and do-while loop. Basically, continue statements are used in situations when we want to continue the loop but do not want the particular iteration in the loop.
@@ -1611,7 +1325,7 @@ Using continue, we can skip the current iteration of a loop and jumps to the nex
 
 `continue;
 `
-###  Example:   
+**Example:   **
             foreach(array[i])
             begin
             if(i==2)begin
@@ -1647,240 +1361,6 @@ In the above output, the continue statement is used inside the loop. The output 
 
 
 
-
-##  Blocking and non-blocking statement - 
-* ### Blocking statement  
-Blocking statements are assigned with =. It will execute serially in procedural blocks. Blocking statements are executed in a block in a sequential manner but when more than two procedural blocks, these statements will execute parallelly in the blocks and will not block the statements of other procedural blocks.
-
-**Syntax** -  
-`            variable_name(LHS) = expression(RHS);`  
-
-For a better understanding of Blocking statements go through the following lab  
-  
-![block1](https://user-images.githubusercontent.com/110412468/187091224-dd73b66b-3071-4db9-9f46-7e30cc406eeb.png)
-
-
-**GitHub Lab Code link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap.sv
-
-**GitHub Lab Output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/blocking_swap/blocking_swap_log.log
-
-
-
-***
-* ###  Non - blocking statement  
-
- Non-blocking statements are assigned with the <=. It will not block the execution of a statement inside that particular block.
-These statements will execute the parallel inside that particular block. 
-
-**Syntax** -  
-`             Variable(LHS) <= Expression(RHS) ; `  
-
-For a better understanding of Blocking statements go through the following lab  
-  
-![non block 1](https://user-images.githubusercontent.com/110412468/187091236-85f24f54-43e4-478f-90bb-f74e9c290c11.png)
-
-
-**lab link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/non_blocking_swap/non_blocking_swap.sv
-
-**lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/blocking_non_blocking/non_blocking_swap/non_blocking_swap_log.log
-
-
-
 ***
 
 
-## Function and task 
-
-S.No.|Function | Task |
-:-----|:--------|:------|
-1.|  Not have timing control statents| have timing control statements|
-2.|  Can return a single value | It won't return but affect the values globally |
-3.|  Can call only other functions, not tasks .|Can call other tasks and functions both.|
-
-
-
-
-
-***
-
-### Function 
-
-The function is the subroutine that contains procedural code.
-The purpose of the function is to return the value that can be used in the expression.
-The function cannot have time control statements like #, @, or fork-join( The function must execute in zero time).
-A function can call other functions, not other tasks.
-A function can have at least one argument which is to be returned.
-
-
-**Syntax** -  
-  `function data_type function_name(arguments )`  
-`    <Statements>;  `  
-    `endfunction  `   
-
-**Example** - 
- 
-`module function_tb;`   
-`int x;`  
-`function int sum(input int a, b);`    
-    `sum = a+b;`   
-  `endfunction`  
- `initial begin`    
-    `x=sum(10,5);`  
-`$display("\tValue of X = %0d",x);`    
-`end` 
-`endmodule:function_tb`   
-
-Here in the above example, adding two integer numbers by calling the function name.  
-we declaring the function name 'sum' and function type int data_type and calling the function name inside the module.
-   
-**output**  
-`Value of X= 15;`   
-
-
-**Void function**  
-Void functions are simply functions that have no return value.    
-void is used to indicate a null return from the function.    
-They can be used wherever a statement is allowed. They cannot be used as part of an expression.  
- 
-**Syntax**    
-`function void function_name;`  
-
-The function 'function_name' is not returning any data but the code will be evaluated inside the function, so this can be of void data type.    
-
-Arguments are of two types - 
-1. formal argument - declare in the routine header.
-
-2. actual argument - value and function passed to and from the routine.
-
-We can call the function mainly in two ways -
-*  call by value   
-*  call by reference  
-
-### call by value 
-
-In argument pass by value, the argument passing mechanism works by copying each argument into the subroutine area.
-
-If any changes to arguments within the subroutine, those changes will not be visible outside the subroutine.
-
-The below example will show a clear overview of the working of the call by value function.  
-  
-
-![func by value](https://user-images.githubusercontent.com/110412468/187091280-df74fd46-39cb-4d6b-8809-cc8f1304cea1.png)
-
-
-**lab link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_value/function_by_value.sv
-
-**lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_value/func_by_value_log.log
-
-***
- 
-
-### call by reference 
-
-In this, the reference to the original argument is passed to the subroutine. As the argument within a subroutine is pointing to an original argument, any changes to the argument within the subroutine will be visible outside.
-
-The below example will show the clear idea.
-
-![func by ref](https://user-images.githubusercontent.com/110412468/187091260-bac486da-c66f-4eaf-8141-4d9729cad264.png)  
-
-**lab link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_ref/function_by_ref.sv
-
-**lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/function/function_by_ref/func_by_ref_log.log
-
-
-***
-
- ## task 
-
-The task is used to split the code into small parts same as the function but there are some differences between them.  
-In task , we can provide time delays like # , @ .etc.  
-The task can call other tasks and functions also.
-The task will not return any value.
-We can assign input, output,inout arguments in tasks.
- 
-
-There are generally two types of tasks we use -  
-*  Static task   
-*  Automatic task  
-
-
-***
-
-### Static task 
-
- Any task is a default static task in which overriding will be there.
-
-**Syntax** -  
-`task task_name(arguments)`  
-`Statements;  `  
-`endtask  `    
-
-![static task](https://user-images.githubusercontent.com/110412468/187091302-7fc2eb75-05c0-48e5-8e9d-51c3db167bff.png)
-
-
-**lab link** -
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/static_task/task.sv
-
-**lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/static_task/task1.log
-
-***
-
-### Automatic task 
-
-Automatic tasks allocate unique, stacked storage for each task call.
-
-**Syntax** -  
-`task automatic task_name(ref arguments)`  
-`Statements;  `  
-`endtask  `      
-  
-![auto task](https://user-images.githubusercontent.com/110412468/187091324-1915f00e-b913-455c-bda0-8952955b01a7.png)
-
-
-**lab link** -
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/automatic_task/automatic_task.sv
-
-**lab output link**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/tasks/automatic_task/task_auto_log.log
-
-***
-## events 
-
-Event is used for synchronization between two or more concurrently active processes. Initially, we need to declare the event and then it needs to be triggered by using the -> or ->> operator.
-
-Processes can wait for the event by using the @ operator or wait(event_name.triggered).  
-when both @ and wait comes at the same point then a race-around condition occurs in between both.
-
-For a better understanding of events go through the below lab    
-  
-![event](https://user-images.githubusercontent.com/110412468/187091331-63e67336-758a-4e20-8c7f-fcbb29d74b61.png)
-
-
-**lab link:**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/events/event/event.sv
-
-**lab output link:**
-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/events/event/event_log.log
-
-
-
-
-
-
-
-
-
- 
-
-
-
-             
