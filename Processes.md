@@ -37,24 +37,31 @@ join
 ```
 
 **code snippet**:-  
+
 ```
 fork:FORK_F1  
-begin:BEGIN_B2  
-#1 a <= b;  
-b <= 7;  
-$monitor("[%0t] Thread-T2: Values of a= %0d,b= %0d, c= %0d,d= %0d",$time,a,b,c,d);  
-#1 ->e1;  
-c = b;  
-end:BEGIN_B2  
-begin:BEGIN_B3  
-wait(e1.triggered);  
-$display("[%0t] Event is triggered",$time);       
-begin:BEGIN_B4 //Thread 4  
-#1 d = c;           
-end:BEGIN_B4  
-end:BEGIN_B3  
-join:FORK_F1       
+
+   begin:BEGIN_B2  
+      #1 a <= b;  
+      b <= 7;  
+      $monitor("[%0t] Thread-T2: Values of a= %0d,b= %0d, c= %0d,d= %0d",$time,a,b,c,d);  
+      #1 ->e1;  
+      c = b;  
+   end:BEGIN_B2  
+
+   begin:BEGIN_B3  
+      wait(e1.triggered);  
+      $display("[%0t] Event is triggered",$time);  
+
+      begin:BEGIN_B4  
+        #1 d = c;  
+      end:BEGIN_B4  
+
+   end:BEGIN_B3  
+
+join:FORK_F1  
 ```
+
 In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
 
