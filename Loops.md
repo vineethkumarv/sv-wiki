@@ -405,7 +405,8 @@ The following is the snap of output of foreach using for loop
 
 **Advantages:**  
 * syntax is easier.
-* Readable
+* Readable  
+
 **limitations:**  
 
 * It is only used for arrays  
@@ -512,6 +513,7 @@ As the forever doesn't have any condition it simply enters and displays a value 
 
 **advantages:**  
 * we cant use always block inside an always or a class there this forever is used and can achieve the same job  
+
 **limitations:**  
 * If we don't quit the forever then the simulator will hang.
 
