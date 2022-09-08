@@ -14,8 +14,8 @@ In the below Fig-1 we can see that types of processes and the process controls.
 |[fork join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1fork-join)|Parent threads will be executed only when all child threads are executed.|
 |[fork join_any](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2fork-join_any)|Parent threads will be executed only when anyone of the child thread gets executed.|
 |[fork join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3fork-join_none)|Parent threads will be executed parallelly with child threads.|
-|[wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1-wait-fork)|It allows the main process to wait until all the child threads are executed.|
-|[disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2-disable-fork)|It will terminate the execution of all the child threads when disable fork is execute.|
+|[wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1wait-fork)|It allows the main process to wait until all the child threads are executed.|
+|[disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2disable-fork)|It will terminate the execution of all the child threads when disable fork is execute.|
 |[Fine Grain Process Control](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control)|These are used to control the processes and it will provide the status of the processes.|
 
 ## Processes or Threads
@@ -186,11 +186,11 @@ Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 # **Process control**
 
 System Verilog provides constructs that allow one process to terminate or wait for the completion of other processes.  
-1. wait fork  
-2. disable fork  
+1. [wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1wait-fork)  
+2. [disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2disable-fork)  
 3. Fine grain process control.  
 
-## 1. wait fork  
+## 1.wait fork  
 
 The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution. It will wait until all the fork processes complete the execution.  
 
@@ -234,7 +234,7 @@ Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log  
 
-## 2. disable fork  
+## 2.disable fork  
 
 On execution of the disable fork, all the active process will get terminated.
 
