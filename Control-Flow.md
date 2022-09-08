@@ -881,7 +881,7 @@ The below figure shows the output of the case statement without using the defaul
 
 **GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_default/case_without_default.sv
 
-**GitHub Lab output link**https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_default/case_without_default_op.log
+**GitHub Lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_default/case_without_default_op.log
 
 ### Using of range in case statement with the use of inside statement:    
 
@@ -892,10 +892,10 @@ If we want to give a range value in a case statement, this will be done with hel
 **Syntax:**
          
            case(condition) inside
-           condition_1: Statements ;
-           condition_2: Statements ;
+           condition_1_[a:b]: Statements ;
+           condition_2:_[c:d] Statements ;
            ...........
-           conditon_N: Statements;
+           conditon_N_[y:z]: Statements;
            endcase
  
 
@@ -948,6 +948,20 @@ the break statement is not allowed to use within the loops. while using a break 
             conditon_N: Statements;
             endcase
  
+**Example:**
+              case(x)
+              00 : $display("Value of x = %0b", x);
+              01 : begin
+              $display("Value of x = %0b",x);
+              break;
+              end
+              10 : $display("Value of x = %0b",x);
+              11 : $display("Value of x = %0b" ,x);
+              default : $display("Value of x is not find");
+              endcase
+
+In the above example, here we use a break statement inside the case statement. This will throw an error, i.e. break statement is not allowed within the case statement.
+
 
 **Output Snap:**
 
@@ -1024,7 +1038,10 @@ If all the conditions are true or more than one condition is true, it will read 
       conditon_N: Statements;
       endcase
 
-### Example:     
+### Example:   
+
+**In this unique case, all the conditions are false-**
+  
            x = 2'b01;
            unique case(x)
            00 : $display(" Value of x is = %0b", x);
@@ -1050,6 +1067,8 @@ In the above output, all the condition is false so the unique case gives a warni
 **GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_none_true/unique_case.sv
 
 **GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_none_true/unique_case_op.log
+
+### Unique case with more than one condition is true
 
 **Flowchart:** 
 
