@@ -20,9 +20,9 @@ In the below Fig-1 we can see that types of processes and the process controls.
 
 ## Processes or Threads
 We have 3 types of Threads/Processes  
-1. fork-join  
-2. fork-join_any  
-3. fork-join_none  
+1. [fork-join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes#1fork-join)  
+2. [fork-join_any](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2fork-join_any)  
+3. [fork-join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3-fork-join_none)  
 
 ## 1.fork-join
 System Verilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute only when all the child thread are finished their execution.  
