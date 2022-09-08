@@ -265,11 +265,11 @@ For loop is simply a more compact form of while loop. In for loop assignment, th
 
 **Example:**  
   
-`for (int i=1;i<=5;i++)`  
-`begin`   
-`$display(" Iteration %0d ",i);`   
-`end`  
-`$display(" out of loop ");`
+          for (int i=1;i<=5;i++)    
+          begin     
+          $display(" Iteration %0d ",i);     
+          end   
+          $display(" out of loop ");  
 
  In the above example, i is the variable initialized and declared as 1, here i is the local scope only means we can't use i out of for loop. In condition i should be less than or equal to 5 means for loop statements will be executed if the value of i is matched with condition or else comes out of the loop and the last part is the modifier which is incrementing i value by 1.  
 
@@ -311,15 +311,15 @@ Note: If you use a local scope variable outside then the compiler throughs an er
 
 **Example:**   
 
-`for (int i=1;i<=2;i++)`  
-`begin`  
-`$display("\n\t%0d Table:\n",i);`  
-`for(int j=1,k=0;j<=10;j++)`   
-`begin`  
-`k=i*j;`  
-`$display("\t %0d X %0d = %0d",i,j,k);`  
-`end`  
-`end`  
+          for (int i=1;i<=2;i++)   
+          begin   
+          $display("\n\t%0d Table:\n",i);   
+          for(int j=1,k=0;j<=10;j++)    
+          begin   
+          k=i*j;   
+          $display("\t %0d X %0d = %0d",i,j,k);   
+          end   
+          end   
 
 In the above example we are using nested for loop to print tables, so took i as table number and j for going from 1-10 and k to store the value of multiplication. Here observe that j & k are used at the same initialization and you can do the same for conditions and modifiers also to have multi variables at a time.
 
@@ -360,13 +360,14 @@ foreach is a shorter version of the following for loop
 `end`    
 
 **Example:**  
-`int array[5]`  
-`foreach(array[i])`    
-`begin`     
-`array[i]=i;`   
-`$display("\tarray[%0d]=%0d",i,array[i]);`    
-`end`    
-`$display(" out of loop ");`  
+
+          int array[5]   
+          foreach(array[i])     
+          begin      
+          array[i]=i;    
+          $display("\tarray[%0d]=%0d",i,array[i]);     
+          end     
+          $display(" out of loop ");   
 
 In the above example, a fixed array of size 5 is taken, using a foreach loop to traverse through each element, and executes the statements of the foreach loop from array[0] to array[4].  
   
@@ -434,16 +435,17 @@ forever loop doesn't have any conditions as the number of times to repeat the lo
 `end`    
 
 **Example:**  
-`forever`  
-`begin`   
-`$display("\t @ %0d ns Iteration %0d",$time,a);`  
-`a++;`  
-`#4;`  
-`end`  
-`initial begin`  
-`#20 $display("\n\t@ %0d ns Stopped using $finish",$time);`  
-`$finish;`  
-`end`  
+           
+          forever   
+          begin    
+          $display("\t @ %0d ns Iteration %0d",$time,a);   
+          a++;   
+          #4;   
+          end   
+          initial begin   
+          #20 $display("\n\t@ %0d ns Stopped using $finish",$time);   
+          $finish;   
+          end   
   
 In the above example, forever is used which is having display statement and increment a and a 4ns delay for every repetition like that it will run forever but in another initial block there is $finish which will stop the simulation so this stops the forever also.
 
@@ -477,16 +479,17 @@ As the forever doesn't have any condition it simply enters and displays a value 
 `end`    
 
 **Example:**  
-`forever`  
-`begin`  
-`$display("\t @ %0d ns Iteration %0d",$time,a);`  
-`a++;`  
-`#4;`  
-`if(a>8)`  
-`break;`  
-`end`   
-`$display("\n\t@ %0d ns Stopped using break",$time);`   
-`end`  
+
+          forever   
+          begin   
+          $display("\t @ %0d ns Iteration %0d",$time,a);   
+          a++;   
+          #4;   
+          if(a>8)   
+          break;   
+          end   
+          $display("\n\t@ %0d ns Stopped using break",$time);    
+          end   
   
 This is similar example of forever with $finish but here we have used break condition instead of $finish based on a value greater than 8.
 
