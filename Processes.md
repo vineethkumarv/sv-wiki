@@ -60,7 +60,7 @@ fork:FORK_F1
 join:FORK_F1  
 ```
 
-**Output**:-
+**Output**:-  
 In the below Fig-2 we can see that Thread_T1 is executed first at #0 simulation time but Thread_T3 will be executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
 ![fork_join_output](https://user-images.githubusercontent.com/110398433/189096889-e1f57873-63ef-4a15-b313-498a6e268277.png)
@@ -122,7 +122,7 @@ fork:FORK_F1
 join_any:FORK_F1
 ```
 
-**Output**:-
+**Output**:-  
 In the below Fig-4 we can see that parent Thread_T1 is executed at #0 and the child Thread_T3 is executed at #1 then only the parent Thread_T5 will be executed at #2.  
 
 ![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110509375/188843990-76f70d10-6f12-4cd7-8e1f-aa799d0a35b4.png)
