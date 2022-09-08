@@ -1,21 +1,19 @@
 
 ****Operators****  :  
 
+
 ![Untitled Diagram-Page-2 drawio (16)](https://user-images.githubusercontent.com/106074838/188924259-c1baf802-b992-462a-9edc-033773c113c4.png)     
 
                          Figure.1 operators 
  
 
-Sr No. |-- |
--- | -- | --  
-1 | [Arithmetic operators](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/operators#1-arithmetic-operators)| 
-2 |
-3 [
-4 |
+|s.No.| Operator|  
+|:------|:-------|
+|1.| Arithmetic Operator (
 
 
 
-## **1. Arithmetic Operators**    
+## 1. Arithmetic Operators      
 We use arithmetic operators to perform basic mathematic functions on our variables. These operators should already be familiar as they are mostly replications of common mathematic symbols.  
 
 **The table below shows the full list of arithmetic operators in SystemVerilog.**    
@@ -35,7 +33,7 @@ for Better understanding go through this code
   
 
 ***
-2.****Relational operator****
+## 2.Relational operator
 
 **Relation operator cheat sheet**
 
