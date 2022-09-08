@@ -115,7 +115,7 @@ Consider, a = 111
 
 *** 
 
-**4. Logical Operator**  
+## 4.Logical Operator  
 The Logical operators are similar to the bit-wise operators   
 
 In the Logical Operator, these expressions return either a 1 (true) or 0 (false).  
@@ -146,7 +146,8 @@ Consider, a = 100
 **GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/logic/logic_code_output.log  
 
 ---
-5.**Bitwise operator:**   
+
+## 5.Bitwise operator   
 Bitwise operators perform a bit-wise operation on two operands.   
 They take each bit in one operand and perform the operation with the corresponding bit in the other operand. If one operand is shorter than the other, it will be extended on the left side with zeroes to match the length of the longer operand.   
 
@@ -182,7 +183,7 @@ b=110
 **GitHub lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/operators/bitwise/bitwise_code_output.log
 
 ---
-6.**shift operator:**   
+## 6.shift operator   
 
 There 2 types of shift operators 
 * Logical shift operators   
@@ -222,7 +223,7 @@ Consider, a = 101
 
 ---
 
-7.**Conditional Operator:** 
+## 7.Conditional Operator 
 To use the conditional operator, we write a logical expression before the? the operator which is then evaluated to see if it is true or false.
 The output is assigned to one of two values depending on whether the expression is true or false.  
  
@@ -247,7 +248,7 @@ In the above example enable condition is true it will execute the data otherwise
 ***
 
 
-8.**Reduction operator:**   
+## 8.Reduction operator   
 
 Reduction operators are unary.  
 They perform a bit-wise operation on a single operand to produce a single-bit result.  
@@ -282,7 +283,7 @@ Consider, a = 1010
 
 ***
 
-9.**Concatenation and Replication Operators:**    
+## 9.Concatenation and Replication Operators    
 
 **Concatenation and Replication operator cheat sheet**  
 Operator | Description
