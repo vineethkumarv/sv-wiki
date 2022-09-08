@@ -48,7 +48,7 @@ There are a lot of variations to call a function
           $display("\tstored the value of sum in result");    
           $display("\n\t@ %0t ns, value of sum is %0d",$time,result);     
           end  
-          function int sum(int var1,var2)    
+          function int sum(int var1,var2);    
           $display("entered into function");   
           return var1+var2;  
           endfunction   
@@ -86,7 +86,7 @@ when the sum function is executed, the simulator checks for the function named s
           $display("\tstored the value of sum in result");  
           $display("\n\t@ %0t ns, value of sum is %0d",$time,result);    
           end  
-          function int sum(input int a,b)  
+          function int sum(input int a,b);  
           $display("entered into function");   
           return a+b;  
           endfunction  
@@ -117,7 +117,7 @@ Here in the functional declaration we also mentioned input for variables whereas
           begin   
           $display("\n\t@ %0t ns, value of sum is %0d",$time,sum(5,6));    
           end  
-          function int sum(int var1,var2)  
+          function int sum(int var1,var2);  
           $display("entered into function");   
           return var1+var2;  
           endfunction  
@@ -144,7 +144,7 @@ In the above example, we didn't use any variables to store the values of the ret
           $display("\tstored the value of sum in result");  
           $display("\n\t@ %0t ns, value of sum is %0d",$time,result);      
           end  
-          function int sum(int var1,var2)  
+          function int sum(int var1,var2); 
           $display("entered into function");   
           return var1+var2;  
           endfunction  
@@ -167,36 +167,43 @@ In the above example, we are calling the function using positional arguments i.e
 
 **Example: **  
 
-          task sum(int a, int b);  
-          #2;  
-          $display("\t @ %0t ns the sum in static is %0d",$time, a+b);  
-          endtask   
-          task automatic sum_auto(int a, int b);  
-          #2;  
-          $display("\t @ %0t ns the sum in automatic is %0d",$time, a+b);  
-          endtask  
-
-          initial  
-          begin  
-          $display("\t ----sum using static & automatic function----");  
-          fork  
-          begin  
-          sum(2,3);  
-          sum_auto(2,3);  
-          end  
-          begin  
-          #1;  
-          sum(3,4);  
-          sum_auto(3,4); 
-          end  
-          join  
-          end  
+          module func_automatic();
+              int result1,result2;
+              function int factorial_static(int var1);
+              if(var1>=2)
+                result1=factorial_static(var1-1)*var1;
+              else
+                begin
+                  result1=1;
+                end
+                return result1;
+              endfunction
+  
+              function automatic int factorial_automatic(int var1);
+                if(var1>=2)
+                  result2=factorial_automatic(var1-1)*var1;
+                else
+                begin
+                  result2=1;
+                end
+                return result2;
+              endfunction
+            initial
+            begin
+              fork
+                result1=factorial_static(5);
+                result2=factorial_automatic(5);
+              join
+              $display("factorial_static:%0d",result1);
+              $display("factorial_automatic:%0d",result2);
+            end
+          endmodule: func_automatic  
 
 Here we are using the function with an automatic keyword which means whenever the function is called the new memory is created whereas in static the same memory is used whenever the function is called.   
 
 **output:**  
-
-![func automatic1](https://user-images.githubusercontent.com/110412468/188612191-0375c8f2-8c42-46f6-a151-e1ffe005203f.png)  
+  
+![func fact static automatic](https://user-images.githubusercontent.com/110412468/189047517-291148e2-d4df-4a37-8af4-4e3585c085dd.png)
      
               Fig.5- output for automatic function     
 
