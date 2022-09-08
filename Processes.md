@@ -220,6 +220,7 @@ wait fork;
 #0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6  
 ```
 
+**Output**:-  
 In the below Fig-8 we see that At #1 the parent Thread_T1 will get executed and there was a #0 statement which will be working in inactive region and the statements will be executed in the corresponding regions. Even though we are using fork-join_none the $monitor statement will be waiting till all the child Threads was executed.
 
 ![Untitled Diagram drawio (26)](https://user-images.githubusercontent.com/110509375/188847768-05f17aa2-0a50-4098-8550-1ee0e8042940.png)
@@ -264,6 +265,8 @@ join_any:FORK_F1
 disable fork;  
 #1 $display("[%0t] Thread_T6: ending of fork-join",$time);   
 ```
+
+**Output**:-  
 In the below Fig-10 At #0 we are waiting for the event to get triggered and the #0 statement will be executed in active region because it was the $display statement.  
 At #1 it was triggering the event e1 and a child Thread_T5 will get executed then due to using fork-join_any it will go to the parent Thread and hits disable fork statement then all the remaining child Threads will be terminated.
 
