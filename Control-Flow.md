@@ -781,6 +781,12 @@ Dead code does not bother the simulator or the synthesis tool. However, it consu
      
 A system Verilog case statement starts with the case keyword and ends with the endcase keyword. A block of multiple statements must be grouped within the begin and end statements.
 
+**Flowchart:**
+
+![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110447788/188362145-06201cc7-c397-4b46-b399-afb77f1dcc5e.png)
+
+                                  Fig -10: flow chart: case statement with default statement
+
 **Syntax:**
 
 
@@ -807,12 +813,6 @@ In the above example,  here expression= "x" should match one of the case items b
 If none of the conditions is true then the default statement gets executed. This will display 'Value of x is not found' in the output.
 
 
-**Flowchart:**
-
-![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110447788/188362145-06201cc7-c397-4b46-b399-afb77f1dcc5e.png)
-
-                                  Fig -10: flow chart: case statement with default statement
-
 **Output Snap:**
 
 The below figure shows the output of the case statement in which one condition is true.  
@@ -824,7 +824,7 @@ The below figure shows the output of the case statement in which one condition i
 
 In the above output, the case statement will execute for all conditions and be true for one of the conditions. This will print the Value of x = 1 in the output.
 
-**GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case/case.sv
+**GitHub Lab Code link** :- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case/case.sv
 
  
 **GitHub Lab Output link** :- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case/case_op.log
@@ -835,6 +835,13 @@ In the above output, the case statement will execute for all conditions and be t
 In case statements, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
 If none of the given case conditions is true, the statement within the default statement is executed.    
 Execution will exit the case block without doing anything if none of the items matches the condition and a default statement is not given.
+
+**Flowchart:**
+
+![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110447788/188387249-68cd086b-7cd0-4ec8-97cc-5d96d511eeb8.png)
+                      
+                                       Fig -11: flow chart: case statement without default statement
+
 
 **Syntax:**
 
@@ -859,12 +866,6 @@ Execution will exit the case block without doing anything if none of the items m
 In the above example, a case statement is used without the default statement. A default statement is used when none of the conditions is true. In this one of the conditions is true and it will print that the value of x as '1'    
 In this example, if none of the case conditions is true or no default statement is not given then execution will exit the case block without doing anything 
 
-**Flowchart:**
-
-![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110447788/188387249-68cd086b-7cd0-4ec8-97cc-5d96d511eeb8.png)
-                      
-                                       Fig -11: flow chart: case statement without default statement
-
 **Output Snap:**
 
 The below figure shows the output of the case statement without using the default statement.  
@@ -885,6 +886,7 @@ The below figure shows the output of the case statement without using the defaul
 In this, the range is declared in the case statement with the use of an inside statement.    
 If we want to give a range value in a case statement, this will be done with help of an inside statement.
 
+
 **Syntax:**
          
            case(condition) inside
@@ -897,7 +899,7 @@ If we want to give a range value in a case statement, this will be done with hel
 
 **Example:**
 
-              unique case(x) inside
+               case(x) inside
               [2:3] : $display("Value of x = %0d", x);
               [4:5] :$display("Value of x = %0d",x);
               [6:9] : $display("Value of x = %0d",x);
@@ -918,7 +920,7 @@ The below figure shows the output of the case statement with a range.
 
 In the above output, the case statement will get executed with the use of an inside statement. The case statement will get executed and displays the output 'Value of x = 6'  
 
-**GitHub Lab Code link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_range/case_range.sv
+**GitHub Lab Code link**  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_range/case_range.sv
 
 **GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_range/case_range_op.log
 
