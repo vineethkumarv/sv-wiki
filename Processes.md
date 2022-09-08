@@ -1,43 +1,37 @@
 # Processes
-A Processes or Thread is any piece of code that gets executed as a separate entity. A fork-join block creates the different threads that run in parallel.
+A Processes or Thread is any piece of code that gets executed as a separate entity. A fork-join block creates the different threads that run in parallel.  
 
-In the below figure we can see that types of processes and the process controls.
+In the below Fig-1 we can see that types of processes and the process controls.  
 
 ![Untitled Diagram drawio (4)](https://user-images.githubusercontent.com/110509375/189051318-d04188d1-ce20-4773-8172-674a69f5b4e1.png)
 
-
-
-
-
-
                                         Fig-1: The processes and process control blocks.
 
-## Cheat sheet links
+## Cheat sheet for processes:
+
 | **Processes**         | **Description** |
 |:---------------------- | :-------------|
-|[fork join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1fork-join)|Parent thread will execute when all child threads are over|
-|[fork join_any](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2fork-join_any)|Parent thread will be execute when anyone child thread gets over|
-|[fork join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3-fork-join_none)|Parent thread executed parallel with child thread |
-|[wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1-wait-fork)|It allows the main process to wait until all the child thread process is over|
-|[disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2-disable-fork)|It terminate the all the execution when disable fork is execute|
-|[Fine Grain Process Control](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control)|       |
-
+|[fork join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1fork-join)|Parent threads will be executed only when all child threads are executed.|
+|[fork join_any](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2fork-join_any)|Parent threads will be executed only when anyone of the child thread gets executed.|
+|[fork join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3-fork-join_none)|Parent threads will be executed parallelly with child threads.|
+|[wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1-wait-fork)|It allows the main process to wait until all the child threads are executed.|
+|[disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2-disable-fork)|It will terminate the execution of all the child threads when disable fork is execute.|
+|[Fine Grain Process Control](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control)|These are used to control the processes and it will provide the status of the processes.|
 
 ## Processes or Threads
-We have 3 types of Threads/Processes
-1. fork-join
-2.  fork-join_any
-3.  fork-join_none
+We have 3 types of Threads/Processes  
+1. fork-join  
+2. fork-join_any  
+3. fork-join_none  
 
 ## 1.fork-join
-SystemVerilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute when all the child thread is finish the execution.  
+System Verilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute only when all the child thread are finished their execution.  
 
-**syntax**:-
-  
+**syntax**:-  
 `fork`  
-   `Thread 1`  
-   `Thread 2`  
-   `Thread 3`  
+> `Thread 1`  
+> `Thread 2`  
+> `Thread 3`  
 `join`
 
 **code snippet**:-  
