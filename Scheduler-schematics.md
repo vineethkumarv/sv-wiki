@@ -78,7 +78,7 @@ The Active region set is used to schedule blocking and non-blocking assignments 
 All tasks and functions called from a module also scheduled in the active region set.  
 The Active region set is used to schedule the RTL and behavioral code.  
 
-![active_region_set](https://user-images.githubusercontent.com/110411714/188075198-2caa7588-3c62-40fd-b3ab-d4c65821daf1.png)
+![active_set_updated](https://user-images.githubusercontent.com/110411714/189118518-939cc0b6-f1c5-4391-b641-8064af16a25b.png)
 
           Fig-3: The blocks of Active region set.
 
@@ -128,7 +128,7 @@ This Re-Active region set includes
 The reactive region set is used to schedule blocking assignments, #0 blocking assignments and non-blocking assignments included in program code. Any task or function called from a program is also scheduled into the reactive set event regions.  
 The intended purpose of the reactive region set is to schedule testbench stimulus drivers and testbench verification checking in the same time slot after RTL code has settled to a semi-steady state.  
 
-![re-active_region](https://user-images.githubusercontent.com/110411714/188098532-ad0d1eda-19ce-4a4e-91dd-0f28b77465d1.png)
+![reactive_set_update](https://user-images.githubusercontent.com/110411714/189118898-b39fe415-69fa-4bda-8a63-b5f3c6f46aef.png)
 
           Fig-4: Blocks of Re-Active region set.
 
