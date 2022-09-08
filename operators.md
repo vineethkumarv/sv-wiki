@@ -1,6 +1,6 @@
 
 ****Operators****  :  
-
+the operator is a character that represents a specific mathematical or logical action or process.  
 
 ![Untitled Diagram-Page-2 drawio (16)](https://user-images.githubusercontent.com/106074838/188924259-c1baf802-b992-462a-9edc-033773c113c4.png)     
 
