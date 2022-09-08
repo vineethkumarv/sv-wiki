@@ -13,7 +13,7 @@ In the below Fig-1 we can see that types of processes and the process controls.
 |:---------------------- | :-------------|
 |[fork join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1fork-join)|Parent threads will be executed only when all child threads are executed.|
 |[fork join_any](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2fork-join_any)|Parent threads will be executed only when anyone of the child thread gets executed.|
-|[fork join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3-fork-join_none)|Parent threads will be executed parallelly with child threads.|
+|[fork join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3fork-join_none)|Parent threads will be executed parallelly with child threads.|
 |[wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1-wait-fork)|It allows the main process to wait until all the child threads are executed.|
 |[disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2-disable-fork)|It will terminate the execution of all the child threads when disable fork is execute.|
 |[Fine Grain Process Control](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control)|These are used to control the processes and it will provide the status of the processes.|
@@ -22,7 +22,7 @@ In the below Fig-1 we can see that types of processes and the process controls.
 We have 3 types of Threads/Processes  
 1. [fork-join](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes#1fork-join)  
 2. [fork-join_any](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2fork-join_any)  
-3. [fork-join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3-fork-join_none)  
+3. [fork-join_none](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#3fork-join_none)  
 
 ## 1.fork-join
 System Verilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute only when all the child thread are finished their execution.  
@@ -137,7 +137,7 @@ Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
 
-## 3. fork-join_none
+## 3.fork-join_none
 The parent threads are executed parallel with the child threads. This means the thread which is outside the fork-join_none, does not wait for the completion of any threads which is inside the fork-join_none, it just execute parallelly.  
 It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.  
 
