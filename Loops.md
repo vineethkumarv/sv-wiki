@@ -58,6 +58,7 @@ The below figure shows the output of the while loop
 
 <img width="491" alt="while1" src="https://user-images.githubusercontent.com/110443268/188872484-af46f752-e8d2-4fbd-946f-e31f7e8482f4.png">
   
+                                  fig-1:Output-while loop
 
 **GitHub lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_basic/while_basic.sv
 
@@ -104,6 +105,7 @@ The below figure shows the output of the  declaring the  variable inside the loo
 
 <img width="355" alt="18" src="https://user-images.githubusercontent.com/110443268/188861444-ce3f23e8-8e05-4254-82d3-2abf485775ef.png">
 
+                                   fig-2:Output-while -declare variable inside loop
 
 **GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/while/while_local_var/whil.sv 
 
