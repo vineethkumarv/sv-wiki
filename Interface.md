@@ -92,6 +92,12 @@ Below figure shows the output of **and** **gate** using interface.
 
                                          Figure.4.output for AND gate with interface
 
+****Github lab code link****: https://github.com/muneeb-mbytes/SystemVerilog_Course/tree/b7_team_kachori/interface/interface_example
+
+
+****Github lab output link****: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/interface/interface_example/interface.log
+
+
 ****Advantages of SystemVerilog interfaces****
 
 
@@ -149,7 +155,9 @@ Below figure shows the output of counter with parameterized interface.
 
                                   Figure.5.Output for counter with parameterized interface
 
+****Github lab code link****: https://github.com/muneeb-mbytes/SystemVerilog_Course/tree/b7_team_kachori/interface/parameter_interface
 
+****Github lab output link****: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/interface/parameter_interface/code.log
 
 ---
 
