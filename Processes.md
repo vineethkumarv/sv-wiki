@@ -167,7 +167,8 @@ fork:FORK_F1
 join_none:FORK_F1
 ```
 
-**Output**:-
+**Output**:-  
+In the below Fig-6 At #0 the parent Thread_T1 and the child Thread_T4 is executed Then At #1 both parent Thread_T5 and child Thread_T2 will gets executed and so on.  
 
 ![Untitled Diagram drawio (28)](https://user-images.githubusercontent.com/110509375/189041598-f078d9c4-1eb0-40a2-bd4f-4c56c2060815.png)
 
@@ -184,51 +185,50 @@ Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 # **Process control**
 
-SystemVerilog provides constructs that allow one process to terminate or wait for the completion of other processes. 
-1. wait fork
+System Verilog provides constructs that allow one process to terminate or wait for the completion of other processes.  
+1. wait fork  
 2. disable fork  
+3. Fine grain process control.  
 
 ## 1. wait fork  
 
-The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution.
-it wait untill all the fork procersses complete the execution . 
- 
-**code snippet**:
+The wait fork statement is used to ensure that all child processes (processes created by the calling process) have completed their execution. It will wait until all the fork processes complete the execution.  
 
-    fork:FORK_F1 //Thread 2  
-    
-      #2 b <= "Delta";//T2-1  
+**code snippet**:-  
+```
+fork:FORK_F1 //Thread 2  
 
-      #0 $display("[%0t] Thread_T2: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
-                
-      begin:BEGIN_B2 //Thread 2-3  
-        #1 -> e1;  
-        c = "Hoode";  
-        #1 $display("[%0t] Thread_T3: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
-      end:BEGIN_B2  
-      
-      fork:FORK_F2 //Thread 2-4  
-        wait(e1.triggered);  
-        #2 $display("[%0t] Thread_T4: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
-      join:FORK_F2  
-      
-      #1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 3  
+   #2 b <= "Delta";//T2-1  
+   #0 $display("[%0t] Thread_T2: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
 
-    join_none:FORK_F1  
-    
-    wait fork;  
-    #0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6
-   
+   begin:BEGIN_B2 //Thread 2-3  
+      #1 -> e1;  
+      c = "Hoode";  
+      #1 $display("[%0t] Thread_T3: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+   end:BEGIN_B2  
 
-In the below figure we see that the main thread 2 is executed after all the threads are executed even though we have the zero time delay for the main thread 2.it's because we have included the wait fork before the main thread 2 so it waits until the fork gets done.
+   fork:FORK_F2 //Thread 2-4  
+      wait(e1.triggered);  
+      #2 $display("[%0t] Thread_T4: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+   join:FORK_F2  
+
+   #1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 3  
+
+join_none:FORK_F1  
+
+wait fork;  
+#0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6  
+```
+
+In the below Fig-8 we see that At #1 the parent Thread_T1 will get executed and there was a #0 statement which will be working in inactive region and the statements will be executed in the corresponding regions. Even though we are using fork-join_none the $monitor statement will be waiting till all the child Threads was executed.
 
 ![Untitled Diagram drawio (26)](https://user-images.githubusercontent.com/110509375/188847768-05f17aa2-0a50-4098-8550-1ee0e8042940.png)
 
-          Fig-5: The output of wait fork process control statement.
+          Fig-8: The output of wait fork process control statement.
 
 ![wait_fork](https://user-images.githubusercontent.com/110398433/189082273-9c634673-b4cd-4626-b3f5-c5cfabadfdee.png)
 
-          Fig : scheduler Schematic for wait fork code.
+          Fig-9: scheduler Schematic for wait fork code.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
 
@@ -238,42 +238,42 @@ github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 
 On execution of the disable fork, all the active process will get terminated.
 
-**code snippet**:
+**code snippet**:-
+```
+fork:FORK_F1  
 
-    fork:FORK_F1  
-      
-      #3 b <= "Delta";//Thread 1  
-      
-      #4 $display("[%0t] Thread_T2: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 2  
+   #3 b <= "Delta";//Thread 1  
+
+   #4 $display("[%0t] Thread_T2: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 2  
              
-      begin:BEGIN_B2 //Thread 3  
-        #1 -> e1;  
-        c = "Hoode";  
-        #1 $display("[%0t] Thread_T3: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
-      end:BEGIN_B2  
+   begin:BEGIN_B2 //Thread 3  
+      #1 -> e1;  
+      c = "Hoode";  
+      #1 $display("[%0t] Thread_T3: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+   end:BEGIN_B2  
       
-      fork:FORK_F2 //Thread 4  
-          @(e1.triggered);  
-          #1 $display("[%0t] Thread_T4: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
-      join:FORK_F2  
+   fork:FORK_F2 //Thread 4  
+      @(e1.triggered);  
+      #1 $display("[%0t] Thread_T4: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
+   join:FORK_F2  
       
-      #1 $display("[%0t] Thread_T5: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
-      
-    join_any:FORK_F1  
+   #1 $display("[%0t] Thread_T5: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
 
-    disable fork;  
-    #1 $display("[%0t] Thread_T6: ending of fork-join",$time);   
+join_any:FORK_F1  
 
-
-In the below figure we can see that after execution of main thread 1 we will move the thread 1 (fork_join) but after the thread 1 execution when it hit by the disable fork it termiates the process and executes the main thread 2.
+disable fork;  
+#1 $display("[%0t] Thread_T6: ending of fork-join",$time);   
+```
+In the below Fig-10 At #0 we are waiting for the event to get triggered and the #0 statement will be executed in active region because it was the $display statement.  
+At #1 it was triggering the event e1 and a child Thread_T5 will get executed then due to using fork-join_any it will go to the parent Thread and hits disable fork statement then all the remaining child Threads will be terminated.
 
 ![Untitled Diagram drawio (27)](https://user-images.githubusercontent.com/110509375/188848545-5829b97b-d033-4fcf-8fb0-8a507c970f64.png)
 
-          Fig-6: The output of disable fork process control statement.
+          Fig-10: The output of disable fork process control statement.
 
 ![disable_fork](https://user-images.githubusercontent.com/110398433/189082359-d82ade2e-f6c2-4431-9662-5142d3d37507.png)
 
-          Fig : scheduler Schematic for disable fork code.
+          Fig-11: scheduler Schematic for disable fork code.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
 
