@@ -269,7 +269,8 @@ Example1: Fulladder
 
 **Below figure shows the design block of the code:**
 
-![Untitled Diagram (9)](https://user-images.githubusercontent.com/110412474/189041289-6b5d0e96-1d6b-4478-b39e-f61a12b3fbea.jpg)
+![fulladder](https://user-images.githubusercontent.com/110412474/189057965-1d4bdfbf-9bdc-4d18-b843-e10d7a2fb26f.jpg)
+
  
                                      Fig.1: Design Block diagram
 
