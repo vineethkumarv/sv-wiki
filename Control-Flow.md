@@ -16,7 +16,7 @@ Conditional statements are used to check whether the statements in the blocks ar
 There are different types of conditional statements. These are --  
 ### 1. if without else  
 
-![if  drawio](https://user-images.githubusercontent.com/110443268/188595474-4f9f67fe-e330-4a4e-9506-9b242cdd7553.png)  
+![if without else](https://user-images.githubusercontent.com/110443268/189035735-e654c6ac-be0a-4023-8aae-5bd6c483bedb.png)
  
                                fig -2: if flow chart
 
@@ -66,7 +66,7 @@ The below figure shows the output of if conditional statement.
 
 ### 2. if else 
 
-![_if else final  drawio](https://user-images.githubusercontent.com/110443268/188595760-4e4b095b-ddaa-48a2-8422-94ed1a650c09.png)  
+![if else (1)](https://user-images.githubusercontent.com/110443268/189035814-cd1a193d-2078-4ada-88cb-519949451923.png)
 
                                  fig -3: Flow chart-if else 
 
@@ -253,7 +253,8 @@ The below figure shows the output of the if-else ladder with else conditional st
 In SystemVerilog, there are three versions of a conditional statement updated. These are -  
 
 ### 4. unique if  
-![uniqueif1](https://user-images.githubusercontent.com/110443268/188621317-1834d950-0e08-459b-8c92-4226efee2f21.jpg)
+
+![unique if without else](https://user-images.githubusercontent.com/110443268/189036148-eb8d42dc-69a0-4f1b-8d93-d12163549797.png)
 
                                     fig-5 :flow chart:unique_if 
    
@@ -314,9 +315,9 @@ The below figure shows the output of the unique if for only one true condition.
  
 **b. None of the conditions is true**  
  
-with else - else block statements execute.
+**with else **- else block statements execute.
 
-<img width="628" alt="uniqueif _withelsedrawio" src="https://user-images.githubusercontent.com/110443268/188623218-c453b9eb-110f-4f39-ba22-28506ec1493d.png">  
+![unique if fl](https://user-images.githubusercontent.com/110443268/189036388-c92b5599-4528-49ef-b72b-c4b3852dc61a.png)
 
                                   fig -6:flow chart:  with else unique if 
  
@@ -456,7 +457,7 @@ The below figure shows the output of the unique if -more than the conditions is 
 
 ### 5.unique0if  
 
-<img width="520" alt="uniqueif1 drawio" src="https://user-images.githubusercontent.com/110443268/188624283-a7feb571-9299-4571-8faf-99250c065ceb.png">
+![unique0 if](https://user-images.githubusercontent.com/110443268/189036489-d59d3658-14df-437f-b964-7eb9c2fd0835.png)
 
                                   fig -7 :flow chart: unique0_if  
 
@@ -517,7 +518,7 @@ The below figure shows the output of the unique0 if -none of the conditions is t
 
 ### 6.priority if   
 
-<img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
+![priority without else](https://user-images.githubusercontent.com/110443268/189036593-02121013-a664-4334-9f4b-ffc39eabff92.png)
    
                                      fig -8: flow chart: priority if
 
@@ -685,7 +686,7 @@ When none of the conditional expressions is true, the compiler will come out fro
 
 **c2.with else**  
 
-<img width="534" alt="priorityif with else  drawio" src="https://user-images.githubusercontent.com/110443268/188625559-744eb407-e35c-42d3-9d57-9f203782a8cf.png">
+![priority with else](https://user-images.githubusercontent.com/110443268/189036781-3ddbe9a6-cd01-4890-94e1-753a4734b25d.png)
       
                                  fig -9: flow chart: with else priority if
 
