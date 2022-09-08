@@ -5,7 +5,7 @@ In the below Fig-1 we can see that types of processes and the process controls.
 
 ![Untitled Diagram drawio (4)](https://user-images.githubusercontent.com/110509375/189051318-d04188d1-ce20-4773-8172-674a69f5b4e1.png)
 
-                                        Fig-1: The processes and process control blocks.
+          Fig-1: The processes and process control blocks.
 
 ## Cheat sheet for processes:
 
@@ -61,16 +61,16 @@ fork:FORK_F1
 join:FORK_F1  
 ```
 
-In the below Fig-2 we can see that Thread_T1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
-
+In the below Fig-2 we can see that Thread_T1 is executed first at #0 simulation time but Thread_T3 will be executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
 ![fork_join_output](https://user-images.githubusercontent.com/110398433/189096889-e1f57873-63ef-4a15-b313-498a6e268277.png)
 
-                                         Fig-2: The output of fork join block.
+          Fig-2: The output of fork join block.
 
-In the below fig you can easily understand how the entire code for fork-join works with respect to regions.  
-where sampling of the variables will be done in preponed region.  
+In the below Fig-3 you can easily understand how the entire code for fork-join works with respect to schedule schematic regions.  
+* where sampling of the variables will be done in preponed region.  
 All the blocking assignments will be executed and all non-blocking assignments was evaluated in active region.  
+
 $display statements will be executed in active region.  
 All #0 delays statements will be executed in inactive region.  
 The evaluated non-blocking assignments will be executed in NBA region.
@@ -78,7 +78,7 @@ $monitor statements will be executed in postponed region.
 
 ![fork_join](https://user-images.githubusercontent.com/110398433/189095484-fee06dda-dcc3-4dd7-a850-da6e3cad5028.png)
 
-          Fig : scheduler Schematic for fork-join code.
+          Fig-3: scheduler Schematic for fork-join code.
   
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/tree/b7_Team_BJT/processes/fork_join
 
