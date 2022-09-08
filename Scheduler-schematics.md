@@ -118,7 +118,7 @@ The function of this region is to evaluate the concurrent assertions using the v
 This is because concurrent assertions are designed to behave strictly as monitors, they are not allowed to modify the state of the design. But, assertions cannot schedule any Active region events.
 
 
-## 2. Re-Active region set
+## 4. Re-Active region set
 
 This Re-Active region set includes 
 **i. Re-Active region**
