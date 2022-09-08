@@ -188,7 +188,7 @@ Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 System Verilog provides constructs that allow one process to terminate or wait for the completion of other processes.  
 1. [wait fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#1wait-fork)  
 2. [disable fork](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Processes/#2disable-fork)  
-3. Fine grain process control.  
+3. [Fine grain process control](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control)  
 
 ## 1.wait fork  
 
