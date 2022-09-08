@@ -132,6 +132,8 @@ In the below figure we can see that  here  main thread 1 executed and one child 
 
           Fig-3: The output of fork join_any block.
 
+![fork join_any](https://user-images.githubusercontent.com/110398433/189082083-397b598a-ea03-44a5-9c04-b97f2fcfddbb.png)
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
 
 Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
@@ -174,7 +176,7 @@ It does not mean that the rest of the child threads will be automatically discar
 
           Fig-4: The output of the fork join_none block.
 
-![Untitled Diagram drawio (14)](https://user-images.githubusercontent.com/110509375/188595513-afc52f87-fdf7-43d5-9211-f5da54b4cde0.png)
+![fork_join_none](https://user-images.githubusercontent.com/110398433/189082181-09fe24d5-7258-4446-9e3a-fc55a3e940d1.png)
 
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
@@ -224,8 +226,9 @@ In the below figure we see that the main thread 2 is executed after all the thre
 
 ![Untitled Diagram drawio (26)](https://user-images.githubusercontent.com/110509375/188847768-05f17aa2-0a50-4098-8550-1ee0e8042940.png)
 
-
           Fig-5: The output of wait fork process control statement.
+
+![wait_fork](https://user-images.githubusercontent.com/110398433/189082273-9c634673-b4cd-4626-b3f5-c5cfabadfdee.png)
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
 
@@ -266,8 +269,9 @@ In the below figure we can see that after execution of main thread 1 we will mov
 
 ![Untitled Diagram drawio (27)](https://user-images.githubusercontent.com/110509375/188848545-5829b97b-d033-4fcf-8fb0-8a507c970f64.png)
 
-
           Fig-6: The output of disable fork process control statement.
+
+![disable_fork](https://user-images.githubusercontent.com/110398433/189082359-d82ade2e-f6c2-4431-9662-5142d3d37507.png)
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
 
