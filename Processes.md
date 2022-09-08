@@ -3,7 +3,8 @@ A Processes or Thread is any piece of code that gets executed as a separate enti
 
 In the below figure we can see that types of processes and the process controls.
 
-![Untitled Diagram drawio (30)](https://user-images.githubusercontent.com/110509375/189045952-a65bb802-d442-4e1d-b834-f8f9a4b88e10.png)
+![Untitled Diagram drawio (31)](https://user-images.githubusercontent.com/110509375/189046670-133a13d0-1e98-4654-86c0-43c4e304e788.png)
+
 
 
 
