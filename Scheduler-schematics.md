@@ -128,7 +128,7 @@ This Re-Active region set includes
 The reactive region set is used to schedule blocking assignments, #0 blocking assignments and non-blocking assignments included in program code. Any task or function called from a program is also scheduled into the reactive set event regions.  
 The intended purpose of the reactive region set is to schedule testbench stimulus drivers and testbench verification checking in the same time slot after RTL code has settled to a semi-steady state.  
 
-![reactive_set_update](https://user-images.githubusercontent.com/110411714/189118898-b39fe415-69fa-4bda-8a63-b5f3c6f46aef.png)
+![reactive_set_update](https://user-images.githubusercontent.com/110411714/189119258-6b2189d4-146b-46e2-b31a-e2587e48c514.png)
 
           Fig-4: Blocks of Re-Active region set.
 
