@@ -60,8 +60,9 @@ SystemVerilog provides support for parallel threads through fork-join construct.
           #1 d = c;           
         end:BEGIN_B4  
 
-      end:BEGIN_B3  
-    join:FORK_F1
+      end:BEGIN_B3 
+ 
+    join:FORK_F1       
 
 In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
@@ -69,7 +70,7 @@ In the below we can see that main thread 1 is executed first but main thread 2 i
 ![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110509375/188844965-ace54ff5-bc1a-4837-a9d1-8180d82822e2.png)
 
 
-          Fig-2: The output of fork join block.
+                                         Fig-2: The output of fork join block.
 
 In the below fig you can easily understand how the entire code for fork-join works with respect to regions.  
 where sampling of the variables will be done in preponed region.  
