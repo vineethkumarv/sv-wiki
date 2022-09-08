@@ -14,7 +14,27 @@ Conditional statements are used to check whether the statements in the blocks ar
 **false** - the statements inside that block will not be executed.  
 **else** - if the expressions are false then the else block statements will execute at last. 
 
-There are different types of conditional statements. These are --  
+There are different types of conditional statements. These are -- 
+
+**Cheat Sheet**  
+
+|S.No|Conditional Statement|
+|:-----|:---------------------|
+|1.|[if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#1-if-without-else)|
+|2.|[if-else](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#2-if-else)|
+|3.|[if-else ladder](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#3-if-else-ladder)|
+|4.|[unique if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#4-unique-if)|
+|5.|[unique0 if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#5unique0if)|
+|6.|[priority if](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Control-Flow#6priority-if)|
+
+
+
+
+
+
+
+
+ 
 ### 1. if without else  
 
 ![if without else](https://user-images.githubusercontent.com/110443268/189035735-e654c6ac-be0a-4023-8aae-5bd6c483bedb.png)
