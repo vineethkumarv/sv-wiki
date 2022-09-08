@@ -61,7 +61,7 @@ fork:FORK_F1
 join:FORK_F1  
 ```
 
-In the below we can see that main thread 1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
+In the below Fig-2 we can see that Thread_T1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
 
 ![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110509375/188844965-ace54ff5-bc1a-4837-a9d1-8180d82822e2.png)
@@ -77,7 +77,7 @@ All #0 delays statements will be executed in inactive region.
 The evaluated non-blocking assignments will be executed in NBA region.
 $monitor statements will be executed in postponed region.
 
-![fork_join](https://user-images.githubusercontent.com/110398433/189086847-0c6727c9-df83-46af-9cd4-5dd056dd2a3a.png)
+![fork_join](https://user-images.githubusercontent.com/110398433/189095484-fee06dda-dcc3-4dd7-a850-da6e3cad5028.png)
 
           Fig : scheduler Schematic for fork-join code.
   
