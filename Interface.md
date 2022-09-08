@@ -265,7 +265,7 @@ Example1: Fulladder
      test t1(intf);
  
     //fulladder DUT instance , connecting the interface signal to instance DUT
-    fulladder dut(.in_a(intf.in_a), .in_b(intf.in_b), .in_c(intf.in_c), .out_sum    (intf.out_sum), .out_carry(intf.out_carry));
+    fulladder dut(.in_a(intf.in_a), .in_b(intf.in_b), .in_c(intf.in_c), .out_sum(intf.out_sum), .out_carry(intf.out_carry));
     endmodule
  
 
