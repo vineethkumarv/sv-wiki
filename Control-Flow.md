@@ -1334,8 +1334,8 @@ Using continue, we can skip the current iteration of a loop and jumps to the nex
 
 **Syntax**:
 
-`continue;
-`
+`continue;`
+
 **Example:**
 
             foreach(array[i])
