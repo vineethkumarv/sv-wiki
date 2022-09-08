@@ -833,7 +833,7 @@ In the above output, the case statement will execute for all conditions and be t
 **GitHub Lab Output link** :- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case/case_op.log
 
 
-**Using of Case statement without a default  **
+**Using of Case statement without a default**
   
 In case statements, the default statement is used. The default statement is optional, and there can be only one default statement in a case statement.     
 If none of the given case conditions is true, the statement within the default statement is executed.    
@@ -884,7 +884,7 @@ The below figure shows the output of the case statement without using the defaul
 
 **GitHub Lab output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/case_default/case_without_default_op.log
 
-**Using of range in case statement with the use of inside statement:    **
+**Using of range in case statement with the use of inside statement:**
 
 In this, the range is declared in the case statement with the use of an inside statement.    
 If we want to give a range value in a case statement, this will be done with help of an inside statement.
@@ -1179,7 +1179,8 @@ If all the conditions are true or more than one condition is true, it will read 
       endcase
 
 
- **Example:**      
+ **Example:**  
+    
             x = 2'b01;
             unique0 case(x)
             00 : $display(" Value of x is = %0b", x);
@@ -1226,7 +1227,8 @@ In this type of case statement, if more than one case condition is true, it will
              conditon_N: Statements;
              endcase
 
- **Example:**     
+ **Example:**  
+   
             pqr = 5;
             priority case (pqr)
             5 : $display ("Found to be 5");
@@ -1274,6 +1276,13 @@ A break statement is used to terminate the loop immediately. When a break statem
 
 We can use break statements in any loop(for, foreach, forever, do-while, while, do-while,), for terminating the execution of a loop. It is always used inside the loop. The break statement ends the loop immediately when it is encountered.
 
+
+**Flowchart:**
+
+![Untitled Diagram-Page-1 drawio (5)](https://user-images.githubusercontent.com/110447788/188305065-221831fc-8e53-48dd-b9de-da445a1a4861.png)
+
+                                      Fig-:15 flow chart: break statement
+
 **Syntax**:
 
 `break;`
@@ -1289,12 +1298,6 @@ We can use break statements in any loop(for, foreach, forever, do-while, while, 
 In the above example, a break statement is used inside the loop which terminates the loop when condition is true. In this break is used at index 2 so that the loop stops at index 2 and comes out of the loop.
 
 
-
-**Flowchart:**
-
-![Untitled Diagram-Page-1 drawio (5)](https://user-images.githubusercontent.com/110447788/188305065-221831fc-8e53-48dd-b9de-da445a1a4861.png)
-
-                                      Fig-:15 flow chart: break statement
 
 **Output Snap:**
 
@@ -1322,6 +1325,13 @@ The continue statement is used to skip the current iteration of a loop. We can u
 
 Using continue, we can skip the current iteration of a loop and jumps to the next iteration of the loop immediately
 
+
+**Flowchart:**
+
+![Untitled Diagram-Page-1 drawio (6)](https://user-images.githubusercontent.com/110447788/188305077-aca9f33b-5b5c-4c4c-a674-a262c6c6cf7c.png)
+
+                                        Fig - 16: flow chart: continue statement
+
 **Syntax**:
 
 `continue;
@@ -1337,14 +1347,6 @@ Using continue, we can skip the current iteration of a loop and jumps to the nex
 
 In the above example, **continue** statement is used inside the loop that skips the current iteration of a loop. In the following loop **continue** is used at index 2 so that the loop skips the particular iteration at index 2 and goes for the next iteration.    
 
-
-
-
-**Flowchart:**
-
-![Untitled Diagram-Page-1 drawio (6)](https://user-images.githubusercontent.com/110447788/188305077-aca9f33b-5b5c-4c4c-a674-a262c6c6cf7c.png)
-
-                                        Fig - 16: flow chart: continue statement
 
 **Output Snap:**
 
