@@ -80,9 +80,9 @@ In the below Fig-3 you can easily understand how the entire code for fork-join w
 
           Fig-3: scheduler Schematic for fork-join code.
   
-Github lab link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.sv
+**Github lab link**: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.sv
 
-Github log_file link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
+**Github log_file link**: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
 
 ## 2.fork-join_any  
 
@@ -133,9 +133,9 @@ In the below Fig-4 we can see that parent Thread_T1 is executed at #0 and the ch
 
           Fig-5: scheduler Schematic for fork-join_any code.
 
-Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
+**Github lab link**: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
 
-Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
+**Github log_file link**: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
 
 ## 3.fork-join_none
 The parent threads are executed parallel with the child threads. This means the thread which is outside the fork-join_none, does not wait for the completion of any threads which is inside the fork-join_none, it just execute parallelly.  
@@ -178,9 +178,9 @@ In the below Fig-6 At #0 the parent Thread_T1 and the child Thread_T4 is execute
 
           Fig-7 : scheduler Schematic for fork-join_none code.
 
-Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
+**Github lab link** :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
 
-Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.log
+**Github log_file link** :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.log
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 # **Process control**
@@ -231,9 +231,9 @@ In the below Fig-8 we see that At #1 the parent Thread_T1 will get executed and 
 
           Fig-9: scheduler Schematic for wait fork code.
 
-Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
+**Github lab link** :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
 
-github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log  
+**github log_file link** :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log  
 
 ## 2.disable fork  
 
@@ -278,6 +278,6 @@ At #1 it was triggering the event e1 and a child Thread_T5 will get executed the
 
           Fig-11: scheduler Schematic for disable fork code.
 
-Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
+**Github lab link** :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
 
-Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.log
+**Github log_file link** :https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.log
