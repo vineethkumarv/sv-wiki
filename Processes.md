@@ -64,8 +64,7 @@ join:FORK_F1
 In the below Fig-2 we can see that Thread_T1 is executed first but main thread 2 is executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
 
-![Untitled Diagram drawio (24)](https://user-images.githubusercontent.com/110509375/188844965-ace54ff5-bc1a-4837-a9d1-8180d82822e2.png)
-
+![fork_join_output](https://user-images.githubusercontent.com/110398433/189096889-e1f57873-63ef-4a15-b313-498a6e268277.png)
 
                                          Fig-2: The output of fork join block.
 
