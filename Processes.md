@@ -80,9 +80,9 @@ All #0 delays statements will be executed in inactive region.
 The evaluated non-blocking assignments will be executed in NBA region.
 $monitor statements will be executed in postponed region.
 
-![fork_join](https://user-images.githubusercontent.com/110411714/188447939-537320d2-c8a8-4266-9b40-0f343427d743.png)
+![fork_join](https://user-images.githubusercontent.com/110398433/189086847-0c6727c9-df83-46af-9cd4-5dd056dd2a3a.png)
 
-          Fig : scheduler Schematic for fork-join block.
+          Fig : scheduler Schematic for fork-join code.
   
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/tree/b7_Team_BJT/processes/fork_join
 
@@ -134,6 +134,8 @@ In the below figure we can see that  here  main thread 1 executed and one child 
 
 ![fork join_any](https://user-images.githubusercontent.com/110398433/189082083-397b598a-ea03-44a5-9c04-b97f2fcfddbb.png)
 
+          Fig : scheduler Schematic for fork-join_any code.
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
 
 Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
@@ -169,15 +171,13 @@ It does not mean that the rest of the child threads will be automatically discar
 
 **Output**:
 
-
 ![Untitled Diagram drawio (28)](https://user-images.githubusercontent.com/110509375/189041598-f078d9c4-1eb0-40a2-bd4f-4c56c2060815.png)
-
-
 
           Fig-4: The output of the fork join_none block.
 
 ![fork_join_none](https://user-images.githubusercontent.com/110398433/189082181-09fe24d5-7258-4446-9e3a-fc55a3e940d1.png)
 
+          Fig : scheduler Schematic for fork-join_none code.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
 
@@ -230,6 +230,8 @@ In the below figure we see that the main thread 2 is executed after all the thre
 
 ![wait_fork](https://user-images.githubusercontent.com/110398433/189082273-9c634673-b4cd-4626-b3f5-c5cfabadfdee.png)
 
+          Fig : scheduler Schematic for wait fork code.
+
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.sv
 
 github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/wait_fork/wait_fork.log  
@@ -272,6 +274,8 @@ In the below figure we can see that after execution of main thread 1 we will mov
           Fig-6: The output of disable fork process control statement.
 
 ![disable_fork](https://user-images.githubusercontent.com/110398433/189082359-d82ade2e-f6c2-4431-9662-5142d3d37507.png)
+
+          Fig : scheduler Schematic for disable fork code.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/disable_fork/disable_fork.sv
 
