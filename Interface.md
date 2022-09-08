@@ -183,24 +183,25 @@ Calling the actual interface 'intf'  to declare the virtual interface in the cla
 * The keyword/signal virtual interface variable represent the different interface instance in different time through out the simulation time
 
 
-        syntax: interface <interface_name>();  
-               <port_list>;  
-                ..........  
-                endmodule  
-           To connect static(interface module) to   
-           to dynamic(class) we use virtual interface  
-            class clase_name;
-             virtual <interface_name> <interface_instance>;
-             .......
-           properties;
-             .....
-           function()
-            .....
-          endfunction    
-            task();
-             ......
-             endtask
-             endclass
+  **syntax:** 
+`interface <interface_name>();  `
+               `<port_list>;  `
+                `..........  `
+                `endmodule  `
+           `To connect static(interface module) to   `
+           `to dynamic(class) we use virtual interface  `
+            `class clase_name;`
+             `virtual <interface_name> <interface_instance>;`
+             `.......`
+           `properties;`
+             `.....`
+           `function()`
+            `.....`
+          `endfunction    `
+            `task();`
+             `......`
+             `endtask`
+             `endclass`
 
 Example1: Fulladder 
 
