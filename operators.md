@@ -9,7 +9,7 @@
 
 |s.No.| Operator|  
 |:------|:-------|
-|1.| Arithmetic Operator (
+|1.| [Arithmetic Operator](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/operators#1-arithmetic-operators)|
 
 
 
@@ -75,7 +75,7 @@ Consider, a = 111
 
 ***
 
-3.**Equality operator:**  
+## 3.Equality operator  
 
 The equality operators are used to compare expressions. If the comparison fails, then the result will be 0, otherwise, it will be 1.
 There are two types of Equality operators.   
