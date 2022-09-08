@@ -8,9 +8,9 @@ A Loop is nothing but statements that need to be run more than once are included
 ## loops cheat sheet
 |S.No.|Loops_variants|Explanation|
 |:----|:-------------|:----------|
-|1.|[while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops/_edit#1-while)|Repeats the set of statements based on condition|
-|2.|[do_while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops/_edit#2-do-while)|Once runs the statements without checking the condition then behaves as while|
-|3.|[repeat](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops/_edit#3repeat)|Repeats the statements only a particular number of times|
+|1.|[while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#1-while)|Repeats the set of statements based on condition|
+|2.|[do_while](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#2-do-while)|Once runs the statements without checking the condition then behaves as while|
+|3.|[repeat](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#3repeat)|Repeats the statements only a particular number of times|
 |4.|[for_loop](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#4for-loop)|Similar to while but more compact than while|
 |5.|[foreach](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#5foreach)|Only Used to traverse through every element of array |
 |6.|[forever](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Loops#6forever)|Repeats the statements throughout simulation|  
