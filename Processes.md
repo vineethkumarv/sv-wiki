@@ -80,9 +80,9 @@ In the below Fig-3 you can easily understand how the entire code for fork-join w
 
           Fig-3: scheduler Schematic for fork-join code.
   
-Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/tree/b7_Team_BJT/processes/fork_join
+Github lab link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.sv
 
-Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
+Github log_file link: https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join/fork_join.log
 
 ## 2.fork-join_any  
 
