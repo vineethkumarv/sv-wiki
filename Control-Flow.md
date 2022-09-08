@@ -1036,6 +1036,11 @@ In the above output, all the condition is false so the unique case gives a warni
 
 **GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_none_true/unique_case_op.log
 
+**Flowchart:** 
+
+![Untitled Diagram-Page-2 (1)](https://user-images.githubusercontent.com/110447788/188631312-47429f33-e575-4f20-977b-2ee272f46f3a.jpg)
+        
+                              Fig -12: flow chart: unique case statement
 
 **Example:**
            
@@ -1050,12 +1055,6 @@ In the above output, all the condition is false so the unique case gives a warni
 
 In the above example, a unique case statement is used. In the unique case, if more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.    
 If these two condition is true, at the time of execution this will take the first matched condition and print the value of x = '0' with a warning(no error)
-
-**Flowchart:** 
-
-![Untitled Diagram-Page-2 (1)](https://user-images.githubusercontent.com/110447788/188631312-47429f33-e575-4f20-977b-2ee272f46f3a.jpg)
-        
-                              Fig -12: flow chart: unique case statement
 
 **Output Snap:**
 
@@ -1076,6 +1075,13 @@ In the above output, a unique case statement is used. In this more than one cond
 
 In this, we will use the default statement inside the unique case statement.    
 If none of the conditions is true inside the unique case statement then the default statement will get executed.
+
+**Flowchart:**
+
+![Untitled Diagram-Page-2 drawio (12)](https://user-images.githubusercontent.com/110447788/188619322-f903de48-023e-46cf-9f2d-38b42cfdb295.png)
+
+                               Fig -13: flow chart: unique case with default statement
+
 
 **Syntax:**
 
@@ -1101,11 +1107,6 @@ If none of the conditions is true inside the unique case statement then the defa
 In the above example, the default statement is used inside the unique case statement.  
 In this, if no conditions of the case statement are true then the default statement will get executed.
 
-**Flowchart:**
-
-![Untitled Diagram-Page-2 drawio (12)](https://user-images.githubusercontent.com/110447788/188619322-f903de48-023e-46cf-9f2d-38b42cfdb295.png)
-
-                               Fig -13: flow chart: unique case with default statement
 
 **Output Snap:**
 
@@ -1124,7 +1125,7 @@ in the output.
 
 
 
-## uniuqe0 case
+###  2. uniuqe0 case
 
 In the unique0 case, if all the case condition is false, it will not display a warning with no error.   
 If all the conditions are true or more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.
@@ -1166,9 +1167,16 @@ In the above output, two conditions are true at a time this will make the case s
 
 **GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique0_case/unique0_case_op.log
 
-### 2. priority case 
+### 3. priority case 
 
 In this type of case statement, if more than one case condition is true, it will display the output without giving any error with no warning.
+
+**Flowchart:**
+
+![Untitled Diagram-Page-2 (2)](https://user-images.githubusercontent.com/110447788/188636662-ce0699fb-568e-4863-b106-6f347b439e50.jpg)
+
+                                Fig -14: flow chart: priority case statement
+
 
 **Syntax:**  
 
@@ -1189,11 +1197,6 @@ In this type of case statement, if more than one case condition is true, it will
 
 In the above example, the priority case is used. In these two conditions is the right or matched condition so the priority case will read the first right condition and execute it and display the output with no warning and no error.
 
-**Flowchart:**
-
-![Untitled Diagram-Page-2 (2)](https://user-images.githubusercontent.com/110447788/188636662-ce0699fb-568e-4863-b106-6f347b439e50.jpg)
-
-                                Fig -14: flow chart: priority case statement
 
 **Output Snap:**
 
