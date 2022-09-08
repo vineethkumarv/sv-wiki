@@ -157,6 +157,7 @@ The below example shows code to understand the working of do - while loop.
 
 <img width="541" alt="while2" src="https://user-images.githubusercontent.com/110443268/188873058-a9eeae37-7185-441c-9ac7-42a644d351a4.png">
 
+                         fig-3: Output-do while loop
 
 **GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/do_while/do_while.sv  
 
@@ -202,6 +203,7 @@ The below figure shows the output of the repeat loop
 
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803547-7c5ff4fc-8388-45fc-817f-19c431c51943.png">
 
+                      fig-4:Output-repeat loop
 
 **GitHub Code Lab link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat/repeat_normal/repeat.sv
 
@@ -232,6 +234,8 @@ The below figure shows the output of the repeat loop by using for loop
 
 
 <img width="435" alt="15" src="https://user-images.githubusercontent.com/110443268/188803668-ac46bcff-47a4-4867-8f87-3b946770c3e8.png">
+                
+                       fig-5: Output - Implement repeat using for loop
 
 **GitHub Lab Code link**:- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/loops/repeat/repeat_using_for_loop/repeat_for.sv 
 
@@ -258,6 +262,7 @@ For loop is simply a more compact form of while loop. In for loop assignment, th
 `end`    
 
 **Example:**  
+  
 `for (int i=1;i<=5;i++)`  
 `begin`   
 `$display(" Iteration %0d ",i);`   
