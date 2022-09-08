@@ -38,7 +38,7 @@ when both @ and wait comes at the same point then a race-around condition occurs
 
 ## Event regions in system verilog:
 
-![sv_regions (5)](https://user-images.githubusercontent.com/110411714/188096452-5df8e8ec-7445-49c1-a547-19ef636cc771.png)
+![sv region](https://user-images.githubusercontent.com/110411714/189117840-ec00be43-9a2e-4258-b8a8-8d1531763f75.png)
 
           Fig-2: System verilog event regions.
 
