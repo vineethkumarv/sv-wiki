@@ -799,19 +799,19 @@ A system Verilog case statement starts with the case keyword and ends with the e
         default   : Statements;
         endcase
 
-### Case statement in which no conditions are true
+**Case statement in which no conditions are true**
 
 ### Example:         
-            x = 2'b01;
+            x = 2'b11;
             case(x)
             00 : $display("Value of x = %0b", x);
-            // 01 : $display("Value of x = %0b",x);
+            01 : $display("Value of x = %0b",x);
             10 : $display("Value of x = %0b",x);
-            11 : $display("Value of x = %0b" ,x);
+            //11 : $display("Value of x = %0b" ,x);
             default : $display("Value of x is not found");
             endcase
 
-In the above example,  here expression= "x" should match one of the case items but here no condition is true. In this '01' value is given to the x so the case item '01' is not matched with the expression = 'x'. Then default get executes. 
+In the above example,  here expression= "x" should match one of the case items but here no condition is true. In this '11' value is given to the x so the case item '11' is not matched with the expression = 'x'. Then default get executes. 
 If none of the conditions is true then the default statement gets executed. This will display 'Value of x is not found' in the output.
 
 
@@ -949,6 +949,7 @@ the break statement is not allowed to use within the loops. while using a break 
             endcase
  
 **Example:**
+
               case(x)
               00 : $display("Value of x = %0b", x);
               01 : begin
@@ -1068,7 +1069,10 @@ In the above output, all the condition is false so the unique case gives a warni
 
 **GitHub Lab Output link** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_SiliconCrew/conditional_statement/case_variants/unique_case/unique_none_true/unique_case_op.log
 
-### Unique case with more than one condition is true
+**Unique case with more than one condition is true**
+
+In a unique case, if all the case condition is false, it will display a warning (no match is found for the case statement ) with no error.     
+If all the conditions are true or more than one condition is true, it will read the first right or matched case condition and will display the output with one warning and no error.
 
 **Flowchart:** 
 
