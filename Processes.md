@@ -161,7 +161,8 @@ It does not mean that the rest of the child threads will be automatically discar
 **Output**:
 
 
-![Untitled Diagram drawio (25)](https://user-images.githubusercontent.com/110509375/188846266-74b1b0cb-01df-46a8-b722-82c3f5c4e243.png)
+![Untitled Diagram drawio (28)](https://user-images.githubusercontent.com/110509375/189041598-f078d9c4-1eb0-40a2-bd4f-4c56c2060815.png)
+
 
 
           Fig-4: The output of the fork join_none block.
