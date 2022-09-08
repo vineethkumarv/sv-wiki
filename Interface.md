@@ -150,6 +150,9 @@ Below figure shows the output of counter with parameterized interface.
                                   Figure.5.Output for counter with parameterized interface
 
 
+
+---
+
 # Virtual Interface
 * The virtual interface is a variable that represent the interface instance.
 * The virtual interface is used to create a interface instance in the class because the interface is a static component and the system verilog test bench is a dynamic component. we cannot directly declare the interface in the class by using the variable **virtual** we can declare the interface instance in the class
@@ -274,14 +277,15 @@ Example1: Fulladder
  
                                      Fig.1: Design Block diagram
 
-Here in the Figure:1, the driver is a class here we declare the virtual interface because inside the class we cannot call the interface directly because interface is static component and class is dynamic component. so this virtual keyword is used to create the instance in the class (it will create the memory space) inside the class. In driver we generates the random stimulus and send to the interface, the DUT signals are connected to interface. The DUT output is given to the interface the test block consist of class and the top module consist of all the component such as test, interface and DUT the instance of all component is created in the Top module/block.
+Here in the Figure:1, the driver is a class here we declare the virtual interface because inside the class we cannot call the interface directly because interface is static component and class is dynamic component. so this virtual keyword is used to create the instance in the class (it will create the memory space) inside the class. In driver we generates the random stimulus and send to the interface, the DUT signals are declared in the interface. The DUT output is given to the interface. The test block consist of class component i.e (driver.sv)  and the top module consist of all the component such as test, interface and DUT. The instance of all component is created in the Top module/block.
 
 
 
 **Below figure shows the output of full adder:**  
 Here in the Figure.2 shows the output of full adder where a, b & cin are the input of the full adder, sum and carry are the output of the fulladder
 
-![fulladder output](https://user-images.githubusercontent.com/110412474/189043253-50ccf9fc-da80-4534-b14e-c01dce833a4f.JPG)
+![fulladder2](https://user-images.githubusercontent.com/110412474/189060495-1def6aff-2ef9-4597-83e5-47db63e09aa8.jpg)
+
 
                                     Fig: Output of Full adder 
 
