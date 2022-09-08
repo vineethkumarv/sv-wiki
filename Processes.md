@@ -29,9 +29,11 @@ System Verilog provides support for parallel threads through fork-join construct
 
 **syntax**:-  
 `fork`  
+
 > `Thread 1`  
 > `Thread 2`  
 > `Thread 3`  
+
 `join`
 
 **code snippet**:-  
