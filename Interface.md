@@ -18,7 +18,7 @@ sl. no. | **data type**         |
 |2.|[Parameterized interface]() |
 |3.|[Modports]() | 
 |4.|[Clocking blocks]() |
-|5.|[Virtual interface]() |
+|5.|[Virtual interface]()  |
 
 
         Tabular column.1. Interface  
