@@ -10,7 +10,7 @@ In the below figure we can see that types of processes and the process controls.
 
 
 
-          Fig-1: The processes and process control blocks.
+                                        Fig-1: The processes and process control blocks.
 
 ## Cheat sheet links
 | **Processes**         | **Description** |
