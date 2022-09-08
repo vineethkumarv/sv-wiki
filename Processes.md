@@ -28,13 +28,12 @@ We have 3 types of Threads/Processes
 System Verilog provides support for parallel threads through fork-join construct. In fork-join process parent thread will execute only when all the child thread are finished their execution.  
 
 **syntax**:-  
-```
-fork  
-   Thread 1  
-   Thread 2  
-   Thread 3  
-join
-```
+
+`fork`  
+   `Thread 1`  
+   `Thread 2`  
+   `Thread 3`  
+`join`
 
 **code snippet**:-  
 
