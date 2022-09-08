@@ -801,7 +801,7 @@ A system Verilog case statement starts with the case keyword and ends with the e
 
 **case statement in which no conditions are true**
 
-**Example:         **  
+**Example:**  
 
             x = 2'b11;
             case(x)
@@ -1040,7 +1040,7 @@ If all the conditions are true or more than one condition is true, it will read 
       conditon_N: Statements;
       endcase
 
-**Example:   **
+**Example:**
 
 **all the conditions are false-**
   
@@ -1179,7 +1179,7 @@ If all the conditions are true or more than one condition is true, it will read 
       endcase
 
 
-### Example:      
+ **Example:**      
             x = 2'b01;
             unique0 case(x)
             00 : $display(" Value of x is = %0b", x);
@@ -1226,7 +1226,7 @@ In this type of case statement, if more than one case condition is true, it will
              conditon_N: Statements;
              endcase
 
-### Example:      
+ **Example:**     
             pqr = 5;
             priority case (pqr)
             5 : $display ("Found to be 5");
@@ -1278,7 +1278,8 @@ We can use break statements in any loop(for, foreach, forever, do-while, while, 
 
 `break;`
 
-**Example:     **
+**Example:**
+
             foreach(array[i])
             if(i==2)begin
             $display("----Calling break----");
@@ -1293,7 +1294,7 @@ In the above example, a break statement is used inside the loop which terminates
 
 ![Untitled Diagram-Page-1 drawio (5)](https://user-images.githubusercontent.com/110447788/188305065-221831fc-8e53-48dd-b9de-da445a1a4861.png)
 
-                                      Fig-: flow chart: break statement
+                                      Fig-:15 flow chart: break statement
 
 **Output Snap:**
 
@@ -1302,7 +1303,7 @@ The below figure shows the output of using the break statement.
 
 ![Untitled Diagram-Page-3 drawio (1)](https://user-images.githubusercontent.com/110447788/188300378-7daf30b0-062b-47c6-b265-bacb850aa0ed.png)
 
-                          Fig - : Output: break statement gets executed at iteration 2
+                          Fig -23 : Output: break statement gets executed at iteration 2
 
 In the above output, a break statement is used inside the loop. The output shows the value for index 0 & 1, after this break statement is encountered and display "Calling break"
 
@@ -1325,7 +1326,8 @@ Using continue, we can skip the current iteration of a loop and jumps to the nex
 
 `continue;
 `
-**Example:   **
+**Example:**
+
             foreach(array[i])
             begin
             if(i==2)begin
@@ -1342,7 +1344,7 @@ In the above example, **continue** statement is used inside the loop that skips 
 
 ![Untitled Diagram-Page-1 drawio (6)](https://user-images.githubusercontent.com/110447788/188305077-aca9f33b-5b5c-4c4c-a674-a262c6c6cf7c.png)
 
-                                        Fig - : flow chart: continue statement
+                                        Fig - 16: flow chart: continue statement
 
 **Output Snap:**
 
@@ -1350,7 +1352,7 @@ The below figure shows the output of using the continue statement.
   
 ![Untitled Diagram-Page-4 drawio (3)](https://user-images.githubusercontent.com/110447788/188300409-2097d70f-2fc7-4105-9a32-d4fc9c24c9af.png)
 
-                                  Fig - : Output: continue statement executes at iteration 2 
+                                  Fig -24 : Output: continue statement executes at iteration 2 
 
 In the above output, the continue statement is used inside the loop. The output shows the value for iterations 0 & 1 and for iteration 2  continue statement is encountered and displays "Calling continue" and after this jumps to the next iteration immediately and prints the value for iterations 3 & 4
 
