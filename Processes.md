@@ -36,7 +36,6 @@ System Verilog provides support for parallel threads through fork-join construct
 `join`
 
 **code snippet**:-  
-
 ```
 fork:FORK_F1  
 
@@ -61,6 +60,7 @@ fork:FORK_F1
 join:FORK_F1  
 ```
 
+**Output**:-
 In the below Fig-2 we can see that Thread_T1 is executed first at #0 simulation time but Thread_T3 will be executed after all the child threads are executed and the child threads will execute according to the time delays.  
 
 ![fork_join_output](https://user-images.githubusercontent.com/110398433/189096889-e1f57873-63ef-4a15-b313-498a6e268277.png)
@@ -69,12 +69,12 @@ In the below Fig-2 we can see that Thread_T1 is executed first at #0 simulation 
 
 In the below Fig-3 you can easily understand how the entire code for fork-join works with respect to schedule schematic regions.  
 * where sampling of the variables will be done in preponed region.  
-All the blocking assignments will be executed and all non-blocking assignments was evaluated in active region.  
-
-$display statements will be executed in active region.  
-All #0 delays statements will be executed in inactive region.  
-The evaluated non-blocking assignments will be executed in NBA region.
-$monitor statements will be executed in postponed region.
+* All the blocking assignments will be executed and all non-blocking assignments was evaluated in active region.  
+* Events will be executed in Active region.
+* $display statements will be executed in active region.  
+* All #0 delays statements will be executed in inactive region.  
+* The evaluated non-blocking assignments will be executed in NBA region.
+* $monitor statements will be executed in postponed region.
 
 ![fork_join](https://user-images.githubusercontent.com/110398433/189095484-fee06dda-dcc3-4dd7-a850-da6e3cad5028.png)
 
@@ -86,94 +86,96 @@ Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 
 ## 2.fork-join_any  
 
-The parent thread blocks will be execute when  any one of the child threads is finish the execution. It means if you have 2 or more thread in your fork..join_any block and each thread need different time to finish. In this case, whichever thread finished first, fork..join_any will comes out of the block and will start executing the next parent thread/statement in simulation. It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.  
+The parent threads will be execute when any one of the child thread finished their execution. It means if you have 2 or more thread in your fork-join_any block and each thread need different time to finish. In this case, whichever thread finished first, fork-join_any will comes out of the block and will start executing the next parent thread/statement in simulation.   
+It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.  
 
- **syntax**:-
-  
-`fork  `  
-   `Thread 1 `  
-   `Thread 2 `  
-   `Thread 3  `  
+**syntax**:-  
+`fork`  
+   `Thread 1`  
+   `Thread 2`  
+   `Thread 3`  
 `join_any`  
  
- **code snippet**:
- 
-    fork:FORK_F1  
-      
-      begin:BEGIN_B2//Thread 1  
-        #0 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);      
-        
-        begin:BEGIN_B3  
-          b <= a;  
-          #1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
-        end:BEGIN_B3  
-      
-      end:BEGIN_B2  
-      
-      fork:FORK_F2//Thread 2  
-        
-        begin:BEGIN_B4  
-          #3 -> e1;  
-          $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
-        end:BEGIN_B4  
-          
-      join:FORK_F2  
-      
-    join_any:FORK_F1
+**code snippet**:-
+```
+fork:FORK_F1  
 
-In the below figure we can see that  here  main thread 1 executed and one child is executed and then main thread 2 is executed. 
+   begin:BEGIN_B2//Thread 1  
+      #0 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+
+      begin:BEGIN_B3  
+         b <= a;  
+         #1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+      end:BEGIN_B3  
+
+   end:BEGIN_B2  
+
+   fork:FORK_F2//Thread 2  
+
+      begin:BEGIN_B4  
+         #3 -> e1;  
+         $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+      end:BEGIN_B4  
+
+   join:FORK_F2  
+      
+join_any:FORK_F1
+```
+
+**Output**:-
+In the below Fig-4 we can see that parent Thread_T1 is executed at #0 and the child Thread_T3 is executed at #1 then only the parent Thread_T5 will be executed at #2.  
 
 ![Untitled Diagram drawio (23)](https://user-images.githubusercontent.com/110509375/188843990-76f70d10-6f12-4cd7-8e1f-aa799d0a35b4.png)
 
-
-          Fig-3: The output of fork join_any block.
+          Fig-4: The output of fork-join_any block.
 
 ![fork join_any](https://user-images.githubusercontent.com/110398433/189082083-397b598a-ea03-44a5-9c04-b97f2fcfddbb.png)
 
-          Fig : scheduler Schematic for fork-join_any code.
+          Fig-5: scheduler Schematic for fork-join_any code.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.sv
 
 Github log_file link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_any/fork_join_any.log
 
-## 3. fork-join_none  
-
-The parent thread is executed parallel with the child thread. This means the thread which is outside the fork-join_none, does not wait for the completion of any  threads which is inside the fork-join_none, it just execute parallel.  
+## 3. fork-join_none
+The parent threads are executed parallel with the child threads. This means the thread which is outside the fork-join_none, does not wait for the completion of any threads which is inside the fork-join_none, it just execute parallelly.  
 It does not mean that the rest of the child threads will be automatically discarded by simulation. Those threads will be running in the background.  
- **syntax**:-  
- 
-`fork `  
-  `Thread 1`  
-  `Thread 2`  
-  `Thread 3`  
-`join_none`
- 
-**code snippet**:
 
-    fork:FORK_F1  
-      
-      begin:BEGIN_B2  
-        #1 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);      
-        b <= a;  
-        #1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
-      end:BEGIN_B2  
-      
-      fork:FORK_F2  
-        #1 -> e1;  
-        $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
-      join:FORK_F2  
-      
-    join_none:FORK_F1
+**syntax**:-  
 
-**Output**:
+`fork`  
+   `Thread 1`  
+   `Thread 2`  
+   `Thread 3`  
+`join_none`  
+
+**code snippet**:-
+```
+fork:FORK_F1  
+
+   begin:BEGIN_B2  
+      #1 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);      
+      b <= a;  
+      #1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+   end:BEGIN_B2  
+
+   fork:FORK_F2  
+      #1 -> e1;  
+      $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
+   join:FORK_F2  
+
+join_none:FORK_F1
+```
+
+**Output**:-
 
 ![Untitled Diagram drawio (28)](https://user-images.githubusercontent.com/110509375/189041598-f078d9c4-1eb0-40a2-bd4f-4c56c2060815.png)
 
-          Fig-4: The output of the fork join_none block.
+          Fig-6: The output of the fork-join_none block.
 
 ![fork_join_none](https://user-images.githubusercontent.com/110398433/189082181-09fe24d5-7258-4446-9e3a-fc55a3e940d1.png)
 
-          Fig : scheduler Schematic for fork-join_none code.
+          Fig-7 : scheduler Schematic for fork-join_none code.
 
 Github lab link:https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/processes/fork_join_none/fork_join_none.sv
 
