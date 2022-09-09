@@ -37,6 +37,8 @@ System Verilog provides support for parallel threads through fork-join construct
 
 **code snippet**:-  
 ```
+$display("[%0t] Thread_T1: Values of a= %0d,b= %0d, c= %0d,d= %0d",$time,a,b,c,d);
+
 fork:FORK_F1  
 
    begin:BEGIN_B2  
@@ -57,7 +59,9 @@ fork:FORK_F1
 
    end:BEGIN_B3  
 
-join:FORK_F1  
+join:FORK_F1 
+
+$display("[%0t] Thread_T3: value of a= %0d,b= %0d, c= %0d,d= %0d",$time,a,b,c,d); 
 ```
 
 **Output**:-  
