@@ -276,17 +276,17 @@ On execution of the disable fork, all the active process will get terminated.
 
 fork:FORK_F1  
 
-   #3 b <= "Delta";//Thread 1  
+   #3 b <= "Delta";  
 
-   #4 $display("[%0t] Thread_T2: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 2  
+   #4 $display("[%0t] Thread_T2: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
              
-   begin:BEGIN_B2 //Thread 3  
+   begin:BEGIN_B2  
       #1 -> e1;  
       c = "Hoode";  
       #1 $display("[%0t] Thread_T3: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
    end:BEGIN_B2  
       
-   fork:FORK_F2 //Thread 4  
+   fork:FORK_F2  
       @(e1.triggered);  
       #1 $display("[%0t] Thread_T4: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
    join:FORK_F2  
