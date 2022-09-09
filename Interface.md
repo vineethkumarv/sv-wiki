@@ -161,6 +161,93 @@ Below figure shows the output of counter with parameterized interface.
 
 ---
 
+# Modport:
+
+- Modport is used to groups and specifies the port directions to the wires/signals declared within the interface. modports are declared inside the interface with the keyword modport. 
+- modport is an abbreviation for module port.
+
+**Characteristics of modports:**
+
+* It can have, input, inout, output, and ref.
+* By specifying the port directions, modport provides access restrictions for signals.
+* The Interface can have any number of modports, the wire declared in the interface can be grouped in many modports.
+* We can't assign or drive the value of wire which is declared as modport input. it will give compilation error.
+
+**Syntax:**
+
+`interface <interface_name>;`    
+ `// signals declaration`  
+ `....`  
+ `modport modport_name(input signal_name,output signal_name);`  
+`endinterface`     
+
+**Example:**
+
+`interface and_intr;`    
+  `logic input_p,input_q;`  
+  `logic output_r;`  
+  `modport design_andg(input input_p,input input_q,output output_r);`   
+  `modport tb_andg(output input_p,output input_q,input output_r);`  
+`endinterface : and_intr`  
+
+**Note:-**  There are two ways to calling the modport name in design.
+
+1. calling the modport name in testbench and design file.
+2. calling the modport name in top module file.
+
+**Top module for AND gate while calling modport name in testbench and design file:**
+
+     // creating top module 
+     // in this file design,testbench,interface modules are called
+     module top();
+     // interfce module called
+     and_intr inf();
+     // design module called
+     and_gate a1(inf);
+     // testbench module called   
+     tb a2(inf);
+     endmodule : top
+
+**design file for AND gate:**
+
+     // and gate design file  
+     // module defination for and gate with interface instanciation  
+     module and_gate(and_intr.design_andg inf);
+     // assign the output using continuous assignment
+       assign inf.output_r = (inf.input_p) & (inf.input_q); 
+     endmodule : and_gate   
+
+**testbench file for AND gate:**
+
+    // testbench file for and gate design
+    // module defination for testbench with interface instanciation
+    module tb(and_intr.tb_andg inf);
+
+     initial begin
+       $display("// and gate output using modports\n");
+       $monitor("input_p=%0b\t input_q=%b\t output_r=%b",inf.input_p,inf.input_q,inf.output_r);
+       inf.input_p = 0; inf.input_q = 0; 
+       #1;
+       inf.input_p = 1; inf.input_q = 0; 
+       #1;
+       inf.input_p = 0; inf.input_q = 1;     
+       #1;
+       inf.input_p = 1; inf.input_q = 1; 
+     end
+    endmodule : tb
+
+Output of AND gate using interface is given below.
+
+![modport_andgate](https://user-images.githubusercontent.com/110448056/189105843-cc4578b3-8544-4062-af44-990ee2745450.png)
+
+                               Figure.1 AND gate Output
+
+**Github lab code link:**
+
+**Github lab output link:** 
+
+---
+
 # Virtual Interface
 * The virtual interface is a variable that represent the interface instance.
 * The virtual interface is used to create a interface instance in the class because the interface is a static component and the system verilog test bench is a dynamic component. we cannot directly declare the interface in the class by using the variable **virtual** we can declare the interface instance in the class
