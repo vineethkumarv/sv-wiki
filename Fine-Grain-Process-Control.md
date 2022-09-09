@@ -68,8 +68,7 @@ join:FORK_F1
 
 In the below Fig-2 you can see that At #0 time the object for the process was not created which is shown At #3 but after 10ns time we used self() method in the code so the object was created.
 
-![snap self](https://user-images.githubusercontent.com/110447489/188852816-d3a77ddf-15c6-416c-ba7c-34e0b28dde05.jpg)
-
+![fine_self_output](https://user-images.githubusercontent.com/110447489/189285742-8b5f6e52-6100-485f-9ab0-5fcd7ec0b8e7.png)
 
           Fig-2: The output of the self() method.
 
@@ -77,8 +76,9 @@ Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_self/fine_self.log
 
-## Status()
-It will shows the status or state of the process i.e Finished,Running,Waiting,Suspended,Killed.  
+## 2.Status()
+
+It will shows the status/state of the process. i.e., Finished, Running, Waiting, Suspended, Killed.  
 
 **code snippet**  
 
