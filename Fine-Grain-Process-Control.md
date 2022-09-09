@@ -128,8 +128,7 @@ It will shows the status/state of the process. i.e., Finished, Running, Waiting,
 
 Here in the below Fig-3 you can see that there are some strings which are in upper-case those are the status of a process p1 and p2.
 
-![snap status](https://user-images.githubusercontent.com/110447489/188853934-e79b1b4a-0726-4636-a982-a8ecf5e7cdf5.jpg)
-
+![fine_status_output](https://user-images.githubusercontent.com/110447489/189286908-b4bc1409-e237-4720-a8eb-b4516aae7215.png)
 
           Fig-3: The output of the status() method.
 
