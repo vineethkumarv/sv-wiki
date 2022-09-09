@@ -153,6 +153,8 @@ The kill () function terminates the process and all its sub-processes. If the pr
         
          if(p1.status() != process :: FINISHED)
            p1.kill();
+           $display("hi i am working");
+           $display("what about you?");
         end:BEGIN_B2
       
        begin
