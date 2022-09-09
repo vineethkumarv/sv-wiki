@@ -1,12 +1,13 @@
 # Fine Grain Process Control
-SystemVerilog has a built in class named Process that allows one process(i.e, like fork_join) to access and control the processes/threads.
-When we fork off any thread, a new object of process class is created at that time. This object contains status information about that thread.
+
+System Verilog has a built in class named Process that allows one process(i.e, like fork_join) to access and control the processes/threads. When we fork off any thread, a new object of process class is created at that time. This object contains status information about that thread.  
 
 ![Untitled Diagram drawio (5)](https://user-images.githubusercontent.com/110509375/186867756-112267e1-547f-4882-8561-b04bcbd63805.png)
 
           Fig-1: These are all the methods which are available in fine grain process control.
 
-## Cheat sheet Links
+## Cheat sheet of different fine-grain process control:
+
 |      **Tasks**         |     **Description**  |
 |:---------------------- | :--------------------|
 |[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#self)|     will return the handle of the process|
@@ -16,56 +17,56 @@ When we fork off any thread, a new object of process class is created at that ti
 |[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#suspend)| suspends the thread for some indefinite time|
 |[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#resume)| resumes the thread from suspended state|
 
-## self()
-It creates the object for process class. The object is used to access all the methods of process class.   
+## 1.self()
+It creates the object/ID for process class. The object is used to access all the methods of the process class.  
 
 **code snippet**  
+```
+fork:FORK_F1  
 
-    fork:FORK_F1  
-      
-       $display("[%0t] Entered into fork-join and started first check for the process",$time);  
-       #1 ->e1;  
-      
-        begin:BEGIN_B2  
-         wait(e1.triggered);  
-         if(p1 == null)  
-          #1 $display("[%0t] Not created",$time);  
-         else  
-           #1 $display("[%0t] Created",$time);  
-         ->e3;  
-         ->e2;  
-       end:BEGIN_B2
-      
-       #2 p1 = process :: self();
+   $display("[%0t] Entered into fork-join and started first check for the process",$time);  
+   #1 ->e1;  
 
-       begin:BEGIN_B3
-        wait(e2.triggered);
-        $display("[%0t] Started second check for the process",$time);
-        if(p1 == null)
-          $display("[%0t] Not created",$time);
-        else
-          $display("[%0t] Created",$time);
-        ->e4;
-      end:BEGIN_B3
+   begin:BEGIN_B2  
+      wait(e1.triggered);  
+      if(p1 == null)  
+         #1 $display("[%0t] Not created",$time);  
+      else  
+         #1 $display("[%0t] Created",$time);  
+      ->e3;  
+      ->e2;  
+   end:BEGIN_B2  
+
+   #2 p1 = process :: self();  
+
+   begin:BEGIN_B3  
+      wait(e2.triggered);
+      $display("[%0t] Started second check for the process",$time);  
+      if(p1 == null)
+         $display("[%0t] Not created",$time);
+      else
+         $display("[%0t] Created",$time);
+      ->e4;
+   end:BEGIN_B3
       
-      fork:FORK_F2
+   fork:FORK_F2
 
-        begin:BEGIN_B4
-          wait(e3.triggered);
-          $display("[%0t] first check for the process done",$time);
-        end:BEGIN_B4
+      begin:BEGIN_B4
+         wait(e3.triggered);
+         $display("[%0t] first check for the process done",$time);
+      end:BEGIN_B4
+
+      begin:BEGIN_B5
+         wait(e4.triggered);
+         $display("[%0t] Second check for the process done",$time);
+      end:BEGIN_B5
       
-        begin:BEGIN_B5
-          wait(e4.triggered);
-          $display("[%0t] Second check for the process done",$time);
-        end:BEGIN_B5
-      
-      join:FORK_F2
+   join:FORK_F2
 
-    join:FORK_F1
+join:FORK_F1
+```
 
-
-Here in the below Fig-2 you can see that at 0ns time the object was not created but after 10ns time we used self() method in the code so the object was created.
+In the below Fig-2 you can see that At #0 time the object for the process was not created which is shown At #3 but after 10ns time we used self() method in the code so the object was created.
 
 ![snap self](https://user-images.githubusercontent.com/110447489/188852816-d3a77ddf-15c6-416c-ba7c-34e0b28dde05.jpg)
 
