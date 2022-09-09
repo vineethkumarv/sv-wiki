@@ -102,9 +102,14 @@ It does not mean that the rest of the child threads will be automatically discar
  
 **code snippet**:-
 ```
+$display("[%0t] Thread_T1: Starting of fork_join_any",$time);
+
+a = "Kapu";
+c = "Malpe";
+
 fork:FORK_F1  
 
-   begin:BEGIN_B2//Thread 1  
+   begin:BEGIN_B2  
       #0 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);  
 
       begin:BEGIN_B3  
@@ -114,7 +119,7 @@ fork:FORK_F1
 
    end:BEGIN_B2  
 
-   fork:FORK_F2//Thread 2  
+   fork:FORK_F2  
 
       begin:BEGIN_B4  
          #3 -> e1;  
@@ -124,6 +129,14 @@ fork:FORK_F1
    join:FORK_F2  
       
 join_any:FORK_F1
+
+#1 $display("[%0t] Thread_T5: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);
+    
+begin:BEGIN_B5
+   wait(e1.triggered);
+   d = "Kodi";
+   $monitor("[%0t] Thread_T6: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);
+end:BEGIN_B5
 ```
 
 **Output**:-  
@@ -155,6 +168,11 @@ It does not mean that the rest of the child threads will be automatically discar
 
 **code snippet**:-
 ```
+$display("[%0t] Thread_T1: Starting of fork_join_none",$time);
+
+a = "Kapu";
+c = "Malpe";
+
 fork:FORK_F1  
 
    begin:BEGIN_B2  
@@ -169,6 +187,13 @@ fork:FORK_F1
    join:FORK_F2  
 
 join_none:FORK_F1
+
+#1 $display("[%0t] Thread_T5: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);
+
+wait(e1.triggered);
+d = "Kodi";
+
+$monitor("[%0t] Thread_T6: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);
 ```
 
 **Output**:-  
@@ -200,28 +225,30 @@ The wait fork statement is used to ensure that all child processes (processes cr
 
 **code snippet**:-  
 ```
-fork:FORK_F1 //Thread 2  
+#1 $display("[%0t] Thread_T1: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
 
-   #2 b <= "Delta";//T2-1  
+fork:FORK_F1  
+
+   #2 b <= "Delta";  
    #0 $display("[%0t] Thread_T2: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
 
-   begin:BEGIN_B2 //Thread 2-3  
+   begin:BEGIN_B2  
       #1 -> e1;  
       c = "Hoode";  
       #1 $display("[%0t] Thread_T3: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
    end:BEGIN_B2  
 
-   fork:FORK_F2 //Thread 2-4  
+   fork:FORK_F2  
       wait(e1.triggered);  
       #2 $display("[%0t] Thread_T4: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
    join:FORK_F2  
 
-   #1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 3  
+   #1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
 
 join_none:FORK_F1  
 
 wait fork;  
-#0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6  
+#0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);  
 ```
 
 **Output**:-  
@@ -245,6 +272,8 @@ On execution of the disable fork, all the active process will get terminated.
 
 **code snippet**:-
 ```
+#0 $display("[%0t] Thread_T1: Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
+
 fork:FORK_F1  
 
    #3 b <= "Delta";//Thread 1  
