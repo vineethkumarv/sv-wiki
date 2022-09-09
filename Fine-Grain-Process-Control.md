@@ -280,7 +280,8 @@ Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 Github log_file link-  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.log
 
-## resume()  
+## 6.resume()
+  
 This function restarts the process that was suspended. Resuming a process that was suspended while being blocked (due to wait statement, delay or waiting for an event to trigger) shall reinitialize that process to the event expression or wait for the wait condition to be true or for the delay to expire.  
 
 **code snippet**  
@@ -325,8 +326,7 @@ This function restarts the process that was suspended. Resuming a process that w
 
 Here in the below Fig-7 we can see at 7ns process p1 was suspended and at 16ns i was checking the status before using resume() method it was showing suspended so then at 17ns after using resume() method the status of process p1 is running and then it was finished.
 
-![snap resume](https://user-images.githubusercontent.com/110447489/188856168-9389e0ce-7b26-4b66-ab8e-97b6c0fc4c60.jpg)
-
+![fine_resume_output](https://user-images.githubusercontent.com/110447489/189291418-e4c49026-c40b-49fe-9f35-6119a9bfa80e.png)
 
           Fig-7: The output of the resume() method.
 
