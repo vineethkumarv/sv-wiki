@@ -167,8 +167,7 @@ The kill () function terminates the process and all its sub-processes. If the pr
 
 Here in the below Fig-4 we can see that process p1 is started and running at 4ns but at 5ns by using kill() method we killed the process p1.  
 
-![snap kill](https://user-images.githubusercontent.com/110447489/188854422-e29291ce-76cd-4153-a241-b100ecebbf54.jpg)
-
+![fine_kill_output](https://user-images.githubusercontent.com/110447489/189288242-6fee6025-0dcb-4b17-a77c-55987ef9055a.png)
 
           Fig-4: The output of the kill() method.
 
