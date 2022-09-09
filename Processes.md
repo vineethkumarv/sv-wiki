@@ -80,7 +80,8 @@ In the below Fig-3 you can easily understand how the entire code for fork-join w
 * The evaluated non-blocking assignments will be executed in NBA region.
 * $monitor statements will be executed in postponed region.
 
-![fork_join](https://user-images.githubusercontent.com/110398433/189095484-fee06dda-dcc3-4dd7-a850-da6e3cad5028.png)
+![fork_join](https://user-images.githubusercontent.com/110398433/189284640-e2ccb529-e847-4c10-88e2-60b045f7f5b6.jpg)
+
 
           Fig-3: scheduler Schematic for fork-join code.
   
