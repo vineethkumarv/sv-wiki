@@ -228,7 +228,7 @@ Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_await/fine_await.log  
 
-## suspend()
+## 5.suspend()
 This function suspends the execution of the process. It can suspend its own or other process’s execution. The execution is suspended until a resume () is encountered. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be suspended in the current timestamp.  
 **code snippet**  
 
@@ -257,6 +257,7 @@ This function suspends the execution of the process. It can suspend its own or o
           p2 = process :: self();
           #1 $display("[%0t] I am in process p2",$time);
           $display("[%0t] Initial status of p2: %s",$time,p2.status());
+          $display("[%0t] status of p1 after suspended: %s",$time,p1.status());
           ->e2;
          end:BEGIN_B4
 
@@ -271,7 +272,7 @@ This function suspends the execution of the process. It can suspend its own or o
 
 Here in the below Fig-6 we can see that process p1 at 7ns was suspended and we are not using resume() method so the process p1 was still in suspended state even at 11ns.
 
-![snap suspend](https://user-images.githubusercontent.com/110447489/188855408-809402de-8ed4-44fe-a5df-0f84d1360673.jpg)
+![fine_suspend_output](https://user-images.githubusercontent.com/110447489/189290692-9fbaaa80-3cc8-4a6d-b483-522064d787f9.png)
 
           Fig-6: The output of the suspend() method.
  
