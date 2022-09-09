@@ -136,7 +136,8 @@ Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_status/fine_status.log  
 
-## kill()
+## 3.kill()
+
 The kill () function terminates the process and all its sub-processes. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be terminated in the current timestamp.  
 
 **code snippet**  
@@ -175,7 +176,8 @@ Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 Github log_file link- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_kill/fine_kill.log 
 
-## await()
+## 4.await()
+
 This task allows one process to wait for another process.  
 
 **code snippet**  
@@ -218,8 +220,7 @@ This task allows one process to wait for another process.
 
 Here in the below Fig-5 we are trying to make process p1 to wait until the process p2 was finished. so you can see that at 7ns process p1 was waiting till 9ns for process p2 and at 11ns process p1 was finished.  
 
-![snap await](https://user-images.githubusercontent.com/110447489/188854896-70bd06a5-a9e2-4869-a0d0-326bf1593eac.jpg)
-
+![fine_await_output](https://user-images.githubusercontent.com/110447489/189289551-413d96f1-1ea3-44be-b0ae-ecad906327c4.png)
 
           Fig-5: The output of the await() method.
 
