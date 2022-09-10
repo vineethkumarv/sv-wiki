@@ -391,32 +391,44 @@ $display("[%0t] Seeking status:",$time);
            p1.suspend();  
            $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());  
          end:BEGIN_B3  
-      
-       end:BEGIN_B2  
 
-       begin:BEGIN_B4  
-         wait(e1.triggered);  
+      end:BEGIN_B2  
+
+      begin:BEGIN_B4  
+         wait(e2.triggered);  
+         $display("[%0t] Status of p1 before resuming: %s",$time,p1.status());  
+         p1.resume();  
+         #1 $display("[%0t] Status of p1 after resuming: %s",$time,p1.status());  
+         ->e3;  
+      end:BEGIN_B4  
+
+      begin:BEGIN_B6  
          p2 = process :: self();  
          #1 $display("[%0t] I am in process p2",$time);  
          $display("[%0t] Initial status of p2: %s",$time,p2.status());  
-         ->e2;  
-       end:BEGIN_B4  
 
-       begin:BEGIN_B5  
-         wait(e2.triggered);  
+         if(p1.status() == process :: SUSPENDED)  
+            #1 ->e2;  
+      end:BEGIN_B6  
+
+      begin:BEGIN_B7  
+         wait(e3.triggered);  
          #1 $display("[%0t] Final status of p1: %s",$time,p1.status());  
          $display("[%0t] Final status of p2: %s",$time,p2.status());  
-       end:BEGIN_B5  
+      end:BEGIN_B7  
 
-      join:FORK_F1  
-
-     end:BEGIN_B1  
+join:FORK_F1
 ```
-Here in the below Fig-7 we can see at 7ns process p1 was suspended and at 16ns i was checking the status before using resume() method it was showing suspended so then at 17ns after using resume() method the status of process p1 is running and then it was finished.
+
+Here in the above code snippet we are trying to resume the process p1 in the process p2.  
+In the below Fig-12, you can see  
+* At #1 simulation time the status of p1 was **RUNNING**.  
+* At #2 simulation time before using resume() method the status of p1 was **SUSPENDED**.
+* At #3 simulation time after using resume() method the status of p1 was **FINISHED**.  
 
 ![fine_resume_output](https://user-images.githubusercontent.com/110447489/189291418-e4c49026-c40b-49fe-9f35-6119a9bfa80e.png)
 
-          Fig-7: The output of the resume() method.
+          Fig-12: The output of the resume() method.
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_resume/fine_resume.sv
 
