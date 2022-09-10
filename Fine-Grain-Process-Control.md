@@ -75,8 +75,11 @@ fork:FORK_F1
 join:FORK_F1
 ```
 
-In the above code snippet you can see that At #0 simulation time the handle for the process class was declared.
-So we are checking at #1 whether an object created or not which was displayed **Not created** Then at #2 we are creating an object for the process class and checking then At #3 it was displaying **Created**.(refer below Fig-2)
+In the above code snippet you can see that At #0 simulation time the handle for the process class was declared.  
+In the below Fig-2,  
+* At #1 simulation timewe are checking whether an object p1 was created or not then it was displaying **Not created**.  
+* At #2 simulation time we are creating an object for the process p1.  
+* At #3 simulation time we are checking for the object p1 it was displaying **Created**.  
 
 ![fine_self_output](https://user-images.githubusercontent.com/110447489/189285742-8b5f6e52-6100-485f-9ab0-5fcd7ec0b8e7.png)
 
@@ -146,8 +149,9 @@ wait(e4.triggered);
 #1 $display("[%0t] Final status of p3: %s",$time,p3.status());  
 ```
 
-In the below Fig-4 you can see that there are some strings which are in upper-case those are the status of a process p1 and p2.  
-At different simulation times the status of the processes/Threads will be changing depending on their execution.
+In the below Fig-4,  
+* you can see that there are some strings which are in upper-case those are the status of a process p1 and p2.  
+* At different simulation times the status of the processes/Threads will be changing depending on their execution.
 
 ![fine_status_output](https://user-images.githubusercontent.com/110447489/189286908-b4bc1409-e237-4720-a8eb-b4516aae7215.png)
 
@@ -162,10 +166,12 @@ Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 The kill () function terminates the process and all its sub-processes. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be terminated in the current timestamp.  
 
 **Syntax**:-  
-`Process p1,p2;`  
-`initial begin`  
-   `p1 = process :: self();`  
-   `p1.kill();`
+`Process p_handle1;`  
+`initial begin`
+   `fork`  
+      `p_handle1 = process :: self();`  
+      `p_handle1.kill();`  
+   `join_any`
 `end`  
 
 **code snippet**:-  
@@ -194,115 +200,154 @@ fork:FORK_F1
 join:FORK_F1  
 ```
 
-Here in the below Fig-4 we can see that process p1 is started and running at 4ns but at 5ns by using kill() method we killed the process p1.  
+In the above code snippet you can see that process p1 At #0 simulation time process class object was created.  
+In the below Fig-6,  
+* At #1 simulation time the status of p1 was **RUNNING**.  
+* At #2 simulation time after using kill() method the status of p1 was **KILLED**.     
 
 ![fine_kill_output](https://user-images.githubusercontent.com/110447489/189288242-6fee6025-0dcb-4b17-a77c-55987ef9055a.png)
 
-          Fig-4: The output of the kill() method.
+          Fig-6: The output of the kill() method.
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_kill/fine_kill.sv
 
 Github log_file link- https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_kill/fine_kill.log 
 
-## 4.await()
+## 4.await()  
 
-This task allows one process to wait for another process.  
+This method is used to allows one process to wait for another process/Thread to complete.  
 
-**code snippet**  
+**Syntax**:-  
+`Process p_handle1,p_handle2;`  
+`initial begin`
+   `fork`  
+      `begin`  
+         `p_handle1 = process :: self();`  
+         `p_handle2.await();`  
+      `end`  
+      `begin`  
+         `p_handle2 = process :: self();`
+      `end`
+   `join`  
+`end`  
 
-     $display("[%0t] Seeking status:",$time);
+**code snippet**:-  
+```
+$display("[%0t] Seeking status:",$time);  
 
-      fork:FORK_F1
-    
-       begin:BEGIN_B2
-         p1 = process :: self();
-         #1 $display("[%0t] I am in process p1",$time);
-         $display("[%0t] Initial status of p1: %s",$time,p1.status());
-         $display("[%0t] Status of p1 before await: %s",$time,p1.status());
-        
-         if(p1.status() != process :: FINISHED)
-           p2.await();
-        
-       end:BEGIN_B2
+fork:FORK_F1  
+
+   begin:BEGIN_B2  
+      p1 = process :: self();  
+      #1 $display("[%0t] I am in process p1",$time);  
+      $display("[%0t] Initial status of p1: %s",$time,p1.status());  
+      $display("[%0t] Status of p1 before await: %s",$time,p1.status());  
+
+      if(p1.status() != process :: FINISHED)  
+         p2.await();  
+
+   end:BEGIN_B2  
+
+   #2 $display("[%0t] Status of p1 after await: %s",$time,p1.status());  
+
+   begin:BEGIN_B4  
+      p2 = process :: self();  
+      #1 $display("[%0t] I am in process p2",$time);  
+      $display("[%0t] Initial status of p2: %s",$time,p2.status());  
+      #2 ->e2;  
+   end:BEGIN_B4  
+
+   begin:BEGIN_B5  
+      wait(e2.triggered);  
+      $display("[%0t] Final status of p2: %s",$time,p2.status());  
+      ->e1;  
+   end:BEGIN_B5  
+
+   begin:BEGIN_B6  
+      wait(e1.triggered);  
+      $display("[%0t] Final status of p1: %s",$time,p1.status());  
+   end:BEGIN_B6  
       
-       #2 $display("[%0t] Status of p1 after await: %s",$time,p1.status());
-    
-       begin:BEGIN_B4 
-         p2 = process :: self();
-         #1 $display("[%0t] I am in process p2",$time);
-         $display("[%0t] Initial status of p2: %s",$time,p2.status());
-         #2 ->e2;
-       end:BEGIN_B4
-     
-       begin:BEGIN_B5
-         wait(e2.triggered);
-         $display("[%0t] Final status of p2: %s",$time,p2.status());
-         ->e1;
-       end:BEGIN_B5
+join_any:FORK_F1  
+```
 
-       begin:BEGIN_B6
-         wait(e1.triggered);
-         $display("[%0t] Final status of p1: %s",$time,p1.status());
-        end:BEGIN_B6
-      join_any:FORK_F1
-
-Here in the below Fig-5 we are trying to make process p1 to wait until the process p2 was finished. so you can see that at 7ns process p1 was waiting till 9ns for process p2 and at 11ns process p1 was finished.  
+In the above code snippet we are trying to make process p1 to wait until the process p2 was finished.  
+In below Fig-8, you can see  
+* At #1 simulation time before using await() method the status of p1 was **RUNNING**.  
+* At #2 simulation time after using await() method the status of p1 was **WAITING**.  
+* At #3 simulation time once the status of p2 was **FINISHED** then the status of p1 also **FINISHED**.  
 
 ![fine_await_output](https://user-images.githubusercontent.com/110447489/189289551-413d96f1-1ea3-44be-b0ae-ecad906327c4.png)
 
-          Fig-5: The output of the await() method.
+          Fig-8: The output of the await() method.
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_await/fine_await.sv
 
 Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_await/fine_await.log  
 
-## 5.suspend()
-This function suspends the execution of the process. It can suspend its own or other process’s execution. The execution is suspended until a resume () is encountered. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be suspended in the current timestamp.  
+## 5.suspend()  
+
+This method is used to suspend the execution of the process/Thread. It can suspend its own or other process’s execution. The execution is suspended until a resume() method is encountered.  
+If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be suspended in the current timestamp.  
+
+**Syntax**:-  
+`Process p_handle1;`  
+`initial begin`
+   `fork`  
+      `begin`  
+         `p_handle1 = process :: self();`  
+         `p_handle1.suspend();`  
+      `end`  
+   `join_none`  
+`end`  
+
 **code snippet**  
+```
+$display("[%0t] Seeking status:",$time);  
 
-       $display("[%0t] Seeking status:",$time);
-                 
-        fork:FORK_F1
-                   
-        begin:BEGIN_B2
-          p1 = process :: self();
-          #1 $display("[%0t] I am in process p1",$time);
-          $display("[%0t] Initial status of p1: %s",$time,p1.status());
-          ->e1;
+   fork:FORK_F1  
+      begin:BEGIN_B2  
+         p1 = process :: self();  
+         #1 $display("[%0t] I am in process p1",$time);  
+         $display("[%0t] Initial status of p1: %s",$time,p1.status());  
+         ->e1;  
 
-          if(p1.status() != process :: FINISHED)
-        
-          begin:BEGIN_B3
-            #1 $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
-            p1.suspend();
-            $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());
-          end:BEGIN_B3
+         if(p1.status() != process :: FINISHED)  
+
+         begin:BEGIN_B3  
+            #1 $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());  
+            p1.suspend();  
+            $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());  
+         end:BEGIN_B3  
       
-         end:BEGIN_B2 
+      end:BEGIN_B2  
 
-         begin:BEGIN_B4
-          wait(e1.triggered);
-          p2 = process :: self();
-          #1 $display("[%0t] I am in process p2",$time);
-          $display("[%0t] Initial status of p2: %s",$time,p2.status());
-          $display("[%0t] status of p1 after suspended: %s",$time,p1.status());
-          ->e2;
-         end:BEGIN_B4
+      begin:BEGIN_B4  
+         wait(e1.triggered);  
+         p2 = process :: self();  
+         #1 $display("[%0t] I am in process p2",$time);  
+         $display("[%0t] Initial status of p2: %s",$time,p2.status());  
+         $display("[%0t] status of p1 after suspended: %s",$time,p1.status());  
+         ->e2;  
+      end:BEGIN_B4  
 
-         begin:BEGIN_B5
-          wait(e2.triggered);
-          #1 $display("[%0t] Final status of p1: %s",$time,p1.status());
-          $display("[%0t] Final status of p2: %s",$time,p2.status());
-         end:BEGIN_B5
+      begin:BEGIN_B5  
+         wait(e2.triggered);  
+         #1 $display("[%0t] Final status of p1: %s",$time,p1.status());  
+         $display("[%0t] Final status of p2: %s",$time,p2.status());  
+      end:BEGIN_B5  
 
-       join:FORK_F1
+join:FORK_F1  
+```
 
+In the above code snippet we are trying to make process p1 to suspend permanently.  
+In the below Fig-10, you can see
+* At #1 and #2 simulation time before suspending the status of p1 was **RUNNING**.
+* At  not using resume() method so the process p1 was still in suspended state even at 11ns.
 
-Here in the below Fig-6 we can see that process p1 at 7ns was suspended and we are not using resume() method so the process p1 was still in suspended state even at 11ns.
+![fine_suspend_output](https://user-images.githubusercontent.com/110411714/189474562-ae38bf97-2a1c-4b43-b9cf-19b4ae9d4908.png)
 
-![fine_suspend_output](https://user-images.githubusercontent.com/110447489/189290692-9fbaaa80-3cc8-4a6d-b483-522064d787f9.png)
-
-          Fig-6: The output of the suspend() method.
+          Fig-10: The output of the suspend() method.
  
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.sv
 
