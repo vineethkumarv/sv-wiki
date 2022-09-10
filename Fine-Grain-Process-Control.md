@@ -10,12 +10,12 @@ Systemverilog has a built in class named Process that allows one process(i.e, li
 
 |**S.no**|      **Tasks**         |     **Description**  |
 |:-------|:---------------------- | :--------------------|
-|1.|[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#1self)|will return the handle of the process|
-|2.|[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#2status)|will return information about which mode the current thread is|
-|3.|[kill()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#3kill)   |will kill the thread     |
-|4.|[await()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#4await)| waits for some other thread to complete.|
-|5.|[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#5suspend)|Suspends the thread for some indefinite time|
-|6.|[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#6resume)|resumes the thread from suspended state|
+|1.|[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#1self)|Used to will create the ID/object of the process.|
+|2.|[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#2status)|Used to will return the mode of the current Thread.|
+|3.|[kill()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#3kill)|Used to will kill the Thread.|
+|4.|[await()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#4await)|Used to wait the current Thread for some other Thread to complete.|
+|5.|[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#5suspend)|Used to suspend the Thread for some indefinite time.|
+|6.|[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#6resume)|Used to resume the Thread from suspended state.|
 
 ## 1.self()  
 
