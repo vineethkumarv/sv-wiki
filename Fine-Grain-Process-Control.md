@@ -10,12 +10,12 @@ Systemverilog has a built in class named Process that allows one process(i.e, li
 
 |      **Tasks**         |     **Description**  |
 |:---------------------- | :--------------------|
-|[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#1self)|will return the handle of the process|
-|[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#2status)|will return information about which mode the current thread is|
-|[kill()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#3kill)   |will kill the thread     |
-|[await()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#4await)| waits for some other thread to complete.|
-|[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#5suspend)|Suspends the thread for some indefinite time|
-|[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#6resume)|resumes the thread from suspended state|
+|[1.self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#1self)|will return the handle of the process|
+|[2.status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#2status)|will return information about which mode the current thread is|
+|[3.kill()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#3kill)   |will kill the thread     |
+|[4.await()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#4await)| waits for some other thread to complete.|
+|[5.suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#5suspend)|Suspends the thread for some indefinite time|
+|[6.resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#6resume)|resumes the thread from suspended state|
 
 ## 1.self()  
 
