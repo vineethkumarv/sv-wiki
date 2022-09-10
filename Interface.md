@@ -351,10 +351,11 @@ Note: You can refer the SystemVerilog scheduling sematic for your reference (Top
 
 * Race conditions are caused by mixing design and testbench events during the same time slot.
 * System verilog introduces division of time slots.  
-1. Active Region: Simulation of design code in modules.    
-2.Observed Region: Assertions evaluated their design executes.    
-3.Reactive Region: Execution of testbench.    
-4.Postpone Region: Sampling signals after all design activity.   
+
+1.  Active Region: Simulation of design code in modules.    
+2.  Observed Region: Assertions evaluated their design executes.    
+3.  Reactive Region: Execution of testbench.    
+4.  Postpone Region: Sampling signals after all design activity.   
 
 The below figure shows that timing regions of  system verilog.  
 
@@ -377,13 +378,13 @@ The below figure shows that timing regions of  system verilog.
 
 **Advantages of Clocking Block**
   
-1. Clocking block provides  race free condition between testbench and DUT.         
-2. Clocking block can be declared inside interface, module.     
-3. Clocking block helps the user to write testbenches with higher level of abstraction.   
-4. Simulation is more faster.   
-5. Separating clocking activities of design from its data assignments activities.    
-6. Save amount of code and and time in design execution.  
-7.There is one clock per clocking block    
+* Clocking block provides  race free condition between testbench and DUT.         
+* Clocking block can be declared inside interface, module.     
+* Clocking block helps the user to write testbenches with higher level of abstraction.   
+* Simulation is more faster.   
+* Separating clocking activities of design from its data assignments activities.    
+* Save amount of code and and time in design execution.  
+* There is one clock per clocking block    
 
 
 
