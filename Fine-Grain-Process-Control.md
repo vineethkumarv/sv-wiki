@@ -239,6 +239,7 @@ Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/
 
 ## 5.suspend()
 This function suspends the execution of the process. It can suspend its own or other process’s execution. The execution is suspended until a resume () is encountered. If the process is not blocked (due to wait statement, delay or waiting for an event to trigger), then it will be suspended in the current timestamp.  
+
 **code snippet**  
 
        $display("[%0t] Seeking status:",$time);
@@ -308,7 +309,7 @@ This function restarts the process that was suspended. Resuming a process that w
          if(p1.status() != process :: FINISHED)
         
          begin:BEGIN_B3
-           #1 $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
+           $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
            p1.suspend();
            $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());
          end:BEGIN_B3
@@ -316,10 +317,10 @@ This function restarts the process that was suspended. Resuming a process that w
        end:BEGIN_B2 
 
        begin:BEGIN_B4
-         wait(e1.triggered);
+         wait(e2.triggered);
          p2 = process :: self();
          #1 $display("[%0t] I am in process p2",$time);
-         $display("[%0t] Initial status of p2: %s",$time,p2.status());
+         $displa4y("[%0t] Initial status of p2: %s",$time,p2.status());
          ->e2;
        end:BEGIN_B4
 
