@@ -283,12 +283,11 @@ In the above example, here trying to call the function by passing the variables 
 
           initial  
           begin  
-          void'(display("\t ----output for function void return type-----"));  
-          void'(display("\t passing string to function for displaying"));  
+          (display("\t ----output for function void return type-----");  
+          (display("\t passing string to function for displaying");  
           end  
-          function int display(string str);  
-          $display("%s",str);  
-          return 0;  
+          function void display(string str);  
+          $display("%s",str);    
           endfunction: display  
 
 **output:**   
