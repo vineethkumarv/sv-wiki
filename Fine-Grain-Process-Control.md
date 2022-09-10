@@ -411,7 +411,7 @@ $display("[%0t] Seeking status:",$time);
       join:FORK_F1  
 
      end:BEGIN_B1  
-
+```
 Here in the below Fig-7 we can see at 7ns process p1 was suspended and at 16ns i was checking the status before using resume() method it was showing suspended so then at 17ns after using resume() method the status of process p1 is running and then it was finished.
 
 ![fine_resume_output](https://user-images.githubusercontent.com/110447489/189291418-e4c49026-c40b-49fe-9f35-6119a9bfa80e.png)
