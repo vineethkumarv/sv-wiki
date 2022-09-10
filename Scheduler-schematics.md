@@ -19,16 +19,16 @@ Event is used for synchronization between two or more concurrently active proces
 Processes can wait for the event by using the @ operator or wait(event_name.triggered).
 when both @ and wait comes at the same point then a race-around condition occurs in between both.  
 
-**Create an event -**  
-
-    event e;  
-**Wait for the event to be triggered -**  
-
-      @e;   or  wait(e.triggered);  
-**Triggering the event -**  
-
-      ->e ;
-    
+**Create an event**:-  
+```event e;```  
+**Triggering the event**:-    
+```->e;```  
+**Wait for the event to be triggered**:-  
+```
+@e;  
+or  
+wait(e.triggered);  
+```
 
 ## Event regions in verilog:
 
