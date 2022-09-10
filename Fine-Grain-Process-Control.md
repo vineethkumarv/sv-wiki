@@ -327,13 +327,12 @@ $display("[%0t] Seeking status:",$time);
          p2 = process :: self();  
          #1 $display("[%0t] I am in process p2",$time);  
          $display("[%0t] Initial status of p2: %s",$time,p2.status());  
-         $display("[%0t] status of p1 after suspended: %s",$time,p1.status());  
+         #1 $display("[%0t] status of p1 after suspended: %s",$time,p1.status());  
          ->e2;  
       end:BEGIN_B4  
 
       begin:BEGIN_B5  
-         wait(e2.triggered);  
-         #1 $display("[%0t] Final status of p1: %s",$time,p1.status());  
+         wait(e2.triggered);    
          $display("[%0t] Final status of p2: %s",$time,p2.status());  
       end:BEGIN_B5  
 
