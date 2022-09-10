@@ -83,7 +83,10 @@ In the below Fig-2,
 
 ![fine_self_output](https://user-images.githubusercontent.com/110447489/189285742-8b5f6e52-6100-485f-9ab0-5fcd7ec0b8e7.png)
 
-          Fig-2: The output of the self() method.
+          Fig-2: The output of the self() method.  
+
+![fork join_any _self _kill-Page-2 drawio](https://user-images.githubusercontent.com/110447489/189482788-f9675396-6782-40d7-bff1-5d1ff6064f38.png)
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_self/fine_self.sv  
 
@@ -155,7 +158,11 @@ In the below Fig-4,
 
 ![fine_status_output](https://user-images.githubusercontent.com/110447489/189286908-b4bc1409-e237-4720-a8eb-b4516aae7215.png)
 
-          Fig-4: The output of the status() method.
+          Fig-4: The output of the status() method.  
+
+![status drawio (1)](https://user-images.githubusercontent.com/110447489/189482980-92a4d5af-bdf5-4b76-8a68-d425a9f97e7d.png)
+
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_status/fine_status.sv  
 
@@ -207,7 +214,10 @@ In the below Fig-6,
 
 ![fine_kill_output](https://user-images.githubusercontent.com/110447489/189288242-6fee6025-0dcb-4b17-a77c-55987ef9055a.png)
 
-          Fig-6: The output of the kill() method.
+          Fig-6: The output of the kill() method.  
+
+![fork join_any _self _kill-Page-3](https://user-images.githubusercontent.com/110447489/189482810-800ed36f-6e23-4922-ae6c-29956fec761d.jpg)
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_kill/fine_kill.sv
 
@@ -279,7 +289,11 @@ In below Fig-8, you can see
 
 ![fine_await_output](https://user-images.githubusercontent.com/110447489/189289551-413d96f1-1ea3-44be-b0ae-ecad906327c4.png)
 
-          Fig-8: The output of the await() method.
+          Fig-8: The output of the await() method.  
+
+![await drawio](https://user-images.githubusercontent.com/110447489/189483050-8931484b-3aa1-4a65-bd8f-fbb3b967897a.png)
+
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_await/fine_await.sv
 
@@ -427,7 +441,10 @@ In the below Fig-12, you can see
 
 ![fine_resume_output](https://user-images.githubusercontent.com/110447489/189291418-e4c49026-c40b-49fe-9f35-6119a9bfa80e.png)
 
-          Fig-12: The output of the resume() method.
+          Fig-12: The output of the resume() method.  
+
+![resume drawio](https://user-images.githubusercontent.com/110447489/189482693-48130761-8a3f-4501-b997-bc4810791883.png)
+
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_resume/fine_resume.sv
 
