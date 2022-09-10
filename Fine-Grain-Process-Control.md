@@ -10,12 +10,12 @@ Systemverilog has a built in class named Process that allows one process(i.e, li
 
 |      **Tasks**         |     **Description**  |
 |:---------------------- | :--------------------|
-|[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#self)|     will return the handle of the process|
-|[kill()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#kill)   |   will kill the thread     |
-|[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#status)|will return information about which mode the current thread is|
-|[await()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#await)| waits for some other thread to complete.|
-|[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#suspend)| suspends the thread for some indefinite time|
-|[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#resume)| resumes the thread from suspended state|
+|[self()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control#1self)|     will return the handle of the process|
+|[kill()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#3kill)   |   will kill the thread     |
+|[status()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#2status)|will return information about which mode the current thread is|
+|[await()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#4await)| waits for some other thread to complete.|
+|[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#5suspend)| suspends the thread for some indefinite time|
+|[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#6resume)| resumes the thread from suspended state|
 
 ## 1.self()  
 
@@ -167,11 +167,11 @@ The kill () function terminates the process and all its sub-processes. If the pr
 
 **Syntax**:-  
 `Process p_handle1;`  
-`initial begin`
+`initial begin`  
    `fork`  
       `p_handle1 = process :: self();`  
       `p_handle1.kill();`  
-   `join_any`
+   `join_any`  
 `end`  
 
 **code snippet**:-  
@@ -219,15 +219,15 @@ This method is used to allows one process to wait for another process/Thread to 
 
 **Syntax**:-  
 `Process p_handle1,p_handle2;`  
-`initial begin`
+`initial begin`  
    `fork`  
       `begin`  
          `p_handle1 = process :: self();`  
          `p_handle2.await();`  
       `end`  
       `begin`  
-         `p_handle2 = process :: self();`
-      `end`
+         `p_handle2 = process :: self();`  
+      `end`  
    `join`  
 `end`  
 
@@ -292,7 +292,7 @@ If the process is not blocked (due to wait statement, delay or waiting for an ev
 
 **Syntax**:-  
 `Process p_handle1;`  
-`initial begin`
+`initial begin`  
    `fork`  
       `begin`  
          `p_handle1 = process :: self();`  
@@ -357,15 +357,15 @@ Github log_file link-  https://github.com/muneeb-mbytes/SystemVerilog_Course/blo
 
 This method is used to restart the process that was suspended. Resuming a process that was suspended while being blocked (due to wait statement, delay or waiting for an event to trigger) shall reinitialize that process to the event expression or wait for the wait condition to be true or for the delay to expire.  
 
-**Syntax**:-
+**Syntax**:-  
 `Process p_handle1,p_handle2;`  
-`initial begin`
+`initial begin`  
    `fork`  
       `begin`  
          `p_handle1 = process :: self();`  
          `p_handle1.suspend();`  
       `end`  
-      `begin`
+      `begin`  
          `p_handle2 = process :: self();`  
          `p_handle1.resume();`  
       `end`  
