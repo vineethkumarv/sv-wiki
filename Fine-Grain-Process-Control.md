@@ -30,11 +30,11 @@ fork:FORK_F1
    begin:BEGIN_B2  
       wait(e1.triggered);  
       if(p1 == null)  
-         #1 $display("[%0t] Not created",$time);  
+         $display("[%0t] Not created",$time);  
       else  
-         #1 $display("[%0t] Created",$time);  
+         $display("[%0t] Created",$time);  
       ->e3;  
-      ->e2;  
+      #1 ->e2;  
    end:BEGIN_B2  
 
    #2 p1 = process :: self();  
