@@ -337,7 +337,6 @@ In Input skew, `#1step` sampled at the end of previous step ie, postponed region
 
 In Output skew is positive because it refers the time after the clock event. The input `#1step` will get stable input for previous slots and output `#0` driven at stable point in the current time slot.    
 
-Note: You can refer the SystemVerilog scheduling sematic for your reference (Topic: Processes) to know more about the execution regions.
 
 **Syntax**    
 
@@ -361,7 +360,9 @@ The below figure shows that timing regions of  system verilog.
 
 ![image](https://user-images.githubusercontent.com/110484152/188817365-8bd23adb-d71c-4050-81db-29ab1416b69a.png)  
 
-                                              Fig 3: Timing Regions in Interface
+                                              Fig 3: Timing Regions in Interface  
+
+Note: You can refer the SystemVerilog scheduling semantic for your reference (Topic: Processes) to know more about the execution regions.
 
 
 **Example**  
