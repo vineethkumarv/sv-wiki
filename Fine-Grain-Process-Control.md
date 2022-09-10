@@ -17,10 +17,18 @@ System Verilog has a built in class named Process that allows one process(i.e, l
 |[suspend()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#suspend)| suspends the thread for some indefinite time|
 |[resume()](https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Fine-Grain-Process-Control/#resume)| resumes the thread from suspended state|
 
-## 1.self()
-It creates the object/ID for process class. The object is used to access all the methods of the process class.  
+## 1.self()  
 
-**code snippet**  
+It creates the object/ID for process class. The object is used to access all the pre-defined methods of the process class.  
+
+**Syntax**:-
+`process p1,p2;`  
+               `initial begin`  
+               `p1 = process :: self();`  
+               `p2 = process :: self();`  
+`end`  
+
+**code snippet**:-  
 ```
 fork:FORK_F1  
 
@@ -66,7 +74,8 @@ fork:FORK_F1
 join:FORK_F1
 ```
 
-In the below Fig-2 you can see that At #0 time the object for the process was not created which is shown At #3 but after 10ns time we used self() method in the code so the object was created.
+In the above code snippet you can see that At #0 simulation time the handle for the process class was declared.
+So we are checking at #1 whether an object created or not which was displayed **Not created** Then at #2 we are creating an object for the process class and checking then At #3 it was displaying **Created**.(refer below Fig-2)
 
 ![fine_self_output](https://user-images.githubusercontent.com/110447489/189285742-8b5f6e52-6100-485f-9ab0-5fcd7ec0b8e7.png)
 
@@ -76,9 +85,9 @@ Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Te
 
 Github log_file link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_self/fine_self.log
 
-## 2.Status()
+## 2.Status()  
 
-It will shows the status/state of the process. i.e., Finished, Running, Waiting, Suspended, Killed.  
+It will shows the status/state of the process ID.Status like Finished, Running, Waiting, Suspended, Killed.  
 
 **code snippet**  
 
