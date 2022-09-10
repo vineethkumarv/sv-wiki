@@ -290,6 +290,106 @@ Output of AND gate using modports in interface remains same for both of the abov
 **Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/interface/modports/modport.log
 
 ---
+# Clocking Block  
+
+The clocking block is defined that the mechanism to  synchronize sampling and driving of input and output signal with respect to clock event. It is  quite useful to use clocking blocks inside a testbench to avoid race condition in simulation. We can make  timing  explicitly when signals are synchronous to a particular clock. Clocking block can only declared inside a module ,interface. Clocking block only deals with  how the inputs and outputs are sampled and synchronized. Assigning  a value to a variable is done by  module, interface not the clocking block.  
+ 
+## **Clocking block terminologies**  
+
+**1. Clocking event**    
+
+`clocking  clockingblock_name  @(posedge clk);` 
+
+The event specification used to synchronize the clocking block, @(posedge clk) is the clocking event.
+
+**2. Clocking signal**  
+
+`input  from_Dut;`  
+`output to_Dut;`  
+
+Signals sampled and driven by the clocking block, from_DUT and to_DUT are the clocking signals,  
+
+**3. Clocking skew**  
+
+Clocking skew specifies  with respect to at which input and output clocking signals are to be sampled or driven respectively. A skew must be a constant expression and can be specified as a parameter.   
+
+**Input and Output skews**   
+   
+`default input #1step output #0;`    
+
+The default input skew and output skew is declared  like this,  `default input #1step output #0;` .Here default input skew takes #1step delay for getting the stable input for sampling process. After getting the stable output only the sampling the inputs to be done. The output skew takes only #0 delay means that we get the stable output at the current time slot itself.     
+
+The below  figure shows that default input and output skew 
+
+![image](https://user-images.githubusercontent.com/110484152/188798547-897dab18-5cd5-423c-b94d-048be1dc1b92.png)   
+
+                                        Fig 1: default input #1step output #0  
+
+The below figure shows the Input skew and output skew    
+
+![image](https://user-images.githubusercontent.com/110484152/188549973-1030d92b-3525-460f-a83a-eb51cc694689.png)  
+
+                                         Fig 2: Input skew and output skew    
+
+Input  signals are sampling with respect to the clock event. If an input skew is specified then the signal is sampled at skew time units before the clock event. Then the  output signals are driving skew simulation time units after the corresponding clock event. Input  skew is implicitly negative because it happens before the clock.   
+
+In Input skew, `#1step` sampled at the end of previous step ie, postponed region. `#0` sampled at the same time as their corresponding clock event ie, Observed Region.  
+
+In Output skew is positive because it refers the time after the clock event. The input `#1step` will get stable input for previous slots and output `#0` driven at stable point in the current time slot.    
+
+Note: You can refer the SystemVerilog scheduling sematic for your reference (Topic: Processes) to know more about the execution regions.
+
+**Syntax**    
+
+`clocking cb @(posedge clk);`  
+`default input #1step output #0;`  
+`input  from_Dut;`  
+`output to_Dut;`  
+`endclocking`    
+
+**Timing Regions**    
+
+* Race conditions are caused by mixing design and testbench events during the same time slot.
+* System verilog introduces division of time slots.    
+
+1. Active Region: Simulation of design code in modules.    
+2.Observed Region: Assertions evaluated their design executes.    
+3.Reactive Region: Execution of testbench.    
+4.Postpone Region: Sampling signals after all design activity.   
+
+The below figure shows that timing regions of  system verilog.  
+
+![image](https://user-images.githubusercontent.com/110484152/188817365-8bd23adb-d71c-4050-81db-29ab1416b69a.png)  
+
+                                              Fig 3: Timing Regions in Interface
+
+
+**Example**  
+
+`clocking cb @(posedge clk);`  
+`default input #1 output #2;`  
+`input  ;`  
+`output ;`  
+`endclocking`  
+
+**Output**      
+  
+
+
+**Advantages of Clocking Block**
+  
+1. Clocking block provides  race free condition between testbench and DUT.         
+2. Clocking block can be declared inside interface, module.     
+3. Clocking block helps the user to write testbenches with higher level of abstraction.   
+4. Simulation is more faster.   
+5. Separating clocking activities of design from its data assignments activities.    
+6. Save amount of code and and time in design execution.  
+7.There is one clock per clocking block    
+
+
+
+
+
 
 # Virtual Interface
 * The virtual interface is a variable that represent the interface instance.
