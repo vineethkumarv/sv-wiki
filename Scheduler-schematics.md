@@ -20,9 +20,13 @@ Processes can wait for the event by using the @ operator or wait(event_name.trig
 when both @ and wait comes at the same point then a race-around condition occurs in between both.  
 
 **Create an event**:-  
-```event e;```  
+```
+event e;
+```
 **Triggering the event**:-    
-```->e;```  
+```
+->e;
+```
 **Wait for the event to be triggered**:-  
 ```
 @e;  
