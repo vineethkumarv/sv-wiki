@@ -285,9 +285,9 @@ Output of AND gate using modports in interface remains same for both of the abov
 
                                Figure.1 AND gate Output
 
-**Github lab code link:**
+**Github lab code link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/tree/b7_team_kachori/interface/modports
 
-**Github lab output link:** 
+**Github lab output link:** https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_team_kachori/interface/modports/modport.log
 
 ---
 
