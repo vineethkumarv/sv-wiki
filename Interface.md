@@ -350,8 +350,7 @@ Note: You can refer the SystemVerilog scheduling sematic for your reference (Top
 **Timing Regions**    
 
 * Race conditions are caused by mixing design and testbench events during the same time slot.
-* System verilog introduces division of time slots.    
-
+* System verilog introduces division of time slots.  
 1. Active Region: Simulation of design code in modules.    
 2.Observed Region: Assertions evaluated their design executes.    
 3.Reactive Region: Execution of testbench.    
