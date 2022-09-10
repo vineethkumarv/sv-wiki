@@ -190,12 +190,12 @@ Below figure shows the output of counter with parameterized interface.
   `modport tb_andg(output input_p,output input_q,input output_r);`  
 `endinterface : and_intr`  
 
-**Note:-**  There are two ways to calling the modport name in design.
+**Note:-**  There are two ways to specifying the modport name in the design.
 
-1. calling the modport name in testbench and design file.
-2. calling the modport name in top module file.
+1. specifying the modport name in testbench and design file.
+2. specifying the modport name in top module file.
 
-**Top module for AND gate while calling modport name in testbench and design file:**
+**1.Top module for AND gate while calling modport name in testbench and design file:**
 
      // creating top module 
      // in this file design,testbench,interface modules are called
@@ -236,7 +236,50 @@ Below figure shows the output of counter with parameterized interface.
      end
     endmodule : tb
 
-Output of AND gate using interface is given below.
+
+**2. Top module for AND gate while calling modport name in Top module file:**
+
+     // creating top module 
+     // in this file design,testbench,interface modules are called
+     module top();
+     // interfce module called
+     and_intr inf();
+     // design module called
+     and_gate a1(inf.design_andg);
+     // testbench module called   
+     tb a2(inf.tb_andg);
+     endmodule : top
+
+**design file for AND gate:**
+
+     // and gate design file  
+     // module defination for and gate with interface instanciation  
+     module and_gate(and_intr inf);
+     // assign the output using continuous assignment
+       assign inf.output_r = (inf.input_p) & (inf.input_q); 
+     endmodule : and_gate   
+
+**testbench file for AND gate:**
+
+    // testbench file for and gate design
+    // module defination for testbench with interface instanciation
+    module tb(and_intr inf);
+
+     initial begin
+       $display("// and gate output using modports\n");
+       $monitor("input_p=%0b\t input_q=%b\t output_r=%b",inf.input_p,inf.input_q,inf.output_r);
+       inf.input_p = 0; inf.input_q = 0; 
+       #1;
+       inf.input_p = 1; inf.input_q = 0; 
+       #1;
+       inf.input_p = 0; inf.input_q = 1;     
+       #1;
+       inf.input_p = 1; inf.input_q = 1; 
+     end
+    endmodule : tb
+
+
+Output of AND gate using modports in interface remains same for both of the above mentioned ways. it showing in below figure.
 
 ![modport_andgate](https://user-images.githubusercontent.com/110448056/189105843-cc4578b3-8544-4062-af44-990ee2745450.png)
 
