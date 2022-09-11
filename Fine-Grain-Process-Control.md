@@ -85,7 +85,8 @@ In the below Fig-2,
 
           Fig-2: The output of the self() method.  
 
-![fork join_any _self _kill-Page-2 drawio](https://user-images.githubusercontent.com/110447489/189482788-f9675396-6782-40d7-bff1-5d1ff6064f38.png)
+![fork join_any _self _kill-Page-2 drawio (1)](https://user-images.githubusercontent.com/110447489/189513838-3ac86b07-7355-40c9-aad0-774418c8938b.png)
+
 
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_self/fine_self.sv  
