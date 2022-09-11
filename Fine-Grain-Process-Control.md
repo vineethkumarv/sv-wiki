@@ -85,7 +85,9 @@ In the below Fig-2,
 
           Fig-2: The output of the self() method.  
 
-![fork join_any _self _kill-Page-2 drawio (3)](https://user-images.githubusercontent.com/110447489/189513905-7a604023-250b-44ca-9102-ceb11a9781ac.png)
+![fork join_any _self _kill-Page-2 drawio (3)](https://user-images.githubusercontent.com/110447489/189513905-7a604023-250b-44ca-9102-ceb11a9781ac.png)  
+
+               Fig-3: scheduler Schematic for self() code.
 
 
 
@@ -162,7 +164,9 @@ In the below Fig-4,
 
           Fig-4: The output of the status() method.  
 
-![status drawio (1)](https://user-images.githubusercontent.com/110447489/189482980-92a4d5af-bdf5-4b76-8a68-d425a9f97e7d.png)
+![status drawio (1)](https://user-images.githubusercontent.com/110447489/189482980-92a4d5af-bdf5-4b76-8a68-d425a9f97e7d.png)  
+
+                         Fig-5: scheduler Schematic for status() method.
 
 
 
@@ -218,7 +222,9 @@ In the below Fig-6,
 
           Fig-6: The output of the kill() method.  
 
-![fork join_any _self _kill-Page-3 drawio](https://user-images.githubusercontent.com/110447489/189514215-dbee3cbe-5d56-4ea6-ba0a-4339041efe8a.png)
+![fork join_any _self _kill-Page-3 drawio](https://user-images.githubusercontent.com/110447489/189514215-dbee3cbe-5d56-4ea6-ba0a-4339041efe8a.png)  
+
+            Fig-7: scheduler Schematic for kill() method.
 
 
 
@@ -294,7 +300,9 @@ In below Fig-8, you can see
 
           Fig-8: The output of the await() method.  
 
-![await drawio](https://user-images.githubusercontent.com/110447489/189483050-8931484b-3aa1-4a65-bd8f-fbb3b967897a.png)
+![await drawio](https://user-images.githubusercontent.com/110447489/189483050-8931484b-3aa1-4a65-bd8f-fbb3b967897a.png)  
+
+               Fig-9: scheduler Schematic for await () method.
 
 
 
@@ -368,6 +376,8 @@ In the below Fig-10, you can see
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.sv
 
 Github log_file link-  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.log
+
+          Fig-11: scheduler Schematic for suspend () method.  
 
 ## 6.resume()  
 
@@ -446,7 +456,9 @@ In the below Fig-12, you can see
 
           Fig-12: The output of the resume() method.  
 
-![resume drawio](https://user-images.githubusercontent.com/110447489/189482693-48130761-8a3f-4501-b997-bc4810791883.png)
+![resume drawio](https://user-images.githubusercontent.com/110447489/189482693-48130761-8a3f-4501-b997-bc4810791883.png)  
+
+        Fig-13: scheduler Schematic for fork-join code.
 
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_resume/fine_resume.sv
