@@ -85,7 +85,8 @@ In the below Fig-2,
 
           Fig-2: The output of the self() method.  
 
-![fork join_any _self _kill-Page-2 drawio (1)](https://user-images.githubusercontent.com/110447489/189513838-3ac86b07-7355-40c9-aad0-774418c8938b.png)
+![fork join_any _self _kill-Page-2 drawio (3)](https://user-images.githubusercontent.com/110447489/189513905-7a604023-250b-44ca-9102-ceb11a9781ac.png)
+
 
 
 
