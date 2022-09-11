@@ -218,7 +218,8 @@ In the below Fig-6,
 
           Fig-6: The output of the kill() method.  
 
-![fork join_any _self _kill-Page-3](https://user-images.githubusercontent.com/110447489/189482810-800ed36f-6e23-4922-ae6c-29956fec761d.jpg)
+![fork join_any _self _kill-Page-3 drawio](https://user-images.githubusercontent.com/110447489/189514215-dbee3cbe-5d56-4ea6-ba0a-4339041efe8a.png)
+
 
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_kill/fine_kill.sv
