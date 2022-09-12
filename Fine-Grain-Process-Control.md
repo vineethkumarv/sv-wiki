@@ -77,7 +77,7 @@ join:FORK_F1
 
 In the above code snippet you can see that At #0 simulation time the handle for the process class was declared.  
 In the below Fig-2,  
-* At #1 simulation timewe are checking whether an object p1 was created or not then it was displaying **Not created**.  
+* At #1 simulation time we are checking whether an object p1 was created or not then it was displaying **Not created**.  
 * At #2 simulation time we are creating an object for the process p1.  
 * At #3 simulation time we are checking for the object p1 it was displaying **Created**.  
 
@@ -87,7 +87,7 @@ In the below Fig-2,
 
 ![fork join_any _self _kill-Page-2 drawio (3)](https://user-images.githubusercontent.com/110447489/189513905-7a604023-250b-44ca-9102-ceb11a9781ac.png)  
 
-               Fig-3: scheduler Schematic for self() code.
+               Fig-3: scheduler Schematic for self() method.
 
 
 
@@ -461,7 +461,7 @@ In the below Fig-12, you can see
 
 ![resume drawio](https://user-images.githubusercontent.com/110447489/189482693-48130761-8a3f-4501-b997-bc4810791883.png)  
 
-        Fig-13: scheduler Schematic for fork-join code.
+        Fig-13: scheduler Schematic for resume() method.
 
 
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_resume/fine_resume.sv
