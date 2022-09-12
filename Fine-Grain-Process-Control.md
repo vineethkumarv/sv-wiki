@@ -372,12 +372,15 @@ In the below Fig-10, you can see
 ![fine_suspend_output](https://user-images.githubusercontent.com/110411714/189474562-ae38bf97-2a1c-4b43-b9cf-19b4ae9d4908.png)
 
           Fig-10: The output of the suspend() method.
+
+![Untitled Diagram drawio (5)](https://user-images.githubusercontent.com/110509375/189573424-f4504e6f-113d-41f0-9caf-0a8f2b43d99a.png)
+
+                  Fig-11: scheduler Schematic for suspend () method. 
  
 Github lab link-https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.sv
 
 Github log_file link-  https://github.com/muneeb-mbytes/SystemVerilog_Course/blob/b7_Team_BJT/fine_grain_process_control/fine_suspend/fine_suspend.log
-
-          Fig-11: scheduler Schematic for suspend () method.  
+  
 
 ## 6.resume()  
 
