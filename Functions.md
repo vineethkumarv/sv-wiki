@@ -57,7 +57,7 @@ Here in the above example function name is sum which is of return type int i.e.,
 
 **Flowchart:**
 
-![function flowchart - Copy](https://user-images.githubusercontent.com/110412468/188573070-fc9e6eef-762a-44a5-8adf-3957dbbeaf91.png)   
+![01 (1)](https://user-images.githubusercontent.com/110412468/189892056-30c667fc-ab3f-408f-abb9-e18e5f277078.png)  
 
                     Flowchart.1- functions passing values  
 
@@ -93,7 +93,9 @@ when the sum function is executed, the simulator checks for the function named s
  
 **Flowchart:**  
 
-![function flowchart - Copy (2)](https://user-images.githubusercontent.com/110412468/188593202-c0bb5016-f856-4a55-ba94-0d45826642db.png)  
+  
+![02](https://user-images.githubusercontent.com/110412468/189892087-8768c534-7af5-49ce-8dc4-aeab3ccd526c.png)  
+  
 
                     Flowchart.2- functions passing arguments as variables   
 
@@ -220,7 +222,7 @@ In the above example, we created two functions one is static & other is automati
 
 **Flowchart:**  
 
-![function flowchart - Copy (3)](https://user-images.githubusercontent.com/110412468/188602682-44e19404-dd9e-451a-a83d-6f317841550e.png)
+![03](https://user-images.githubusercontent.com/110412468/189892137-4ae44093-5931-47b1-9849-7afee8174f24.png)  
 
                     Flowchart.3- functions passing arguments as variables with reference  
 **Example:**   
@@ -398,7 +400,8 @@ In general, calling a task from a function is illegal, the compiler will through
 
 **Flowchart:**  
 
-![task from func](https://user-images.githubusercontent.com/110412468/188619777-ff448c85-170e-4604-a466-779d621944c3.png)
+![04](https://user-images.githubusercontent.com/110412468/189892167-e586a9f1-75fb-470c-bd33-9f93bac977f3.png)  
+
 
                     Flowchart.4- calling a task from the function  
 
