@@ -17,9 +17,11 @@ So here in fork_join wait_fork is not required.
 |Represented by  " *=* "|Represented by " <= "|
 |It executes sequentially |It executes parallely|
 |Blocking is used in combinational|Non-Blocking is used in sequential|
-|<img width="222" alt="b" src="https://user-images.githubusercontent.com/110509375/189822970-f52ec9ac-1f29-43a7-8185-e26a66723c09.png">|<img width="215" alt="image" src="https://user-images.githubusercontent.com/110509375/189822751-b7be6bdf-21d0-4db7-8a13-b030bdc90479.png">|
+|<img width="247" alt="bloc" src="https://user-images.githubusercontent.com/110509375/189839938-8dcace4c-74e6-4d85-8d49-59cdaf8c452d.png">|<img width="243" alt="non-b" src="https://user-images.githubusercontent.com/110509375/189839580-5c79c0e5-6f69-4a04-a201-d0fccc208142.png">|
+
 **4.Difference between wait event and @ event ?**
-If we triggered wait and @ in the same delay then wait statement is executed 
+
+If we triggered wait and @ in the same delay then wait statement is executed  
 
  
 
