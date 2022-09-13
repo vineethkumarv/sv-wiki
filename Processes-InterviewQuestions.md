@@ -23,5 +23,27 @@ So here in fork_join wait_fork is not required.
 
 If we triggered wait and @ in the same delay then wait statement is executed because the wait catches fast then @ event.
 
+**Example:**
+
+    module tb;  
+      event e;  
+     initial begin  
+       #20 ->e;  
+       $display($time,"thread1");  
+       end  
+      initial   
+        begin  
+         #20 @e;  
+         $display($time,"thread2");  
+        end  
+      initial   
+       begin  
+       #20 wait(e.triggered);  
+       $display($time,"thread3");  
+       end 
+    endmodule   
+
+In the above example we can see that we have same delay for the event,wait and @ but after executing the event wait is executed eventhough we declared '@' in between its because wait catches the fast then the @ so as a output we can only see thread1 and thread3.
+
  
 
