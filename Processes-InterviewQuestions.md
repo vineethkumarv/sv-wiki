@@ -45,5 +45,7 @@ If we triggered wait and @ in the same delay then wait statement is executed bec
 
 In the above example we can see that we have same delay for the event,wait and @ but after executing the event wait is executed eventhough we declared '@' in between, its because wait catches the fast then the @ so as a output we can only see thread1 and thread3.
 
+<img width="314" alt="Screenshot 2022-09-13 142831" src="https://user-images.githubusercontent.com/110509375/189858887-9747f89c-f3c1-4db7-acb1-e30662d876fc.png">
+
  
 
