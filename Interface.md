@@ -356,11 +356,11 @@ In Output skew is positive because it refers the time after the clock event. The
 3.  Reactive Region: Execution of testbench.    
 4.  Postpone Region: Sampling signals after all design activity.   
 
-The below figure shows that timing regions of  system verilog.  
+The below figure shows that timing regions of Interface in  systemVerilog.  
 
 ![image](https://user-images.githubusercontent.com/110484152/188817365-8bd23adb-d71c-4050-81db-29ab1416b69a.png)  
 
-                                              Fig 3: Timing Regions in Interface  
+                                              Fig 3: Timing Regions of Interface in systemVerilog  
 
 Note: You can refer the SystemVerilog scheduling semantic for your reference (Topic: Processes) to know more about the execution regions.
 
