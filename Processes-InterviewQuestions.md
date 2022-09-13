@@ -16,7 +16,8 @@ So here in fork_join wait_fork is not required.
 |Represented by  " *=* "|Represented by " <= "|
 |It executes sequentially |It executes parallely|
 |Blocking is used in combinational|Non-Blocking is used in sequential|
-|<img width="142" alt="blocking" src="https://user-images.githubusercontent.com/110509375/189821059-74fff760-d24f-41f9-a0cb-745df605a49f.png">|<img width="154" alt="Non-Blocking" src="https://user-images.githubusercontent.com/110509375/189821268-3cfdba81-20a2-4ad8-90b8-7f7514d85085.png">|
+|<img width="222" alt="b" src="https://user-images.githubusercontent.com/110509375/189822970-f52ec9ac-1f29-43a7-8185-e26a66723c09.png">|<img width="215" alt="image" src="https://user-images.githubusercontent.com/110509375/189822751-b7be6bdf-21d0-4db7-8a13-b030bdc90479.png">|
+
 
  
 
