@@ -19,7 +19,8 @@ Tasks are almost similar to Functions, but tasks can calculate multiple variable
 
 **Flowchart:**  
 
-![simple task fl](https://user-images.githubusercontent.com/110412468/188675346-0134b03a-c6d9-4b9d-97c8-65ce82d8cde4.png)  
+![01](https://user-images.githubusercontent.com/110412468/189890280-2f900ada-a451-46e0-960f-47664c39bc39.png)
+
 
            Flowchart.1- task flowchart  
 
@@ -86,7 +87,8 @@ A Task whenever declared as automatic then for every time calling the task the s
 
 **Flowchart:**  
 
-![automatic task fl](https://user-images.githubusercontent.com/110412468/188771041-b372f1ed-50f5-4060-9a44-97356291a8d9.png)  
+ 
+![02](https://user-images.githubusercontent.com/110412468/189890331-6d132043-a683-4de5-bcd6-bcddd3287701.png)
 
            Flowchart.2- automatic task flowchart  
 
@@ -135,13 +137,13 @@ Calling a task from the function is illegal but calling a func from the task is 
 
 **Flowchart:**  
 
-![func from task - Copy](https://user-images.githubusercontent.com/110412468/188775103-82fca1a1-3eda-4adb-8467-054a867d16d9.png)  
+![03](https://user-images.githubusercontent.com/110412468/189890398-8efbf1e5-9cb0-44b0-b080-6050883104e0.png) 
 
            Flowchart.3- calling function from task flowchart    
 
 **output:**  
 
-![func from task1](https://user-images.githubusercontent.com/110412468/188775342-b6bef181-ed9a-4ac1-b851-ce4dd825170a.png)  
+![func from task1](https://user-images.githubusercontent.com/110412468/189890856-b6b57f6e-1661-4a03-b406-9cc2fa08e8ca.png)
 
               Fig.3 - output of calling a task from function    
 
