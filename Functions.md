@@ -344,12 +344,11 @@ In this example, calling the function with an array, initially took an empty arr
           initial  
           begin  
           $display("\n\t@ %0t ns, Array elements = %0p",$time,fun_arr(array_hndl));  
-
+          end
           function array fun_arr(int arr[5]);  
           $display("\tEntered into the function");  
           foreach(arr[i])begin  
           arr[i]=i+1;  
-          end
           $display("\tvalues assigned to array elements starts from 1");  
           array_hndl=arr;  
           return array_hndl;  
