@@ -362,7 +362,7 @@ The below figure shows that timing regions of Interface in  systemVerilog.
 
                                               Fig 3: Timing Regions of Interface in systemVerilog  
 
-Note: You can refer the SystemVerilog scheduling semantic for your reference (Topic: Processes) to know more about the execution regions.
+Note: You can refer the SystemVerilog scheduling schemantic for your reference (wiki) to know more about the execution regions.
 
 
 **Example**  
