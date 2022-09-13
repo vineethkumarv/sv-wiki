@@ -1,4 +1,4 @@
-### 1.Difference between fork_join,fork_join_any and fork_join_none ?
+**1.Difference between fork_join,fork_join_any and fork_join_none ?**
 |   **fork_join**  |          **fork_join_any**                         |                    **fok_join_none**                |                    
 |:---------------|:------------------------------|:------------------------|
 |In fork_join the main(parent) threads will execute after all the threads(child threads) in the fork_join is executed|In fork_join_any the main(parent) threads executes if any one of the child threads excecutes | In fork_join_none child threads and main(parent) threads are executed parallely |
