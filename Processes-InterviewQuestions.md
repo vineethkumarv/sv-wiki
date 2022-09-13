@@ -28,9 +28,9 @@ If we triggered wait and @ in the same delay then wait statement is executed bec
     module tb;  
       event e;  
      initial begin  
-       #20 ->e;  
-       $display($time,"thread1");  
-       end  
+            #20 ->e;  
+            $display($time,"thread1");  
+            end  
       initial   
         begin  
          #20 @e;  
@@ -46,6 +46,31 @@ If we triggered wait and @ in the same delay then wait statement is executed bec
 In the above example we can see that we have same delay for the event,wait and @ but after executing the event wait is executed eventhough we declared '@' in between, its because wait catches the fast then the @ so as a output we can only see thread1 and thread3.
 
 ![Untitled Diagram drawio (6)](https://user-images.githubusercontent.com/110509375/189859603-70f3ae62-381a-42ad-945b-682dfd577522.png)
+
+**5.Can we execute wait and @ with different delays ?**
+     
+    module tb;    
+        event e;  
+        initial begin  
+        #20 ->e;  
+       $display($time,"thread1");  
+       end  
+      initial   
+        begin  
+         #25 @e;  
+         $display($time,"thread2");  
+        end  
+      initial   
+       begin  
+       #15 wait(e.triggered);  
+       $display($time,"thread3");  
+       end 
+    endmodule  
+
+In the above example we can see that delays are different for event ,wait and @.We can also see that here @ delay is more than the event delay and wait delay is less than the event delay so here it executes only the wait statement with the event delay.So in the below figure we can see that thread 1 and thread 3 is executed with same delay(#20)
+
+![Untitled Diagram drawio (7)](https://user-images.githubusercontent.com/110509375/189864228-3e5d8427-8c2d-4a81-a422-2eda692f860e.png)
+
 
 
  
