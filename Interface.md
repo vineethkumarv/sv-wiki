@@ -175,11 +175,7 @@ Below figure shows the output of counter with parameterized interface.
 
 **Syntax:**
 
-`interface <interface_name>;`    
- `// signals declaration`  
- `....`  
- `modport modport_name(input signal_name,output signal_name);`  
-`endinterface`     
+`modport identifier (input <port_list>, output<port_list>);`
 
 **Example:**
 
