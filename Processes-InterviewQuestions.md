@@ -21,7 +21,7 @@ So here in fork_join wait_fork is not required.
 
 **4.Difference between wait event and @ event ?**
 
-If we triggered wait and @ in the same delay then wait statement is executed  
+If we triggered wait and @ in the same delay then wait statement is executed because the wait catches fast then @ event.
 
  
 
