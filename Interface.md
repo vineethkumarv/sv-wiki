@@ -171,7 +171,6 @@ Below figure shows the output of counter with parameterized interface.
 * It can have, input, inout and output.
 * By specifying the port directions, modport provides access restrictions for signals.
 * The Interface can have any number of modports, the wire declared in the interface can be grouped in many modports.
-* We can't assign or drive the value of wire which is declared as modport input. it will give compilation error.
 
 **Syntax:**
 
