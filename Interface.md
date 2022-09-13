@@ -55,7 +55,7 @@ Below diagram shows connecting design and testbench with the interface.
 
 
 `interface (interface_name) ([port_list]);`  
- ` [list_os_signals] `    
+ ` [list_of_signals] `    
 `endinterface`  
 
 
