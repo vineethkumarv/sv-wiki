@@ -312,7 +312,7 @@ Clocking skew specifies  with respect to at which input and output clocking sign
    
 `default input #1step output #0;`    
 
-The default input skew and output skew is declared  like this,  `default input #1step output #0;` .Here default input skew takes #1step delay for getting the stable input for sampling process. After getting the stable output only the sampling the inputs to be done. The output skew takes only #0 delay means that we get the stable output at the current time slot itself.     
+The default input skew and output skew is declared  like this,  `default input #1step output #0;` .Here default input skew takes #1step delay for getting the stable input after sampling process. After getting the stable output only the sampling the inputs to be done. The output skew takes only #0 delay means that we get the stable output at the current time slot itself.     
 
 The below  figure shows that default input and output skew 
 
@@ -328,10 +328,9 @@ The below figure shows the Input skew and output skew
 
 Input  signals are sampling with respect to the clock event. If an input skew is specified then the signal is sampled at skew time units before the clock event. Then the  output signals are driving skew simulation time units after the corresponding clock event. Input  skew is implicitly negative because it happens before the clock.   
 
-In Input skew, `#1step` sampled at the end of previous step ie, postponed region. `#0` sampled at the same time as their corresponding clock event ie, Observed Region.  
+In Input skew, the input signal sampled at the end of previous step ie, postponed region and output signal sampled at after some time corresponding  to their clock event ie, Observed Region. In Output skew is positive because it refers the time after the clock event.  
 
-In Output skew is positive because it refers the time after the clock event. The input `#1step` will get stable input for previous slots and output `#0` driven at stable point in the current time slot.    
-
+Eg. default input #3ps output #2
 
 **Syntax**    
 
@@ -341,24 +340,25 @@ In Output skew is positive because it refers the time after the clock event. The
 `output to_Dut;`  
 `endclocking`    
 
-**Timing Regions**    
-
-* Race conditions are caused by mixing design and testbench events during the same time slot.
-* System verilog introduces division of time slots.  
-
-1.  Active Region: Simulation of design code in modules.    
-2.  Observed Region: Assertions evaluated their design executes.    
-3.  Reactive Region: Execution of testbench.    
-4.  Postpone Region: Sampling signals after all design activity.   
-
 The below figure shows that timing regions of Interface in  systemVerilog.  
 
 ![image](https://user-images.githubusercontent.com/110484152/188817365-8bd23adb-d71c-4050-81db-29ab1416b69a.png)  
 
-                                              Fig 3: Timing Regions of Interface in systemVerilog  
+                                              Fig 3: Timing Regions of Interface in systemVerilog    
+
+**Timing Regions**    
+
+* Race conditions are caused by mixing design and testbench events during the same time slot.
+* To avoid this race condition, System verilog introduces division of time slots.    
+
+The above diagram shows that how the testbench and DUT avoid race condition by using clocking blocks in Interfaces.
+
+1.  Active Region: Simulation of design code in modules.    
+2.  Observed Region: Assertions evaluated their design executes.    
+3.  Reactive Region: Execution of testbench.    
+4.  Postpone Region: Sampling signals after all design activity for the next clock cycle.   
 
 Note: You can refer the SystemVerilog scheduling schemantic for your reference (wiki) to know more about the execution regions.
-
 
 **Example**  
 
@@ -370,8 +370,6 @@ Note: You can refer the SystemVerilog scheduling schemantic for your reference (
 
 **Output**      
   
-
-
 **Advantages of Clocking Block**
   
 * Clocking block provides  race free condition between testbench and DUT.         
@@ -382,10 +380,7 @@ Note: You can refer the SystemVerilog scheduling schemantic for your reference (
 * Save amount of code and and time in design execution.  
 * There is one clock per clocking block    
 
-
-
-
-
+---
 
 # Virtual Interface
 * The virtual interface is a variable that represent the interface instance.
