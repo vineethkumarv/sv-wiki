@@ -312,7 +312,7 @@ Clocking skew specifies  with respect to at which input and output clocking sign
    
 `default input #1step output #0;`    
 
-The default input skew and output skew is declared  like this,  `default input #1step output #0;` .Here default input skew takes #1step delay for getting the stable input after sampling process. After getting the stable output only the sampling the inputs to be done. The output skew takes only #0 delay means that we get the stable output at the current time slot itself.     
+The default input skew and output skew is declared  like this,  `default input #1step output #0;` .Here default input skew takes #1step delay for sampling process to get the stable input. The output skew takes only #0 delay means that we get the stable output at the current time slot itself.     
 
 The below  figure shows that default input and output skew 
 
@@ -357,8 +357,8 @@ The above diagram shows that how the testbench and DUT avoid race condition by u
 1.  Active Region: Simulation of design code in modules.    
 2.  Observed Region: Assertions evaluated their design executes.    
 3.  Reactive Region: Execution of testbench.    
-4.  Postpone Region: Sampling signals after all design activity for the next clock cycle.   
-
+4.  Postpone Region: Sampling signals after all design activity for the next clock cycle .eg, #1step time taken for the sampling process.    
+  
 The  design and testbench are evaluated in different time regions. So, SystemVerilog 
 
 Note: You can refer the SystemVerilog scheduling schemantic (wiki) for your reference to know more about the execution regions.
