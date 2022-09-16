@@ -161,7 +161,7 @@ Mix of Packed arrays and unpacked arrays are known as mixed multi dimensional ar
 
 In the given example, going from left to right side the memory will be allocated and for that first unpacked array dimension are considered as shown in diagram below and after that packed array dimensions are considered.
 
-![mixed-arrays](https://user-images.githubusercontent.com/110448056/187194239-d189bcf7-1b64-407a-b35b-ec1e8fdce5cf.png)
+![mixed-arrays](https://user-images.githubusercontent.com/110448056/190611850-07ad5b94-e594-44c8-a107-5aeb3768a508.png)
 
                                Figure.7 mixed multi dimensional array memory allocation-
 --- 
