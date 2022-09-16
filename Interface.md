@@ -348,8 +348,9 @@ The below figure shows that timing regions of Interface in  systemVerilog.
 
 **Timing Regions**    
 
-* Race conditions are caused by mixing design and testbench events during the same time slot.
-* To avoid this race condition, System verilog introduces division of time slots.    
+* The testbench and DUT evaluates in the active region itself in verilog. The race conditions occur due to the read and write operation to be done at the simulation time. The output will be metastable for the clock cycle. 
+
+* To avoid this race condition, SystemVerilog introduces division of time slots.    
 
 The above diagram shows that how the testbench and DUT avoid race condition by using clocking blocks in Interfaces.
 
@@ -358,7 +359,9 @@ The above diagram shows that how the testbench and DUT avoid race condition by u
 3.  Reactive Region: Execution of testbench.    
 4.  Postpone Region: Sampling signals after all design activity for the next clock cycle.   
 
-Note: You can refer the SystemVerilog scheduling schemantic for your reference (wiki) to know more about the execution regions.
+The  design and testbench are evaluated in different time regions. So, SystemVerilog 
+
+Note: You can refer the SystemVerilog scheduling schemantic (wiki) for your reference to know more about the execution regions.
 
 **Example**  
 
@@ -378,7 +381,6 @@ Note: You can refer the SystemVerilog scheduling schemantic for your reference (
 * Simulation is more faster.   
 * Separating clocking activities of design from its data assignments activities.    
 * Save amount of code and and time in design execution.  
-* There is one clock per clocking block    
 
 ---
 
