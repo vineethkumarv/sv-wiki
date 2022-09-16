@@ -120,7 +120,7 @@ The below figure shows the output of single dimension unpacked array.
 ---
 The below figure shows how the array elements stored in 2-dimensional unpacked array. for `int abc[2][3]` example going from left to right in dimensions elements will occupied the memory.
 
-![2d-unpacked](https://user-images.githubusercontent.com/110448056/187358802-12683dd1-175d-4f2a-a1cf-25e0bfe3d75f.png)
+![2d-unpacked](https://user-images.githubusercontent.com/110448056/190572695-27a9bd88-04a6-4fdf-a6af-68a9fb986244.png)
 
                                    Figure.6 two dimensional unpacked array memory layout
 
