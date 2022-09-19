@@ -5,7 +5,7 @@ To enable the randomization we use rand() and randc() function.
 For using the constraint first, we need to assign the random variables by using the keyword rand or randc. After that declare the constraint statement.  
 
 All the constraint blocks are active at the same time.   
-**Syntax**  
+****Syntax****  
 constraint  constraint_name{random_variable[range];}  
 
 **Note**-  If the variable is randomised without any constraints, then any value in the range will be assigned to the variable with equal probability. 
