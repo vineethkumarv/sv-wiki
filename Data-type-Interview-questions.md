@@ -24,7 +24,7 @@ So ,there is lots of confusion for designer ,where to use reg and where to use n
 
 **Answer:**
 Refer the below link  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Array#static-arrays-has-two-types
+https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/02.Array#static-arrays-has-two-types
 
 **5.Comparision between fixed, dynamic, associative array and queue.**
 
@@ -50,7 +50,7 @@ A dynamic array needs memory allocation using new[] to hold elements. Here is an
 
 **Answer:**  
 Refer the below link  
-https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/Structure-and-Union#types-of-structure
+https://github.com/muneeb-mbytes/SystemVerilog_Course/wiki/03.Structure-and-Union#types-of-structure
 
 **8.What happens if we give same value for different names in enumeration data type?**
 
